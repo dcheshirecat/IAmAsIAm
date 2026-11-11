@@ -12,18 +12,22 @@
 - **Platforms:** an **Android APK** (built by GitHub Actions, like Seven Witches) and PC, in landscape on both.
 - **The character:** raised **Quaker**, left organised religion behind, now believes in **Wicca**, and wants to
   explore as many other traditions as possible.
-- **One religion per chapter**, in a **fixed order** (the owner will set the order). **The player chooses which alter
+- **One religion per chapter**, in a **fixed order**: **Prologue: Quaker** (the backstory) → **Prelude: Wicca** (more
+  backstory) → **Chapter 1: Christianity** (with ex 1) → **Chapter 2: Judaism** (with ex 2) → the rest (order to come).
+- **The parent:** a **single mother, a Quaker minister, who neglects raising her child in favour of the congregation.**
+- **The player chooses which alter
   fronts at the start of each chapter**, and the chapter plays differently depending on who it is. Switching or
   dissociating partway through can happen.
 - **Guides:** each chapter, the character finds **a new person within that faith** who guides them. Practitioners'
   voices are based on real testimony (interviews, or public blogs and videos that agree or form a clear stream;
   see `LivedExperienceSources.md`).
 - **Frame:** the guides introduce each chapter, and the **character's daily life** carries on between chapters.
-- **The exes:** an old **Christian ex**, and a **Jewish ex who became religious and married**. *(Their roles in
-  the story: to be confirmed with the owner.)*
+- **The exes:** an old **Christian ex**, who appears in the Christianity chapter, and a **Jewish ex who became religious and
+  married**, who appears in the Judaism chapter.
 - **Triggers:** the character has triggers. The player learns them and tries to avoid them, and when one fires it causes
-  unwanted depersonalization, derealization or a switch, **with no control over which** (`TriggerSystem`).
-  The draft list is in `TriggerIdeas.md`, waiting for the owner's edits.
+  unwanted dissociation (depersonalization, derealization or fog) **with no control over which**. It only leads to a **full switch if
+  the character can't get away for an extended time** (`TriggerSystem.Expose` / `# cue-held:`). The owner's 18 triggers are in
+  `Resources/Data/triggers.json`.
 - **Practices are played:** the character really uses open practices (tarot spreads, runes, crafting charms,
   sachets, the Wiccan altar) as story actions. Results feed the story; they never give stat buffs.
 - **Art:** the Seven Witches pipeline (Nomad Sculpt → Procreate → **Grab3D** → GLB), with this game's own

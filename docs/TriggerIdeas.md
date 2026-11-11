@@ -1,6 +1,8 @@
-# Trigger ideas (DRAFT for the owner to edit)
+# Trigger ideas
 
-**Status:** ideas only. Nothing goes into `Resources/Data/triggers.json` until the owner has edited this list.
+**Status (2026-11-11):** the owner chose 18 of these (some reworded), and they are now in `Resources/Data/triggers.json`.
+The owner's rule: **all of them start dissociation, but a full switch only happens if the character can't get away for an
+extended time.** The list below is kept for reference (the ones that weren't chosen are not in the game).
 
 How triggers work in the game (owner's design): the character has triggers. The player learns them over time
 (first a hint, then the full name) and tries to avoid them. When one fires, it causes unwanted

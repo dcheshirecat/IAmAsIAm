@@ -1,3 +1,16 @@
 {
-  "chapters": []
+  "chapters": [
+    { "id": "prologue-quaker", "number": 0, "sabbat": "", "title": "Prologue (title to come)", "inkKnot": "prologue", "featuredMemberId": "",
+      "skillFamily": "", "contentTags": ["childhood-reference", "religious-content"],
+      "summary": "Quaker: the backstory. The character is raised by a single mother, a Quaker minister who puts the congregation before raising her child." },
+    { "id": "prelude-wicca", "number": 1, "sabbat": "", "title": "Prelude (title to come)", "inkKnot": "prelude", "featuredMemberId": "",
+      "skillFamily": "", "contentTags": ["religious-content"],
+      "summary": "Wicca: more backstory. The character has left organised religion and found Wicca." },
+    { "id": "ch1-christianity", "number": 2, "sabbat": "", "title": "Chapter 1: Christianity (title to come)", "inkKnot": "ch1_christianity", "featuredMemberId": "",
+      "skillFamily": "", "contentTags": ["religious-content"],
+      "summary": "Christianity, with the Christian ex (ex 1)." },
+    { "id": "ch2-judaism", "number": 3, "sabbat": "", "title": "Chapter 2: Judaism (title to come)", "inkKnot": "ch2_judaism", "featuredMemberId": "",
+      "skillFamily": "", "contentTags": ["religious-content"],
+      "summary": "Judaism, with the Jewish ex (ex 2), who became religious and married." }
+  ]
 }

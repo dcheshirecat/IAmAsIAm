@@ -148,16 +148,18 @@ namespace IAmAsIAm.Runtime.Story
                 string value = colon < 0 ? "" : raw.Substring(colon + 1).Trim();
 
                 if (key == "cw") ContentNote?.Invoke(value);
-                else if (key == "cue") EncounterCue(value);
+                else if (key == "cue") EncounterCue(value, trapped: false);
+                else if (key == "cue-held") EncounterCue(value, trapped: true);
                 else if (ActionTags.Contains(key)) _pending = new StoryAction { Kind = key, Value = value };
                 // "shot", "place" and "front" are read by the view and camera from line.Tags.
             }
         }
 
         /// <summary>The character meets a trigger cue. What happens isn't the player's choice.</summary>
-        void EncounterCue(string cue)
+        void EncounterCue(string cue, bool trapped)
         {
-            if (TriggerRunner.Encounter(cue, fronting) != null) SyncFronting();
+            var a = trapped ? TriggerRunner.Trapped(cue, fronting) : TriggerRunner.Encounter(cue, fronting);
+            if (a != null) SyncFronting();
         }
 
         void SyncFronting()

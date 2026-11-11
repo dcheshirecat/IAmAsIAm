@@ -142,7 +142,7 @@ static class InkCheck
             case "exercise": if (!_practiceSkills.Contains(value)) Fail("not a skill with a practice exercise"); break;
             case "explore": if (!_traditions.Contains(value)) Fail("unknown tradition"); break;
             case "cw": if (!ContentTags.All.Contains(value)) Fail("unknown content tag"); break;
-            case "cue": if (_cues.Count > 0 && !_cues.Contains(value)) Fail("no trigger listens for this cue (triggers.json)"); break;
+            case "cue": case "cue-held": if (_cues.Count > 0 && !_cues.Contains(value)) Fail("no trigger listens for this cue (triggers.json)"); break;
             case "ritual":
                 var parts = value.Split(' ', StringSplitOptions.RemoveEmptyEntries);
                 if (parts.Length == 0) { Fail("empty ritual"); break; }

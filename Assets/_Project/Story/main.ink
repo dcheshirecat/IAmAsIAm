@@ -5,6 +5,7 @@
 
 INCLUDE game_api.ink
 INCLUDE test_room.ink
+INCLUDE chapters_placeholder.ink
 
 -> start
 

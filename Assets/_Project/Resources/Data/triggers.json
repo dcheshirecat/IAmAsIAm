@@ -1,4 +1,463 @@
 {
-  "sourceNote": "The character's triggers. Written with the owner (draft ideas in docs/TriggerIdeas.md; nothing goes here until the owner has edited them).",
-  "triggers": []
+  "sourceNote": "The owner's trigger list (2026-11-11). Each cue STARTS dissociation (an outcome chosen at random by weight). A full switch only happens if the character can't get away for switchAfterSeconds (or a '# cue-held:' story moment). Effects and timings are first suggestions for the owner to tune.",
+  "triggers": [
+    {
+      "id": "raised-voices",
+      "name": "Raised voices",
+      "hint": "Something about loud rooms…",
+      "cues": [
+        "raised-voices"
+      ],
+      "outcomes": [
+        {
+          "response": "Derealization",
+          "weight": 1,
+          "intensity": 0.7
+        },
+        {
+          "response": "Depersonalization",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "door-slam",
+      "name": "A door slamming",
+      "hint": "That sound, sharp and sudden.",
+      "cues": [
+        "door-slam"
+      ],
+      "outcomes": [
+        {
+          "response": "Depersonalization",
+          "weight": 2,
+          "intensity": 0.7
+        },
+        {
+          "response": "Derealization",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "push-from-behind",
+      "name": "An unexpected push from behind",
+      "hint": "Being caught off guard from behind.",
+      "cues": [
+        "push-from-behind"
+      ],
+      "outcomes": [
+        {
+          "response": "Depersonalization",
+          "weight": 2,
+          "intensity": 0.7
+        },
+        {
+          "response": "Fog",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "particular-smell",
+      "name": "A particular smell",
+      "hint": "A smell you can't quite place.",
+      "cues": [
+        "smell-smoke",
+        "smell-aftershave",
+        "smell-perfume"
+      ],
+      "outcomes": [
+        {
+          "response": "Derealization",
+          "weight": 2,
+          "intensity": 0.7
+        },
+        {
+          "response": "Fog",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "trapped",
+      "name": "Feeling trapped",
+      "hint": "Small spaces with no way out.",
+      "cues": [
+        "locked-door",
+        "crowded-lift",
+        "no-exit"
+      ],
+      "outcomes": [
+        {
+          "response": "Fog",
+          "weight": 1,
+          "intensity": 0.7
+        },
+        {
+          "response": "Depersonalization",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "sudden-bangs",
+      "name": "Sudden bangs",
+      "hint": "Loud, sudden noise.",
+      "cues": [
+        "sudden-bang",
+        "fireworks"
+      ],
+      "outcomes": [
+        {
+          "response": "Depersonalization",
+          "weight": 2,
+          "intensity": 0.7
+        },
+        {
+          "response": "Derealization",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "own-reflection",
+      "name": "Catching your own reflection",
+      "hint": "Mirrors, sometimes.",
+      "cues": [
+        "own-reflection"
+      ],
+      "outcomes": [
+        {
+          "response": "Depersonalization",
+          "weight": 3,
+          "intensity": 0.7
+        },
+        {
+          "response": "Derealization",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "anniversary-winter",
+      "name": "An anniversary date, or dark winter evenings",
+      "hint": "This time of year.",
+      "cues": [
+        "anniversary-date",
+        "winter-dark"
+      ],
+      "outcomes": [
+        {
+          "response": "Fog",
+          "weight": 2,
+          "intensity": 0.7
+        },
+        {
+          "response": "Derealization",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "stared-crowded",
+      "name": "Being stared at or crowded",
+      "hint": "Being watched, being hemmed in.",
+      "cues": [
+        "stared-at",
+        "crowded"
+      ],
+      "outcomes": [
+        {
+          "response": "Depersonalization",
+          "weight": 2,
+          "intensity": 0.7
+        },
+        {
+          "response": "Fog",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "couple-arguing",
+      "name": "A couple arguing loudly",
+      "hint": "Other people's loud arguments.",
+      "cues": [
+        "couple-arguing"
+      ],
+      "outcomes": [
+        {
+          "response": "Derealization",
+          "weight": 1,
+          "intensity": 0.7
+        },
+        {
+          "response": "Depersonalization",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "hymn-christian-ex",
+      "name": "A hymn from the Christian ex's church",
+      "hint": "That tune…",
+      "cues": [
+        "hymn-ex-church"
+      ],
+      "outcomes": [
+        {
+          "response": "Derealization",
+          "weight": 2,
+          "intensity": 0.7
+        },
+        {
+          "response": "Fog",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "church-bells",
+      "name": "Church bells",
+      "hint": "Bells, sometimes.",
+      "cues": [
+        "church-bells"
+      ],
+      "outcomes": [
+        {
+          "response": "Derealization",
+          "weight": 2,
+          "intensity": 0.7
+        },
+        {
+          "response": "Depersonalization",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "prayed-over",
+      "name": "Being prayed over without asking",
+      "hint": "Hands, and words, without asking.",
+      "cues": [
+        "prayed-over"
+      ],
+      "outcomes": [
+        {
+          "response": "Depersonalization",
+          "weight": 2,
+          "intensity": 0.7
+        },
+        {
+          "response": "Derealization",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "conversion",
+      "name": "Someone trying to convert you",
+      "hint": "People who want to fix you.",
+      "cues": [
+        "conversion-attempt"
+      ],
+      "outcomes": [
+        {
+          "response": "Depersonalization",
+          "weight": 2,
+          "intensity": 0.7
+        },
+        {
+          "response": "Fog",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "weddings",
+      "name": "Weddings, especially a chuppah",
+      "hint": "Weddings.",
+      "cues": [
+        "wedding",
+        "chuppah"
+      ],
+      "outcomes": [
+        {
+          "response": "Derealization",
+          "weight": 2,
+          "intensity": 0.7
+        },
+        {
+          "response": "Fog",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "shabbat-candles",
+      "name": "Shabbat candles",
+      "hint": "Candlelight on a Friday evening.",
+      "cues": [
+        "shabbat-candles"
+      ],
+      "outcomes": [
+        {
+          "response": "Fog",
+          "weight": 1,
+          "intensity": 0.7
+        },
+        {
+          "response": "Derealization",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "meeting-house-smell",
+      "name": "The smell of an old meeting house",
+      "hint": "A smell from childhood: old wood, beeswax.",
+      "cues": [
+        "meeting-house-smell"
+      ],
+      "outcomes": [
+        {
+          "response": "Derealization",
+          "weight": 2,
+          "intensity": 0.7
+        },
+        {
+          "response": "Fog",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    },
+    {
+      "id": "disapproving-leader",
+      "name": "A disapproving look from a religious leader",
+      "hint": "That look.",
+      "cues": [
+        "leader-disapproval"
+      ],
+      "outcomes": [
+        {
+          "response": "Depersonalization",
+          "weight": 2,
+          "intensity": 0.7
+        },
+        {
+          "response": "Fog",
+          "weight": 1,
+          "intensity": 0.7
+        }
+      ],
+      "switchAfterSeconds": 20,
+      "switchTo": "any",
+      "learnAfter": 2,
+      "affectsMembers": [],
+      "contentTags": []
+    }
+  ]
 }

@@ -47,49 +47,46 @@ change clothes in-story (they'd have to change physically), or is the look shown
    - `tex_<id>_roughness.png`, `tex_<id>_metallic.png` (only if Procreate exported them)
 
 ## 3. Rig and animate in Grab3D Auto-Rig Studio (browser)
-1. **Upload** the painted model to Grab3D Auto-Rig Studio and place the markers (chin, wrists, elbows, knees, groin).
-2. **Add the animations** this game needs (list below), picking the closest Grab3D clips.
-3. **Export one GLB** with the model, its textures and all animations inside: `model_<id>.glb`.
-   Name the clips inside the GLB with the `<anim>` names below where Grab3D allows it. If it doesn't,
-   tell Claude which clip is which.
-4. Props and rooms aren't rigged: export them from Procreate as OBJ + `tex_` PNGs (`model_prop_<name>.obj`, `model_room_<name>.obj`).
+Checked on grab3d.com/tools/auto-rig (2026-11-11). It runs in the browser, and your model never leaves the device.
+1. **Load** the painted model (GLB, glTF, FBX, OBJ, or a ZIP with the textures). Use a standing T- or A-pose with the arms
+   away from the hips. The tool checks orientation and height in metres.
+2. **Markers:** check chin, shoulders, elbows, wrists, knees and groin; drag any that are off. **Create rig** builds a
+   **19-bone humanoid skeleton** with volume-based skin weights (robes, hair and loose clothes follow the body).
+3. **Weights:** test poses (T pose, arms up, squat, stride, twist), and fix with the weight brush if needed.
+4. **Animate:** tick **In place** and **Keep feet on the ground**, and select every clip (list below).
+5. **Export:** format **GLB**, bone names **Unity Humanoid**, file name `model_<id>.glb`, with all animations in the file.
+   (Unity Humanoid naming lets the game use Unity's humanoid features: head and eye look-at, hand placement, and the poses below.)
+6. Props and rooms aren't rigged: export them from Procreate as OBJ + `tex_` PNGs (`model_prop_<name>.obj`, `model_room_<name>.obj`).
 
-**Animals** (e.g. birds for birdsong, a cat): **[ASK]** whether Grab3D rigs them. If it doesn't, they stay
-unrigged props that the game moves simply (a bob, a hop, a turn). No other rigging tool is used.
+**What Grab3D can't do (by its own page):** humanoids only, with two legs, two arms and a head, so there are no animals, wings or tails.
+There are **no finger bones** (the hand moves as one piece) and **no face rig**. Animals therefore stay unrigged props that the game moves
+simply (a bob, a hop, a turn).
 
-### Animations this game needs
-This is a story game, so it's mostly small, human movements, not combat. **[ASK]** the owner which clips Grab3D
-offers. Each row is matched to the closest Grab3D clip, and anything Grab3D doesn't have is left out (the
-game falls back to `idle`) until it does.
+### The animations Grab3D offers (all 7, CC0 public domain)
+| Grab3D clip | Use in this game |
+|---|---|
+| `idle` (2 s, loops) | Standing, breathing: everyone |
+| `walk` (1 s, loops) | Walking: everyone |
+| `run` (0.6 s, loops) | Walking fast (Shift / LT) |
+| `walk-cartoon`, `run-cartoon` | Not needed (stylised/chibi); skip unless the art style goes that way |
+| `wave` (1.6 s, once) | Greetings |
+| `jump` (1.1 s, once) | A startle at a sudden bang (shortened and blended, so the feet stay down) |
 
-| `<anim>` | What | Who | Closest idea, for picking a Grab3D clip |
-|---|---|---|---|
-| `idle` | Standing, breathing | everyone | Breathing Idle |
-| `walk` | Walking (in place) | everyone | Walking |
-| `talk` | Talking with small gestures | everyone with lines | Talking |
-| `listen` | Listening, a small nod | everyone with lines | Idle, Head Nod Yes |
-| `sit` / `sit_idle` | Sitting down / seated | alters, guides | Sitting, Sitting Idle |
-| `kneel` | Kneeling (gardening, Shinto bow, altar work) | alters | Kneeling Idle |
-| `pick_up` | Picking up an object | alters | Picking Up |
-| `hold_object` | Holding something close (grounding object) | alters | Holding Idle |
-| `self_hug` | Arms around self | alters | (closest: Sad Idle) |
-| `shuffle_cards` | Shuffling / laying out cards | alters | (closest: Typing / Counting) |
-| `write` | Writing in the journal | alters | Writing |
-| `bow` | A bow (shrines, greeting) | alters, guides | Bow |
-| `pray_hands` | Hands together / hands open | guides, alters | Praying |
-| `startle` | A flinch (trigger moments) | alters | Hit Reaction (small), Startled |
-| `freeze` | Going still (dissociation) | alters | Idle (with arms down) |
-| `dazed` | A slow, unsteady sway (depersonalization) | alters | Drunk Idle (slowed) |
-| `look_around` | Looking around, disoriented (after a switch) | alters | Looking Around |
-| `sleep` / `wake` | Lying asleep / waking | alters | Sleeping Idle, Getting Up |
+### Story poses the game makes itself (no other tool)
+A story game needs more than seven clips. These are made **inside Unity** from the Humanoid rig (posed bones plus look-at),
+blended over `idle`. They need nothing beyond your Grab3D GLB:
+`sit` / `sit_idle`, `kneel`, `bow`, `hands_together` (prayer), `hands_open`, `hold_object` (grounding stone, journal),
+`self_hug`, `shuffle_cards` (both hands forward), `write`, `listen` (a small nod), `talk` (gentle head and hand movement),
+`freeze` (dissociation: going still), `dazed` (slow sway, depersonalization), `look_around` (after a switch), `lie_down`.
+Hands stay as one piece (no fingers), so hold poses are designed around that.
 
-Background people only need `idle`, `walk` and `talk`.
-
-### Faces **[DECIDE]**
-Close-up story scenes need expression. In order of effort:
-1. **Expression textures** (cheapest): paint 4–6 face variants (`tex_<id>_face_<neutral|happy|sad|worried|blank>.png`), and the game swaps them.
-2. **2D talking-head portraits** beside the dialogue, like Seven Witches (1024 × 1024).
-3. **Blend shapes** made with Nomad Sculpt's own tools, *only* if Grab3D carries them through into the GLB. **[ASK]**
+### Faces **[owner to confirm]**
+Grab3D has **no face rig**, so sculpted expressions aren't possible with this pipeline. That leaves two options:
+1. **Swapped face paintings (recommended):** paint the face area in Procreate in a few versions, all with the same UVs:
+   `tex_<id>_face_neutral.png`, `_happy`, `_sad`, `_worried`, `_blank` (dissociated, far away), `_tense`.
+   Each is a full colour texture identical to `tex_<id>_color.png` except the face, and the game swaps between them.
+   This suits the close camera and needs only Procreate.
+2. **2D talking-head portraits** beside the dialogue box (as in Seven Witches, 1024 × 1024), which can be added on top of option 1.
 
 ## 4. Into the game (Claude does this part)
 You put the files in Drive (below) and tell Claude. Claude:

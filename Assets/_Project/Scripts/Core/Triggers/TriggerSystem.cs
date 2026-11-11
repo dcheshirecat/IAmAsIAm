@@ -8,10 +8,11 @@ namespace IAmAsIAm.Core.Triggers
 {
     // ─────────────────────────────────────────────────────────────────────────────
     //  Triggers (owner's design): the character has triggers. The player learns them
-    //  over time and tries to avoid them. When one fires, it causes unwanted
-    //  depersonalization, derealization or a switch, and the player has NO control
-    //  over which. Triggers are sensory or situational cues; the game never shows
-    //  or explains the trauma behind them.
+    //  over time and tries to avoid them. When one fires it STARTS dissociation
+    //  (depersonalization, derealization or fog), and the player has NO control over
+    //  which. It only leads to a full SWITCH if the character can't get away from it
+    //  for an extended time (owner, 2026-11-11). Triggers are sensory or situational
+    //  cues; the game never shows or explains the trauma behind them.
     //  The trigger list itself is authored with the owner in Resources/Data/triggers.json.
     // ─────────────────────────────────────────────────────────────────────────────
 
@@ -20,7 +21,11 @@ namespace IAmAsIAm.Core.Triggers
         Depersonalization,
         Derealization,
         Fog,
-        /// <summary>An involuntary switch. Who comes forward isn't the player's choice.</summary>
+        /// <summary>
+        /// An involuntary switch. It never comes straight from a cue: only from being unable to get
+        /// away for <see cref="TriggerDefinition.switchAfterSeconds"/> (or a "trapped" story moment).
+        /// Who comes forward isn't the player's choice.
+        /// </summary>
         Switch,
     }
 
@@ -33,9 +38,6 @@ namespace IAmAsIAm.Core.Triggers
         public float weight = 1f;
         /// <summary>0..1 intensity for perceptual responses.</summary>
         public float intensity = 0.7f;
-        /// <summary>For Switch: a member id, or "any" (any member able to front, picked at random).</summary>
-        public string switchTo = "any";
-
         public TriggerResponse Response => EnumText.Parse(response, TriggerResponse.Derealization);
     }
 
@@ -50,6 +52,10 @@ namespace IAmAsIAm.Core.Triggers
         /// <summary>Cue ids that set it off. Scenes and Ink emit cues ("# cue: raised-voices").</summary>
         public List<string> cues = new List<string>();
         public List<TriggerOutcome> outcomes = new List<TriggerOutcome>();
+        /// <summary>Seconds of being unable to get away before a full switch happens.</summary>
+        public float switchAfterSeconds = 20f;
+        /// <summary>Who comes forward on a switch: a member id, or "any" (any member able to front, picked at random).</summary>
+        public string switchTo = "any";
         /// <summary>Encounters before the player fully understands this trigger.</summary>
         public int learnAfter = 2;
         /// <summary>Member ids this trigger affects. Empty means it affects whoever is fronting.</summary>
@@ -77,6 +83,8 @@ namespace IAmAsIAm.Core.Triggers
         /// <summary>For switches: who comes forward. Null if no one else can front.</summary>
         public string SwitchToId;
         public TriggerKnowledge KnowledgeAfter;
+        /// <summary>True when this is the switch after sustained exposure, not the first reaction.</summary>
+        public bool Escalated;
     }
 
     [Serializable]
@@ -91,6 +99,8 @@ namespace IAmAsIAm.Core.Triggers
     {
         readonly List<TriggerDefinition> _defs;
         readonly Dictionary<string, TriggerProgress> _progress = new Dictionary<string, TriggerProgress>();
+        readonly Dictionary<string, float> _exposure = new Dictionary<string, float>();
+        readonly HashSet<string> _switchedThisExposure = new HashSet<string>();
         readonly Random _rng;
 
         public event Action<TriggerActivation> Fired;
@@ -118,13 +128,11 @@ namespace IAmAsIAm.Core.Triggers
 
         /// <summary>
         /// The character meets a cue. Returns the activation if a trigger fires, or null.
-        /// The response is chosen at random by weight; the player has no say.
+        /// It starts dissociation; the response is chosen at random by weight, and the player has no say.
         /// </summary>
         public TriggerActivation Encounter(string cue, SystemRoster roster)
         {
-            string fronting = roster?.FrontingId;
-            var def = _defs.FirstOrDefault(d => d.cues.Contains(cue) &&
-                (d.affectsMembers.Count == 0 || (fronting != null && d.affectsMembers.Contains(fronting))));
+            var def = FindFor(cue, roster);
             if (def == null || def.outcomes.Count == 0) return null;
 
             var before = Knowledge(def.id);
@@ -137,20 +145,89 @@ namespace IAmAsIAm.Core.Triggers
             {
                 Trigger = def,
                 Cue = cue,
-                Response = outcome.Response,
+                Response = outcome.Response == TriggerResponse.Switch ? TriggerResponse.Depersonalization : outcome.Response,
                 Intensity = Math.Max(0f, Math.Min(1f, outcome.intensity)),
                 KnowledgeAfter = after,
             };
-
-            if (activation.Response == TriggerResponse.Switch)
-            {
-                activation.SwitchToId = ResolveSwitchTarget(outcome.switchTo, roster);
-                // If no one else can come forward, the body still reacts: fall back to depersonalization.
-                if (activation.SwitchToId == null) activation.Response = TriggerResponse.Depersonalization;
-            }
-
             Fired?.Invoke(activation);
             return activation;
+        }
+
+        /// <summary>
+        /// The cue is still there and the character can't get away (call every frame while it lasts).
+        /// The first call is the encounter. After the trigger's switchAfterSeconds, it becomes a full switch,
+        /// once per exposure. Returns any activation that happened this call.
+        /// </summary>
+        public TriggerActivation Expose(string cue, SystemRoster roster, float deltaSeconds)
+        {
+            var def = FindFor(cue, roster);
+            if (def == null) return null;
+
+            if (!_exposure.TryGetValue(def.id, out float time))
+            {
+                _exposure[def.id] = 0f;
+                return Encounter(cue, roster);
+            }
+
+            time += Math.Max(0f, deltaSeconds);
+            _exposure[def.id] = time;
+            if (time < def.switchAfterSeconds || _switchedThisExposure.Contains(def.id)) return null;
+            _switchedThisExposure.Add(def.id);
+            return Escalate(def, cue, roster);
+        }
+
+        /// <summary>The character got away. Exposure resets.</summary>
+        public void EndExposure(string cue)
+        {
+            foreach (var d in _defs.Where(d => d.cues.Contains(cue)))
+            {
+                _exposure.Remove(d.id);
+                _switchedThisExposure.Remove(d.id);
+            }
+        }
+
+        /// <summary>
+        /// A story moment where the character can't leave (e.g. trapped at a wedding through the vows):
+        /// the encounter and the switch both happen.
+        /// </summary>
+        public TriggerActivation Trapped(string cue, SystemRoster roster)
+        {
+            var def = FindFor(cue, roster);
+            if (def == null) return null;
+            Encounter(cue, roster);
+            return Escalate(def, cue, roster);
+        }
+
+        /// <summary>Seconds of exposure so far for the trigger behind a cue (0 if none).</summary>
+        public float ExposureSeconds(string cue)
+        {
+            var def = _defs.FirstOrDefault(d => d.cues.Contains(cue));
+            return def != null && _exposure.TryGetValue(def.id, out var t) ? t : 0f;
+        }
+
+        TriggerActivation Escalate(TriggerDefinition def, string cue, SystemRoster roster)
+        {
+            var activation = new TriggerActivation
+            {
+                Trigger = def,
+                Cue = cue,
+                Response = TriggerResponse.Switch,
+                Intensity = 1f,
+                KnowledgeAfter = Knowledge(def.id),
+                Escalated = true,
+                SwitchToId = ResolveSwitchTarget(def.switchTo, roster),
+            };
+            // If no one else can come forward, the body still reacts: deep depersonalization instead.
+            if (activation.SwitchToId == null) activation.Response = TriggerResponse.Depersonalization;
+            Fired?.Invoke(activation);
+            return activation;
+        }
+
+        TriggerDefinition FindFor(string cue, SystemRoster roster)
+        {
+            string fronting = roster?.FrontingId;
+            return _defs.FirstOrDefault(d => d.cues.Contains(cue) &&
+                (d.affectsMembers.Count == 0 || (fronting != null && d.affectsMembers.Contains(fronting))));
         }
 
         /// <summary>The player knowingly steered around a known cue. This is tracked so the game can acknowledge it.</summary>

@@ -9,6 +9,8 @@
 //    # ritual: tarot <spread-id> | rune | craft <charm-id> | sachet
 //    # explore: <tradition-id>      (opens the codex entry for that tradition)
 //    # cw: <content-tag>            (content note; the player may skip with a summary)
+//    # cue: <cue-id>                (meets a trigger cue: dissociation starts, no switch)
+//    # cue-held: <cue-id>           (can't get away from it: dissociation, then a switch)
 //    # shot: wide | close | over-shoulder | inner     (camera hint)
 //    # place: <location-id>         (scene/location change)
 //    # chapter-end                  (shows the choices recap)

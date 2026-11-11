@@ -174,9 +174,12 @@ namespace IAmAsIAm.Core
                 foreach (var o in t.outcomes ?? new List<TriggerOutcome>())
                 {
                     if (!EnumText.IsValid<TriggerResponse>(o.response)) issues.Add($"trigger '{t.id}': unknown response '{o.response}'.");
-                    if (o.Response == TriggerResponse.Switch && o.switchTo != "any" && members.Count > 0 && !memberIds.Contains(o.switchTo))
-                        issues.Add($"trigger '{t.id}': switch target '{o.switchTo}' isn't a member.");
+                    if (o.Response == TriggerResponse.Switch)
+                        issues.Add($"trigger '{t.id}': a cue starts dissociation; switches only come from not being able to get away (switchAfterSeconds).");
                 }
+                if (t.switchAfterSeconds <= 0f) issues.Add($"trigger '{t.id}': switchAfterSeconds must be positive.");
+                if (t.switchTo != "any" && members.Count > 0 && !memberIds.Contains(t.switchTo))
+                    issues.Add($"trigger '{t.id}': switch target '{t.switchTo}' isn't a member.");
                 foreach (var m in t.affectsMembers ?? new List<string>())
                     if (members.Count > 0 && !memberIds.Contains(m)) issues.Add($"trigger '{t.id}': affected member '{m}' isn't a member.");
                 if (string.IsNullOrWhiteSpace(t.hint)) issues.Add($"trigger '{t.id}': needs a hint (shown before it's fully learned).");

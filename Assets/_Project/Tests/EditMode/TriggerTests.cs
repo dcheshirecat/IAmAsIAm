@@ -51,31 +51,76 @@ namespace IAmAsIAm.Tests
             var sys = new TriggerSystem(new[] { Def(
                 new TriggerOutcome { response = "Depersonalization", weight = 1 },
                 new TriggerOutcome { response = "Derealization", weight = 1 },
-                new TriggerOutcome { response = "Switch", weight = 1 }) }, 42);
+                new TriggerOutcome { response = "Fog", weight = 1 }) }, 42);
             var seen = new HashSet<TriggerResponse>();
             for (int i = 0; i < 60; i++) seen.Add(sys.Encounter("raised-voices", Roster()).Response);
             Assert.That(seen.Count, Is.EqualTo(3), "All three outcomes should occur over many encounters.");
         }
 
         [Test]
-        public void Switch_PicksAnEmbodiedMember_IgnoringConsent()
+        public void ABriefEncounter_NeverSwitches()
+        {
+            var sys = new TriggerSystem(new[] { Def(new TriggerOutcome { response = "Derealization" }) }, 1);
+            for (int i = 0; i < 20; i++)
+                Assert.That(sys.Encounter("raised-voices", Roster()).Response, Is.Not.EqualTo(TriggerResponse.Switch));
+        }
+
+        [Test]
+        public void SustainedExposure_LeadsToOneSwitch_IgnoringConsent()
         {
             var roster = Roster();
             roster.SetResting("a", true); // An involuntary switch doesn't ask.
-            var sys = new TriggerSystem(new[] { Def(new TriggerOutcome { response = "Switch" }) }, 3);
-            for (int i = 0; i < 20; i++)
-            {
-                var act = sys.Encounter("raised-voices", roster);
-                Assert.That(act.SwitchToId, Is.AnyOf("a", "b"));
-            }
+            var def = Def(new TriggerOutcome { response = "Derealization" });
+            def.switchAfterSeconds = 10f;
+            var sys = new TriggerSystem(new[] { def }, 3);
+
+            Assert.That(sys.Expose("raised-voices", roster, 0f).Response, Is.EqualTo(TriggerResponse.Derealization));
+            Assert.That(sys.Expose("raised-voices", roster, 9f), Is.Null, "Not yet: the character might still get away.");
+            var sw = sys.Expose("raised-voices", roster, 2f);
+            Assert.That(sw.Response, Is.EqualTo(TriggerResponse.Switch));
+            Assert.That(sw.Escalated, Is.True);
+            Assert.That(sw.SwitchToId, Is.AnyOf("a", "b"));
+            Assert.That(sys.Expose("raised-voices", roster, 30f), Is.Null, "Only one switch per exposure.");
+        }
+
+        [Test]
+        public void GettingAway_ResetsExposure()
+        {
+            var def = Def(new TriggerOutcome { response = "Fog" });
+            def.switchAfterSeconds = 10f;
+            var sys = new TriggerSystem(new[] { def }, 3);
+            sys.Expose("raised-voices", Roster(), 0f);
+            sys.Expose("raised-voices", Roster(), 8f);
+            sys.EndExposure("raised-voices");
+            Assert.That(sys.ExposureSeconds("raised-voices"), Is.EqualTo(0f));
+            sys.Expose("raised-voices", Roster(), 0f);
+            Assert.That(sys.Expose("raised-voices", Roster(), 8f), Is.Null);
+        }
+
+        [Test]
+        public void Trapped_DissociatesThenSwitches()
+        {
+            var sys = new TriggerSystem(new[] { Def(new TriggerOutcome { response = "Derealization" }) }, 3);
+            var fired = new List<TriggerActivation>();
+            sys.Fired += fired.Add;
+            sys.Trapped("raised-voices", Roster());
+            Assert.That(fired.Select(f => f.Response), Is.EqualTo(new[] { TriggerResponse.Derealization, TriggerResponse.Switch }));
         }
 
         [Test]
         public void Switch_WithNoOneAvailable_FallsBackToDepersonalization()
         {
             var roster = new SystemRoster(new[] { new SystemMemberDefinition { id = "solo" } }, "solo");
-            var sys = new TriggerSystem(new[] { Def(new TriggerOutcome { response = "Switch" }) }, 3);
-            Assert.That(sys.Encounter("raised-voices", roster).Response, Is.EqualTo(TriggerResponse.Depersonalization));
+            var sys = new TriggerSystem(new[] { Def(new TriggerOutcome { response = "Fog" }) }, 3);
+            Assert.That(sys.Trapped("raised-voices", roster).Response, Is.EqualTo(TriggerResponse.Depersonalization));
+        }
+
+        [Test]
+        public void SwitchAsADirectOutcome_IsRejectedByValidator()
+        {
+            var def = Def(new TriggerOutcome { response = "Switch" });
+            var issues = DataValidator.Validate(new DataValidator.Bundle { Triggers = new TriggerData { triggers = new List<TriggerDefinition> { def } } });
+            Assert.That(issues, Has.Some.Contains("switches only come from not being able to get away"));
         }
 
         [Test]

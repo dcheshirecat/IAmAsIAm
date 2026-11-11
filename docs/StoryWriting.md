@@ -27,7 +27,8 @@ Juniper (inside): An inner voice (co-consciousness) adds "(inside)". It's shown 
 ## Tags: instant
 | Tag | Does |
 |---|---|
-| `# cue: raised-voices` | The character meets a trigger cue. If it's a trigger, it fires (the player can't control the outcome). |
+| `# cue: raised-voices` | The character meets a trigger cue: dissociation starts (depersonalization, derealization or fog, at random). No switch. |
+| `# cue-held: raised-voices` | The character **can't get away** from it (e.g. stuck through a whole wedding): dissociation, then a full switch to someone the player doesn't choose. |
 | `# cw: time-loss` | A content note (tags in ComfortSettings.cs → ContentTags) |
 | `# shot: close` / `# place: meeting_house` / `# front: <alter>` | Hints for the camera, the location, and who's fronting |
 

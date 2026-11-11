@@ -45,9 +45,10 @@ Everything is a placeholder until replaced. Tick things off as you go. Sizes: [A
 | | Id | Who | Notes |
 |---|---|---|---|
 | [ ] First | `body` | The shared body | 15–20k tris; all alters' looks fit this rig |
-| [ ] | `hair_<alter>`, `outfit_<alter>` | Each alter's look (one per alter) | Draft alters: wren, juniper, pip, bramble, sorrel, to be confirmed by the owner |
-| [ ] | `ex_christian` | The Christian ex | ⏳ chapters (role to confirm) |
-| [ ] | `ex_jewish`, `ex_jewish_spouse` | The Jewish ex, who became religious and married | ⏳ chapters (role to confirm) |
+| [ ] | `hair_<alter>`, `outfit_<alter>` | Each alter's look (one per alter) | Alters: see docs/SystemMembers.md (draft for the owner to confirm) |
+| [ ] | `mother` | The mother: single mother, Quaker minister (prologue; in flashbacks / memories) | Younger and older versions? ask the owner |
+| [ ] | `ex_christian` | Ex 1, the Christian ex | Chapter 1: Christianity |
+| [ ] | `ex_jewish`, `ex_jewish_spouse` | Ex 2, the Jewish ex, who became religious and married, and their spouse | Chapter 2: Judaism |
 | [ ] | `guide_<tradition>` | One guide per chapter, a practitioner of that tradition | ⏳ chapters |
 | [ ] | `bg_person_1..6` | Background people (meeting attenders, congregants, passers-by) | idle / walk / talk only |
 
@@ -57,7 +58,7 @@ Everything is a placeholder until replaced. Tick things off as you go. Sizes: [A
 | [ ] First | `home_kitchen` | The character's flat: kitchen | The Boot scene's placeholder room |
 | [ ] | `home_bedroom`, `home_living` | The flat: bedroom, living room with altar shelf | The Wiccan altar lives here |
 | [ ] | `hearth` | The inner world: cottage kitchen, hearth, apothecary shelves | Frame between chapters |
-| [ ] | `meeting_house` | A Quaker meeting house (benches in a square, plain walls) | Childhood memories and the present |
+| [ ] | `meeting_house` | The mother's Friends church / meeting house (prologue) | Programmed (pulpit, pews, hymn boards) or unprogrammed (benches in a square): ask the owner |
 | [ ] | `stone_circle` | Outdoor circle for sabbats | Wicca |
 | [ ] | One place per chapter's tradition (e.g. `synagogue`, `church`, `mosque`, `mandir`, `gurdwara`, `buddhist_centre`, `daoist_temple`, `shinto_shrine`, `bahai_centre`, `druid_grove`, `heathen_hof`) | ⏳ chapters | Accurate layout: check each with a practitioner |
 | [ ] | `daily_<place>` | Daily-life places (work, bus, café, therapist's office…) | ⏳ chapters |
