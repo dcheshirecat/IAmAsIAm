@@ -5,6 +5,32 @@
 
 ---
 
+## 0. Direction from the owner (2026-11-11). This overrides anything below that conflicts.
+
+- **A story game** in the genre of narrative adventures (choices and consequences, close cameras, chapters).
+  The story is written in **Ink** (`Assets/_Project/Story`). Choices are remembered (`ChoiceLog`) and recapped.
+- **Platforms:** an **Android APK** (built by GitHub Actions, like Seven Witches) and PC, in landscape on both.
+- **The character:** raised **Quaker**, left organised religion behind, now believes in **Wicca**, and wants to
+  explore as many other traditions as possible.
+- **One religion per chapter**, in a **fixed order** (the owner will set the order). **The player chooses which alter
+  fronts at the start of each chapter**, and the chapter plays differently depending on who it is. Switching or
+  dissociating partway through can happen.
+- **Guides:** each chapter, the character finds **a new person within that faith** who guides them. Practitioners'
+  voices are based on real testimony (interviews, or public blogs and videos that agree or form a clear stream;
+  see `LivedExperienceSources.md`).
+- **Frame:** the guides introduce each chapter, and the **character's daily life** carries on between chapters.
+- **The exes:** an old **Christian ex**, and a **Jewish ex who became religious and married**. *(Their roles in
+  the story: to be confirmed with the owner.)*
+- **Triggers:** the character has triggers. The player learns them and tries to avoid them, and when one fires it causes
+  unwanted depersonalization, derealization or a switch, **with no control over which** (`TriggerSystem`).
+  The draft list is in `TriggerIdeas.md`, waiting for the owner's edits.
+- **Practices are played:** the character really uses open practices (tarot spreads, runes, crafting charms,
+  sachets, the Wiccan altar) as story actions. Results feed the story; they never give stat buffs.
+- **Art:** the Seven Witches pipeline (Nomad Sculpt → Procreate → **Grab3D** → GLB), with this game's own
+  list and sizes (`3D_PIPELINE.md`, `ART_LIST.md`, `ART_SIZES.md`).
+- **Chapters are the owner's to design.** Claude asks how the chapters should go rather than deciding.
+  §4's Wheel-of-the-Year structure and the Samhain premise below were early drafts and are **superseded**.
+
 ## 1. Vision
 
 **I Am As I Am** is a story-driven 3D exploration game about living with OSDD
@@ -90,7 +116,7 @@ in the inner journal, honouring comfort items, and doing skills *together*.
 
 ---
 
-## 4. Structure: The Wheel of the Year
+## 4. Structure: The Wheel of the Year (SUPERSEDED: early draft, see §0)
 
 The story is split into eight chapters, one for each sabbat of the modern pagan
 **Wheel of the Year**, a widely shared open tradition. Each chapter pairs a seasonal
@@ -116,7 +142,7 @@ Each chapter follows the same loop:
 5. **Ritual moment.** A cozy crafting or reflection beat: dry herbs, carve a rune, draw a card, journal.
 6. **Return.** Use the skill in the outer world. The window widens a little.
 
-### Story premise (draft, co-written) [DECIDE]
+### Story premise (SUPERSEDED draft)
 
 > Wren has lost another afternoon. The kettle is cold, there's a sprig of rosemary on the
 > counter they don't remember buying, and a note in handwriting that is almost theirs:
@@ -131,7 +157,7 @@ system choosing **together** what comes next. Possible endings include deeper
 cooperation, a shared routine, some parts resting, or a choice to keep working with
 their therapist. Every ending is framed as valid.
 
-### Draft cast [DECIDE]
+### Draft cast [DECIDE: the alters still need the owner's confirmation]
 
 These names are placeholders, and none are based on real people. Swap in anything that
 feels right.

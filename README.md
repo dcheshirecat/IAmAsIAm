@@ -1,9 +1,9 @@
 # I Am As I Am
 
-A story-driven 3D Unity game about living with **OSDD** (Other Specified Dissociative
-Disorder). You follow a plural system through one turning of the Wheel of the Year,
-moving between everyday life and **Hearthwood**, an inner world of hearth, herb garden
-and old forest.
+A 3D story game (Android APK and PC) about living with **OSDD** (Other Specified Dissociative
+Disorder). The character was raised Quaker, left organised religion, believes in Wicca,
+and sets out to explore other faiths, one religion per chapter, each guided by someone from
+inside that faith. The player chooses which alter fronts each chapter.
 
 The game teaches **real grounding, mindfulness, DBT and CBT skills**, and weaves in
 **open pagan folk practices** (runes, tarot, herbs, stones, charms) as sensory anchors
@@ -22,15 +22,26 @@ and reflection prompts. These practices are never stat buffs.
 | [Therapeutic Skills Reference](docs/TherapeuticSkillsReference.md) | Every skill with accurate steps, cautions and sources |
 | [Practices & Lore Reference](docs/PracticesLoreReference.md) | How runes, tarot, herbs, crystals and charms are used, with sources |
 | [Technical Architecture](docs/TechnicalArchitecture.md) | Assemblies, data flow, rules enforced in code, input, console notes |
+| [3D pipeline](docs/3D_PIPELINE.md), [Art list](docs/ART_LIST.md), [Art sizes](docs/ART_SIZES.md), [Art hand-over](docs/ART_SWAP.md) | Nomad Sculpt → Procreate → Grab3D → the game, as in Seven Witches |
+| [Story writing](docs/StoryWriting.md) | Writing chapters in Ink: speakers, tags, game functions |
+| [Trigger ideas](docs/TriggerIdeas.md) | DRAFT trigger list for the owner to edit |
+| [Lived experience sources](docs/LivedExperienceSources.md) | How practitioners' voices are sourced (never invented) |
+| [CLAUDE.md](CLAUDE.md) | Decisions log and working notes |
 
 ## Opening the project
 
-1. Install **Unity 6 LTS (6000.0.x)** with the build modules you need.
+1. Install **Unity 6000.6.0f1** (the same as Seven Witches) with the **Android Build Support** module.
 2. In Unity Hub: **Add → Add project from disk**, then pick this folder. Let Unity resolve packages and generate `.meta` files.
 3. When prompted to enable the new Input System backend, choose **Yes** (the editor restarts).
-4. **Create a URP asset**: *Assets → Create → Rendering → URP Asset (with Universal Renderer)*. Assign it in *Project Settings → Graphics* and *Quality*.
+4. Run **IAmAsIAm → Configure Project** (creates and assigns the URP asset), **IAmAsIAm → Compile Story**, then
+   **IAmAsIAm → Rebuild Boot Scene**, and press Play in `Scenes/Boot.unity`.
 5. Run **IAmAsIAm → Validate Data** and **Window → General → Test Runner → EditMode → Run All**.
-6. Commit the generated `.meta` files and `ProjectSettings/`.
+6. Commit the generated `.meta` files, `Story/main.json` and `ProjectSettings/`.
+
+## Building the APK
+- **On GitHub:** Actions → **Build Android** → Run workflow, then download `IAmAsIAm-apk` from the run's Artifacts.
+  It needs the repo secrets `UNITY_LICENSE`, `UNITY_EMAIL`, `UNITY_PASSWORD` (the same values as Seven Witches).
+- **In Unity:** IAmAsIAm → Build Android APK (writes `build/Android/IAmAsIAm.apk`).
 
 ## Running core tests without Unity
 
@@ -40,7 +51,8 @@ The rules and data validation live in an engine-free assembly, so you can run th
 dotnet test tools/CoreVerify/Tests/Tests.csproj
 ```
 
-CI runs this on every push (`.github/workflows/core-tests.yml`).
+The story is checked the same way: `bash tools/InkCheck/check.sh` compiles the Ink story and auto-plays it.
+CI runs both on every push (`.github/workflows/core-tests.yml`).
 
 ## Project layout
 
@@ -59,5 +71,5 @@ tools/CoreVerify/      .NET harness for CI
 
 ## Status
 
-**M0 Scaffold:** docs, data, core systems, tests and the Unity project skeleton are done.
-Next is **M1 Vertical slice** (the Samhain chapter). See the GDD §9.
+Systems, data, the story runner and the APK build are in. **The chapters are being designed with the owner**
+(GDD §0 and CLAUDE.md, "Open"). Until then the story is a placeholder line.
