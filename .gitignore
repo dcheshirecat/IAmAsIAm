@@ -43,3 +43,7 @@ crashlytics-build.properties
 /tools/**/bin/
 /tools/**/obj/
 /tools/InkCheck/.ink-src/
+
+# The compiled story is generated (IAmAsIAm → Compile Story, and every build)
+/Assets/_Project/Story/main.json
+/Assets/_Project/Story/main.json.meta

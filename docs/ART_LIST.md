@@ -58,7 +58,8 @@ Everything is a placeholder until replaced. Tick things off as you go. Sizes: [A
 | [ ] First | `home_kitchen` | The character's flat: kitchen | The Boot scene's placeholder room |
 | [ ] | `home_bedroom`, `home_living` | The flat: bedroom, living room with altar shelf | The Wiccan altar lives here |
 | [ ] | `hearth` | The inner world: cottage kitchen, hearth, apothecary shelves | Frame between chapters |
-| [ ] | `meeting_house` | The mother's Friends church / meeting house (prologue) | Programmed (pulpit, pews, hymn boards) or unprogrammed (benches in a square): ask the owner |
+| [ ] | `friends_church` | A programmed Friends church (pulpit, pews, hymn boards) | Prologue. Both kinds of meeting exist in this world |
+| [ ] | `meeting_house` | An unprogrammed meeting house (plain room, benches facing each other in a square) | Prologue |
 | [ ] | `stone_circle` | Outdoor circle for sabbats | Wicca |
 | [ ] | One place per chapter's tradition (e.g. `synagogue`, `church`, `mosque`, `mandir`, `gurdwara`, `buddhist_centre`, `daoist_temple`, `shinto_shrine`, `bahai_centre`, `druid_grove`, `heathen_hof`) | ⏳ chapters | Accurate layout: check each with a practitioner |
 | [ ] | `daily_<place>` | Daily-life places (work, bus, café, therapist's office…) | ⏳ chapters |

@@ -12,6 +12,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Fails in seconds (not after a long build) if a secret is missing. Values are never printed.
+      - name: Check Unity secrets
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        run: |
+          missing=""
+          [ -n "$UNITY_LICENSE" ] || missing="$missing UNITY_LICENSE"
+          [ -n "$UNITY_EMAIL" ] || missing="$missing UNITY_EMAIL"
+          [ -n "$UNITY_PASSWORD" ] || missing="$missing UNITY_PASSWORD"
+          if [ -n "$missing" ]; then
+            echo "### Missing repo secrets:$missing" >> "$GITHUB_STEP_SUMMARY"
+            echo "Add them in Settings > Secrets and variables > Actions (same values as Seven Witches)." >> "$GITHUB_STEP_SUMMARY"
+            echo "::error::Missing repo secrets:$missing"
+            exit 1
+          fi
+          echo "All three Unity secrets are set."
       # The Unity Android image is larger than the runner's free disk; remove unused preinstalled tools.
       - name: Free disk space
         run: |

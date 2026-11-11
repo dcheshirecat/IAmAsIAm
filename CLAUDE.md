@@ -32,7 +32,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
 - 2026-11-11: **Chapter order:** Prologue = Quaker (backstory) → Prelude = Wicca (more backstory) → Ch1 Christianity (ex 1)
   → Ch2 Judaism (ex 2) → the rest (order to come). `chapters.json`; the knots are placeholders in `Story/chapters_placeholder.ink`.
 - 2026-11-11: **The parent** is a single mother, a Quaker minister, who neglects raising her child in favour of the congregation (`people.json`).
-  "Minister" fits a programmed/pastoral Friends church. Ask the owner which kind of meeting the prologue uses.
+- 2026-11-11: **Both kinds of Quaker meeting exist in this world**: programmed (pastoral Friends churches with ministers, hymns,
+  sermons) and unprogrammed (silent worship). **As much diversity within each religion as possible**: show its different
+  streams, branches and denominations, not one "standard" version (traditions.json `streams`; each stream sourced).
 - 2026-11-11: **The triggers** are the owner's 18 in `triggers.json`. Each STARTS dissociation (random outcome); a **switch only after
   not being able to get away** (switchAfterSeconds, default 20, or `# cue-held:`). The validator forbids Switch as a direct outcome.
 - 2026-11-11: **Grab3D facts** (from grab3d.com/tools/auto-rig, its clips manifest): 7 CC0 clips (idle, walk, run, walk-cartoon,
@@ -42,8 +44,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
 
 ## Open (ask the owner)
 The order of chapters after Judaism, and every chapter's content; the alters (names and roles drafted in
-`docs/SystemMembers.md` for the owner to correct, plus each alter's relationship with faith); programmed or unprogrammed
-meeting for the prologue; the face approach; names for the mother and the exes.
+`docs/SystemMembers.md` for the owner to correct, plus each alter's relationship with faith); the face approach; names for the mother and the exes.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
   orbiting with the right stick / mouse / a drag on the right of the screen. `Runtime/Camera/ShoulderCamera.cs`.
 - 2026-11-11: The owner provides the art **once a playable base exists**: placeholders until then.

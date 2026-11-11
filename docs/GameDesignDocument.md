@@ -15,6 +15,9 @@
 - **One religion per chapter**, in a **fixed order**: **Prologue: Quaker** (the backstory) → **Prelude: Wicca** (more
   backstory) → **Chapter 1: Christianity** (with ex 1) → **Chapter 2: Judaism** (with ex 2) → the rest (order to come).
 - **The parent:** a **single mother, a Quaker minister, who neglects raising her child in favour of the congregation.**
+- **Diversity within each religion:** as much as possible. Every faith is shown through its different streams,
+  branches and denominations, never as one "standard" version. For example, **both kinds of Quaker meeting exist**:
+  programmed Friends churches (ministers, hymns, sermons) and unprogrammed meetings (waiting worship in silence).
 - **The player chooses which alter
   fronts at the start of each chapter**, and the chapter plays differently depending on who it is. Switching or
   dissociating partway through can happen.

@@ -50,7 +50,7 @@ static class InkCheck
                 string firstKnot = File.ReadLines(file).Select(l => l.Trim())
                     .FirstOrDefault(l => l.StartsWith("==="))?.Trim('=', ' ');
                 string wrapper = $"INCLUDE game_api.ink\nINCLUDE Drafts/{Path.GetFileName(file)}\n-> {firstKnot}\n";
-                var draft = Compile(storyDir, wrapper, "Drafts/" + Path.GetFileName(file));
+                var draft = Compile(storyDir, wrapper, "draft-wrapper-" + Path.GetFileName(file));
                 if (draft != null) Play(draft.ToJson(), "Drafts/" + Path.GetFileName(file));
             }
 
