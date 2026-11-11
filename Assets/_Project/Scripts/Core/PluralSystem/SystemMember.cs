@@ -5,7 +5,7 @@ namespace IAmAsIAm.Core.PluralSystem
 {
     /// <summary>
     /// How a part is currently represented. Parts can move from Symbolic to Embodied as trust
-    /// grows. Bramble, for example, starts as thorns and fog. See GameDesignDocument.md §3–4.
+    /// grows. Theresa and Holden, for example, are mostly symbolic. See GameDesignDocument.md §3–4.
     /// </summary>
     public enum MemberPresentation
     {
@@ -25,6 +25,15 @@ namespace IAmAsIAm.Core.PluralSystem
         public string id;
         public string displayName;
         public string pronouns;
+
+        /// <summary>The age this member feels (owner's words, e.g. "26"). Empty when they have none.</summary>
+        public string age;
+
+        /// <summary>This member's relationship with faith (owner's words, e.g. "ex-Quaker, current Wiccan").</summary>
+        public string faith;
+
+        /// <summary>Kept hidden from the character (the other parts) until later in the story.</summary>
+        public bool hiddenUntilLater;
 
         /// <summary>A free-text role ("caretaker", "protector", "little"). Descriptive, never a stereotype.</summary>
         public string role;

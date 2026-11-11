@@ -24,3 +24,39 @@
 === ch4_islam ===
 (Chapter 4: Islam. Not written yet.)
 -> END
+
+=== ch5_hinduism ===
+(Chapter 5: Hinduism. Not written yet.)
+-> END
+
+=== ch6_sikhism ===
+(Chapter 6: Sikhism. Not written yet.)
+-> END
+
+=== ch7_daoism ===
+(Chapter 7: Daoism. Not written yet.)
+-> END
+
+=== ch8_druidry ===
+(Chapter 8: Druidry. Not written yet.)
+-> END
+
+=== ch9_humanism ===
+(Chapter 9: Humanism. Not written yet.)
+-> END
+
+=== ch10_unitarian_universalism ===
+(Chapter 10: Unitarian Universalism. Not written yet.)
+-> END
+
+=== ch11_jainism ===
+(Chapter 11: Jainism. Not written yet.)
+-> END
+
+=== ch12_hellenic_polytheism ===
+(Chapter 12: Hellenic polytheism. Not written yet.)
+-> END
+
+=== ch13_eastern_orthodox ===
+(Chapter 13: Eastern Orthodox Christianity. Not written yet.)
+-> END

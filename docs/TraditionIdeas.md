@@ -1,4 +1,8 @@
-# Ideas for chapters after Buddhism and Islam (for the owner to choose and order)
+# Ideas for chapters after Buddhism and Islam
+
+**Status (2026-11-11):** the owner chose Hinduism, Sikhism, Daoism, Druidry, Humanism, Unitarian Universalism, Jainism,
+Hellenic polytheism and Eastern Orthodox Christianity (chapters 5–13 in `chapters.json`). The new four are now researched in
+`traditions.json`, with practitioner testimony still to gather.
 
 Order so far: Prologue Quaker → Prelude Wicca → 1 Christianity → 2 Judaism → 3 Buddhism → 4 Islam → ?
 

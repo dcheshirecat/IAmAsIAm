@@ -1010,6 +1010,297 @@
       ]
     },
     {
+      "id": "unitarian-universalism",
+      "name": "Unitarian Universalism",
+      "family": "Liberal religious",
+      "overview": "A liberal, non-creedal religion formed in 1961 in North America when the American Unitarian Association and the Universalist Church of America merged into the Unitarian Universalist Association (UUA). Congregations hold together people of many beliefs: humanist, theist, Christian, Buddhist, Jewish, pagan and more. There is no required creed; members covenant to shared values instead.",
+      "coreBeliefs": [
+        "No required creed: each person's search for truth and meaning is respected.",
+        "Shared values in the UUA's bylaws (Article II, revised 2024), centred on love: interdependence, pluralism, justice, equity, transformation and generosity. Many congregations still use the earlier Seven Principles."
+      ],
+      "keyPractices": [
+        "Sunday services with readings from many traditions, music and a sermon",
+        "Lighting the flaming chalice, the UU symbol, at the start of worship",
+        "Sharing 'joys and concerns' as a congregation",
+        "Social justice work",
+        "Small-group ministry and religious education for all ages",
+        "Earth-centred and pagan circles within some congregations (CUUPS, the Covenant of UU Pagans, founded 1985)"
+      ],
+      "textsAndSources": [
+        "No single scripture: readings come from world religions, science, poetry and personal experience",
+        "Singing the Living Tradition (hymnal)"
+      ],
+      "holyDays": [
+        "Flower Communion (begun by Norbert Čapek in Prague, 1923)",
+        "Water Communion",
+        "Many congregations also mark Christmas, Easter, the solstices, Passover or Diwali"
+      ],
+      "openness": "OpenToAll",
+      "opennessNote": "Anyone may attend services and take part. Many members come from other faiths or none, and many are former members of other religions.",
+      "visitorEtiquette": [
+        "You can sit anywhere and join in as much or as little as you like.",
+        "There's often a coffee hour after the service where newcomers are welcomed."
+      ],
+      "tryInGame": [
+        {
+          "id": "uu-chalice",
+          "name": "Lighting a chalice",
+          "description": "Lighting a small flame with a short reading, as UU services begin.",
+          "steps": [
+            "Set a candle in a cup or bowl.",
+            "Read a short chalice-lighting words, or say what you hope for today.",
+            "Light the flame and sit with it for a moment."
+          ],
+          "appropriateForNonMembers": true,
+          "respectNote": "UU congregations invite everyone, members or not, to light the chalice at home and in small groups.",
+          "cautions": [
+            "Never leave a flame unattended."
+          ]
+        }
+      ],
+      "mentalHealthNotes": [
+        "Many UU congregations run mental-health and disability-inclusion ministries."
+      ],
+      "commonMisconceptions": [
+        "It isn't 'believe anything you like' with no commitments: members covenant to shared values.",
+        "It isn't only Christian, though it grew out of liberal Christianity."
+      ],
+      "livedExperiences": [
+        {
+          "id": "unitarian-universalism-1",
+          "topic": "Coming to UU after leaving another religion",
+          "status": "awaiting",
+          "sourceType": "",
+          "text": ""
+        },
+        {
+          "id": "unitarian-universalism-2",
+          "topic": "Being a pagan in a UU congregation",
+          "status": "awaiting",
+          "sourceType": "",
+          "text": ""
+        }
+      ],
+      "references": [
+        "Unitarian Universalist Association. Article II of the UUA Bylaws (adopted 2024). uua.org",
+        "Harris, M. W. (2004). Historical Dictionary of Unitarian Universalism. Scarecrow Press.",
+        "Covenant of Unitarian Universalist Pagans (CUUPS). cuups.org"
+      ]
+    },
+    {
+      "id": "jainism",
+      "name": "Jainism (Jain Dharma)",
+      "family": "Dharmic",
+      "overview": "An ancient religion of India. Jains follow the teachings of the 24 Tirthankaras ('ford-makers'), of whom Mahavira (6th–5th century BCE) is the most recent. The goal is to free the soul (jiva) from karma through right faith, right knowledge and right conduct. The two main traditions are Digambara and Svetambara, and Svetambaras include image-worshipping (Murtipujaka) and non-image (Sthanakvasi and Terapanthi) streams.",
+      "coreBeliefs": [
+        "Ahimsa: non-violence towards every living being, in action, speech and thought",
+        "Anekantavada: truth has many sides, so no single viewpoint holds all of it",
+        "Aparigraha: non-attachment and limiting possessions",
+        "Every soul can become liberated through its own effort"
+      ],
+      "keyPractices": [
+        "Samayika: a period of meditation for equanimity, traditionally 48 minutes",
+        "Vegetarian diet; many Jains also avoid root vegetables and eating after sunset",
+        "Temple worship (puja) of the Tirthankaras in image-worshipping streams",
+        "Fasting, especially during Paryushana",
+        "Asking forgiveness of all beings ('Micchami Dukkadam')"
+      ],
+      "textsAndSources": [
+        "The Agamas (Svetambara canon)",
+        "Tattvartha Sutra (accepted by all Jain traditions)"
+      ],
+      "holyDays": [
+        "Paryushana (Svetambara) and Das Lakshana (Digambara), ending with Samvatsari, the day of forgiveness",
+        "Mahavir Jayanti",
+        "Diwali, marking Mahavira's liberation"
+      ],
+      "openness": "WelcomeToLearnAndVisit",
+      "opennessNote": "Jain temples (derasars) welcome respectful visitors, and Jain teachings and meditation are shared openly. Some rituals inside the temple are for Jains.",
+      "visitorEtiquette": [
+        "Remove shoes, and leave leather items outside.",
+        "Don't bring food or drink into the temple.",
+        "Dress modestly, and ask before taking photos."
+      ],
+      "tryInGame": [
+        {
+          "id": "jain-forgiveness",
+          "name": "Asking and offering forgiveness",
+          "description": "The practice at the end of Paryushana: asking forgiveness of everyone you may have hurt, knowingly or not, and forgiving in return.",
+          "steps": [
+            "Think of the people (and beings) you may have hurt this year, in action, word or thought.",
+            "Say, or write, 'Micchami Dukkadam': may my wrongdoing be forgiven.",
+            "Let go of a grudge you're holding, if you're ready. You don't have to be."
+          ],
+          "appropriateForNonMembers": true,
+          "respectNote": "Jains commonly share Micchami Dukkadam with friends of every faith.",
+          "cautions": [
+            "Forgiveness here is never a demand to reconcile with someone who hurt you."
+          ]
+        }
+      ],
+      "mentalHealthNotes": [
+        "Anekantavada, holding many viewpoints as partly true, resembles the DBT idea of dialectics."
+      ],
+      "commonMisconceptions": [
+        "Jainism isn't a branch of Hinduism or Buddhism; it is its own religion.",
+        "Not all Jain monastics are 'sky-clad': that is one Digambara practice."
+      ],
+      "livedExperiences": [
+        {
+          "id": "jainism-1",
+          "topic": "Living ahimsa day to day",
+          "status": "awaiting",
+          "sourceType": "",
+          "text": ""
+        }
+      ],
+      "references": [
+        "Dundas, P. (2002). The Jains (2nd ed.). Routledge.",
+        "Jaini, P. S. (1979). The Jaina Path of Purification. University of California Press.",
+        "Long, J. D. (2009). Jainism: An Introduction. I.B. Tauris."
+      ]
+    },
+    {
+      "id": "hellenic-polytheism",
+      "name": "Hellenic polytheism (Hellenismos)",
+      "family": "Modern Pagan",
+      "overview": "A modern revival of the worship of the ancient Greek gods. Some practitioners are reconstructionist (rebuilding practice closely from ancient sources), while others are more eclectic. Organised groups include Hellenion in the US and YSEE (the Supreme Council of Ethnic Hellenes) in Greece; many people practise alone at a household shrine.",
+      "coreBeliefs": [
+        "Many gods, honoured as real beings: the Olympians, local and household gods, heroes and ancestors",
+        "Reciprocity (kharis): a relationship of gifts and gratitude between people and gods",
+        "Virtues such as hospitality (xenia), piety (eusebeia) and moderation (sophrosyne)"
+      ],
+      "keyPractices": [
+        "Libations (spondai) of wine, water, milk or honey",
+        "Purifying with lustral water (khernips) before ritual",
+        "Prayer with raised hands, and offerings at a household shrine",
+        "Monthly observances such as Noumenia (the new moon)",
+        "Festivals from the ancient Athenian (Attic) calendar"
+      ],
+      "textsAndSources": [
+        "Homeric Hymns",
+        "Hesiod's Theogony and Works and Days",
+        "The Orphic Hymns",
+        "Ancient writers such as Plato and Plutarch, read as sources rather than scripture"
+      ],
+      "holyDays": [
+        "Noumenia (each new moon)",
+        "Anthesteria",
+        "The Panathenaia",
+        "Other Attic-calendar festivals, depending on the group"
+      ],
+      "openness": "OpenToAll",
+      "opennessNote": "Most groups welcome anyone who comes respectfully. Some Greek groups emphasise Greek ethnic heritage; the game shows inclusive groups.",
+      "visitorEtiquette": [
+        "Ask before joining a group ritual, and follow the purification the group uses.",
+        "Offerings are given, not taken back."
+      ],
+      "tryInGame": [
+        {
+          "id": "hellenic-libation",
+          "name": "A simple libation",
+          "description": "Pouring a small offering with a short prayer, the most basic Hellenic act of worship.",
+          "steps": [
+            "Wash your hands (khernips: water, sometimes with a little salt).",
+            "Pour a little water, milk or wine into a bowl or onto the earth.",
+            "Say a few words of thanks to a god, the household or the ancestors."
+          ],
+          "appropriateForNonMembers": true,
+          "respectNote": "Libations are shared openly by Hellenic polytheists as the starting point of practice.",
+          "cautions": []
+        }
+      ],
+      "mentalHealthNotes": [],
+      "commonMisconceptions": [
+        "It isn't role-play or mythology study: it's lived worship.",
+        "The myths aren't treated as literal scripture."
+      ],
+      "livedExperiences": [
+        {
+          "id": "hellenic-polytheism-1",
+          "topic": "Starting a household shrine",
+          "status": "awaiting",
+          "sourceType": "",
+          "text": ""
+        }
+      ],
+      "references": [
+        "Burkert, W. (1985). Greek Religion. Harvard University Press.",
+        "Hellenion. hellenion.org"
+      ]
+    },
+    {
+      "id": "eastern-orthodox",
+      "name": "Eastern Orthodox Christianity",
+      "family": "Abrahamic",
+      "overview": "A communion of self-governing (autocephalous) churches, among them the Ecumenical Patriarchate of Constantinople and the Greek, Russian, Serbian, Romanian, Antiochian and Georgian churches. In the US there are several jurisdictions, including the Greek Orthodox Archdiocese, the Antiochian Archdiocese and the Orthodox Church in America (OCA). They share the same faith and worship, centred on the Divine Liturgy.",
+      "coreBeliefs": [
+        "The Holy Trinity, and Jesus Christ as God made human",
+        "Theosis: the human calling to share in God's life",
+        "Holy Tradition, including scripture, the creeds and the seven Ecumenical Councils"
+      ],
+      "keyPractices": [
+        "The Divine Liturgy, usually that of St John Chrysostom, largely sung",
+        "Icons, venerated (not worshipped) as windows to the holy",
+        "Lighting candles in church",
+        "The Jesus Prayer: 'Lord Jesus Christ, Son of God, have mercy on me'",
+        "Fasting seasons, especially Great Lent"
+      ],
+      "textsAndSources": [
+        "The Bible (including the Septuagint Old Testament)",
+        "The Philokalia",
+        "The Church Fathers"
+      ],
+      "holyDays": [
+        "Pascha (Easter), the feast of feasts, usually dated by the Julian calculation",
+        "Nativity",
+        "Theophany",
+        "Dormition of the Theotokos"
+      ],
+      "openness": "OpenToAll",
+      "opennessNote": "Visitors are welcome at services. Holy Communion is for Orthodox Christians only, though in many parishes visitors may receive the blessed bread (antidoron) at the end.",
+      "visitorEtiquette": [
+        "Dress modestly. In some parishes women cover their hair; ask if unsure.",
+        "Stand during much of the service (many churches have some seats).",
+        "Don't come forward for Communion unless you're Orthodox."
+      ],
+      "tryInGame": [
+        {
+          "id": "orthodox-candle",
+          "name": "Lighting a candle",
+          "description": "Lighting a beeswax candle on arrival in church, often with a prayer for someone.",
+          "steps": [
+            "Take a candle near the entrance (there's usually a small donation box).",
+            "Light it from another candle.",
+            "Place it in the stand and say a short prayer or think of someone."
+          ],
+          "appropriateForNonMembers": true,
+          "respectNote": "Visitors are commonly welcome to light candles in Orthodox churches.",
+          "cautions": [
+            "Candlelight and incense can be strong. It's fine to step outside."
+          ]
+        }
+      ],
+      "mentalHealthNotes": [],
+      "commonMisconceptions": [
+        "Orthodox Christians don't worship icons; they venerate them.",
+        "Orthodoxy isn't 'Catholic without the Pope': the churches have been separate since 1054 and differ in many ways."
+      ],
+      "livedExperiences": [
+        {
+          "id": "eastern-orthodox-1",
+          "topic": "Coming to Orthodoxy from another church",
+          "status": "awaiting",
+          "sourceType": "",
+          "text": ""
+        }
+      ],
+      "references": [
+        "Ware, T. (Kallistos) (2015). The Orthodox Church: An Introduction to Eastern Christianity (new ed.). Penguin.",
+        "McGuckin, J. A. (2008). The Orthodox Church: An Introduction to its History, Doctrine and Spiritual Culture. Wiley-Blackwell."
+      ]
+    },
+    {
       "id": "indigenous-closed",
       "name": "A note on closed Indigenous traditions",
       "family": "Closed traditions",

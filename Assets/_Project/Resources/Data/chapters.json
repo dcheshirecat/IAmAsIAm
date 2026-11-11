@@ -78,6 +78,123 @@
         "religious-content"
       ],
       "summary": "Islam."
+    },
+    {
+      "id": "ch5-hinduism",
+      "number": 6,
+      "sabbat": "",
+      "title": "Chapter 5: Hinduism (title to come)",
+      "inkKnot": "ch5_hinduism",
+      "featuredMemberId": "",
+      "skillFamily": "",
+      "contentTags": [
+        "religious-content"
+      ],
+      "summary": "Hinduism."
+    },
+    {
+      "id": "ch6-sikhism",
+      "number": 7,
+      "sabbat": "",
+      "title": "Chapter 6: Sikhism (title to come)",
+      "inkKnot": "ch6_sikhism",
+      "featuredMemberId": "",
+      "skillFamily": "",
+      "contentTags": [
+        "religious-content"
+      ],
+      "summary": "Sikhism."
+    },
+    {
+      "id": "ch7-daoism",
+      "number": 8,
+      "sabbat": "",
+      "title": "Chapter 7: Daoism (title to come)",
+      "inkKnot": "ch7_daoism",
+      "featuredMemberId": "",
+      "skillFamily": "",
+      "contentTags": [
+        "religious-content"
+      ],
+      "summary": "Daoism."
+    },
+    {
+      "id": "ch8-druidry",
+      "number": 9,
+      "sabbat": "",
+      "title": "Chapter 8: Druidry (title to come)",
+      "inkKnot": "ch8_druidry",
+      "featuredMemberId": "",
+      "skillFamily": "",
+      "contentTags": [
+        "religious-content"
+      ],
+      "summary": "Druidry."
+    },
+    {
+      "id": "ch9-humanism",
+      "number": 10,
+      "sabbat": "",
+      "title": "Chapter 9: Humanism (title to come)",
+      "inkKnot": "ch9_humanism",
+      "featuredMemberId": "",
+      "skillFamily": "",
+      "contentTags": [
+        "religious-content"
+      ],
+      "summary": "Humanism."
+    },
+    {
+      "id": "ch10-unitarian-universalism",
+      "number": 11,
+      "sabbat": "",
+      "title": "Chapter 10: Unitarian Universalism (title to come)",
+      "inkKnot": "ch10_unitarian_universalism",
+      "featuredMemberId": "",
+      "skillFamily": "",
+      "contentTags": [
+        "religious-content"
+      ],
+      "summary": "Unitarian Universalism."
+    },
+    {
+      "id": "ch11-jainism",
+      "number": 12,
+      "sabbat": "",
+      "title": "Chapter 11: Jainism (title to come)",
+      "inkKnot": "ch11_jainism",
+      "featuredMemberId": "",
+      "skillFamily": "",
+      "contentTags": [
+        "religious-content"
+      ],
+      "summary": "Jainism."
+    },
+    {
+      "id": "ch12-hellenic-polytheism",
+      "number": 13,
+      "sabbat": "",
+      "title": "Chapter 12: Hellenic polytheism (title to come)",
+      "inkKnot": "ch12_hellenic_polytheism",
+      "featuredMemberId": "",
+      "skillFamily": "",
+      "contentTags": [
+        "religious-content"
+      ],
+      "summary": "Hellenic polytheism."
+    },
+    {
+      "id": "ch13-eastern-orthodox",
+      "number": 14,
+      "sabbat": "",
+      "title": "Chapter 13: Eastern Orthodox Christianity (title to come)",
+      "inkKnot": "ch13_eastern_orthodox",
+      "featuredMemberId": "",
+      "skillFamily": "",
+      "contentTags": [
+        "religious-content"
+      ],
+      "summary": "Eastern Orthodox Christianity."
     }
   ]
 }

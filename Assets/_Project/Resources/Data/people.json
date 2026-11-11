@@ -1,5 +1,5 @@
 {
-  "sourceNote": "Named people outside the system. Only what the owner has decided is filled in; everything else is left empty to ask about.",
+  "sourceNote": "Named people outside the system. memberLinks are the owner's: which alters have a special link to each person.",
   "people": [
     {
       "id": "mother",
@@ -9,6 +9,28 @@
       "description": "Neglects raising her child in favour of the congregation.",
       "chapterIds": [
         "prologue-quaker"
+      ],
+      "memberLinks": [
+        {
+          "memberId": "maya",
+          "link": "sees Sarah as their mother"
+        },
+        {
+          "memberId": "nina",
+          "link": "sees Sarah as their mother"
+        },
+        {
+          "memberId": "lily",
+          "link": "sees Sarah as their mother"
+        },
+        {
+          "memberId": "heather",
+          "link": "sees Sarah as their mother"
+        },
+        {
+          "memberId": "jacob",
+          "link": "sees Sarah as their mother"
+        }
       ]
     },
     {
@@ -19,6 +41,12 @@
       "description": "",
       "chapterIds": [
         "ch1-christianity"
+      ],
+      "memberLinks": [
+        {
+          "memberId": "axel",
+          "link": "dated Mark, as a trans man"
+        }
       ]
     },
     {
@@ -29,12 +57,18 @@
       "description": "",
       "chapterIds": [
         "ch2-judaism"
+      ],
+      "memberLinks": [
+        {
+          "memberId": "maya",
+          "link": "dated Adeena"
+        }
       ]
     },
     {
       "id": "ex_jewish_spouse",
-      "name": "",
-      "role": "Ex 2's spouse",
+      "name": "Michael",
+      "role": "Adeena's spouse",
       "tradition": "judaism",
       "description": "",
       "chapterIds": [

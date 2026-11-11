@@ -46,12 +46,17 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   `system_members.json`, `docs/SystemMembers.md`. Maya fronts at the start.
 - 2026-11-11: **People:** the mother is **Sarah**, minister of a **programmed Friends church in the USA**; ex 1 **Mark** (Christian);
   ex 2 **Adeena** (Jewish, became religious and married).
-- 2026-11-11: **Order after Judaism:** Ch3 **Buddhism**, Ch4 **Islam**, then more (ideas in `docs/TraditionIdeas.md` for the owner).
+- 2026-11-11: **Chapter order after Judaism:** 3 Buddhism, 4 Islam, 5 Hinduism, 6 Sikhism, 7 Daoism, 8 Druidry, 9 Humanism,
+  10 Unitarian Universalism, 11 Jainism, 12 Hellenic polytheism, 13 Eastern Orthodox Christianity (the order the owner listed them;
+  confirm). Shinto, Bahá'í and Heathenry stay in the codex only.
+- 2026-11-11: **Alters' pronouns, ages and faith** are the owner's (`docs/SystemMembers.md`). Heather's faith is hidden from the
+  character until later (`hiddenUntilLater`). Theresa has no pronouns (use the name). Maya holds the job; Izzy runs the lost-time days.
+  Links: Maya, Nina, Lily, Heather and Jacob see Sarah as their mother; Axel dated Mark as a trans man; Maya dated Adeena,
+  who married **Michael**.
 - 2026-11-11: **Faces:** face paintings on the 3D models in the world, **2D portraits** beside the dialogue box.
 
 ## Open (ask the owner)
-The chapters after Islam, and every chapter's content; each alter's pronouns, age and relationship with faith
-(`docs/SystemMembers.md`); Adeena's spouse's name.
+Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
   orbiting with the right stick / mouse / a drag on the right of the screen. `Runtime/Camera/ShoulderCamera.cs`.
 - 2026-11-11: The owner provides the art **once a playable base exists**: placeholders until then.
