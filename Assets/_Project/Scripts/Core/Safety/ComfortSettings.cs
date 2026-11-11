@@ -19,11 +19,13 @@ namespace IAmAsIAm.Core.Safety
         public const string RaisedVoices = "raised-voices";
         public const string SelfHarmReference = "self-harm-reference";
         public const string Panic = "panic";
+        /// <summary>Scenes exploring religion with the teacher. Skippable for anyone with religious trauma.</summary>
+        public const string ReligiousContent = "religious-content";
 
         public static readonly IReadOnlyList<string> All = new[]
         {
             TimeLoss, Depersonalization, Derealization, InvoluntarySwitch, TraumaReference,
-            ChildhoodReference, MedicalSetting, RaisedVoices, SelfHarmReference, Panic,
+            ChildhoodReference, MedicalSetting, RaisedVoices, SelfHarmReference, Panic, ReligiousContent,
         };
     }
 

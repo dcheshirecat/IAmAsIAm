@@ -1,0 +1,32 @@
+{
+  "spreads": [
+    {
+      "id": "daily-card", "name": "A card for today", "onePerPart": false,
+      "description": "One card as a prompt for the day.",
+      "positions": [ { "id": "today", "label": "Today", "question": "What might today ask of you?" } ]
+    },
+    {
+      "id": "three-card", "name": "What was, what is, what could help", "onePerPart": false,
+      "description": "A gentle reframe of the classic past-present-future spread. It looks for help rather than predictions.",
+      "positions": [
+        { "id": "was", "label": "What was", "question": "What has brought you here?" },
+        { "id": "is", "label": "What is", "question": "What is true right now?" },
+        { "id": "help", "label": "What could help", "question": "What small thing could help?" }
+      ]
+    },
+    {
+      "id": "inner-council", "name": "The inner council", "onePerPart": true,
+      "description": "Each part who is present draws one card for themself, and the system talks about them together at the Meeting Table.",
+      "positions": []
+    },
+    {
+      "id": "turning-wheel", "name": "The turning wheel", "onePerPart": false,
+      "description": "Drawn at each sabbat to mark the season.",
+      "positions": [
+        { "id": "release", "label": "To release", "question": "What is this season asking you to set down?" },
+        { "id": "keep", "label": "To keep", "question": "What do you want to carry with you?" },
+        { "id": "welcome", "label": "To welcome", "question": "What would you like to grow?" }
+      ]
+    }
+  ]
+}

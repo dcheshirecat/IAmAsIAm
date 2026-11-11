@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using IAmAsIAm.Core.PluralSystem;
 using IAmAsIAm.Core.Safety;
 using IAmAsIAm.Core.Skills;
+using IAmAsIAm.Core.Story;
 
 namespace IAmAsIAm.Core.Save
 {
@@ -33,6 +34,13 @@ namespace IAmAsIAm.Core.Save
         public List<string> learnedSkillIds = new List<string>();
         public List<string> collectedPracticeIds = new List<string>();
         public List<string> storyFlags = new List<string>();
+
+        /// <summary>Ink's own state (story position, variables, visit counts) as JSON.</summary>
+        public string inkStateJson;
+        public List<ChoiceRecord> choices = new List<ChoiceRecord>();
+        public List<string> exploredTraditionIds = new List<string>();
+        public List<string> triedPracticeIds = new List<string>();
+        public List<string> craftedItemIds = new List<string>();
     }
 
     /// <summary>

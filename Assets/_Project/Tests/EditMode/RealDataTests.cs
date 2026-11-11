@@ -5,6 +5,8 @@ using IAmAsIAm.Core.PluralSystem;
 using IAmAsIAm.Core.Practices;
 using IAmAsIAm.Core.Safety;
 using IAmAsIAm.Core.Skills;
+using IAmAsIAm.Core.Story;
+using IAmAsIAm.Core.Traditions;
 using NUnit.Framework;
 
 namespace IAmAsIAm.Tests
@@ -40,6 +42,9 @@ namespace IAmAsIAm.Tests
             Skills = Load<SkillCatalogData>("skills.json"),
             Members = Load<SystemMembersData>("system_members.json"),
             Crisis = Load<CrisisResourceData>("crisis_resources.json"),
+            Spreads = Load<TarotSpreadData>("tarot_spreads.json"),
+            Chapters = Load<ChapterData>("chapters.json"),
+            Traditions = Load<TraditionData>("traditions.json"),
         };
 
         [Test]
@@ -62,6 +67,10 @@ namespace IAmAsIAm.Tests
 
             var codex = new SkillCodex(b.Skills.skills);
             Assert.That(codex.Get("paced-breathing").Direction, Is.EqualTo(Core.Mind.SkillDirection.LowersArousal));
+
+            var traditions = new TraditionJournal(b.Traditions.traditions);
+            Assert.That(traditions.Get("humanism"), Is.Not.Null, "Choosing no religion must always be a path.");
+            Assert.That(traditions.TryPractice("indigenous-closed", "anything"), Is.False);
         }
     }
 }

@@ -1,0 +1,417 @@
+{
+  "sourceNote": "Facts are summarised from the listed references and must be checked by a practitioner reader from each tradition before ship. Lived experiences come ONLY from consented, reviewed interviews (docs/LivedExperienceInterviews.md). Empty slots are never filled with invented words. Traditions are diverse inside themselves; every entry describes common ground, not every community.",
+  "traditions": [
+    {
+      "id": "buddhism", "name": "Buddhism", "family": "Dharmic",
+      "overview": "Founded on the teachings of Siddhartha Gautama, the Buddha, in northern India around the 5th century BCE. Major traditions include Theravada, Mahayana (including Zen and Pure Land) and Vajrayana.",
+      "coreBeliefs": ["The Four Noble Truths: suffering exists, it has causes (craving and clinging), it can end, and the Noble Eightfold Path leads there.", "Impermanence (anicca) and non-self (anattā): nothing, including the self, is fixed and separate.", "Karma and rebirth, understood in different ways across traditions.", "Compassion (karuṇā) and loving-kindness (mettā) toward all beings."],
+      "keyPractices": ["Meditation (calm abiding and insight)", "Ethical precepts (e.g. not harming)", "Chanting and devotion", "Generosity (dāna)", "Study of the dharma"],
+      "textsAndSources": ["The Pāli Canon (Tipiṭaka)", "Mahayana sūtras, e.g. the Heart Sūtra and Lotus Sūtra", "Tibetan and Chinese canons"],
+      "holyDays": ["Vesak (the Buddha's birth, awakening and death; dates vary)", "Uposatha observance days", "Losar (Tibetan New Year)"],
+      "openness": "OpenToAll",
+      "opennessNote": "Most Buddhist centres welcome anyone to meditate and learn without converting. Some Vajrayana practices are only given by a teacher after an empowerment (initiation), so the game never stages those.",
+      "visitorEtiquette": ["Remove shoes before shrine rooms.", "Don't point your feet at the shrine or at teachers.", "Ask before photographing people or images."],
+      "tryInGame": [
+        {
+          "id": "metta", "name": "Loving-kindness (mettā) practice", "description": "Silently offering good wishes, first to yourself, then outward.",
+          "steps": ["Sit comfortably with your eyes open or lowered.", "Silently say: 'May I be safe. May I be well. May I be at ease.'", "Offer the same to someone you love.", "Then to someone neutral.", "Then, if it feels okay, to all beings. In this game, that can include every part of you."],
+          "appropriateForNonMembers": true,
+          "respectNote": "Mettā is taught openly by Buddhist teachers to anyone, of any faith or none.",
+          "cautions": ["For some trauma survivors, offering kindness to themselves first feels hard. It's fine to start with a pet or a friend.", "Keep your eyes open and sessions short if your mind starts to drift away."]
+        },
+        {
+          "id": "walking-meditation", "name": "Walking meditation", "description": "Walking slowly, feeling each step.",
+          "steps": ["Choose a short path, about ten steps.", "Walk slowly, noticing the lift, the move and the placing of each foot.", "At the end, pause, turn and walk back.", "When the mind wanders, return to the feet."],
+          "appropriateForNonMembers": true,
+          "respectNote": "Walking meditation is widely taught openly, especially in Theravada and Zen centres.",
+          "cautions": ["Walking practice is often easier than sitting for people who dissociate, because movement keeps you in the body."]
+        }
+      ],
+      "mentalHealthNotes": ["Mindfulness-based therapies (MBSR, MBCT, and DBT's mindfulness skills) draw on Buddhist meditation.", "Intensive meditation, such as long silent retreats, can bring up trauma or increase depersonalization in some people (Lindahl et al., 2017). Trauma-sensitive approaches suggest eyes-open practice, shorter sessions, and anchors other than the breath (Treleaven, 2018)."],
+      "commonMisconceptions": ["Not all Buddhists meditate; devotion and ethics are central for many.", "'Non-self' doesn't mean you don't matter."],
+      "livedExperiences": [
+        { "id": "buddhism-1", "topic": "Practising meditation while living with dissociation", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" },
+        { "id": "buddhism-2", "topic": "What 'non-self' means to a plural Buddhist", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["Harvey, P. (2013). An Introduction to Buddhism (2nd ed.). Cambridge University Press.", "Treleaven, D. A. (2018). Trauma-Sensitive Mindfulness. W. W. Norton.", "Lindahl, J. R., et al. (2017). The varieties of contemplative experience. PLoS ONE, 12(5)."]
+    },
+    {
+      "id": "christianity", "name": "Christianity", "family": "Abrahamic",
+      "overview": "Centred on the life, death and resurrection of Jesus of Nazareth. The largest branches are Catholic, Orthodox and Protestant, with very many denominations.",
+      "coreBeliefs": ["One God, understood by most Christians as the Trinity: Father, Son and Holy Spirit.", "Jesus as the Son of God, whose death and resurrection bring reconciliation with God.", "Love of God and neighbour as the greatest commandments."],
+      "keyPractices": ["Prayer and worship", "Sacraments such as baptism and the Eucharist (Communion)", "Reading scripture", "Service and charity", "Contemplative practices (lectio divina, centering prayer)"],
+      "textsAndSources": ["The Bible (Hebrew Scriptures / Old Testament and New Testament)", "Creeds and the traditions of each church"],
+      "holyDays": ["Christmas", "Lent and Easter", "Pentecost", "St Brigid's Day (1 February), especially in Ireland"],
+      "openness": "OpenToAll",
+      "opennessNote": "Anyone is welcome at most services. Some churches reserve Communion for baptised members, so visitors can usually come forward for a blessing instead, or stay seated.",
+      "visitorEtiquette": ["It's always fine to sit quietly and not join in.", "If unsure about Communion, stay seated or cross your arms over your chest to ask for a blessing, where that's the custom."],
+      "tryInGame": [
+        {
+          "id": "lectio-divina", "name": "Lectio divina (sacred reading)", "description": "A slow, prayerful way of reading a short passage, from the medieval monastic tradition.",
+          "steps": ["Read a short passage slowly (lectio).", "Notice a word or phrase that stands out, and turn it over (meditatio).", "Respond in your own words, or simply sit with it (oratio).", "Rest in silence (contemplatio)."],
+          "appropriateForNonMembers": true,
+          "respectNote": "Many churches and retreat houses teach lectio divina openly, including to seekers.",
+          "cautions": []
+        }
+      ],
+      "mentalHealthNotes": ["Many churches openly support psychiatric and psychological care alongside faith.", "Some communities have interpreted dissociative symptoms as spiritual attack. Clinicians warn that deliverance or exorcism aimed at parts can be deeply harmful, and the teacher in this game always says so.", "Some players carry religious trauma, so these scenes are tagged and skippable."],
+      "commonMisconceptions": ["Christianity isn't one thing: beliefs and practices vary widely between churches.", "Brigid of Kildare is both a Christian saint and connected with an earlier Irish goddess. Many people hold both."],
+      "livedExperiences": [
+        { "id": "christianity-1", "topic": "Faith, therapy and a dissociative diagnosis", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" },
+        { "id": "christianity-2", "topic": "Returning to church after religious harm", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["MacCulloch, D. (2009). A History of Christianity. Allen Lane.", "Keating, T. (1986). Open Mind, Open Heart. Continuum."]
+    },
+    {
+      "id": "quakers", "name": "Quakers (Religious Society of Friends)", "family": "Abrahamic",
+      "overview": "A Christian-rooted movement from 17th-century England. Many Quakers today are Christian, and some are universalist or nontheist.",
+      "coreBeliefs": ["'There is that of God in everyone.'", "Testimonies to simplicity, peace, integrity, community, equality and sustainability."],
+      "keyPractices": ["Meeting for worship: gathering in expectant silence, where anyone may stand and offer 'ministry' if moved", "Decisions made by seeking unity, not by voting"],
+      "textsAndSources": ["Quaker Faith & Practice (Britain Yearly Meeting)", "The Bible, for many Quakers"],
+      "holyDays": ["Traditionally none: every day is held equally sacred"],
+      "openness": "OpenToAll",
+      "opennessNote": "Anyone may attend meeting for worship. No one is asked to believe anything in order to sit in the silence.",
+      "visitorEtiquette": ["Arrive a little early and sit anywhere.", "You don't have to speak. Most meetings are mostly silent.", "Meeting ends when someone shakes hands."],
+      "tryInGame": [
+        {
+          "id": "quaker-silence", "name": "Sitting in expectant silence", "description": "Shared silence, waiting without an agenda.",
+          "steps": ["Sit comfortably.", "Let the room settle into quiet.", "Wait, without trying to make anything happen.", "If words rise that feel like they're for everyone, you may share them. Most people don't."],
+          "appropriateForNonMembers": true,
+          "respectNote": "Quaker meetings explicitly welcome attenders who are not members.",
+          "cautions": ["Long silence can feel unsafe for some people. It's okay to open your eyes, hold a grounding object, or step out."]
+        }
+      ],
+      "mentalHealthNotes": ["Quakers founded The Retreat in York (1796), which pioneered 'moral treatment': humane care for people with mental illness."],
+      "commonMisconceptions": ["Quakers aren't Amish, and most don't wear distinctive dress."],
+      "livedExperiences": [
+        { "id": "quakers-1", "topic": "Silence as a grounding practice", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["Britain Yearly Meeting. Quaker Faith & Practice (5th ed.).", "Digby, A. (1985). Madness, Morality and Medicine: A Study of the York Retreat. Cambridge University Press."]
+    },
+    {
+      "id": "judaism", "name": "Judaism", "family": "Abrahamic",
+      "overview": "The religion, people and civilisation of the Jewish people, rooted in the covenant between God and Abraham's descendants. Movements include Orthodox, Conservative/Masorti, Reform, Reconstructionist and others.",
+      "coreBeliefs": ["One God (the Shema: 'Hear, O Israel: the Lord is our God, the Lord is One').", "Covenant and the commandments (mitzvot).", "Tikkun olam: repairing the world, in many modern understandings."],
+      "keyPractices": ["Shabbat (the weekly day of rest, from Friday sunset to Saturday nightfall)", "Prayer and Torah study", "Festivals and life-cycle rituals", "Kashrut (dietary laws), observed differently across movements"],
+      "textsAndSources": ["The Tanakh (Hebrew Bible), with the Torah at its heart", "The Talmud and rabbinic literature"],
+      "holyDays": ["Rosh Hashanah", "Yom Kippur", "Sukkot", "Passover (Pesach)", "Hanukkah", "Shavuot"],
+      "openness": "WelcomeToLearnAndVisit",
+      "opennessNote": "Synagogues often welcome respectful visitors (with security checks), and non-Jews can be guests at a Shabbat or festival table. Judaism doesn't seek converts, though conversion is possible. Some ritual obligations, such as laying tefillin, belong to Jews.",
+      "visitorEtiquette": ["Contact the synagogue before visiting.", "Head coverings (kippah) are often offered to men, and in some communities to everyone.", "At a Shabbat table, follow the host's lead. The host says the blessings."],
+      "tryInGame": [
+        {
+          "id": "shabbat-guest", "name": "Being a guest at a Shabbat dinner", "description": "Joining a Jewish friend's Friday night table as a guest.",
+          "steps": ["Arrive before sunset if you're invited early, perhaps bringing flowers or dessert.", "Listen as the host lights candles and says the blessings over wine (Kiddush) and bread (challah).", "Answer 'Amen' if you'd like.", "Enjoy a long, unhurried meal. Rest is the point."],
+          "appropriateForNonMembers": true,
+          "respectNote": "Hosting guests (hachnasat orchim) is valued in Judaism. The guest doesn't lead the rituals.",
+          "cautions": []
+        }
+      ],
+      "mentalHealthNotes": ["Pikuach nefesh: saving a life overrides almost every other commandment, and this is widely understood to include seeking medical and mental health care.", "Shabbat's weekly rest is a deep model of rhythm, which echoes the DBT skill PLEASE."],
+      "commonMisconceptions": ["Jewish identity isn't only religious: it's also peoplehood and culture, and many Jews are secular.", "Kabbalah is a Jewish mystical tradition with its own context, not a pop-spiritual brand."],
+      "livedExperiences": [
+        { "id": "judaism-1", "topic": "Shabbat as rest for a tired system", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["de Lange, N. (2000). An Introduction to Judaism. Cambridge University Press."]
+    },
+    {
+      "id": "islam", "name": "Islam", "family": "Abrahamic",
+      "overview": "Monotheistic faith revealed through the Prophet Muhammad in 7th-century Arabia. The main branches are Sunni and Shia, with many schools and the mystical tradition of Sufism.",
+      "coreBeliefs": ["Tawhid: the oneness of God (Allah).", "Prophethood, from Adam through Abraham, Moses and Jesus to Muhammad.", "Accountability and the Day of Judgement."],
+      "keyPractices": ["The Five Pillars: shahada (declaration of faith), salah (prayer five times daily), zakat (almsgiving), sawm (fasting in Ramadan), hajj (pilgrimage)", "Dhikr (remembrance of God)", "Reading and reciting the Qur'an"],
+      "textsAndSources": ["The Qur'an", "Hadith (reports of the Prophet's words and deeds)"],
+      "holyDays": ["Ramadan", "Eid al-Fitr", "Eid al-Adha", "Laylat al-Qadr", "Ashura (especially for Shia Muslims)"],
+      "openness": "WelcomeToLearnAndVisit",
+      "opennessNote": "Many mosques welcome visitors and hold open days and open iftars in Ramadan. Anyone can become Muslim by sincerely declaring the shahada. Salah is the worship of Muslims; visitors are welcome to sit and observe.",
+      "visitorEtiquette": ["Remove shoes before the prayer hall.", "Dress modestly. Women are often asked to cover their hair in the prayer hall, and many mosques have scarves to lend.", "Don't walk in front of someone praying."],
+      "tryInGame": [
+        {
+          "id": "open-iftar", "name": "An open iftar", "description": "Breaking the Ramadan fast at sunset with a community that has invited neighbours.",
+          "steps": ["Arrive before sunset.", "When the call to prayer (adhan) marks sunset, people break the fast, often with dates and water.", "Many will pray; guests wait respectfully.", "Then share the meal and conversation."],
+          "appropriateForNonMembers": true,
+          "respectNote": "Open iftars are explicitly organised to welcome people of all faiths and none.",
+          "cautions": ["Guests are not expected to fast."]
+        }
+      ],
+      "mentalHealthNotes": ["Medieval Islamic hospitals (bimaristans), for example in Baghdad and Cairo, included care for people with mental illness (Dols, 1992).", "Some communities attribute symptoms to jinn. Muslim mental health organisations encourage clinical care alongside faith, and the teacher respects both."],
+      "commonMisconceptions": ["'Allah' is simply the Arabic word for God, used by Arabic-speaking Christians too.", "Muslims are extremely diverse: most don't live in the Middle East."],
+      "livedExperiences": [
+        { "id": "islam-1", "topic": "Prayer as rhythm and grounding through the day", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["Nasr, S. H. (Ed.). (2015). The Study Quran. HarperOne.", "Dols, M. W. (1992). Majnūn: The Madman in Medieval Islamic Society. Oxford University Press."]
+    },
+    {
+      "id": "hinduism", "name": "Hinduism (Sanātana Dharma)", "family": "Dharmic",
+      "overview": "A family of traditions originating in South Asia, with no single founder. Major streams include Vaishnavism, Shaivism, Shaktism and Smarta traditions.",
+      "coreBeliefs": ["Brahman, ultimate reality, understood in many ways.", "Ātman, the self, and its relationship to Brahman.", "Dharma, karma, saṃsāra (the cycle of rebirth) and moksha (liberation)."],
+      "keyPractices": ["Puja (worship) at home and in temples", "Aarti (offering of light)", "Festivals, pilgrimage, mantra and meditation", "Yoga, in its many senses"],
+      "textsAndSources": ["The Vedas and Upanishads", "The Bhagavad Gita", "The Ramayana and Mahabharata", "The Puranas"],
+      "holyDays": ["Diwali", "Holi", "Navaratri / Durga Puja", "Maha Shivaratri", "Janmashtami"],
+      "openness": "WelcomeToLearnAndVisit",
+      "opennessNote": "Most mandirs (temples) welcome respectful visitors, and many invite them to join aarti. A few temples admit only Hindus, such as the Jagannath Temple in Puri.",
+      "visitorEtiquette": ["Remove shoes, and dress modestly.", "Accept prasad (blessed food) with your right hand.", "Ask before photographing the deities (murtis)."],
+      "tryInGame": [
+        {
+          "id": "aarti-visitor", "name": "Attending aarti as a visitor", "description": "The evening offering of light to the deity, with singing.",
+          "steps": ["Stand with the community as the lamp is waved before the murti and the aarti song is sung.", "When the lamp is brought round, you may pass your hands over the flame and then touch them to your eyes or forehead, if invited.", "Accept prasad if it's offered."],
+          "appropriateForNonMembers": true,
+          "respectNote": "Visitors are commonly invited to receive aarti. Follow what others do, and it's always fine to just watch.",
+          "cautions": []
+        }
+      ],
+      "mentalHealthNotes": ["Yoga and pranayama (breath practice) are widely studied for wellbeing.", "Some forceful breathwork can cause dizziness and isn't recommended for everyone, so the game uses only gentle breathing."],
+      "commonMisconceptions": ["Hindus aren't polytheists in a simple sense: many see the many deities as forms of one reality.", "Modern postural yoga is one recent part of a much older and broader tradition."],
+      "livedExperiences": [
+        { "id": "hinduism-1", "topic": "Devotion (bhakti) as comfort", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["Flood, G. (1996). An Introduction to Hinduism. Cambridge University Press."]
+    },
+    {
+      "id": "sikhism", "name": "Sikhi (Sikhism)", "family": "Dharmic",
+      "overview": "Founded by Guru Nanak in 15th-century Punjab and shaped by the ten Gurus. The Guru Granth Sahib is the eternal Guru.",
+      "coreBeliefs": ["One God (Ik Onkar).", "Equality of all people, regardless of caste, gender or religion.", "Living truthfully: naam japna (remembering God), kirat karni (honest work) and vand chakna (sharing)."],
+      "keyPractices": ["Prayer and kirtan (devotional singing)", "Seva (selfless service)", "Langar: a free community kitchen open to everyone", "Amrit initiation into the Khalsa, for those who choose it"],
+      "textsAndSources": ["Guru Granth Sahib"],
+      "holyDays": ["Vaisakhi", "Gurpurabs (Gurus' anniversaries, e.g. Guru Nanak's)", "Bandi Chhor Divas"],
+      "openness": "WelcomeToLearnAndVisit",
+      "opennessNote": "Gurdwaras welcome everyone, and langar is served free to anyone. Visitors can do seva. Amrit initiation is for Sikhs choosing to join the Khalsa.",
+      "visitorEtiquette": ["Cover your head (scarves are usually available) and remove your shoes.", "Don't bring tobacco or alcohol.", "Sit on the floor for langar, as everyone does, as equals."],
+      "tryInGame": [
+        {
+          "id": "langar-seva", "name": "Langar and seva", "description": "Eating at the community kitchen, and helping out.",
+          "steps": ["Cover your head and wash your hands.", "Sit in a row on the floor with everyone else.", "Accept food with both hands; take only what you'll eat.", "Afterwards, offer to help: chopping, serving, or washing dishes."],
+          "appropriateForNonMembers": true,
+          "respectNote": "Langar is explicitly for all people, and seva by visitors is welcomed.",
+          "cautions": []
+        }
+      ],
+      "mentalHealthNotes": ["Seva and community connection are deep sources of meaning, which echoes DBT's 'Contributing' (ACCEPTS)."],
+      "commonMisconceptions": ["Sikhi is its own religion, not a blend of Hinduism and Islam.", "The turban (dastar) is an article of faith, not a cultural accessory."],
+      "livedExperiences": [
+        { "id": "sikhism-1", "topic": "Seva and belonging", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["Nesbitt, E. (2016). Sikhism: A Very Short Introduction (2nd ed.). Oxford University Press."]
+    },
+    {
+      "id": "daoism", "name": "Daoism (Taoism)", "family": "East Asian",
+      "overview": "Chinese philosophical and religious traditions centred on the Dao, the Way. It ranges from classical philosophy to temple religion and monastic orders.",
+      "coreBeliefs": ["The Dao: the nameless source and pattern of all things.", "Wu wei: effortless action, not forcing.", "Balance of yin and yang."],
+      "keyPractices": ["Meditation and internal cultivation", "Qigong and taijiquan (tai chi)", "Temple ritual (led by ordained priests)"],
+      "textsAndSources": ["Daodejing (attributed to Laozi)", "Zhuangzi", "The Daoist Canon (Daozang)"],
+      "holyDays": ["Lunar New Year", "Birthday of Laozi", "Zhongyuan (Ghost Festival)"],
+      "openness": "WelcomeToLearnAndVisit",
+      "opennessNote": "Philosophy, qigong and tai chi are widely taught to anyone. Priestly ordination and temple rites are lineage-based, so the game doesn't stage those.",
+      "visitorEtiquette": ["In temples, enter by the side doors rather than the central one, where that's the custom.", "Ask before photographing."],
+      "tryInGame": [
+        {
+          "id": "standing-qigong", "name": "Standing practice (zhan zhuang)", "description": "Standing still like a tree, with knees soft.",
+          "steps": ["Stand with your feet shoulder-width apart and knees soft.", "Let your arms rest, or hold them as if around a tree.", "Feel your feet rooting into the ground.", "Breathe naturally for a minute or two."],
+          "appropriateForNonMembers": true,
+          "respectNote": "Standing practice is taught openly in qigong and tai chi classes worldwide.",
+          "cautions": ["Stop if you feel dizzy, and sit down whenever you like."]
+        }
+      ],
+      "mentalHealthNotes": ["Rooting practices overlap with grounding skills such as 'feet on the floor'."],
+      "commonMisconceptions": ["Daoism isn't only a philosophy of 'going with the flow'. It's also a living religion with priests and temples."],
+      "livedExperiences": [
+        { "id": "daoism-1", "topic": "Not forcing: wu wei and recovery", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["Kohn, L. (2001). Daoism and Chinese Culture. Three Pines Press."]
+    },
+    {
+      "id": "shinto", "name": "Shinto", "family": "East Asian",
+      "overview": "The kami traditions of Japan, centred on shrines and seasonal ritual, and often practised alongside Buddhism.",
+      "coreBeliefs": ["Kami: sacred presences in nature, places, ancestors and forces.", "Purity and purification (harae).", "Gratitude and harmony with the seasons."],
+      "keyPractices": ["Shrine visits and offerings", "Purification at the water basin (temizu)", "Seasonal festivals (matsuri)", "Household shrines (kamidana)"],
+      "textsAndSources": ["Kojiki (712)", "Nihon Shoki (720)"],
+      "holyDays": ["Shōgatsu (New Year shrine visit, hatsumōde)", "Seasonal matsuri", "Shichi-Go-San"],
+      "openness": "WelcomeToLearnAndVisit",
+      "opennessNote": "Shrines welcome visitors, who commonly purify their hands and pray. Priestly rites are performed by shrine priests.",
+      "visitorEtiquette": ["Bow before passing through the torii gate.", "Purify at the temizuya: left hand, right hand, rinse your mouth from your cupped hand (not the ladle).", "Pray: two bows, two claps, one bow."],
+      "tryInGame": [
+        {
+          "id": "shrine-visit", "name": "A shrine visit", "description": "Purifying and offering a simple prayer at a shrine.",
+          "steps": ["Bow at the torii.", "At the water basin, rinse your left hand, then your right, then rinse your mouth from your cupped left hand.", "At the hall, you may offer a coin.", "Bow twice, clap twice, pause in thanks, then bow once."],
+          "appropriateForNonMembers": true,
+          "respectNote": "This is how ordinary visitors pray at shrines, Japanese or not.",
+          "cautions": []
+        }
+      ],
+      "mentalHealthNotes": ["Seasonal ritual and gratitude practices connect with the game's Wheel of the Year rhythm."],
+      "commonMisconceptions": ["Shinto has no single founder or scripture in the way the Abrahamic faiths do."],
+      "livedExperiences": [
+        { "id": "shinto-1", "topic": "Seasons and gratitude", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["Breen, J., & Teeuwen, M. (2010). A New History of Shinto. Wiley-Blackwell."]
+    },
+    {
+      "id": "bahai", "name": "Bahá'í Faith", "family": "Abrahamic",
+      "overview": "Founded by Bahá'u'lláh in 19th-century Persia. It teaches the oneness of God, of religion and of humanity.",
+      "coreBeliefs": ["One God, revealed progressively through messengers including Abraham, Moses, Buddha, Jesus, Muhammad, the Báb and Bahá'u'lláh.", "The oneness of humanity, the equality of women and men, and harmony between science and religion."],
+      "keyPractices": ["Daily obligatory prayer", "Devotional gatherings open to all", "Study circles", "Service to the community", "The Nineteen Day Feast"],
+      "textsAndSources": ["The writings of Bahá'u'lláh, e.g. the Kitáb-i-Aqdas and the Hidden Words", "Writings of the Báb and 'Abdu'l-Bahá"],
+      "holyDays": ["Naw-Rúz (New Year, at the spring equinox)", "Ridván", "Birth of the Báb and of Bahá'u'lláh"],
+      "openness": "OpenToAll",
+      "opennessNote": "Devotional gatherings and study circles are open to everyone. The Nineteen Day Feast is primarily for Bahá'ís.",
+      "visitorEtiquette": ["At devotional gatherings, anyone may read a prayer or a passage from any faith."],
+      "tryInGame": [
+        {
+          "id": "devotional-gathering", "name": "A devotional gathering", "description": "A small gathering where people share prayers and readings.",
+          "steps": ["Sit with the group.", "People take turns reading prayers or passages, sometimes from many faiths.", "You may read, or simply listen.", "Often there's tea afterwards."],
+          "appropriateForNonMembers": true,
+          "respectNote": "Bahá'í devotional gatherings are intentionally open to people of every background.",
+          "cautions": []
+        }
+      ],
+      "mentalHealthNotes": ["Bahá'í writings encourage seeking competent medical care."],
+      "commonMisconceptions": ["It's not a sect of Islam; it's an independent world religion."],
+      "livedExperiences": [
+        { "id": "bahai-1", "topic": "Unity, and the parts of a self", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["Momen, M. (2007). The Bahá'í Faith: A Beginner's Guide. Oneworld."]
+    },
+    {
+      "id": "heathenry", "name": "Heathenry (inclusive)", "family": "Modern Pagan",
+      "overview": "A modern revival of pre-Christian Germanic and Norse religion, also called Ásatrú or Forn Sed. The game portrays inclusive heathenry.",
+      "coreBeliefs": ["Many gods and goddesses (e.g. Odin, Frigg, Thor, Freyja, Freyr), land-spirits (landvættir) and ancestors.", "Reciprocity: 'a gift for a gift'.", "Honour, hospitality, and the worth of deeds."],
+      "keyPractices": ["Blót (offering ritual)", "Sumbel (ritual toasting in rounds)", "Honouring ancestors and land-spirits", "Study of the Eddas and sagas"],
+      "textsAndSources": ["The Poetic Edda (including the Hávamál)", "The Prose Edda (Snorri Sturluson)", "The Icelandic sagas"],
+      "holyDays": ["Yule", "Winter Nights", "Midsummer", "Dates vary between groups"],
+      "openness": "OpenToAll",
+      "opennessNote": "Inclusive heathen groups welcome anyone regardless of ancestry. Some 'folkish' groups exclude people by race or ancestry. Many heathen organisations worldwide signed Declaration 127 (2016) rejecting that, and the game sides clearly with inclusive heathenry.",
+      "visitorEtiquette": ["At a blót or sumbel, follow the host's lead. Juice is fine instead of mead."],
+      "tryInGame": [
+        {
+          "id": "havamal-reading", "name": "Reflecting on the Hávamál", "description": "Reading the 'Sayings of the High One' as wisdom for daily life.",
+          "steps": ["Read a stanza, e.g. on hospitality or friendship.", "Ask: what would this look like in my life today?", "Write one line in the journal."],
+          "appropriateForNonMembers": true,
+          "respectNote": "The Eddas are public literature, read by heathens and non-heathens alike.",
+          "cautions": []
+        },
+        {
+          "id": "home-offering", "name": "A simple home offering", "description": "Pouring a small offering for the gods, land-spirits or ancestors.",
+          "steps": ["Pour a little mead, juice or milk into a bowl.", "Say a few words of thanks, in your own words.", "Afterwards, pour it outside onto the earth."],
+          "appropriateForNonMembers": true,
+          "respectNote": "Inclusive heathen groups teach simple offerings openly to newcomers.",
+          "cautions": []
+        }
+      ],
+      "mentalHealthNotes": ["Norse lore includes shapeshifting and seiðr (trance work). The teacher is careful never to frame a person's parts as spirits or possession."],
+      "commonMisconceptions": ["Heathenry isn't inherently connected to white supremacy. Inclusive heathens actively oppose its misuse."],
+      "livedExperiences": [
+        { "id": "heathenry-1", "topic": "Reclaiming the runes from hate", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["Larrington, C. (Trans.). (2014). The Poetic Edda (rev. ed.). Oxford University Press.", "Declaration 127 (2016), signed by heathen organisations worldwide."]
+    },
+    {
+      "id": "wicca", "name": "Wicca and modern witchcraft", "family": "Modern Pagan",
+      "overview": "A modern pagan religion publicised by Gerald Gardner in 1950s England. It includes initiatory British Traditional Wicca and broadly open eclectic Wicca.",
+      "coreBeliefs": ["Often a Goddess and a God, though understandings vary.", "The Wiccan Rede: 'An it harm none, do what ye will.'", "The sacredness of nature and the turning seasons."],
+      "keyPractices": ["The Wheel of the Year (eight sabbats) and moon rituals (esbats)", "Casting a circle", "Spellcraft, herbcraft and divination (tarot, runes)"],
+      "textsAndSources": ["There's no single scripture. Covens may keep a Book of Shadows."],
+      "holyDays": ["Samhain", "Yule", "Imbolc", "Ostara", "Beltane", "Litha", "Lughnasadh/Lammas", "Mabon"],
+      "openness": "WelcomeToLearnAndVisit",
+      "opennessNote": "British Traditional Wicca (e.g. Gardnerian, Alexandrian) is initiatory and oathbound, so its inner material isn't shared. Eclectic Wicca and the Wheel of the Year are open to anyone. The game uses only open material.",
+      "visitorEtiquette": ["Public open rituals are common around the sabbats. Ask the organisers what to bring."],
+      "tryInGame": [
+        {
+          "id": "sabbat-celebration", "name": "Marking a sabbat", "description": "A simple seasonal celebration, as many solitary witches do.",
+          "steps": ["Decorate a small altar with things from the season.", "Light a candle and name what this turn of the wheel means to you.", "Share food, or give thanks for the season.", "Write in the journal what you're letting go of and what you're welcoming."],
+          "appropriateForNonMembers": true,
+          "respectNote": "Open sabbat celebrations are widely shared in books and public rituals.",
+          "cautions": ["Never leave candles unattended."]
+        }
+      ],
+      "mentalHealthNotes": ["Rituals of seasonal change can be grounding markers of time, which helps for people who lose time."],
+      "commonMisconceptions": ["Wiccans don't worship the Devil, a figure from Christian theology.", "Not all witches are Wiccan."],
+      "livedExperiences": [
+        { "id": "wicca-1", "topic": "Witchcraft as a plural practitioner", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["Hutton, R. (1999). The Triumph of the Moon. Oxford University Press.", "Gardner, G. (1954). Witchcraft Today. Rider."]
+    },
+    {
+      "id": "druidry", "name": "Druidry", "family": "Modern Pagan",
+      "overview": "A modern spiritual path inspired by the druids of Iron Age Britain, Ireland and Gaul, and by 18th-century revivalists. Major groups include OBOD and ADF.",
+      "coreBeliefs": ["Reverence for nature and the land.", "Awen: flowing inspiration.", "Many druids are polytheist, animist, pantheist, or of other faiths too."],
+      "keyPractices": ["Seasonal ceremonies, often in the open air", "Meditation in nature", "Bardic arts: poetry, music, story", "Chanting the Awen"],
+      "textsAndSources": ["Modern teaching courses. There's no ancient scripture: the historical druids left no writings."],
+      "holyDays": ["The eight festivals of the Wheel of the Year"],
+      "openness": "OpenToAll",
+      "opennessNote": "Druid orders welcome anyone to learn, and open gorseddau (gatherings) are common. You can be a druid and also belong to another faith.",
+      "visitorEtiquette": ["Open ceremonies usually stand in a circle; just follow along."],
+      "tryInGame": [
+        {
+          "id": "awen-chant", "name": "Chanting the Awen", "description": "Three long, sung breaths of the word 'Awen' (ah-oo-en).",
+          "steps": ["Stand or sit, feet on the earth.", "Breathe in.", "Sing 'Aaaah-ooooo-ennnn' on one long out-breath.", "Repeat three times, feeling the sound in your chest."],
+          "appropriateForNonMembers": true,
+          "respectNote": "The Awen chant is used openly in public druid ceremonies.",
+          "cautions": ["A long, sung exhale is very like paced breathing."]
+        }
+      ],
+      "mentalHealthNotes": ["Time in nature and long exhales both have good evidence for calming the body."],
+      "commonMisconceptions": ["Stonehenge was built long before the druids. Modern druids gather there anyway."],
+      "livedExperiences": [
+        { "id": "druidry-1", "topic": "Nature as a safe place", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["Hutton, R. (2009). Blood and Mistletoe: The History of the Druids in Britain. Yale University Press."]
+    },
+    {
+      "id": "humanism", "name": "Humanism and non-religious life", "family": "Non-religious",
+      "overview": "A non-religious approach to life, based on reason, evidence and compassion, without belief in gods.",
+      "coreBeliefs": ["This life is the one we have, so make it meaningful.", "Ethics are rooted in human welfare and empathy.", "Questions are answered by evidence and reason."],
+      "keyPractices": ["Values reflection", "Community and service", "Humanist ceremonies (namings, weddings, funerals) led by celebrants"],
+      "textsAndSources": ["The Amsterdam Declaration (Humanists International, 2022 update)"],
+      "holyDays": ["World Humanist Day (21 June)"],
+      "openness": "OpenToAll",
+      "opennessNote": "There's nothing to join or believe beyond your own values. Choosing no religion is a full, respected path in this game.",
+      "visitorEtiquette": [],
+      "tryInGame": [
+        {
+          "id": "values-reflection", "name": "A values reflection", "description": "Naming what matters to you, the 'life worth living' DBT talks about.",
+          "steps": ["List five things that matter most to you.", "Pick one, and name one small action this week that honours it.", "Ask each part: what matters to you?"],
+          "appropriateForNonMembers": true,
+          "respectNote": "Open to everyone, by definition.",
+          "cautions": []
+        }
+      ],
+      "mentalHealthNotes": ["Many non-religious people find meaning in values, relationships and community. The game never treats faith as necessary for healing."],
+      "commonMisconceptions": ["Humanists don't lack morals; their ethics simply aren't based on religion."],
+      "livedExperiences": [
+        { "id": "humanism-1", "topic": "Healing without religion", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+      ],
+      "references": ["Copson, A., & Grayling, A. C. (Eds.). (2015). The Wiley Blackwell Handbook of Humanism. Wiley-Blackwell.", "Humanists International (2022). The Amsterdam Declaration."]
+    },
+    {
+      "id": "indigenous-closed", "name": "A note on closed Indigenous traditions", "family": "Closed traditions",
+      "overview": "Indigenous religions are not one tradition: there are thousands of distinct nations and peoples, each with its own ceremonies, relationships and laws.",
+      "coreBeliefs": ["These are not summarised here. They belong to their peoples to share."],
+      "keyPractices": ["Many ceremonies (for example, sweat lodges and the use of white sage in some nations) are closed: they're for members, or for people invited and taught by community knowledge-keepers."],
+      "textsAndSources": ["Learn from Indigenous-led sources, organisations and authors."],
+      "holyDays": [],
+      "openness": "ClosedOrInitiatory",
+      "opennessNote": "The teacher explains why these practices aren't something to try. Practices like 'smudging' with white sage, dreamcatchers or sold 'ceremonies' remove sacred things from their people. Respect looks like learning from Indigenous voices, supporting Indigenous-led work, and choosing open alternatives.",
+      "visitorEtiquette": ["If you're invited to a public event such as a powwow, follow the posted rules, ask before photographing, and listen."],
+      "tryInGame": [],
+      "mentalHealthNotes": ["Many Indigenous communities lead their own culturally grounded healing work."],
+      "commonMisconceptions": ["'Native American spirituality' is not one religion.", "Something being sold online doesn't make it open."],
+      "livedExperiences": [],
+      "references": ["Deloria, V., Jr. (1973). God Is Red. Grosset & Dunlap.", "Kimmerer, R. W. (2013). Braiding Sweetgrass. Milkweed Editions."]
+    },
+    {
+      "id": "african-diasporic-closed", "name": "A note on African diasporic religions", "family": "Closed traditions",
+      "overview": "Traditions such as Haitian Vodou, Santería/Lucumí, Candomblé and Hoodoo (an African American folk practice) grew out of African religions, resistance and survival under slavery.",
+      "coreBeliefs": ["These are not summarised here. They belong to their communities to share."],
+      "keyPractices": ["Many practices require initiation and guidance within a house or lineage."],
+      "textsAndSources": ["Learn from practitioners and scholars from these communities."],
+      "holyDays": [],
+      "openness": "ClosedOrInitiatory",
+      "opennessNote": "Many practitioners consider these traditions initiatory or closed, and they have been misrepresented and appropriated for a long time. The game treats them with respect and never stages their practices.",
+      "visitorEtiquette": [],
+      "tryInGame": [],
+      "mentalHealthNotes": [],
+      "commonMisconceptions": ["Hollywood 'voodoo' is a racist distortion of Vodou."],
+      "livedExperiences": [],
+      "references": ["Brown, K. M. (1991). Mama Lola: A Vodou Priestess in Brooklyn. University of California Press.", "Chireau, Y. P. (2003). Black Magic: Religion and the African American Conjuring Tradition. University of California Press."]
+    }
+  ]
+}

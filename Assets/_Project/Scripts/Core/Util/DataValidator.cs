@@ -6,6 +6,8 @@ using IAmAsIAm.Core.PluralSystem;
 using IAmAsIAm.Core.Practices;
 using IAmAsIAm.Core.Safety;
 using IAmAsIAm.Core.Skills;
+using IAmAsIAm.Core.Story;
+using IAmAsIAm.Core.Traditions;
 
 namespace IAmAsIAm.Core
 {
@@ -25,6 +27,9 @@ namespace IAmAsIAm.Core
             public SkillCatalogData Skills;
             public SystemMembersData Members;
             public CrisisResourceData Crisis;
+            public TarotSpreadData Spreads;
+            public ChapterData Chapters;
+            public TraditionData Traditions;
         }
 
         public static List<string> Validate(Bundle b)
@@ -116,6 +121,51 @@ namespace IAmAsIAm.Core
                     issues.Add($"member '{m.id}': unknown presentation '{m.initialPresentation}'.");
                 foreach (var item in m.comfortItemIds ?? new List<string>())
                     if (!practiceSet.Contains(item)) issues.Add($"member '{m.id}': comfort item '{item}' doesn't exist.");
+            }
+
+            // Tarot spreads
+            foreach (var sp in b.Spreads?.spreads ?? new List<TarotSpreadDefinition>())
+                if (!sp.onePerPart && (sp.positions == null || sp.positions.Count == 0))
+                    issues.Add($"spread '{sp.id}': needs positions (or onePerPart).");
+
+            // Chapters
+            var chapters = b.Chapters?.chapters ?? new List<ChapterDefinition>();
+            CheckUnique(issues, "chapters", chapters.Select(c => c.id));
+            var memberIds = new HashSet<string>(members.Select(m => m.id));
+            foreach (var c in chapters)
+            {
+                if (string.IsNullOrWhiteSpace(c.inkKnot)) issues.Add($"chapter '{c.id}': needs an inkKnot.");
+                if (!string.IsNullOrEmpty(c.featuredMemberId) && members.Count > 0 && !memberIds.Contains(c.featuredMemberId))
+                    issues.Add($"chapter '{c.id}': featured member '{c.featuredMemberId}' doesn't exist.");
+                foreach (var tag in c.contentTags ?? new List<string>())
+                    if (!ContentTags.All.Contains(tag)) issues.Add($"chapter '{c.id}': unknown content tag '{tag}'.");
+            }
+
+            // Traditions (docs/TraditionsAndTeacher.md)
+            var traditions = b.Traditions?.traditions ?? new List<TraditionEntry>();
+            CheckUnique(issues, "traditions", traditions.Select(t => t.id));
+            foreach (var t in traditions)
+            {
+                string label = $"tradition '{t.id}'";
+                if (!EnumText.IsValid<Openness>(t.openness)) issues.Add($"{label}: unknown openness '{t.openness}'.");
+                if (string.IsNullOrWhiteSpace(t.opennessNote)) issues.Add($"{label}: openness must be explained (opennessNote).");
+                if (t.references == null || t.references.Count == 0) issues.Add($"{label}: needs at least one reference for fact-checking.");
+                if (t.Openness == Openness.ClosedOrInitiatory && t.tryInGame.Count > 0)
+                    issues.Add($"{label}: closed or initiatory traditions must not have playable practices.");
+                foreach (var p in t.tryInGame)
+                {
+                    if (!p.appropriateForNonMembers) issues.Add($"{label}: practice '{p.id}' isn't open to non-members, so it can't be playable.");
+                    if (string.IsNullOrWhiteSpace(p.respectNote)) issues.Add($"{label}: practice '{p.id}' needs a respectNote.");
+                    if (p.steps == null || p.steps.Count == 0) issues.Add($"{label}: practice '{p.id}' needs steps.");
+                }
+                foreach (var le in t.livedExperiences)
+                {
+                    bool approved = le.status == "approved";
+                    if (!approved && !string.IsNullOrWhiteSpace(le.text))
+                        issues.Add($"{label}: lived experience '{le.id}' has text but isn't approved. Testimony must come from a consented, reviewed interview.");
+                    if (approved && (string.IsNullOrWhiteSpace(le.consentRef) || string.IsNullOrWhiteSpace(le.text)))
+                        issues.Add($"{label}: approved lived experience '{le.id}' needs text and a consentRef.");
+                }
             }
 
             // Crisis resources

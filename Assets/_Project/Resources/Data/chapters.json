@@ -1,0 +1,21 @@
+{
+  "chapters": [
+    { "id": "ch1-samhain", "number": 1, "sabbat": "Samhain", "title": "The Kettle Is Cold", "inkKnot": "samhain", "featuredMemberId": "wren", "skillFamily": "Grounding",
+      "contentTags": ["time-loss", "derealization", "religious-content"],
+      "summary": "Wren loses an afternoon and finds clues: a receipt from The Crossroads bookshop, a sprig of rosemary, and a note in almost-familiar handwriting. Wren meets Wen, the bookshop's owner, and that night finds the door to Hearthwood." },
+    { "id": "ch2-yule", "number": 2, "sabbat": "Yule", "title": "Someone Keeps the Fire", "inkKnot": "yule", "featuredMemberId": "juniper", "skillFamily": "Breathing",
+      "contentTags": ["panic"], "summary": "Juniper teaches paced breathing and self-soothing on the longest night." },
+    { "id": "ch3-imbolc", "number": 3, "sabbat": "Imbolc", "title": "The Smallest Lantern", "inkKnot": "imbolc", "featuredMemberId": "pip", "skillFamily": "PluralCommunication",
+      "contentTags": ["childhood-reference"], "summary": "Pip shows the herb garden, and the system weaves a Brigid's cross." },
+    { "id": "ch4-ostara", "number": 4, "sabbat": "Ostara", "title": "Thorns at the Edge", "inkKnot": "ostara", "featuredMemberId": "bramble", "skillFamily": "Mindfulness",
+      "contentTags": ["raised-voices", "depersonalization"], "summary": "Bramble speaks from the fog. Wise Mind, and the first ætt of runes." },
+    { "id": "ch5-beltane", "number": 5, "sabbat": "Beltane", "title": "Red Thread", "inkKnot": "beltane", "featuredMemberId": "bramble", "skillFamily": "InterpersonalEffectiveness",
+      "contentTags": ["involuntary-switch"], "summary": "Boundaries, DEAR MAN, and a rowan cross." },
+    { "id": "ch6-litha", "number": 6, "sabbat": "Litha", "title": "The Lantern in the Trees", "inkKnot": "litha", "featuredMemberId": "sorrel", "skillFamily": "Cbt",
+      "contentTags": ["trauma-reference"], "summary": "Sorrel shares a little, on her own terms. Thought records, and the inner council spread." },
+    { "id": "ch7-lughnasadh", "number": 7, "sabbat": "Lughnasadh", "title": "First Harvest", "inkKnot": "lughnasadh", "featuredMemberId": "juniper", "skillFamily": "EmotionRegulation",
+      "contentTags": [], "summary": "The whole system works together through the harvest." },
+    { "id": "ch8-mabon", "number": 8, "sabbat": "Mabon", "title": "I Am As I Am", "inkKnot": "mabon", "featuredMemberId": "wren", "skillFamily": "DistressTolerance",
+      "contentTags": [], "summary": "Gratitude, radical acceptance, and a bindrune made together." }
+  ]
+}
