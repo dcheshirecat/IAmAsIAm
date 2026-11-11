@@ -42,9 +42,16 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Other story poses are made in Unity from the Humanoid rig. Faces: swapped face paintings recommended (owner to confirm).
 - 2026-11-11: This session runs on the personal environment "Cheshirecat games (Grab3D docs)" (allows grab3d.com).
 
+- 2026-11-11: **The system (owner):** Maya (host), Serena, Izzy, Nina, Lily, Heather, Jacob, Axel; Theresa and Holden don't front.
+  `system_members.json`, `docs/SystemMembers.md`. Maya fronts at the start.
+- 2026-11-11: **People:** the mother is **Sarah**, minister of a **programmed Friends church in the USA**; ex 1 **Mark** (Christian);
+  ex 2 **Adeena** (Jewish, became religious and married).
+- 2026-11-11: **Order after Judaism:** Ch3 **Buddhism**, Ch4 **Islam**, then more (ideas in `docs/TraditionIdeas.md` for the owner).
+- 2026-11-11: **Faces:** face paintings on the 3D models in the world, **2D portraits** beside the dialogue box.
+
 ## Open (ask the owner)
-The order of chapters after Judaism, and every chapter's content; the alters (names and roles drafted in
-`docs/SystemMembers.md` for the owner to correct, plus each alter's relationship with faith); the face approach; names for the mother and the exes.
+The chapters after Islam, and every chapter's content; each alter's pronouns, age and relationship with faith
+(`docs/SystemMembers.md`); Adeena's spouse's name.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
   orbiting with the right stick / mouse / a drag on the right of the screen. `Runtime/Camera/ShoulderCamera.cs`.
 - 2026-11-11: The owner provides the art **once a playable base exists**: placeholders until then.

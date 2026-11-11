@@ -1,13 +1,45 @@
 {
   "sourceNote": "Named people outside the system. Only what the owner has decided is filled in; everything else is left empty to ask about.",
   "people": [
-    { "id": "mother", "name": "", "role": "The character's parent: a single mother and a Quaker minister", "tradition": "quakers",
-      "description": "Neglects raising her child in favour of the congregation.", "chapterIds": ["prologue-quaker"] },
-    { "id": "ex_christian", "name": "", "role": "Ex 1: the Christian ex", "tradition": "christianity",
-      "description": "", "chapterIds": ["ch1-christianity"] },
-    { "id": "ex_jewish", "name": "", "role": "Ex 2: the Jewish ex, who became religious and married", "tradition": "judaism",
-      "description": "", "chapterIds": ["ch2-judaism"] },
-    { "id": "ex_jewish_spouse", "name": "", "role": "Ex 2's spouse", "tradition": "judaism",
-      "description": "", "chapterIds": ["ch2-judaism"] }
+    {
+      "id": "mother",
+      "name": "Sarah",
+      "role": "The character's parent: a single mother, minister (pastor) of a programmed Friends church in the USA",
+      "tradition": "quakers",
+      "description": "Neglects raising her child in favour of the congregation.",
+      "chapterIds": [
+        "prologue-quaker"
+      ]
+    },
+    {
+      "id": "ex_christian",
+      "name": "Mark",
+      "role": "Ex 1: the Christian ex",
+      "tradition": "christianity",
+      "description": "",
+      "chapterIds": [
+        "ch1-christianity"
+      ]
+    },
+    {
+      "id": "ex_jewish",
+      "name": "Adeena",
+      "role": "Ex 2: the Jewish ex, who became religious and married",
+      "tradition": "judaism",
+      "description": "",
+      "chapterIds": [
+        "ch2-judaism"
+      ]
+    },
+    {
+      "id": "ex_jewish_spouse",
+      "name": "",
+      "role": "Ex 2's spouse",
+      "tradition": "judaism",
+      "description": "",
+      "chapterIds": [
+        "ch2-judaism"
+      ]
+    }
   ]
 }

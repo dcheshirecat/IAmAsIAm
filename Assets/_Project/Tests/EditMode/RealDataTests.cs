@@ -64,8 +64,8 @@ namespace IAmAsIAm.Tests
             Assert.That(library.AnchorsFor("Touch"), Is.Not.Empty);
 
             var roster = new SystemRoster(b.Members.members, b.Members.initialFrontId);
-            Assert.That(roster.FrontingId, Is.EqualTo("wren"));
-            Assert.That(roster.GetState("bramble").presentation, Is.EqualTo(MemberPresentation.Symbolic));
+            Assert.That(roster.FrontingId, Is.EqualTo("maya"));
+            Assert.That(roster.GetState("theresa").presentation, Is.EqualTo(MemberPresentation.Symbolic));
 
             var codex = new SkillCodex(b.Skills.skills);
             Assert.That(codex.Get("paced-breathing").Direction, Is.EqualTo(Core.Mind.SkillDirection.LowersArousal));

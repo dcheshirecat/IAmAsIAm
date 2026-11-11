@@ -16,3 +16,11 @@
 === ch2_judaism ===
 (Chapter 2: Judaism. Not written yet.)
 -> END
+
+=== ch3_buddhism ===
+(Chapter 3: Buddhism. Not written yet.)
+-> END
+
+=== ch4_islam ===
+(Chapter 4: Islam. Not written yet.)
+-> END

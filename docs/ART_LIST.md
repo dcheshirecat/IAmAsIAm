@@ -45,10 +45,10 @@ Everything is a placeholder until replaced. Tick things off as you go. Sizes: [A
 | | Id | Who | Notes |
 |---|---|---|---|
 | [ ] First | `body` | The shared body | 15–20k tris; all alters' looks fit this rig |
-| [ ] | `hair_<alter>`, `outfit_<alter>` | Each alter's look (one per alter) | Alters: see docs/SystemMembers.md (draft for the owner to confirm) |
-| [ ] | `mother` | The mother: single mother, Quaker minister (prologue; in flashbacks / memories) | Younger and older versions? ask the owner |
-| [ ] | `ex_christian` | Ex 1, the Christian ex | Chapter 1: Christianity |
-| [ ] | `ex_jewish`, `ex_jewish_spouse` | Ex 2, the Jewish ex, who became religious and married, and their spouse | Chapter 2: Judaism |
+| [ ] | `hair_<alter>`, `outfit_<alter>` | Each alter's look (one per alter) | Alters: maya, serena, izzy, nina, lily, heather, jacob, axel (theresa and holden are symbolic and don't front) |
+| [ ] | `mother` | Sarah, the mother: single mother, minister of a programmed Friends church in the USA (prologue; in flashbacks / memories) | Younger and older versions? ask the owner |
+| [ ] | `ex_christian` | Mark, ex 1, the Christian ex | Chapter 1: Christianity |
+| [ ] | `ex_jewish`, `ex_jewish_spouse` | Adeena, ex 2, the Jewish ex, who became religious and married, and her spouse | Chapter 2: Judaism |
 | [ ] | `guide_<tradition>` | One guide per chapter, a practitioner of that tradition | ⏳ chapters |
 | [ ] | `bg_person_1..6` | Background people (meeting attenders, congregants, passers-by) | idle / walk / talk only |
 
@@ -58,7 +58,7 @@ Everything is a placeholder until replaced. Tick things off as you go. Sizes: [A
 | [ ] First | `home_kitchen` | The character's flat: kitchen | The Boot scene's placeholder room |
 | [ ] | `home_bedroom`, `home_living` | The flat: bedroom, living room with altar shelf | The Wiccan altar lives here |
 | [ ] | `hearth` | The inner world: cottage kitchen, hearth, apothecary shelves | Frame between chapters |
-| [ ] | `friends_church` | A programmed Friends church (pulpit, pews, hymn boards) | Prologue. Both kinds of meeting exist in this world |
+| [ ] | `friends_church` | A programmed Friends church (pulpit, pews, hymn boards) | Prologue: Sarah's church, USA. Both kinds of meeting exist in this world |
 | [ ] | `meeting_house` | An unprogrammed meeting house (plain room, benches facing each other in a square) | Prologue |
 | [ ] | `stone_circle` | Outdoor circle for sabbats | Wicca |
 | [ ] | One place per chapter's tradition (e.g. `synagogue`, `church`, `mosque`, `mandir`, `gurdwara`, `buddhist_centre`, `daoist_temple`, `shinto_shrine`, `bahai_centre`, `druid_grove`, `heathen_hof`) | ⏳ chapters | Accurate layout: check each with a practitioner |
@@ -75,6 +75,14 @@ Everything is a placeholder until replaced. Tick things off as you go. Sizes: [A
 | [ ] | `crystal_<id>` × 13 | Stones (ids in crystals.json) |
 | [ ] | `charm_<id>` × 9 | Charms (ids in charms.json) |
 | [ ] | Ritual objects per tradition (e.g. Shabbat candlesticks, prayer beads, a turban/rumal for head covering) | ⏳ chapters; check with practitioners |
+
+## Part 5b: Dialogue portraits (2D, `Character Art - Finished/Talking Heads`)
+Face paintings are used on the 3D models in the world; these 2D portraits sit beside the dialogue box.
+| | File | px |
+|---|---|---|
+| [ ] First | `portrait_<alter>_neutral.png` for one alter (the pilot) | 1024 × 1024 |
+| [ ] | `portrait_<id>_<expression>.png`: neutral, happy, sad, worried, blank, tense, for each alter (maya, serena, izzy, nina, lily, heather, jacob, axel), sarah, mark, adeena, and each guide | 1024 × 1024 |
+| [ ] | Faces on the 3D models: `tex_<id>_face_<expression>.png` (see 3D_PIPELINE.md, Faces) | same as `tex_<id>_color.png` |
 
 ## Part 6: 2D card and codex art
 | | File | px |

@@ -31,7 +31,7 @@ Android compresses textures as ASTC, so painting at these sizes is enough for ta
 | Asset | px |
 |---|---|
 | Full-screen backgrounds / story pictures (`bg_<name>.png`) | 4440 × 2048 (keep what matters in the middle 2732 × 2048) |
-| Talking-head portraits, if chosen (`portrait_<id>_<expression>.png`) | 1024 × 1024 |
+| Talking-head portraits for dialogue (`portrait_<id>_<expression>.png`) | 1024 × 1024 |
 | Tarot card faces (`tarot_<card-id>.png`): standard tarot shape, 2.75 : 4.75 | 1024 × 1768 |
 | Tarot card back (`tarot_back.png`) | 1024 × 1768 |
 | Rune staves, each rune carved on wood (`rune_<id>.png`) | 512 × 768 |

@@ -80,7 +80,7 @@ blended over `idle`. They need nothing beyond your Grab3D GLB:
 `freeze` (dissociation: going still), `dazed` (slow sway, depersonalization), `look_around` (after a switch), `lie_down`.
 Hands stay as one piece (no fingers), so hold poses are designed around that.
 
-### Faces **[owner to confirm]**
+### Faces (owner, 2026-11-11: face paintings in the world, 2D portraits for dialogue)
 Grab3D has **no face rig**, so sculpted expressions aren't possible with this pipeline. That leaves two options:
 1. **Swapped face paintings (recommended):** paint the face area in Procreate in a few versions, all with the same UVs:
    `tex_<id>_face_neutral.png`, `_happy`, `_sad`, `_worried`, `_blank` (dissociated, far away), `_tense`.

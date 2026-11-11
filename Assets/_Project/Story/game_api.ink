@@ -24,7 +24,7 @@ VAR tarot_today = ""
 VAR tarot_was = ""
 VAR tarot_is = ""
 VAR tarot_help = ""
-VAR fronting = "wren"
+VAR fronting = "maya"
 
 EXTERNAL set_experience(kind, amount)
 EXTERNAL nudge(amount)

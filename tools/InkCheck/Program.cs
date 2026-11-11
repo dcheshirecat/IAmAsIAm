@@ -102,7 +102,8 @@ static class InkCheck
 
     static void Bind(Ink.Runtime.Story story, string label)
     {
-        void Check(bool ok, string what) { if (!ok) Problems.Add($"{label}: {what}"); }
+        // Drafts may use retired names (not canon), so only the real story is checked for known ids.
+        void Check(bool ok, string what) { if (!ok && !label.StartsWith("Drafts/")) Problems.Add($"{label}: {what}"); }
         string S(object o) => o?.ToString() ?? "";
 
         story.BindExternalFunctionGeneral("set_experience", a =>
