@@ -110,26 +110,70 @@ namespace IAmAsIAm.EditorTools
         {
             var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
 
-            var cam = new GameObject("Main Camera", typeof(Camera), typeof(AudioListener)) { tag = "MainCamera" };
-            cam.transform.SetPositionAndRotation(new Vector3(0f, 1.6f, -3.2f), Quaternion.Euler(8f, 0f, 0f));
-            cam.GetComponent<Camera>().clearFlags = CameraClearFlags.SolidColor;
-            cam.GetComponent<Camera>().backgroundColor = new Color(0.08f, 0.07f, 0.1f);
-
             var sun = new GameObject("Window Light", typeof(Light));
             sun.GetComponent<Light>().type = LightType.Directional;
             sun.GetComponent<Light>().color = new Color(1f, 0.86f, 0.7f);
-            sun.transform.rotation = Quaternion.Euler(40f, -30f, 0f);
+            sun.GetComponent<Light>().shadows = LightShadows.Soft;
+            sun.transform.rotation = Quaternion.Euler(45f, -35f, 0f);
 
-            // A placeholder kitchen, coloured blocks until the Grab3D/Nomad models arrive.
-            Block("Floor", new Vector3(0, -0.05f, 0), new Vector3(6, 0.1f, 6), "mat_floor", new Color(0.45f, 0.38f, 0.3f));
-            Block("Back Wall", new Vector3(0, 1.4f, 3), new Vector3(6, 2.8f, 0.1f), "mat_wall", new Color(0.78f, 0.72f, 0.62f));
-            Block("Counter", new Vector3(-1.4f, 0.45f, 2.4f), new Vector3(2.4f, 0.9f, 0.9f), "mat_wood", new Color(0.52f, 0.36f, 0.24f));
-            Block("Kettle", new Vector3(-1.2f, 1.05f, 2.3f), new Vector3(0.25f, 0.3f, 0.25f), "mat_kettle", new Color(0.7f, 0.25f, 0.2f));
-            Block("Table", new Vector3(1.1f, 0.38f, 1.2f), new Vector3(1.2f, 0.76f, 0.8f), "mat_wood", new Color(0.52f, 0.36f, 0.24f));
+            // ── A placeholder flat (coloured blocks until the owner's models arrive) ──
+            var flat = new GameObject("Flat (placeholder)").transform;
+            Block("Floor", new Vector3(0, -0.05f, 0), new Vector3(9, 0.1f, 7), "mat_floor", new Color(0.45f, 0.38f, 0.3f), flat);
+            Block("Wall North", new Vector3(0, 1.4f, 3.5f), new Vector3(9, 2.8f, 0.15f), "mat_wall", new Color(0.78f, 0.72f, 0.62f), flat);
+            Block("Wall West", new Vector3(-4.5f, 1.4f, 0), new Vector3(0.15f, 2.8f, 7), "mat_wall", new Color(0.78f, 0.72f, 0.62f), flat);
+            Block("Wall East (left of door)", new Vector3(4.5f, 1.4f, 1.9f), new Vector3(0.15f, 2.8f, 3.2f), "mat_wall", new Color(0.78f, 0.72f, 0.62f), flat);
+            Block("Wall East (right of door)", new Vector3(4.5f, 1.4f, -2.4f), new Vector3(0.15f, 2.8f, 2.2f), "mat_wall", new Color(0.78f, 0.72f, 0.62f), flat);
+            Block("Wall South", new Vector3(0, 1.4f, -3.5f), new Vector3(9, 2.8f, 0.15f), "mat_wall", new Color(0.78f, 0.72f, 0.62f), flat);
 
+            var counter = Block("Kitchen Counter", new Vector3(-3.2f, 0.45f, 2.9f), new Vector3(2.4f, 0.9f, 0.9f), "mat_wood", new Color(0.52f, 0.36f, 0.24f), flat);
+            var kettle = Block("Kettle", new Vector3(-3.0f, 1.05f, 2.8f), new Vector3(0.25f, 0.3f, 0.25f), "mat_kettle", new Color(0.7f, 0.25f, 0.2f), flat);
+            Story(kettle, "Look", "test_kettle", false);
+            var table = Block("Table", new Vector3(0.5f, 0.38f, 1.0f), new Vector3(1.4f, 0.76f, 0.9f), "mat_wood", new Color(0.52f, 0.36f, 0.24f), flat);
+            var deck = Block("Tarot Deck", new Vector3(0.4f, 0.79f, 1.0f), new Vector3(0.12f, 0.05f, 0.2f), "mat_deck", new Color(0.25f, 0.2f, 0.45f), flat);
+            Story(deck, "Draw a card", "test_tarot", false);
+            var altar = Block("Altar Shelf", new Vector3(-4.1f, 0.6f, -1.5f), new Vector3(0.6f, 1.2f, 1.4f), "mat_altar", new Color(0.3f, 0.28f, 0.25f), flat);
+            Block("Candle", new Vector3(-4.0f, 1.28f, -1.3f), new Vector3(0.08f, 0.16f, 0.08f), "mat_candle", new Color(0.95f, 0.9f, 0.75f), flat);
+            Story(altar, "Sit at the altar", "test_altar", false);
+
+            // The stairwell outside the door, with a trigger zone (it does nothing until triggers.json has a matching trigger).
+            Block("Landing", new Vector3(6.5f, -0.05f, -0.4f), new Vector3(4, 0.1f, 2.4f), "mat_floor_landing", new Color(0.35f, 0.35f, 0.38f), flat);
+            var zone = new GameObject("Cue Zone: raised-voices (upstairs flat)", typeof(BoxCollider));
+            zone.transform.SetParent(flat);
+            zone.transform.position = new Vector3(7f, 1f, -0.4f);
+            zone.GetComponent<BoxCollider>().isTrigger = true;
+            zone.GetComponent<BoxCollider>().size = new Vector3(2f, 2f, 2.4f);
+            var cueZone = zone.AddComponent<IAmAsIAm.Runtime.Triggers.CueZone>();
+            SetString(cueZone, "cue", "raised-voices");
+
+            // A placeholder guide, to test talking.
+            var guide = StandIn("Guide (placeholder)", new Vector3(2.2f, 0, -1.2f), new Color(0.35f, 0.5f, 0.6f));
+            Story(guide, "Talk", "test_guide", true);
+
+            // ── The character ──
+            var player = new GameObject("Player", typeof(CharacterController));
+            player.transform.position = new Vector3(-1f, 0f, -1.5f);
+            var cc = player.GetComponent<CharacterController>();
+            cc.height = 1.7f; cc.radius = 0.28f; cc.center = new Vector3(0, 0.85f, 0);
+            AttachVisual(player.transform);
+            var motor = player.AddComponent<IAmAsIAm.Runtime.Player.PlayerMotor>();
+            var interactor = player.AddComponent<IAmAsIAm.Runtime.Interaction.ProximityInteractor>();
+
+            // ── The camera: close third person, over the shoulder (Pokémon Legends: Z-A style) ──
+            var cam = new GameObject("Main Camera", typeof(Camera), typeof(AudioListener)) { tag = "MainCamera" };
+            var camera = cam.GetComponent<Camera>();
+            camera.fieldOfView = 55f;
+            camera.nearClipPlane = 0.05f;
+            camera.clearFlags = CameraClearFlags.SolidColor;
+            camera.backgroundColor = new Color(0.08f, 0.07f, 0.1f);
+            var rig = cam.AddComponent<IAmAsIAm.Runtime.CameraRig.ShoulderCamera>();
+            Set(rig, "target", player.transform);
+            Set(motor, "cameraRig", rig);
+
+            // ── Game systems and the story screen ──
             var game = new GameObject("Game");
             game.AddComponent<GameBootstrap>();
             game.AddComponent<MindStateController>();
+            game.AddComponent<DissociationPresentationDriver>();
             var runner = game.AddComponent<StoryRunner>();
             var screen = game.AddComponent<StoryScreen>();
 
@@ -137,6 +181,8 @@ namespace IAmAsIAm.EditorTools
             if (story == null) Debug.LogWarning("[IAmAsIAm] Story/main.json is missing. Run IAmAsIAm → Compile Story.");
             Set(runner, "compiledStory", story);
             Set(screen, "runner", runner);
+            Set(screen, "interactor", interactor);
+            Set(screen, "cameraRig", rig);
 
             Directory.CreateDirectory(Path.GetDirectoryName(ScenePath));
             EditorSceneManager.SaveScene(scene, ScenePath);
@@ -144,13 +190,79 @@ namespace IAmAsIAm.EditorTools
             Debug.Log("[IAmAsIAm] Boot scene rebuilt.");
         }
 
-        static void Block(string name, Vector3 pos, Vector3 scale, string matName, Color color)
+        /// <summary>
+        /// The character's look: the owner's Grab3D model if it's in Art/Models/body/model_body.glb,
+        /// otherwise a stand-in made of shapes (with a nose, so you can see which way it faces).
+        /// </summary>
+        static void AttachVisual(Transform player)
+        {
+            var model = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/_Project/Art/Models/body/model_body.glb");
+            if (model != null)
+            {
+                var instance = (GameObject)PrefabUtility.InstantiatePrefab(model, player);
+                instance.name = "Model";
+                instance.transform.localPosition = Vector3.zero;
+                instance.transform.localRotation = Quaternion.identity;
+                foreach (var col in instance.GetComponentsInChildren<Collider>()) UnityEngine.Object.DestroyImmediate(col);
+                return;
+            }
+            var standIn = StandIn("Stand-in", Vector3.zero, new Color(0.79f, 0.64f, 0.49f));
+            standIn.transform.SetParent(player, false);
+            foreach (var col in standIn.GetComponentsInChildren<Collider>()) UnityEngine.Object.DestroyImmediate(col);
+        }
+
+        /// <summary>A person-shaped stand-in: body, head and a nose that shows facing.</summary>
+        static GameObject StandIn(string name, Vector3 feet, Color color)
+        {
+            var root = new GameObject(name);
+            root.transform.position = feet;
+            var body = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+            body.name = "Body";
+            body.transform.SetParent(root.transform, false);
+            body.transform.localPosition = new Vector3(0, 0.75f, 0);
+            body.transform.localScale = new Vector3(0.5f, 0.75f, 0.4f);
+            body.GetComponent<Renderer>().sharedMaterial = PlaceholderMaterial("mat_" + name.Split(' ')[0].ToLowerInvariant(), color);
+            var head = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            head.name = "Head";
+            head.transform.SetParent(root.transform, false);
+            head.transform.localPosition = new Vector3(0, 1.62f, 0);
+            head.transform.localScale = Vector3.one * 0.3f;
+            head.GetComponent<Renderer>().sharedMaterial = body.GetComponent<Renderer>().sharedMaterial;
+            var nose = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            nose.name = "Nose (facing)";
+            nose.transform.SetParent(root.transform, false);
+            nose.transform.localPosition = new Vector3(0, 1.62f, 0.16f);
+            nose.transform.localScale = new Vector3(0.06f, 0.06f, 0.08f);
+            UnityEngine.Object.DestroyImmediate(nose.GetComponent<Collider>());
+            return root;
+        }
+
+        static void Story(GameObject go, string prompt, string knot, bool person)
+        {
+            var s = go.AddComponent<StoryInteractable>();
+            SetString(s, "prompt", prompt);
+            SetString(s, "knot", knot);
+            var so = new SerializedObject(s);
+            so.FindProperty("isPerson").boolValue = person;
+            so.ApplyModifiedPropertiesWithoutUndo();
+        }
+
+        static void SetString(UnityEngine.Object target, string field, string value)
+        {
+            var so = new SerializedObject(target);
+            so.FindProperty(field).stringValue = value;
+            so.ApplyModifiedPropertiesWithoutUndo();
+        }
+
+        static GameObject Block(string name, Vector3 pos, Vector3 scale, string matName, Color color, Transform parent)
         {
             var go = GameObject.CreatePrimitive(PrimitiveType.Cube);
             go.name = name;
+            go.transform.SetParent(parent, false);
             go.transform.position = pos;
             go.transform.localScale = scale;
             go.GetComponent<Renderer>().sharedMaterial = PlaceholderMaterial(matName, color);
+            return go;
         }
 
         static Material PlaceholderMaterial(string name, Color color)

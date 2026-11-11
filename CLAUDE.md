@@ -15,7 +15,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
 - 2026-11-11: **Android APK** via GitHub Actions (`Build Android`, manual run; needs the secrets UNITY_LICENSE,
   UNITY_EMAIL, UNITY_PASSWORD, the same as Seven Witches) plus PC. **Landscape** on both. App id `com.cheshirecat.iamasiam`.
 - 2026-11-11: Art pipeline = Seven Witches': Nomad Sculpt → Procreate → **Grab3D Auto-Rig Studio** → one GLB
-  with animations. Drive folder "Game Art - I Am As I Am". `docs/3D_PIPELINE.md`, `ART_LIST.md`, `ART_SIZES.md`, `ART_SWAP.md`.
+  with animations. **Grab3D only: never suggest Mixamo, Blender or other rigging/animation tools.**
+  Drive folder "Game Art - I Am As I Am" (id 1UPA-7eBawSL_SNpq51jZ_sPygYRrZRjb; "Read me first" in Guidelines). `docs/3D_PIPELINE.md`, `ART_LIST.md`, `ART_SIZES.md`, `ART_SWAP.md`.
 - 2026-11-11: The character was raised **Quaker**, left organised religion, believes in **Wicca**, and explores as many
   other traditions as possible. **One religion per chapter, fixed order** (the owner sets the order).
   **The player chooses the fronting alter per chapter**; switches and dissociation can happen partway through.
@@ -30,7 +31,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
 
 ## Open (ask the owner)
 Chapter order and content; which alters (the draft cast in `system_members.json` is unconfirmed) and each alter's
-relationship with faith; the exes' roles; the edited trigger list; the Grab3D animation list; how faces show expression.
+relationship with faith; the exes' roles; the edited trigger list; the Grab3D animation list (and whether it rigs animals / keeps blend shapes);
+how faces show expression.
+- 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
+  orbiting with the right stick / mouse / a drag on the right of the screen. `Runtime/Camera/ShoulderCamera.cs`.
+- 2026-11-11: The owner provides the art **once a playable base exists**: placeholders until then.
 
 ## Tech
 - Assemblies: `IAmAsIAm.Core` (pure C#, no UnityEngine: all rules), `IAmAsIAm.Runtime` (Unity glue),

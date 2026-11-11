@@ -5,6 +5,7 @@ using IAmAsIAm.Core.PluralSystem;
 using IAmAsIAm.Core.Story;
 using IAmAsIAm.Core.Triggers;
 using IAmAsIAm.Runtime.PluralSystem;
+using IAmAsIAm.Runtime.Triggers;
 using Ink.Runtime;
 using UnityEngine;
 
@@ -52,18 +53,22 @@ namespace IAmAsIAm.Runtime.Story
         public event Action<StoryAction> ActionRequested;
         /// <summary>A content note from a "# cw:" tag. The view may offer to skip.</summary>
         public event Action<string> ContentNote;
-        public event Action<TriggerActivation> TriggerFired;
+        /// <summary>A conversation or look-at began; partner is the person talked to (or null for objects).</summary>
+        public event Action<Transform> Started;
         public event Action Ended;
 
         public bool IsWaitingForAction => _pending != null;
+        public bool IsPlaying { get; private set; }
         public Ink.Runtime.Story Story => _story;
 
-        public void Begin(string knot = null, string chapterId = "")
+        /// <summary>Loads the compiled story once. Story state (variables, visits) persists between plays.</summary>
+        public bool EnsureLoaded()
         {
+            if (_story != null) return true;
             if (compiledStory == null)
             {
-                Debug.LogError("[IAmAsIAm] StoryRunner has no compiled story. Open the project so the Ink package compiles main.ink to main.json.");
-                return;
+                Debug.LogError("[IAmAsIAm] StoryRunner has no compiled story. Run IAmAsIAm → Compile Story, then Rebuild Boot Scene.");
+                return false;
             }
             _story = new Ink.Runtime.Story(compiledStory.text);
             _story.onError += (msg, type) =>
@@ -71,10 +76,19 @@ namespace IAmAsIAm.Runtime.Story
                 if (type == Ink.ErrorType.Error) Debug.LogError("[Ink] " + msg);
                 else Debug.LogWarning("[Ink] " + msg);
             };
-            _chapterId = chapterId ?? "";
             Bind();
+            return true;
+        }
+
+        /// <summary>Plays a knot: a conversation, a look at something, a scene. Null plays from the story's start.</summary>
+        public void Play(string knot, Transform partner = null, string chapterId = null)
+        {
+            if (!EnsureLoaded() || IsPlaying) return;
+            if (chapterId != null) _chapterId = chapterId;
             SyncFronting();
             if (!string.IsNullOrEmpty(knot)) _story.ChoosePathString(knot);
+            IsPlaying = true;
+            Started?.Invoke(partner);
             Next();
         }
 
@@ -100,7 +114,7 @@ namespace IAmAsIAm.Runtime.Story
             }
 
             if (_story.currentChoices.Count > 0) ChoicesReady?.Invoke(_story.currentChoices);
-            else Ended?.Invoke();
+            else { IsPlaying = false; Ended?.Invoke(); }
         }
 
         public void Choose(int index)
@@ -143,19 +157,7 @@ namespace IAmAsIAm.Runtime.Story
         /// <summary>The character meets a trigger cue. What happens isn't the player's choice.</summary>
         void EncounterCue(string cue)
         {
-            var triggers = GameServices.Triggers;
-            if (triggers == null) return;
-            var activation = triggers.Encounter(cue, GameServices.Roster);
-            if (activation == null) return;
-
-            TriggerSystem.ApplyToMind(activation, GameServices.Mind);
-            if (activation.Response == TriggerResponse.Switch && activation.SwitchToId != null)
-            {
-                if (fronting != null) fronting.StoryForcesSwitch(activation.SwitchToId);
-                else GameServices.Roster.ForceSwitch(activation.SwitchToId);
-                SyncFronting();
-            }
-            TriggerFired?.Invoke(activation);
+            if (TriggerRunner.Encounter(cue, fronting) != null) SyncFronting();
         }
 
         void SyncFronting()

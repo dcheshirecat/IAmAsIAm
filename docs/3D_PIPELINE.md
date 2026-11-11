@@ -1,7 +1,9 @@
 # The 3D pipeline: Nomad Sculpt → Procreate → Grab3D → the game
 
 **Owner's choice (2026-11-11):** the same pipeline as Seven Witches (`dcheshirecat/SevenWitches`,
-`Docs/3D_PIPELINE.md`), with **Grab3D Auto-Rig Studio** for rigging. The steps and names match Seven Witches,
+`Docs/3D_PIPELINE.md`), with **Grab3D Auto-Rig Studio** for all rigging and animation. **Grab3D replaces Mixamo,
+Blender and any other rigging/animation tool**: no Mixamo, no Blender, no FBX hand-offs. The only tools are
+Nomad Sculpt → Procreate → Grab3D. The steps and names match Seven Witches,
 so anything learned on one game works on the other. What's different here is the list of models, the
 animations and the budgets: this is a close-camera **story game** in landscape on phones and PC.
 For the list of what to make, see [ART_LIST.md](ART_LIST.md). For sizes, see [ART_SIZES.md](ART_SIZES.md).
@@ -52,15 +54,15 @@ change clothes in-story (they'd have to change physically), or is the look shown
    tell Claude which clip is which.
 4. Props and rooms aren't rigged: export them from Procreate as OBJ + `tex_` PNGs (`model_prop_<name>.obj`, `model_room_<name>.obj`).
 
-**Non-humanoid creatures** (birds for Sorrel's birdsong, a cat, Pip's "creature friends"): the humanoid
-auto-rigger can't rig these. Rig them in **Blender** (as Seven Witches decided), or keep them as simple
-animated props. **[DECIDE]** which creatures the game needs.
+**Animals** (e.g. birds for birdsong, a cat): **[ASK]** whether Grab3D rigs them. If it doesn't, they stay
+unrigged props that the game moves simply (a bob, a hop, a turn). No other rigging tool is used.
 
 ### Animations this game needs
-This is a story game, so it's mostly small, human movements, not combat. **[ASK]** the owner which clips Grab3D offers; the
-Mixamo search words are a fallback for finding a similar clip.
+This is a story game, so it's mostly small, human movements, not combat. **[ASK]** the owner which clips Grab3D
+offers. Each row is matched to the closest Grab3D clip, and anything Grab3D doesn't have is left out (the
+game falls back to `idle`) until it does.
 
-| `<anim>` | What | Who | Mixamo search words (fallback) |
+| `<anim>` | What | Who | Closest idea, for picking a Grab3D clip |
 |---|---|---|---|
 | `idle` | Standing, breathing | everyone | Breathing Idle |
 | `walk` | Walking (in place) | everyone | Walking |
@@ -87,7 +89,7 @@ Background people only need `idle`, `walk` and `talk`.
 Close-up story scenes need expression. In order of effort:
 1. **Expression textures** (cheapest): paint 4–6 face variants (`tex_<id>_face_<neutral|happy|sad|worried|blank>.png`), and the game swaps them.
 2. **2D talking-head portraits** beside the dialogue, like Seven Witches (1024 × 1024).
-3. **Blend shapes** (shape keys) sculpted in Blender: the most expressive, and the most work.
+3. **Blend shapes** made with Nomad Sculpt's own tools, *only* if Grab3D carries them through into the GLB. **[ASK]**
 
 ## 4. Into the game (Claude does this part)
 You put the files in Drive (below) and tell Claude. Claude:
@@ -108,9 +110,9 @@ This works the same way as "Game Art - Seven Witches", with the same subfolders:
 | `tex_<id>_*.png` | Procreate texture maps, renamed | If not inside the GLB |
 | `<id>.nomad` | Nomad Sculpt master | Optional → `Masters` |
 
-All names are lower case with underscores and no spaces. GLB/FBX/OBJ files are big, and the Drive connector struggles with them,
+All names are lower case with underscores and no spaces. GLB/OBJ files are big, and the Drive connector struggles with them,
 so use **Google Drive for desktop**, or upload straight to GitHub (`Assets/_Project/Art/Models/<id>/` → Add file → Upload files),
-exactly as in Seven Witches. The repo stores `.glb`, `.fbx`, `.obj`, `.usdz`, `.nomad` and `.blend` with Git LFS.
+exactly as in Seven Witches. The repo stores `.glb`, `.obj`, `.usdz` and `.nomad` with Git LFS.
 
 ## Pilot **[DECIDE]**
 As in Seven Witches, prove the pipeline on **one** character first (suggestion: the shared body with one

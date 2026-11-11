@@ -6,10 +6,15 @@ using IAmAsIAm.Core.Mind;
 using IAmAsIAm.Core.PluralSystem;
 using IAmAsIAm.Core.Practices;
 using IAmAsIAm.Core.Triggers;
+using IAmAsIAm.Runtime.CameraRig;
+using IAmAsIAm.Runtime.Interaction;
+using IAmAsIAm.Runtime.Player;
+using IAmAsIAm.Runtime.Triggers;
 using Ink.Runtime;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.OnScreen;
 using UnityEngine.InputSystem.UI;
 using UnityEngine.UI;
 
@@ -26,7 +31,10 @@ namespace IAmAsIAm.Runtime.Story
     public sealed class StoryScreen : MonoBehaviour
     {
         [SerializeField] StoryRunner runner;
+        [Tooltip("Optional knot to play as soon as the scene starts (e.g. a chapter opening). Empty = free roam.")]
         [SerializeField] string startKnot = "";
+        [SerializeField] ProximityInteractor interactor;
+        [SerializeField] ShoulderCamera cameraRig;
 
         static readonly Color TextColor = new Color(0.95f, 0.92f, 0.86f);
         static readonly Color PanelColor = new Color(0.10f, 0.09f, 0.12f, 0.88f);
@@ -35,12 +43,14 @@ namespace IAmAsIAm.Runtime.Story
         Font _font;
         RectTransform _root;
         Text _speaker, _line, _frontLabel, _triggerText, _actionTitle, _actionBody, _anchorBody;
-        GameObject _dialogue, _choices, _action, _anchor, _triggerPanel;
+        GameObject _dialogue, _choices, _action, _anchor, _triggerPanel, _tap, _touch;
+        Text _prompt;
         RectTransform _actionButtons, _breathCircle;
         Image _fog;
         InputAction _advance, _anchorKey;
         bool _anchorOpen;
         float _previousTimeScale = 1f, _triggerHideAt;
+        int _lineShownFrame = -1;
 
         BreathingPacer _pacer;
         Action _onPacerTick;
@@ -53,7 +63,8 @@ namespace IAmAsIAm.Runtime.Story
             _advance = new InputAction("Advance", binding: "<Keyboard>/space");
             _advance.AddBinding("<Keyboard>/enter");
             _advance.AddBinding("<Gamepad>/buttonSouth");
-            _advance.performed += _ => { if (!_anchorOpen && _dialogue.activeSelf && !_choices.activeSelf) runner.Next(); };
+            // Ignore the press that opened this line (Use and Advance share gamepad A).
+            _advance.performed += _ => { if (!_anchorOpen && _dialogue.activeSelf && !_choices.activeSelf && Time.frameCount > _lineShownFrame) runner.Next(); };
 
             // Esc is also the Android back button in the Input System.
             _anchorKey = new InputAction("Anchor", binding: "<Keyboard>/escape");
@@ -68,8 +79,9 @@ namespace IAmAsIAm.Runtime.Story
             runner.LineReady += ShowLine;
             runner.ChoicesReady += ShowChoices;
             runner.ActionRequested += RunAction;
-            runner.TriggerFired += ShowTrigger;
-            runner.Ended += () => ShowLine(new StoryLine { Text = "(The end of what's written so far.)" });
+            TriggerRunner.Fired += ShowTrigger;
+            runner.Started += OnStoryStarted;
+            runner.Ended += OnStoryEnded;
         }
 
         void OnDisable()
@@ -79,14 +91,36 @@ namespace IAmAsIAm.Runtime.Story
             runner.LineReady -= ShowLine;
             runner.ChoicesReady -= ShowChoices;
             runner.ActionRequested -= RunAction;
-            runner.TriggerFired -= ShowTrigger;
+            TriggerRunner.Fired -= ShowTrigger;
+            runner.Started -= OnStoryStarted;
+            runner.Ended -= OnStoryEnded;
+            PlayerMotor.Blocked = false;
+        }
+
+        void OnStoryStarted(Transform partner)
+        {
+            if (cameraRig != null) cameraRig.SetTalkPartner(partner);
+            if (partner != null && cameraRig != null && cameraRig.Target != null)
+            {
+                // The person turns to face the character.
+                var to = cameraRig.Target.position - partner.position;
+                to.y = 0f;
+                if (to.sqrMagnitude > 0.01f) partner.rotation = Quaternion.LookRotation(to);
+            }
+        }
+
+        void OnStoryEnded()
+        {
+            _dialogue.SetActive(false);
+            _choices.SetActive(false);
+            if (cameraRig != null) cameraRig.SetTalkPartner(null);
         }
 
         void Start()
         {
             if (GameServices.Roster != null) GameServices.Roster.FrontChanged += _ => UpdateFrontLabel();
             UpdateFrontLabel();
-            runner.Begin(startKnot);
+            if (!string.IsNullOrEmpty(startKnot)) runner.Play(startKnot);
         }
 
         void Update()
@@ -109,6 +143,14 @@ namespace IAmAsIAm.Runtime.Story
             }
 
             if (_triggerPanel.activeSelf && Time.unscaledTime > _triggerHideAt) _triggerPanel.SetActive(false);
+
+            bool busy = _anchorOpen || _dialogue.activeSelf || _choices.activeSelf || _action.activeSelf || runner.IsPlaying;
+            PlayerMotor.Blocked = busy;
+            _tap.SetActive(_dialogue.activeSelf && !_choices.activeSelf && !_anchorOpen);
+            if (_touch != null) _touch.SetActive(!busy);
+
+            var usable = busy || interactor == null ? null : interactor.Target;
+            _prompt.text = usable == null ? "" : (Touchscreen.current != null ? "" : "E  ") + usable.Prompt;
         }
 
         // ── Dialogue ──────────────────────────────────────────────────────────────
@@ -117,6 +159,7 @@ namespace IAmAsIAm.Runtime.Story
         {
             _choices.SetActive(false);
             _dialogue.SetActive(true);
+            _lineShownFrame = Time.frameCount;
             _speaker.text = line.Speaker == null ? "" : line.Inner ? line.Speaker + " (inside)" : line.Speaker;
             _line.fontStyle = line.Inner ? FontStyle.Italic : FontStyle.Normal;
             _line.text = line.Text;
@@ -401,8 +444,14 @@ namespace IAmAsIAm.Runtime.Story
             _fog.raycastTarget = false;
 
             // Tap anywhere to continue.
-            var tap = Panel(_root, "Tap", new Color(0, 0, 0, 0), Vector2.zero, Vector2.one);
-            tap.AddComponent<Button>().onClick.AddListener(() => { if (!_anchorOpen && !_choices.activeSelf && !_action.activeSelf) runner.Next(); });
+            if (ShowTouchControls()) BuildTouchControls();
+
+            _tap = Panel(_root, "Tap", new Color(0, 0, 0, 0), Vector2.zero, Vector2.one);
+            _tap.AddComponent<Button>().onClick.AddListener(() => { if (!_anchorOpen && !_choices.activeSelf && !_action.activeSelf) runner.Next(); });
+            _tap.SetActive(false);
+
+            _prompt = Label(_root, "Prompt", 54, FontStyle.Bold, new Vector2(0.3f, 0.34f), new Vector2(0.7f, 0.42f));
+            _prompt.alignment = TextAnchor.MiddleCenter;
 
             _dialogue = Panel(_root, "Dialogue", PanelColor, new Vector2(0.05f, 0.03f), new Vector2(0.95f, 0.33f));
             _dialogue.GetComponent<Image>().raycastTarget = false;
@@ -460,6 +509,42 @@ namespace IAmAsIAm.Runtime.Story
             Button(anchorButtons.transform, "Support", AnchorSupport, 110);
             Button(anchorButtons.transform, "Return when ready", CloseAnchor, 110);
             _anchor.SetActive(false);
+        }
+
+        static bool ShowTouchControls() => Application.isMobilePlatform || Touchscreen.current != null;
+
+        /// <summary>
+        /// Phone controls: a joystick bottom left (drives the virtual gamepad's left stick, so walking code
+        /// is shared), a Use button bottom right, and dragging anywhere else on the right half orbits the camera.
+        /// </summary>
+        void BuildTouchControls()
+        {
+            _touch = new GameObject("Touch Controls", typeof(RectTransform));
+            _touch.transform.SetParent(_root, false);
+            var rt = _touch.GetComponent<RectTransform>();
+            rt.anchorMin = Vector2.zero; rt.anchorMax = Vector2.one; rt.offsetMin = Vector2.zero; rt.offsetMax = Vector2.zero;
+
+            var look = Panel(_touch.transform, "Look Pad", new Color(0, 0, 0, 0), new Vector2(0.45f, 0f), new Vector2(1f, 0.88f));
+            look.AddComponent<LookPad>().cameraRig = cameraRig;
+
+            var ring = Panel(_touch.transform, "Stick Ring", new Color(1, 1, 1, 0.12f), new Vector2(0.04f, 0.06f), new Vector2(0.04f, 0.06f));
+            var ringRt = ring.GetComponent<RectTransform>();
+            ringRt.pivot = Vector2.zero; ringRt.sizeDelta = new Vector2(420, 420);
+            var knob = Panel(ring.transform, "Stick", new Color(1, 1, 1, 0.35f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f));
+            knob.GetComponent<RectTransform>().sizeDelta = new Vector2(180, 180);
+            knob.SetActive(false); // Set the control path while inactive, then enable.
+            var stick = knob.AddComponent<OnScreenStick>();
+            stick.controlPath = "<Gamepad>/leftStick";
+            stick.movementRange = 130;
+            knob.SetActive(true);
+
+            var use = Panel(_touch.transform, "Use", ButtonColor, new Vector2(0.86f, 0.08f), new Vector2(0.86f, 0.08f));
+            var useRt = use.GetComponent<RectTransform>();
+            useRt.sizeDelta = new Vector2(300, 300);
+            use.AddComponent<Button>().onClick.AddListener(() => { if (interactor != null) interactor.Use(); });
+            var useLabel = Label(use.transform, "Label", 52, FontStyle.Bold, Vector2.zero, Vector2.one);
+            useLabel.alignment = TextAnchor.MiddleCenter;
+            useLabel.text = "Use";
         }
 
         GameObject Panel(Transform parent, string name, Color color, Vector2 min, Vector2 max)

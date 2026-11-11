@@ -71,5 +71,7 @@ tools/CoreVerify/      .NET harness for CI
 
 ## Status
 
-Systems, data, the story runner and the APK build are in. **The chapters are being designed with the owner**
+**A playable base is in:** walk around a placeholder flat with a close, over-the-shoulder camera (Pokémon Legends: Z-A
+style), talk to a placeholder guide, draw tarot, breathe at the altar, with touch controls on Android. It's ready for
+the owner's art. Systems, data, the story runner and the APK build are in. **The chapters are being designed with the owner**
 (GDD §0 and CLAUDE.md, "Open"). Until then the story is a placeholder line.

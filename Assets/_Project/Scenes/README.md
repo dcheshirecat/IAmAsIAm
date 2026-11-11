@@ -10,4 +10,4 @@
 
 Each gameplay scene needs: a global Volume per dissociative experience, wired to
 `DissociationPresentationDriver`; a `MindStateController`; and a player rig with
-`FrontingController`, `DepersonalizationCameraRig` and `PlayerInteractor`.
+`FrontingController`, `ShoulderCamera (depersonalization drift)` and `PlayerInteractor`.
