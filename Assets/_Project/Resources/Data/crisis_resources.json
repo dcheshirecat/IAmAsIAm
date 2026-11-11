@@ -1,0 +1,13 @@
+{
+  "lastVerified": "UNVERIFIED: re-check every number and URL before each release.",
+  "disclaimer": "If you are in immediate danger, call your local emergency number (e.g. 911, 999, 112, 000). These services are independent of this game.",
+  "resources": [
+    { "region": "INTL", "name": "Find A Helpline", "contact": "", "url": "https://findahelpline.com", "notes": "Free, confidential helplines searchable by country." },
+    { "region": "US", "name": "988 Suicide & Crisis Lifeline", "contact": "Call or text 988", "url": "https://988lifeline.org", "notes": "24/7. Chat is available on the website." },
+    { "region": "CA", "name": "9-8-8 Suicide Crisis Helpline", "contact": "Call or text 988", "url": "https://988.ca", "notes": "24/7, in English and French." },
+    { "region": "GB", "name": "Samaritans", "contact": "Call 116 123", "url": "https://www.samaritans.org", "notes": "24/7, free. Also covers the Republic of Ireland." },
+    { "region": "IE", "name": "Samaritans Ireland", "contact": "Call 116 123", "url": "https://www.samaritans.org/ireland", "notes": "24/7, free." },
+    { "region": "AU", "name": "Lifeline Australia", "contact": "Call 13 11 14", "url": "https://www.lifeline.org.au", "notes": "24/7." },
+    { "region": "NZ", "name": "Need to talk? 1737", "contact": "Call or text 1737", "url": "https://1737.org.nz", "notes": "24/7, free." }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "initialFrontId": "wren",
+  "members": [
+    {
+      "id": "wren", "displayName": "Wren", "pronouns": "they/them",
+      "role": "handles daily life",
+      "description": "Goes to work, pays the bills and keeps things running. Tired and kind, quick to doubt themself, and often the one who 'wakes up' after lost time.",
+      "colorHex": "#C9A27E", "initialPresentation": "Embodied",
+      "perceptionTraits": [], "comfortItemIds": ["chamomile", "rose-quartz"],
+      "trustToFront": 0.0, "canFront": true
+    },
+    {
+      "id": "juniper", "displayName": "Juniper", "pronouns": "she/her",
+      "role": "caretaker",
+      "description": "Keeps the hearth lit and knows every herb on the shelf. Patient and warm, a little bossy about tea.",
+      "colorHex": "#7FA37A", "initialPresentation": "Embodied",
+      "perceptionTraits": ["herb-lore", "warm-light"], "comfortItemIds": ["lavender", "rosemary", "brigids-cross"],
+      "trustToFront": 0.4, "canFront": true
+    },
+    {
+      "id": "pip", "displayName": "Pip", "pronouns": "he/him",
+      "role": "little",
+      "description": "Lives in the herb garden. Loves soft textures and good smells. Loud voices make him hide.",
+      "colorHex": "#F2C14E", "initialPresentation": "Embodied",
+      "perceptionTraits": ["small-paths", "creature-friends"], "comfortItemIds": ["lemon-balm", "calendula", "hag-stone"],
+      "trustToFront": 0.6, "canFront": true
+    },
+    {
+      "id": "bramble", "displayName": "Bramble", "pronouns": "any",
+      "role": "protector",
+      "description": "Guards the forest edge. Blunt and prickly, and has been keeping everyone alive for a very long time. At first appears only as thorns, fog and a voice.",
+      "colorHex": "#5B3A4A", "initialPresentation": "Symbolic",
+      "perceptionTraits": ["hidden-paths", "danger-sense", "glyphs"], "comfortItemIds": ["black-tourmaline", "rowan-cross"],
+      "trustToFront": 0.75, "canFront": true
+    },
+    {
+      "id": "sorrel", "displayName": "Sorrel", "pronouns": "she/they",
+      "role": "holds memories",
+      "description": "Holds hard memories, and shares only what she chooses. Appears through tarot imagery, birdsong, and a lantern moving between the trees.",
+      "colorHex": "#8E9FC2", "initialPresentation": "Symbolic",
+      "perceptionTraits": ["birdsong", "tarot-sight"], "comfortItemIds": ["moonstone", "elder"],
+      "trustToFront": 1.0, "canFront": false
+    }
+  ]
+}

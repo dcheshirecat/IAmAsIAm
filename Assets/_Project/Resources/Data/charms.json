@@ -1,0 +1,77 @@
+{
+  "sourceNote": "Open European folk practices and modern open pagan practices only. Historical claims follow Hutton (1996, 1999) and Merrifield (1987). Crafting a charm is used in-game as a mindfulness beat ('one thing in the moment'), never as a gameplay buff.",
+  "charms": [
+    {
+      "id": "hag-stone", "name": "Hag stone", "origin": "British, Irish and wider European folk practice",
+      "history": "A stone with a natural hole worn through by water. Hag stones were hung over doors, in stables or on bedposts for protection. In folklore, looking through the hole was said to let you see past enchantment.",
+      "craftSteps": ["Walk the shoreline slowly, noticing the stones underfoot.", "When you find one with a natural hole, hold it up to the light.", "Thread a cord through it, tying it with care."],
+      "sensory": "Cold, wave-smoothed stone. The hole is worn soft at its edges, and your fingertip fits into it.",
+      "anchorSenses": ["Touch", "See"],
+      "reflectionPrompt": "If you could look through the hole and see something truly, without the fog, what would you want to see?"
+    },
+    {
+      "id": "rowan-cross", "name": "Rowan cross with red thread", "origin": "Scottish, Irish, Northern English and Scandinavian folk practice",
+      "history": "Two rowan twigs bound into an equal-armed cross with red thread, and hung over doors and byres for protection. A Scottish saying runs: 'Rowan tree and red thread / gar the witches tyne their speed'.",
+      "craftSteps": ["Choose two twigs of similar length.", "Cross them at the middle.", "Wind red thread around the join, one turn per breath.", "Tie it off, and hang it where you most need to feel safe."],
+      "sensory": "Smooth, slightly springy green wood, with rough thread pulling tight under your fingers.",
+      "anchorSenses": ["Touch", "See"],
+      "reflectionPrompt": "Which doorway, inside or out, needs a sign that says 'this is protected'?"
+    },
+    {
+      "id": "witch-bottle", "name": "Witch bottle", "origin": "Early modern English folk practice (16th–17th century); modern pagan adaptations",
+      "history": "Stoneware 'Bellarmine' jars were buried under hearths and thresholds as counter-magic against witchcraft. Archaeologists have found many (Merrifield, 1987). Modern practitioners make gentler versions with glass jars, salt, herbs and pins.",
+      "craftSteps": ["Choose a small jar.", "Add a layer of salt, then dried rosemary for memory and rowan berries for protection.", "As you add each item, say what it is for.", "Seal it and place it by the threshold of the Hearth."],
+      "sensory": "Coarse salt crunching, the resin smell of rosemary, and cool glass in your hands.",
+      "anchorSenses": ["Touch", "Smell", "Hear", "See"],
+      "reflectionPrompt": "What would you want to keep out of your inner home? What would you want to keep in?"
+    },
+    {
+      "id": "brigids-cross", "name": "Brigid's cross", "origin": "Irish tradition, woven on St Brigid's Day / Imbolc (1 February)",
+      "history": "Woven from rushes on the eve of 1 February and hung in homes and byres. It honours Brigid, who is both a Christian saint and associated with an earlier Irish goddess of hearth, poetry and healing. Last year's cross is often burned or kept as the new one is hung.",
+      "craftSteps": ["Hold one rush upright.", "Fold a second rush in half around its middle.", "Turn, and fold the next rush around the last one.", "Keep turning and folding: one rush, one breath.", "Tie off the four arms."],
+      "sensory": "Cool, green rushes that bend with a soft squeak. A clean, grassy smell.",
+      "anchorSenses": ["Touch", "Smell", "See", "Hear"],
+      "reflectionPrompt": "Brigid tends hearth and healing. What is your hearth, and who keeps it lit?"
+    },
+    {
+      "id": "witchs-ladder", "name": "Witch's ladder", "origin": "English folk object (an 1878 find in Wellington, Somerset); modern pagan knot-working",
+      "history": "A knotted cord with feathers, found in a Somerset attic and described in 1887. Its original purpose is debated. Modern pagans tie 'ladders' of nine knots with a word or intention for each knot.",
+      "craftSteps": ["Take a cord and a few feathers or beads.", "Tie the first knot: 'By knot of one…'", "For each knot, say one thing you're grateful for, or one thing you hope for.", "Finish with nine knots."],
+      "sensory": "Smooth cord pulling into firm knots, and the tickle of a feather.",
+      "anchorSenses": ["Touch", "See", "Hear"],
+      "reflectionPrompt": "If you tied one knot for each part of you, what wish would you tie into each?"
+    },
+    {
+      "id": "corn-dolly", "name": "Harvest corn dolly", "origin": "British and European harvest customs (Lughnasadh / Lammas)",
+      "history": "Woven from the last sheaf of the harvest and kept through winter. It was often ploughed back into the field in spring (Hutton, 1996).",
+      "craftSteps": ["Soak the straw so it bends without cracking.", "Bind one end tightly.", "Plait or spiral the straws, one turn at a time.", "Shape and tie off."],
+      "sensory": "Damp straw smelling of hay and sun, rasping softly as it bends.",
+      "anchorSenses": ["Touch", "Smell", "Hear"],
+      "reflectionPrompt": "What have you harvested this year, even if it seems small?"
+    },
+    {
+      "id": "daisy-wheel", "name": "Daisy wheel (hexafoil)", "origin": "Apotropaic 'witch marks' in British and Northern European buildings (medieval to 18th century)",
+      "history": "A six-petalled compass-drawn flower carved near doors, windows and fireplaces. These are some of the most common ritual protection marks found in historic buildings.",
+      "craftSteps": ["Draw a circle with a compass.", "Without changing the width, place the point on the edge and draw an arc.", "Step around the circle, arc by arc, until six petals appear."],
+      "sensory": "Charcoal on paper, the scratch of the compass, and a pattern that appears through careful repetition.",
+      "anchorSenses": ["See", "Hear", "Touch"],
+      "reflectionPrompt": "Repetition made this pattern. What small repeated habit is making something beautiful in you?"
+    },
+    {
+      "id": "personal-sigil", "name": "Personal sigil", "origin": "Modern practice (popularized by Austin Osman Spare, early 20th century; later chaos magic)",
+      "history": "A symbol you design yourself from the letters of an intention. It's a fully personal, open practice.",
+      "craftSteps": ["Write a short, kind intention, e.g. 'we are safe together'.", "Cross out the repeated letters.", "Combine the remaining letters into one shape.", "Simplify it until it feels like yours."],
+      "sensory": "Pen on paper, and a shape slowly becoming your own.",
+      "anchorSenses": ["See", "Touch"],
+      "reflectionPrompt": "What intention would your whole system agree on?"
+    },
+    {
+      "id": "bindrune", "name": "System bindrune", "origin": "Modern practice, inspired by historical runic ligatures",
+      "history": "Historical inscriptions sometimes joined runes into ligatures. Modern practitioners combine runes into a single personal symbol. In the final chapter (Mabon), the system designs one together.",
+      "craftSteps": ["Each part chooses one rune that feels like theirs.", "Overlay them on a shared stave.", "Adjust until everyone can see their own rune in it."],
+      "sensory": "A knife carving into pale wood, curls of shaving, and the smell of fresh-cut timber.",
+      "anchorSenses": ["See", "Smell", "Touch", "Hear"],
+      "reflectionPrompt": "Can every part see themselves in the shape you made together?"
+    }
+  ]
+}

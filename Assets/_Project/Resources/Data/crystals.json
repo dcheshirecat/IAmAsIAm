@@ -1,0 +1,109 @@
+{
+  "sourceNote": "Mineral identity and Mohs hardness are facts. 'modernAssociations' are modern crystal-practice beliefs with no demonstrated physical effects, and they are labelled as such in the UI. In this game, stones are used as tactile grounding anchors: weight, temperature and texture. Ethical sourcing varies widely; second-hand or known-origin stones are better.",
+  "crystals": [
+    {
+      "id": "hematite", "name": "Hematite", "mineral": "Iron oxide (Fe₂O₃)", "mohsHardness": "5.5–6.5",
+      "modernAssociations": ["grounding", "steadiness", "focus"],
+      "tactile": "Surprisingly heavy for its size, cool to the touch, and glassy smooth. A very good stone for 'feel the weight in your palm'.",
+      "careNotes": ["Can rust if left wet."],
+      "safetyNotes": ["Strongly magnetic 'hematite' jewellery is usually a synthetic called hematine. Keep it away from pacemakers and bank cards."],
+      "anchorSenses": ["Touch", "See"]
+    },
+    {
+      "id": "smoky-quartz", "name": "Smoky quartz", "mineral": "Quartz (SiO₂), coloured by natural irradiation", "mohsHardness": "7",
+      "modernAssociations": ["grounding", "releasing worry"],
+      "tactile": "Cool, hard and glassy. Translucent browns and greys, like looking through woodsmoke.",
+      "careNotes": ["Much commercial smoky quartz is artificially irradiated clear quartz."],
+      "safetyNotes": [],
+      "anchorSenses": ["Touch", "See"]
+    },
+    {
+      "id": "clear-quartz", "name": "Clear quartz", "mineral": "Quartz (SiO₂)", "mohsHardness": "7",
+      "modernAssociations": ["clarity", "amplifying intention"],
+      "tactile": "Hard, cold at first, and slowly warming in your hand. Rainbows appear where it's fractured inside.",
+      "careNotes": ["Can focus sunlight like a lens. Don't leave it in a sunny window near fabric."],
+      "safetyNotes": [],
+      "anchorSenses": ["Touch", "See"]
+    },
+    {
+      "id": "amethyst", "name": "Amethyst", "mineral": "Quartz (SiO₂), purple from iron and natural irradiation", "mohsHardness": "7",
+      "modernAssociations": ["calm", "sobriety", "intuition"],
+      "tactile": "Faceted points with sharp-ish edges, or smooth when tumbled. Purple deepens toward the tips.",
+      "careNotes": ["Fades in prolonged sunlight."],
+      "safetyNotes": [],
+      "anchorSenses": ["Touch", "See"]
+    },
+    {
+      "id": "rose-quartz", "name": "Rose quartz", "mineral": "Quartz (SiO₂)", "mohsHardness": "7",
+      "modernAssociations": ["self-compassion", "gentleness", "love"],
+      "tactile": "Milky, soft pink, and usually tumbled very smooth. Pleasant to rub with your thumb.",
+      "careNotes": ["Can fade in strong sunlight."],
+      "safetyNotes": [],
+      "anchorSenses": ["Touch", "See"]
+    },
+    {
+      "id": "black-tourmaline", "name": "Black tourmaline (schorl)", "mineral": "Borosilicate (tourmaline group)", "mohsHardness": "7–7.5",
+      "modernAssociations": ["protection", "boundaries"],
+      "tactile": "Long, striated ridges run along its length, so you can feel the grooves under your fingernail.",
+      "careNotes": ["Brittle across its length. Raw pieces can splinter."],
+      "safetyNotes": [],
+      "anchorSenses": ["Touch", "See"]
+    },
+    {
+      "id": "moonstone", "name": "Moonstone", "mineral": "Feldspar (orthoclase / albite)", "mohsHardness": "6–6.5",
+      "modernAssociations": ["cycles", "intuition", "new beginnings"],
+      "tactile": "Smooth and pearly, with a bluish glow (adularescence) that floats across the surface as you tilt it.",
+      "careNotes": ["Has cleavage planes, so it can crack if knocked."],
+      "safetyNotes": [],
+      "anchorSenses": ["Touch", "See"]
+    },
+    {
+      "id": "labradorite", "name": "Labradorite", "mineral": "Plagioclase feldspar", "mohsHardness": "6–6.5",
+      "modernAssociations": ["transformation", "protection"],
+      "tactile": "Dull grey until it catches the light just right, then flashes of blue, green and gold appear. Good for an 'I'll notice when it changes' focus exercise.",
+      "careNotes": ["Can chip along cleavage planes."],
+      "safetyNotes": [],
+      "anchorSenses": ["See", "Touch"]
+    },
+    {
+      "id": "carnelian", "name": "Carnelian", "mineral": "Chalcedony (microcrystalline quartz)", "mohsHardness": "6.5–7",
+      "modernAssociations": ["vitality", "courage", "creativity"],
+      "tactile": "Waxy and warm-looking, in translucent orange-red. It glows like an ember against light.",
+      "careNotes": ["Much commercial carnelian is heat-treated or dyed agate."],
+      "safetyNotes": [],
+      "anchorSenses": ["See", "Touch"]
+    },
+    {
+      "id": "obsidian", "name": "Obsidian", "mineral": "Volcanic glass (not a crystal)", "mohsHardness": "5–5.5",
+      "modernAssociations": ["truth", "protection", "shadow work"],
+      "tactile": "Glass-smooth and black, with a mirror-like shine when polished.",
+      "careNotes": ["Scratches fairly easily."],
+      "safetyNotes": ["Broken or raw obsidian has edges sharper than a scalpel. Only handle tumbled pieces."],
+      "anchorSenses": ["Touch", "See"]
+    },
+    {
+      "id": "selenite", "name": "Selenite", "mineral": "Gypsum (CaSO₄·2H₂O)", "mohsHardness": "2",
+      "modernAssociations": ["cleansing", "calm"],
+      "tactile": "Silky, fibrous and soft enough to scratch with a fingernail. Feels faintly warm compared with quartz.",
+      "careNotes": ["Water damages it: it dissolves and pits. Never wash or soak it.", "Most stones sold as 'selenite' are the fibrous variety, satin spar."],
+      "safetyNotes": [],
+      "anchorSenses": ["Touch", "See"]
+    },
+    {
+      "id": "malachite", "name": "Malachite", "mineral": "Copper carbonate hydroxide", "mohsHardness": "3.5–4",
+      "modernAssociations": ["transformation", "heart-healing"],
+      "tactile": "Banded swirls of deep and light green, like rings in a cut tree. Polished pieces are cool and silky.",
+      "careNotes": ["Soft, so it scratches easily. Keep away from acids and household cleaners."],
+      "safetyNotes": ["Dust from cutting or sanding is toxic. Never make 'gem elixirs' or put it in drinks. Wash your hands after handling raw pieces."],
+      "anchorSenses": ["See", "Touch"]
+    },
+    {
+      "id": "tigers-eye", "name": "Tiger's eye", "mineral": "Quartz replacing crocidolite fibres", "mohsHardness": "7",
+      "modernAssociations": ["confidence", "focus"],
+      "tactile": "Golden-brown bands shimmer and roll as you turn it (chatoyancy), like light on water.",
+      "careNotes": [],
+      "safetyNotes": ["Polished stones are safe to handle, but they should never be cut or ground at home, because the original fibres were a form of asbestos."],
+      "anchorSenses": ["See", "Touch"]
+    }
+  ]
+}

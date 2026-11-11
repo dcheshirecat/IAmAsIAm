@@ -1,0 +1,19 @@
+{
+    "name": "IAmAsIAm.Runtime",
+    "rootNamespace": "IAmAsIAm.Runtime",
+    "references": [
+        "IAmAsIAm.Core",
+        "Unity.InputSystem",
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

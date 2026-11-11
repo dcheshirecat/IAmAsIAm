@@ -1,0 +1,229 @@
+{
+  "skills": [
+    {
+      "id": "five-senses", "name": "5-4-3-2-1 grounding", "acronym": "", "family": "Grounding", "direction": "Either",
+      "summary": "Bring yourself back to the present by using each of your senses in turn.",
+      "steps": ["Name 5 things you can see.", "Name 4 things you can touch, and touch them.", "Name 3 things you can hear.", "Name 2 things you can smell.", "Name 1 thing you can taste.", "If a sense isn't available right now, skip it or swap it for another."],
+      "whenToUse": "When the world feels far away or unreal, when fog rolls in, or at the start of panic.",
+      "cautions": [],
+      "source": "Widely used grounding technique; see Boon, Steele & van der Hart (2011).",
+      "hasPracticeMode": true
+    },
+    {
+      "id": "orienting", "name": "Orienting to the present", "acronym": "", "family": "Grounding", "direction": "Either",
+      "summary": "Remind every part of you where and when you are now.",
+      "steps": ["Say your name, or the name you use day to day.", "Say where you are.", "Say today's date and the year.", "Say how old the body is.", "Name one thing around you that shows it's now, not then."],
+      "whenToUse": "When you feel confused about time, or feel younger than you are, or when the past feels present.",
+      "cautions": ["If some parts are younger, offer them this information gently. It isn't a correction."],
+      "source": "Boon, Steele & van der Hart (2011), Coping with Trauma-Related Dissociation.",
+      "hasPracticeMode": true
+    },
+    {
+      "id": "feet-on-floor", "name": "Feet on the floor", "acronym": "", "family": "Grounding", "direction": "Either",
+      "summary": "Use the support under you to come back into your body.",
+      "steps": ["Press your feet into the floor.", "Notice the floor pressing back.", "Notice the chair under you and behind your back.", "Let yourself be held by them for three breaths."],
+      "whenToUse": "When you feel outside your body, floaty, or like you're watching yourself.",
+      "cautions": [],
+      "source": "Common somatic grounding practice.",
+      "hasPracticeMode": true
+    },
+    {
+      "id": "grounding-object", "name": "Grounding object", "acronym": "", "family": "Grounding", "direction": "Either",
+      "summary": "Hold something and describe it in detail.",
+      "steps": ["Pick up a small object, such as a stone, a key or a shell.", "Notice its temperature.", "Notice its weight.", "Trace its texture and edges.", "Describe it to yourself as if to someone who has never seen it."],
+      "whenToUse": "Any time. Carrying one with you means you always have an anchor.",
+      "cautions": [],
+      "source": "Common grounding practice.",
+      "hasPracticeMode": true
+    },
+    {
+      "id": "strong-sensation", "name": "Strong sensory input", "acronym": "", "family": "Grounding", "direction": "RaisesArousal",
+      "summary": "Use a strong, safe sensation to wake the body up from shutdown.",
+      "steps": ["Choose something intense but safe: a sour sweet, a strong peppermint, a cold pack, an ice cube in your hand, or a strong scent.", "Focus fully on the sensation.", "Notice it change as you stay with it."],
+      "whenToUse": "When you feel numb, foggy, frozen or shut down.",
+      "cautions": ["Choose sensations that don't cause harm. Never use pain."],
+      "source": "Common grounding practice for hypoarousal.",
+      "hasPracticeMode": true
+    },
+    {
+      "id": "paced-breathing", "name": "Paced breathing", "acronym": "", "family": "Breathing", "direction": "LowersArousal",
+      "summary": "Slow your breathing so that each exhale is longer than the inhale.",
+      "steps": ["Breathe in gently for about 4 counts.", "Breathe out slowly for about 6 counts.", "Aim for around 5–6 breaths a minute.", "Continue for 1–2 minutes."],
+      "whenToUse": "When you feel panic, anger or overwhelm. It's the 'P' in TIPP.",
+      "cautions": ["If you feel light-headed, return to normal breathing.", "If you feel numb or shut down, an activating skill may help more."],
+      "source": "Linehan (2015), DBT Skills Training Manual, TIPP skills.",
+      "hasPracticeMode": true
+    },
+    {
+      "id": "box-breathing", "name": "Box breathing", "acronym": "", "family": "Breathing", "direction": "LowersArousal",
+      "summary": "Breathe in four equal sides: in, hold, out, hold.",
+      "steps": ["In for 4.", "Hold for 4.", "Out for 4.", "Hold for 4.", "Repeat four times."],
+      "whenToUse": "When you'd like a steady, structured rhythm.",
+      "cautions": ["Breath holds can feel distressing for some trauma survivors. Skip the holds if they don't feel good; paced breathing works too."],
+      "source": "Common breathing technique.",
+      "hasPracticeMode": true
+    },
+    {
+      "id": "wise-mind", "name": "Wise Mind", "acronym": "", "family": "Mindfulness", "direction": "Either",
+      "summary": "Find the place where reasonable mind and emotion mind overlap.",
+      "steps": ["Notice what reasonable mind (facts, logic) says.", "Notice what emotion mind (feelings, urges) says.", "Breathe, and drop your attention to your centre.", "Ask: 'What does Wise Mind know?' and wait for an answer."],
+      "whenToUse": "When making decisions, especially ones where parts disagree.",
+      "cautions": [],
+      "source": "Linehan (2015), DBT core mindfulness.",
+      "hasPracticeMode": true
+    },
+    {
+      "id": "what-how-skills", "name": "Observe, Describe, Participate", "acronym": "", "family": "Mindfulness", "direction": "Either",
+      "summary": "The DBT 'what' skills, done non-judgmentally, one-mindfully and effectively.",
+      "steps": ["Observe: notice without words.", "Describe: put words to it, facts only.", "Participate: throw yourself fully into the activity.", "Do it non-judgmentally, one thing at a time, and in a way that works."],
+      "whenToUse": "As daily practice, and during rituals like brewing tea or tying knots.",
+      "cautions": [],
+      "source": "Linehan (2015), DBT core mindfulness.",
+      "hasPracticeMode": false
+    },
+    {
+      "id": "stop", "name": "STOP", "acronym": "STOP", "family": "DistressTolerance", "direction": "Either",
+      "summary": "Pause before acting on an urge.",
+      "steps": ["Stop: freeze. Don't react yet.", "Take a step back: breathe, and give yourself space.", "Observe: what's happening inside and outside?", "Proceed mindfully: act with Wise Mind."],
+      "whenToUse": "When a strong urge hits and acting on it could make things worse.",
+      "cautions": [],
+      "source": "Linehan (2015), DBT distress tolerance.",
+      "hasPracticeMode": false
+    },
+    {
+      "id": "tipp", "name": "TIPP", "acronym": "TIPP", "family": "DistressTolerance", "direction": "LowersArousal",
+      "summary": "Change your body chemistry quickly when emotions are extreme.",
+      "steps": ["Temperature: cold water on your face while holding your breath, or a cold pack on your eyes and cheeks.", "Intense exercise: a short burst of hard movement.", "Paced breathing: exhale longer than you inhale.", "Paired muscle relaxation: tense a muscle group as you breathe in, then release it as you breathe out."],
+      "whenToUse": "When emotion is so high you can't think, a crisis-level 'reset'.",
+      "cautions": ["⚠ The cold-water step lowers your heart rate. Check with a doctor first if you have a heart condition, a low heart rate, an eating disorder, or take beta-blockers.", "Check with a doctor before intense exercise if you have medical conditions."],
+      "source": "Linehan (2015), DBT distress tolerance.",
+      "hasPracticeMode": true
+    },
+    {
+      "id": "accepts", "name": "Wise Mind ACCEPTS", "acronym": "ACCEPTS", "family": "DistressTolerance", "direction": "Either",
+      "summary": "Distraction skills for getting through a hard moment.",
+      "steps": ["Activities", "Contributing", "Comparisons", "Emotions (create different ones)", "Pushing away", "Thoughts (other ones)", "Sensations"],
+      "whenToUse": "When you need to get through a moment that you can't change right now.",
+      "cautions": ["Distraction is for getting through, not for avoiding forever."],
+      "source": "Linehan (2015), DBT distress tolerance.",
+      "hasPracticeMode": false
+    },
+    {
+      "id": "improve", "name": "IMPROVE the moment", "acronym": "IMPROVE", "family": "DistressTolerance", "direction": "Either",
+      "summary": "Make a painful moment a little more bearable.",
+      "steps": ["Imagery", "Meaning", "Prayer (or connecting to something larger)", "Relaxation", "One thing in the moment", "Vacation (a brief mental break)", "Encouragement"],
+      "whenToUse": "When you're stuck in a hard moment and need it to be a little easier.",
+      "cautions": [],
+      "source": "Linehan (2015), DBT distress tolerance.",
+      "hasPracticeMode": false
+    },
+    {
+      "id": "self-soothe", "name": "Self-soothe with the five senses", "acronym": "", "family": "DistressTolerance", "direction": "LowersArousal",
+      "summary": "Comfort yourself kindly through each sense.",
+      "steps": ["Vision: something beautiful to look at.", "Hearing: soothing music or sounds.", "Smell: a comforting scent.", "Taste: something you savour slowly.", "Touch: something soft, warm or familiar."],
+      "whenToUse": "When you're distressed and need kindness. Especially helpful for younger parts.",
+      "cautions": [],
+      "source": "Linehan (2015), DBT distress tolerance.",
+      "hasPracticeMode": true
+    },
+    {
+      "id": "radical-acceptance", "name": "Radical acceptance", "acronym": "", "family": "DistressTolerance", "direction": "Either",
+      "summary": "Accept reality as it is, completely, with your mind, heart and body. This is not approval.",
+      "steps": ["Notice where you're fighting reality.", "Remind yourself that this is how it is right now.", "Consider the causes.", "Practise accepting it with your whole self, including your body posture.", "Notice that pain without suffering is possible."],
+      "whenToUse": "When something painful can't be changed.",
+      "cautions": ["Acceptance does not mean something was okay, or that you must stay in an unsafe situation."],
+      "source": "Linehan (2015), DBT distress tolerance.",
+      "hasPracticeMode": false
+    },
+    {
+      "id": "check-the-facts", "name": "Check the Facts", "acronym": "", "family": "EmotionRegulation", "direction": "Either",
+      "summary": "See whether an emotion fits the facts of the situation.",
+      "steps": ["What emotion do I want to change?", "What event prompted it?", "What are my interpretations and assumptions?", "Am I assuming a threat? How likely is it really?", "Does the emotion, and its intensity, fit the facts?"],
+      "whenToUse": "When an emotion feels bigger than the situation seems to call for.",
+      "cautions": ["Some emotions do fit the facts. This skill is not about invalidating feelings."],
+      "source": "Linehan (2015), DBT emotion regulation.",
+      "hasPracticeMode": false
+    },
+    {
+      "id": "opposite-action", "name": "Opposite Action", "acronym": "", "family": "EmotionRegulation", "direction": "Either",
+      "summary": "When an emotion doesn't fit the facts, act opposite to its urge.",
+      "steps": ["Identify the emotion and its urge.", "Ask whether the emotion fits the facts.", "If it doesn't, identify the opposite action.", "Do the opposite action all the way, including posture and voice.", "Repeat until the emotion changes."],
+      "whenToUse": "When fear, shame or anger is pushing you toward something that doesn't help.",
+      "cautions": ["Only for emotions that don't fit the facts. Don't use it to ignore real danger."],
+      "source": "Linehan (2015), DBT emotion regulation.",
+      "hasPracticeMode": false
+    },
+    {
+      "id": "please", "name": "PLEASE", "acronym": "PLEASE", "family": "EmotionRegulation", "direction": "Either",
+      "summary": "Reduce emotional vulnerability by caring for the body.",
+      "steps": ["Treat PhysicaL illness.", "Balanced Eating.", "Avoid mood-Altering substances.", "Balanced Sleep.", "Get Exercise."],
+      "whenToUse": "Every day. A body that is cared for tolerates more.",
+      "cautions": [],
+      "source": "Linehan (2015), DBT emotion regulation.",
+      "hasPracticeMode": false
+    },
+    {
+      "id": "dear-man", "name": "DEAR MAN", "acronym": "DEAR MAN", "family": "InterpersonalEffectiveness", "direction": "Either",
+      "summary": "Ask for what you want or say no effectively.",
+      "steps": ["Describe the situation (facts).", "Express your feelings.", "Assert what you want, clearly.", "Reinforce: explain how it helps them too.", "Stay Mindful: keep to your goal.", "Appear confident.", "Negotiate."],
+      "whenToUse": "With people outside, and in the game also between parts at the Meeting Table.",
+      "cautions": [],
+      "source": "Linehan (2015), DBT interpersonal effectiveness.",
+      "hasPracticeMode": false
+    },
+    {
+      "id": "give", "name": "GIVE", "acronym": "GIVE", "family": "InterpersonalEffectiveness", "direction": "Either",
+      "summary": "Keep the relationship while asking for something.",
+      "steps": ["(Be) Gentle.", "(Act) Interested.", "Validate.", "(Use an) Easy manner."],
+      "whenToUse": "When the relationship matters, including the relationship between parts.",
+      "cautions": [],
+      "source": "Linehan (2015), DBT interpersonal effectiveness.",
+      "hasPracticeMode": false
+    },
+    {
+      "id": "fast", "name": "FAST", "acronym": "FAST", "family": "InterpersonalEffectiveness", "direction": "Either",
+      "summary": "Keep your self-respect.",
+      "steps": ["(Be) Fair.", "(No over-) Apologizing.", "Stick to your values.", "(Be) Truthful."],
+      "whenToUse": "When you're at risk of giving yourself away to keep the peace.",
+      "cautions": [],
+      "source": "Linehan (2015), DBT interpersonal effectiveness.",
+      "hasPracticeMode": false
+    },
+    {
+      "id": "thought-record", "name": "Thought record", "acronym": "", "family": "Cbt", "direction": "Either",
+      "summary": "Examine an automatic thought and find a more balanced one.",
+      "steps": ["Situation: what happened?", "Automatic thought: what went through your mind?", "Emotion: what did you feel, and how strongly (0–100)?", "Distortions: do any thinking traps fit?", "Evidence for and against the thought.", "Balanced thought: a fairer way to see it.", "Re-rate the emotion."],
+      "whenToUse": "When a thought keeps hurting and you're inside your window enough to think it through.",
+      "cautions": ["Best done when you're settled enough to think. Ground first if you're far outside your window.", "Any shift in the rating counts, including none. Noticing the thought is the skill."],
+      "source": "Beck (2020), Cognitive Behavior Therapy: Basics and Beyond.",
+      "hasPracticeMode": true
+    },
+    {
+      "id": "cognitive-distortions", "name": "Thinking traps (cognitive distortions)", "acronym": "", "family": "Cbt", "direction": "Either",
+      "summary": "Common patterns that make thoughts feel truer than they are.",
+      "steps": ["All-or-nothing thinking", "Overgeneralization", "Mental filter", "Disqualifying the positive", "Mind reading", "Fortune telling", "Catastrophizing", "Minimization", "Emotional reasoning", "'Should' statements", "Labeling", "Personalization", "Blame"],
+      "whenToUse": "Inside a thought record, or any time you catch a thought that stings.",
+      "cautions": [],
+      "source": "Burns (1980), Feeling Good; Beck (2020).",
+      "hasPracticeMode": false
+    },
+    {
+      "id": "inner-meeting-place", "name": "Inner meeting place", "acronym": "", "family": "PluralCommunication", "direction": "Either",
+      "summary": "An imagined safe place where parts can gather and talk.",
+      "steps": ["Imagine a calm place: a table, a room, a clearing.", "Invite any part who wants to come. No one is forced.", "Let each part choose where to sit.", "Share one thing, or just sit together."],
+      "whenToUse": "For decisions, check-ins, or simply getting to know each other.",
+      "cautions": ["Best developed with a therapist's support. Stop if it becomes overwhelming, and ground first."],
+      "source": "Boon, Steele & van der Hart (2011).",
+      "hasPracticeMode": false
+    },
+    {
+      "id": "system-journal", "name": "System journal", "acronym": "", "family": "PluralCommunication", "direction": "Either",
+      "summary": "A shared notebook where parts can leave notes for each other.",
+      "steps": ["Keep one notebook, or one note on your phone, that all parts know about.", "Write date and time, and a name if you like.", "Leave notes kindly; others will read them.", "Write down agreements, and whether you kept them."],
+      "whenToUse": "Daily, and especially after lost time.",
+      "cautions": [],
+      "source": "Common practice in plural communities; Boon, Steele & van der Hart (2011).",
+      "hasPracticeMode": false
+    }
+  ]
+}

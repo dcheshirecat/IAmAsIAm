@@ -1,0 +1,19 @@
+name: Core tests
+
+# Compiles the engine-free Core assembly with Unity's constraints (netstandard2.1, C# 9)
+# and runs the EditMode tests plus content validation of all shipped data,
+# without needing a Unity licence on CI.
+on:
+  push:
+  pull_request:
+
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Test Core + validate data
+        run: dotnet test tools/CoreVerify/Tests/Tests.csproj
