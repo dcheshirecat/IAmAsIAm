@@ -98,9 +98,24 @@ namespace IAmAsIAm.EditorTools
             PlayerSettings.allowedAutorotateToLandscapeLeft = true;
             PlayerSettings.allowedAutorotateToLandscapeRight = true;
             EditorUserBuildSettings.buildAppBundle = false; // A sideloadable .apk.
+            SetAppIcon();
 
             AssetDatabase.SaveAssets();
             Debug.Log("[IAmAsIAm] Project configured (URP, Android IL2CPP ARM64, landscape, APK).");
+        }
+
+        /// <summary>
+        /// Uses Art/UI/app_icon.png as the default icon for every platform. It's a temporary "TEST" icon; the artist
+        /// replaces it by overwriting the file (same name, 1024 × 1024, keep the important part in the middle ~70%).
+        /// </summary>
+        static void SetAppIcon()
+        {
+            const string iconPath = "Assets/_Project/Art/UI/app_icon.png";
+            if (!File.Exists(iconPath)) { Debug.LogWarning("[IAmAsIAm] No app icon at " + iconPath); return; }
+            AssetDatabase.ImportAsset(iconPath, ImportAssetOptions.ForceUpdate);
+            var icon = AssetDatabase.LoadAssetAtPath<Texture2D>(iconPath);
+            if (icon == null) { Debug.LogWarning("[IAmAsIAm] Couldn't load the app icon."); return; }
+            PlayerSettings.SetIcons(NamedBuildTarget.Unknown, new[] { icon }, IconKind.Any);
         }
 
         // ── Scene ────────────────────────────────────────────────────────────────

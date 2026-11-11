@@ -48,7 +48,10 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   ex 2 **Adeena** (Jewish, became religious and married).
 - 2026-11-11: **Chapter order after Judaism:** 3 Buddhism, 4 Islam, 5 Hinduism, 6 Sikhism, 7 Daoism, 8 Druidry, 9 Humanism,
   10 Unitarian Universalism, 11 Jainism, 12 Hellenic polytheism, 13 Eastern Orthodox Christianity (the order the owner listed them;
-  confirm). Shinto, Bahá'í and Heathenry stay in the codex only.
+  confirmed by the owner "for now"). Shinto, Bahá'í and Heathenry stay in the codex only.
+- 2026-11-11: **Jacob (14, Catholic):** a Catholic church is part of Chapter 1's diversity, AND Jacob's faith comes up elsewhere too.
+- 2026-11-11: **Write the chapters in order**, starting with the Prologue, asking the owner how each one goes.
+- 2026-11-11: Temporary app icon `Art/UI/app_icon.png` (marked TEST); `BuildTools.SetAppIcon` sets it. Overwrite to replace.
 - 2026-11-11: **Alters' pronouns, ages and faith** are the owner's (`docs/SystemMembers.md`). Heather's faith is hidden from the
   character until later (`hiddenUntilLater`). Theresa has no pronouns (use the name). Maya holds the job; Izzy runs the lost-time days.
   Links: Maya, Nina, Lily, Heather and Jacob see Sarah as their mother; Axel dated Mark as a trans man; Maya dated Adeena,
