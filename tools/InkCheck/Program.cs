@@ -1,0 +1,185 @@
+// InkCheck: compiles the game's Ink story with Ink's own compiler, writes main.json for Unity,
+// then auto-plays it many times with random choices. It checks:
+//   * the story compiles without errors or warnings,
+//   * every playthrough reaches an end without runtime errors,
+//   * tags (# exercise / # ritual / # explore / # cw / # cue ...) use known ids,
+//   * game functions are called with known ids (members, skills, traditions, experiences).
+// Drafts in Story/Drafts are compiled and played too, but never written out.
+// Usage: tools/InkCheck/check.sh   (CI runs it on every push)
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text.Json;
+using IAmAsIAm.Core.Mind;
+using IAmAsIAm.Core.PluralSystem;
+using IAmAsIAm.Core.Practices;
+using IAmAsIAm.Core.Safety;
+using IAmAsIAm.Core.Skills;
+using IAmAsIAm.Core.Traditions;
+using IAmAsIAm.Core.Triggers;
+
+static class InkCheck
+{
+    static readonly List<string> Problems = new List<string>();
+    static readonly JsonSerializerOptions Json = new JsonSerializerOptions { IncludeFields = true };
+
+    static HashSet<string> _members, _skills, _practiceSkills, _traditions, _spreads, _charms, _cues;
+
+    static int Main(string[] args)
+    {
+        string root = args.Length > 0 ? args[0] : FindRepoRoot();
+        string storyDir = Path.Combine(root, "Assets", "_Project", "Story");
+        string dataDir = Path.Combine(root, "Assets", "_Project", "Resources", "Data");
+        LoadIds(dataDir);
+
+        // The main story: compile, write main.json, play.
+        var main = Compile(storyDir, File.ReadAllText(Path.Combine(storyDir, "main.ink")), "main.ink");
+        if (main != null)
+        {
+            File.WriteAllText(Path.Combine(storyDir, "main.json"), main.ToJson());
+            Play(main.ToJson(), "main.ink");
+        }
+
+        // Drafts: compiled against the same game API, played, never written out.
+        string drafts = Path.Combine(storyDir, "Drafts");
+        if (Directory.Exists(drafts))
+            foreach (var file in Directory.GetFiles(drafts, "*.ink"))
+            {
+                string firstKnot = File.ReadLines(file).Select(l => l.Trim())
+                    .FirstOrDefault(l => l.StartsWith("==="))?.Trim('=', ' ');
+                string wrapper = $"INCLUDE game_api.ink\nINCLUDE Drafts/{Path.GetFileName(file)}\n-> {firstKnot}\n";
+                var draft = Compile(storyDir, wrapper, "Drafts/" + Path.GetFileName(file));
+                if (draft != null) Play(draft.ToJson(), "Drafts/" + Path.GetFileName(file));
+            }
+
+        if (Problems.Count == 0)
+        {
+            Console.WriteLine("✓ Ink story compiles and every random playthrough ends cleanly.");
+            return 0;
+        }
+        foreach (var p in Problems.Distinct()) Console.WriteLine("✗ " + p);
+        return 1;
+    }
+
+    static Ink.Runtime.Story Compile(string storyDir, string source, string label)
+    {
+        var compiler = new Ink.Compiler(source, new Ink.Compiler.Options
+        {
+            sourceFilename = label,
+            fileHandler = new StoryFileHandler(storyDir),
+            errorHandler = (msg, type) => Problems.Add($"{label}: compile {type}: {msg}"),
+        });
+        var story = compiler.Compile();
+        if (story == null) Problems.Add($"{label}: failed to compile.");
+        return story;
+    }
+
+    static void Play(string json, string label, int runs = 300)
+    {
+        var rng = new Random(1234);
+        for (int run = 0; run < runs; run++)
+        {
+            var story = new Ink.Runtime.Story(json);
+            story.onError += (msg, type) => Problems.Add($"{label}: runtime {type}: {msg}");
+            Bind(story, label);
+
+            int steps = 0;
+            while (steps++ < 5000)
+            {
+                while (story.canContinue)
+                {
+                    story.Continue();
+                    foreach (var tag in story.currentTags) CheckTag(tag, label);
+                }
+                if (story.currentChoices.Count == 0) break;
+                story.ChooseChoiceIndex(rng.Next(story.currentChoices.Count));
+            }
+            if (steps >= 5000) Problems.Add($"{label}: a playthrough never ended (possible infinite loop).");
+        }
+    }
+
+    static void Bind(Ink.Runtime.Story story, string label)
+    {
+        void Check(bool ok, string what) { if (!ok) Problems.Add($"{label}: {what}"); }
+        string S(object o) => o?.ToString() ?? "";
+
+        story.BindExternalFunctionGeneral("set_experience", a =>
+        {
+            Check(Enum.TryParse<DissociativeExperience>(S(a[0]), out _), $"set_experience: unknown experience '{a[0]}'");
+            return null;
+        });
+        story.BindExternalFunctionGeneral("nudge", a => null);
+        story.BindExternalFunctionGeneral("adjust_trust", a => { Check(_members.Contains(S(a[0])), $"adjust_trust: unknown member '{a[0]}'"); return null; });
+        story.BindExternalFunctionGeneral("learn_skill", a => { Check(_skills.Contains(S(a[0])), $"learn_skill: unknown skill '{a[0]}'"); return null; });
+        story.BindExternalFunctionGeneral("record_choice", a =>
+        {
+            Check(S(a[0]).Length > 0 && S(a[1]).Length > 0, "record_choice: needs a decision and an option id");
+            return null;
+        });
+        story.BindExternalFunctionGeneral("journal", a =>
+        {
+            Check(Enum.TryParse<JournalEntryKind>(S(a[0]), out _), $"journal: unknown entry kind '{a[0]}'");
+            return null;
+        });
+        story.BindExternalFunctionGeneral("open_gap", a => null);
+        story.BindExternalFunctionGeneral("find_clue", a => null);
+        story.BindExternalFunctionGeneral("explore_tradition", a => { Check(_traditions.Contains(S(a[0])), $"explore_tradition: unknown tradition '{a[0]}'"); return null; });
+        story.BindExternalFunctionGeneral("card_name", a => "The Star");
+        story.BindExternalFunctionGeneral("card_prompt", a => "A prompt.");
+    }
+
+    static void CheckTag(string tag, string label)
+    {
+        int colon = tag.IndexOf(':');
+        string key = (colon < 0 ? tag : tag.Substring(0, colon)).Trim();
+        string value = colon < 0 ? "" : tag.Substring(colon + 1).Trim();
+        void Fail(string why) => Problems.Add($"{label}: tag '#{tag}': {why}");
+
+        switch (key)
+        {
+            case "exercise": if (!_practiceSkills.Contains(value)) Fail("not a skill with a practice exercise"); break;
+            case "explore": if (!_traditions.Contains(value)) Fail("unknown tradition"); break;
+            case "cw": if (!ContentTags.All.Contains(value)) Fail("unknown content tag"); break;
+            case "cue": if (_cues.Count > 0 && !_cues.Contains(value)) Fail("no trigger listens for this cue (triggers.json)"); break;
+            case "ritual":
+                var parts = value.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                if (parts.Length == 0) { Fail("empty ritual"); break; }
+                if (parts[0] == "tarot" && (parts.Length < 2 || !_spreads.Contains(parts[1]))) Fail("unknown tarot spread");
+                else if (parts[0] == "craft" && (parts.Length < 2 || !_charms.Contains(parts[1]))) Fail("unknown charm");
+                else if (parts[0] != "tarot" && parts[0] != "craft" && parts[0] != "rune" && parts[0] != "sachet") Fail("unknown ritual");
+                break;
+            case "shot": case "place": case "chapter-end": case "front": break;
+            default: Fail("unknown tag (see game_api.ink)"); break;
+        }
+    }
+
+    static void LoadIds(string dataDir)
+    {
+        T Load<T>(string f) => JsonSerializer.Deserialize<T>(File.ReadAllText(Path.Combine(dataDir, f)), Json);
+        var skills = Load<SkillCatalogData>("skills.json").skills;
+        _members = new HashSet<string>(Load<SystemMembersData>("system_members.json").members.Select(m => m.id));
+        _skills = new HashSet<string>(skills.Select(s => s.id));
+        _practiceSkills = new HashSet<string>(skills.Where(s => s.hasPracticeMode).Select(s => s.id));
+        _traditions = new HashSet<string>(Load<TraditionData>("traditions.json").traditions.Select(t => t.id));
+        _spreads = new HashSet<string>(Load<TarotSpreadData>("tarot_spreads.json").spreads.Select(s => s.id));
+        _charms = new HashSet<string>(Load<CharmData>("charms.json").charms.Select(c => c.id));
+        _cues = new HashSet<string>(Load<TriggerData>("triggers.json").triggers.SelectMany(t => t.cues));
+    }
+
+    static string FindRepoRoot()
+    {
+        var dir = new DirectoryInfo(AppContext.BaseDirectory);
+        while (dir != null && !Directory.Exists(Path.Combine(dir.FullName, "Assets", "_Project"))) dir = dir.Parent;
+        return dir?.FullName ?? throw new InvalidOperationException("Run from inside the repository.");
+    }
+
+    sealed class StoryFileHandler : Ink.IFileHandler
+    {
+        readonly string _root;
+        public StoryFileHandler(string root) => _root = root;
+        public string ResolveInkFilename(string includeName) => Path.Combine(_root, includeName);
+        public string LoadInkFileContents(string fullFilename) => File.ReadAllText(fullFilename);
+    }
+}

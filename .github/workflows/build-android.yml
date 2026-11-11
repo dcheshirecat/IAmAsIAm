@@ -1,0 +1,100 @@
+# Builds a sideloadable Android APK (Actions > Build Android > Run workflow).
+# Copied from Seven Witches (same disk/swap/memory fixes). One-time setup: add the repo secrets
+# UNITY_LICENSE, UNITY_EMAIL, UNITY_PASSWORD (the same values as Seven Witches; see
+# https://game.ci/docs/github/activation). Download the APK from the run's Artifacts.
+# The build runs IAmAsIAm.EditorTools.BuildTools.BuildAndroid: validate data, compile the Ink
+# story, configure URP/Android, generate the Boot scene, build.
+name: Build Android
+# Pushes to main don't build yet: add the secrets first, then put back:  push: / branches: [main]
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # The Unity Android image is larger than the runner's free disk; remove unused preinstalled tools.
+      - name: Free disk space
+        run: |
+          df -h / /mnt
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup \
+                      /opt/hostedtoolcache /usr/local/share/boost /usr/share/swift \
+                      /usr/local/share/powershell /usr/local/share/chromium /usr/local/lib/node_modules \
+                      /opt/microsoft /opt/google /opt/az /usr/lib/jvm /usr/share/miniconda
+          sudo docker image prune --all --force
+          sudo apt-get clean
+          df -h / /mnt
+      # Unity's Android (IL2CPP) build can need more memory than the runner's ~7 GB; without extra swap
+      # the build gets killed (exit code 137). The swap file goes on whichever disk has room (the main
+      # disk, after the cleanup above; /mnt is small on newer runners), and the step fails loudly if
+      # no swap ends up active, rather than letting the build run without it.
+      - name: Add swap space
+        run: |
+          sudo swapoff -a || true
+          sudo rm -f /mnt/swapfile /swapfile
+          df -h / /mnt
+          for f in /swapfile /mnt/swapfile; do
+            dir=$(dirname $f)
+            free_gb=$(df --output=avail -BG "$dir" | tail -1 | tr -dc '0-9')
+            if [ "$free_gb" -ge 20 ]; then
+              sudo fallocate -l 14G $f && sudo chmod 600 $f && sudo mkswap $f && sudo swapon $f && break
+            fi
+          done
+          free -h
+          swapon --show
+          test "$(swapon --show --noheadings | wc -l)" -gt 0
+      # Every 20 seconds: host RAM/swap, the Unity container's own memory against its limit, and any
+      # process the kernel killed for lack of memory. Shown on the run's Summary page at the end.
+      - name: Start memory log
+        run: |
+          cat > /tmp/memlog.sh <<'EOF'
+          while true; do
+            host=$(free -m | awk '/Mem:/{printf "ram %s/%s MB  ", $3, $2} /Swap:/{printf "swap %s/%s MB", $3, $2}')
+            box=$(docker stats --no-stream --format '{{.MemUsage}}' 2>/dev/null | head -1)
+            echo "$(date +%T)  $host  ${box:+ unity container $box}"
+            sudo dmesg | grep -iE "killed process|out of memory" | tail -n 1 | sed 's/^/    KERNEL: /'
+            sleep 20
+          done
+          EOF
+          nohup bash /tmp/memlog.sh > /tmp/memory.log 2>&1 &
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-Android-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: Library-Android-
+      - uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: Android
+          androidExportType: androidPackage   # .apk
+          buildMethod: IAmAsIAm.EditorTools.BuildTools.BuildAndroid
+          # Unity runs in a Docker container capped by default at 95% of the runner's RAM, so it could
+          # never reach the swap above and got killed (exit code 137). Allow RAM + most of the swap.
+          dockerMemoryLimit: 18g
+      # Puts the findings on the run's Summary page (easy to read on a phone), pass or fail.
+      - name: Memory log
+        if: always()
+        run: |
+          {
+            echo "## Memory during the build"
+            echo '```'
+            nproc | sed 's/^/CPUs: /'
+            free -h
+            swapon --show
+            echo
+            echo "Kernel out-of-memory kills:"
+            sudo dmesg | grep -iE "killed process|out of memory" | tail -n 5 || true
+            echo
+            echo "Last 40 readings (every 20 s):"
+            grep -v KERNEL /tmp/memory.log | tail -n 40 || true
+            echo '```'
+          } | tee -a "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: IAmAsIAm-apk
+          path: build/Android

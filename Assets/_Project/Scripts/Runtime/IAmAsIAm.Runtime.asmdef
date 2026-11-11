@@ -5,7 +5,8 @@
         "IAmAsIAm.Core",
         "Unity.InputSystem",
         "Unity.RenderPipelines.Core.Runtime",
-        "Unity.TextMeshPro"
+        "UnityEngine.UI",
+        "Ink-Libraries"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

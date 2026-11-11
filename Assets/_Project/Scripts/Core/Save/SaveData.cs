@@ -4,6 +4,7 @@ using IAmAsIAm.Core.PluralSystem;
 using IAmAsIAm.Core.Safety;
 using IAmAsIAm.Core.Skills;
 using IAmAsIAm.Core.Story;
+using IAmAsIAm.Core.Triggers;
 
 namespace IAmAsIAm.Core.Save
 {
@@ -41,6 +42,7 @@ namespace IAmAsIAm.Core.Save
         public List<string> exploredTraditionIds = new List<string>();
         public List<string> triedPracticeIds = new List<string>();
         public List<string> craftedItemIds = new List<string>();
+        public List<TriggerProgress> triggerProgress = new List<TriggerProgress>();
     }
 
     /// <summary>

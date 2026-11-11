@@ -8,6 +8,7 @@ using IAmAsIAm.Core.Safety;
 using IAmAsIAm.Core.Skills;
 using IAmAsIAm.Core.Story;
 using IAmAsIAm.Core.Traditions;
+using IAmAsIAm.Core.Triggers;
 
 namespace IAmAsIAm.Core
 {
@@ -30,6 +31,7 @@ namespace IAmAsIAm.Core
             public TarotSpreadData Spreads;
             public ChapterData Chapters;
             public TraditionData Traditions;
+            public TriggerData Triggers;
         }
 
         public static List<string> Validate(Bundle b)
@@ -159,13 +161,25 @@ namespace IAmAsIAm.Core
                     if (p.steps == null || p.steps.Count == 0) issues.Add($"{label}: practice '{p.id}' needs steps.");
                 }
                 foreach (var le in t.livedExperiences)
+                    issues.AddRange(CheckTestimony(label, le));
+            }
+
+            // Triggers
+            var triggers = b.Triggers?.triggers ?? new List<TriggerDefinition>();
+            CheckUnique(issues, "triggers", triggers.Select(t => t.id));
+            foreach (var t in triggers)
+            {
+                if (t.cues == null || t.cues.Count == 0) issues.Add($"trigger '{t.id}': needs at least one cue.");
+                if (t.outcomes == null || t.outcomes.Count == 0) issues.Add($"trigger '{t.id}': needs at least one outcome.");
+                foreach (var o in t.outcomes ?? new List<TriggerOutcome>())
                 {
-                    bool approved = le.status == "approved";
-                    if (!approved && !string.IsNullOrWhiteSpace(le.text))
-                        issues.Add($"{label}: lived experience '{le.id}' has text but isn't approved. Testimony must come from a consented, reviewed interview.");
-                    if (approved && (string.IsNullOrWhiteSpace(le.consentRef) || string.IsNullOrWhiteSpace(le.text)))
-                        issues.Add($"{label}: approved lived experience '{le.id}' needs text and a consentRef.");
+                    if (!EnumText.IsValid<TriggerResponse>(o.response)) issues.Add($"trigger '{t.id}': unknown response '{o.response}'.");
+                    if (o.Response == TriggerResponse.Switch && o.switchTo != "any" && members.Count > 0 && !memberIds.Contains(o.switchTo))
+                        issues.Add($"trigger '{t.id}': switch target '{o.switchTo}' isn't a member.");
                 }
+                foreach (var m in t.affectsMembers ?? new List<string>())
+                    if (members.Count > 0 && !memberIds.Contains(m)) issues.Add($"trigger '{t.id}': affected member '{m}' isn't a member.");
+                if (string.IsNullOrWhiteSpace(t.hint)) issues.Add($"trigger '{t.id}': needs a hint (shown before it's fully learned).");
             }
 
             // Crisis resources
@@ -176,6 +190,37 @@ namespace IAmAsIAm.Core
                     issues.Add($"crisis resource '{r.name}': needs a contact or URL.");
 
             return issues;
+        }
+
+        static IEnumerable<string> CheckTestimony(string label, LivedExperience le)
+        {
+            string l = $"{label}: lived experience '{le.id}'";
+            if (le.status != "approved")
+            {
+                if (!string.IsNullOrWhiteSpace(le.text))
+                    yield return $"{l} has text but isn't approved. Testimony must be sourced (interview, or public consensus/stream) and reviewed.";
+                yield break;
+            }
+            if (string.IsNullOrWhiteSpace(le.text)) yield return $"{l} is approved but has no text.";
+            switch (le.sourceType)
+            {
+                case "interview":
+                    if (string.IsNullOrWhiteSpace(le.consentRef)) yield return $"{l}: interviews need a consentRef.";
+                    break;
+                case "public-consensus":
+                    if (le.sources.Count < 2) yield return $"{l}: public consensus needs at least 2 independent sources.";
+                    break;
+                case "public-stream":
+                    if (string.IsNullOrWhiteSpace(le.streamName)) yield return $"{l}: public stream needs a streamName.";
+                    if (le.sources.Count < 2) yield return $"{l}: a stream needs at least 2 sources to show it's a stream, not one voice.";
+                    break;
+                default:
+                    yield return $"{l}: unknown sourceType '{le.sourceType}' (interview, public-consensus, public-stream).";
+                    break;
+            }
+            foreach (var src in le.sources)
+                if (string.IsNullOrWhiteSpace(src.url) && string.IsNullOrWhiteSpace(src.title))
+                    yield return $"{l}: every source needs a title or URL.";
         }
 
         static void CheckUnique(List<string> issues, string label, IEnumerable<string> ids)

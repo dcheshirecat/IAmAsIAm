@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Text;
 using IAmAsIAm.Core.Safety;
-using TMPro;
+using UnityEngine.UI;
 using UnityEngine;
 
 namespace IAmAsIAm.Runtime.Safety
@@ -13,7 +13,7 @@ namespace IAmAsIAm.Runtime.Safety
     /// </summary>
     public sealed class CrisisResourcesView : MonoBehaviour
     {
-        [SerializeField] TMP_Text body;
+        [SerializeField] Text body;
         [Tooltip("ISO region code. If empty, it's guessed from the system language and can be changed in settings.")]
         [SerializeField] string regionOverride;
 
@@ -36,14 +36,14 @@ namespace IAmAsIAm.Runtime.Safety
                 if (r.region != region && r.region != "INTL") continue;
                 sb.Append("<b>").Append(r.name).AppendLine("</b>");
                 if (!string.IsNullOrEmpty(r.contact)) sb.AppendLine(r.contact);
-                if (!string.IsNullOrEmpty(r.url)) sb.Append("<link=\"").Append(r.url).Append("\"><u>").Append(r.url).AppendLine("</u></link>");
+                if (!string.IsNullOrEmpty(r.url)) sb.AppendLine(r.url);
                 if (!string.IsNullOrEmpty(r.notes)) sb.AppendLine(r.notes);
                 sb.AppendLine();
             }
             body.text = sb.ToString();
         }
 
-        /// <summary>Hook this to a TMP link click handler.</summary>
+        /// <summary>Opens a resource's website (hook to a button per resource).</summary>
         public void OpenLink(string url)
         {
             if (GameServices.Crisis.resources.Any(r => r.url == url)) Application.OpenURL(url);

@@ -7,6 +7,7 @@ using IAmAsIAm.Core.Safety;
 using IAmAsIAm.Core.Skills;
 using IAmAsIAm.Core.Story;
 using IAmAsIAm.Core.Traditions;
+using IAmAsIAm.Core.Triggers;
 using NUnit.Framework;
 
 namespace IAmAsIAm.Tests
@@ -45,6 +46,7 @@ namespace IAmAsIAm.Tests
             Spreads = Load<TarotSpreadData>("tarot_spreads.json"),
             Chapters = Load<ChapterData>("chapters.json"),
             Traditions = Load<TraditionData>("traditions.json"),
+            Triggers = Load<TriggerData>("triggers.json"),
         };
 
         [Test]

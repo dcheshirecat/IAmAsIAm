@@ -3,6 +3,9 @@ using IAmAsIAm.Core.PluralSystem;
 using IAmAsIAm.Core.Practices;
 using IAmAsIAm.Core.Safety;
 using IAmAsIAm.Core.Skills;
+using IAmAsIAm.Core.Story;
+using IAmAsIAm.Core.Traditions;
+using IAmAsIAm.Core.Triggers;
 using IAmAsIAm.Runtime.Save;
 using UnityEngine;
 
@@ -35,6 +38,13 @@ namespace IAmAsIAm.Runtime
                 DataLoader.Load<CharmData>("charms"));
 
             var prefs = SaveService.LoadPreferences();
+
+            // Story systems first, so anything listening for Ready finds them.
+            GameServices.InitializeStory(
+                new TriggerSystem(DataLoader.Load<TriggerData>("triggers").triggers, System.Environment.TickCount),
+                new ChoiceLog(),
+                new TraditionJournal(DataLoader.Load<TraditionData>("traditions").traditions),
+                DataLoader.Load<TarotSpreadData>("tarot_spreads"));
 
             GameServices.Initialize(
                 new MindModel(initialWindowHalfWidth),

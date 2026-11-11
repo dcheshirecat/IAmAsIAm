@@ -1,6 +1,6 @@
 using IAmAsIAm.Core.Grounding;
 using IAmAsIAm.Core.Mind;
-using TMPro;
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -21,7 +21,7 @@ namespace IAmAsIAm.Runtime.Grounding
         [SerializeField] int targetCycles = 6;
         [SerializeField] Transform breathShape;
         [SerializeField] Vector2 scaleRange = new Vector2(0.6f, 1.15f);
-        [SerializeField] TMP_Text phaseLabel;
+        [SerializeField] Text phaseLabel;
         [SerializeField] bool hapticCue = true;
         [SerializeField, Range(0f, 0.3f)] float hapticStrength = 0.08f;
         [Tooltip("Apply the result to the mind model when done (off in Practice Mode).")]

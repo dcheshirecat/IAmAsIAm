@@ -1,3 +1,4 @@
+// DRAFT SAMPLE: not canon. Written before the chapter plan; kept only for the owner to review or discard.
 // ─────────────────────────────────────────────────────────────────────────────
 //  Chapter 1: Samhain, "The Kettle Is Cold"
 //  Wren loses an afternoon, finds clues, meets Wen, and finds the door.
@@ -118,4 +119,4 @@ Wren reads it three times. Their heart is going fast.
 -
 The kettle is still cold. Wren switches it on again, and listens to it start to hum.
 Tomorrow, Wren will go to The Crossroads.
--> crossroads
+-> END

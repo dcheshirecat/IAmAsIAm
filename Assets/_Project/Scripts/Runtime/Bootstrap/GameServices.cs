@@ -4,6 +4,9 @@ using IAmAsIAm.Core.PluralSystem;
 using IAmAsIAm.Core.Practices;
 using IAmAsIAm.Core.Safety;
 using IAmAsIAm.Core.Skills;
+using IAmAsIAm.Core.Story;
+using IAmAsIAm.Core.Traditions;
+using IAmAsIAm.Core.Triggers;
 using UnityEngine;
 
 namespace IAmAsIAm.Runtime
@@ -21,6 +24,10 @@ namespace IAmAsIAm.Runtime
         public static PracticeLibrary Practices { get; private set; }
         public static CrisisResourceData Crisis { get; private set; }
         public static ComfortSettings Comfort { get; private set; } = new ComfortSettings();
+        public static TriggerSystem Triggers { get; private set; }
+        public static ChoiceLog Choices { get; private set; }
+        public static TraditionJournal Traditions { get; private set; }
+        public static TarotSpreadData Spreads { get; private set; }
 
         public static int InGameDay { get; set; } = 1;
         public static bool IsReady { get; private set; }
@@ -43,6 +50,14 @@ namespace IAmAsIAm.Runtime
             Ready?.Invoke();
         }
 
+        internal static void InitializeStory(TriggerSystem triggers, ChoiceLog choices, TraditionJournal traditions, TarotSpreadData spreads)
+        {
+            Triggers = triggers;
+            Choices = choices;
+            Traditions = traditions;
+            Spreads = spreads;
+        }
+
         public static void NotifyComfortChanged() => ComfortChanged?.Invoke();
 
         // Supports "Enter Play Mode Options" with domain reload disabled.
@@ -51,6 +66,7 @@ namespace IAmAsIAm.Runtime
         {
             Mind = null; Roster = null; Journal = null; Skills = null; Practices = null; Crisis = null;
             Comfort = new ComfortSettings();
+            Triggers = null; Choices = null; Traditions = null; Spreads = null;
             InGameDay = 1;
             IsReady = false;
             ComfortChanged = null;

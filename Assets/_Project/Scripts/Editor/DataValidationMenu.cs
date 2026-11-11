@@ -3,6 +3,9 @@ using IAmAsIAm.Core.PluralSystem;
 using IAmAsIAm.Core.Practices;
 using IAmAsIAm.Core.Safety;
 using IAmAsIAm.Core.Skills;
+using IAmAsIAm.Core.Story;
+using IAmAsIAm.Core.Traditions;
+using IAmAsIAm.Core.Triggers;
 using IAmAsIAm.Runtime;
 using UnityEditor;
 using UnityEngine;
@@ -40,6 +43,10 @@ namespace IAmAsIAm.EditorTools
             Skills = DataLoader.Load<SkillCatalogData>("skills"),
             Members = DataLoader.Load<SystemMembersData>("system_members"),
             Crisis = DataLoader.Load<CrisisResourceData>("crisis_resources"),
+            Spreads = DataLoader.Load<TarotSpreadData>("tarot_spreads"),
+            Chapters = DataLoader.Load<ChapterData>("chapters"),
+            Traditions = DataLoader.Load<TraditionData>("traditions"),
+            Triggers = DataLoader.Load<TriggerData>("triggers"),
         };
     }
 

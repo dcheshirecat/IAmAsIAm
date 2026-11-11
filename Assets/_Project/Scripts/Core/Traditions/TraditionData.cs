@@ -36,22 +36,44 @@ namespace IAmAsIAm.Core.Traditions
         public List<string> cautions = new List<string>();
     }
 
+    /// <summary>A public source (blog post, video, talk, article) behind a lived-experience entry.</summary>
+    [Serializable]
+    public sealed class TestimonySource
+    {
+        public string title;
+        public string url;
+        /// <summary>"blog", "video", "podcast", "article" or "book".</summary>
+        public string kind;
+        /// <summary>The date it was accessed, so it can be re-checked.</summary>
+        public string accessed;
+    }
+
     /// <summary>
-    /// A real practitioner's words. These come ONLY from consented interviews. Slots marked
-    /// "awaiting-interview" ship without text and are never invented. See docs/LivedExperienceInterviews.md.
+    /// What practitioners actually say about living their faith. It comes from one of three places:
+    ///  * "interview": a consented interview. Needs a consentRef (kept outside the repo).
+    ///  * "public-consensus": several public testimonies (blogs, videos) that agree. Paraphrased, at least 2 sources.
+    ///  * "public-stream": a distinct stream within the practice (e.g. Orthodox vs Reform experience), at least 2 sources, named.
+    /// Nothing is ever invented. Text is only allowed once the entry is "approved".
+    /// See docs/LivedExperienceSources.md.
     /// </summary>
     [Serializable]
     public sealed class LivedExperience
     {
         public string id;
-        /// <summary>The topic the interview will cover, e.g. "Finding the tradition as a plural person".</summary>
+        /// <summary>The topic, e.g. "Finding the tradition as a plural person".</summary>
         public string topic;
-        /// <summary>"awaiting-interview", "in-review" or "approved".</summary>
-        public string status = "awaiting-interview";
-        /// <summary>Reference to the signed consent record (kept outside the repo).</summary>
+        /// <summary>"awaiting" (no text yet) or "approved".</summary>
+        public string status = "awaiting";
+        /// <summary>"interview", "public-consensus" or "public-stream".</summary>
+        public string sourceType;
+        /// <summary>For public-stream: which stream, e.g. "Orthodox Judaism", "Reform Judaism".</summary>
+        public string streamName;
+        /// <summary>For interviews: reference to the signed consent record.</summary>
         public string consentRef;
-        /// <summary>How the contributor wants to be credited (or "anonymous").</summary>
+        /// <summary>For interviews: how the contributor wants to be credited (or "anonymous").</summary>
         public string credit;
+        public List<TestimonySource> sources = new List<TestimonySource>();
+        /// <summary>Paraphrased in our own words. Never long quotes from a single person.</summary>
         public string text;
     }
 

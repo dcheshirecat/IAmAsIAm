@@ -114,9 +114,9 @@ namespace IAmAsIAm.Tests
         public void UnapprovedTestimonyWithText_IsRejected()
         {
             var t = new TraditionEntry { id = "t", openness = "OpenToAll", opennessNote = "n", references = new List<string> { "r" } };
-            t.livedExperiences.Add(new LivedExperience { id = "le", status = "awaiting-interview", text = "Invented words" });
+            t.livedExperiences.Add(new LivedExperience { id = "le", status = "awaiting", text = "Invented words" });
             var issues = DataValidator.Validate(new DataValidator.Bundle { Traditions = new TraditionData { traditions = new List<TraditionEntry> { t } } });
-            Assert.That(issues, Has.Some.Contains("consented, reviewed interview"));
+            Assert.That(issues, Has.Some.Contains("must be sourced"));
         }
 
         [Test]

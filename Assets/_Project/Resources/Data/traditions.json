@@ -30,8 +30,8 @@
       "mentalHealthNotes": ["Mindfulness-based therapies (MBSR, MBCT, and DBT's mindfulness skills) draw on Buddhist meditation.", "Intensive meditation, such as long silent retreats, can bring up trauma or increase depersonalization in some people (Lindahl et al., 2017). Trauma-sensitive approaches suggest eyes-open practice, shorter sessions, and anchors other than the breath (Treleaven, 2018)."],
       "commonMisconceptions": ["Not all Buddhists meditate; devotion and ethics are central for many.", "'Non-self' doesn't mean you don't matter."],
       "livedExperiences": [
-        { "id": "buddhism-1", "topic": "Practising meditation while living with dissociation", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" },
-        { "id": "buddhism-2", "topic": "What 'non-self' means to a plural Buddhist", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "buddhism-1", "topic": "Practising meditation while living with dissociation", "status": "awaiting", "sourceType": "", "text": "" },
+        { "id": "buddhism-2", "topic": "What 'non-self' means to a plural Buddhist", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["Harvey, P. (2013). An Introduction to Buddhism (2nd ed.). Cambridge University Press.", "Treleaven, D. A. (2018). Trauma-Sensitive Mindfulness. W. W. Norton.", "Lindahl, J. R., et al. (2017). The varieties of contemplative experience. PLoS ONE, 12(5)."]
     },
@@ -57,8 +57,8 @@
       "mentalHealthNotes": ["Many churches openly support psychiatric and psychological care alongside faith.", "Some communities have interpreted dissociative symptoms as spiritual attack. Clinicians warn that deliverance or exorcism aimed at parts can be deeply harmful, and the teacher in this game always says so.", "Some players carry religious trauma, so these scenes are tagged and skippable."],
       "commonMisconceptions": ["Christianity isn't one thing: beliefs and practices vary widely between churches.", "Brigid of Kildare is both a Christian saint and connected with an earlier Irish goddess. Many people hold both."],
       "livedExperiences": [
-        { "id": "christianity-1", "topic": "Faith, therapy and a dissociative diagnosis", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" },
-        { "id": "christianity-2", "topic": "Returning to church after religious harm", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "christianity-1", "topic": "Faith, therapy and a dissociative diagnosis", "status": "awaiting", "sourceType": "", "text": "" },
+        { "id": "christianity-2", "topic": "Returning to church after religious harm", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["MacCulloch, D. (2009). A History of Christianity. Allen Lane.", "Keating, T. (1986). Open Mind, Open Heart. Continuum."]
     },
@@ -84,7 +84,7 @@
       "mentalHealthNotes": ["Quakers founded The Retreat in York (1796), which pioneered 'moral treatment': humane care for people with mental illness."],
       "commonMisconceptions": ["Quakers aren't Amish, and most don't wear distinctive dress."],
       "livedExperiences": [
-        { "id": "quakers-1", "topic": "Silence as a grounding practice", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "quakers-1", "topic": "Silence as a grounding practice", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["Britain Yearly Meeting. Quaker Faith & Practice (5th ed.).", "Digby, A. (1985). Madness, Morality and Medicine: A Study of the York Retreat. Cambridge University Press."]
     },
@@ -110,7 +110,7 @@
       "mentalHealthNotes": ["Pikuach nefesh: saving a life overrides almost every other commandment, and this is widely understood to include seeking medical and mental health care.", "Shabbat's weekly rest is a deep model of rhythm, which echoes the DBT skill PLEASE."],
       "commonMisconceptions": ["Jewish identity isn't only religious: it's also peoplehood and culture, and many Jews are secular.", "Kabbalah is a Jewish mystical tradition with its own context, not a pop-spiritual brand."],
       "livedExperiences": [
-        { "id": "judaism-1", "topic": "Shabbat as rest for a tired system", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "judaism-1", "topic": "Shabbat as rest for a tired system", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["de Lange, N. (2000). An Introduction to Judaism. Cambridge University Press."]
     },
@@ -136,7 +136,7 @@
       "mentalHealthNotes": ["Medieval Islamic hospitals (bimaristans), for example in Baghdad and Cairo, included care for people with mental illness (Dols, 1992).", "Some communities attribute symptoms to jinn. Muslim mental health organisations encourage clinical care alongside faith, and the teacher respects both."],
       "commonMisconceptions": ["'Allah' is simply the Arabic word for God, used by Arabic-speaking Christians too.", "Muslims are extremely diverse: most don't live in the Middle East."],
       "livedExperiences": [
-        { "id": "islam-1", "topic": "Prayer as rhythm and grounding through the day", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "islam-1", "topic": "Prayer as rhythm and grounding through the day", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["Nasr, S. H. (Ed.). (2015). The Study Quran. HarperOne.", "Dols, M. W. (1992). Majnūn: The Madman in Medieval Islamic Society. Oxford University Press."]
     },
@@ -162,7 +162,7 @@
       "mentalHealthNotes": ["Yoga and pranayama (breath practice) are widely studied for wellbeing.", "Some forceful breathwork can cause dizziness and isn't recommended for everyone, so the game uses only gentle breathing."],
       "commonMisconceptions": ["Hindus aren't polytheists in a simple sense: many see the many deities as forms of one reality.", "Modern postural yoga is one recent part of a much older and broader tradition."],
       "livedExperiences": [
-        { "id": "hinduism-1", "topic": "Devotion (bhakti) as comfort", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "hinduism-1", "topic": "Devotion (bhakti) as comfort", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["Flood, G. (1996). An Introduction to Hinduism. Cambridge University Press."]
     },
@@ -188,7 +188,7 @@
       "mentalHealthNotes": ["Seva and community connection are deep sources of meaning, which echoes DBT's 'Contributing' (ACCEPTS)."],
       "commonMisconceptions": ["Sikhi is its own religion, not a blend of Hinduism and Islam.", "The turban (dastar) is an article of faith, not a cultural accessory."],
       "livedExperiences": [
-        { "id": "sikhism-1", "topic": "Seva and belonging", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "sikhism-1", "topic": "Seva and belonging", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["Nesbitt, E. (2016). Sikhism: A Very Short Introduction (2nd ed.). Oxford University Press."]
     },
@@ -214,7 +214,7 @@
       "mentalHealthNotes": ["Rooting practices overlap with grounding skills such as 'feet on the floor'."],
       "commonMisconceptions": ["Daoism isn't only a philosophy of 'going with the flow'. It's also a living religion with priests and temples."],
       "livedExperiences": [
-        { "id": "daoism-1", "topic": "Not forcing: wu wei and recovery", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "daoism-1", "topic": "Not forcing: wu wei and recovery", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["Kohn, L. (2001). Daoism and Chinese Culture. Three Pines Press."]
     },
@@ -240,7 +240,7 @@
       "mentalHealthNotes": ["Seasonal ritual and gratitude practices connect with the game's Wheel of the Year rhythm."],
       "commonMisconceptions": ["Shinto has no single founder or scripture in the way the Abrahamic faiths do."],
       "livedExperiences": [
-        { "id": "shinto-1", "topic": "Seasons and gratitude", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "shinto-1", "topic": "Seasons and gratitude", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["Breen, J., & Teeuwen, M. (2010). A New History of Shinto. Wiley-Blackwell."]
     },
@@ -266,7 +266,7 @@
       "mentalHealthNotes": ["Bahá'í writings encourage seeking competent medical care."],
       "commonMisconceptions": ["It's not a sect of Islam; it's an independent world religion."],
       "livedExperiences": [
-        { "id": "bahai-1", "topic": "Unity, and the parts of a self", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "bahai-1", "topic": "Unity, and the parts of a self", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["Momen, M. (2007). The Bahá'í Faith: A Beginner's Guide. Oneworld."]
     },
@@ -299,7 +299,7 @@
       "mentalHealthNotes": ["Norse lore includes shapeshifting and seiðr (trance work). The teacher is careful never to frame a person's parts as spirits or possession."],
       "commonMisconceptions": ["Heathenry isn't inherently connected to white supremacy. Inclusive heathens actively oppose its misuse."],
       "livedExperiences": [
-        { "id": "heathenry-1", "topic": "Reclaiming the runes from hate", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "heathenry-1", "topic": "Reclaiming the runes from hate", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["Larrington, C. (Trans.). (2014). The Poetic Edda (rev. ed.). Oxford University Press.", "Declaration 127 (2016), signed by heathen organisations worldwide."]
     },
@@ -325,7 +325,7 @@
       "mentalHealthNotes": ["Rituals of seasonal change can be grounding markers of time, which helps for people who lose time."],
       "commonMisconceptions": ["Wiccans don't worship the Devil, a figure from Christian theology.", "Not all witches are Wiccan."],
       "livedExperiences": [
-        { "id": "wicca-1", "topic": "Witchcraft as a plural practitioner", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "wicca-1", "topic": "Witchcraft as a plural practitioner", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["Hutton, R. (1999). The Triumph of the Moon. Oxford University Press.", "Gardner, G. (1954). Witchcraft Today. Rider."]
     },
@@ -351,7 +351,7 @@
       "mentalHealthNotes": ["Time in nature and long exhales both have good evidence for calming the body."],
       "commonMisconceptions": ["Stonehenge was built long before the druids. Modern druids gather there anyway."],
       "livedExperiences": [
-        { "id": "druidry-1", "topic": "Nature as a safe place", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "druidry-1", "topic": "Nature as a safe place", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["Hutton, R. (2009). Blood and Mistletoe: The History of the Druids in Britain. Yale University Press."]
     },
@@ -377,7 +377,7 @@
       "mentalHealthNotes": ["Many non-religious people find meaning in values, relationships and community. The game never treats faith as necessary for healing."],
       "commonMisconceptions": ["Humanists don't lack morals; their ethics simply aren't based on religion."],
       "livedExperiences": [
-        { "id": "humanism-1", "topic": "Healing without religion", "status": "awaiting-interview", "consentRef": "", "credit": "", "text": "" }
+        { "id": "humanism-1", "topic": "Healing without religion", "status": "awaiting", "sourceType": "", "text": "" }
       ],
       "references": ["Copson, A., & Grayling, A. C. (Eds.). (2015). The Wiley Blackwell Handbook of Humanism. Wiley-Blackwell.", "Humanists International (2022). The Amsterdam Declaration."]
     },
