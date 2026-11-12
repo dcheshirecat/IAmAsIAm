@@ -150,6 +150,10 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Once another alter's version of a chapter is unlocked (or a new alter is met), an **unexpected switch** can always happen.
   The prologue drafts are to be **reworked into this explore-first style** (same events and dialogue; keep the owner's Doc edits).
 
+- 2026-11-12: **Prelude (owner):** Maya meets Wicca at **college** but only gets **serious in her early twenties**. She finds it first
+  through **a person**, later through **a shop or coven**. The guide is **a coven elder**. The system: **lost time grows**
+  (more blackouts, signs of others: notes, things moved) and Maya doesn't understand it yet.
+
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
