@@ -404,6 +404,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   TRIED. -N"), 3 Remembrance (Dec: Zahra (placeholder, Shia) and her turbah; Idris's (placeholder, Sufi) Thursday dhikr, eyes open;
   Maya surfaces), 4 Iftar (Ramadan 2027: an open community iftar; the last day; Angie suggests SystemLog: `gain_app` + first notes
   from Heather and Izzy; Maya reads them; `# chapter-end`). 61 voiced lines. **Chapter 4 unlocks nobody** (owner).
+- 2026-11-12: **Chapter 4 Drive:** Story Drafts → `06 Chapter 4 - Islam (title to come)` (1ENhOVuU74tWb4yjEgE0pkONOhh1k3EZ5): Part 1
+  (1OJV4fbW3j_rDl-PKaQfzPkJbvnPU03hVbGcZmDC-N5g), Part 2 (189farIxOpqUkSvKHCVQwZbmC-YIkYSjJn6VCOyeULuM), Part 3
+  (1tA8e2jyyekOPR1JDIwXf91OP4lGZHYNIl9jTftkPrYA), Part 4 (1CjppQS0syQLXUlRhv404h93vVOZLFxAEG3KCMJc8HME); Sheet "06 Chapter 4 - script
+  list (draft)" (1JulajdX19QUM23Zx6VClkKTZ5gWUfVzoSIj8jayapek, 61 lines). Zahra and Idris: still placeholder names (owner asked who they are).
+- 2026-11-12: **Chapter 5, Hinduism:** the owner asked for research and options for Hindu leaders: `docs/Chapter5_HinduismResearch.md`.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
