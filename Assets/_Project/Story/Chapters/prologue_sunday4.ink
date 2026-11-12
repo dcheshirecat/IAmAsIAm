@@ -15,6 +15,7 @@
 //   - Rebecca is going out with Will.
 //   - Maya still has Mira's napkin number (Sunday 2) and the unfinished "Dear Mira" letters (Sunday 3).
 //   - Nina's first words, in the voice of "the minister's perfect, quiet child".
+//   - Owner: more of her day. Claude's morning: Sarah left early, so Mr. Carter drives Maya (Reneé is in Minneapolis, at grad school: a guess).
 // ─────────────────────────────────────────────────────────────────────────────
 
 === prologue_sunday4 ===
@@ -26,6 +27,43 @@
 # cw: derealization
 # cw: time-loss
 # cw: involuntary-switch
+-> wake
+
+= wake
+// Owner: more of each part of Maya's day. Claude's scenes (guesses): Sarah left early for a meeting before worship, so
+// Mr. Carter (the present single dad she envies) gives Maya a ride. He's kind; it's ordinary; that's the ache.
+# place: home_kitchen
+# shot: wide
+# objective: Get to church
+- (k)
++ {k < 3} [Look: The note on the table]
+    "Gone early, deacons before worship. Ask Mr. Carter for a ride? Love, Mom." # look: note-gone-early
+    -> k
++ {k < 3} [Look: The window]
+    Snow on the cars. The street white and quiet, nobody out. # look: snow-street
+    -> k
++ {k < 3} [Look: Your reflection]
+    In the dark oven door: taller than Mom now. You don't look like a minister's daughter. You look like nobody's. # look: oven-reflection
+    -> k
+* [Use: The phone (call Mr. Carter)]
+-
+Mr. Carter: Maya! Of course. Ten minutes. Wear a hat, it's brutal out. # vo: prologue-quaker_carter_0125
+-> ride
+
+= ride
+# place: car
+# shot: over-shoulder
+# objective: Go to church
+Mr. Carter: How's school? Still top of everything? Reneé says hi, by the way. She's in Minneapolis now. # vo: prologue-quaker_carter_0126
+* [Talk: Mr. Carter (say school's fine)]
+    ~ record_choice("prologue.s4.ride", "fine", "On the last Sunday, Mr. Carter drove you to church and asked about school. You said it was fine.")
+    Maya: Fine. Good. It's fine. # vo: prologue-quaker_maya-15_0127
+* [Talk: Mr. Carter (ask about Reneé)]
+    ~ record_choice("prologue.s4.ride", "renee", "On the last Sunday, Mr. Carter drove you to church and told you about Reneé in Minneapolis.")
+    Maya: What's she doing there? # vo: prologue-quaker_maya-15_0128
+    Mr. Carter: Grad school. Calls me at midnight to tell me about it. I love it. Don't tell her. # vo: prologue-quaker_carter_0129
+-
+The heater on your feet. A dad who knows what his kid does at midnight. # look: carter-heater
 -> ordinary
 
 = ordinary

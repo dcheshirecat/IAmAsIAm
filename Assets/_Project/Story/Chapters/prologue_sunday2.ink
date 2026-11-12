@@ -23,6 +23,28 @@
 # cw: neglect
 # cw: child-alone
 # cw: depersonalization
+-> wake
+
+= wake
+// Owner: more of each part of Maya's day. Claude's scenes. The signs (Sunday 2's beats) start at home.
+# place: home_kitchen
+# shot: wide
+# objective: Make breakfast
+- (kitchen)
++ {kitchen < 3} [Look: The fridge]
+    Milk that smells wrong. Mustard. Half a lemon. Mommy's sticky notes for the church. # look: fridge-empty
+    -> kitchen
++ {kitchen < 3} [Look: The sink]
+    Last night's mug. Mommy got in after you were asleep. # look: sink-mug
+    -> kitchen
++ {kitchen < 3} [Look: The calendar]
+    Every square full in Mommy's writing. Board. Choir. Outreach. Deacons. Nothing on the square for Miss Susan. # look: calendar-full
+    -> kitchen
+* [Use: The cereal box]
+    ~ record_choice("prologue.s2.breakfast", "dry", "That Sunday you ate dry cereal for breakfast, because the milk had gone off.")
+    Dry cereal, out of the box. The last of it, mostly crumbs. # look: dry-cereal
+-
+Sarah: Five minutes, Maya! Teeth! Shoes! # vo: prologue-quaker_sarah_0122
 -> drive
 
 = drive
@@ -187,4 +209,30 @@ Maya: I'll remember. # vo: prologue-quaker_maya-08_0079
 * [Use: Your pocket]
     The napkin with the number. Kept, not called. Kept for years. # look: napkin-kept
 -
+-> evening
+
+= evening
+# place: home_kitchen
+# shot: wide
+# objective: Lock the door
+Sarah: Outreach committee. Lock the door behind me. I'll be back by nine. You're my big girl. # vo: prologue-quaker_sarah_0123
+- (alone)
++ {alone < 3} [Look: The house]
+    Quiet. The fridge hums. The clock in the hall. # look: house-quiet
+    -> alone
++ {alone < 3} [Use: The lights]
+    Every light in the house, on. The kitchen, the hall, the stairs, the bathroom. # look: all-lights
+    -> alone
+* [Use: The front door (lock it)]
+    Click. You check it twice. # look: door-locked
+-
+* [Use: The cupboard (dinner)]
+    ~ record_choice("prologue.s2.dinner", "crackers", "That Sunday night you had crackers and the cheese from your pocket for dinner, on your own.")
+    Crackers, and the cheese from fellowship hour, a bit warm from your pocket. # look: crackers-dinner
+-
+* [Use: The napkin (on the table)]
+    Mira's number. You could call. You don't. It's only nine o'clock. Then it's ten. # look: napkin-table
+    ~ set_experience("TimeLoss", 0.15)
+-
+Car lights on the ceiling, much later. You're in bed. You don't remember going up. # look: car-lights-ceiling
 -> prologue_sunday3  // the next part of the same chapter (one run)

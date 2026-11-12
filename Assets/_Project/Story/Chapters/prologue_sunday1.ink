@@ -26,6 +26,29 @@
 # cw: neglect
 # cw: child-alone
 # cw: depersonalization
+-> wake
+
+= wake
+// Owner: more of each part of Maya's day. Claude's scene.
+# place: home_maya_room
+# shot: close
+# objective: Get dressed for church
+- (room)
++ {room < 3} [Look: The night light]
+    The night light, still on. Grey morning in the window. # look: night-light
+    -> room
++ {room < 3} [Look: The door]
+    Mommy's voice downstairs, on the phone. The church voice, the happy one. # look: door-voice
+    -> room
++ {room < 3} [Look: Your bear]
+    Your bear, face down on the floor. You put him back on the pillow so he can see. # look: bear-pillow
+    -> room
+* [Use: Your Sunday dress (on the hook)]
+    The hook is too high. Standing on the bed, on tiptoes. Got it. # look: dress-hook
+-
+* [Use: The buttons]
+    One button left over at the bottom. That's all right. # look: buttons-wrong
+-
 -> morning
 
 = morning
@@ -241,6 +264,43 @@ Mira: Thank you for keeping me company, Maya. # vo: prologue-quaker_mira_0041
 # objective: Go home
 * [Use: Feet on the floor]
     Hello, floor. # look: car-floor
+-
+-> evening
+
+= evening
+// Owner: more of each part of Maya's day. Claude's scene.
+# place: home_kitchen
+# shot: wide
+# objective: Have dinner
+Sarah: Toast tonight, honey. Mommy has to finish the newsletter. Sit nicely. # vo: prologue-quaker_sarah_0118
+- (kitchen)
++ {kitchen < 3} [Look: Mommy]
+    Mommy, eating her toast standing up, the phone on her shoulder, writing on the back of an envelope. # look: sarah-phone
+    -> kitchen
++ {kitchen < 3} [Look: The window]
+    Dark already. The streetlight comes on, by itself. # look: kitchen-streetlight
+    -> kitchen
+* [Use: Your toast]
+    Toast with butter, cut in two. You eat all of it, and the crusts. # look: toast-dinner
+-
+-> bedtime
+
+= bedtime
+# place: home_maya_room
+# shot: close
+# objective: Go to bed
+Sarah: Quick prayers. God bless Maya, God bless everyone at church. Night night, sweetheart. # vo: prologue-quaker_sarah_0119
+* [Talk: Mommy (ask her to stay)]
+    ~ record_choice("prologue.s1.bedtime", "stay", "That night you asked Mommy to stay until you fell asleep. She had the newsletter to finish.")
+    Maya: Mommy? Can you stay till I'm asleep? # vo: prologue-quaker_maya-05_0120
+    Sarah: I've got the newsletter, honey. I'll leave the door open a crack. # vo: prologue-quaker_sarah_0121
+* [Use: Your bear]
+    ~ record_choice("prologue.s1.bedtime", "bear", "That night you held your bear instead of asking Mommy to stay.")
+    Your bear, under your chin. The door, open a crack. A stripe of hall light. # look: bear-stripe
+-
+* [Use: Feet on the floor (the end of the bed)]
+    Your feet flat on the end of the bed. Push, just a little. Hello, bed. Hello, floor. # look: feet-bed
+    ~ nudge(-0.1)
 -
 ~ journal("Note", "Sunday. Mira. Hello, floor.")
 -> prologue_sunday2  // the next part of the same chapter (one run)

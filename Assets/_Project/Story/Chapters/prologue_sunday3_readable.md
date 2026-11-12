@@ -36,6 +36,24 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Use: The bulletins**
     - A stack of bulletins, still warm from the printer.
 
+## Kitchen
+
+> **Objective:** Make breakfast
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Mommy**
+    - Mommy at the table, reading her sermon out loud to the salt shaker.
+- **Use: The toaster**
+    - Two slices for Mommy, one for you. Hers buttered to the edges, the way she likes.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: Mommy's travel mug**
+    - Coffee, milk, no sugar, lid on tight.
+
+**Sarah:** What would I do without you? Honestly. My little helper.
+
 ## Church
 
 > **Objective:** Hand out the bulletins

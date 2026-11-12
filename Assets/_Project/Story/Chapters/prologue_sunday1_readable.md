@@ -14,6 +14,26 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - Mira only says "She's been waiting a long while" to Sarah here; she speaks up properly on Sunday 2.
 - Sarah is seen only from outside, through Maya. We never hear her reasons.
 
+## Wake
+
+> **Objective:** Get dressed for church
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The night light**
+    - The night light, still on. Grey morning in the window.
+- **Look: The door**
+    - Mommy's voice downstairs, on the phone. The church voice, the happy one.
+- **Look: Your bear**
+    - Your bear, face down on the floor. You put him back on the pillow so he can see.
+- **Use: Your Sunday dress (on the hook)**
+    - The hook is too high. Standing on the bed, on tiptoes. Got it.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The buttons**
+    - One button left over at the bottom. That's all right.
+
 ## Morning
 
 > **Objective:** Get ready for church
@@ -224,3 +244,37 @@ Your shoes. Mira has put them on the right feet.
 
 - **Use: Feet on the floor**
     - Hello, floor.
+
+## Evening
+
+> **Objective:** Have dinner
+
+**Sarah:** Toast tonight, honey. Mommy has to finish the newsletter. Sit nicely.
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Mommy**
+    - Mommy, eating her toast standing up, the phone on her shoulder, writing on the back of an envelope.
+- **Look: The window**
+    - Dark already. The streetlight comes on, by itself.
+- **Use: Your toast**
+    - Toast with butter, cut in two. You eat all of it, and the crusts.
+
+## Bedtime
+
+> **Objective:** Go to bed
+
+**Sarah:** Quick prayers. God bless Maya, God bless everyone at church. Night night, sweetheart.
+
+**Explore** (glowing things; the player picks):
+
+- **Talk: Mommy (ask her to stay)**
+    - **Maya:** Mommy? Can you stay till I'm asleep?
+    - **Sarah:** I've got the newsletter, honey. I'll leave the door open a crack.
+- **Use: Your bear**
+    - Your bear, under your chin. The door, open a crack. A stripe of hall light.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: Feet on the floor (the end of the bed)**
+    - Your feet flat on the end of the bed. Push, just a little. Hello, bed. Hello, floor.

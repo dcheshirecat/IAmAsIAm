@@ -8,12 +8,12 @@ Everything the chapters show, **in story order** (owner: models in chronological
 
 | # | Place id | Place | City | First in | People there |
 |---|---|---|---|---|---|
-| 1 | `home_kitchen` | Home: the kitchen | iowa_city | Prologue: This Little Light (prologue_sunday1) | Sarah, Maya (the body, 5) |
-| 2 | `car` | Mom's car | - | Prologue: This Little Light (prologue_sunday1) | Sarah, Maya (the body, 5), Maya (the body, 8), Maya (the body, 15) |
-| 3 | `church_first_day_school` | Church of Friends: First Day School | iowa_city | Prologue: This Little Light (prologue_sunday1) | Miss Eloise, Rebecca, Maya (the body, 8) |
-| 4 | `church_sanctuary` | Church of Friends: the sanctuary | iowa_city | Prologue: This Little Light (prologue_sunday1) | Sarah, Mrs. Hines, Maya (the body, 11), Mr. Jones, Rebecca |
-| 5 | `church_fellowship_hall` | Church of Friends: the fellowship hall | iowa_city | Prologue: This Little Light (prologue_sunday1) | Mrs. Hines, Mr. Jones, Sarah, Mira, Maya (the body, 5), Maya (the body, 8), Maya (the body, 11) |
-| 6 | `home_maya_room` | Home: Maya's room | iowa_city | Prologue: This Little Light (prologue_sunday3) | Sarah, Maya (the body, 15) |
+| 1 | `home_maya_room` | Home: Maya's room | iowa_city | Prologue: This Little Light (prologue_sunday1) | Sarah, Maya (the body, 5), Maya (the body, 15) |
+| 2 | `home_kitchen` | Home: the kitchen | iowa_city | Prologue: This Little Light (prologue_sunday1) | Sarah, Maya (the body, 5), Mr. Carter |
+| 3 | `car` | Mom's car | - | Prologue: This Little Light (prologue_sunday1) | Sarah, Maya (the body, 5), Maya (the body, 8), Mr. Carter, Maya (the body, 15) |
+| 4 | `church_first_day_school` | Church of Friends: First Day School | iowa_city | Prologue: This Little Light (prologue_sunday1) | Miss Eloise, Rebecca, Maya (the body, 8) |
+| 5 | `church_sanctuary` | Church of Friends: the sanctuary | iowa_city | Prologue: This Little Light (prologue_sunday1) | Sarah, Mrs. Hines, Maya (the body, 11), Mr. Jones, Rebecca |
+| 6 | `church_fellowship_hall` | Church of Friends: the fellowship hall | iowa_city | Prologue: This Little Light (prologue_sunday1) | Mrs. Hines, Mr. Jones, Sarah, Mira, Maya (the body, 5), Maya (the body, 8), Maya (the body, 11) |
 | 7 | `college_dorm_maya` | Maya's dorm room | champaign_urbana | Prelude (prelude_part1) | - |
 | 8 | `college_lecture_hall` | The lecture hall | champaign_urbana | Prelude (prelude_part1) | Selene, Maya (the body, 18), Mark, Axel (the body, 20) |
 | 9 | `college_dorm_selene` | Selene's dorm room | champaign_urbana | Prelude (prelude_part1) | Selene, Maya (the body, 18), Sarah |
@@ -81,46 +81,77 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | # | Who | Id | Kind | First in | Ages (the body) | Places |
 |---|---|---|---|---|---|---|
 | 1 | Sarah | `mother` | person | Prologue: This Little Light | - | home_kitchen, car, church_sanctuary, church_fellowship_hall, home_maya_room, college_dorm_selene |
-| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30 | home_kitchen, car, church_fellowship_hall, church_first_day_school, church_sanctuary, home_maya_room, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room, seattle_apartment, burke_museum_hall, eastside_mandir_hall, garba_community_hall, gurdwara_kitchen, nagar_kirtan_street, gurdwara_langar_hall |
+| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30 | home_kitchen, car, church_fellowship_hall, home_maya_room, church_first_day_school, church_sanctuary, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room, seattle_apartment, burke_museum_hall, eastside_mandir_hall, garba_community_hall, gurdwara_kitchen, nagar_kirtan_street, gurdwara_langar_hall |
 | 3 | Miss Eloise | `eloise` | person | Prologue: This Little Light | - | church_first_day_school |
 | 4 | Rebecca | `rebecca` | person | Prologue: This Little Light | - | church_first_day_school, church_sanctuary |
 | 5 | Mrs. Hines | `hines` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
 | 6 | Mr. Jones | `jones` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
 | 7 | Mira | `guide_quaker` | person | Prologue: This Little Light | - | church_fellowship_hall |
-| 8 | Selene | `selene` | person | Prelude | - | college_lecture_hall, college_dorm_selene, college_quad, park_ostara, shop_the_circle, campus_cafe |
-| 9 | Tanya | `tanya` | person | Prelude | - | shop_the_circle, park_yule_circle, park_ostara, chicago_apartment |
-| 10 | Gracie | `gracie` | person | Chapter 1: Christianity | - | campus_ministry, campus_ministry_chapel, campus_ministry_lawn |
-| 11 | Axel | `axel` | system member | Chapter 1.5: Axel | 20 | college_apartment_maya, campus_barber, thrift_store, campus_cafe, college_lecture_hall, town_pride, methodist_church, episcopal_church, protest_march, queer_affirming_church, college_apartment_axel |
-| 12 | Mark | `ex_christian` | person | Chapter 1.5: Axel | - | college_lecture_hall, college_apartment_axel, town_pride, methodist_church, protest_march, queer_affirming_church |
-| 13 | Cassie | `mark_mom` | person | Chapter 1.5: Axel | - | methodist_church |
-| 14 | Pastor Key | `mark_priest` | person | Chapter 1.5: Axel | - | episcopal_church |
-| 15 | Izzy | `izzy` | system member | Chapter 1.5: Axel | 20, 28 | protest_march, day_ward_group_room, day_ward_quiet_room, andersonville_cafe, therapist_office |
-| 16 | Adeena | `ex_jewish` | person | Chapter 2: Judaism | - | field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_conservative, adeena_parents_house, lgbtq_synagogue, chabad_house, chicago_apartment |
-| 17 | Christie | `christie` | person | Chapter 2: Judaism | - | field_museum_office, field_museum_hall, nagar_kirtan_street |
-| 18 | Eudora Jones | `eudora` | person | Chapter 2: Judaism | - | field_museum_gallery |
-| 19 | Rabbi Abe | `rabbi_abe` | person | Chapter 2: Judaism | - | synagogue_social_hall, lakefront_path |
-| 20 | Ruth | `ruth` | person | Chapter 2: Judaism | - | adeena_parents_house |
-| 21 | Lee | `lee` | person | Chapter 2: Judaism | - | adeena_parents_house |
-| 22 | Effie | `effie` | person | Chapter 2: Judaism | - | adeena_parents_house, effie_house |
-| 23 | Grandma | `grandma` | person | Chapter 2: Judaism | - | adeena_parents_house |
-| 24 | Hannah | `hannah` | person | Chapter 2: Judaism | - | havurah_living_room |
-| 25 | Tigist | `tigist` | person | Chapter 2: Judaism | - | sigd_community_hall |
-| 26 | Angie | `angie` | person | Chapter 3: Buddhism | - | therapist_office, boudha_guest_house |
-| 27 | Pasang Lhamo | `pasang` | person | Chapter 3: Buddhism | - | boudha_guest_house, boudha_stupa, dharma_shringa_hall, boudha_monastery |
-| 28 | Teacher | `course_teacher` | person | Chapter 3: Buddhism | - | dharma_shringa_hall |
-| 29 | Heather | `heather` | system member | Chapter 3: Buddhism | 27, 29 | boudha_monastery, priya_family_house |
-| 30 | Chaplain Amal | `chaplain_amal` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall, day_ward_group_room |
-| 31 | Reneé | `renee_carter` | person | Chapter 4: Islam | - | andersonville_cafe |
-| 32 | Nina | `nina` | system member | Chapter 4: Islam | 28 | chicago_apartment |
-| 33 | Sawsan | `sawsan` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall |
-| 34 | Fadi | `fadi` | person | Chapter 4: Islam | - | sufi_dhikr_room |
-| 35 | Priya | `priya` | person | Chapter 5: Hinduism | - | burke_museum_hall, garba_community_hall |
-| 36 | Mangala Tai | `mangala_joshi` | person | Chapter 5: Hinduism | - | eastside_mandir_hall |
-| 37 | Lakshmi | `lakshmi` | person | Chapter 5: Hinduism | - | eastside_mandir_kitchen, priya_family_house |
-| 38 | Gurleen | `gurleen` | person | Chapter 6: Sikhism | - | burke_museum_hall, gurdwara_darbar_hall |
-| 39 | Bibi Harjit | `bibi_harjit` | person | Chapter 6: Sikhism | - | gurdwara_kitchen, gurdwara_langar_hall |
+| 8 | Mr. Carter | `carter` | person | Prologue: This Little Light | - | home_kitchen, car |
+| 9 | Selene | `selene` | person | Prelude | - | college_lecture_hall, college_dorm_selene, college_quad, park_ostara, shop_the_circle, campus_cafe |
+| 10 | Tanya | `tanya` | person | Prelude | - | shop_the_circle, park_yule_circle, park_ostara, chicago_apartment |
+| 11 | Gracie | `gracie` | person | Chapter 1: Christianity | - | campus_ministry, campus_ministry_chapel, campus_ministry_lawn |
+| 12 | Axel | `axel` | system member | Chapter 1.5: Axel | 20 | college_apartment_maya, campus_barber, thrift_store, campus_cafe, college_lecture_hall, town_pride, methodist_church, episcopal_church, protest_march, queer_affirming_church, college_apartment_axel |
+| 13 | Mark | `ex_christian` | person | Chapter 1.5: Axel | - | college_lecture_hall, college_apartment_axel, town_pride, methodist_church, protest_march, queer_affirming_church |
+| 14 | Cassie | `mark_mom` | person | Chapter 1.5: Axel | - | methodist_church |
+| 15 | Pastor Key | `mark_priest` | person | Chapter 1.5: Axel | - | episcopal_church |
+| 16 | Izzy | `izzy` | system member | Chapter 1.5: Axel | 20, 28 | protest_march, day_ward_group_room, day_ward_quiet_room, andersonville_cafe, therapist_office |
+| 17 | Adeena | `ex_jewish` | person | Chapter 2: Judaism | - | field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_conservative, adeena_parents_house, lgbtq_synagogue, chabad_house, chicago_apartment |
+| 18 | Christie | `christie` | person | Chapter 2: Judaism | - | field_museum_office, field_museum_hall, nagar_kirtan_street |
+| 19 | Eudora Jones | `eudora` | person | Chapter 2: Judaism | - | field_museum_gallery |
+| 20 | Rabbi Abe | `rabbi_abe` | person | Chapter 2: Judaism | - | synagogue_social_hall, lakefront_path |
+| 21 | Ruth | `ruth` | person | Chapter 2: Judaism | - | adeena_parents_house |
+| 22 | Lee | `lee` | person | Chapter 2: Judaism | - | adeena_parents_house |
+| 23 | Effie | `effie` | person | Chapter 2: Judaism | - | adeena_parents_house, effie_house |
+| 24 | Grandma | `grandma` | person | Chapter 2: Judaism | - | adeena_parents_house |
+| 25 | Hannah | `hannah` | person | Chapter 2: Judaism | - | havurah_living_room |
+| 26 | Tigist | `tigist` | person | Chapter 2: Judaism | - | sigd_community_hall |
+| 27 | Angie | `angie` | person | Chapter 3: Buddhism | - | therapist_office, boudha_guest_house |
+| 28 | Pasang Lhamo | `pasang` | person | Chapter 3: Buddhism | - | boudha_guest_house, boudha_stupa, dharma_shringa_hall, boudha_monastery |
+| 29 | Teacher | `course_teacher` | person | Chapter 3: Buddhism | - | dharma_shringa_hall |
+| 30 | Heather | `heather` | system member | Chapter 3: Buddhism | 27, 29 | boudha_monastery, priya_family_house |
+| 31 | Chaplain Amal | `chaplain_amal` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall, day_ward_group_room |
+| 32 | Reneé | `renee_carter` | person | Chapter 4: Islam | - | andersonville_cafe |
+| 33 | Nina | `nina` | system member | Chapter 4: Islam | 28 | chicago_apartment |
+| 34 | Sawsan | `sawsan` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall |
+| 35 | Fadi | `fadi` | person | Chapter 4: Islam | - | sufi_dhikr_room |
+| 36 | Priya | `priya` | person | Chapter 5: Hinduism | - | burke_museum_hall, garba_community_hall |
+| 37 | Mangala Tai | `mangala_joshi` | person | Chapter 5: Hinduism | - | eastside_mandir_hall |
+| 38 | Lakshmi | `lakshmi` | person | Chapter 5: Hinduism | - | eastside_mandir_kitchen, priya_family_house |
+| 39 | Gurleen | `gurleen` | person | Chapter 6: Sikhism | - | burke_museum_hall, gurdwara_darbar_hall |
+| 40 | Bibi Harjit | `bibi_harjit` | person | Chapter 6: Sikhism | - | gurdwara_kitchen, gurdwara_langar_hall |
 
 ## 3. Close-ups and props, scene by scene
+
+### Home: Maya's room (`home_maya_room`)
+
+- `night-light`: The night light, still on. Grey morning in the window.
+- `door-voice`: Mommy's voice downstairs, on the phone. The church voice, the happy one.
+- `bear-pillow`: Your bear, face down on the floor. You put him back on the pillow so he can see.
+- `dress-hook`: The hook is too high. Standing on the bed, on tiptoes. Got it.
+- `buttons-wrong`: One button left over at the bottom. That's all right.
+- `bear-stripe`: Your bear, under your chin. The door, open a crack. A stripe of hall light.
+- `feet-bed`: Your feet flat on the end of the bed. Push, just a little. Hello, bed. Hello, floor.
+- `mirror-smile`: A smile. Practiced until it looks right.
+- `blue-dress`: The blue dress, ironed last night. The collar straight.
+- `braid`: One hundred brushes. The braid. The clip.
+- `bulletins`: A stack of bulletins, still warm from the printer.
+- `clock-847`: 8:47. Church ended at noon.
+- `stone-pillow`: Mira's stone, in the middle of your pillow.
+- `dress-bow`: The blue dress on its hanger. The sash tied in a bow.
+- `nina-curb`: Waiting at the curb with the bulletins. Smiling for Mrs. Hines.
+- `nina-toast`: Toast, cut into triangles. The plate rinsed. Nobody asked.
+- `nina-dress`: The dress, hung up perfectly. The sash, a bow. Good girls are neat.
+- `dear-mira`: "Dear Mira,"
+- `dear-mira-2`: "Dear Mira,"
+- `stone-pocket`: The stone, in your pocket. Every Sunday.
+- `dress-small`: The blue dress, at the back. Too small. The sash still tied in a bow.
+- `four-letters`: "Dear Mira." "Dear Mira." "Dear Mira." "Dear Mira."
+- `disconnected`: "The number you have dialed is no longer in service."
+- `stone-floor`: The stone, in both hands. Feet on the floor. The floor says nothing back.
+- `so-tired`: So tired.
+- `somebody-hand`: The stone, in somebody's hand.
+- hidden memory `nina-lost-hours` (a scene played only by an alter)
 
 ### Home: the kitchen (`home_kitchen`)
 
@@ -129,6 +160,25 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `cracker-cupboard`: A chair, pushed to the cupboard. One soft cracker.
 - `front-door`: Waiting.
 - `shoes`: Shoes with sticky straps. On the wrong feet.
+- `sarah-phone`: Mommy, eating her toast standing up, the phone on her shoulder, writing on the back of an envelope.
+- `kitchen-streetlight`: Dark already. The streetlight comes on, by itself.
+- `toast-dinner`: Toast with butter, cut in two. You eat all of it, and the crusts.
+- `fridge-empty`: Milk that smells wrong. Mustard. Half a lemon. Mommy's sticky notes for the church.
+- `sink-mug`: Last night's mug. Mommy got in after you were asleep.
+- `calendar-full`: Every square full in Mommy's writing. Board. Choir. Outreach. Deacons. Nothing on the square for Miss Susan.
+- `dry-cereal`: Dry cereal, out of the box. The last of it, mostly crumbs.
+- `house-quiet`: Quiet. The fridge hums. The clock in the hall.
+- `all-lights`: Every light in the house, on. The kitchen, the hall, the stairs, the bathroom.
+- `door-locked`: Click. You check it twice.
+- `crackers-dinner`: Crackers, and the cheese from fellowship hour, a bit warm from your pocket.
+- `napkin-table`: Mira's number. You could call. You don't. It's only nine o'clock. Then it's ten.
+- `car-lights-ceiling`: Car lights on the ceiling, much later. You're in bed. You don't remember going up.
+- `sarah-sermon`: Mommy at the table, reading her sermon out loud to the salt shaker.
+- `toast-for-two`: Two slices for Mommy, one for you. Hers buttered to the edges, the way she likes.
+- `travel-mug`: Coffee, milk, no sugar, lid on tight.
+- `note-gone-early`: "Gone early, deacons before worship. Ask Mr. Carter for a ride? Love, Mom."
+- `snow-street`: Snow on the cars. The street white and quiet, nobody out.
+- `oven-reflection`: In the dark oven door: taller than Mom now. You don't look like a minister's daughter. You look like nobody's.
 - `fridge-note`: A sticky note: "Deacons' supper. Soup in cupboard. Don't wait up! Love, Mom." The same note as last Sunday. New tape.
 - `dark-house`: Every light off but this one. The heating ticks.
 - `soup-mug`: Tomato soup, heated in the mug, eaten standing up.
@@ -144,6 +194,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `note-kept`: The note. Soft at the corners.
 - `note-signed`: "Sarah", in an eight-year-old's neatest writing. Folded small.
 - `napkin-kept`: The napkin with the number. Kept, not called. Kept for years.
+- `carter-heater`: The heater on your feet. A dad who knows what his kid does at midnight.
 - `wipers`: Wipers, back and forth. Like a picture of wipers.
 - `stone-grip`: The stone's edge, biting your palm. The only real thing in the car.
 
@@ -201,29 +252,6 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `mira-address`: Mira's new address, in Oregon. Shaky blue pen.
 - `mira-wave`: Mira's hand, lifting, at the door.
 - `stacked-chairs`: Chairs, stacked. Mrs. Hines, Mr. Jones and the new youth leader, all around Mom.
-
-### Home: Maya's room (`home_maya_room`)
-
-- `mirror-smile`: A smile. Practiced until it looks right.
-- `blue-dress`: The blue dress, ironed last night. The collar straight.
-- `braid`: One hundred brushes. The braid. The clip.
-- `bulletins`: A stack of bulletins, still warm from the printer.
-- `clock-847`: 8:47. Church ended at noon.
-- `stone-pillow`: Mira's stone, in the middle of your pillow.
-- `dress-bow`: The blue dress on its hanger. The sash tied in a bow.
-- `nina-curb`: Waiting at the curb with the bulletins. Smiling for Mrs. Hines.
-- `nina-toast`: Toast, cut into triangles. The plate rinsed. Nobody asked.
-- `nina-dress`: The dress, hung up perfectly. The sash, a bow. Good girls are neat.
-- `dear-mira`: "Dear Mira,"
-- `dear-mira-2`: "Dear Mira,"
-- `stone-pocket`: The stone, in your pocket. Every Sunday.
-- `dress-small`: The blue dress, at the back. Too small. The sash still tied in a bow.
-- `four-letters`: "Dear Mira." "Dear Mira." "Dear Mira." "Dear Mira."
-- `disconnected`: "The number you have dialed is no longer in service."
-- `stone-floor`: The stone, in both hands. Feet on the floor. The floor says nothing back.
-- `so-tired`: So tired.
-- `somebody-hand`: The stone, in somebody's hand.
-- hidden memory `nina-lost-hours` (a scene played only by an alter)
 
 ### Maya's dorm room (`college_dorm_maya`)
 

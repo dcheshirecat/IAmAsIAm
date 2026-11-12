@@ -10,6 +10,23 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - Miss Susan (school) sent home a note about a parent-teacher conference that Sarah never read.
 - Mira teaches "five things you can see" as a game (the 5-4-3-2-1 skill).
 
+## Wake
+
+> **Objective:** Make breakfast
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The fridge**
+    - Milk that smells wrong. Mustard. Half a lemon. Mommy's sticky notes for the church.
+- **Look: The sink**
+    - Last night's mug. Mommy got in after you were asleep.
+- **Look: The calendar**
+    - Every square full in Mommy's writing. Board. Choir. Outreach. Deacons. Nothing on the square for Miss Susan.
+- **Use: The cereal box**
+    - Dry cereal, out of the box. The last of it, mostly crumbs.
+
+**Sarah:** Five minutes, Maya! Teeth! Shoes!
+
 ## Drive
 
 > **Objective:** Give Mommy Miss Susan's note
@@ -180,3 +197,30 @@ Five things you can see. _(the player does the "five-senses" exercise here)_
 
 - **Use: Your pocket**
     - The napkin with the number. Kept, not called. Kept for years.
+
+## Evening
+
+> **Objective:** Lock the door
+
+**Sarah:** Outreach committee. Lock the door behind me. I'll be back by nine. You're my big girl.
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The house**
+    - Quiet. The fridge hums. The clock in the hall.
+- **Use: The lights**
+    - Every light in the house, on. The kitchen, the hall, the stairs, the bathroom.
+- **Use: The front door (lock it)**
+    - Click. You check it twice.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The cupboard (dinner)**
+    - Crackers, and the cheese from fellowship hour, a bit warm from your pocket.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The napkin (on the table)**
+    - Mira's number. You could call. You don't. It's only nine o'clock. Then it's ten.
+
+Car lights on the ceiling, much later. You're in bed. You don't remember going up.

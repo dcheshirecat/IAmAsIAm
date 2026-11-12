@@ -11,6 +11,39 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - Rebecca is going out with Will.
 - Maya still has Mira's napkin number (Sunday 2) and the unfinished "Dear Mira" letters (Sunday 3).
 - Nina's first words, in the voice of "the minister's perfect, quiet child".
+- Owner: more of her day. Claude's morning: Sarah left early, so Mr. Carter drives Maya (Reneé is in Minneapolis, at grad school: a guess).
+
+## Wake
+
+> **Objective:** Get to church
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The note on the table**
+    - "Gone early, deacons before worship. Ask Mr. Carter for a ride? Love, Mom."
+- **Look: The window**
+    - Snow on the cars. The street white and quiet, nobody out.
+- **Look: Your reflection**
+    - **In the dark oven door:** taller than Mom now. You don't look like a minister's daughter. You look like nobody's.
+- **Use: The phone (call Mr. Carter)**
+
+**Mr. Carter:** Maya! Of course. Ten minutes. Wear a hat, it's brutal out.
+
+## Ride
+
+> **Objective:** Go to church
+
+**Mr. Carter:** How's school? Still top of everything? Reneé says hi, by the way. She's in Minneapolis now.
+
+**Explore** (glowing things; the player picks):
+
+- **Talk: Mr. Carter (say school's fine)**
+    - **Maya:** Fine. Good. It's fine.
+- **Talk: Mr. Carter (ask about Reneé)**
+    - **Maya:** What's she doing there?
+    - **Mr. Carter:** Grad school. Calls me at midnight to tell me about it. I love it. Don't tell her.
+
+The heater on your feet. A dad who knows what his kid does at midnight.
 
 ## Ordinary
 

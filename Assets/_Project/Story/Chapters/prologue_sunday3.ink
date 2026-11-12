@@ -47,6 +47,24 @@ Sarah: Don't you look nice. Grab the bulletins, would you, sweetheart? They're o
 * [Use: The bulletins]
     A stack of bulletins, still warm from the printer. # look: bulletins
 -
+-> kitchen
+
+= kitchen
+// Owner: more of each part of Maya's day. Claude's scene: performing okay starts at breakfast.
+# place: home_kitchen
+# shot: wide
+# objective: Make breakfast
+- (k)
++ {k < 2} [Look: Mommy]
+    Mommy at the table, reading her sermon out loud to the salt shaker. # look: sarah-sermon
+    -> k
+* [Use: The toaster]
+    Two slices for Mommy, one for you. Hers buttered to the edges, the way she likes. # look: toast-for-two
+-
+* [Use: Mommy's travel mug]
+    Coffee, milk, no sugar, lid on tight. # look: travel-mug
+-
+Sarah: What would I do without you? Honestly. My little helper. # vo: prologue-quaker_sarah_0124
 -> church
 
 = church
