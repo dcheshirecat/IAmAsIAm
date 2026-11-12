@@ -43,6 +43,8 @@ namespace IAmAsIAm.Core.Save
         public List<string> triedPracticeIds = new List<string>();
         public List<string> craftedItemIds = new List<string>();
         public List<TriggerProgress> triggerProgress = new List<TriggerProgress>();
+        /// <summary>Alters unlocked as chapter starters. Per save: they do NOT carry across saves (owner, 2026-11-12).</summary>
+        public List<ChapterUnlock> chapterUnlocks = new List<ChapterUnlock>();
     }
 
     /// <summary>
@@ -54,8 +56,7 @@ namespace IAmAsIAm.Core.Save
     {
         public ComfortSettings comfort = new ComfortSettings();
         public bool acknowledgedNotTherapyNotice;
-        /// <summary>Alters unlocked as chapter starters (kept across save slots, like a New Game+).</summary>
-        public List<IAmAsIAm.Core.Story.ChapterUnlock> chapterUnlocks = new List<IAmAsIAm.Core.Story.ChapterUnlock>();
+
         public string crisisRegion;
     }
 

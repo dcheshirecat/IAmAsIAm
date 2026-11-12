@@ -338,7 +338,6 @@ namespace IAmAsIAm.Runtime.Story
             {
                 foreach (var id in runs.Complete())
                     body += $"\n\n<b>{MemberName(id)}</b> came forward this time. You can now start this chapter as {MemberName(id)}.";
-                GameServices.SavePreferences();
             }
             OpenAction("Your choices", body, ("Continue", Finish));
         }

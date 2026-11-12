@@ -63,7 +63,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   after services, then a blackout. Guide: a kind older Friend in Sarah's church who tries to be there for Maya and fails.
   Sarah is well-meaning but absent, neglectful to the point of harm; **never show her side**. Nothing is off-limits to show.
 - 2026-11-12: **Replay rule:** anyone who fronts during a chapter can START that chapter once it's finished in full
-  (`Core/Story/ChapterRuns.cs`, saved in preferences). **Content warnings before every chapter** (validator requires contentTags).
+  (`Core/Story/ChapterRuns.cs`, saved **per save slot**: unlocks do NOT carry across saves, owner 2026-11-12). **Content warnings before every chapter** (validator requires contentTags).
 
 - 2026-11-12: Prologue: guide **Mira (68)**; Sarah's church is the **Church of Friends**; the first switch at the end is **Nina**
   (the first unlock). Replays are per chapter: same events, different abilities/choices per alter; unlocks are **paced: at most one

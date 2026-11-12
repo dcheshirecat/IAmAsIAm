@@ -71,12 +71,11 @@ namespace IAmAsIAm.Runtime
 
         public static ChapterDefinition Chapter(string id) => Chapters?.chapters?.Find(c => c.id == id);
 
-        /// <summary>Saves preferences, including which alters can start each chapter.</summary>
+        /// <summary>Saves preferences (comfort settings). Chapter unlocks are per save, in SaveData.</summary>
         public static void SavePreferences()
         {
             if (Preferences == null) return;
             Preferences.comfort = Comfort;
-            if (ChapterRuns != null) Preferences.chapterUnlocks = ChapterRuns.Export();
             IAmAsIAm.Runtime.Save.SaveService.SavePreferences(Preferences);
         }
 

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System;
 using System.IO;
 using System.Linq;
@@ -70,6 +71,7 @@ namespace IAmAsIAm.Runtime.Save
                 journal = GameServices.Journal.Entries.ToList(),
                 gaps = GameServices.Journal.Gaps.ToList(),
                 learnedSkillIds = GameServices.Skills.LearnedIds.ToList(),
+                chapterUnlocks = GameServices.ChapterRuns?.Export() ?? new List<IAmAsIAm.Core.Story.ChapterUnlock>(),
             };
             Storage.Write(slot, JsonUtility.ToJson(data));
         }
@@ -94,6 +96,7 @@ namespace IAmAsIAm.Runtime.Save
             GameServices.Roster.ImportStates(data.members, data.frontingId, data.coConsciousIds);
             GameServices.Journal.Restore(data.journal, data.gaps);
             GameServices.Skills.Restore(data.learnedSkillIds);
+            GameServices.ChapterRuns?.Restore(data.chapterUnlocks);
             return true;
         }
 

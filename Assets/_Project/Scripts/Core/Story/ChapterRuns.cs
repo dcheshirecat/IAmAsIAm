@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace IAmAsIAm.Core.Story
 {
-    /// <summary>Which alters can start a chapter, besides its default starter (saved with preferences).</summary>
+    /// <summary>Which alters can start a chapter, besides its default starter (saved per save slot, never shared).</summary>
     [Serializable]
     public sealed class ChapterUnlock
     {

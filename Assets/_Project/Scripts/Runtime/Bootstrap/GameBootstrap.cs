@@ -56,8 +56,7 @@ namespace IAmAsIAm.Runtime
                 prefs.comfort);
 
             // Chapters, and who can start each one (owner's replay rule).
-            var runs = new ChapterRuns();
-            runs.Restore(prefs.chapterUnlocks);
+            var runs = new ChapterRuns(); // Unlocks come from the loaded save (SaveService), never from preferences.
             GameServices.InitializeChapters(DataLoader.Load<ChapterData>("chapters"), runs, prefs);
             GameServices.Roster.FrontChanged += change => runs.RecordFront(change.NewId);
         }
