@@ -525,10 +525,9 @@ namespace IAmAsIAm.Runtime.World
         Action _use;
         Color _glow;
         float _phase;
-        Light _light;
-        SpriteRenderer[] _halos;
-        Vector3 _centreLocal;
-        float _size = 1f;
+        readonly List<Renderer> _inner = new List<Renderer>();
+        readonly List<Renderer> _outer = new List<Renderer>();
+        MaterialPropertyBlock _block;
 
         /// <summary>Roughly the top of the thing (for the camera and future markers).</summary>
         public float LabelHeight { get; set; }
@@ -537,54 +536,54 @@ namespace IAmAsIAm.Runtime.World
         public bool CanInteract => _use != null;
         public void Interact() => _use?.Invoke();
 
-        /// <summary>How long one ring takes to spread out and fade (seconds): slow, far from any flashing rate.</summary>
-        const float HaloPeriod = 2.6f;
+        /// <summary>One slow breath of the halo (seconds): far from any flashing rate.</summary>
+        const float BreathSeconds = 3f;
 
+        static Material _haloMaterial;
+        static bool _haloLoaded;
+
+        static Material HaloMaterial()
+        {
+            if (_haloLoaded) return _haloMaterial;
+            _haloLoaded = true;
+            var shader = Resources.Load<Shader>("Shaders/HaloOutline");
+            if (shader != null && shader.isSupported) _haloMaterial = new Material(shader) { name = "Halo Outline" };
+            else Debug.LogWarning("[IAmAsIAm] The halo outline shader isn't available; things on offer won't be outlined.");
+            return _haloMaterial;
+        }
+
+        /// <summary>
+        /// Owner: the glow is a halo around the thing's OUTLINE, not a light from the middle, and it mustn't spread far.
+        /// Each piece of the thing gets two slightly bigger back-face shells (HaloOutline shader): a thin bright rim, and a
+        /// fainter, slightly wider one that breathes in and out. The thing itself keeps its own colour.
+        /// </summary>
         public void Build(Color glowColour)
         {
             _glow = glowColour;
-            _phase = UnityEngine.Random.value;
-
-            // How big the thing is, so the halo surrounds it.
-            var renderers = GetComponentsInChildren<Renderer>();
-            Bounds b = new Bounds(transform.position, Vector3.one * 0.5f);
-            bool any = false;
-            foreach (var r in renderers)
+            _phase = UnityEngine.Random.value * 6f;
+            _block = new MaterialPropertyBlock();
+            var mat = HaloMaterial();
+            if (mat == null) return;
+            foreach (var mf in GetComponentsInChildren<MeshFilter>())
             {
-                if (r == null) continue;
-                if (!any) { b = r.bounds; any = true; } else b.Encapsulate(r.bounds);
+                if (mf == null || mf.sharedMesh == null || mf.GetComponent<Renderer>() == null) continue;
+                _inner.Add(Shell(mf, "Halo rim", mat));
+                _outer.Add(Shell(mf, "Halo glow", mat));
             }
-            _centreLocal = transform.InverseTransformPoint(b.center);
-            _size = Mathf.Clamp(Mathf.Max(b.size.x, Mathf.Max(b.size.y, b.size.z)) * 1.3f, 0.7f, 4.5f);
-
-            // Owner: a dispersing halo around the thing. Two soft rings of warm light that grow outward from it and fade
-            // as they spread, one after the other. The thing itself keeps its own colour.
-            _halos = new SpriteRenderer[2];
-            for (int i = 0; i < _halos.Length; i++)
-            {
-                var go = new GameObject("Halo " + (i + 1));
-                go.transform.SetParent(transform, false);
-                var sr = go.AddComponent<SpriteRenderer>();
-                sr.sprite = HaloSprite();
-                sr.color = new Color(glowColour.r, glowColour.g, glowColour.b, 0f);
-                sr.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
-                sr.receiveShadows = false;
-                sr.enabled = false;
-                _halos[i] = sr;
-            }
-
-            // A faint warm light on the thing, so the halo seems to come from it.
-            var lightGo = new GameObject("Glow");
-            lightGo.transform.SetParent(transform, false);
-            lightGo.transform.localPosition = _centreLocal + new Vector3(0, 0.3f, 0.3f);
-            _light = lightGo.AddComponent<Light>();
-            _light.type = LightType.Point;
-            _light.range = 2.4f;
-            _light.color = glowColour;
-            _light.intensity = 0f;
-            _light.shadows = LightShadows.None;
-            _light.enabled = false;
             SetLive(null, -1, null);
+        }
+
+        static Renderer Shell(MeshFilter source, string name, Material mat)
+        {
+            var go = new GameObject(name, typeof(MeshFilter), typeof(MeshRenderer));
+            go.transform.SetParent(source.transform, false);
+            go.GetComponent<MeshFilter>().sharedMesh = source.sharedMesh;
+            var r = go.GetComponent<MeshRenderer>();
+            r.sharedMaterial = mat;
+            r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+            r.receiveShadows = false;
+            r.enabled = false;
+            return r;
         }
 
         public void SetLive(string prompt, int index, Action use)
@@ -592,71 +591,31 @@ namespace IAmAsIAm.Runtime.World
             _prompt = prompt;
             _use = use;
             bool live = use != null;
-            if (_light != null) _light.enabled = live;
-            if (_halos != null) foreach (var h in _halos) if (h != null) h.enabled = live;
+            foreach (var r in _inner) if (r != null) r.enabled = live;
+            foreach (var r in _outer) if (r != null) r.enabled = live;
         }
 
         void LateUpdate()
         {
-            if (_use == null || _halos == null) return;
-            var cam = Camera.main;
+            if (_use == null || _inner.Count == 0) return;
             bool still = GameServices.Comfort?.reduceMotion ?? false;
-            Vector3 centre = transform.TransformPoint(_centreLocal);
-            for (int i = 0; i < _halos.Length; i++)
-            {
-                var h = _halos[i];
-                if (h == null) continue;
-                // Face the camera, just behind the thing, so it rings its outline rather than covering it.
-                if (cam != null)
-                {
-                    h.transform.rotation = cam.transform.rotation;
-                    h.transform.position = centre + cam.transform.forward * (_size * 0.35f);
-                }
-                float scale, alpha;
-                if (still)
-                {
-                    // Reduce motion: one steady halo, no spreading.
-                    scale = _size * 1.05f;
-                    alpha = i == 0 ? 0.55f : 0f;
-                }
-                else
-                {
-                    float p = Mathf.Repeat(Time.unscaledTime / HaloPeriod + _phase + i * 0.5f, 1f);
-                    scale = _size * Mathf.Lerp(0.9f, 1.7f, p);
-                    // Fades in quickly, then thins out as it spreads.
-                    alpha = Mathf.Clamp01(p / 0.12f) * Mathf.Pow(1f - p, 1.4f) * 0.85f;
-                }
-                h.transform.localScale = Vector3.one * scale / Mathf.Max(0.0001f, transform.lossyScale.x);
-                h.color = new Color(_glow.r, _glow.g, _glow.b, alpha);
-            }
-            if (_light != null)
-                _light.intensity = still ? 0.8f : 0.6f + 0.5f * (0.5f + 0.5f * Mathf.Sin(Time.unscaledTime * 2f * Mathf.PI / HaloPeriod));
+            // 0..1, slow. With Reduce motion it holds still in the middle.
+            float t = still ? 0.5f : 0.5f + 0.5f * Mathf.Sin((Time.unscaledTime / BreathSeconds) * Mathf.PI * 2f + _phase);
+            Set(_inner, 0.025f, new Color(_glow.r, _glow.g, _glow.b, 0.75f));
+            // The outer edge breathes out a little and thins as it does: a soft halo that stays close.
+            Set(_outer, Mathf.Lerp(0.05f, 0.09f, t), new Color(_glow.r, _glow.g, _glow.b, Mathf.Lerp(0.35f, 0.12f, t)));
         }
 
-        static Sprite _haloSprite;
-
-        /// <summary>A soft ring of light: brightest just inside the edge, fading inward and outward (placeholder; art: fx_halo).</summary>
-        static Sprite HaloSprite()
+        void Set(List<Renderer> shells, float width, Color colour)
         {
-            if (_haloSprite != null) return _haloSprite;
-            const int size = 256;
-            var tex = new Texture2D(size, size, TextureFormat.RGBA32, false) { filterMode = FilterMode.Bilinear, wrapMode = TextureWrapMode.Clamp };
-            var px = new Color32[size * size];
-            float r0 = size / 2f;
-            for (int y = 0; y < size; y++)
-                for (int x = 0; x < size; x++)
-                {
-                    float d = Mathf.Sqrt((x + 0.5f - r0) * (x + 0.5f - r0) + (y + 0.5f - r0) * (y + 0.5f - r0)) / r0;
-                    // A ring peaking at 0.78 of the radius, with a faint haze inside.
-                    float ring = Mathf.Exp(-Mathf.Pow((d - 0.78f) / 0.12f, 2f));
-                    float haze = 0.18f * Mathf.Clamp01(1f - d / 0.8f);
-                    float a = Mathf.Clamp01(ring + haze) * Mathf.Clamp01((1f - d) / 0.06f);
-                    px[y * size + x] = new Color32(255, 255, 255, (byte)(255 * a));
-                }
-            tex.SetPixels32(px);
-            tex.Apply(false, true);
-            _haloSprite = Sprite.Create(tex, new Rect(0, 0, size, size), new Vector2(0.5f, 0.5f), size);
-            return _haloSprite;
+            foreach (var r in shells)
+            {
+                if (r == null) continue;
+                r.GetPropertyBlock(_block);
+                _block.SetFloat("_Width", width);
+                _block.SetColor("_Color", colour);
+                r.SetPropertyBlock(_block);
+            }
         }
     }
 }

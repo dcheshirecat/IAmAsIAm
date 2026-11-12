@@ -333,9 +333,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   large (88 pt) in the middle of the screen for ~4 s, then fades. **Seats:** `Go:` to a pew/chair/seat/bench/sofa/cushion is a
   thing to walk to, not a doorway (`StoryWorld.IsSeat`); a story pew IS one of the room's pews, front row first (the Prologue's
   "Sit in the front pew" was a doorway at the far wall).
-- 2026-11-12: **The shimmer is a dispersing halo (owner):** `ChoiceSpot` draws two soft rings of warm light (camera-facing sprites,
-  just behind the thing) that grow outward from it and fade as they spread, one after the other (2.6 s each); the thing keeps its
-  own colour; a faint warm point light stays. Reduce motion: one still halo. Art can replace the generated ring (fx_halo).
+- 2026-11-12: **The shimmer is a halo around the OUTLINE (owner, after seeing rings + a centre light: "radiates way too far ...
+  should be like a halo/outline, not a light from the middle").** `ChoiceSpot` gives each piece of the thing two slightly bigger
+  back-face shells with `Resources/Shaders/HaloOutline.shader` (URP unlit, additive, pushed out from the piece's centre so cube
+  corners don't split): a thin bright rim (2.5 cm) and a fainter edge that breathes 5-9 cm over 3 s. No point light, no rings;
+  the thing keeps its own colour. Reduce motion: still. If the shader is missing, no outline (a warning in the log).
 - 2026-11-12: **Saving mid-chapter (owner: "Continue" started from the beginning after an update).** The cause: a chapter is one
   story run, and saves were skipped while a story played, so nothing was saved inside a chapter, and a load never resumed one.
   Now every choice is a checkpoint (`StoryRunner.Checkpoint`, written to the active slot by `SaveSlotsScreen.OnCheckpoint`);
