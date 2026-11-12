@@ -2,13 +2,12 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 2 (Judaism), Part 1. Maya moved to Chicago for a job (COVID is skipped; the chapter starts in Chicago in 2023). She works at a museum, where she meets Adeena (27, stern and serious with a heart of gold). Tanya is back in Champaign-Urbana: from now on, texting replaces meeting up. Izzy comes forward on stressful days at work, if triggered. This chapter starts as Maya and unlocks nobody.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 2 (Judaism), Part 1. Maya moved to Chicago for a job (COVID is skipped; the chapter starts in Chicago in 2023). She works at a museum (The Field Museum, as a tour guide), where she meets Adeena (27, stern and serious with a heart of gold). Tanya is back in Champaign-Urbana: from now on, texting replaces meeting up. Izzy comes forward on stressful days at work, if triggered. This chapter starts as Maya and unlocks nobody.
 
 **My guesses, for you to check:**
 
-- Maya is a collections assistant (labels, storage, condition reports). Adeena is the registrar: she knows where every object is and what's wrong with every label.
-- The museum is a city history museum (placeholder name: "the Lakeshore Museum").
-- The stressful day is an exhibit install with a deadline and a curator who shouts. Izzy may come forward, and the lost time leaves a text to Adeena that Maya didn't write (Izzy asks her for coffee). Adeena says yes.
+- Adeena is the registrar: she knows where every object is and every fact about it.
+- The stressful day is a members' preview of a new exhibit, with three school groups double-booked and Eudora shouting. Izzy may come forward, and the lost time leaves a text to Adeena that Maya didn't write (coffee). Adeena says yes.
 
 📱 **Text from Tanya:** Thinking of you. Ostara circle was small this year. Your chair's still saved, even from three hours away.
 
@@ -33,45 +32,59 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 ## Museum
 
-> **Objective:** Finish the labels for the new exhibit
+> **Objective:** Give the ten o'clock tour
 
-**Adeena:** You're Maya. The new labels are yours?
+**Explore** (glowing things; the player picks):
+
+- **Look: Máximo**
+    - The titanosaur, neck up into the light, longer than the hall feels. The fourth-graders always gasp. You still do, a little.
+- **Look: The tour group**
+    - Forty fourth-graders in matching yellow shirts. Two teachers counting heads, again.
+- **Look: Your notes**
+    - Index cards, soft at the corners. "SUE: biggest, most complete T. rex. Tell them about the broken ribs."
+- **Wait (start the tour)**
+
+**Adeena:** You're Maya. The new guide.
 
 **Maya:** Yes. Hi.
 
-**Adeena:** Three of them have the wrong accession numbers. One of them has the wrong century.
+**Adeena:** You just told forty children that SUE is sixty-seven thousand years old.
 
 **Explore** (glowing things; the player picks):
 
 - **Talk: Adeena (say sorry)**
-    - **Maya:** Sorry. I'll fix them. I'm so sorry.
-    - **Adeena:** Don't be sorry. Be right. I'll show you where the numbers are.
-- **Talk: Adeena (ask which century)**
-    - **Maya:** Which century did I give it?
-    - **Adeena:** The nineteenth. It's a toaster.
+    - **Maya:** Sorry. I'll fix it. I'm so sorry.
+    - **Adeena:** Don't be sorry. Be right. Million. Sixty-seven million. I'll show you where the fact sheets are.
+- **Talk: Adeena (ask how old she is)**
+    - **Maya:** How old is she, then?
+    - **Adeena:** Sixty-seven million. You were off by a factor of a thousand. The children won't remember. I will.
     - For a second, almost, something like a smile.
+
+## Office
+
+> **Objective:** Find the fact sheets
 
 **Explore** (glowing things; the player picks):
 
 - **Look: Adeena's desk**
     - Everything square. A mug that says "Registrars Do It By The Number." A small brass candlestick.
-- **Look: The object on the cart**
-    - A toaster, 1920s, chrome gone soft with age. Not nineteenth century.
+- **Look: The fact sheets**
+    - A binder, colour-coded, labelled in Adeena's tiny capitals. "SUE." "MÁXIMO." "TSAVO LIONS." "ASK ME FIRST."
 - **Look: The clock**
-    - The install is at four. It's twenty past one.
-- **Use: The label printer**
+    - The members' preview is at four. It's twenty past one.
+- **Go: Back to the floor**
 
 ## Install
 
-> **Objective:** Get the case ready before four
+> **Objective:** Get the preview tour ready before four
 
-**Curator:** Where is the case text? Who had the case text? Somebody tell me why nothing in this room is finished!
+**Eudora Jones:** Who booked three school groups into this hall at once? Somebody tell me why nothing about today is working!
 
 **Explore** (glowing things; the player picks):
 
-- **Look: The empty case**
-    - Glass, open. Three empty mounts. Your labels, not printed.
-- **Look: The other assistants**
+- **Look: The new exhibit**
+    - Half-lit cases. A ladder. Labels still in their plastic. Four o'clock, and it isn't ready.
+- **Look: The other guides**
     - Heads down. Nobody looks at you. Everybody looks at you.
 - **Use: Mira's stone (in your pocket)**
     - The stone. The white line.
@@ -85,7 +98,7 @@ _(Quietly, in Maya's sent texts, written by Izzy during lost time; never pointed
 
 📱 **Text from Adeena:** Yes. 8:30. Not the place with the line.
 
-The case is done. The labels are straight. The clock says ten to six.
+The preview is over. Everyone's gone. The clock says ten to six, and the afternoon is just... gone.
 
 **Adeena:** You did good work this afternoon. You were... different. Funnier.
 
@@ -95,7 +108,7 @@ The case is done. The labels are straight. The clock says ten to six.
     - **Maya:** Thank you.
 - **Talk: Adeena (ask what you did)**
     - **Maya:** What did I do?
-    - **Adeena:** You told the curator to "breathe into a paper bag." Kindly. He did.
+    - **Adeena:** You told Eudora to "breathe into a paper bag." Kindly. She did.
 
 **Adeena:** See you at eight-thirty.
 

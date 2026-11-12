@@ -75,7 +75,8 @@ namespace IAmAsIAm.Runtime.Story
             BuildCanvas();
             // Maya's phone / computer / laptop (texts and email). Its own canvas, under the Anchor.
             _devices = gameObject.AddComponent<IAmAsIAm.Runtime.Devices.DeviceScreen>();
-            _devices.Blocked = () => IsBusy;
+            // The phone and laptop are always usable (owner), except over the Anchor or an interactive moment.
+            _devices.Blocked = () => _anchorOpen || (_action != null && _action.activeSelf);
             // The places the story happens in, to walk around and explore (owner).
             _world = gameObject.AddComponent<StoryWorld>();
             _world.Init(cameraRig != null ? cameraRig.Target : null, () => { if (cameraRig != null) cameraRig.SnapBehind(); });

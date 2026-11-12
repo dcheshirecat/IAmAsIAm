@@ -7,7 +7,7 @@
 //  synagogue, at an interfaith couples' meetup. Nina comes forward in quiet moments alone at home, if triggered.
 //
 //  My guesses, for the owner to correct:
-//   - Adeena's synagogue is a Conservative one in the city (placeholder name: "Congregation Etz Chaim").
+//   - Owner: Adeena's synagogue is Congregation Etz Chaim (Conservative).
 //   - They start dating in early summer, after the coffee. The first Shabbat dinner is at Adeena's apartment.
 //   - Rabbi Abe calls the meetup "keruv", bringing close (a real Conservative outreach word).
 //   - The Saturday morning service: Maya follows the English, stands when everyone stands, and is told that's enough.
@@ -61,6 +61,9 @@ Adeena: Shabbat shalom. # vo: ch2-judaism_adeena_0017
 # objective: Find a seat with Adeena
 // Conservative (Masorti): Hebrew liturgy with English beside it, men and women seated together, egalitarian.
 - (shul)
++ {shul < 4} [Look: The sign by the door]
+    "Congregation Etz Chaim. Tree of Life. All are welcome." Under it, a man at the door who nods at Adeena by name. # look: etz-chaim-sign
+    -> shul
 + {shul < 4} [Look: The prayer book]
     Hebrew on the right-hand page, English on the left. You read from the back to the front. # look: siddur
     -> shul

@@ -3,16 +3,16 @@
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. The museum. Chicago, spring 2023. Maya is 24.
 //  Owner's beats: Maya moved to Chicago for a job (COVID is skipped; the chapter starts in Chicago in 2023). She works at a
-//  museum, where she meets Adeena (27, stern and serious with a heart of gold). Tanya is back in Champaign-Urbana: from
+//  museum (The Field Museum, as a tour guide), where she meets Adeena (27, stern and serious with a heart of gold). Tanya is back in Champaign-Urbana: from
 //  now on, texting replaces meeting up. Izzy comes forward on stressful days at work, if triggered.
 //  This chapter starts as Maya and unlocks nobody.
 //
 //  My guesses, for the owner to correct:
-//   - Maya is a collections assistant (labels, storage, condition reports). Adeena is the registrar: she knows where every
-//     object is and what's wrong with every label.
-//   - The museum is a city history museum (placeholder name: "the Lakeshore Museum").
-//   - The stressful day is an exhibit install with a deadline and a curator who shouts. Izzy may come forward, and the
-//     lost time leaves a text to Adeena that Maya didn't write (Izzy asks her for coffee). Adeena says yes.
+//  Owner: the museum is The Field Museum (the real place); Maya is a tour guide; the shouting curator is Eudora Jones.
+//  My guesses, for the owner to correct:
+//   - Adeena is the registrar: she knows where every object is and every fact about it.
+//   - The stressful day is a members' preview of a new exhibit, with three school groups double-booked and Eudora shouting.
+//     Izzy may come forward, and the lost time leaves a text to Adeena that Maya didn't write (coffee). Adeena says yes.
 // ─────────────────────────────────────────────────────────────────────────────
 
 === ch2_part1 ===
@@ -47,49 +47,68 @@ Your phone. # device: phone
 -> apartment.room
 
 = museum
-# place: museum_collections
+# place: field_museum_hall
 # shot: wide
-# objective: Finish the labels for the new exhibit
-Adeena: You're Maya. The new labels are yours? # vo: ch2-judaism_adeena_0001
+# objective: Give the ten o'clock tour
+// The Field Museum (owner: the real place). Stanley Field Hall, with Máximo the titanosaur; SUE the T. rex upstairs.
+- (hall)
++ {hall < 3} [Look: Máximo]
+    The titanosaur, neck up into the light, longer than the hall feels. The fourth-graders always gasp. You still do, a little. # look: maximo
+    -> hall
++ {hall < 3} [Look: The tour group]
+    Forty fourth-graders in matching yellow shirts. Two teachers counting heads, again. # look: tour-group
+    -> hall
++ {hall < 3} [Look: Your notes]
+    Index cards, soft at the corners. "SUE: biggest, most complete T. rex. Tell them about the broken ribs." # look: tour-notes
+    -> hall
+* {hall >= 1} [Wait (start the tour)]
+-
+Adeena: You're Maya. The new guide. # vo: ch2-judaism_adeena_0001
 Maya: Yes. Hi. # vo: ch2-judaism_maya_0002
-Adeena: Three of them have the wrong accession numbers. One of them has the wrong century. # vo: ch2-judaism_adeena_0003
+Adeena: You just told forty children that SUE is sixty-seven thousand years old. # vo: ch2-judaism_adeena_0003
 * [Talk: Adeena (say sorry)]
-    ~ record_choice("ch2.p1.labels", "sorry", "The first time you met Adeena, she found mistakes in your labels, and you said sorry.")
-    Maya: Sorry. I'll fix them. I'm so sorry. # vo: ch2-judaism_maya_0004
-    Adeena: Don't be sorry. Be right. I'll show you where the numbers are. # vo: ch2-judaism_adeena_0005
-* [Talk: Adeena (ask which century)]
-    ~ record_choice("ch2.p1.labels", "century", "The first time you met Adeena, she found mistakes in your labels, and you asked which century you'd got wrong.")
-    Maya: Which century did I give it? # vo: ch2-judaism_maya_0006
-    Adeena: The nineteenth. It's a toaster. # vo: ch2-judaism_adeena_0007
+    ~ record_choice("ch2.p1.labels", "sorry", "The first time you met Adeena, she corrected your tour, and you said sorry.")
+    Maya: Sorry. I'll fix it. I'm so sorry. # vo: ch2-judaism_maya_0004
+    Adeena: Don't be sorry. Be right. Million. Sixty-seven million. I'll show you where the fact sheets are. # vo: ch2-judaism_adeena_0005
+* [Talk: Adeena (ask how old she is)]
+    ~ record_choice("ch2.p1.labels", "century", "The first time you met Adeena, she corrected your tour, and you asked how old SUE really is.")
+    Maya: How old is she, then? # vo: ch2-judaism_maya_0006
+    Adeena: Sixty-seven million. You were off by a factor of a thousand. The children won't remember. I will. # vo: ch2-judaism_adeena_0007
     For a second, almost, something like a smile. # look: adeena-almost-smile
 -
+-> office
+
+= office
+# place: field_museum_office
+# shot: over-shoulder
+# objective: Find the fact sheets
 - (desk)
 + {desk < 3} [Look: Adeena's desk]
     Everything square. A mug that says "Registrars Do It By The Number." A small brass candlestick. # look: adeena-desk
     -> desk
-+ {desk < 3} [Look: The object on the cart]
-    A toaster, 1920s, chrome gone soft with age. Not nineteenth century. # look: toaster
++ {desk < 3} [Look: The fact sheets]
+    A binder, colour-coded, labelled in Adeena's tiny capitals. "SUE." "MÁXIMO." "TSAVO LIONS." "ASK ME FIRST." # look: fact-sheets
     -> desk
 + {desk < 3} [Look: The clock]
-    The install is at four. It's twenty past one. # look: museum-clock
+    The members' preview is at four. It's twenty past one. # look: museum-clock
     -> desk
-* [Use: The label printer]
+* {desk >= 1} [Go: Back to the floor]
 -
-~ journal("Note", "Adeena, the registrar. Accession numbers are on the back of the condition report.")
+~ journal("Note", "Adeena, the registrar. SUE is sixty-seven MILLION years old. The fact sheets are in her binder.")
 -> install
 
 = install
-# place: museum_gallery
+# place: field_museum_gallery
 # shot: over-shoulder
-# objective: Get the case ready before four
+# objective: Get the preview tour ready before four
 ~ set_experience("Depersonalization", 0.3)
-Curator: Where is the case text? Who had the case text? Somebody tell me why nothing in this room is finished! # vo: ch2-judaism_curator_0008
+Eudora Jones: Who booked three school groups into this hall at once? Somebody tell me why nothing about today is working! # vo: ch2-judaism_eudora_0008
 # cue: raised-voices
 - (gallery)
-+ {gallery < 3} [Look: The empty case]
-    Glass, open. Three empty mounts. Your labels, not printed. # look: empty-case
++ {gallery < 3} [Look: The new exhibit]
+    Half-lit cases. A ladder. Labels still in their plastic. Four o'clock, and it isn't ready. # look: empty-case
     -> gallery
-+ {gallery < 3} [Look: The other assistants]
++ {gallery < 3} [Look: The other guides]
     Heads down. Nobody looks at you. Everybody looks at you. # look: assistants-heads-down
     -> gallery
 * [Use: Mira's stone (in your pocket)]
@@ -106,10 +125,10 @@ Curator: Where is the case text? Who had the case text? Somebody tell me why not
 // Maya didn't write. Never pointed out.
 ~ sent_while_away("izzy", "text", "ex_jewish", "thank u for today!! u saved my life. coffee tomorrow? my treat")
 ~ text_from("ex_jewish", "Yes. 8:30. Not the place with the line.")
-# place: museum_gallery
+# place: field_museum_gallery
 # shot: wide
 # objective:
-The case is done. The labels are straight. The clock says ten to six. # look: case-done
+The preview is over. Everyone's gone. The clock says ten to six, and the afternoon is just... gone. # look: case-done
 Adeena: You did good work this afternoon. You were... different. Funnier. # vo: ch2-judaism_adeena_0009
 * [Talk: Adeena (say thank you)]
     ~ record_choice("ch2.p1.after", "thanks", "After the install, Adeena told you you'd done good work. You said thank you, and didn't remember doing it.")
@@ -117,7 +136,7 @@ Adeena: You did good work this afternoon. You were... different. Funnier. # vo: 
 * [Talk: Adeena (ask what you did)]
     ~ record_choice("ch2.p1.after", "asked", "After the install, you asked Adeena what you'd done. She thought you were joking.")
     Maya: What did I do? # vo: ch2-judaism_maya_0011
-    Adeena: You told the curator to "breathe into a paper bag." Kindly. He did. # vo: ch2-judaism_adeena_0012
+    Adeena: You told Eudora to "breathe into a paper bag." Kindly. She did. # vo: ch2-judaism_adeena_0012
 -
 Adeena: See you at eight-thirty. # vo: ch2-judaism_adeena_0013
 -> home

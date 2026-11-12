@@ -8,8 +8,9 @@
 //
 //  My guesses, for the owner to correct:
 //   - The breakup is on a Friday, after the candles, the last time. Adeena is kind and very sure.
+//   - Owner: show Beta Israel (Ethiopian Jews): a Sigd celebration in November, led by a kes. Tigist is MY placeholder name.
 //   - Alone, Maya goes to a Renewal Kabbalat Shabbat (singing, drums, candles: the candles trigger her now), a Reform
-//     temple's Friday service, and Shabbat lunch at Rivka's (Modern Orthodox), who stays kind to her.
+//     temple's Friday service, and Shabbat lunch at Effie's (Modern Orthodox), who stays kind to her.
 //   - The chapter ends with Rabbi Abe, walking by the lake, and the first text to Tanya about how bad the lost time is.
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -125,28 +126,62 @@ Your phone. # device: phone
     -> temple
 * [Wait (stay to the end)]
 -
+-> sigd
+
+= sigd
+// Beta Israel (Ethiopian Jews), owner: show them. Sigd, 29 Cheshvan (November 2025), fifty days after Yom Kippur: the community
+// renews its covenant with the Torah and its longing for Jerusalem. Traditionally a fast, prayers led by the kessim (the
+// community's priests) on a hilltop, readings from the Orit, then breaking the fast together. An Israeli national holiday since
+// 2008, and celebrated by Ethiopian Jewish communities abroad.
+# place: sigd_community_hall
+# shot: wide
+# objective: Stay for the end of the fast
+Tigist: Welcome, welcome. You found the flyer? Good. Today is Sigd. We fast, we pray, we remember Jerusalem, and tonight we eat. Sit anywhere. # vo: ch2-judaism_tigist_0061
+- (fast)
++ {fast < 4} [Look: The kes]
+    An old man in white, a white turban, a bright umbrella held over him like a little sky. He reads in a language you've never heard. # look: kes-umbrella
+    -> fast
++ {fast < 4} [Look: The book]
+    Wrapped in cloth. Tigist says it's the Orit, the Torah in Ge'ez. "My grandmother kissed it every year. So now I do." # look: orit
+    -> fast
++ {fast < 4} [Look: The families]
+    White shawls with coloured borders. Children asleep on laps. Teenagers filming on phones, and singing anyway. # look: sigd-families
+    -> fast
+* {fast >= 2} [Talk: Tigist]
+-
+Tigist: For a thousand years, far from everyone, we kept this. Nobody told us we were Jews. We knew. Sigd is the day we say it again. # vo: ch2-judaism_tigist_0062
+* [Talk: Tigist (ask why the umbrellas)]
+    ~ record_choice("ch2.p4.sigd", "umbrellas", "At Sigd, you asked Tigist about the bright umbrellas over the kessim.")
+    Maya: Why the umbrellas? # vo: ch2-judaism_maya_0063
+    Tigist: Honour. Shade, too, on the mountain. Here there's no sun, only the ceiling. We bring them anyway. # vo: ch2-judaism_tigist_0064
+* [Talk: Tigist (thank her)]
+    ~ record_choice("ch2.p4.sigd", "thanks", "At Sigd, you thanked Tigist for letting you in.")
+    Maya: Thank you for letting me be here. # vo: ch2-judaism_maya_0065
+    Tigist: Everyone breaks the fast together. Even the guests. Especially the guests. # vo: ch2-judaism_tigist_0066
+-
+~ journal("Note", "Sigd. Fifty days after Yom Kippur. The kessim under bright umbrellas. \"We knew.\"")
 -> rivka
 
 = rivka
-// Modern Orthodox: Rivka invites Maya for Shabbat lunch after the breakup.
-# place: rivka_house
+// Modern Orthodox: Effie invites Maya for Shabbat lunch after the breakup.
+# place: effie_house
 # shot: wide
-# objective: Have lunch at Rivka's
-Rivka: Adeena's my cousin. You're still my friend. Those are both allowed. Sit. # vo: ch2-judaism_rivka_0051
+# objective: Have lunch at Effie's
+Effie: Adeena's my cousin. You're still my friend. Those are both allowed. Sit. # vo: ch2-judaism_effie_0051
 - (lunch)
 + {lunch < 3} [Look: The lights]
-    The lamps on timers. Nobody touches a switch from Friday night to Saturday night. Rest, Rivka says, from making things happen. # look: shabbat-timers
+    The lamps on timers. Nobody touches a switch from Friday night to Saturday night. Rest, Effie says, from making things happen. # look: shabbat-timers
     -> lunch
 + {lunch < 3} [Look: The children]
     Four of them, all talking at once, all in their Shabbat clothes, one with jam on hers. # look: rivka-children
     -> lunch
-* [Talk: Rivka (ask about Adeena)]
-    ~ record_choice("ch2.p4.rivka", "asked", "At Shabbat lunch, you asked Rivka how Adeena was.")
-    Rivka: She's going to a Hasidic shul in West Rogers Park now. She's... finding something. She asked about you. That's all I'll say. # vo: ch2-judaism_rivka_0052
-* [Talk: Rivka (say thank you)]
-    ~ record_choice("ch2.p4.rivka", "thanks", "At Shabbat lunch, you thanked Rivka for still having you.")
+* [Talk: Effie (ask about Adeena)]
+    ~ record_choice("ch2.p4.rivka", "asked", "At Shabbat lunch, you asked Effie how Adeena was.")
+    Effie: She's going to a Hasidic shul in West Rogers Park now. She's... finding something. She asked about you. That's all I'll say. # vo: ch2-judaism_effie_0052
+* [Talk: Effie (say thank you)]
+    ~ record_choice("ch2.p4.rivka", "thanks", "At Shabbat lunch, you thanked Effie for still having you.")
     Maya: Thank you. For still having me. # vo: ch2-judaism_maya_0053
-    Rivka: Hachnasat orchim. Welcoming guests. It's a mitzvah. Also, I like you. # vo: ch2-judaism_rivka_0054
+    Effie: Hachnasat orchim. Welcoming guests. It's a mitzvah. Also, I like you. # vo: ch2-judaism_effie_0054
 -
 -> lake
 

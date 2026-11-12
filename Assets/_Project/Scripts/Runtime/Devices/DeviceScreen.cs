@@ -35,8 +35,8 @@ namespace IAmAsIAm.Runtime.Devices
         public Func<bool> Blocked = () => false;
 
         Font _font;
-        GameObject _phoneButton, _panel, _banner;
-        Text _phoneLabel, _title, _bannerText;
+        GameObject _phoneButton, _laptopButton, _panel, _banner;
+        Text _phoneLabel, _laptopLabel, _title, _bannerText;
         RectTransform _tabs, _list, _footer;
         float _bannerHideAt;
         Action _onClosed;
@@ -66,13 +66,22 @@ namespace IAmAsIAm.Runtime.Devices
         void Update()
         {
             var d = D;
-            bool canOpen = d != null && d.CanText && !IsOpen && !Blocked()
-                           && Save.SaveService.ActiveSlot != 0 && !Save.SaveSlotsScreen.IsOpen && !Loading.LoadingScreen.IsShowing;
-            _phoneButton.SetActive(canOpen);
-            if (canOpen)
+            // Owner: the phone and the laptop are always-usable icons on the side of the screen (once she has them),
+            // not only something the story offers.
+            bool usable = d != null && !IsOpen && !Blocked()
+                          && Save.SaveService.ActiveSlot != 0 && !Save.SaveSlotsScreen.IsOpen && !Loading.LoadingScreen.IsShowing;
+            bool phone = usable && d.CanText, laptop = usable && d.Has(DeviceKind.Laptop);
+            _phoneButton.SetActive(phone);
+            _laptopButton.SetActive(laptop);
+            if (phone)
             {
-                int unread = d.UnreadCount(MessageChannel.Text) + (d.CanEmailAnywhere ? d.UnreadCount(MessageChannel.Email) : 0);
+                int unread = d.UnreadCount(MessageChannel.Text);
                 _phoneLabel.text = unread > 0 ? $"Phone ({unread})" : "Phone";
+            }
+            if (laptop)
+            {
+                int unread = d.UnreadCount(MessageChannel.Email);
+                _laptopLabel.text = unread > 0 ? $"Laptop ({unread})" : "Laptop";
             }
             if (_banner.activeSelf && Time.unscaledTime > _bannerHideAt) _banner.SetActive(false);
         }
@@ -232,12 +241,11 @@ namespace IAmAsIAm.Runtime.Devices
             scaler.matchWidthOrHeight = 1f;
             var root = canvasGo.transform;
 
-            // The Phone button: just left of Saves (Saves 0.73-0.85, Anchor 0.86-0.98).
-            _phoneButton = Panel(root, "Phone Button", QuietButtonColor, new Vector2(0.60f, 0.9f), new Vector2(0.72f, 0.98f));
-            _phoneButton.AddComponent<Button>().onClick.AddListener(() => Open(DeviceKind.Phone));
-            _phoneLabel = MakeText(_phoneButton.transform, "Phone", 44, FontStyle.Bold, TextColor, TextAnchor.MiddleCenter);
-            Stretch(_phoneLabel.rectTransform);
-            _phoneButton.SetActive(false);
+            // The phone and laptop icons: the right edge of the screen, above the Use button.
+            _phoneButton = SideIcon(root, "Phone Icon", phone: true, y: 0.68f, out _phoneLabel);
+            _phoneButton.GetComponent<Button>().onClick.AddListener(() => Open(DeviceKind.Phone));
+            _laptopButton = SideIcon(root, "Laptop Icon", phone: false, y: 0.49f, out _laptopLabel);
+            _laptopButton.GetComponent<Button>().onClick.AddListener(() => Open(DeviceKind.Laptop));
 
             // A new-message banner (top middle). It never takes touches.
             _banner = Panel(root, "Message Banner", new Color(0.12f, 0.12f, 0.15f, 0.95f), new Vector2(0.3f, 0.78f), new Vector2(0.7f, 0.86f));
@@ -254,6 +262,65 @@ namespace IAmAsIAm.Runtime.Devices
             _list = Column(_panel.transform, "List", new Vector2(0.05f, 0.14f), new Vector2(0.95f, 0.81f), horizontal: false);
             _footer = Column(_panel.transform, "Footer", new Vector2(0.06f, 0.02f), new Vector2(0.94f, 0.12f), horizontal: true);
             _panel.SetActive(false);
+        }
+
+        /// <summary>A round-cornered tile on the right edge with a drawn icon and a name under it (with unread counts).</summary>
+        GameObject SideIcon(Transform root, string name, bool phone, float y, out Text label)
+        {
+            var go = new GameObject(name, typeof(RectTransform), typeof(Image), typeof(Button));
+            go.transform.SetParent(root, false);
+            var rt = go.GetComponent<RectTransform>();
+            rt.anchorMin = rt.anchorMax = new Vector2(0.985f, y);
+            rt.pivot = new Vector2(1f, 0.5f);
+            rt.sizeDelta = new Vector2(230, 300);
+            go.GetComponent<Image>().color = new Color(0.16f, 0.14f, 0.18f, 0.82f);
+
+            var icon = new GameObject("Icon", typeof(RectTransform), typeof(Image));
+            icon.transform.SetParent(go.transform, false);
+            var irt = icon.GetComponent<RectTransform>();
+            irt.anchorMin = new Vector2(0.1f, 0.3f); irt.anchorMax = new Vector2(0.9f, 0.95f);
+            irt.offsetMin = irt.offsetMax = Vector2.zero;
+            var img = icon.GetComponent<Image>();
+            img.sprite = IconSprite(phone);
+            img.preserveAspect = true;
+            img.raycastTarget = false;
+
+            label = MakeText(go.transform, phone ? "Phone" : "Laptop", 36, FontStyle.Bold, TextColor, TextAnchor.MiddleCenter);
+            Place(label.rectTransform, new Vector2(0f, 0.02f), new Vector2(1f, 0.3f));
+            go.SetActive(false);
+            return go;
+        }
+
+        static Sprite _phoneIcon, _laptopIcon;
+
+        /// <summary>Simple line icons made in code (art can replace them later): a phone, or a laptop.</summary>
+        static Sprite IconSprite(bool phone)
+        {
+            if (phone && _phoneIcon != null) return _phoneIcon;
+            if (!phone && _laptopIcon != null) return _laptopIcon;
+            const int size = 128;
+            var tex = new Texture2D(size, size, TextureFormat.RGBA32, false) { filterMode = FilterMode.Bilinear, wrapMode = TextureWrapMode.Clamp };
+            var px = new Color32[size * size];
+            var on = new Color32(240, 232, 220, 255);
+            void Fill(int x0, int y0, int x1, int y1) { for (int y = y0; y <= y1; y++) for (int x = x0; x <= x1; x++) px[y * size + x] = on; }
+            void Frame(int x0, int y0, int x1, int y1, int w) { Fill(x0, y0, x1, y0 + w); Fill(x0, y1 - w, x1, y1); Fill(x0, y0, x0 + w, y1); Fill(x1 - w, y0, x1, y1); }
+            if (phone)
+            {
+                Frame(36, 8, 92, 120, 6);          // the body
+                Fill(56, 14, 72, 18);              // the home bar
+                Fill(56, 110, 72, 113);            // the speaker
+            }
+            else
+            {
+                Frame(22, 44, 106, 108, 6);        // the screen
+                Fill(8, 30, 120, 40);              // the keyboard base
+                Fill(52, 34, 76, 36);              // the hinge notch
+            }
+            tex.SetPixels32(px);
+            tex.Apply(false, true);
+            var sprite = Sprite.Create(tex, new Rect(0, 0, size, size), new Vector2(0.5f, 0.5f), 100f);
+            if (phone) _phoneIcon = sprite; else _laptopIcon = sprite;
+            return sprite;
         }
 
         RectTransform Column(Transform parent, string name, Vector2 min, Vector2 max, bool horizontal)

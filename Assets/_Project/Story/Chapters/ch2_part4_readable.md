@@ -7,7 +7,8 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **My guesses, for you to check:**
 
 - The breakup is on a Friday, after the candles, the last time. Adeena is kind and very sure.
-- Alone, Maya goes to a Renewal Kabbalat Shabbat (singing, drums, candles: the candles trigger her now), a Reform temple's Friday service, and Shabbat lunch at Rivka's (Modern Orthodox), who stays kind to her.
+- Owner: show Beta Israel (Ethiopian Jews): a Sigd celebration in November, led by a kes. Tigist is MY placeholder name.
+- Alone, Maya goes to a Renewal Kabbalat Shabbat (singing, drums, candles: the candles trigger her now), a Reform temple's Friday service, and Shabbat lunch at Effie's (Modern Orthodox), who stays kind to her.
 - The chapter ends with Rabbi Abe, walking by the lake, and the first text to Tanya about how bad the lost time is.
 
 ## Friday
@@ -100,23 +101,50 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
     - "Those we remember this week." Someone reads the names aloud. People stand for their own.
 - **Wait (stay to the end)**
 
+## Sigd
+
+> **Objective:** Stay for the end of the fast
+
+**Tigist:** Welcome, welcome. You found the flyer? Good. Today is Sigd. We fast, we pray, we remember Jerusalem, and tonight we eat. Sit anywhere.
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The kes**
+    - An old man in white, a white turban, a bright umbrella held over him like a little sky. He reads in a language you've never heard.
+- **Look: The book**
+    - Wrapped in cloth. Tigist says it's the Orit, the Torah in Ge'ez. "My grandmother kissed it every year. So now I do."
+- **Look: The families**
+    - White shawls with coloured borders. Children asleep on laps. Teenagers filming on phones, and singing anyway.
+- **Talk: Tigist**
+
+**Tigist:** For a thousand years, far from everyone, we kept this. Nobody told us we were Jews. We knew. Sigd is the day we say it again.
+
+**Explore** (glowing things; the player picks):
+
+- **Talk: Tigist (ask why the umbrellas)**
+    - **Maya:** Why the umbrellas?
+    - **Tigist:** Honour. Shade, too, on the mountain. Here there's no sun, only the ceiling. We bring them anyway.
+- **Talk: Tigist (thank her)**
+    - **Maya:** Thank you for letting me be here.
+    - **Tigist:** Everyone breaks the fast together. Even the guests. Especially the guests.
+
 ## Rivka
 
-> **Objective:** Have lunch at Rivka's
+> **Objective:** Have lunch at Effie's
 
-**Rivka:** Adeena's my cousin. You're still my friend. Those are both allowed. Sit.
+**Effie:** Adeena's my cousin. You're still my friend. Those are both allowed. Sit.
 
 **Explore** (glowing things; the player picks):
 
 - **Look: The lights**
-    - The lamps on timers. Nobody touches a switch from Friday night to Saturday night. Rest, Rivka says, from making things happen.
+    - The lamps on timers. Nobody touches a switch from Friday night to Saturday night. Rest, Effie says, from making things happen.
 - **Look: The children**
     - Four of them, all talking at once, all in their Shabbat clothes, one with jam on hers.
-- **Talk: Rivka (ask about Adeena)**
-    - **Rivka:** She's going to a Hasidic shul in West Rogers Park now. She's... finding something. She asked about you. That's all I'll say.
-- **Talk: Rivka (say thank you)**
+- **Talk: Effie (ask about Adeena)**
+    - **Effie:** She's going to a Hasidic shul in West Rogers Park now. She's... finding something. She asked about you. That's all I'll say.
+- **Talk: Effie (say thank you)**
     - **Maya:** Thank you. For still having me.
-    - **Rivka:** Hachnasat orchim. Welcoming guests. It's a mitzvah. Also, I like you.
+    - **Effie:** Hachnasat orchim. Welcoming guests. It's a mitzvah. Also, I like you.
 
 ## Lake
 

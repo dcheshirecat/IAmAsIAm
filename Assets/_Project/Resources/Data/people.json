@@ -284,9 +284,9 @@
       "pronouns": "he/him"
     },
     {
-      "id": "curator",
-      "name": "Curator",
-      "role": "The curator at the museum where Maya and Adeena work (placeholder, no name yet).",
+      "id": "eudora",
+      "name": "Eudora Jones",
+      "role": "A curator at The Field Museum, where Maya is a tour guide and Adeena the registrar. Shouts on stressful days.",
       "tradition": "",
       "description": "",
       "chapterIds": [
@@ -297,7 +297,7 @@
     {
       "id": "ruth",
       "name": "Ruth",
-      "role": "Adeena's mother, Reform (placeholder name).",
+      "role": "Adeena's mother, Reform.",
       "tradition": "judaism",
       "description": "",
       "chapterIds": [
@@ -306,9 +306,9 @@
       "memberLinks": []
     },
     {
-      "id": "lev",
-      "name": "Lev",
-      "role": "Adeena's uncle: secular, Humanistic Judaism; comes to every seder 'for the people' (placeholder name).",
+      "id": "lee",
+      "name": "Lee",
+      "role": "Adeena's uncle: secular, Humanistic Judaism; comes to every seder 'for the people'.",
       "tradition": "judaism",
       "description": "",
       "chapterIds": [
@@ -317,9 +317,9 @@
       "memberLinks": []
     },
     {
-      "id": "rivka",
-      "name": "Rivka",
-      "role": "Adeena's cousin, Modern Orthodox; stays Maya's friend after the breakup (placeholder name).",
+      "id": "effie",
+      "name": "Effie",
+      "role": "Adeena's cousin, Modern Orthodox; stays Maya's friend after the breakup.",
       "tradition": "judaism",
       "description": "",
       "chapterIds": [
@@ -328,9 +328,9 @@
       "memberLinks": []
     },
     {
-      "id": "savta",
-      "name": "Savta",
-      "role": "Adeena's grandmother, whose family came from Morocco: Sephardi traditions, the Mimouna (placeholder).",
+      "id": "grandma",
+      "name": "Grandma",
+      "role": "Adeena's grandmother, whose family came from Morocco: Sephardi traditions, the Mimouna (Claude's guess).",
       "tradition": "judaism",
       "description": "",
       "chapterIds": [
@@ -339,9 +339,20 @@
       "memberLinks": []
     },
     {
-      "id": "dani",
-      "name": "Dani",
-      "role": "Adeena's friend who leads a Reconstructionist havurah in their living room (placeholder name).",
+      "id": "hannah",
+      "name": "Hannah",
+      "role": "Adeena's friend who leads a Reconstructionist havurah in her living room.",
+      "tradition": "judaism",
+      "description": "",
+      "chapterIds": [
+        "ch2-judaism"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "tigist",
+      "name": "Tigist",
+      "role": "Beta Israel (Ethiopian Jewish) community member who welcomes Maya at a Sigd celebration in Chicago (Claude's placeholder name).",
       "tradition": "judaism",
       "description": "",
       "chapterIds": [

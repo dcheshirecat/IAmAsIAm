@@ -6,7 +6,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **My guesses, for you to check:**
 
-- Adeena's synagogue is a Conservative one in the city (placeholder name: "Congregation Etz Chaim").
+- Owner: Adeena's synagogue is Congregation Etz Chaim (Conservative).
 - They start dating in early summer, after the coffee. The first Shabbat dinner is at Adeena's apartment.
 - Rabbi Abe calls the meetup "keruv", bringing close (a real Conservative outreach word).
 - The Saturday morning service: Maya follows the English, stands when everyone stands, and is told that's enough.
@@ -53,6 +53,8 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Explore** (glowing things; the player picks):
 
+- **Look: The sign by the door**
+    - "Congregation Etz Chaim. Tree of Life. All are welcome." Under it, a man at the door who nods at Adeena by name.
 - **Look: The prayer book**
     - Hebrew on the right-hand page, English on the left. You read from the back to the front.
 - **Look: The ark**

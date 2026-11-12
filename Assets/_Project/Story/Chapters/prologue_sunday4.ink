@@ -10,7 +10,7 @@
 //  On replays (an alter unlocked), the car is a moment where an unexpected switch may happen.
 //
 //  My guesses, for the owner to correct:
-//   - Winter (February). Mira died "last week" in Oregon; her daughter Ellen phoned the church office.
+//   - Winter (late January 2013). Owner: Mira died on January 18th; "last week" in Oregon; her daughter Ellen phoned the church office.
 //   - Thomas and Reneé are grown and gone; Mr. Carter still sits in the same pew.
 //   - Rebecca is going out with Will.
 //   - Maya still has Mira's napkin number (Sunday 2) and the unfinished "Dear Mira" letters (Sunday 3).

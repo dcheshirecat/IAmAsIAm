@@ -6,9 +6,9 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **My guesses, for you to check:**
 
-- Mira died in February 2013 (Prologue Sunday 4), so the candle is in February 2024.
-- Adeena's family at the Passover seder (all placeholder names): her mom Ruth (Reform), Uncle Lev (secular, Humanistic Judaism), cousin Rivka (Modern Orthodox), and Savta, her grandmother, whose family came from Morocco (Sephardi traditions: the Mimouna at the end of Passover).
-- Friends: Dani's Reconstructionist havurah (a lay-led group in a living room), and a Pride Shabbat at an LGBTQ congregation.
+- Owner: Mira died on January 18th (2013). The candle is on January 18, 2024.
+- Adeena's family at the Passover seder (owner's names): her mom Ruth (Reform), Uncle Lee (secular, Humanistic Judaism), cousin Effie (Modern Orthodox), and Grandma, her grandmother, whose family came from Morocco (Sephardi traditions: the Mimouna at the end of Passover).
+- Friends: Hannah's Reconstructionist havurah (a lay-led group in a living room), and a Pride Shabbat at an LGBTQ congregation.
 
 ## Candle
 
@@ -21,28 +21,28 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Look: The matches**
     - The box from the kitchen drawer. On the sill. You don't keep matches by the window.
 - **Look: Your phone**
-    - Tuesday. February. A date that means something, and you can't think what.
+    - Thursday, January 18. A date that means something, and you can't think what.
 - **Use: The candle (leave it burning)**
     - You leave it. It seems important to leave it.
 - **Use: The candle (blow it out)**
     - A thin line of smoke. Then you feel sorry, and you don't know why.
 
-📱 **Text from Tanya:** Thinking of you today. I know February is hard.
+📱 **Text from Tanya:** Thinking of you today. I know today is hard.
 
 ## Seder
 
 > **Objective:** Find your seat at the seder
 
-**Ruth:** You're Maya! Adeena told us nothing, which means she likes you very much. Sit, sit. You're next to Lev. I'm sorry in advance.
+**Ruth:** You're Maya! Adeena told us nothing, which means she likes you very much. Sit, sit. You're next to Lee. I'm sorry in advance.
 
 **Explore** (glowing things; the player picks):
 
-- **Talk: Lev, her uncle**
-    - **Lev:** I don't believe in God, and I'm here every year. Ask me why. It's the people. And the brisket. Mostly the people.
-- **Talk: Rivka**
-    - **Rivka:** We do the full seder at my house. Every word. We finish at one in the morning. This is the express version. It's lovely.
-- **Talk: Savta**
-    - **Savta:** Taste. Dates, not apples. That's how my mother made it, in Casablanca. At the end of Pesach you come to me for Mimouna. Pancakes, honey.
+- **Talk: Lee**
+    - **Lee:** I don't believe in God, and I'm here every year. Ask me why. It's the people. And the brisket. Mostly the people.
+- **Talk: Effie**
+    - **Effie:** We do the full seder at my house. Every word. We finish at one in the morning. This is the express version. It's lovely.
+- **Talk: Grandma**
+    - **Grandma:** Taste. Dates, not apples. That's how my mother made it, in Casablanca. At the end of Pesach you come to me for Mimouna. Pancakes, honey.
 - **Look: The seder plate**
     - An egg, a bone, bitter herbs, something brown and sweet, parsley, salt water. Every one of them a story.
 - **Wait (listen to the Four Questions)**
@@ -51,9 +51,9 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 ## Friends
 
-> **Objective:** Go to Dani's with Adeena
+> **Objective:** Go to Hannah's with Adeena
 
-**Dani:** No rabbi tonight. It's us. We read, we argue, we eat. Somebody leads, it rotates. It's my turn, so it's chaos.
+**Hannah:** No rabbi tonight. It's us. We read, we argue, we eat. Somebody leads, it rotates. It's my turn, so it's chaos.
 
 **Explore** (glowing things; the player picks):
 

@@ -8,11 +8,11 @@
 //  Adeena is Conservative and becomes Hasidic (here: the first pull, a class at a Chabad house).
 //
 //  My guesses, for the owner to correct:
-//   - Mira died in February 2013 (Prologue Sunday 4), so the candle is in February 2024.
-//   - Adeena's family at the Passover seder (all placeholder names): her mom Ruth (Reform), Uncle Lev (secular,
-//     Humanistic Judaism), cousin Rivka (Modern Orthodox), and Savta, her grandmother, whose family came from Morocco
+//   - Owner: Mira died on January 18th (2013). The candle is on January 18, 2024.
+//   - Adeena's family at the Passover seder (owner's names): her mom Ruth (Reform), Uncle Lee (secular,
+//     Humanistic Judaism), cousin Effie (Modern Orthodox), and Grandma, her grandmother, whose family came from Morocco
 //     (Sephardi traditions: the Mimouna at the end of Passover).
-//   - Friends: Dani's Reconstructionist havurah (a lay-led group in a living room), and a Pride Shabbat at an
+//   - Friends: Hannah's Reconstructionist havurah (a lay-led group in a living room), and a Pride Shabbat at an
 //     LGBTQ congregation.
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -36,32 +36,32 @@
     The box from the kitchen drawer. On the sill. You don't keep matches by the window. # look: matches-sill
     -> morning
 + {morning < 4} [Look: Your phone]
-    Tuesday. February. A date that means something, and you can't think what. # look: phone-february
+    Thursday, January 18. A date that means something, and you can't think what. # look: phone-january
     -> morning
 * {morning >= 2} [Use: The candle (leave it burning)]
-    ~ record_choice("ch2.p3.candle", "left", "One February morning, you found a tall candle burning on your windowsill. You didn't remember lighting it. You left it burning.")
+    ~ record_choice("ch2.p3.candle", "left", "On the morning of January 18, you found a tall candle burning on your windowsill. You didn't remember lighting it. You left it burning.")
     You leave it. It seems important to leave it. # look: candle-left
 * {morning >= 2} [Use: The candle (blow it out)]
-    ~ record_choice("ch2.p3.candle", "out", "One February morning, you found a tall candle burning on your windowsill. You didn't remember lighting it. You blew it out, and felt sorry, and didn't know why.")
+    ~ record_choice("ch2.p3.candle", "out", "On the morning of January 18, you found a tall candle burning on your windowsill. You didn't remember lighting it. You blew it out, and felt sorry, and didn't know why.")
     A thin line of smoke. Then you feel sorry, and you don't know why. # look: candle-out
 -
-~ text_from("tanya", "Thinking of you today. I know February is hard.")
+~ text_from("tanya", "Thinking of you today. I know today is hard.")
 -> seder
 
 = seder
 # place: adeena_parents_house
 # shot: wide
 # objective: Find your seat at the seder
-Ruth: You're Maya! Adeena told us nothing, which means she likes you very much. Sit, sit. You're next to Lev. I'm sorry in advance. # vo: ch2-judaism_ruth_0028
+Ruth: You're Maya! Adeena told us nothing, which means she likes you very much. Sit, sit. You're next to Lee. I'm sorry in advance. # vo: ch2-judaism_ruth_0028
 - (family)
-+ {family < 5} [Talk: Lev]
-    Lev: I don't believe in God, and I'm here every year. Ask me why. It's the people. And the brisket. Mostly the people. # vo: ch2-judaism_lev_0029
++ {family < 5} [Talk: Lee]
+    Lee: I don't believe in God, and I'm here every year. Ask me why. It's the people. And the brisket. Mostly the people. # vo: ch2-judaism_lee_0029
     -> family
-+ {family < 5} [Talk: Rivka]
-    Rivka: We do the full seder at my house. Every word. We finish at one in the morning. This is the express version. It's lovely. # vo: ch2-judaism_rivka_0030
++ {family < 5} [Talk: Effie]
+    Effie: We do the full seder at my house. Every word. We finish at one in the morning. This is the express version. It's lovely. # vo: ch2-judaism_effie_0030
     -> family
-+ {family < 5} [Talk: Savta]
-    Savta: Taste. Dates, not apples. That's how my mother made it, in Casablanca. At the end of Pesach you come to me for Mimouna. Pancakes, honey. # vo: ch2-judaism_savta_0031
++ {family < 5} [Talk: Grandma]
+    Grandma: Taste. Dates, not apples. That's how my mother made it, in Casablanca. At the end of Pesach you come to me for Mimouna. Pancakes, honey. # vo: ch2-judaism_grandma_0031
     -> family
 + {family < 5} [Look: The seder plate]
     An egg, a bone, bitter herbs, something brown and sweet, parsley, salt water. Every one of them a story. # look: seder-plate
@@ -69,15 +69,15 @@ Ruth: You're Maya! Adeena told us nothing, which means she likes you very much. 
 * {family >= 3} [Wait (listen to the Four Questions)]
 -
 Adeena: Why is this night different from all other nights? You'll hear it four times. That's the point. We keep asking. # vo: ch2-judaism_adeena_0032
-~ journal("Note", "Seder at Adeena's parents'. Ruth (Reform), Uncle Lev (doesn't believe, comes every year), Rivka (Orthodox, every word), Savta (dates, not apples).")
+~ journal("Note", "Seder at Adeena's parents'. Ruth (Reform), Uncle Lee (doesn't believe, comes every year), Effie (Orthodox, every word), Grandma (dates, not apples).")
 -> friends
 
 = friends
 # place: havurah_living_room
 # shot: wide
-# objective: Go to Dani's with Adeena
+# objective: Go to Hannah's with Adeena
 // Reconstructionist: a lay-led havurah, Judaism as the evolving civilization of the Jewish people.
-Dani: No rabbi tonight. It's us. We read, we argue, we eat. Somebody leads, it rotates. It's my turn, so it's chaos. # vo: ch2-judaism_dani_0033
+Hannah: No rabbi tonight. It's us. We read, we argue, we eat. Somebody leads, it rotates. It's my turn, so it's chaos. # vo: ch2-judaism_hannah_0033
 - (havurah)
 + {havurah < 3} [Look: The books]
     A stack of prayer books someone made themselves, photocopied, stapled, full of notes in the margins. # look: havurah-books

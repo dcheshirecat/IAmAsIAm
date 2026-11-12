@@ -290,9 +290,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   synagogue; Adeena's first Chabad class), 4 Not here (2025, 27: the breakup; Renewal Kabbalat Shabbat (`# cue: shabbat-candles`),
   a Reform temple, Shabbat lunch at Rivka's, Rabbi Abe by the lake: pikuach nefesh). Placeholders: the museum, the curator, the
   family names, Dani, "Congregation Etz Chaim". Michael is now in Chapter 6's people. Drive: Story Drafts → `04 Chapter 2 - Judaism
-  (title to come)` (1xVD3UYELoU_vAhYc_iDteHwX71VSdrDC): Part 1 (1xz2s3RR7vmN8dzYaFKzmWew0Tt019lodSAZxq6vUveo), Part 2
-  (1yoZ57IF0Ss48clc957R2r_ohT3-0tbGiAXt2qYR_dZg), Part 3 (1I1oPZTLdJ37lYPvPso0YuugT1D2lYlIgECVqhqc9tP0), Part 4
-  (18AlviF0vFsUPEoDJlfQMESYahTszSSNCEKDeJXq1uh0). Script Sheet "04 Chapter 2 - script list (draft)" (17_sfWngej6lP1AVAD5sNZMFKpXkQF5uuBs3ahPTafsk, 60 lines).
+  (title to come)` (1xVD3UYELoU_vAhYc_iDteHwX71VSdrDC): Part 1 (1gWjHGNjtKwluj9rx4GKHi0z772SlA69hptJ6PD1SoQk), Part 2
+  (1hJKibESyTOx_ADGuAxaCvp4u79xfKhLSOqRpD9eBxV0), Part 3 (1CTd24c5s_ksGSteynJGudt3DSj5g3NOvNDtWYh_Pun4), Part 4
+  (1LJ5voECgiOEKpmafhook1brG_BNhIF1lcft8HMxxKoY). Script Sheet "04 Chapter 2 - script list (draft)" (1SWEnM61ellUIGqFxCVxNXPigk5dGYNep76fEHet8cRE, 66 lines).
 - 2026-11-12: **Explore the world, not just dialogue (owner).** Every `# place: <id>` is BUILT as a space to walk around
   (`Runtime/World/StoryWorld.cs`, made by StoryScreen): placeholder geometry from the id (outdoors for park/quad/lake/path/march/
   pride/lawn..., a large hall for church/synagogue/temple/museum..., small for car/guest_room; pews, shelves, a bed by keyword),
@@ -304,6 +304,20 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   figure; the camera turns to them); "Mom"/"Mommy" are Sarah. While exploring the character can walk, but saves, the phone and
   the chapter list still wait for the story. InkCheck fails a chapter whose explore choices come before any `# place:`.
   Writing rule: every hub needs a `# place:`; explore choices are `Verb: Target (detail)` with ONE choice per target.
+- 2026-11-12: **Chapter 2 names (owner):** the museum is **The Field Museum** (the real place); Maya is a **tour guide** there
+  (Adeena the registrar); the shouting curator is **Eudora Jones** (`eudora`); Adeena's mother **Ruth**, uncle **Lee**, cousin **Effie**
+  (Modern Orthodox), **Grandma**; her friend **Hannah** (Reconstructionist havurah); the synagogue **Congregation Etz Chaim**.
+  **October 7 / the war: NOT in the game** (owner: no). **Messianic Judaism is left out** (owner agreed); **add Beta Israel
+  (Ethiopian Jews)**: a Sigd celebration in Part 4 (Nov 2025; `tigist` is Claude's placeholder name). **Mira died on January 18th**
+  (2013): Heather's candle is on January 18, 2024. **Heather: the candle is enough** (no message).
+- 2026-11-12: **Later chapters' starters/unlocks: "we'll cross that bridge later"** (owner). **REMIND the owner** when we reach each
+  chapter (3-13) to set its `startingMemberId` / `unlocksMemberId` (Serena, Lily and Heather are left to unlock).
+- 2026-11-12: **Chapter 3, Buddhism (owner):** this is where Maya **first gets real help: a therapist and a diagnosis**. The guide and
+  the traditions: Claude researches open/shared Buddhist practices and proposes (a monk at a local temple, or Maya travelling to a
+  Buddhist country after the diagnosis).
+- 2026-11-12: **Phone and laptop are always-usable icons on the side of the screen** (owner), not only story choices:
+  `DeviceScreen.SideIcon` (right edge above Use; drawn icons made in code; unread counts), shown once she has each device, usable
+  during exploring and dialogue (not over the Anchor or an interactive moment). The story's `# device:` beats stay too.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
