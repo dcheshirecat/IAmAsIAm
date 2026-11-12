@@ -184,6 +184,7 @@ static class InkCheck
             Check(_stones.Contains(S(a[2])), $"gift_charm_bag: unknown stone '{a[2]}' (crystals.json)");
             return null;
         });
+        story.BindExternalFunctionGeneral("honour_ancestor", a => { Contact(a[0], "honour_ancestor"); return null; });
         story.BindExternalFunctionGeneral("gain_herb", a => { Check(_herbs.Contains(S(a[0])), $"gain_herb: unknown herb '{a[0]}' (herbs.json)"); if (S(a[1]).Length > 0) Contact(a[1], "gain_herb"); return null; });
         story.BindExternalFunctionGeneral("gain_stone", a => { Check(_stones.Contains(S(a[0])), $"gain_stone: unknown stone '{a[0]}' (crystals.json)"); if (S(a[1]).Length > 0) Contact(a[1], "gain_stone"); return null; });
         story.BindExternalFunctionGeneral("learn_practice", a =>
@@ -223,7 +224,9 @@ static class InkCheck
                 if (parts.Length == 0) { Fail("empty ritual"); break; }
                 if (parts[0] == "tarot" && parts.Length >= 2 && !_spreads.Contains(parts[1])) Fail("unknown tarot spread");
                 else if (parts[0] == "tarot" || parts[0] == "candle" || parts[0] == "grounding-centering" || parts[0] == "runes"
-                         || parts[0] == "charm-bag" || parts[0] == "circle-casting") { }
+                         || parts[0] == "charm-bag" || parts[0] == "circle-casting" || parts[0] == "pendulum" || parts[0] == "tea-leaves"
+                         || parts[0] == "oracle" || parts[0] == "scrying" || parts[0] == "ancestor-altar" || parts[0] == "offering"
+                         || parts[0] == "sigil" || parts[0] == "dream-journal") { }
                 else if (parts[0] == "cleansing") { if (parts.Length >= 2 && parts[1] != "hard") Fail("cleansing takes only 'hard'"); }
                 else if (parts[0] == "craft" && (parts.Length < 2 || !_charms.Contains(parts[1]))) Fail("unknown charm");
                 else if (parts[0] != "tarot" && parts[0] != "craft" && parts[0] != "rune" && parts[0] != "sachet") Fail("unknown ritual");

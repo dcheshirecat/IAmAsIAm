@@ -113,6 +113,8 @@ Selene presses a little cloth bag into your hand. Lavender, a smooth grey stone,
 ~ learn_practice("charm-bag", "selene")
 ~ text_from("tanya", "Thursdays again, if you want them. This month: runes. I have a spare bag. Bring nothing but yourself.")
 ~ learn_practice("runes", "tanya")
+~ text_from("tanya", "And after runes: sigils. Bring a wish, written like it's already true.")
+~ learn_practice("sigil", "tanya")
 -> sundays
 
 = sundays

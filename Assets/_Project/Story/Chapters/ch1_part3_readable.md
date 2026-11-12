@@ -93,6 +93,8 @@ Selene presses a little cloth bag into your hand. Lavender, a smooth grey stone,
 
 📱 **Text from Tanya:** Thursdays again, if you want them. This month: runes. I have a spare bag. Bring nothing but yourself.
 
+📱 **Text from Tanya:** And after runes: sigils. Bring a wish, written like it's already true.
+
 ## Sundays
 
 **Explore** (glowing things; the player picks):

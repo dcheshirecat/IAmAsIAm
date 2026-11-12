@@ -1,142 +1,425 @@
 {
-  "wiccanMemberIds": ["maya", "izzy"],
+  "wiccanMemberIds": [
+    "maya",
+    "izzy"
+  ],
   "practices": [
     {
       "id": "grounding-centering",
       "name": "Grounding and centering",
       "category": "circle",
-      "steps": ["Feet flat. Breathe down into the ground.", "Roots, going down. Branches, going up.", "Hold. Then let the extra go back into the earth."],
+      "steps": [
+        "Feet flat. Breathe down into the ground.",
+        "Roots, going down. Branches, going up.",
+        "Hold. Then let the extra go back into the earth."
+      ],
       "canBeHard": false
     },
     {
       "id": "circle-casting",
       "name": "Casting a circle",
       "category": "circle",
-      "steps": ["Walk the edge, sunwise, and see it close behind you.", "East, south, west, north: air, fire, water, earth.", "Do the work inside. Then thank the quarters and open it again."],
+      "steps": [
+        "Walk the edge, sunwise, and see it close behind you.",
+        "East, south, west, north: air, fire, water, earth.",
+        "Do the work inside. Then thank the quarters and open it again."
+      ],
       "canBeHard": false
     },
     {
       "id": "cleansing",
       "name": "Cleansing a space",
       "category": "circle",
-      "steps": ["Open a window.", "Rosemary or bay, incense, salt, or the bell: room by room.", "Say what you want the room to hold now."],
+      "steps": [
+        "Open a window.",
+        "Rosemary or bay, incense, salt, or the bell: room by room.",
+        "Say what you want the room to hold now."
+      ],
       "canBeHard": false
     },
     {
       "id": "tarot",
       "name": "Tarot",
       "category": "divination",
-      "steps": ["Hold the deck. Shuffle until it feels done.", "Cut it. Draw.", "Look before you read the book. What do YOU see?"],
+      "steps": [
+        "Hold the deck. Shuffle until it feels done.",
+        "Cut it. Draw.",
+        "Look before you read the book. What do YOU see?"
+      ],
       "canBeHard": true
     },
     {
       "id": "runes",
       "name": "Runes",
       "category": "divination",
-      "steps": ["Hold the bag. Think of the question.", "Shake, and cast them on the cloth.", "Read the ones that land face up."],
+      "steps": [
+        "Hold the bag. Think of the question.",
+        "Shake, and cast them on the cloth.",
+        "Read the ones that land face up."
+      ],
       "canBeHard": true
     },
     {
       "id": "pendulum",
       "name": "Pendulum",
       "category": "divination",
-      "steps": ["Elbow on the table. Let it go still.", "Ask it to show you yes, and no.", "Ask one small question. Watch it swing."],
+      "steps": [
+        "Elbow on the table. Let it go still.",
+        "Ask it to show you yes, and no.",
+        "Ask one small question. Watch it swing."
+      ],
       "canBeHard": false
     },
     {
       "id": "scrying",
       "name": "Scrying",
       "category": "divination",
-      "steps": ["A dark bowl of water, or one candle flame.", "Soft eyes. Don't stare.", "Eyes open, feet on the floor. Stop if you start to drift."],
+      "steps": [
+        "A dark bowl of water, or one candle flame.",
+        "Soft eyes. Don't stare.",
+        "Eyes open, feet on the floor. Stop if you start to drift."
+      ],
       "canBeHard": true
     },
     {
       "id": "tea-leaves",
       "name": "Reading tea leaves",
       "category": "divination",
-      "steps": ["Loose tea, no strainer. Drink it slowly.", "Swirl the last of it three times. Turn the cup over.", "Look for shapes, like clouds."],
+      "steps": [
+        "Loose tea, no strainer. Drink it slowly.",
+        "Swirl the last of it three times. Turn the cup over.",
+        "Look for shapes, like clouds."
+      ],
       "canBeHard": false
     },
     {
       "id": "oracle",
       "name": "Oracle cards",
       "category": "divination",
-      "steps": ["One card, any question.", "One word. Sit with it."],
+      "steps": [
+        "One card, any question.",
+        "One word. Sit with it."
+      ],
       "canBeHard": false
     },
     {
       "id": "candle",
       "name": "Candle magick",
       "category": "candle",
-      "steps": ["Choose the colour.", "Dress it with oil and a pinch of herbs, towards you to bring, away to send.", "Carve one word. Light it. Watch, and never leave it burning alone."],
+      "steps": [
+        "Choose the colour.",
+        "Dress it with oil and a pinch of herbs, towards you to bring, away to send.",
+        "Carve one word. Light it. Watch, and never leave it burning alone."
+      ],
       "canBeHard": true
     },
     {
       "id": "charm-bag",
       "name": "Charm bag",
       "category": "charm",
-      "steps": ["Three things: herbs, a stone, something of yours.", "Write the intention small, fold it in.", "Tie it with three knots. Carry it."],
+      "steps": [
+        "Three things: herbs, a stone, something of yours.",
+        "Write the intention small, fold it in.",
+        "Tie it with three knots. Carry it."
+      ],
       "canBeHard": false
     },
     {
       "id": "sigil",
       "name": "Sigils",
       "category": "charm",
-      "steps": ["Write what you want, as if it's already true.", "Cross out the vowels and the repeated letters.", "Make a shape of what's left. Draw it until it isn't words anymore."],
+      "steps": [
+        "Write what you want, as if it's already true.",
+        "Cross out the vowels and the repeated letters.",
+        "Make a shape of what's left. Draw it until it isn't words anymore."
+      ],
       "canBeHard": false
     },
     {
       "id": "ancestor-altar",
       "name": "The ancestor altar",
       "category": "devotion",
-      "steps": ["A photo or a thing of theirs.", "A candle, water, something they liked.", "Say their name. Tell them about your day."],
+      "steps": [
+        "A photo or a thing of theirs.",
+        "A candle, water, something they liked.",
+        "Say their name. Tell them about your day."
+      ],
       "canBeHard": true
     },
     {
       "id": "offering",
       "name": "Offerings",
       "category": "devotion",
-      "steps": ["Bread, milk, flowers, or a song.", "For the Goddess and the God, or the land, or the season.", "Leave it. Give it back to the earth tomorrow."],
+      "steps": [
+        "Bread, milk, flowers, or a song.",
+        "For the Goddess and the God, or the land, or the season.",
+        "Leave it. Give it back to the earth tomorrow."
+      ],
       "canBeHard": false
     },
     {
       "id": "esbat",
       "name": "The moon (esbat)",
       "category": "wheel",
-      "steps": ["Full moon: give thanks, charge water on the windowsill.", "New moon: rest, and begin small things.", "Write down what the moon saw."],
+      "steps": [
+        "Full moon: give thanks, charge water on the windowsill.",
+        "New moon: rest, and begin small things.",
+        "Write down what the moon saw."
+      ],
       "canBeHard": false
     },
     {
       "id": "dream-journal",
       "name": "Dream journal",
       "category": "devotion",
-      "steps": ["Keep the book by the bed.", "Write before you check your phone.", "Even one word."],
+      "steps": [
+        "Keep the book by the bed.",
+        "Write before you check your phone.",
+        "Even one word."
+      ],
       "canBeHard": false
     }
   ],
   "candleColours": [
-    { "id": "white", "name": "White", "meaning": "for anything: peace, a clean start" },
-    { "id": "green", "name": "Green", "meaning": "for growth, and things taking root" },
-    { "id": "blue", "name": "Blue", "meaning": "for calm, and healing" },
-    { "id": "pink", "name": "Pink", "meaning": "for friendship, and being kind to yourself" },
-    { "id": "yellow", "name": "Yellow", "meaning": "for clear thinking, and courage to begin" },
-    { "id": "purple", "name": "Purple", "meaning": "for intuition, and listening inward" },
-    { "id": "silver", "name": "Silver", "meaning": "for the moon, and remembering" }
+    {
+      "id": "white",
+      "name": "White",
+      "meaning": "for anything: peace, a clean start"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "meaning": "for growth, and things taking root"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "meaning": "for calm, and healing"
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "meaning": "for friendship, and being kind to yourself"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "meaning": "for clear thinking, and courage to begin"
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "meaning": "for intuition, and listening inward"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "meaning": "for the moon, and remembering"
+    }
   ],
-  "hardCardIds": ["major-13-death", "major-16-tower", "major-15-devil", "major-18-moon"],
-  "hardRuneIds": ["hagalaz", "naudiz", "isa"],
-  "charmHerbIds": ["lavender", "rosemary", "chamomile", "mugwort", "calendula", "rowan"],
-  "charmStoneIds": ["hematite", "smoky-quartz", "clear-quartz", "amethyst", "rose-quartz", "moonstone"],
-  "charmOwnThings": ["a thread from your sleeve", "a button from your old coat", "a strand of your hair", "a ticket stub from your pocket"],
-  "charmAdditions": ["a tiny silver bell", "a dried violet", "a glass bead, blue", "a folded fortune from a cookie"],
-  "charmRemoverIds": ["jacob"],
-  "charmAdderIds": ["izzy"],
+  "hardCardIds": [
+    "major-13-death",
+    "major-16-tower",
+    "major-15-devil",
+    "major-18-moon"
+  ],
+  "hardRuneIds": [
+    "hagalaz",
+    "naudiz",
+    "isa"
+  ],
+  "charmHerbIds": [
+    "lavender",
+    "rosemary",
+    "chamomile",
+    "mugwort",
+    "calendula",
+    "rowan"
+  ],
+  "charmStoneIds": [
+    "hematite",
+    "smoky-quartz",
+    "clear-quartz",
+    "amethyst",
+    "rose-quartz",
+    "moonstone"
+  ],
+  "charmOwnThings": [
+    "a thread from your sleeve",
+    "a button from your old coat",
+    "a strand of your hair",
+    "a ticket stub from your pocket"
+  ],
+  "charmAdditions": [
+    "a tiny silver bell",
+    "a dried violet",
+    "a glass bead, blue",
+    "a folded fortune from a cookie"
+  ],
+  "charmRemoverIds": [
+    "jacob"
+  ],
+  "charmAdderIds": [
+    "izzy"
+  ],
   "refusals": [
-    { "memberId": "jacob", "line": "Not touching that." },
-    { "memberId": "axel", "line": "Maya's thing. Pass." },
-    { "memberId": "nina", "line": "That's not mine. I'm not supposed to." },
-    { "memberId": "lily", "line": "That's Maya's book. I'm not allowed." },
-    { "memberId": "heather", "line": "That's hers. I'll leave it closed." },
-    { "memberId": "serena", "line": "Not my book. I'll leave her to it." }
+    {
+      "memberId": "jacob",
+      "line": "Not touching that."
+    },
+    {
+      "memberId": "axel",
+      "line": "Maya's thing. Pass."
+    },
+    {
+      "memberId": "nina",
+      "line": "That's not mine. I'm not supposed to."
+    },
+    {
+      "memberId": "lily",
+      "line": "That's Maya's book. I'm not allowed."
+    },
+    {
+      "memberId": "heather",
+      "line": "That's hers. I'll leave it closed."
+    },
+    {
+      "memberId": "serena",
+      "line": "Not my book. I'll leave her to it."
+    }
+  ],
+  "teaLeafShapes": [
+    {
+      "shape": "a bird, flying",
+      "meaning": "news, coming quickly"
+    },
+    {
+      "shape": "an anchor",
+      "meaning": "steadiness; something holding"
+    },
+    {
+      "shape": "a ladder",
+      "meaning": "a climb; rising, slowly"
+    },
+    {
+      "shape": "a tree",
+      "meaning": "growth, and joy"
+    },
+    {
+      "shape": "a star",
+      "meaning": "hope; something going right"
+    },
+    {
+      "shape": "a crescent moon",
+      "meaning": "a change, and a good one"
+    },
+    {
+      "shape": "a circle",
+      "meaning": "something finished, or coming round again"
+    },
+    {
+      "shape": "a clover leaf",
+      "meaning": "luck"
+    },
+    {
+      "shape": "a key",
+      "meaning": "an answer; a door that opens"
+    },
+    {
+      "shape": "a bridge",
+      "meaning": "a crossing over"
+    },
+    {
+      "shape": "a house",
+      "meaning": "home; settling"
+    },
+    {
+      "shape": "a heart",
+      "meaning": "love, given or coming"
+    }
+  ],
+  "teaLeafSource": "Traditional tea-leaf lore as in Cicely Kent, Telling Fortunes by Tea Leaves (1922): a single bird flying 'always indicates speedy news'; joy and success shown by 'a crescent moon, clover leaves, flowers, trees, anchors, fruit, circles, stars'; the ladder for advancement. The rest are the common meanings in the same tradition. Near the rim = soon; near the bottom = further off.",
+  "oracleCards": [
+    {
+      "word": "Rest",
+      "prompt": "Where could you put something down today?"
+    },
+    {
+      "word": "Root",
+      "prompt": "What holds you, even a little?"
+    },
+    {
+      "word": "Begin",
+      "prompt": "What's the smallest first step?"
+    },
+    {
+      "word": "Enough",
+      "prompt": "What is already enough?"
+    },
+    {
+      "word": "Ask",
+      "prompt": "Who could you ask for help?"
+    },
+    {
+      "word": "Return",
+      "prompt": "What are you coming back to?"
+    },
+    {
+      "word": "Water",
+      "prompt": "What needs to flow, instead of being held?"
+    },
+    {
+      "word": "Kin",
+      "prompt": "Who are your people, right now?"
+    },
+    {
+      "word": "Voice",
+      "prompt": "What do you want to say out loud?"
+    },
+    {
+      "word": "Shelter",
+      "prompt": "Where do you feel safe?"
+    },
+    {
+      "word": "Thaw",
+      "prompt": "What's softening?"
+    },
+    {
+      "word": "Here",
+      "prompt": "Five things you can see, right now."
+    }
+  ],
+  "oracleNote": "Selene's handmade oracle deck: twelve cards, one word each, painted by her (a fictional deck: no published deck is reproduced).",
+  "offeringThings": [
+    {
+      "id": "bread",
+      "label": "A piece of bread"
+    },
+    {
+      "id": "milk",
+      "label": "A little milk"
+    },
+    {
+      "id": "flowers",
+      "label": "Flowers"
+    },
+    {
+      "id": "song",
+      "label": "A song, hummed"
+    }
+  ],
+  "offeringFor": [
+    {
+      "id": "goddess-god",
+      "label": "The Goddess and the God"
+    },
+    {
+      "id": "land",
+      "label": "The land here"
+    },
+    {
+      "id": "season",
+      "label": "The season"
+    }
   ]
 }

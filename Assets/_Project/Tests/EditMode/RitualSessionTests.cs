@@ -232,5 +232,45 @@ namespace IAmAsIAm.Tests
             Assert.That(s.Result.Vars["charm_stone"], Is.EqualTo("jet"));
             Assert.That(s.Result.Text, Does.Contain("for mourning"));
         }
+
+        [Test]
+        public void Sigil_CrossesOutVowelsAndRepeats()
+        {
+            Assert.That(RitualSession.SigilLetters("I am safe here"), Is.EqualTo("MSFHR"));
+            Assert.That(RitualSession.SigilLetters("aeiou 123"), Is.EqualTo(""));
+            var s = new RitualSession("sigil", "maya", Craft(), Library(), 1, false);
+            Walk(s, write: "I am safe here");
+            Assert.That(s.Result.Vars["ritual_sigil"], Is.EqualTo("MSFHR"));
+        }
+
+        [Test]
+        public void AncestorAltar_OffersThePeopleSheHonours()
+        {
+            var people = new List<ShelfItem> { new ShelfItem("guide_quaker", "Mira"), new ShelfItem("grandma_june", "Grandma June") };
+            var s = new RitualSession("ancestor-altar", "maya", Craft(), Library(), 1, false, ancestors: people);
+            s.Answer();
+            Assert.That(s.Current.Options.ConvertAll(o => o.Label), Is.EqualTo(new[] { "Mira", "Grandma June" }));
+            s.Answer("guide_quaker");
+            Walk(s, write: "I lit the candle.");
+            Assert.That(s.Result.Title, Is.EqualTo("For Mira"));
+            Assert.That(s.Result.Vars["ritual_ancestor"], Is.EqualTo("guide_quaker"));
+        }
+
+        [Test]
+        public void DreamJournal_NothingIsAnAnswerToo()
+        {
+            var s = new RitualSession("dream-journal", "maya", Craft(), Library(), 1, false);
+            Walk(s, choice: "nothing");
+            Assert.That(s.Result.Tab, Is.EqualTo(BookTab.Dreams));
+            Assert.That(s.Result.Text, Is.EqualTo("Nothing I remember."));
+        }
+
+        [Test]
+        public void Scrying_StoppingWhenSheDrifts_StirsSomethingUp()
+        {
+            var s = new RitualSession("scrying", "maya", Craft(), Library(), 1, false);
+            Walk(s, choice: "drift");
+            Assert.That(s.Result.StirredUp, Is.True);
+        }
     }
 }

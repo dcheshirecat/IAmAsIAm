@@ -198,6 +198,26 @@ These are proposals for the writing tools. Claude adds them when building.
    | Ch 5 Part 1, moving in | Tanya (by post) | moonstone |
    | Ch 5 Part 1, moving in | found | rowan |
 4. The other divination practices, the ancestor altar, offerings, sigils, the dream journal.
+   **Owner's answers:** all four divination practices, spread out among teachers; **Tanya warns Maya off scrying** in Chapter 1
+   and it **opens after Chapter 3** (after Angie and the diagnosis); the ancestor altar honours **Mira, her grandparents
+   (Claude's draft, marked), the land and the season (offerings), and people she loses later** (the owner decides who);
+   **dream journal and sigils, both, quietly**. Tea leaves from **Dot**, who works the till at The Circle (Claude's placeholder
+   name); the oracle deck is **Selene's**, handmade, mailed for graduation (2020).
+   **BUILT:** `RitualSession` pendulum (ask a yes/no question; "What did you hope it would say?"), tea-leaves (two shapes,
+   near the rim = soon, the bottom = further off; craft.json `teaLeafShapes`, from Cicely Kent's *Telling Fortunes by Tea
+   Leaves*, 1922: a bird flying = speedy news; crescent moon, clover, trees, anchors, circles, stars = joy and success; the
+   ladder = rising), oracle (Selene's 12 one-word cards, craft.json `oracleCards`: a fictional deck), scrying (grounding first
+   is built in; bowl or flame; "I started to drift" stops it and stirs something up), ancestor-altar (choose who: the people
+   she honours; light a candle, say their name, tell them about your day; can be heavy, sometimes), offering (bread, milk,
+   flowers or a song; for the Goddess and the God, the land, the season, or an ancestor), sigil (write the wish; the vowels and
+   repeats are crossed out: `RitualSession.SigilLetters`; draw a shape; let it go), dream-journal (morning; "Nothing" is an
+   answer too; the Dreams tab). `BookOfShadows.Ancestors` (saved); Ink `honour_ancestor(person)`.
+   **Story (no new voiced lines):** Prelude Part 1, Samhain: Maya writes three names for Selene's altar: Mira, Grandma June,
+   Grandpa Walter (**Claude's guess**: Sarah's parents, Quakers; June died in 2002 when Maya was four: a cardigan and
+   peppermints; Walter before she was born: a photo by a tractor). Prelude Part 3: the dream journal comes with the Book. Ch 1
+   Part 1: Dot reads her cup after class (tea leaves); Tanya's text warns her off scrying, pendulum instead; Ostara =
+   offerings. Ch 1 Part 3: Tanya's text, sigils after runes. Ch 1 Part 4: "Use: The book by the bed (dreams)" in lockdown;
+   Selene's oracle deck arrives after graduation. Ch 3 Part 4, the end: Tanya's text opens scrying.
 5. The Wheel of the Year and the moons in the calendar; Tanya's sabbat texts.
 6. Alter responses and lost-time traces; hard moments.
 7. Going back through the written chapters to add practice moments (with the owner's OK, chapter by chapter).

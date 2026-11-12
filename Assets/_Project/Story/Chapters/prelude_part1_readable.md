@@ -94,6 +94,8 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 Selene tucks a sprig of rosemary and a little black stone into your hand. Rosemary for remembering. Jet, for the people you've lost.
 
+On a slip of paper for Selene's altar you write three names. Mira. Grandma June. Grandpa Walter. You were four when Grandma June died: a cardigan, and peppermints. Grandpa Walter is only a photo, squinting into the sun beside a tractor.
+
 ## Call
 
 **Explore** (glowing things; the player picks):

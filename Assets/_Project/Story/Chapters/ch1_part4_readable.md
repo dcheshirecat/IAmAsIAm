@@ -23,6 +23,8 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Look: The desk**
     - A laptop. A cold mug. A mask on the lamp.
 - **Use: Your phone**
+- **Use: The book by the bed (dreams)**
+    - The Book of Shadows, on the pillow where you left it.
 - **Use: The laptop (Thursday class)**
     - Six small squares. Tanya's ceiling fan. Everyone with their feet on their own floor.
 - **Wait (stay in bed)**
@@ -60,6 +62,10 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
     - The phone buzzes almost at once.
 - **Wait (close the laptop)**
     - The laptop, closed. Quiet.
+
+📱 **Text from Selene:** check your mailbox!! happy graduation. i made you something
+
+A padded envelope from Selene: twelve cards, hand-painted, one word on each. Her own oracle deck.
 
 ## Service
 

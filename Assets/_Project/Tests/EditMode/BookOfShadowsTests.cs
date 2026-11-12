@@ -128,5 +128,16 @@ namespace IAmAsIAm.Tests
             Assert.That(copy.IngredientsOf("herb")[0].giverId, Is.EqualTo("selene"));
             Assert.That(copy.HasIngredient("stone", "jet"), Is.True);
         }
+
+        [Test]
+        public void Ancestors_AreHonouredOnce_AndSaved()
+        {
+            var book = new BookOfShadows(new CraftData());
+            Assert.That(book.Honour("guide_quaker", 3), Is.True);
+            Assert.That(book.Honour("guide_quaker", 4), Is.False);
+            var copy = new BookOfShadows(new CraftData());
+            copy.Restore(book.Export());
+            Assert.That(copy.Ancestors[0].personId, Is.EqualTo("guide_quaker"));
+        }
     }
 }

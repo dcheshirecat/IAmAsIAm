@@ -55,6 +55,11 @@ Tanya: Maya. What could help? # vo: ch1-christianity_tanya_0003
 ~ learn_practice("tarot", "tanya")
 Tanya: Next Thursday, candles. Bring one you haven't lit yet. And you'll practise at home. An altar doesn't have to be big. A windowsill is plenty. # vo: ch1-christianity_tanya_0034
 ~ learn_practice("candle", "tanya")
+// Owner, step 4 of the craft (Claude's draft from the owner's answers). No new voiced lines.
+After class, Dot from the till reads your teacup. A bird near the rim: news, coming soon. She laughs at the gloomy bits and shows you how. # look: dot-teacup
+~ learn_practice("tea-leaves", "dot_circle")
+~ text_from("tanya", "One more thing from tonight. You asked about scrying. Not you, not yet: soft eyes, and you'd float right off. Pendulum instead. Elbow on the table, ask it small things.")
+~ learn_practice("pendulum", "tanya")
 ~ bos_entry("maya", "Readings", "My first reading", "Three cards at Tanya's. What was: {card_name(tarot_was)}. What is: {card_name(tarot_is)}. What could help: {card_name(tarot_help)}.")
 -> ostara
 
@@ -85,6 +90,7 @@ Selene: Your first sabbat! Okay. Ostara. Spring, balance, eggs, all of it. You p
 Tanya: Water it. Every day. I'll ask. # vo: ch1-christianity_tanya_0011
 ~ journal("Note", "Ostara. A seed in a paper cup. Water it every day.")
 ~ bos_entry("maya", "Wheel", "Ostara", "My first sabbat with the coven. Eggs dyed with onion skins. A seed in a paper cup. Water it every day.")
+~ learn_practice("offering", "tanya")
 -> spring_signs
 
 = spring_signs

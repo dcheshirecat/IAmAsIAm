@@ -37,6 +37,9 @@
 //  (lost time: never pointed out). Only Maya and Izzy practise Wicca (craft.json); for anyone else the Book stays shut.
 //  gain_herb(<herbs.json id>, <giver>) / gain_stone(<crystals.json id>, <giver>): someone gives her a herb or a stone
 //  (owner: she collects them from different people; they go in her charm bags; the Book's "Herbs & stones" page lists them).
+//  honour_ancestor(<people id>): someone she honours at the ancestor altar from now on (owner: Mira, her grandparents,
+//  people she loses later). New practices (step 4): # ritual: pendulum / tea-leaves / oracle / scrying / ancestor-altar /
+//  offering / sigil / dream-journal.
 //  gift_charm_bag(<giver>, <herb id>, <stone id>, <intent>) puts a charm bag someone made her in her pocket (she can hold it to
 //  ground while she's drifting; alters react to it). Practice moments: # ritual: runes / charm-bag / circle-casting /
 //  cleansing (or "cleansing hard": the moment stirs something up).
@@ -84,6 +87,7 @@ EXTERNAL bos_entry(member, tab, title, text)
 EXTERNAL practised(practice)
 EXTERNAL gift_charm_bag(giver, herb, stone, intent)
 EXTERNAL gain_herb(herb, giver)
+EXTERNAL honour_ancestor(person)
 EXTERNAL gain_stone(stone, giver)
 
 === function set_experience(kind, amount) ===
@@ -174,6 +178,10 @@ EXTERNAL gain_stone(stone, giver)
 ~ return
 
 === function gain_stone(stone, giver) ===
+~ return
+
+// Someone she honours at the ancestor altar from now on (a people.json id).
+=== function honour_ancestor(person) ===
 ~ return
 
 // Someone gives her a charm bag (herb and stone ids, e.g. "lavender", "smoky-quartz"). It goes in her pocket, and she

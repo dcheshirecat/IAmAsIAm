@@ -139,6 +139,8 @@ A white silk scarf, a khata, placed around your neck.
 
 📱 **Text from Tanya:** Come home. I'll bring soup.
 
+📱 **Text from Tanya:** And when you're home and steadier: scrying, if you still want it. Eyes open. Ground first. Five minutes, like Angie says. Stop if you drift.
+
 Kathmandu. July 2026.
 
 _(The chapter ends here, with the recap of the player's choices.)_

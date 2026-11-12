@@ -37,6 +37,9 @@
     A laptop. A cold mug. A mask on the lamp. # look: dorm-desk
     -> dorm
 + {dorm < 4} [Use: Your phone] -> phone
+* [Use: The book by the bed (dreams)]
+    The Book of Shadows, on the pillow where you left it. # ritual: dream-journal
+    -> dorm
 * [Use: The laptop (Thursday class)]
     ~ record_choice("ch1.p4.lockdown", "class", "In lockdown, you went to Tanya's Thursday class on your laptop.")
     Six small squares. Tanya's ceiling fan. Everyone with their feet on their own floor. # look: zoom-class
@@ -76,6 +79,10 @@ Your phone. # device: phone
     ~ record_choice("ch1.p4.graduation", "closed", "After your Zoom graduation, you closed the laptop and sat in the quiet.")
     The laptop, closed. Quiet. # look: laptop-closed
 -
+// Owner, step 4 of the craft (Claude's draft from the owner's answers). No new voiced lines.
+~ text_from("selene", "check your mailbox!! happy graduation. i made you something")
+A padded envelope from Selene: twelve cards, hand-painted, one word on each. Her own oracle deck. # look: selene-oracle-deck
+~ learn_practice("oracle", "selene")
 -> service
 
 = service

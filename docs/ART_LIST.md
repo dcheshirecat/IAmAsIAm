@@ -178,6 +178,12 @@ Every close-up in the chapters is listed scene by scene in [ART_BY_SCENE.md](ART
 | [ ] | `charm_bag` | Maya's charm bag: a small plum cloth pouch tied with three knots (Selene's gift at Samhain 2019; she makes others) | Ch 1 |
 | [ ] | `rune_cloth` | The cloth she casts runes on (dark, plain) | Ch 1 |
 | [ ] | `cleansing_bundle`, `cleansing_bell`, `salt_bowl` | Cleansing: a bundle of rosemary and bay, a small brass bell, a bowl of salt water (never white sage) | Ch 2 |
+| [ ] | `pendulum` | A clear quartz pendulum on a silver chain (Tanya's suggestion) | Ch 1 |
+| [ ] | `teacup_leaves`, `dot` | A cup and saucer with tea leaves; Dot, about seventy, half-moon glasses, a teapot (The Circle) | Ch 1 |
+| [ ] | `oracle_deck_selene` | Selene's handmade oracle deck: 12 hand-painted cards, one word each (Rest, Root, Begin, Enough, Ask, Return, Water, Kin, Voice, Shelter, Thaw, Here) | Ch 1 |
+| [ ] | `scrying_bowl` | A dark bowl of water (or a single candle) | Ch 3+ |
+| [ ] | `ancestor_altar`, `photo_grandpa_walter` | Photos and small things on the altar; Grandpa Walter squinting into the sun by a tractor | Prelude |
+| [ ] | `offering_dish` | A small dish: bread, milk or flowers | Ch 1 |
 
 ## Part 5: Dialogue portraits and faces (2D)
 Face paintings go on the 3D models in the world; portraits sit beside the dialogue box (`Character Art - Finished/Talking Heads`). *Claude*

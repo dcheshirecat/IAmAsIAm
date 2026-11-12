@@ -103,9 +103,33 @@ namespace IAmAsIAm.Core.Practices
     /// </summary>
     public sealed class RitualSession
     {
-        public static readonly string[] Supported = { "tarot", "candle", "grounding-centering", "runes", "charm-bag", "cleansing", "circle-casting" };
+        public static readonly string[] Supported =
+        {
+            "tarot", "candle", "grounding-centering", "runes", "charm-bag", "cleansing", "circle-casting",
+            "pendulum", "tea-leaves", "oracle", "scrying", "ancestor-altar", "offering", "sigil", "dream-journal",
+        };
         /// <summary>What the home altar offers (owner: cleansing is for moving in and after the breakup: story moments only).</summary>
-        public static readonly string[] AtTheAltar = { "grounding-centering", "circle-casting", "tarot", "runes", "candle", "charm-bag" };
+        public static readonly string[] AtTheAltar =
+        {
+            "grounding-centering", "circle-casting", "tarot", "runes", "oracle", "pendulum", "tea-leaves", "scrying",
+            "candle", "charm-bag", "ancestor-altar", "offering", "sigil", "dream-journal",
+        };
+
+        /// <summary>
+        /// A sigil's letters: the wish, upper case, letters only, with the vowels and every repeated letter crossed out
+        /// (the first of each kept). "I am safe here" -> "MSFHR".
+        /// </summary>
+        public static string SigilLetters(string wish)
+        {
+            var seen = new HashSet<char>();
+            var sb = new System.Text.StringBuilder();
+            foreach (char raw in (wish ?? "").ToUpperInvariant())
+            {
+                if (raw < 'A' || raw > 'Z' || "AEIOU".IndexOf(raw) >= 0) continue;
+                if (seen.Add(raw)) sb.Append(raw);
+            }
+            return sb.ToString();
+        }
         public static bool IsSupported(string practiceId) => Array.IndexOf(Supported, practiceId) >= 0;
 
         const string WriteOwn = "write", SitWithIt = "sit";
@@ -118,6 +142,7 @@ namespace IAmAsIAm.Core.Practices
         string _answer = "";
         readonly string _variant;
         CharmShelf _shelf;
+        IReadOnlyList<ShelfItem> _ancestors;
 
         public string PracticeId { get; }
         public string MemberId { get; }
@@ -130,9 +155,10 @@ namespace IAmAsIAm.Core.Practices
         /// <param name="offerCircle">Ask "Cast a circle first?" after arriving (owner: an optional opening around any ritual).</param>
         /// <param name="variant">"hard": the moment stirs something up (the story's cleansing after the breakup).</param>
         public RitualSession(string practiceId, string memberId, CraftData craft, PracticeLibrary library, int seed, bool allowReversals,
-            bool offerCircle = false, string variant = "", CharmShelf shelf = null)
+            bool offerCircle = false, string variant = "", CharmShelf shelf = null, IReadOnlyList<ShelfItem> ancestors = null)
         {
             _shelf = shelf;
+            _ancestors = ancestors;
             if (!IsSupported(practiceId)) throw new ArgumentException($"No ritual for '{practiceId}' yet.");
             PracticeId = practiceId;
             MemberId = memberId ?? "maya";
@@ -151,6 +177,14 @@ namespace IAmAsIAm.Core.Practices
                 "charm-bag" => CharmBagRitual(),
                 "cleansing" => Cleansing(),
                 "circle-casting" => Circle(),
+                "pendulum" => Pendulum(),
+                "tea-leaves" => TeaLeaves(),
+                "oracle" => Oracle(),
+                "scrying" => Scrying(),
+                "ancestor-altar" => AncestorAltar(),
+                "offering" => Offering(),
+                "sigil" => Sigil(),
+                "dream-journal" => DreamJournal(),
                 _ => Grounding(),
             };
             _steps = offerCircle && practiceId != "circle-casting" && practiceId != "grounding-centering" ? WithCircle(steps) : steps;
@@ -515,6 +549,223 @@ namespace IAmAsIAm.Core.Practices
             Result.Grounding = _variant == "hard" ? 0.1f : 0.2f;
             Result.Vars["ritual_cleansing"] = tool;
             Result.Vars["ritual_holds"] = said;
+        }
+
+        // ── Pendulum ────────────────────────────────────────────────────────────
+
+        IEnumerator<RitualStep> Pendulum()
+        {
+            yield return Arrive("Sit at the altar. One breath in. One breath out.");
+            yield return Step(RitualPhase.Prepare, RitualStepKind.Hold, "Elbow on the table. Let it go still.", "Hold it still", 3f);
+            yield return Step(RitualPhase.Prepare, RitualStepKind.Tap, "Ask it to show you yes. It swings, front to back.", "Show me yes");
+            yield return Step(RitualPhase.Prepare, RitualStepKind.Tap, "Ask it to show you no. Side to side.", "Show me no");
+            var ask = Step(RitualPhase.Prepare, RitualStepKind.Write, "Ask one small question. A yes-or-no one.", "Ask it");
+            ask.MaxLength = 80;
+            yield return ask;
+            string question = _answer.Trim();
+            yield return Step(RitualPhase.Moment, RitualStepKind.Hold, "Watch it.", "Watch", 4f);
+            double r = _rng.NextDouble();
+            string swing = r < 0.4 ? "yes" : r < 0.8 ? "no" : "unclear";
+            yield return Step(RitualPhase.Moment, RitualStepKind.Tap, swing == "yes" ? "Front to back. Yes."
+                : swing == "no" ? "Side to side. No." : "It circles. It won't say.", "See it");
+            // Tanya's real lesson with a pendulum: notice what you hoped for.
+            foreach (var st in Reflect("What did you hope it would say?", "Write it down...")) yield return st;
+            yield return Step(RitualPhase.Close, RitualStepKind.Tap, "Let it go still again. Put it away. Thank it.", "Close");
+
+            Result.Tab = BookTab.Readings;
+            Result.Title = "The pendulum" + (question.Length > 0 ? $": \"{question}\"" : "");
+            Result.Text = (swing == "yes" ? "Yes." : swing == "no" ? "No." : "It circled.") + (Written.Length > 0 ? "\n\n" + Written : "");
+            Result.Vars["ritual_pendulum"] = swing;
+        }
+
+        // ── Tea leaves ──────────────────────────────────────────────────────────
+
+        IEnumerator<RitualStep> TeaLeaves()
+        {
+            yield return Arrive("Put the kettle on. One breath in. One breath out.");
+            yield return Step(RitualPhase.Prepare, RitualStepKind.Tap, "Loose tea, no strainer. Drink it slowly.", "Drink");
+            yield return Step(RitualPhase.Prepare, RitualStepKind.Hold, "Leave a little at the bottom. Swirl it three times.", "Swirl", 3f);
+            yield return Step(RitualPhase.Prepare, RitualStepKind.Tap, "Turn the cup over on the saucer. Wait. Turn it back.", "Turn it");
+            var shapes = (_craft.teaLeafShapes ?? new List<TeaLeafShape>()).ToList();
+            if (shapes.Count == 0) shapes.Add(new TeaLeafShape { shape = "a bird, flying", meaning = "news, coming quickly" });
+            var picked = shapes.OrderBy(_ => _rng.Next()).Take(Math.Min(2, shapes.Count)).ToList();
+            string near = $"Near the rim, <b>{picked[0].shape}</b>: <i>{picked[0].meaning}</i>. Soon.";
+            string far = picked.Count > 1 ? $"\n\nDown at the bottom, <b>{picked[1].shape}</b>: <i>{picked[1].meaning}</i>. Further off." : "";
+            yield return Step(RitualPhase.Moment, RitualStepKind.Tap, "Look for shapes, like clouds.\n\n" + near + far, "Look");
+            foreach (var st in Reflect("What do YOU see in it?", "Write it down...")) yield return st;
+            yield return Step(RitualPhase.Close, RitualStepKind.Tap, "Rinse the cup.", "Close");
+
+            Result.Tab = BookTab.Readings;
+            Result.Title = "Tea leaves: " + string.Join(", ", picked.Select(x => x.shape));
+            Result.Text = string.Join("\n", picked.Select(x => $"{x.shape}: {x.meaning}")) + (Written.Length > 0 ? "\n\n" + Written : "");
+            Result.Vars["ritual_tea"] = string.Join(",", picked.Select(x => x.shape));
+        }
+
+        // ── Oracle cards ────────────────────────────────────────────────────────
+
+        IEnumerator<RitualStep> Oracle()
+        {
+            yield return Arrive("Selene's deck, in its cloth. One breath in. One breath out.");
+            yield return Step(RitualPhase.Prepare, RitualStepKind.Hold, "Shuffle until it feels done.", "Shuffle", 3f);
+            yield return Step(RitualPhase.Prepare, RitualStepKind.Tap, "One card, any question.", "Draw");
+            var cards = (_craft.oracleCards ?? new List<OracleCard>()).ToList();
+            if (cards.Count == 0) cards.Add(new OracleCard { word = "Here", prompt = "Five things you can see, right now." });
+            var card = cards[_rng.Next(cards.Count)];
+            yield return Step(RitualPhase.Moment, RitualStepKind.Tap, $"<size=90><b>{card.word}</b></size>\n\n<i>{card.prompt}</i>", "Sit with it");
+            foreach (var st in Reflect("One word. Sit with it.", "Write it down...")) yield return st;
+            yield return Step(RitualPhase.Close, RitualStepKind.Tap, "Back in the deck. Back in the cloth.", "Close");
+
+            Result.Tab = BookTab.Readings;
+            Result.Title = "Oracle: " + card.word;
+            Result.Text = Written.Length > 0 ? Written : card.prompt;
+            Result.Vars["ritual_oracle"] = card.word;
+        }
+
+        // ── Scrying (owner: Tanya warns her off until she's steadier, after Chapter 3) ──
+
+        IEnumerator<RitualStep> Scrying()
+        {
+            yield return Arrive("Lights low, not off. One breath in. One breath out.");
+            // Grounding first, always (Tanya; Angie): scrying is soft eyes, and soft eyes can drift.
+            yield return Step(RitualPhase.Prepare, RitualStepKind.Hold, "Ground first. Feet flat. Roots, going down.", "Roots", 4f);
+            var what = Step(RitualPhase.Prepare, RitualStepKind.Choose, "What will you look into?");
+            what.Options.Add(new RitualOption("bowl", "A dark bowl of water"));
+            what.Options.Add(new RitualOption("flame", "One candle flame"));
+            yield return what;
+            bool flame = _answer == "flame";
+            yield return Step(RitualPhase.Moment, RitualStepKind.Hold, "Soft eyes. Don't stare. Eyes open, feet on the floor.", "Look", 6f);
+            var came = Step(RitualPhase.Moment, RitualStepKind.Choose, "Did anything come?");
+            came.Options.Add(new RitualOption("shape", "A shape"));
+            came.Options.Add(new RitualOption("colour", "A colour"));
+            came.Options.Add(new RitualOption("nothing", "Nothing, and that's fine"));
+            came.Options.Add(new RitualOption("drift", "I started to drift"));
+            yield return came;
+            string seen = _answer;
+            if (seen == "drift" || _rng.NextDouble() < 0.2)
+            {
+                Result.StirredUp = true;
+                yield return Step(RitualPhase.Moment, RitualStepKind.Tap,
+                    "Stop. Look away. Lights up. Name three things in the room. You can stop here.", "Three things");
+            }
+            foreach (var st in Reflect("What was there?", "Write it down...")) yield return st;
+            yield return Step(RitualPhase.Close, RitualStepKind.Tap, flame ? "Snuff the flame. Lights on." : "Pour the water out, onto the earth. Lights on.", "Close");
+
+            Result.Tab = BookTab.Readings;
+            Result.Title = flame ? "Scrying: a flame" : "Scrying: dark water";
+            Result.Text = (seen == "shape" ? "A shape." : seen == "colour" ? "A colour." : seen == "drift" ? "Started to drift. Stopped." : "Nothing. That's fine.")
+                + (Written.Length > 0 ? "\n\n" + Written : "");
+            Result.Vars["ritual_scrying"] = seen;
+        }
+
+        // ── The ancestor altar ──────────────────────────────────────────────────
+
+        IEnumerator<RitualStep> AncestorAltar()
+        {
+            yield return Arrive("The photos, the little things. One breath in. One breath out.");
+            var who = Step(RitualPhase.Prepare, RitualStepKind.Choose, "Who are you sitting with tonight?");
+            foreach (var a in _ancestors ?? new List<ShelfItem>()) who.Options.Add(new RitualOption(a.Id, string.IsNullOrEmpty(a.From) ? a.Id : a.From));
+            if (who.Options.Count == 0) who.Options.Add(new RitualOption("", "Someone you've lost"));
+            yield return who;
+            var chosen = who.Options.FirstOrDefault(o => o.Id == _answer) ?? who.Options[0];
+            string name = chosen.Label;
+            yield return Step(RitualPhase.Prepare, RitualStepKind.Tap, "Light a candle for them. Water beside it. Something they liked.", "Light it");
+            bool hard = _rng.NextDouble() < 0.3;
+            Result.StirredUp = hard;
+            yield return Step(RitualPhase.Moment, RitualStepKind.Tap, $"Say their name.\n\n<b>{name}</b>"
+                + (hard ? "\n\nIt's heavier tonight. Feet on the floor. You can stop here." : ""), "Say it");
+            var tell = Step(RitualPhase.Reflect, RitualStepKind.Write, "Tell them about your day.", "Tell them");
+            tell.MaxLength = BookOfShadows.MaxEntryLength;
+            yield return tell;
+            string said = _answer.Trim();
+            yield return Step(RitualPhase.Close, RitualStepKind.Tap, "Thank them. Let the candle burn a little longer, then snuff it.", "Thank them");
+
+            Result.Tab = BookTab.Notes;
+            Result.Title = "For " + name;
+            Result.Text = said.Length > 0 ? said : "Sat with them a while.";
+            Result.Grounding = 0.1f;
+            Result.Vars["ritual_ancestor"] = chosen.Id;
+        }
+
+        // ── Offerings ───────────────────────────────────────────────────────────
+
+        IEnumerator<RitualStep> Offering()
+        {
+            yield return Arrive("A small dish on the altar. One breath in. One breath out.");
+            var what = Step(RitualPhase.Prepare, RitualStepKind.Choose, "What will you give?");
+            foreach (var o in _craft.offeringThings ?? new List<CraftOption>()) what.Options.Add(new RitualOption(o.id, o.label));
+            if (what.Options.Count == 0) what.Options.Add(new RitualOption("bread", "A piece of bread"));
+            yield return what;
+            var thing = what.Options.FirstOrDefault(o => o.Id == _answer) ?? what.Options[0];
+            var forWhom = Step(RitualPhase.Prepare, RitualStepKind.Choose, "Who is it for?");
+            foreach (var o in _craft.offeringFor ?? new List<CraftOption>()) forWhom.Options.Add(new RitualOption(o.id, o.label));
+            foreach (var a in _ancestors ?? new List<ShelfItem>()) forWhom.Options.Add(new RitualOption("ancestor:" + a.Id, string.IsNullOrEmpty(a.From) ? a.Id : a.From));
+            if (forWhom.Options.Count == 0) forWhom.Options.Add(new RitualOption("season", "The season"));
+            yield return forWhom;
+            var to = forWhom.Options.FirstOrDefault(o => o.Id == _answer) ?? forWhom.Options[0];
+            yield return Step(RitualPhase.Moment, RitualStepKind.Tap, thing.Id == "song"
+                ? $"Hum it, quietly. For {to.Label}."
+                : $"Set it down. Say who it's for: {to.Label}.", "Give it");
+            foreach (var st in Reflect("What are you giving thanks for?", "Write it down...")) yield return st;
+            yield return Step(RitualPhase.Close, RitualStepKind.Tap, thing.Id == "song" ? "Let the quiet come back." : "Leave it. Give it back to the earth tomorrow.", "Close");
+
+            Result.Tab = BookTab.Notes;
+            Result.Title = $"An offering: {thing.Label.ToLowerInvariant()}, for {to.Label}";
+            Result.Text = Written.Length > 0 ? Written : "Given.";
+            Result.Grounding = 0.1f;
+            Result.Vars["ritual_offering"] = thing.Id;
+            Result.Vars["ritual_offering_for"] = to.Id;
+        }
+
+        // ── Sigils ──────────────────────────────────────────────────────────────
+
+        IEnumerator<RitualStep> Sigil()
+        {
+            yield return Arrive("A clean page and a pencil. One breath in. One breath out.");
+            var wish = Step(RitualPhase.Prepare, RitualStepKind.Write, "Write what you want, as if it's already true.", "Write it");
+            wish.MaxLength = 60;
+            yield return wish;
+            string text = _answer.Trim();
+            string letters = SigilLetters(text);
+            yield return Step(RitualPhase.Prepare, RitualStepKind.Tap, letters.Length > 0
+                ? $"Cross out the vowels, and every letter that repeats.\n\n<size=80><b>{string.Join(" ", letters.ToCharArray())}</b></size>"
+                : "Nothing left to cross out. That's all right. Draw a circle instead.", "Cross them out");
+            yield return Step(RitualPhase.Moment, RitualStepKind.Hold, "Make one shape from what's left. Draw it until it isn't words anymore.", "Draw", 6f);
+            foreach (var st in Reflect("Where will you keep it?", "Write it down...")) yield return st;
+            yield return Step(RitualPhase.Close, RitualStepKind.Tap, "Fold it into the Book. Now let it go: stop thinking about the words.", "Let it go");
+
+            Result.Tab = BookTab.Notes;
+            Result.Title = "A sigil";
+            Result.Text = (text.Length > 0 ? $"\"{text}\"  ({letters})" : "A circle.") + (Written.Length > 0 ? "\n\n" + Written : "");
+            Result.Vars["ritual_sigil"] = letters;
+        }
+
+        // ── The dream journal ───────────────────────────────────────────────────
+
+        IEnumerator<RitualStep> DreamJournal()
+        {
+            yield return Arrive("Morning. Don't move yet. One breath in. One breath out.");
+            yield return Step(RitualPhase.Prepare, RitualStepKind.Tap, "Reach for the book, not the phone.", "The book");
+            yield return Step(RitualPhase.Moment, RitualStepKind.Tap, "Close your eyes again for a moment. What's left of it?", "Look");
+            var any = Step(RitualPhase.Reflect, RitualStepKind.Choose, "Do you remember anything?");
+            any.Options.Add(new RitualOption("something", "Something"));
+            any.Options.Add(new RitualOption("feeling", "Only a feeling"));
+            any.Options.Add(new RitualOption("nothing", "Nothing"));
+            yield return any;
+            string kept = _answer;
+            string dream = "";
+            if (kept != "nothing")
+            {
+                var w = Step(RitualPhase.Reflect, RitualStepKind.Write, "Write it down. Even one word.", "Keep it");
+                w.MaxLength = BookOfShadows.MaxEntryLength;
+                yield return w;
+                dream = _answer.Trim();
+            }
+            yield return Step(RitualPhase.Close, RitualStepKind.Tap, "Close the book. Now the phone.", "Close");
+
+            Result.Tab = BookTab.Dreams;
+            Result.Title = kept == "feeling" ? "A feeling" : kept == "nothing" ? "" : "A dream";
+            Result.Text = dream.Length > 0 ? dream : kept == "nothing" ? "Nothing I remember." : "Only a feeling.";
+            Result.Vars["ritual_dream"] = kept;
         }
     }
 }

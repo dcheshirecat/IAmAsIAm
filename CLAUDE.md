@@ -467,6 +467,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Ink `gain_herb(id, giver)` / `gain_stone(id, giver)` (giver "" = found). The gifts (Claude's list, owner: "yes"): Mira (her stone,
   Sunday 3), Selene (rosemary + jet, Samhain 2016; lavender + smoky quartz, 2019), Tanya (bay + amber at Yule; moonstone by post,
   Seattle), Gracie (calendula), Christie (chamomile), Angie (hematite), Reneé (rose quartz); found: yarrow (Chicago lake path), rowan (Seattle).
+  **Step 4 BUILT (owner's answers):** pendulum, tea leaves (**Dot** at The Circle, placeholder name), oracle (**Selene's** handmade
+  deck, mailed for graduation 2020), **scrying (Tanya warns her off in Ch 1; opens at the end of Ch 3)**, the ancestor altar
+  (**Mira, her grandparents, the land/season, people she loses later: the owner decides who**; Ink `honour_ancestor(person)`),
+  offerings, sigils, the dream journal. Grandparents = **Claude's guess**: Grandma June (`grandma_june`, d. 2002) and Grandpa Walter
+  (`grandpa_walter`), Sarah's Quaker parents. Details: docs/WiccanPractice.md §9 step 4.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

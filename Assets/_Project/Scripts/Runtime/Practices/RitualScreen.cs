@@ -115,7 +115,7 @@ namespace IAmAsIAm.Runtime.Practices
         {
             if (!RitualSession.IsSupported(practiceId)) { done?.Invoke(null); return; }
             _session = new RitualSession(practiceId, memberId, _craft, GameServices.Practices, Environment.TickCount,
-                GameServices.Comfort?.allowTarotReversals ?? false, offerCircle, variant, Shelf());
+                GameServices.Comfort?.allowTarotReversals ?? false, offerCircle, variant, Shelf(), Ancestors());
             _done = done;
             Show();
             _title.text = _session.Title;
@@ -268,6 +268,17 @@ namespace IAmAsIAm.Runtime.Practices
             foreach (var i in book.IngredientsOf("herb")) shelf.Herbs.Add(new ShelfItem(i.id, From(i.giverId)));
             foreach (var i in book.IngredientsOf("stone")) shelf.Stones.Add(new ShelfItem(i.id, From(i.giverId)));
             return shelf;
+        }
+
+        /// <summary>The people she honours at the ancestor altar, by name (owner: Mira, her grandparents, people she loses later).</summary>
+        List<ShelfItem> Ancestors()
+        {
+            var book = GameServices.Book;
+            if (book == null) return null;
+            _names ??= BookScreen.LoadNames();
+            // Mira is "Mira" here, not "Mira Smith": it's how Maya says her name.
+            return book.Ancestors.Select(a => new ShelfItem(a.personId,
+                a.personId == "guide_quaker" ? "Mira" : _names.TryGetValue(a.personId, out var n) ? n : a.personId)).ToList();
         }
 
         /// <summary>What a finished ritual leaves behind: the Book entry, a little grounding, the practice remembered.</summary>

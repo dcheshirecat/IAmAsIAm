@@ -159,6 +159,9 @@ Pasang Lhamo: You came to find yourself. You didn't. Good. Nobody finds themselv
 -
 ~ text_to("tanya", "Coming home. I didn't find myself. Pasang says that's good. I think she's right.")
 ~ text_from("tanya", "Come home. I'll bring soup.")
+// Owner: Tanya warned Maya off scrying in Chapter 1; it opens after Chapter 3. No new voiced lines.
+~ text_from("tanya", "And when you're home and steadier: scrying, if you still want it. Eyes open. Ground first. Five minutes, like Angie says. Stop if you drift.")
+~ learn_practice("scrying", "tanya")
 ~ co_conscious("heather", true)
 # shot: inner
 # place: black

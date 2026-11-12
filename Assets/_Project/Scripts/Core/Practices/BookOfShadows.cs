@@ -49,6 +49,24 @@ namespace IAmAsIAm.Core.Practices
         public List<string> charmRemoverIds = new List<string>();
         /// <summary>Who, in lost time, puts something small into the bag (Izzy).</summary>
         public List<string> charmAdderIds = new List<string>();
+        /// <summary>Tea-leaf shapes and their traditional meanings (Cicely Kent, 1922, and the same tradition).</summary>
+        public List<TeaLeafShape> teaLeafShapes = new List<TeaLeafShape>();
+        /// <summary>Selene's handmade oracle deck: one word a card (fictional; no published deck reproduced).</summary>
+        public List<OracleCard> oracleCards = new List<OracleCard>();
+        public List<CraftOption> offeringThings = new List<CraftOption>();
+        public List<CraftOption> offeringFor = new List<CraftOption>();
+    }
+
+    [Serializable] public sealed class TeaLeafShape { public string shape; public string meaning; }
+    [Serializable] public sealed class OracleCard { public string word; public string prompt; }
+    [Serializable] public sealed class CraftOption { public string id; public string label; }
+
+    /// <summary>Someone she honours at the ancestor altar (a people.json id), and when they were added.</summary>
+    [Serializable]
+    public sealed class Ancestor
+    {
+        public string personId;
+        public int day;
     }
 
     /// <summary>
@@ -143,6 +161,7 @@ namespace IAmAsIAm.Core.Practices
         public int nextId = 1;
         public CharmBagState charmBag = new CharmBagState();
         public List<CharmIngredient> ingredients = new List<CharmIngredient>();
+        public List<Ancestor> ancestors = new List<Ancestor>();
     }
 
     /// <summary>
@@ -266,6 +285,20 @@ namespace IAmAsIAm.Core.Practices
             return true;
         }
 
+        readonly List<Ancestor> _ancestors = new List<Ancestor>();
+
+        /// <summary>The people she honours at the ancestor altar (owner: Mira, her grandparents, and people she loses later).</summary>
+        public IReadOnlyList<Ancestor> Ancestors => _ancestors;
+
+        /// <summary>Adds someone to honour at the ancestor altar. Returns true if they're new.</summary>
+        public bool Honour(string personId, int day)
+        {
+            if (string.IsNullOrEmpty(personId) || _ancestors.Any(a => a.personId == personId)) return false;
+            _ancestors.Add(new Ancestor { personId = personId, day = day });
+            Changed?.Invoke();
+            return true;
+        }
+
         /// <summary>A charm bag needs at least one herb and one stone she has been given.</summary>
         public bool CanMakeCharmBag => _ingredients.Any(i => i.kind == "herb") && _ingredients.Any(i => i.kind == "stone");
 
@@ -338,6 +371,7 @@ namespace IAmAsIAm.Core.Practices
         {
             charmBag = CharmBag,
             ingredients = _ingredients.ToList(),
+            ancestors = _ancestors.ToList(),
             has = Has,
             givenById = GivenById,
             learned = _learned.ToList(),
@@ -355,6 +389,8 @@ namespace IAmAsIAm.Core.Practices
             CharmBag = state?.charmBag ?? new CharmBagState();
             CharmBag.added ??= new List<CharmBagAddition>();
             _ingredients.Clear();
+            _ancestors.Clear();
+            if (state?.ancestors != null) _ancestors.AddRange(state.ancestors.Where(a => a != null && !string.IsNullOrEmpty(a.personId)));
             if (state?.ingredients != null) _ingredients.AddRange(state.ingredients.Where(i => i != null && !string.IsNullOrEmpty(i.id)));
             if (state != null)
             {

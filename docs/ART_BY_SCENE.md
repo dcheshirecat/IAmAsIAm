@@ -238,6 +238,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `cap-plastic`: A cap, still in its plastic, on the bed.
 - `tanya-reply`: The phone buzzes almost at once.
 - `laptop-closed`: The laptop, closed. Quiet.
+- `selene-oracle-deck`: A padded envelope from Selene: twelve cards, hand-painted, one word on each. Her own oracle deck.
 
 ### Selene's dorm room (`college_dorm_selene`)
 
@@ -247,6 +248,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `mira-silent`: Mira.
 - `stone-warm`: The stone, warm from your hand.
 - `selene-rosemary-jet`: Selene tucks a sprig of rosemary and a little black stone into your hand. Rosemary for remembering. Jet, for the people you've lost.
+- `three-names`: On a slip of paper for Selene's altar you write three names. Mira. Grandma June. Grandpa Walter. You were four when Grandma June died: a cardigan, and peppermints. Grandpa Walter is only a photo, squinting into the sun beside a tractor.
 - `phone-mom`: "Mom." The screen lights up the whole dark room.
 - `phone-stops`: It rings, and stops. No message.
 
@@ -293,6 +295,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `shop-bell`: A brass bell. It sounds like your old church's, only smaller.
 - `class-chairs`: Six folding chairs. A rug. A candle in the middle, unlit.
 - `selene-saving`: Selene, cross-legged on a chair, saving the one beside her with her scarf.
+- `dot-teacup`: After class, Dot from the till reads your teacup. A bird near the rim: news, coming soon. She laughs at the gloomy bits and shows you how.
 - `scarf-moved`: Selene's scarf, on your old chair. She moves it.
 - `samhain-faces`: The candles. Everyone's faces, gold.
 - `selene-charm-bag`: Selene presses a little cloth bag into your hand. Lavender, a smooth grey stone, three tight knots. She made it in August, just in case.

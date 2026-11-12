@@ -119,6 +119,11 @@ Selene: Okay. Lights off. Everyone say a name, if you want to. # vo: prelude-wic
 Selene tucks a sprig of rosemary and a little black stone into your hand. Rosemary for remembering. Jet, for the people you've lost. # look: selene-rosemary-jet
 ~ gain_herb("rosemary", "selene")
 ~ gain_stone("jet", "selene")
+// Owner, step 4 of the craft (Claude's draft from the owner's answers). No new voiced lines.
+On a slip of paper for Selene's altar you write three names. Mira. Grandma June. Grandpa Walter. You were four when Grandma June died: a cardigan, and peppermints. Grandpa Walter is only a photo, squinting into the sun beside a tractor. # look: three-names
+~ honour_ancestor("guide_quaker")
+~ honour_ancestor("grandma_june")
+~ honour_ancestor("grandpa_walter")
 -> call
 
 = call

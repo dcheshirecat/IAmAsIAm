@@ -135,6 +135,7 @@ Tanya: Here. Everyone gets one after their first circle. A Book of Shadows. Writ
     Tucked inside the cover: three dry bay leaves and a bead of amber, warm as a hand. For the sun coming back. # look: bos-bay-amber
     ~ gain_herb("bay", "tanya")
     ~ gain_stone("amber", "tanya")
+    ~ learn_practice("dream-journal", "tanya")
 -
 ~ set_experience("TimeLoss", 1.0)
 -> gone

@@ -342,6 +342,7 @@ namespace IAmAsIAm.Runtime.Story
                 book.MakeCharmBag(herb, stone, "made for you", S(a[3]), GameServices.InGameDay);
                 return null;
             });
+            _story.BindExternalFunctionGeneral("honour_ancestor", a => { GameServices.Book?.Honour(S(a[0]), GameServices.InGameDay); return null; });
             _story.BindExternalFunctionGeneral("gain_herb", a => { GameServices.Book?.GainIngredient("herb", S(a[0]), S(a[1]), GameServices.InGameDay, _chapterId); return null; });
             _story.BindExternalFunctionGeneral("gain_stone", a => { GameServices.Book?.GainIngredient("stone", S(a[0]), S(a[1]), GameServices.InGameDay, _chapterId); return null; });
             _story.BindExternalFunctionGeneral("learn_practice", a =>

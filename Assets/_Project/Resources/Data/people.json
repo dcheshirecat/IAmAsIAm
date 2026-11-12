@@ -486,6 +486,36 @@
       ],
       "memberLinks": [],
       "pronouns": "she/her"
+    },
+    {
+      "id": "grandma_june",
+      "name": "Grandma June",
+      "role": "Maya's grandmother, Sarah's mother (CLAUDE'S GUESS: name and details, owner to change)",
+      "tradition": "quakers",
+      "description": "A Quaker, quieter than Sarah. She died in 2002, when Maya was four. Maya remembers a cardigan, peppermints, and being held through a whole meeting for worship.",
+      "chapterIds": [
+        "prelude-wicca"
+      ]
+    },
+    {
+      "id": "grandpa_walter",
+      "name": "Grandpa Walter",
+      "role": "Maya's grandfather, Sarah's father (CLAUDE'S GUESS: name and details, owner to change)",
+      "tradition": "quakers",
+      "description": "A Quaker farmer near Iowa City who died before Maya was born. Maya has his photo (a man squinting into the sun beside a tractor) and his name.",
+      "chapterIds": [
+        "prelude-wicca"
+      ]
+    },
+    {
+      "id": "dot_circle",
+      "name": "Dot",
+      "role": "Works the till at The Circle and reads tea leaves after Thursday class (CLAUDE'S GUESS: name to come from the owner)",
+      "tradition": "wicca",
+      "description": "About seventy, she/her, half-moon glasses, never without a teapot. Reads cups for anyone who asks, and laughs at the gloomy bits.",
+      "chapterIds": [
+        "ch1-christianity"
+      ]
     }
   ]
 }

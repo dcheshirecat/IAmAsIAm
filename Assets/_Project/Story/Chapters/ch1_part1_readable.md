@@ -43,6 +43,10 @@ Three cards, face down on the rug.
 
 **Tanya:** Next Thursday, candles. Bring one you haven't lit yet. And you'll practise at home. An altar doesn't have to be big. A windowsill is plenty.
 
+After class, Dot from the till reads your teacup. A bird near the rim: news, coming soon. She laughs at the gloomy bits and shows you how.
+
+📱 **Text from Tanya:** One more thing from tonight. You asked about scrying. Not you, not yet: soft eyes, and you'd float right off. Pendulum instead. Elbow on the table, ask it small things.
+
 ## Ostara
 
 > **Objective:** Plant a seed
