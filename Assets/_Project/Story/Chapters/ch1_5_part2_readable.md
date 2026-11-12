@@ -10,6 +10,21 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - (Owner) Mark's hometown is Indianapolis; his parents' Methodist church has a candlelight service on Christmas Eve.
 - The signs: a note on the fridge in round letters (Izzy), the bed made with hospital corners (Nina).
 
+## Morning
+
+> **Objective:** Make breakfast
+
+📱 **Text from Tanya:** Thursday class tonight. We miss you. No pressure, just a door that's open. T.
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Your phone**
+    - A voicemail. "Hi, this is Linda from the circulation desk, we haven't seen you for three shifts..." You delete it. Whose shifts?
+- **Look: The fridge**
+    - A note on the fridge, round letters: "buy oat milk!!" You don't drink oat milk. You buy it anyway.
+- **Use: The stove (eggs for two)**
+    - Eggs for two, because Mark is coming at ten and Mark is always hungry.
+
 ## Study
 
 > **Objective:** Study (allegedly)
@@ -45,6 +60,22 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **Axel:** A church at Pride. If you'd told the old me this, I'd have laughed you out of the room.
 
 **Mark:** The old you sounds like a lot. I like this one.
+
+## Halloween
+
+> **Objective:** Find Mark
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Your costume**
+    - Black robe, plastic scythe, a name tag: "HELLO, MY NAME IS DEATH."
+- **Look: The dance floor**
+    - A ghost, three cowboys and a very sweaty banana, dancing to the same song for the fourth time.
+- **Talk: Mark**
+
+**Mark:** I'm Death's intern. I've got a clipboard. I'm really nervous about my first day.
+
+**Axel:** Relax. Nobody's actually died at a party I've been to. Statistically, you're fine.
 
 ## Christmas
 

@@ -21,6 +21,21 @@
 # cw: derealization
 # cw: involuntary-switch
 # cw: time-loss
+-> run
+
+= run
+// Owner: more of each part of the day. Claude's scene: Axel's morning run (one of his own practices), music up loud.
+# place: college_quad
+# shot: over-shoulder
+# objective: Go for a run
+- (path)
++ {path < 2} [Look: The sky]
+    Grey, cold, the sun not up yet. The quad is all yours. # look: quad-dawn
+    -> path
+* [Use: Your earbuds (music up)]
+    Loud. Louder. Your feet on the path, your breath in the cold, the bass in your chest. Nobody's body but yours. # look: run-loud
+    ~ nudge(-0.15)
+-
 -> ash
 
 = ash

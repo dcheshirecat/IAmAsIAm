@@ -126,3 +126,23 @@ Dresses. A blue one at the back, too small, kept anyway.
 **Mark:** Axel. Cool name. Okay, Axel, I'm going to need you to explain the reading to me, because I read it twice and I think it was in Latin.
 
 📱 **Text from Mark:** hey it's mark from soc of religion. want to do the reading together? i'll bring better coffee
+
+## Party
+
+> **Objective:** Have fun
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The kitchen**
+    - Forty people in a kitchen built for four. Someone's playlist, too loud, perfect.
+- **Look: Selene**
+    - Selene on the counter, holding court, waving you over with a cup.
+- **Look: Your phone**
+    - **Mark:** "better coffee. i'm serious. i have a french press. i'm that guy." You grin at it like an idiot.
+- **Talk: The guy by the fridge**
+
+**Axel:** Axel. Yeah, like the car part. No, I don't know which one either.
+
+**Selene:** He's new. Well, he's not new. He's new-new. Be nice to him or I'll hex you.
+
+Nobody blinks. Someone hands you a drink and calls you "dude", and it's the best word you've ever heard.

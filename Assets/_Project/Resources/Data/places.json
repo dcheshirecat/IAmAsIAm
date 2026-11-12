@@ -217,6 +217,14 @@
       "chapterId": "ch1-5-axel"
     },
     {
+      "id": "campus_house_party",
+      "name": "A house party",
+      "city": "champaign_urbana",
+      "x": 0.62,
+      "y": 0.7,
+      "chapterId": "ch1-5-axel"
+    },
+    {
       "id": "town_pride",
       "name": "Pride downtown",
       "city": "champaign_urbana",

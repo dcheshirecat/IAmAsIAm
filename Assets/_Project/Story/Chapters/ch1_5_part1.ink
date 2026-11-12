@@ -125,4 +125,27 @@ Mark: Is the "Sociology of Religion" in here, or did I walk into a cult? Honestl
 Axel: Axel. # vo: ch1-5-axel_axel_0016
 Mark: Axel. Cool name. Okay, Axel, I'm going to need you to explain the reading to me, because I read it twice and I think it was in Latin. # vo: ch1-5-axel_mark_0017
 ~ text_from("ex_christian", "hey it's mark from soc of religion. want to do the reading together? i'll bring better coffee")
+-> party
+
+= party
+// Owner: more of each part of the day (Axel loves fun and parties). Claude's scene: the first party as himself.
+# place: campus_house_party
+# shot: wide
+# objective: Have fun
+- (crowd)
++ {crowd < 3} [Look: The kitchen]
+    Forty people in a kitchen built for four. Someone's playlist, too loud, perfect. # look: party-kitchen
+    -> crowd
++ {crowd < 3} [Look: Selene]
+    Selene on the counter, holding court, waving you over with a cup. # look: selene-counter
+    -> crowd
++ {crowd < 3} [Look: Your phone]
+    Mark: "better coffee. i'm serious. i have a french press. i'm that guy." You grin at it like an idiot. # look: mark-french-press # vo: ch1-5-axel_mark_0047
+    -> crowd
+* [Talk: The guy by the fridge]
+-
+Axel: Axel. Yeah, like the car part. No, I don't know which one either. # vo: ch1-5-axel_axel_0048
+Selene: He's new. Well, he's not new. He's new-new. Be nice to him or I'll hex you. # vo: ch1-5-axel_selene_0049
+~ nudge(-0.15)
+Nobody blinks. Someone hands you a drink and calls you "dude", and it's the best word you've ever heard. # look: dude
 -> ch1_5_part2  // the next part of the same chapter (one run)

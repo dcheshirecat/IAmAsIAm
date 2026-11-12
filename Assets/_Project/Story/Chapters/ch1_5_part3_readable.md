@@ -10,6 +10,17 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - Izzy is triggered by the candles and the singing, and fronts for a little while; Axel comes back holding a candle.
 - At Easter, Mark's family's Methodist service is early; Mark and Axel also find an Easter evening service at a queer-affirming church in the next town, which Mark has wanted to visit for years.
 
+## Run
+
+> **Objective:** Go for a run
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The sky**
+    - Grey, cold, the sun not up yet. The quad is all yours.
+- **Use: Your earbuds (music up)**
+    - Loud. Louder. Your feet on the path, your breath in the cold, the bass in your chest. Nobody's body but yours.
+
 ## Ash
 
 > **Objective:** Sit with Mark

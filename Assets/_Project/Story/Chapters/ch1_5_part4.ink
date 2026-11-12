@@ -15,6 +15,26 @@
 ~ set_date(2019, 5, 2)  // Claude's guess at the exact day (owner: change it freely)
 # cw: time-loss
 # cw: involuntary-switch
+-> last_day
+
+= last_day
+// Owner: more of each part of the day (quality time with Mark). Claude's scene: the last day of classes, on the grass.
+# place: college_quad
+# shot: wide
+# objective: Find Mark on the quad
+- (grass)
++ {grass < 3} [Look: The quad]
+    Frisbees, hammocks, someone with a guitar who only knows two songs. Summer, nearly. # look: quad-may
+    -> grass
++ {grass < 3} [Look: The sky]
+    Blue and enormous. You lie back and it takes up everything. # look: sky-may
+    -> grass
+* [Talk: Mark]
+-
+Mark: Summer plan. The Fourth in Indianapolis. My mom wants to meet you properly. She's already bought you a shirt. It's a terrible shirt. # vo: ch1-5-axel_mark_0052
+Axel: I'll wear it. I'll wear it to the wedding, if you're not careful. # vo: ch1-5-axel_axel_0053
+Mark: Is that a proposal? On the quad? Next to the two-song guitar guy? # vo: ch1-5-axel_mark_0054
+Axel: It's a threat. Pass the chips. # vo: ch1-5-axel_axel_0055
 -> packing
 
 = packing

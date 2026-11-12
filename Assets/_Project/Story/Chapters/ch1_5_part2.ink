@@ -16,6 +16,25 @@
 ~ set_date(2018, 10, 6)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: time-loss
+-> morning
+
+= morning
+// Owner: more of each part of the day. Claude's scene: Maya's life keeps calling (her library job; Tanya), and Axel ignores
+// it (owner: Axel ignores all of Tanya's texts). Other alters' signs show up for Axel too, but less than for Maya.
+# place: college_apartment_axel
+# shot: close
+# objective: Make breakfast
+~ text_from("tanya", "Thursday class tonight. We miss you. No pressure, just a door that's open. T.")
+- (k)
++ {k < 3} [Look: Your phone]
+    A voicemail. "Hi, this is Linda from the circulation desk, we haven't seen you for three shifts..." You delete it. Whose shifts? # look: library-voicemail
+    -> k
++ {k < 3} [Look: The fridge]
+    A note on the fridge, round letters: "buy oat milk!!" You don't drink oat milk. You buy it anyway. # look: oat-milk-note
+    -> k
+* [Use: The stove (eggs for two)]
+    Eggs for two, because Mark is coming at ten and Mark is always hungry. # look: eggs-for-two
+-
 -> study
 
 = study
@@ -58,6 +77,26 @@ Mark: There! The banner with the dove. That's us. Well, them. Well, us. You're w
 -
 Axel: A church at Pride. If you'd told the old me this, I'd have laughed you out of the room. # vo: ch1-5-axel_axel_0020
 Mark: The old you sounds like a lot. I like this one. # vo: ch1-5-axel_mark_0021
+-> halloween
+
+= halloween
+// Claude's scene: Halloween with Mark (Axel's dark humour, never at anyone's expense).
+~ set_date(2018, 10, 31)
+# place: campus_house_party
+# shot: wide
+# objective: Find Mark
+- (party)
++ {party < 3} [Look: Your costume]
+    Black robe, plastic scythe, a name tag: "HELLO, MY NAME IS DEATH." # look: death-costume
+    -> party
++ {party < 3} [Look: The dance floor]
+    A ghost, three cowboys and a very sweaty banana, dancing to the same song for the fourth time. # look: party-dance
+    -> party
+* [Talk: Mark]
+-
+Mark: I'm Death's intern. I've got a clipboard. I'm really nervous about my first day. # vo: ch1-5-axel_mark_0050
+Axel: Relax. Nobody's actually died at a party I've been to. Statistically, you're fine. # vo: ch1-5-axel_axel_0051
+~ nudge(-0.1)
 -> christmas
 
 = christmas

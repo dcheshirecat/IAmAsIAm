@@ -20,7 +20,7 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 10 | `college_library` | The library | champaign_urbana | Prelude (prelude_part1) | - |
 | 11 | `college_dorm_selene` | Selene's dorm room | champaign_urbana | Prelude (prelude_part1) | Selene, Maya (the body, 18), Sarah |
 | 12 | `college_apartment_maya` | Maya's apartment | champaign_urbana | Prelude (prelude_part2) | Axel (the body, 20) |
-| 13 | `college_quad` | The Quad | champaign_urbana | Prelude (prelude_part2) | Selene, Maya (the body, 18) |
+| 13 | `college_quad` | The Quad | champaign_urbana | Prelude (prelude_part2) | Selene, Maya (the body, 18), Mark, Axel (the body, 20) |
 | 14 | `shop_the_circle` | The Circle | champaign_urbana | Prelude (prelude_part3) | Tanya, Maya (the body, 19), Selene, Maya (the body, 21) |
 | 15 | `park_yule_circle` | The park: the Yule circle | champaign_urbana | Prelude (prelude_part3) | Tanya |
 | 16 | `park_ostara` | The park: Ostara | champaign_urbana | Chapter 1: Christianity (ch1_part1) | Selene, Maya (the body, 19), Tanya |
@@ -31,50 +31,51 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 21 | `campus_barber` | The barber | champaign_urbana | Chapter 1.5: Axel (ch1_5_part1) | Axel (the body, 20) |
 | 22 | `thrift_store` | The thrift store | champaign_urbana | Chapter 1.5: Axel (ch1_5_part1) | Axel (the body, 20) |
 | 23 | `campus_cafe` | The campus café | champaign_urbana | Chapter 1.5: Axel (ch1_5_part1) | Selene, Axel (the body, 20) |
-| 24 | `town_pride` | Pride downtown | champaign_urbana | Chapter 1.5: Axel (ch1_5_part2) | Mark, Axel (the body, 20) |
-| 25 | `methodist_church` | The Methodist church | indianapolis | Chapter 1.5: Axel (ch1_5_part2) | Cassie, Mark, Axel (the body, 20) |
-| 26 | `mark_family_guest_room` | Cassie's house: the guest room | indianapolis | Chapter 1.5: Axel (ch1_5_part2) | - |
-| 27 | `episcopal_church` | St. Luke's Episcopal | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Pastor Key, Axel (the body, 20) |
-| 28 | `protest_march` | The vigil march | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Mark, Izzy (the body, 20), Axel (the body, 20) |
-| 29 | `queer_affirming_church` | The queer-affirming church | indianapolis | Chapter 1.5: Axel (ch1_5_part3) | Mark, Axel (the body, 20) |
-| 30 | `chicago_apartment` | Maya's apartment | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 25), Tanya, Maya (the body, 27), Nina (the body, 28) |
-| 31 | `field_museum_hall` | The Field Museum: Stanley Field Hall | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 24), Christie, Maya (the body, 27) |
-| 32 | `field_museum_office` | The Field Museum: the registrar's office | chicago | Chapter 2: Judaism (ch2_part1) | Christie |
-| 33 | `field_museum_gallery` | The Field Museum: the new gallery | chicago | Chapter 2: Judaism (ch2_part1) | Eudora Jones, Adeena, Maya (the body, 24) |
-| 34 | `adeena_apartment` | Adeena's apartment | chicago | Chapter 2: Judaism (ch2_part2) | Adeena, Maya (the body, 25), Maya (the body, 27) |
-| 35 | `synagogue_conservative` | Congregation Etz Chaim | chicago | Chapter 2: Judaism (ch2_part2) | Adeena |
-| 36 | `synagogue_social_hall` | Congregation Etz Chaim: the social hall | chicago | Chapter 2: Judaism (ch2_part2) | Rabbi Abe, Maya (the body, 25) |
-| 37 | `adeena_parents_house` | Ruth's house | chicago | Chapter 2: Judaism (ch2_part3) | Ruth, Lee, Effie, Grandma, Adeena |
-| 38 | `havurah_living_room` | Hannah's living room | chicago | Chapter 2: Judaism (ch2_part3) | Hannah |
-| 39 | `lgbtq_synagogue` | The LGBTQ synagogue | chicago | Chapter 2: Judaism (ch2_part3) | Adeena, Maya (the body, 25) |
-| 40 | `chabad_house` | The Chabad house | chicago | Chapter 2: Judaism (ch2_part3) | Adeena, Maya (the body, 25) |
-| 41 | `renewal_shabbat` | The Renewal Shabbat | chicago | Chapter 2: Judaism (ch2_part4) | - |
-| 42 | `reform_temple` | The Reform temple | chicago | Chapter 2: Judaism (ch2_part4) | - |
-| 43 | `sigd_community_hall` | The Sigd celebration | chicago | Chapter 2: Judaism (ch2_part4) | Tigist, Maya (the body, 27) |
-| 44 | `effie_house` | Effie's house | chicago | Chapter 2: Judaism (ch2_part4) | Effie, Maya (the body, 27) |
-| 45 | `lakefront_path` | The lakefront path | chicago | Chapter 2: Judaism (ch2_part4) | Rabbi Abe, Maya (the body, 27) |
-| 46 | `therapist_office` | Angie's office | chicago | Chapter 3: Buddhism (ch3_part1) | Angie, Maya (the body, 27), Izzy (the body, 28), Maya (the body, 28) |
-| 47 | `ohare_airport` | O'Hare Airport | chicago | Chapter 3: Buddhism (ch3_part1) | - |
-| 48 | `boudha_guest_house` | Pasang's guest house | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27), Angie |
-| 49 | `boudha_stupa` | Boudhanath Stupa | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27) |
-| 50 | `dharma_shringa_hall` | Dharma Shringa: the meditation hall | kathmandu | Chapter 3: Buddhism (ch3_part3) | Teacher, Maya (the body, 27), Pasang Lhamo |
-| 51 | `boudha_monastery` | The monastery behind the guest house | kathmandu | Chapter 3: Buddhism (ch3_part3) | Pasang Lhamo, Heather (the body, 27) |
-| 52 | `lumbini_sacred_garden` | Lumbini: the Sacred Garden | lumbini | Chapter 3: Buddhism (ch3_part4) | Maya (the body, 27) |
-| 53 | `day_ward_group_room` | The day program: the group room | chicago | Chapter 4: Islam (ch4_part1) | Izzy (the body, 28), Chaplain Amal |
-| 54 | `day_ward_quiet_room` | The day program: the quiet room | chicago | Chapter 4: Islam (ch4_part1) | Chaplain Amal, Izzy (the body, 28), Maya (the body, 28), Sawsan |
-| 55 | `andersonville_cafe` | A café in Andersonville | chicago | Chapter 4: Islam (ch4_part2) | Reneé, Izzy (the body, 28) |
-| 56 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Fadi, Maya (the body, 28) |
-| 57 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Sawsan, Chaplain Amal |
-| 58 | `seattle_apartment` | Maya's apartment, Seattle | seattle | Chapter 5: Hinduism (ch5_part1) | Maya (the body, 28) |
-| 59 | `burke_museum_hall` | The Burke Museum | seattle | Chapter 5: Hinduism (ch5_part1) | Priya, Maya (the body, 28), Gurleen, Maya (the body, 29) |
-| 60 | `eastside_mandir_hall` | The temple on the Eastside | seattle | Chapter 5: Hinduism (ch5_part1) | Mangala Tai, Maya (the body, 28), Maya (the body, 29) |
-| 61 | `eastside_mandir_kitchen` | The temple on the Eastside: the kitchen | seattle | Chapter 5: Hinduism (ch5_part2) | Lakshmi |
-| 62 | `garba_community_hall` | The Navaratri garba | seattle | Chapter 5: Hinduism (ch5_part3) | Maya (the body, 29), Priya |
-| 63 | `priya_family_house` | Priya's family's house | seattle | Chapter 5: Hinduism (ch5_part3) | Lakshmi, Heather (the body, 29) |
-| 64 | `gurdwara_darbar_hall` | The gurdwara in Kent: the darbar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
-| 65 | `gurdwara_langar_hall` | The gurdwara in Kent: the langar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29) |
-| 66 | `gurdwara_kitchen` | The gurdwara in Kent: the kitchen | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29), Maya (the body, 30) |
-| 67 | `nagar_kirtan_street` | The Vaisakhi procession, Kent | seattle | Chapter 6: Sikhism (ch6_part2) | Maya (the body, 29), Christie |
+| 24 | `campus_house_party` | A house party | champaign_urbana | Chapter 1.5: Axel (ch1_5_part1) | Mark, Axel (the body, 20), Selene |
+| 25 | `town_pride` | Pride downtown | champaign_urbana | Chapter 1.5: Axel (ch1_5_part2) | Mark, Axel (the body, 20) |
+| 26 | `methodist_church` | The Methodist church | indianapolis | Chapter 1.5: Axel (ch1_5_part2) | Cassie, Mark, Axel (the body, 20) |
+| 27 | `mark_family_guest_room` | Cassie's house: the guest room | indianapolis | Chapter 1.5: Axel (ch1_5_part2) | - |
+| 28 | `episcopal_church` | St. Luke's Episcopal | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Pastor Key, Axel (the body, 20) |
+| 29 | `protest_march` | The vigil march | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Mark, Izzy (the body, 20), Axel (the body, 20) |
+| 30 | `queer_affirming_church` | The queer-affirming church | indianapolis | Chapter 1.5: Axel (ch1_5_part3) | Mark, Axel (the body, 20) |
+| 31 | `chicago_apartment` | Maya's apartment | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 25), Tanya, Maya (the body, 27), Nina (the body, 28) |
+| 32 | `field_museum_hall` | The Field Museum: Stanley Field Hall | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 24), Christie, Maya (the body, 27) |
+| 33 | `field_museum_office` | The Field Museum: the registrar's office | chicago | Chapter 2: Judaism (ch2_part1) | Christie |
+| 34 | `field_museum_gallery` | The Field Museum: the new gallery | chicago | Chapter 2: Judaism (ch2_part1) | Eudora Jones, Adeena, Maya (the body, 24) |
+| 35 | `adeena_apartment` | Adeena's apartment | chicago | Chapter 2: Judaism (ch2_part2) | Adeena, Maya (the body, 25), Maya (the body, 27) |
+| 36 | `synagogue_conservative` | Congregation Etz Chaim | chicago | Chapter 2: Judaism (ch2_part2) | Adeena |
+| 37 | `synagogue_social_hall` | Congregation Etz Chaim: the social hall | chicago | Chapter 2: Judaism (ch2_part2) | Rabbi Abe, Maya (the body, 25) |
+| 38 | `adeena_parents_house` | Ruth's house | chicago | Chapter 2: Judaism (ch2_part3) | Ruth, Lee, Effie, Grandma, Adeena |
+| 39 | `havurah_living_room` | Hannah's living room | chicago | Chapter 2: Judaism (ch2_part3) | Hannah |
+| 40 | `lgbtq_synagogue` | The LGBTQ synagogue | chicago | Chapter 2: Judaism (ch2_part3) | Adeena, Maya (the body, 25) |
+| 41 | `chabad_house` | The Chabad house | chicago | Chapter 2: Judaism (ch2_part3) | Adeena, Maya (the body, 25) |
+| 42 | `renewal_shabbat` | The Renewal Shabbat | chicago | Chapter 2: Judaism (ch2_part4) | - |
+| 43 | `reform_temple` | The Reform temple | chicago | Chapter 2: Judaism (ch2_part4) | - |
+| 44 | `sigd_community_hall` | The Sigd celebration | chicago | Chapter 2: Judaism (ch2_part4) | Tigist, Maya (the body, 27) |
+| 45 | `effie_house` | Effie's house | chicago | Chapter 2: Judaism (ch2_part4) | Effie, Maya (the body, 27) |
+| 46 | `lakefront_path` | The lakefront path | chicago | Chapter 2: Judaism (ch2_part4) | Rabbi Abe, Maya (the body, 27) |
+| 47 | `therapist_office` | Angie's office | chicago | Chapter 3: Buddhism (ch3_part1) | Angie, Maya (the body, 27), Izzy (the body, 28), Maya (the body, 28) |
+| 48 | `ohare_airport` | O'Hare Airport | chicago | Chapter 3: Buddhism (ch3_part1) | - |
+| 49 | `boudha_guest_house` | Pasang's guest house | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27), Angie |
+| 50 | `boudha_stupa` | Boudhanath Stupa | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27) |
+| 51 | `dharma_shringa_hall` | Dharma Shringa: the meditation hall | kathmandu | Chapter 3: Buddhism (ch3_part3) | Teacher, Maya (the body, 27), Pasang Lhamo |
+| 52 | `boudha_monastery` | The monastery behind the guest house | kathmandu | Chapter 3: Buddhism (ch3_part3) | Pasang Lhamo, Heather (the body, 27) |
+| 53 | `lumbini_sacred_garden` | Lumbini: the Sacred Garden | lumbini | Chapter 3: Buddhism (ch3_part4) | Maya (the body, 27) |
+| 54 | `day_ward_group_room` | The day program: the group room | chicago | Chapter 4: Islam (ch4_part1) | Izzy (the body, 28), Chaplain Amal |
+| 55 | `day_ward_quiet_room` | The day program: the quiet room | chicago | Chapter 4: Islam (ch4_part1) | Chaplain Amal, Izzy (the body, 28), Maya (the body, 28), Sawsan |
+| 56 | `andersonville_cafe` | A café in Andersonville | chicago | Chapter 4: Islam (ch4_part2) | Reneé, Izzy (the body, 28) |
+| 57 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Fadi, Maya (the body, 28) |
+| 58 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Sawsan, Chaplain Amal |
+| 59 | `seattle_apartment` | Maya's apartment, Seattle | seattle | Chapter 5: Hinduism (ch5_part1) | Maya (the body, 28) |
+| 60 | `burke_museum_hall` | The Burke Museum | seattle | Chapter 5: Hinduism (ch5_part1) | Priya, Maya (the body, 28), Gurleen, Maya (the body, 29) |
+| 61 | `eastside_mandir_hall` | The temple on the Eastside | seattle | Chapter 5: Hinduism (ch5_part1) | Mangala Tai, Maya (the body, 28), Maya (the body, 29) |
+| 62 | `eastside_mandir_kitchen` | The temple on the Eastside: the kitchen | seattle | Chapter 5: Hinduism (ch5_part2) | Lakshmi |
+| 63 | `garba_community_hall` | The Navaratri garba | seattle | Chapter 5: Hinduism (ch5_part3) | Maya (the body, 29), Priya |
+| 64 | `priya_family_house` | Priya's family's house | seattle | Chapter 5: Hinduism (ch5_part3) | Lakshmi, Heather (the body, 29) |
+| 65 | `gurdwara_darbar_hall` | The gurdwara in Kent: the darbar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
+| 66 | `gurdwara_langar_hall` | The gurdwara in Kent: the langar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29) |
+| 67 | `gurdwara_kitchen` | The gurdwara in Kent: the kitchen | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29), Maya (the body, 30) |
+| 68 | `nagar_kirtan_street` | The Vaisakhi procession, Kent | seattle | Chapter 6: Sikhism (ch6_part2) | Maya (the body, 29), Christie |
 
 ## 2. People, in the order they first appear
 
@@ -90,11 +91,11 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 6 | Mr. Jones | `jones` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
 | 7 | Mira | `guide_quaker` | person | Prologue: This Little Light | - | church_fellowship_hall |
 | 8 | Mr. Carter | `carter` | person | Prologue: This Little Light | - | home_kitchen, car |
-| 9 | Selene | `selene` | person | Prelude | - | college_lecture_hall, college_dorm_selene, college_quad, park_ostara, college_dorm_maya, shop_the_circle, campus_cafe |
+| 9 | Selene | `selene` | person | Prelude | - | college_lecture_hall, college_dorm_selene, college_quad, park_ostara, college_dorm_maya, shop_the_circle, campus_cafe, campus_house_party |
 | 10 | Tanya | `tanya` | person | Prelude | - | shop_the_circle, park_yule_circle, park_ostara, chicago_apartment |
 | 11 | Gracie | `gracie` | person | Chapter 1: Christianity | - | campus_ministry, campus_ministry_chapel, campus_ministry_lawn |
-| 12 | Axel | `axel` | system member | Chapter 1.5: Axel | 20 | college_apartment_maya, campus_barber, thrift_store, campus_cafe, college_lecture_hall, town_pride, methodist_church, episcopal_church, protest_march, queer_affirming_church, college_apartment_axel |
-| 13 | Mark | `ex_christian` | person | Chapter 1.5: Axel | - | college_lecture_hall, college_apartment_axel, town_pride, methodist_church, protest_march, queer_affirming_church |
+| 12 | Axel | `axel` | system member | Chapter 1.5: Axel | 20 | college_apartment_maya, campus_barber, thrift_store, campus_cafe, college_lecture_hall, campus_house_party, town_pride, methodist_church, episcopal_church, protest_march, queer_affirming_church, college_quad, college_apartment_axel |
+| 13 | Mark | `ex_christian` | person | Chapter 1.5: Axel | - | college_lecture_hall, campus_house_party, college_apartment_axel, town_pride, methodist_church, protest_march, queer_affirming_church, college_quad |
 | 14 | Cassie | `mark_mom` | person | Chapter 1.5: Axel | - | methodist_church |
 | 15 | Pastor Key | `mark_priest` | person | Chapter 1.5: Axel | - | episcopal_church |
 | 16 | Izzy | `izzy` | system member | Chapter 1.5: Axel | 20, 28 | protest_march, day_ward_group_room, day_ward_quiet_room, andersonville_cafe, therapist_office |
@@ -372,6 +373,10 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `quad-turn-away`: People you don't know, who know you. One of them sees you, and turns away.
 - `left-the-group`: "Jordan left the group." "Sam left the group." "Riley left the group."
 - `coat-drive-flyer`: "Campus Ministry Coat Drive! Bring a coat, take a coat, get a hot chocolate!" Three exclamation marks.
+- `quad-dawn`: Grey, cold, the sun not up yet. The quad is all yours.
+- `run-loud`: Loud. Louder. Your feet on the path, your breath in the cold, the bass in your chest. Nobody's body but yours.
+- `quad-may`: Frisbees, hammocks, someone with a guitar who only knows two songs. Summer, nearly.
+- `sky-may`: Blue and enormous. You lie back and it takes up everything.
 
 ### The Circle (`shop_the_circle`)
 
@@ -418,6 +423,9 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `may-2019`: May 2019. The last thing you remember is the spring of 2018.
 - `fridge-axel`: Beer, hot sauce, leftover pad thai with "A" on the lid in marker.
 - `lights-on-sleep`: On top of the covers, in your clothes, every light on. Your phone buzzes and buzzes. You don't look.
+- `library-voicemail`: A voicemail. "Hi, this is Linda from the circulation desk, we haven't seen you for three shifts..." You delete it. Whose shifts?
+- `oat-milk-note`: A note on the fridge, round letters: "buy oat milk!!" You don't drink oat milk. You buy it anyway.
+- `eggs-for-two`: Eggs for two, because Mark is coming at ten and Mark is always hungry.
 - `mark-upside-down`: Mark, upside down on the couch, the book on his face.
 - `fridge-note-axel`: A note in round letters. "Full moon Tues!! -I". You don't know an I.
 - `couch-cuddle`: Mark's arm. The book on the floor. Durkheim can wait.
@@ -465,6 +473,15 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 ### The campus café (`campus_cafe`)
 
 - `tanya-unread`: "Tanya." A shop with candles in the window. Someone who expects a girl named Maya.
+
+### A house party (`campus_house_party`)
+
+- `party-kitchen`: Forty people in a kitchen built for four. Someone's playlist, too loud, perfect.
+- `selene-counter`: Selene on the counter, holding court, waving you over with a cup.
+- `mark-french-press`: Mark: "better coffee. i'm serious. i have a french press. i'm that guy." You grin at it like an idiot.
+- `dude`: Nobody blinks. Someone hands you a drink and calls you "dude", and it's the best word you've ever heard.
+- `death-costume`: Black robe, plastic scythe, a name tag: "HELLO, MY NAME IS DEATH."
+- `party-dance`: A ghost, three cowboys and a very sweaty banana, dancing to the same song for the fourth time.
 
 ### Pride downtown (`town_pride`)
 

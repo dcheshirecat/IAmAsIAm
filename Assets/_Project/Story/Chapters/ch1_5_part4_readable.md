@@ -9,6 +9,26 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - It happens on an ordinary, happy evening: end-of-year packing, music on, Mark helping take things off the walls.
 - Axel doesn't know why it hurts so much. He says it's fine. It isn't.
 
+## Last day
+
+> **Objective:** Find Mark on the quad
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The quad**
+    - Frisbees, hammocks, someone with a guitar who only knows two songs. Summer, nearly.
+- **Look: The sky**
+    - Blue and enormous. You lie back and it takes up everything.
+- **Talk: Mark**
+
+**Mark:** Summer plan. The Fourth in Indianapolis. My mom wants to meet you properly. She's already bought you a shirt. It's a terrible shirt.
+
+**Axel:** I'll wear it. I'll wear it to the wedding, if you're not careful.
+
+**Mark:** Is that a proposal? On the quad? Next to the two-song guitar guy?
+
+**Axel:** It's a threat. Pass the chips.
+
 ## Packing
 
 > **Objective:** Pack up junior year
