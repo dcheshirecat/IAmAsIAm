@@ -104,6 +104,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   "very independent", and is called away by Mrs. Hines. **Maya never knows in the prologue:** the scene is shown LATER in the game,
   when adult Maya meets a childhood companion who overheard it. **Sunday 3 (11):** Maya **performs okay** (neat, smiling, good
   answers) and Mira believes it, then moves away. **Sunday 4 (15):** an **ordinary Sunday**; the news in the car lands on it.
+- 2026-11-12: Whoever overheard Mira and Sarah (Sunday 2) is **Thomas or Reneé** (which one: to ask); the reunion is in **chapter 4 or 5**.
+  **The owner voices everyone who speaks, including the alters' voices** (every spoken line goes on the Drive script lists).
+  Sunday 1 draft: `Story/Drafts/draft_prologue_sunday1.ink` (+ `_readable.md`), not canon until approved.
 
 - 2026-11-12: **The owner voices parts of the game.** Drive "Game Art - I Am As I Am" → **Voice-Over** (id 1pluvFHsiS_BqpKREdIr1B2tOQnxYMnho):
   one folder per chapter (`00 Prologue (prologue-quaker)` … `14 …`), `Daily Life and Inner Voices`, `Scripts (what to record)`
