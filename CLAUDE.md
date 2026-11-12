@@ -290,9 +290,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   synagogue; Adeena's first Chabad class), 4 Not here (2025, 27: the breakup; Renewal Kabbalat Shabbat (`# cue: shabbat-candles`),
   a Reform temple, Shabbat lunch at Rivka's, Rabbi Abe by the lake: pikuach nefesh). Placeholders: the museum, the curator, the
   family names, Dani, "Congregation Etz Chaim". Michael is now in Chapter 6's people. Drive: Story Drafts → `04 Chapter 2 - Judaism
-  (title to come)` (1xVD3UYELoU_vAhYc_iDteHwX71VSdrDC): Part 1 (1yDFo4vUOyVllZJL39gZrky2Tz0M260bztdqbXjDgbd4), Part 2
-  (17oTJSNVo6T-H9i44kyoduMtkuZ4FgLseqE0s0IpKsjo), Part 3 (1-McfFH3x7ySaM1Cdvp9AMu_Qlwk8aZ1Zh9bQ_QkOR5k), Part 4
-  (1v3Pg3dp26SNShBiBCUMEwS__7T90Pwl2gLKLMsFM-g0). Script Sheet "04 Chapter 2 - script list (draft)" (1tR5MEfk3ubI8XNQe474uecaeea2zCGroZvWUUu2WERY, 68 lines).
+  (title to come)` (1xVD3UYELoU_vAhYc_iDteHwX71VSdrDC): Part 1 (1JhGQEBXeGQ4gNgB3tvkbCqrlhHDYy_E1-qs5h5VV1yY), Part 2
+  (1vhfyX5MgAT3BwOk5KHDaqOJxF7yg4whjSYFB1DbqnI0), Part 3 (1Z50FZEltwX2DfJ05BClPZDgC1NcMKrJv2aeMIjPfLoY), Part 4
+  (1m5ezuFuMtCJGGa4cKPimhCqVD8X5cq9h1jMnq4rlKK4). Script Sheet "04 Chapter 2 - script list (draft)" (1tR5MEfk3ubI8XNQe474uecaeea2zCGroZvWUUu2WERY, 68 lines).
 - 2026-11-12: **Explore the world, not just dialogue (owner).** Every `# place: <id>` is BUILT as a space to walk around
   (`Runtime/World/StoryWorld.cs`, made by StoryScreen): placeholder geometry from the id (outdoors for park/quad/lake/path/march/
   pride/lawn..., a large hall for church/synagogue/temple/museum..., small for car/guest_room; pews, shelves, a bed by keyword),
@@ -532,7 +532,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   shift with a Wicca book on hold under her name + night, Part 3 finals week + Mom's Christmas text). Maya's campus job = the
   library (Claude's guess). Chapter 1 (a whole Thursday; the night she came back; senior-year shifts swapped + dinner alone;
   lockdown grab-and-go), Chapter 1.5 (his first party; breakfast for two + Maya's library voicemail; Halloween with Mark; a
-  morning run; the last day of classes). NEXT: Chapter 2, then 3, 4, 5, 6.
+  morning run; the last day of classes), Chapter 2 FULL DAYS (the L `cta_train`, lunch on the steps, the Friday before the
+  first Shabbat + the walk home, January 18th at work, the day it ended). NEXT: Chapter 3, 4, 5, 6 (full days).
 - 2026-11-12: **Chapter 6 answers (owner):** keep **Bibi Harjit** (langar) as the guide; **Christie VISITS** Seattle (a work trip)
   and tells Maya in person, over coffee (not a phone call); **Chapter 6 unlocks nobody**. **Chapters 2-6: a FULL DAY in every
   part** (owner): wake up, get there, work/school, lunch, home, dinner, bed, around the part's existing scenes.
