@@ -121,6 +121,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   signed with ONE fixed key from the repo secrets `ANDROID_KEYSTORE_BASE64` + `ANDROID_KEYSTORE_PASS` (alias `iamasiam`), so
   updates install over the old app with no uninstall. Without the secrets it falls back to a throwaway key (warning in the
   run's Summary). Never print or commit the key. Test builds show errors on screen (`Runtime/Diagnostics/ErrorOverlay.cs`).
+- 2026-11-12: **Faster builds:** pushes that only touch docs, `*.md`, `Story/Drafts/` or `tools/` don't start an APK build;
+  the disk cleanup runs in parallel in the background while the code and the Library cache download. `main` is the
+  default branch (owner).
 
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
