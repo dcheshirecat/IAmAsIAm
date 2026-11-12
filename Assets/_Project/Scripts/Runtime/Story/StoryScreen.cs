@@ -324,7 +324,7 @@ namespace IAmAsIAm.Runtime.Story
             StopExploring();
             _dialogue.SetActive(true);
             _lineShownFrame = Time.frameCount;
-            _speaker.text = line.Speaker == null ? "" : line.Inner ? line.Speaker + " (inside)" : line.Remote ? line.Speaker + " (on video)" : line.Speaker;
+            _speaker.text = line.Speaker == null ? "" : line.Inner ? line.Speaker + " (inside)" : line.Remote ? line.Speaker + " (" + (line.Via ?? "on video") + ")" : line.Speaker;
             // Whoever speaks is standing here, and the camera turns to them (not the system's own voices: that's the body).
             if (line.Speaker != null && !line.Inner && !line.Remote && _world != null && !IsSystemMember(line.Speaker))
             {

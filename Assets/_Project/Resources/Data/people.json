@@ -516,6 +516,31 @@
       "chapterIds": [
         "ch1-christianity"
       ]
+    },
+    {
+      "id": "bibi_harjit",
+      "name": "Bibi Harjit",
+      "role": "Chapter 6's guide (Claude's guess, placeholder name): Harjit Kaur, about 70, she/her, has run the Sunday langar kitchen at the gurdwara in Kent for thirty-five years; from Ludhiana; came every day after her husband died. 'Chardi kala.'",
+      "tradition": "sikhism",
+      "description": "",
+      "chapterIds": [
+        "ch6-sikhism"
+      ],
+      "memberLinks": [],
+      "pronouns": "she/her",
+      "age": "70"
+    },
+    {
+      "id": "gurleen",
+      "name": "Gurleen",
+      "role": "Maya's colleague at the Burke Museum (Claude's guess, placeholder name), she/her; Sikh, cuts her hair, goes to her grandmother's gurdwara in Kent; her brother Arjan took amrit.",
+      "tradition": "sikhism",
+      "description": "",
+      "chapterIds": [
+        "ch6-sikhism"
+      ],
+      "memberLinks": [],
+      "pronouns": "she/her"
     }
   ]
 }

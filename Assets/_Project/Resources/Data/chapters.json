@@ -166,14 +166,18 @@
       "title": "Chapter 6: Sikhism (title to come)",
       "sabbat": "",
       "inkKnot": "ch6_sikhism",
-      "startingMemberId": "",
+      "startingMemberId": "maya",
       "featuredMemberId": "",
-      "setting": "",
+      "setting": "Seattle and Kent, Washington, March to November 2028",
       "skillFamily": "",
       "contentTags": [
-        "religious-content"
+        "religious-content",
+        "breakup",
+        "derealization",
+        "involuntary-switch"
       ],
-      "summary": "Sikhism."
+      "summary": "Gurleen, from the Burke, brings Maya to her grandmother's gurdwara in Kent: a scarf, shoes off, karah prasad in cupped hands, and langar on the floor in rows, where nobody sits higher. Bibi Harjit, who has run the Sunday kitchen for thirty-five years, puts a rolling pin in her hand. At Vaisakhi, in the middle of the procession, Christie calls: Adeena has married Michael. Afterwards there is chai Maya didn't pour, and a thousand plates to wash until she's back. On Guru Nanak's birthday everyone prays for the good of everyone, sarbat da bhala, and Bibi Harjit says: chardi kala.",
+      "unlocksMemberId": ""
     },
     {
       "id": "ch7-daoism",

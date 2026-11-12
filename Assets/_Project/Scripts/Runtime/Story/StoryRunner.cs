@@ -19,8 +19,10 @@ namespace IAmAsIAm.Runtime.Story
         public string Speaker;
         /// <summary>True for "Name (inside): ..." (an inner voice / co-consciousness).</summary>
         public bool Inner;
-        /// <summary>True for "Name (on video): ...": someone on a video call, so not standing in the place.</summary>
+        /// <summary>True for "Name (on video): ..." or "Name (on the phone): ...": someone on a call, so not standing in the place.</summary>
         public bool Remote;
+        /// <summary>How a remote speaker is there: "on video" or "on the phone".</summary>
+        public string Via;
         public string Text;
         public List<string> Tags = new List<string>();
     }
@@ -310,7 +312,8 @@ namespace IAmAsIAm.Runtime.Story
             {
                 string name = line.Text.Substring(0, colon);
                 if (name.EndsWith(" (inside)")) { line.Inner = true; name = name.Substring(0, name.Length - 9); }
-                else if (name.EndsWith(" (on video)")) { line.Remote = true; name = name.Substring(0, name.Length - 11); }
+                else if (name.EndsWith(" (on video)")) { line.Remote = true; line.Via = "on video"; name = name.Substring(0, name.Length - 11); }
+                else if (name.EndsWith(" (on the phone)")) { line.Remote = true; line.Via = "on the phone"; name = name.Substring(0, name.Length - 15); }
                 line.Speaker = name;
                 line.Text = line.Text.Substring(colon + 2);
             }

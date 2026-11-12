@@ -17,7 +17,7 @@ import csv
 import re
 import sys
 
-SPEAKER = re.compile(r"^(?P<indent>\s*)(?P<name>[A-Z][\w.' ]*?)(?P<inside> \(inside\))?(?P<remote> \(on video\))?: (?P<text>.+?)\s*(?P<tags>#.*)?$")
+SPEAKER = re.compile(r"^(?P<indent>\s*)(?P<name>[A-Z][\w.' ]*?)(?P<inside> \(inside\))?(?P<remote> \(on video\)| \(on the phone\))?: (?P<text>.+?)\s*(?P<tags>#.*)?$")
 VO = re.compile(r"#\s*vo:\s*([a-z0-9-]+)_([a-z0-9-]+)_(\d{4})")
 TITLES = re.compile(r"^(mr|mrs|ms|miss|dr|pastor)\.?\s+", re.I)
 

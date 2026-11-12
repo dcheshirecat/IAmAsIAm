@@ -494,6 +494,16 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   **Step 7 (owner): only "Nina is a devout Quaker"** (moments only while Nina fronts: Ch1 P3 chapel silence, Ch2 P4 holding Mira in
   the Light, Ch4 P2 waiting like meeting; system_members faith "Quaker (devout)"). **No other practice moments added to the
   written chapters: back to writing the rest of the game** (Chapter 6, Sikhism, next).
+- 2026-11-12: **Chapter 6, Sikhism: DRAFTED ON CLAUDE'S GUESSES** (the owner said "continue" before answering the four questions:
+  where/when, the guide, how Christie's news arrives, starter/unlock). Guesses, all to confirm: **Seattle + a fictional gurdwara
+  in Kent, 2028** (29-30); guide **Bibi Harjit** (`bibi_harjit`, placeholder name, ~70, she/her, runs the Sunday langar kitchen);
+  **Gurleen** (`gurleen`, placeholder, Burke colleague; she cuts her hair, her dad keeps his and wears a turban, her brother Arjan
+  took amrit: streams within one family; also Nihang gatka, a woman in a dastar reading the Akhand Path, a clean-shaven uncle);
+  **Christie PHONES during the Vaisakhi nagar kirtan** (`# cue: wedding`, then `# maybe-switch`); seva (dishes, water) brings
+  Maya back; Heather "keeps the Friday candles safe". **Starts as Maya, unlocks nobody (guess: ask about Serena/Lily).**
+  `Story/Chapters/ch6_part1..3.ink`: 1 Langar (Mar 2028), 2 Vaisakhi (Apr 2028), 3 Sarbat da bhala (Guru Nanak's Gurpurab, Nov
+  2028; `# chapter-end`). 35 voiced lines (speakers maya, gurleen, harjit, christie, heather-inside). New: `Name (on the phone): ...`
+  = a remote speaker like `(on video)` (StoryLine.Via).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

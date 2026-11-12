@@ -166,7 +166,7 @@ def convert(text):
             continue
 
         l = re.sub(r"\{[\w.]+: (.*?) \| (.*?)\}", r"\2 [or, if earlier: \1]", l)
-        spk = re.match(r"^([A-Z][\w.' ]*?(?: \((?:inside|on video)\))?): (.*)$", l)
+        spk = re.match(r"^([A-Z][\w.' ]*?(?: \((?:inside|on video|on the phone)\))?): (.*)$", l)
         if spk and len(spk.group(1)) <= 24:
             l = f"**{spk.group(1)}:** {spk.group(2)}"
         if ex:

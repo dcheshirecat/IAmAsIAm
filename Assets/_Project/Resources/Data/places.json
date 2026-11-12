@@ -523,6 +523,38 @@
       "chapterId": "ch5-hinduism"
     },
     {
+      "id": "gurdwara_darbar_hall",
+      "name": "The gurdwara in Kent: the darbar hall",
+      "city": "seattle",
+      "x": 0.52,
+      "y": 0.08,
+      "chapterId": "ch6-sikhism"
+    },
+    {
+      "id": "gurdwara_langar_hall",
+      "name": "The gurdwara in Kent: the langar hall",
+      "city": "seattle",
+      "x": 0.52,
+      "y": 0.08,
+      "chapterId": "ch6-sikhism"
+    },
+    {
+      "id": "gurdwara_kitchen",
+      "name": "The gurdwara in Kent: the kitchen",
+      "city": "seattle",
+      "x": 0.52,
+      "y": 0.08,
+      "chapterId": "ch6-sikhism"
+    },
+    {
+      "id": "nagar_kirtan_street",
+      "name": "The Vaisakhi procession, Kent",
+      "city": "seattle",
+      "x": 0.5,
+      "y": 0.1,
+      "chapterId": "ch6-sikhism"
+    },
+    {
       "id": "black",
       "name": "",
       "city": "",
