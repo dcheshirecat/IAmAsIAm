@@ -23,6 +23,10 @@
     {
       "id": "lumbini",
       "name": "Lumbini"
+    },
+    {
+      "id": "seattle",
+      "name": "Seattle"
     }
   ],
   "places": [
@@ -465,6 +469,54 @@
       "x": 0.2,
       "y": 0.45,
       "chapterId": "ch4-islam"
+    },
+    {
+      "id": "seattle_apartment",
+      "name": "Maya's apartment, Seattle",
+      "city": "seattle",
+      "x": 0.5,
+      "y": 0.55,
+      "chapterId": "ch5-hinduism"
+    },
+    {
+      "id": "burke_museum_hall",
+      "name": "The Burke Museum",
+      "city": "seattle",
+      "x": 0.55,
+      "y": 0.75,
+      "chapterId": "ch5-hinduism"
+    },
+    {
+      "id": "eastside_mandir_hall",
+      "name": "The temple on the Eastside",
+      "city": "seattle",
+      "x": 0.88,
+      "y": 0.6,
+      "chapterId": "ch5-hinduism"
+    },
+    {
+      "id": "eastside_mandir_kitchen",
+      "name": "The temple on the Eastside: the kitchen",
+      "city": "seattle",
+      "x": 0.88,
+      "y": 0.6,
+      "chapterId": "ch5-hinduism"
+    },
+    {
+      "id": "garba_community_hall",
+      "name": "The Navaratri garba",
+      "city": "seattle",
+      "x": 0.75,
+      "y": 0.35,
+      "chapterId": "ch5-hinduism"
+    },
+    {
+      "id": "priya_family_house",
+      "name": "Priya's family's house",
+      "city": "seattle",
+      "x": 0.82,
+      "y": 0.8,
+      "chapterId": "ch5-hinduism"
     },
     {
       "id": "black",

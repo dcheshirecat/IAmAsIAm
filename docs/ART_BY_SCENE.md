@@ -63,6 +63,12 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 53 | `andersonville_cafe` | A café in Andersonville | chicago | Chapter 4: Islam (ch4_part2) | Reneé, Izzy (the body, 28) |
 | 54 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Idris, Maya (the body, 28) |
 | 55 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Zahra, Chaplain Amal |
+| 56 | `seattle_apartment` | Maya's apartment, Seattle | seattle | Chapter 5: Hinduism (ch5_part1) | Maya (the body, 28) |
+| 57 | `burke_museum_hall` | The Burke Museum | seattle | Chapter 5: Hinduism (ch5_part1) | Priya, Maya (the body, 28) |
+| 58 | `eastside_mandir_hall` | The temple on the Eastside | seattle | Chapter 5: Hinduism (ch5_part1) | Pandit Raghavan, Maya (the body, 28), Maya (the body, 29) |
+| 59 | `eastside_mandir_kitchen` | The temple on the Eastside: the kitchen | seattle | Chapter 5: Hinduism (ch5_part2) | Priya's mother |
+| 60 | `garba_community_hall` | The Navaratri garba | seattle | Chapter 5: Hinduism (ch5_part3) | Maya (the body, 29), Priya |
+| 61 | `priya_family_house` | Priya's family's house | seattle | Chapter 5: Hinduism (ch5_part3) | Priya's mother, Heather (the body, 29) |
 
 ## 2. People, in the order they first appear
 
@@ -71,7 +77,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | # | Who | Id | Kind | First in | Ages (the body) | Places |
 |---|---|---|---|---|---|---|
 | 1 | Sarah | `mother` | person | Prologue: This Little Light | - | home_kitchen, car, church_sanctuary, church_fellowship_hall, home_maya_room, college_dorm_selene |
-| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28 | home_kitchen, car, church_fellowship_hall, church_first_day_school, church_sanctuary, home_maya_room, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room |
+| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29 | home_kitchen, car, church_fellowship_hall, church_first_day_school, church_sanctuary, home_maya_room, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room, seattle_apartment, burke_museum_hall, eastside_mandir_hall, garba_community_hall |
 | 3 | Miss Eloise | `eloise` | person | Prologue: This Little Light | - | church_first_day_school |
 | 4 | Rebecca | `rebecca` | person | Prologue: This Little Light | - | church_first_day_school, church_sanctuary |
 | 5 | Mrs. Hines | `hines` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
@@ -98,12 +104,15 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 26 | Angie | `angie` | person | Chapter 3: Buddhism | - | therapist_office, boudha_guest_house |
 | 27 | Pasang Lhamo | `pasang` | person | Chapter 3: Buddhism | - | boudha_guest_house, boudha_stupa, dharma_shringa_hall, boudha_monastery |
 | 28 | Teacher | `course_teacher` | person | Chapter 3: Buddhism | - | dharma_shringa_hall |
-| 29 | Heather | `heather` | system member | Chapter 3: Buddhism | 27 | boudha_monastery |
+| 29 | Heather | `heather` | system member | Chapter 3: Buddhism | 27, 29 | boudha_monastery, priya_family_house |
 | 30 | Chaplain Amal | `chaplain_amal` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall, day_ward_group_room |
 | 31 | Reneé | `renee_carter` | person | Chapter 4: Islam | - | andersonville_cafe |
 | 32 | Nina | `nina` | system member | Chapter 4: Islam | 28 | chicago_apartment |
 | 33 | Zahra | `zahra` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall |
 | 34 | Idris | `idris` | person | Chapter 4: Islam | - | sufi_dhikr_room |
+| 35 | Priya | `priya` | person | Chapter 5: Hinduism | - | burke_museum_hall, garba_community_hall |
+| 36 | Pandit Raghavan | `pandit_raghavan` | person | Chapter 5: Hinduism | - | eastside_mandir_hall |
+| 37 | Priya's mother | `priyas_mother` | person | Chapter 5: Hinduism | - | eastside_mandir_kitchen, priya_family_house |
 
 ## 3. Close-ups and props, scene by scene
 
@@ -638,4 +647,51 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `date-eaten`: Sweet, sticky, very sweet. Someone passes you water before you ask.
 - `rows-praying`: Rows, shoulder to shoulder, everyone moving together: standing, bowing, kneeling, foreheads to the floor. Then stillness.
 - `guard-samosas`: Zahra's mom hands you a serving spoon and a look that means: guard the samosas. You guard them with your life.
+
+### Maya's apartment, Seattle (`seattle_apartment`)
+
+- `labelled-boxes`: "MAYA - BOOKS." "IZZY - DO NOT OPEN (tarot)." "H - kitchen, the good knife." Different handwriting on every box. All of you packed.
+- `seattle-rain`: Rain on the glass, soft and endless. Somewhere behind it, a mountain you've been promised but haven't seen.
+- `sill-unpacked`: You put Mira's stone there first. Then the little brass prayer wheel. Then the khata, folded.
+- `boxes-unpacked`: Every box, open. Books on shelves. It takes a week. In Chicago it took never.
+
+### The Burke Museum (`burke_museum_hall`)
+
+- `burke-whale`: A whale skeleton, hanging over everything, every bone numbered. You laugh. Of course there's a whale.
+- `educator-badge`: "MAYA - EDUCATOR." Just Maya. You can be just Maya here, at work. The others can have the evenings.
+
+### The temple on the Eastside (`eastside_mandir_hall`)
+
+- `temple-shoes`: A hundred pairs of shoes, and children's sandals, and yours, at the end. Bare feet on cool stone.
+- `temple-bell`: A brass bell over the door. Priya's niece shows you: ring it as you come in, to tell God you're here, and to tell yourself.
+- `venkateswara`: Venkateswara, black stone and gold, almost hidden under garlands of marigold and jasmine. His eyes are covered: they say his gaze is too strong.
+- `side-shrines`: Ganesha, round and smiling, by the door. Shiva, a smooth dark stone, wet with milk. The Goddess, in red silk. Everyone has somewhere to go.
+- `aarti-flame`: The aarti: the priest circling a tray of flames before the shrine, everyone singing, a bell, a drum, a conch.
+- `take-the-light`: Warm, over your palms. Warm, over your eyes.
+- `shrine-garland`: Venkateswara in fresh silk, a new garland: yours, the crooked one, near the bottom.
+- `shiva-lingam`: The smooth dark stone, the lingam, still shining from the morning's milk. A brass pot hanging above it, dripping, slowly.
+- `temple-schedule`: "6:30 am Suprabhatam. 8:00 Abhishekam (Fri). 12:00 Naivedyam. 7:00 pm Aarti. 8:30 Ekanta Seva (closing)." Every day. Every single day.
+- `temple-diwali`: Lamps on every ledge, a thousand small flames, the shrines in silk and gold. The whole hall smells of ghee and flowers.
+- `sparklers`: Sparklers outside the door, held at arm's length, a grandfather supervising very seriously.
+- `take-the-light-diwali`: Warm, over your palms. Warm, over your eyes.
+
+### The temple on the Eastside: the kitchen (`eastside_mandir_kitchen`)
+
+- `garland-flowers`: Marigolds, orange and yellow, a mountain of them. Jasmine in a wet cloth. Roses with their stems cut off.
+- `garland-aunties`: Five women, threading faster than you can see, arguing happily in three languages about a wedding.
+- `crooked-garland`: Flower, flower, flower, knot. Crooked. Priya's mother looks at it, and laughs, and says Ganesha likes crooked things.
+- `shared-hands`: Your hands, and Heather's, threading. Straight now. Steady. You're both here. Nobody goes far away.
+
+### The Navaratri garba (`garba_community_hall`)
+
+- `navaratri-goddess`: In the middle of the hall, a small shrine: the Goddess in red, a lamp burning in front of her. Everyone dances around her.
+- `garba-dancers`: Hundreds of people in mirrored skirts and bright kurtas, clapping, turning, a wheel of colour going round and round.
+- `priya-garba`: Priya, waving at you with both arms, in a skirt covered in tiny mirrors. "Come ON."
+- `garba-joined`: Clap, turn, step, clap. You're bad at it. Nobody cares. An old man shows you the step twice, beaming.
+
+### Priya's family's house (`priya_family_house`)
+
+- `rangoli`: A pattern on the doorstep in coloured powder: a lotus, petals of pink and yellow, made by Priya's niece over two hours.
+- `diyas`: Little clay lamps, a cotton wick in oil, a row of them up every step and along every window.
+- `heather-diyas`: One flame. Then the next. Heather's hands, steady, the way they were in the lamp room in Boudha.
 

@@ -149,14 +149,16 @@
       "title": "Chapter 5: Hinduism (title to come)",
       "sabbat": "",
       "inkKnot": "ch5_hinduism",
-      "startingMemberId": "",
+      "startingMemberId": "maya",
       "featuredMemberId": "",
-      "setting": "",
+      "setting": "Seattle, April to November 2027",
       "skillFamily": "",
       "contentTags": [
-        "religious-content"
+        "religious-content",
+        "involuntary-switch"
       ],
-      "summary": "Hinduism."
+      "summary": "Maya moves to Seattle, more grounded now, and unpacks every box in the first week. Priya, from work, brings her to her family's temple, where Panditji, the priest, shows her how to take the light at the aarti. On Saturdays she threads marigold garlands, crooked until Heather shares her hands. The temple's day, wake, bathe, dress, feed, sleep, is someone taking care of someone, every day. At Navaratri she dances the garba badly and happily; on Diwali Heather lights the lamps, and for the first time Maya is there the whole time.",
+      "unlocksMemberId": ""
     },
     {
       "id": "ch6-sikhism",

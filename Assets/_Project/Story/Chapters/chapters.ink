@@ -21,3 +21,6 @@
 
 === ch4_islam ===
 -> ch4_part1
+
+=== ch5_hinduism ===
+-> ch5_part1

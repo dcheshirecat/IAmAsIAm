@@ -409,6 +409,15 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   (1tA8e2jyyekOPR1JDIwXf91OP4lGZHYNIl9jTftkPrYA), Part 4 (1CjppQS0syQLXUlRhv404h93vVOZLFxAEG3KCMJc8HME); Sheet "06 Chapter 4 - script
   list (draft)" (1JulajdX19QUM23Zx6VClkKTZ5gWUfVzoSIj8jayapek, 61 lines). Zahra and Idris: still placeholder names (owner asked who they are).
 - 2026-11-12: **Chapter 5, Hinduism:** the owner asked for research and options for Hindu leaders: `docs/Chapter5_HinduismResearch.md`.
+- 2026-11-12: **Chapter 5, Hinduism (owner):** **Maya moves to Seattle** at this point in the game; the guide is **a temple priest**; it
+  **starts as Maya, now more grounded but still experiencing "visits" from Heather**. Claude's guesses (to confirm): she moves for a job
+  as an educator at the **Burke Museum**; a South Indian temple on the Eastside (fictional; Venkateswara with Shiva, the Goddess and
+  Ganesha shrines); the priest **"Pandit Raghavan"** (`pandit_raghavan`, placeholder name, ~55, he/him; priestly family, Vedic school at
+  eight; "Panditji"); **Priya** (colleague) and **Priya's mother** (placeholders). `Story/Chapters/ch5_part1..3.ink`: 1 Rain (Apr 2027:
+  boxes labelled by everyone and unpacked this time; the Burke's whale; Rama Navami, the bell, taking the aarti light, prasad), 2 Every
+  day (summer: Saturday garlands, Heather shares the hands; the deity's day; how Panditji became a priest), 3 Lamps (Oct-Nov, 29:
+  Navaratri garba; Diwali diyas: Heather fronts to light them with Maya co-conscious and aware, the first visit she remembers;
+  SystemLog note from Maya; `# chapter-end`). 30 voiced lines. Unlock: none for now (ask).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

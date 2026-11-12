@@ -419,7 +419,8 @@
       "tradition": "islam",
       "description": "",
       "chapterIds": [
-        "ch4-islam"
+        "ch4-islam",
+        "ch5-hinduism"
       ],
       "memberLinks": [],
       "pronouns": "she/her",
@@ -448,6 +449,43 @@
       ],
       "memberLinks": [],
       "pronouns": "he/him"
+    },
+    {
+      "id": "pandit_raghavan",
+      "name": "Pandit Raghavan",
+      "role": "Chapter 5's guide: the temple priest at a South Indian temple on Seattle's Eastside (placeholder name; about 55, he/him). From a priestly family; Vedic school from the age of eight; called Panditji.",
+      "tradition": "hinduism",
+      "description": "",
+      "chapterIds": [
+        "ch5-hinduism"
+      ],
+      "memberLinks": [],
+      "pronouns": "he/him",
+      "age": "55"
+    },
+    {
+      "id": "priya",
+      "name": "Priya",
+      "role": "Maya's colleague in collections at the Burke Museum in Seattle (placeholder name; she/her); invites her to her family's temple.",
+      "tradition": "hinduism",
+      "description": "",
+      "chapterIds": [
+        "ch5-hinduism"
+      ],
+      "memberLinks": [],
+      "pronouns": "she/her"
+    },
+    {
+      "id": "priyas_mother",
+      "name": "Priya's mother",
+      "role": "Priya's mother: runs the Saturday garland table at the temple; Diwali lamps at home (placeholder; she/her).",
+      "tradition": "hinduism",
+      "description": "",
+      "chapterIds": [
+        "ch5-hinduism"
+      ],
+      "memberLinks": [],
+      "pronouns": "she/her"
     }
   ]
 }
