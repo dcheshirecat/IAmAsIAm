@@ -36,10 +36,10 @@
     },
     {
       "id": "guide_quaker",
-      "name": "Mira",
+      "name": "Mira Smith",
       "role": "The prologue's guide: a kind older Friend in Sarah's church",
       "tradition": "quakers",
-      "description": "Tries to be there for Maya as a child, but fails.",
+      "description": "Tries to be there for Maya as a child, and fails: at 5 she finds Maya forgotten at church; at 8 she raises her worries with Sarah and backs down; by 11 Maya hides how bad things are, and Mira moves away. She falls ill and dies before Maya is 15, and never comes back. Sarah mentions her death in passing in the car.",
       "chapterIds": [
         "prologue-quaker"
       ],
@@ -87,6 +87,127 @@
       "chapterIds": [
         "ch2-judaism"
       ]
+    },
+    {
+      "id": "carter",
+      "name": "Mr. Carter",
+      "role": "A single dad in Sarah's church, present for his children",
+      "tradition": "quakers",
+      "description": "The family Maya envies: a single parent like Sarah, but there for his kids. Maya watches them from afar.",
+      "chapterIds": [
+        "prologue-quaker"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "thomas_carter",
+      "name": "Thomas",
+      "role": "Mr. Carter's son, much older than Maya",
+      "tradition": "quakers",
+      "description": "Watched from afar.",
+      "chapterIds": [
+        "prologue-quaker"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "renee_carter",
+      "name": "Reneé",
+      "role": "Mr. Carter's daughter, much older than Maya",
+      "tradition": "quakers",
+      "description": "Watched from afar.",
+      "chapterIds": [
+        "prologue-quaker"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "rebecca",
+      "name": "Rebecca",
+      "role": "Maya's only friend in First Day School",
+      "tradition": "quakers",
+      "description": "Kind, but prefers other kids over Maya. Her parents are never named; she calls them \"my mom\" and \"my dad\".",
+      "chapterIds": [
+        "prologue-quaker"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "jamie",
+      "name": "Jamie",
+      "role": "A child in First Day School whom Rebecca prefers",
+      "tradition": "quakers",
+      "description": "",
+      "chapterIds": [
+        "prologue-quaker"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "justin",
+      "name": "Justin",
+      "role": "A child in First Day School whom Rebecca prefers",
+      "tradition": "quakers",
+      "description": "",
+      "chapterIds": [
+        "prologue-quaker"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "will",
+      "name": "Will",
+      "role": "A child in First Day School whom Rebecca prefers",
+      "tradition": "quakers",
+      "description": "",
+      "chapterIds": [
+        "prologue-quaker"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "eloise",
+      "name": "Miss Eloise",
+      "role": "The First Day School (Sunday school) teacher",
+      "tradition": "quakers",
+      "description": "",
+      "chapterIds": [
+        "prologue-quaker"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "hines",
+      "name": "Mrs. Hines",
+      "role": "An elder / board member who keeps Sarah busy",
+      "tradition": "quakers",
+      "description": "",
+      "chapterIds": [
+        "prologue-quaker"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "jones",
+      "name": "Mr. Jones",
+      "role": "An elder / board member who keeps Sarah busy",
+      "tradition": "quakers",
+      "description": "",
+      "chapterIds": [
+        "prologue-quaker"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "susan",
+      "name": "Miss Susan",
+      "role": "Maya's school teacher (remembered only, never seen)",
+      "tradition": "quakers",
+      "description": "",
+      "chapterIds": [
+        "prologue-quaker"
+      ],
+      "memberLinks": []
     }
   ]
 }

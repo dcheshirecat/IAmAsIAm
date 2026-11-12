@@ -95,7 +95,10 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   mentions Mira's death **in the car on the way home**, among other church news.
 - 2026-11-12: The friend is **not** the single dad's child. **Sunday 1 (5):** Maya goes "floaty" in the long service (a gentle first
   depersonalization) and is then forgotten at church after it; Mira finds her. **The writing grows with Maya** from 5 to 15.
-  Names: the owner fills in `docs/PrologueNames.md`.
+  **Prologue names (owner):** the single dad **Mr. Carter**, his much older children **Thomas** and **Reneé** (watched from afar);
+  Maya's friend **Rebecca** (her parents unnamed: "my mom/dad"); the kids Rebecca prefers **Jamie, Justin, Will**; First Day School
+  teacher **Miss Eloise**; elders **Mrs. Hines** and **Mr. Jones**; school teacher **Miss Susan** (remembered); **Mira Smith**.
+  All in `people.json` and `docs/PrologueNames.md`.
 
 - 2026-11-12: **The owner voices parts of the game.** Drive "Game Art - I Am As I Am" → **Voice-Over** (id 1pluvFHsiS_BqpKREdIr1B2tOQnxYMnho):
   one folder per chapter (`00 Prologue (prologue-quaker)` … `14 …`), `Daily Life and Inner Voices`, `Scripts (what to record)`
