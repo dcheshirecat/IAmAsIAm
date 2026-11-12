@@ -20,10 +20,11 @@ on:
       - 'tools/**'
       - '.github/workflows/core-tests.yml'
   workflow_dispatch:
-# A newer push to main replaces a build still running for an older one.
+# A build that has started always finishes (owner). Pushes made meanwhile wait: only the newest waiting one
+# builds next (GitHub drops older waiting runs in the same group), so the next APK has every change.
 concurrency:
   group: build-android-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
