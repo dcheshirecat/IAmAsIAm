@@ -58,6 +58,13 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   who married **Michael**.
 - 2026-11-11: **Faces:** face paintings on the 3D models in the world, **2D portraits** beside the dialogue box.
 
+- 2026-11-12: **Prologue (owner):** Iowa City, Iowa; the body was born in 1998. You start as **young Maya**. The game eases the
+  player into dissociation and the first time losing time; the **first switch** comes at the very end, home alone in Maya's room
+  after services, then a blackout. Guide: a kind older Friend in Sarah's church who tries to be there for Maya and fails.
+  Sarah is well-meaning but absent, neglectful to the point of harm; **never show her side**. Nothing is off-limits to show.
+- 2026-11-12: **Replay rule:** anyone who fronts during a chapter can START that chapter once it's finished in full
+  (`Core/Story/ChapterRuns.cs`, saved in preferences). **Content warnings before every chapter** (validator requires contentTags).
+
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
