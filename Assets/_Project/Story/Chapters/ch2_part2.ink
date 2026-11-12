@@ -1,0 +1,138 @@
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 2 (Judaism), Part 2.
+// vo-speakers: Maya=maya
+// ─────────────────────────────────────────────────────────────────────────────
+//  Part 2. Friday nights. Chicago, summer 2023. Maya is 25.
+//  Owner's beats: Adeena is Conservative. Their special moment, every week: Adeena lights the Shabbat candles, and Maya
+//  covers her eyes with her for the blessing. Maya meets Rabbi Abe (78, he/him, "vital and refreshing") at Adeena's
+//  synagogue, at an interfaith couples' meetup. Nina comes forward in quiet moments alone at home, if triggered.
+//
+//  My guesses, for the owner to correct:
+//   - Adeena's synagogue is a Conservative one in the city (placeholder name: "Congregation Etz Chaim").
+//   - They start dating in early summer, after the coffee. The first Shabbat dinner is at Adeena's apartment.
+//   - Rabbi Abe calls the meetup "keruv", bringing close (a real Conservative outreach word).
+//   - The Saturday morning service: Maya follows the English, stands when everyone stands, and is told that's enough.
+// ─────────────────────────────────────────────────────────────────────────────
+
+=== ch2_part2 ===
+~ set_age(25)
+# cw: religious-content
+-> friday
+
+= friday
+# place: adeena_apartment
+# shot: over-shoulder
+# objective: Get to Adeena's before sunset
+Adeena: You're early. Good. Early is correct. Shoes off, if you want. Help me with the table. # vo: ch2-judaism_adeena_0014
+- (table)
++ {table < 4} [Look: The challah]
+    Two loaves under an embroidered cloth. She braided them herself. She doesn't say so. You can tell. # look: challah-cloth
+    -> table
++ {table < 4} [Look: The candlesticks]
+    The small brass one from her desk at work, and its twin. "My grandmother's. Both of them. Don't touch, please." # look: brass-candlesticks
+    -> table
++ {table < 4} [Look: The bookshelf]
+    Prayer books with soft spines, cookbooks with softer ones. A photo: a big family, squinting into the sun. # look: adeena-bookshelf
+    -> table
+* {table >= 2} [Talk: Adeena (it's almost time)]
+-
+Adeena: I light, then I cover my eyes, then the blessing. Then I look, and it's Shabbat. You don't have to do anything. # vo: ch2-judaism_adeena_0015
+* [Wait (watch her)]
+    ~ record_choice("ch2.p2.candles", "watched", "At your first Shabbat with Adeena, you watched her light the candles.")
+    Two flames. Her hands, circling them, three times, drawing the light in. # look: candles-first
+* [Use: Your hands (cover your eyes with her)]
+    ~ record_choice("ch2.p2.candles", "covered", "At your first Shabbat with Adeena, you covered your eyes with her for the blessing.")
+    Your hands over your eyes. Warm dark. Her voice, beside you. # look: candles-covered
+-
+Adeena: Baruch atah Adonai, Eloheinu melech ha'olam, asher kid'shanu b'mitzvotav v'tzivanu l'hadlik ner shel Shabbat. # vo: ch2-judaism_adeena_0016
+Adeena: Shabbat shalom. # vo: ch2-judaism_adeena_0017
+* [Talk: Adeena (say it back)]
+    Maya: Shabbat shalom. # vo: ch2-judaism_maya_0018
+* [Wait (just look at her)]
+    She isn't stern now. She's just here. # look: adeena-candlelight
+-
+~ set_experience("Depersonalization", 0.0)
+~ nudge(-0.25)
+~ journal("Note", "Friday nights at Adeena's. She lights, we cover our eyes, she says the blessing.")
+-> morning
+
+= morning
+# place: synagogue_conservative
+# shot: wide
+# objective: Find a seat with Adeena
+// Conservative (Masorti): Hebrew liturgy with English beside it, men and women seated together, egalitarian.
+- (shul)
++ {shul < 4} [Look: The prayer book]
+    Hebrew on the right-hand page, English on the left. You read from the back to the front. # look: siddur
+    -> shul
++ {shul < 4} [Look: The ark]
+    A curtain, deep blue, with gold letters. A small lamp above it that never goes out. # look: ark-ner-tamid
+    -> shul
++ {shul < 4} [Look: The people]
+    Families together. A woman in a tallit reading from the scroll. A baby, loudly, and nobody minding. # look: shul-families
+    -> shul
+* {shul >= 2} [Wait (stand when everyone stands)]
+-
+Adeena: You don't need to know the words. Standing with us is enough. # vo: ch2-judaism_adeena_0019
+-> keruv
+
+= keruv
+# place: synagogue_social_hall
+# shot: wide
+# objective: Go to the meetup with Adeena
+Rabbi Abe: Come in, come in! Coffee's terrible, rugelach's excellent, that's the deal. Abe. Rabbi Abe, if you're formal. Nobody's formal. # vo: ch2-judaism_rabbi-abe_0020
+Rabbi Abe: We call this keruv. Bringing close. Some of you married in, some of you are dating in, some of you just like rugelach. All of you are welcome. # vo: ch2-judaism_rabbi-abe_0021
+- (hall)
++ {hall < 3} [Look: The circle of chairs]
+    Couples, mostly. A man in a kippah holding hands with a man who keeps checking his phone. Two women, one very pregnant. # look: keruv-circle
+    -> hall
++ {hall < 3} [Look: Rabbi Abe]
+    Seventy-eight, and moving like he's late for something wonderful. Sneakers. A tie with little fish on it. # look: rabbi-abe
+    -> hall
+* [Talk: Rabbi Abe]
+-
+Rabbi Abe: And you are? # vo: ch2-judaism_rabbi-abe_0022
+* [Talk: Rabbi Abe (say you were raised Quaker)]
+    ~ record_choice("ch2.p2.abe", "quaker", "When you met Rabbi Abe, you told him you were raised Quaker.")
+    Maya: Maya. I was raised Quaker. Now I'm... Wiccan, mostly. It's complicated. # vo: ch2-judaism_maya_0023
+    Rabbi Abe: Complicated! Wonderful. I've been a rabbi fifty years. Complicated is the only kind of person there is. # vo: ch2-judaism_rabbi-abe_0024
+* [Talk: Rabbi Abe (say you're with Adeena)]
+    ~ record_choice("ch2.p2.abe", "adeena", "When you met Rabbi Abe, you told him you were there with Adeena.")
+    Maya: Maya. I'm with Adeena. # vo: ch2-judaism_maya_0025
+    Rabbi Abe: Adeena! I've known her since she was a terrifying bat mitzvah girl. She corrected my Hebrew. She was right. # vo: ch2-judaism_rabbi-abe_0026
+-
+Rabbi Abe: Questions are welcome here. Any question. We're a people who argue with God. You can argue with me. # vo: ch2-judaism_rabbi-abe_0027
+~ journal("Note", "Rabbi Abe. Keruv: bringing close. \"Any question.\"")
+-> weeks
+
+= weeks
+# place: adeena_apartment
+# shot: close
+# objective:
+// The candles, week after week (owner: their special moment, every week).
+* [Use: Your hands (cover your eyes)]
+    Warm dark. Her voice. Every Friday. # look: candles-weekly
+-
+* [Use: Your hands (again)]
+    Warm dark. The summer going. Her voice. # look: candles-weekly-2
+-
+* [Wait (look)]
+    Two flames, and Adeena, smiling, which she almost never does anywhere else. # look: adeena-smile
+-
+-> quiet
+
+= quiet
+// Nina comes forward in quiet moments alone at home, if triggered (owner).
+# place: chicago_apartment
+# shot: close
+# objective:
+~ set_experience("Depersonalization", 0.35)
+* [Look: The quiet]
+    Sunday afternoon. Adeena at her parents'. The apartment so quiet you can hear the fridge thinking. # look: apartment-quiet
+-
+* [Use: Mira's stone]
+    The stone. The white line, around and around. # look: stone-quiet
+-
+~ set_experience("TimeLoss", 0.4)
+# maybe-switch
+~ sent_while_away("nina", "text", "ex_jewish", "Thank you for this week. I'm sorry I was quiet. I'm really happy.")
+-> ch2_part3  // the next part of the same chapter (one run)

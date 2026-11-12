@@ -65,9 +65,9 @@
     {
       "id": "ex_jewish",
       "name": "Adeena",
-      "role": "Ex 2: the Jewish ex, who became religious and married",
+      "role": "Ex 2: Maya's girlfriend for two and a half years (Chapter 2). Conservative, later Hasidic; married Michael after they broke up",
       "tradition": "judaism",
-      "description": "",
+      "description": "27 when they meet at the museum (she's the registrar). Stern and serious, with a heart of gold. Every Friday she lights the Shabbat candles and Maya covers her eyes with her for the blessing. Her look: the owner designs it.",
       "chapterIds": [
         "ch2-judaism"
       ],
@@ -76,16 +76,18 @@
           "memberId": "maya",
           "link": "dated Adeena"
         }
-      ]
+      ],
+      "age": "27",
+      "pronouns": "she/her"
     },
     {
       "id": "ex_jewish_spouse",
       "name": "Michael",
-      "role": "Adeena's spouse",
+      "role": "Adeena's husband, whom she met after the breakup. Maya hears of the wedding in Chapter 6, from an old friend from work.",
       "tradition": "judaism",
       "description": "",
       "chapterIds": [
-        "ch2-judaism"
+        "ch6-sikhism"
       ]
     },
     {
@@ -247,13 +249,15 @@
     {
       "id": "mark_priest",
       "name": "Pastor Key",
-      "role": "Chapter 1.5's guide: the priest at St. Luke's, Mark's queer-friendly Episcopal church. Kind to Axel, invites him for holidays, not in touch consistently.",
+      "role": "Chapter 1.5's guide: the priest at St. Luke's, Mark's queer-friendly Episcopal church. 31, he/him. Kind to Axel, invites him for holidays, not in touch consistently.",
       "tradition": "christianity",
       "description": "",
       "chapterIds": [
         "ch1-5-axel"
       ],
-      "memberLinks": []
+      "memberLinks": [],
+      "age": "31",
+      "pronouns": "he/him"
     },
     {
       "id": "mark_mom",
@@ -263,6 +267,85 @@
       "description": "",
       "chapterIds": [
         "ch1-5-axel"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "rabbi_abe",
+      "name": "Rabbi Abe",
+      "role": "Chapter 2's guide: the rabbi at Adeena's Conservative synagogue. Runs the interfaith couples' meetup (keruv). Vital and refreshing.",
+      "tradition": "judaism",
+      "description": "",
+      "chapterIds": [
+        "ch2-judaism"
+      ],
+      "memberLinks": [],
+      "age": "78",
+      "pronouns": "he/him"
+    },
+    {
+      "id": "curator",
+      "name": "Curator",
+      "role": "The curator at the museum where Maya and Adeena work (placeholder, no name yet).",
+      "tradition": "",
+      "description": "",
+      "chapterIds": [
+        "ch2-judaism"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "ruth",
+      "name": "Ruth",
+      "role": "Adeena's mother, Reform (placeholder name).",
+      "tradition": "judaism",
+      "description": "",
+      "chapterIds": [
+        "ch2-judaism"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "lev",
+      "name": "Lev",
+      "role": "Adeena's uncle: secular, Humanistic Judaism; comes to every seder 'for the people' (placeholder name).",
+      "tradition": "judaism",
+      "description": "",
+      "chapterIds": [
+        "ch2-judaism"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "rivka",
+      "name": "Rivka",
+      "role": "Adeena's cousin, Modern Orthodox; stays Maya's friend after the breakup (placeholder name).",
+      "tradition": "judaism",
+      "description": "",
+      "chapterIds": [
+        "ch2-judaism"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "savta",
+      "name": "Savta",
+      "role": "Adeena's grandmother, whose family came from Morocco: Sephardi traditions, the Mimouna (placeholder).",
+      "tradition": "judaism",
+      "description": "",
+      "chapterIds": [
+        "ch2-judaism"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "dani",
+      "name": "Dani",
+      "role": "Adeena's friend who leads a Reconstructionist havurah in their living room (placeholder name).",
+      "tradition": "judaism",
+      "description": "",
+      "chapterIds": [
+        "ch2-judaism"
       ],
       "memberLinks": []
     }

@@ -22,6 +22,10 @@ INCLUDE Chapters/ch1_5_part1.ink
 INCLUDE Chapters/ch1_5_part2.ink
 INCLUDE Chapters/ch1_5_part3.ink
 INCLUDE Chapters/ch1_5_part4.ink
+INCLUDE Chapters/ch2_part1.ink
+INCLUDE Chapters/ch2_part2.ink
+INCLUDE Chapters/ch2_part3.ink
+INCLUDE Chapters/ch2_part4.ink
 
 -> start
 

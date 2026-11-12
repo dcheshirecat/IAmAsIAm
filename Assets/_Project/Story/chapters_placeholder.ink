@@ -1,10 +1,6 @@
 // Placeholder knots for the chapters the owner has ordered (chapters.json).
 // Each is replaced by its own file once the owner has decided how the chapter goes.
 
-=== ch2_judaism ===
-(Chapter 2: Judaism. Not written yet.)
--> END
-
 === ch3_buddhism ===
 (Chapter 3: Buddhism. Not written yet.)
 -> END

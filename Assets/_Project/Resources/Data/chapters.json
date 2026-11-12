@@ -87,14 +87,19 @@
       "title": "Chapter 2: Judaism (title to come)",
       "sabbat": "",
       "inkKnot": "ch2_judaism",
-      "startingMemberId": "",
+      "startingMemberId": "maya",
       "featuredMemberId": "",
-      "setting": "",
+      "setting": "Chicago, 2023 to 2025",
       "skillFamily": "",
       "contentTags": [
-        "religious-content"
+        "religious-content",
+        "time-loss",
+        "involuntary-switch",
+        "breakup",
+        "isolation"
       ],
-      "summary": "Judaism, with the Jewish ex, Adeena (ex 2), who became religious and married."
+      "summary": "Maya moves to Chicago for a job at a museum and meets Adeena, the registrar: stern, serious, with a heart of gold. Every Friday Adeena lights the Shabbat candles and Maya covers her eyes with her. Through Adeena's Conservative synagogue, her family, her friends and the holidays, Maya meets many ways of being Jewish, and Rabbi Abe. But the lost time grows, and after two and a half years Adeena ends it: Maya isn't there. The first time, this chapter is always played as Maya.",
+      "unlocksMemberId": ""
     },
     {
       "id": "ch3-buddhism",

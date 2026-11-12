@@ -270,13 +270,29 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   wash plus two slowly drifting mist layers (a generated tileable noise texture), and 3D scene fog (`RenderSettings`, exponential
   squared), all following the strongest dissociation (1 - Presence; co-consciousness alone doesn't fog). Capped by
   `ComfortSettings.CapDistortion`, never faster than 2.5 s from none to full, no drifting with Reduce motion.
-- 2026-11-12: **Chapter 1.5 names (owner):** the priest is **Pastor Key** (`mark_priest`; age and pronouns to come, "they" in the draft
-  until then) at **St. Luke's** Episcopal; Mark's mother is **Cassie** (`mark_mom`); Mark is from **Indianapolis**.
+- 2026-11-12: **Chapter 1.5 names (owner):** the priest is **Pastor Key** (`mark_priest`, **31, he/him**) at **St. Luke's** Episcopal; Mark's mother is **Cassie** (`mark_mom`); Mark is from **Indianapolis**.
 - 2026-11-12: **Chapter 2, Judaism (owner):** Maya **moves to Chicago for a job** (COVID is skipped). She meets **Adeena at work**; they're
   together **two and a half years**. Adeena is **Conservative** and becomes **Hasidic**. She meets and marries **Michael only after they
   break up**: a **present-day fact mentioned in Chapter 6**, which Maya hears **from an old friend from work**, and it's **triggering**:
   they shared a **special moment over the Shabbat candles every week** while dating. **Show every stream** (none left out).
   **Guide: Rabbi Abe** (78, he/him), **vital and refreshing**. Alters: **Izzy and Nina**; **Heather only leaves a message** (`sent_while_away("heather", ...)`), she is **not unlocked** yet (owner correction).
+- 2026-11-12: **Chapter 2 answers (owner):** COVID skipped; the chapter **starts in Chicago in 2023**. Maya **works at a museum**.
+  **Adeena: 27**, stern and serious with a heart of gold (her look comes with the owner's character design). **The candles:** Adeena
+  lights, and Maya covers her eyes with her for the blessing, every Friday. **The breakup:** Maya dissociates more, Adeena notices she
+  isn't present in the relationship and ends it. **Rabbi Abe** is at **Adeena's (Conservative) synagogue**, met at an **interfaith
+  couples' meetup**. The other streams come through **Adeena's family and friends, the holidays, and Maya alone after the breakup**.
+  **Izzy** comes forward on **stressful days at work** (if triggered), **Nina** in **quiet moments alone at home** (if triggered).
+  **Heather's one moment:** a **single tall candle lit on the windowsill on the date of Mira's death**; Maya doesn't remember lighting
+  it (never explained, Heather never named). **Starts as Maya, unlocks nobody.** Tanya's texting replaces meeting up from here.
+  In the game: `Story/Chapters/ch2_part1..4.ink`: 1 The museum (spring 2023, 24), 2 Friday nights (summer 2023, 25: first Shabbat,
+  the Conservative shul, keruv with Rabbi Abe), 3 Her people (2024, 25: Heather's candle in February, the seder with Ruth (Reform),
+  Lev (Humanistic), Rivka (Modern Orthodox), Savta (Moroccan Sephardi); Dani's Reconstructionist havurah; Pride Shabbat at an LGBTQ
+  synagogue; Adeena's first Chabad class), 4 Not here (2025, 27: the breakup; Renewal Kabbalat Shabbat (`# cue: shabbat-candles`),
+  a Reform temple, Shabbat lunch at Rivka's, Rabbi Abe by the lake: pikuach nefesh). Placeholders: the museum, the curator, the
+  family names, Dani, "Congregation Etz Chaim". Michael is now in Chapter 6's people. Drive: Story Drafts → `04 Chapter 2 - Judaism
+  (title to come)` (1xVD3UYELoU_vAhYc_iDteHwX71VSdrDC): Part 1 (1xz2s3RR7vmN8dzYaFKzmWew0Tt019lodSAZxq6vUveo), Part 2
+  (1yoZ57IF0Ss48clc957R2r_ohT3-0tbGiAXt2qYR_dZg), Part 3 (1I1oPZTLdJ37lYPvPso0YuugT1D2lYlIgECVqhqc9tP0), Part 4
+  (18AlviF0vFsUPEoDJlfQMESYahTszSSNCEKDeJXq1uh0). Script Sheet "04 Chapter 2 - script list (draft)" (17_sfWngej6lP1AVAD5sNZMFKpXkQF5uuBs3ahPTafsk, 60 lines).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
