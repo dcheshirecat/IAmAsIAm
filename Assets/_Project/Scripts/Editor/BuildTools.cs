@@ -132,22 +132,30 @@ namespace IAmAsIAm.EditorTools
                 var anyImporter = AssetImporter.GetAtPath(iconPath);
                 report.AppendLine($"guid {AssetDatabase.AssetPathToGUID(iconPath)}, importer {(anyImporter == null ? "none" : anyImporter.GetType().Name)}, main asset {AssetDatabase.GetMainAssetTypeAtPath(iconPath)?.Name ?? "none"}");
                 if (fixImport && anyImporter is TextureImporter importer &&
-                    (importer.textureType != TextureImporterType.Default || importer.textureCompression != TextureImporterCompression.Uncompressed
+                    (importer.textureType != TextureImporterType.Default || importer.textureShape != TextureImporterShape.Texture2D
+                     || importer.textureCompression != TextureImporterCompression.Uncompressed
                      || importer.mipmapEnabled || importer.npotScale != TextureImporterNPOTScale.None || !importer.isReadable))
                 {
                     importer.textureType = TextureImporterType.Default;
+                    // Build 43's report: the icon was imported as a Cubemap, so it could never load as a Texture2D.
+                    importer.textureShape = TextureImporterShape.Texture2D;
                     importer.textureCompression = TextureImporterCompression.Uncompressed;
                     importer.mipmapEnabled = false;
                     importer.npotScale = TextureImporterNPOTScale.None;
                     importer.isReadable = true;
                     importer.SaveAndReimport();
-                    report.AppendLine("Icon import settings fixed (uncompressed, readable, no mipmaps).");
+                    report.AppendLine("Icon import settings fixed (2D, uncompressed, readable, no mipmaps).");
                 }
                 var icon = AssetDatabase.LoadAssetAtPath<Texture2D>(iconPath)
                            ?? AssetDatabase.LoadAllAssetsAtPath(iconPath).OfType<Texture2D>().FirstOrDefault();
                 if (icon == null)
                 {
-                    report.AppendLine("Couldn't load the app icon texture. Re-importing and trying once more.");
+                    report.AppendLine("Couldn't load the app icon texture. Making it a 2D texture, re-importing and trying once more.");
+                    if (anyImporter is TextureImporter shapeFix && shapeFix.textureShape != TextureImporterShape.Texture2D)
+                    {
+                        shapeFix.textureShape = TextureImporterShape.Texture2D;
+                        shapeFix.SaveAndReimport();
+                    }
                     AssetDatabase.ImportAsset(iconPath, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ForceSynchronousImport);
                     icon = AssetDatabase.LoadAssetAtPath<Texture2D>(iconPath);
                     report.AppendLine($"  second try: {(icon != null ? "loaded" : "still nothing")}; main asset {AssetDatabase.GetMainAssetTypeAtPath(iconPath)?.Name ?? "none"}");

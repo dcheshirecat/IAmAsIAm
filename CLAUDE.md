@@ -384,7 +384,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   player build (`AppIconBeforeBuild`, IPreprocessBuildWithReport, like Seven Witches' AppIconSetter), forces the import settings
   (Default, uncompressed, readable, no mipmaps), and writes a report (`build/icon_report.txt`: default icon set?, each Android icon
   kind and how many sizes got the texture) that the workflow puts on the run's Summary ("App icon"). Check it if the icon is
-  still wrong. Android launchers can also keep an old icon cached after an in-place update: uninstall once, or restart the phone.
+  still wrong. Android launchers can also keep an old icon cached after an in-place update: uninstall once, or restart the phone. **The cause (build 43's report): the icon PNG was being imported as a CUBEMAP** (its .meta had no TextureImporter
+  settings), so it never loaded as a Texture2D. Fixed: a full TextureImporter .meta (textureShape 2D, uncompressed, readable, no
+  mipmaps), and ApplyAppIcon forces textureShape = Texture2D.
 - 2026-11-12: **Voice playback BUILT** (`Runtime/Audio/VoicePlayer.cs`, made by StoryScreen): a line's `# vo:` id plays
   `Resources/Voice/<chapter-id>/vo_<id>.mp3` when the line shows (no file = text only); the next line stops it. Inner voices are a
   little closed-in and quieter, and every voice is muffled while she's far away, unless "no audio distortion" is on. Voice files
