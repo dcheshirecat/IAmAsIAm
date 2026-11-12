@@ -99,6 +99,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Maya's friend **Rebecca** (her parents unnamed: "my mom/dad"); the kids Rebecca prefers **Jamie, Justin, Will**; First Day School
   teacher **Miss Eloise**; elders **Mrs. Hines** and **Mr. Jones**; school teacher **Miss Susan** (remembered); **Mira Smith**.
   All in `people.json` and `docs/PrologueNames.md`.
+- 2026-11-12: **Sunday 2 (8):** small signs add up (Maya hungry, eating all the fellowship snacks; home alone in the evenings while
+  Sarah is at meetings; going "floaty" and not answering her name), so Mira speaks to Sarah. Sarah thanks her warmly, calls Maya
+  "very independent", and is called away by Mrs. Hines. **Maya never knows in the prologue:** the scene is shown LATER in the game,
+  when adult Maya meets a childhood companion who overheard it. **Sunday 3 (11):** Maya **performs okay** (neat, smiling, good
+  answers) and Mira believes it, then moves away. **Sunday 4 (15):** an **ordinary Sunday**; the news in the car lands on it.
 
 - 2026-11-12: **The owner voices parts of the game.** Drive "Game Art - I Am As I Am" → **Voice-Over** (id 1pluvFHsiS_BqpKREdIr1B2tOQnxYMnho):
   one folder per chapter (`00 Prologue (prologue-quaker)` … `14 …`), `Daily Life and Inner Voices`, `Scripts (what to record)`
