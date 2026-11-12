@@ -7,7 +7,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **My guesses, for you to check:**
 
 - The breakup is on a Friday, after the candles, the last time. Adeena is kind and very sure.
-- Owner: show Beta Israel (Ethiopian Jews): a Sigd celebration in November, led by a kes. Tigist is MY placeholder name.
+- Owner: show Beta Israel (Ethiopian Jews): a Sigd celebration in November, led by a kes. Tigist (owner: keep the name) is a Beta Israel woman.
 - Alone, Maya goes to a Renewal Kabbalat Shabbat (singing, drums, candles: the candles trigger her now), a Reform temple's Friday service, and Shabbat lunch at Effie's (Modern Orthodox), who stays kind to her.
 - The chapter ends with Rabbi Abe, walking by the lake, and the first text to Tanya about how bad the lost time is.
 

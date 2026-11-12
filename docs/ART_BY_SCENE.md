@@ -65,10 +65,10 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 55 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Sawsan, Chaplain Amal |
 | 56 | `seattle_apartment` | Maya's apartment, Seattle | seattle | Chapter 5: Hinduism (ch5_part1) | Maya (the body, 28) |
 | 57 | `burke_museum_hall` | The Burke Museum | seattle | Chapter 5: Hinduism (ch5_part1) | Priya, Maya (the body, 28) |
-| 58 | `eastside_mandir_hall` | The temple on the Eastside | seattle | Chapter 5: Hinduism (ch5_part1) | Pandit Raghavan, Maya (the body, 28), Maya (the body, 29) |
-| 59 | `eastside_mandir_kitchen` | The temple on the Eastside: the kitchen | seattle | Chapter 5: Hinduism (ch5_part2) | Priya's mother |
+| 58 | `eastside_mandir_hall` | The temple on the Eastside | seattle | Chapter 5: Hinduism (ch5_part1) | Mangala Tai, Maya (the body, 28), Maya (the body, 29) |
+| 59 | `eastside_mandir_kitchen` | The temple on the Eastside: the kitchen | seattle | Chapter 5: Hinduism (ch5_part2) | Lakshmi |
 | 60 | `garba_community_hall` | The Navaratri garba | seattle | Chapter 5: Hinduism (ch5_part3) | Maya (the body, 29), Priya |
-| 61 | `priya_family_house` | Priya's family's house | seattle | Chapter 5: Hinduism (ch5_part3) | Priya's mother, Heather (the body, 29) |
+| 61 | `priya_family_house` | Priya's family's house | seattle | Chapter 5: Hinduism (ch5_part3) | Lakshmi, Heather (the body, 29) |
 
 ## 2. People, in the order they first appear
 
@@ -111,8 +111,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 33 | Sawsan | `sawsan` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall |
 | 34 | Fadi | `fadi` | person | Chapter 4: Islam | - | sufi_dhikr_room |
 | 35 | Priya | `priya` | person | Chapter 5: Hinduism | - | burke_museum_hall, garba_community_hall |
-| 36 | Pandit Raghavan | `pandit_raghavan` | person | Chapter 5: Hinduism | - | eastside_mandir_hall |
-| 37 | Priya's mother | `priyas_mother` | person | Chapter 5: Hinduism | - | eastside_mandir_kitchen, priya_family_house |
+| 36 | Mangala Tai | `mangala_joshi` | person | Chapter 5: Hinduism | - | eastside_mandir_hall |
+| 37 | Lakshmi | `lakshmi` | person | Chapter 5: Hinduism | - | eastside_mandir_kitchen, priya_family_house |
 
 ## 3. Close-ups and props, scene by scene
 
@@ -632,6 +632,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 - `dhikr-circle`: Twenty people on cushions, knees almost touching. Old men, young women, a teenager in headphones around her neck.
 - `fadi`: White beard, a knitted cap, a string of prayer beads moving through his fingers. He smiles at you like he's been expecting you.
+- `fadi-turbah`: A small round tablet of pale clay on a folded cloth. Fadi's, for prayer: earth from Karbala. Shia Muslims touch their foreheads to the earth when they pray.
 - `shoes-row`: Forty shoes in a row by the door. Yours at the end, a little apart.
 - `dhikr-chant`: La ilaha illallah. Over and over, low, together, like the sea.
 - `dhikr-eyes-open`: Eyes open. The stone. Izzy counting the beads going round Fadi's fingers: thirty-one, thirty-two. You stay.
@@ -650,7 +651,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 ### Maya's apartment, Seattle (`seattle_apartment`)
 
-- `labelled-boxes`: "MAYA - BOOKS." "IZZY - DO NOT OPEN (tarot)." "H - kitchen, the good knife." Different handwriting on every box. All of you packed.
+- `labelled-boxes`: "MAYA - BOOKS." "IZZY - DO NOT OPEN (tarot)." "H - kitchen, the good knife." Different handwriting on every box. All of you packed. Nothing in them from Chicago that you could leave behind.
 - `seattle-rain`: Rain on the glass, soft and endless. Somewhere behind it, a mountain you've been promised but haven't seen.
 - `sill-unpacked`: You put Mira's stone there first. Then the little brass prayer wheel. Then the khata, folded.
 - `boxes-unpacked`: Every box, open. Books on shelves. It takes a week. In Chicago it took never.
@@ -664,13 +665,13 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 - `temple-shoes`: A hundred pairs of shoes, and children's sandals, and yours, at the end. Bare feet on cool stone.
 - `temple-bell`: A brass bell over the door. Priya's niece shows you: ring it as you come in, to tell God you're here, and to tell yourself.
-- `venkateswara`: Venkateswara, black stone and gold, almost hidden under garlands of marigold and jasmine. His eyes are covered: they say his gaze is too strong.
-- `side-shrines`: Ganesha, round and smiling, by the door. Shiva, a smooth dark stone, wet with milk. The Goddess, in red silk. Everyone has somewhere to go.
-- `aarti-flame`: The aarti: the priest circling a tray of flames before the shrine, everyone singing, a bell, a drum, a conch.
+- `rama-sita`: Rama and Sita in white marble, Rama with his bow, both almost hidden under marigolds. A little silver cradle in front of them today: it's his birthday.
+- `side-shrines`: Ganesha, round and smiling, by the door. Krishna with his flute, and Radha. Durga on her tiger, in red silk. Hanuman, kneeling. Shiva, a smooth dark stone, wet with milk. Everyone has somewhere to go.
+- `aarti-flame`: The aarti: a woman in a cream sari, grey braid, reading glasses pushed up, circling a tray of flames before the shrine. Everyone singing, a bell, a drum, a conch.
 - `take-the-light`: Warm, over your palms. Warm, over your eyes.
-- `shrine-garland`: Venkateswara in fresh silk, a new garland: yours, the crooked one, near the bottom.
+- `shrine-garland`: Rama and Sita in fresh silk, a new garland: yours, the crooked one, near the bottom.
 - `shiva-lingam`: The smooth dark stone, the lingam, still shining from the morning's milk. A brass pot hanging above it, dripping, slowly.
-- `temple-schedule`: "6:30 am Suprabhatam. 8:00 Abhishekam (Fri). 12:00 Naivedyam. 7:00 pm Aarti. 8:30 Ekanta Seva (closing)." Every day. Every single day.
+- `temple-schedule`: "6:30 am Kakad Aarti. 8:00 Abhishek (Mon). 12:00 Bhog. 7:00 pm Sandhya Aarti. 8:30 Shayan Aarti (closing)." Every day. Every single day.
 - `temple-diwali`: Lamps on every ledge, a thousand small flames, the shrines in silk and gold. The whole hall smells of ghee and flowers.
 - `sparklers`: Sparklers outside the door, held at arm's length, a grandfather supervising very seriously.
 - `take-the-light-diwali`: Warm, over your palms. Warm, over your eyes.
@@ -679,7 +680,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 - `garland-flowers`: Marigolds, orange and yellow, a mountain of them. Jasmine in a wet cloth. Roses with their stems cut off.
 - `garland-aunties`: Five women, threading faster than you can see, arguing happily in three languages about a wedding.
-- `crooked-garland`: Flower, flower, flower, knot. Crooked. Priya's mother looks at it, and laughs, and says Ganesha likes crooked things.
+- `crooked-garland`: Flower, flower, flower, knot. Crooked. Lakshmi looks at it, and laughs, and says Ganesha likes crooked things.
 - `shared-hands`: Your hands, and Heather's, threading. Straight now. Steady. You're both here. Nobody goes far away.
 
 ### The Navaratri garba (`garba_community_hall`)

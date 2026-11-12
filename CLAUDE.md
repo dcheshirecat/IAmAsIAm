@@ -421,6 +421,13 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   SystemLog note from Maya; `# chapter-end`). 30 voiced lines. **Chapter 5 unlocks nobody** (owner). Drive: Story Drafts → `07 Chapter 5 - Hinduism (title to come)`
   (1H6O6T9nvN33G7UT1EtBwNfjHQHSF_B4D): Part 1 (1rrYR8B7SQa3n0SZJDOl3PL359iwhFT8qe-VugvPmL9s), Part 2 (1s1uHoq1ARNPs7fXbbMwOBu0xDYV5qtwhfcn-SlecUC8),
   Part 3 (15ajxIGZzvuIA7irqywxhZ8ThwLaayc7vSQP2ZFmwFEg); Sheet "07 Chapter 5 - script list (draft)" (1Uz4IaV8OvChmlzlcP3ULr8W6Cdfe2v9ubXybCmgCMxI).
+- 2026-11-12: **Chapter 5 decided (owner):** the priest is a **woman, Mangala Joshi (62, she/her), "Mangala Tai"** (`mangala_joshi`,
+  was the placeholder Pandit Raghavan; vo speaker `mangala`): Maharashtrian, learned the chants at the door while her father taught her
+  brothers, trained as a purohita in Pune in her thirties. So the temple is a **North Indian-style community mandir** (Rama and Sita,
+  Krishna and Radha, Durga, Shiva, Ganesha, Hanuman), not South Indian. **Priya** stays; her mother is **Lakshmi** (`lakshmi`).
+  **Why Seattle:** Maya can't stand the memories Chicago brings up and believes Seattle will be a fresh start (new line `maya_0031`).
+  **Fadi is Shia** (owner), Lebanese American from Beirut; a clay turbah from Karbala on the shelf; his dhikr circle welcomes Sunni and
+  Shia (new line `fadi_0062`). **Tigist** (Chapter 2's Beta Israel woman at Sigd) keeps her name (owner).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

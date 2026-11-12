@@ -1,5 +1,5 @@
 // IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 5 (Hinduism), Part 3.
-// vo-speakers: Maya=maya, Pandit Raghavan=raghavan
+// vo-speakers: Maya=maya, Mangala Tai=mangala
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 3. Lamps. Seattle, October to November 2027. Maya is 29.
 //  Navaratri (the Goddess) and Diwali (lamps). Maya grounded; Heather visits, and this time Maya knows.
@@ -46,7 +46,7 @@ Priya: You're smiling! You never smile like that at work. # vo: ch5-hinduism_pri
 # place: priya_family_house
 # shot: over-shoulder
 # objective: Help with the lamps
-Priya's mother: Diwali! Lamps on every step. Light chases away darkness, that's the story. Here, you do this side. # vo: ch5-hinduism_priya-s-mother_0023
+Lakshmi: Diwali! Lamps on every step. Light chases away darkness, that's the story. Here, you do this side. # vo: ch5-hinduism_lakshmi_0023
 - (steps)
 + {steps < 4} [Look: The rangoli]
     A pattern on the doorstep in coloured powder: a lotus, petals of pink and yellow, made by Priya's niece over two hours. # look: rangoli
@@ -82,16 +82,16 @@ Heather: I know. Hello, Maya. # vo: ch5-hinduism_heather_0026
 + {hall < 3} [Look: The children]
     Sparklers outside the door, held at arm's length, a grandfather supervising very seriously. # look: sparklers
     -> hall
-* {hall >= 1} [Talk: Pandit Raghavan]
+* {hall >= 1} [Talk: Mangala Tai]
 -
-Pandit Raghavan: Happy Diwali! You look different. Lighter. Something good happened? # vo: ch5-hinduism_raghavan_0027
-* [Talk: Pandit Raghavan (tell him)]
-    ~ record_choice("ch5.p3.end", "told", "On Diwali, you told Panditji that someone who looks after you lit the lamps, and you were there for it.")
+Mangala Tai: Happy Diwali! You look different. Lighter. Something good happened? # vo: ch5-hinduism_mangala_0027
+* [Talk: Mangala Tai (tell her)]
+    ~ record_choice("ch5.p3.end", "told", "On Diwali, you told Mangala Tai that someone who looks after you lit the lamps, and you were there for it.")
     Maya: Someone who looks after me lit the lamps tonight. And I was there for it. I was there for the whole thing. # vo: ch5-hinduism_maya_0028
-    Pandit Raghavan: Then two lights were lit tonight. Take the aarti. Both of you. # vo: ch5-hinduism_raghavan_0029
-* [Talk: Pandit Raghavan (just say Happy Diwali)]
-    ~ record_choice("ch5.p3.end", "diwali", "On Diwali, you just wished Panditji a happy Diwali, and took the light.")
-    Maya: Happy Diwali, Panditji. # vo: ch5-hinduism_maya_0030
+    Mangala Tai: Then two lights were lit tonight. Take the aarti. Both of you. # vo: ch5-hinduism_mangala_0029
+* [Talk: Mangala Tai (just say Happy Diwali)]
+    ~ record_choice("ch5.p3.end", "diwali", "On Diwali, you just wished Mangala Tai a happy Diwali, and took the light.")
+    Maya: Happy Diwali, Mangala Tai. # vo: ch5-hinduism_maya_0030
 -
 Warm, over your palms. Warm, over your eyes. # look: take-the-light-diwali
 ~ journal("Note", "Diwali. Heather lit the lamps and I was there. Two lights.")

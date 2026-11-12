@@ -353,7 +353,7 @@
     {
       "id": "tigist",
       "name": "Tigist",
-      "role": "Beta Israel (Ethiopian Jewish) community member who welcomes Maya at a Sigd celebration in Chicago (Claude's placeholder name).",
+      "role": "Beta Israel (Ethiopian Jewish) community member who welcomes Maya at a Sigd celebration in Chicago (owner: keep the name).",
       "tradition": "judaism",
       "description": "",
       "chapterIds": [
@@ -441,7 +441,7 @@
     {
       "id": "fadi",
       "name": "Fadi",
-      "role": "A Sufi teacher who leads a Thursday-night dhikr, Noor's friend (owner's name; 60s, he/him).",
+      "role": "A Sufi teacher who leads a Thursday-night dhikr, Amal's friend (owner's name; 60s, he/him). Shia (owner), Lebanese American, from Beirut; prays on a clay turbah from Karbala; his circle welcomes Sunni and Shia alike.",
       "tradition": "islam",
       "description": "",
       "chapterIds": [
@@ -451,22 +451,22 @@
       "pronouns": "he/him"
     },
     {
-      "id": "pandit_raghavan",
-      "name": "Pandit Raghavan",
-      "role": "Chapter 5's guide: the temple priest at a South Indian temple on Seattle's Eastside (placeholder name; about 55, he/him). From a priestly family; Vedic school from the age of eight; called Panditji.",
+      "id": "mangala_joshi",
+      "name": "Mangala Tai",
+      "role": "Chapter 5's guide (owner): Mangala Joshi, 62, she/her, the priest (a purohita) at a community mandir on Seattle's Eastside; called Mangala Tai. Maharashtrian; learned the chants listening at the door while her father taught her brothers; trained in Pune in her thirties.",
       "tradition": "hinduism",
       "description": "",
       "chapterIds": [
         "ch5-hinduism"
       ],
       "memberLinks": [],
-      "pronouns": "he/him",
-      "age": "55"
+      "pronouns": "she/her",
+      "age": "62"
     },
     {
       "id": "priya",
       "name": "Priya",
-      "role": "Maya's colleague in collections at the Burke Museum in Seattle (placeholder name; she/her); invites her to her family's temple.",
+      "role": "Maya's colleague in collections at the Burke Museum in Seattle (owner: Priya; she/her); invites her to her family's temple.",
       "tradition": "hinduism",
       "description": "",
       "chapterIds": [
@@ -476,9 +476,9 @@
       "pronouns": "she/her"
     },
     {
-      "id": "priyas_mother",
-      "name": "Priya's mother",
-      "role": "Priya's mother: runs the Saturday garland table at the temple; Diwali lamps at home (placeholder; she/her).",
+      "id": "lakshmi",
+      "name": "Lakshmi",
+      "role": "Priya's mother (owner's name): runs the Saturday garland table at the temple; Diwali lamps at home (she/her).",
       "tradition": "hinduism",
       "description": "",
       "chapterIds": [

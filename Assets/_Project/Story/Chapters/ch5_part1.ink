@@ -1,17 +1,19 @@
 // IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 5 (Hinduism), Part 1.
-// vo-speakers: Maya=maya, Pandit Raghavan=raghavan
+// vo-speakers: Maya=maya, Mangala Tai=mangala
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. Rain. Seattle, April 2027. Maya is 28.
 //  Owner's beats: Maya moves to Seattle at this point in the game. The guide is a temple priest. The chapter starts as Maya, now
 //  more grounded, but still experiencing "visits" from Heather.
 //
 //  My guesses, for the owner to correct:
-//   - Owner: she moves to Seattle for other reasons (to ask), and starts working at the Burke Museum (a real natural history
-//     museum, at the University of Washington) almost immediately, as an educator (Claude's guess for the job).
-//   - The temple: a South Indian temple on the Eastside (fictional, like the real temples in Bothell and Bellevue), to Sri
-//     Venkateswara (Vishnu), with shrines to Shiva, the Goddess and Ganesha.
-//   - The priest: "Pandit Raghavan" (placeholder name; about 55, he/him), from a priestly family in South India, trained from
-//     boyhood at a Vedic school. People call him Panditji.
+//   - Owner: she can't stand the memories Chicago brings up, and believes Seattle will be a fresh start. She starts working at
+//     the Burke Museum (a real natural history museum, at the University of Washington) almost immediately, as an educator
+//     (Claude's guess for the job).
+//   - The temple (owner: a woman priest, so a North Indian-style community mandir, fictional): Rama and Sita at the centre,
+//     with Krishna and Radha, Durga, a Shiva lingam, Ganesha and Hanuman. Community mandirs in the US often have many shrines.
+//   - The priest (owner): Mangala Joshi, 62, she/her, called "Mangala Tai" (Tai: older sister, in Marathi). From a
+//     Maharashtrian Brahmin family; her father was a priest; trained as a purohita (a woman priest) in Pune in her thirties,
+//     the way women have been trained there since the 1970s.
 //   - Heather's visits: a voice inside, a note in SystemLog, sometimes sharing time.
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -30,7 +32,7 @@
 # objective: Unpack
 - (boxes)
 + {boxes < 4} [Look: The boxes]
-    "MAYA - BOOKS." "IZZY - DO NOT OPEN (tarot)." "H - kitchen, the good knife." Different handwriting on every box. All of you packed. # look: labelled-boxes
+    "MAYA - BOOKS." "IZZY - DO NOT OPEN (tarot)." "H - kitchen, the good knife." Different handwriting on every box. All of you packed. Nothing in them from Chicago that you could leave behind. # look: labelled-boxes
     -> boxes
 + {boxes < 4} [Look: The window]
     Rain on the glass, soft and endless. Somewhere behind it, a mountain you've been promised but haven't seen. # look: seattle-rain
@@ -43,8 +45,10 @@
     Every box, open. Books on shelves. It takes a week. In Chicago it took never. # look: boxes-unpacked
 -
 ~ system_log("heather", "Kitchen's done. The good knife is in the second drawer. Proud of you. -H")
+// Owner: she couldn't stand the memories Chicago brought up; Seattle is meant to be a fresh start.
 Heather (inside): Water first. # vo: ch5-hinduism_heather-inside_0001
 Maya: I know. I know. I'm getting it. # vo: ch5-hinduism_maya_0002
+Maya: No Field Museum. No Friday candles. No lake. Nothing here knows me yet. A fresh start. # vo: ch5-hinduism_maya_0031
 -> work
 
 = work
@@ -73,8 +77,8 @@ Priya: Also. My family's temple has a festival on Sunday, Rama Navami. Lots of f
 -> temple
 
 = temple
-// A South Indian temple: the main shrine to Sri Venkateswara (Vishnu), smaller shrines around the hall. Visitors watch darshan
-// and aarti, ring the bell, and receive prasad with the right hand.
+// A community mandir: Rama and Sita at the centre, shrines to Krishna and Radha, Durga, Shiva, Ganesha and Hanuman around the
+// hall. Visitors take darshan and aarti, ring the bell, and receive prasad with the right hand. Rama Navami is Rama's birthday.
 # place: eastside_mandir_hall
 # shot: wide
 # objective: Take your shoes off and go in
@@ -86,25 +90,25 @@ Priya: Also. My family's temple has a festival on Sunday, Rama Navami. Lots of f
     A brass bell over the door. Priya's niece shows you: ring it as you come in, to tell God you're here, and to tell yourself. # look: temple-bell
     -> hall
 + {hall < 5} [Look: The main shrine]
-    Venkateswara, black stone and gold, almost hidden under garlands of marigold and jasmine. His eyes are covered: they say his gaze is too strong. # look: venkateswara
+    Rama and Sita in white marble, Rama with his bow, both almost hidden under marigolds. A little silver cradle in front of them today: it's his birthday. # look: rama-sita
     -> hall
 + {hall < 5} [Look: The side shrines]
-    Ganesha, round and smiling, by the door. Shiva, a smooth dark stone, wet with milk. The Goddess, in red silk. Everyone has somewhere to go. # look: side-shrines
+    Ganesha, round and smiling, by the door. Krishna with his flute, and Radha. Durga on her tiger, in red silk. Hanuman, kneeling. Shiva, a smooth dark stone, wet with milk. Everyone has somewhere to go. # look: side-shrines
     -> hall
 * {hall >= 2} [Wait (stand with Priya's family)]
 -
 ~ set_experience("Derealization", 0.2)
-The aarti: the priest circling a tray of flames before the shrine, everyone singing, a bell, a drum, a conch. # look: aarti-flame
-Pandit Raghavan: Come. Come, closer. You can take the light: hands over the flame, then over your eyes. Like this. # vo: ch5-hinduism_raghavan_0008
+The aarti: a woman in a cream sari, grey braid, reading glasses pushed up, circling a tray of flames before the shrine. Everyone singing, a bell, a drum, a conch. # look: aarti-flame
+Mangala Tai: Come. Come, closer. You can take the light: hands over the flame, then over your eyes. Like this. # vo: ch5-hinduism_mangala_0008
 * [Use: The aarti flame (take the light)]
-    ~ record_choice("ch5.p1.aarti", "light", "At your first aarti, you held your hands over the flame and then over your eyes, the way Panditji showed you.")
+    ~ record_choice("ch5.p1.aarti", "light", "At your first aarti, you held your hands over the flame and then over your eyes, the way Mangala Tai showed you.")
     Warm, over your palms. Warm, over your eyes. # look: take-the-light
     ~ nudge(-0.2)
 * [Wait (just watch)]
-    ~ record_choice("ch5.p1.aarti", "watch", "At your first aarti, you watched from the side. Panditji smiled and said watching is also fine.")
-    Pandit Raghavan: Watching is also fine. God is not offended by shy people. # vo: ch5-hinduism_raghavan_0009
+    ~ record_choice("ch5.p1.aarti", "watch", "At your first aarti, you watched from the side. Mangala Tai smiled and said watching is also fine.")
+    Mangala Tai: Watching is also fine. God is not offended by shy people. # vo: ch5-hinduism_mangala_0009
 -
-Heather (inside): A flame, held up for everyone. I like him. # vo: ch5-hinduism_heather-inside_0010
-Pandit Raghavan: Prasad. Right hand, please. The sweet one is the best one. Don't tell the others. # vo: ch5-hinduism_raghavan_0011
+Heather (inside): A flame, held up for everyone. I like her. # vo: ch5-hinduism_heather-inside_0010
+Mangala Tai: Prasad. Right hand, please. The sweet one is the best one. Don't tell the others. # vo: ch5-hinduism_mangala_0011
 ~ journal("Note", "Rama Navami at the temple. Shoes off. Ring the bell. Take the light. Right hand for prasad.")
 -> ch5_part2  // the next part of the same chapter (one run)

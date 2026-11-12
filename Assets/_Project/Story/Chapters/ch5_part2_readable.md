@@ -6,16 +6,16 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **My guesses, for you to check:**
 
-- Maya volunteers on Saturdays: making flower garlands for the shrines with Priya's mother and the other aunties.
-- The deity's day, which the priest keeps every day: waking at dawn with a song (Suprabhatam), bathing (abhishekam), dressing in silk and flowers, offering food, lamps, closing at night. Caring for someone, every single day.
-- Panditji's story: a priestly family; Vedic school from the age of eight; memorising chants for years; his father and grandfather were temple priests too. His wife and grandchildren are on the phone from India every Sunday.
+- Maya volunteers on Saturdays: making flower garlands for the shrines with Lakshmi (Priya's mother, owner's name) and the other aunties.
+- The deity's day, which the priest keeps every day: waking at dawn with a song (kakad aarti), bathing (abhishek), dressing in silk and flowers, offering food (bhog), lamps, putting to rest at night (shayan aarti). Caring for someone, every single day.
+- Mangala Tai's story (owner: a woman priest): her father was a priest and taught her brothers; she learned the chants by listening at the door. After raising her children she trained as a purohita in Pune. Some families still won't have a woman do their rites; many now ask for her because she explains every word. Her grandchildren call from Pune on Sundays.
 - Shiva on Mondays: milk poured over the lingam, the dark stone.
 
 ## Garlands
 
 > **Objective:** Help with the garlands
 
-**Priya's mother:** Thread, needle, flower, flower, flower, knot. Tight, or Ganesha will lose his necklace in the middle of the aarti.
+**Lakshmi:** Thread, needle, flower, flower, flower, knot. Tight, or Ganesha will lose his necklace in the middle of the aarti.
 
 **Explore** (glowing things; the player picks):
 
@@ -24,7 +24,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Look: The aunties**
     - Five women, threading faster than you can see, arguing happily in three languages about a wedding.
 - **Use: The needle (make a garland)**
-    - Flower, flower, flower, knot. Crooked. Priya's mother looks at it, and laughs, and says Ganesha likes crooked things.
+    - Flower, flower, flower, knot. Crooked. Lakshmi looks at it, and laughs, and says Ganesha likes crooked things.
 
 **Heather (inside):** Let me. Just for a bit. I like this.
 
@@ -40,23 +40,23 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **Explore** (glowing things; the player picks):
 
 - **Look: The main shrine**
-    - Venkateswara in fresh silk, a new garland: yours, the crooked one, near the bottom.
+    - Rama and Sita in fresh silk, a new garland: yours, the crooked one, near the bottom.
 - **Look: The Shiva shrine**
     - The smooth dark stone, the lingam, still shining from the morning's milk. A brass pot hanging above it, dripping, slowly.
 - **Look: The schedule board**
-    - "6:30 am Suprabhatam. 8:00 Abhishekam (Fri). 12:00 Naivedyam. 7:00 pm Aarti. 8:30 Ekanta Seva (closing)." Every day. Every single day.
-- **Talk: Pandit Raghavan**
+    - "6:30 am Kakad Aarti. 8:00 Abhishek (Mon). 12:00 Bhog. 7:00 pm Sandhya Aarti. 8:30 Shayan Aarti (closing)." Every day. Every single day.
+- **Talk: Mangala Tai**
 
-**Pandit Raghavan:** You're here a lot now. Good. I always say: the temple is where God lives, but it's the people who keep the lights on.
+**Mangala Tai:** You're here a lot now. Good. I always say: the temple is where God lives, but it's the people who keep the lights on.
 
 **Explore** (glowing things; the player picks):
 
-- **Talk: Pandit Raghavan (ask how he became a priest)**
+- **Talk: Mangala Tai (ask how she became a priest)**
     - **Maya:** How did you become a priest?
-    - **Pandit Raghavan:** My father was a priest. His father. His father. At eight years old I went to a Vedic school. Twelve years of chanting before I was allowed to touch the lamp. Twelve years! I was not a patient boy.
-- **Talk: Pandit Raghavan (ask about the closing)**
+    - **Mangala Tai:** My father was a priest. He taught my brothers, and I sat outside the door and learned every word. At thirty-five, children grown, I went to Pune and trained properly. Some families still say no, a woman can't. More say: Tai, you explain it, so we want you.
+- **Talk: Mangala Tai (ask about the closing)**
     - **Maya:** What happens at the closing?
-    - **Pandit Raghavan:** Every day we wake Him with a song. We bathe Him, dress Him, feed Him, and at night we sing Him to sleep. Like a beloved guest. Every day. Even when I'm tired. Especially then.
+    - **Mangala Tai:** Every day we wake Him with a song. We bathe Him, dress Him, feed Him, and at night we sing Him to sleep. Like a beloved guest. Every day. Even when I'm tired. Especially then.
 
 **Maya:** Every day. Even when you're tired. Somebody's taking care of someone, every single day.
 

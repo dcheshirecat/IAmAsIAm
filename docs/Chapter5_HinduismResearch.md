@@ -80,3 +80,17 @@ Yes, in several ways, though it varies by tradition.
 - Sources: Women priests of Pune (Google Arts & Culture): https://artsandculture.google.com/asset/women-priests-of-pune/EwG8U3YE1La7Rw ;
   Women's eNews on Pune's women priests: https://womensenews.org/2008/02/indian-city-opens-doorway-female-hindu-priests/ ;
   "Women priests" (academic paper, 2022): https://serialsjournals.com/abstract/43877_8-women_priests_final_december_2022.pdf
+
+## Decided (owner, 2026-11-12)
+- **The priest is a woman: Mangala Joshi, 62, she/her, "Mangala Tai"** (Tai = older sister, in Marathi). A Maharashtrian
+  Brahmin family; her father was a priest and taught her brothers, and she learned the chants listening at the door; trained
+  as a purohita in Pune in her thirties, after raising her children (as women have been since 1975 with Shankar Seva Samiti).
+- **The temple is a North Indian-style community mandir** on the Eastside (fictional), not a South Indian Agamic temple, where a
+  woman priest would be very unusual: Rama and Sita at the centre, Krishna and Radha, Durga, a Shiva lingam, Ganesha, Hanuman.
+  This also fits the chapter's festivals (Rama Navami, Navaratri garba, Diwali). Daily rhythm: kakad aarti at dawn, abhishek,
+  bhog, sandhya aarti, shayan aarti at night.
+- More sources: Religion News Service on women creating spaces for their own leadership in Hinduism
+  (https://religionnews.com/2021/12/13/in-hinduism-women-create-spaces-for-their-own-leadership/); Pluralism Project, "More
+  Hindu women are becoming priests" (https://pluralism.org/news/more-hindu-women-are-becoming-priests).
+- **Priya's mother is Lakshmi** (owner). **Maya moves** because she can't stand the memories Chicago brings up, and believes
+  Seattle will be a fresh start (owner).

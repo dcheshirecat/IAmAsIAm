@@ -7,8 +7,9 @@
 //  My guesses, for the owner to correct:
 //   - Sawsan (owner: Sawsan, Palestinian American; 30s, she/her), another patient at the day program, Sunni (as most Palestinian
 //     Muslims are). She prays in the quiet room, then counts her tasbih (prayer beads), her grandmother's, from Nablus.
-//   - Amal invites them to a Thursday-night dhikr (remembrance) gathering led by her friend Fadi (owner: Fadi; 60s, he/him),
-//     a Sufi teacher: guests are welcome to sit and listen. Heather finds the repetition steadying; Izzy keeps count, eyes open.
+//   - Amal invites them to a Thursday-night dhikr (remembrance) gathering led by her friend Fadi (owner: Fadi; 60s, he/him;
+//     owner: Shia), a Sufi teacher, Lebanese American: guests are welcome to sit and listen. Sufism is found among both Sunni
+//     and Shia Muslims (the Nimatullahi order, for one, is Shia); his circle has both. Heather finds the repetition steadying; Izzy keeps count, eyes open.
 //     (Rhythm and repetition can pull a dissociative person away: they keep their eyes open, as Angie taught.)
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -67,18 +68,22 @@ Chaplain Amal: My friend Fadi holds a dhikr on Thursday nights. Remembrance. Peo
 # shot: wide
 # objective: Sit at the edge of the circle
 - (circle)
-+ {circle < 4} [Look: The circle]
++ {circle < 5} [Look: The circle]
     Twenty people on cushions, knees almost touching. Old men, young women, a teenager in headphones around her neck. # look: dhikr-circle
     -> circle
-+ {circle < 4} [Look: Fadi]
++ {circle < 5} [Look: Fadi]
     White beard, a knitted cap, a string of prayer beads moving through his fingers. He smiles at you like he's been expecting you. # look: fadi
     -> circle
-+ {circle < 4} [Look: The shoes]
++ {circle < 5} [Look: The shelf by the door]
+    A small round tablet of pale clay on a folded cloth. Fadi's, for prayer: earth from Karbala. Shia Muslims touch their foreheads to the earth when they pray. # look: fadi-turbah
+    -> circle
++ {circle < 5} [Look: The shoes]
     Forty shoes in a row by the door. Yours at the end, a little apart. # look: shoes-row
     -> circle
 * {circle >= 2} [Wait (sit at the edge)]
 -
 Fadi: Welcome, welcome. Sit anywhere. You don't have to say anything. The heart listens on its own. # vo: ch4-islam_fadi_0045
+Fadi: Sunni, Shia, the curious, the tired: everyone sits in this circle. I'm Shia, from Beirut, a long time ago. God doesn't check at the door. # vo: ch4-islam_fadi_0062
 La ilaha illallah. Over and over, low, together, like the sea. # look: dhikr-chant
 ~ set_experience("Depersonalization", 0.35)
 * [Use: Mira's stone (eyes open)]

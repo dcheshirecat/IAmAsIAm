@@ -7,7 +7,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **My guesses, for you to check:**
 
 - Sawsan (owner: Sawsan, Palestinian American; 30s, she/her), another patient at the day program, Sunni (as most Palestinian Muslims are). She prays in the quiet room, then counts her tasbih (prayer beads), her grandmother's, from Nablus.
-- Amal invites them to a Thursday-night dhikr (remembrance) gathering led by her friend Fadi (owner: Fadi; 60s, he/him), a Sufi teacher: guests are welcome to sit and listen. Heather finds the repetition steadying; Izzy keeps count, eyes open. (Rhythm and repetition can pull a dissociative person away: they keep their eyes open, as Angie taught.)
+- Amal invites them to a Thursday-night dhikr (remembrance) gathering led by her friend Fadi (owner: Fadi; 60s, he/him; owner: Shia), a Sufi teacher, Lebanese American: guests are welcome to sit and listen. Sufism is found among both Sunni and Shia Muslims (the Nimatullahi order, for one, is Shia); his circle has both. Heather finds the repetition steadying; Izzy keeps count, eyes open. (Rhythm and repetition can pull a dissociative person away: they keep their eyes open, as Angie taught.)
 
 ## Quiet room
 
@@ -56,11 +56,15 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
     - Twenty people on cushions, knees almost touching. Old men, young women, a teenager in headphones around her neck.
 - **Look: Fadi**
     - White beard, a knitted cap, a string of prayer beads moving through his fingers. He smiles at you like he's been expecting you.
+- **Look: The shelf by the door**
+    - A small round tablet of pale clay on a folded cloth. Fadi's, for prayer: earth from Karbala. Shia Muslims touch their foreheads to the earth when they pray.
 - **Look: The shoes**
     - Forty shoes in a row by the door. Yours at the end, a little apart.
 - **Wait (sit at the edge)**
 
 **Fadi:** Welcome, welcome. Sit anywhere. You don't have to say anything. The heart listens on its own.
+
+**Fadi:** Sunni, Shia, the curious, the tired: everyone sits in this circle. I'm Shia, from Beirut, a long time ago. God doesn't check at the door.
 
 La ilaha illallah. Over and over, low, together, like the sea.
 

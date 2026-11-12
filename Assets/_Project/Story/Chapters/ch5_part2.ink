@@ -1,15 +1,17 @@
 // IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 5 (Hinduism), Part 2.
-// vo-speakers: Maya=maya, Pandit Raghavan=raghavan
+// vo-speakers: Maya=maya, Mangala Tai=mangala
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 2. Every day. Seattle, June to September 2027. Maya is 28-29.
 //  The temple priest's life, and the deity's day. Maya grounded; Heather visits.
 //
 //  My guesses, for the owner to correct:
-//   - Maya volunteers on Saturdays: making flower garlands for the shrines with Priya's mother and the other aunties.
-//   - The deity's day, which the priest keeps every day: waking at dawn with a song (Suprabhatam), bathing (abhishekam),
-//     dressing in silk and flowers, offering food, lamps, closing at night. Caring for someone, every single day.
-//   - Panditji's story: a priestly family; Vedic school from the age of eight; memorising chants for years; his father and
-//     grandfather were temple priests too. His wife and grandchildren are on the phone from India every Sunday.
+//   - Maya volunteers on Saturdays: making flower garlands for the shrines with Lakshmi (Priya's mother, owner's name) and the other aunties.
+//   - The deity's day, which the priest keeps every day: waking at dawn with a song (kakad aarti), bathing (abhishek),
+//     dressing in silk and flowers, offering food (bhog), lamps, putting to rest at night (shayan aarti). Caring for someone,
+//     every single day.
+//   - Mangala Tai's story (owner: a woman priest): her father was a priest and taught her brothers; she learned the chants by
+//     listening at the door. After raising her children she trained as a purohita in Pune. Some families still won't have a
+//     woman do their rites; many now ask for her because she explains every word. Her grandchildren call from Pune on Sundays.
 //   - Shiva on Mondays: milk poured over the lingam, the dark stone.
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -23,7 +25,7 @@
 # place: eastside_mandir_kitchen
 # shot: over-shoulder
 # objective: Help with the garlands
-Priya's mother: Thread, needle, flower, flower, flower, knot. Tight, or Ganesha will lose his necklace in the middle of the aarti. # vo: ch5-hinduism_priya-s-mother_0012
+Lakshmi: Thread, needle, flower, flower, flower, knot. Tight, or Ganesha will lose his necklace in the middle of the aarti. # vo: ch5-hinduism_lakshmi_0012
 - (table)
 + {table < 4} [Look: The flowers]
     Marigolds, orange and yellow, a mountain of them. Jasmine in a wet cloth. Roses with their stems cut off. # look: garland-flowers
@@ -33,7 +35,7 @@ Priya's mother: Thread, needle, flower, flower, flower, knot. Tight, or Ganesha 
     -> table
 * {table >= 1} [Use: The needle (make a garland)]
     ~ record_choice("ch5.p2.garland", "made", "On your first Saturday at the temple, you made a marigold garland. It was crooked. It went on Ganesha anyway.")
-    Flower, flower, flower, knot. Crooked. Priya's mother looks at it, and laughs, and says Ganesha likes crooked things. # look: crooked-garland
+    Flower, flower, flower, knot. Crooked. Lakshmi looks at it, and laughs, and says Ganesha likes crooked things. # look: crooked-garland
 -
 // Heather visits: she shares time, quietly, while the hands work.
 ~ co_conscious("heather", true)
@@ -53,25 +55,25 @@ Heather (inside): Let me. Just for a bit. I like this. # vo: ch5-hinduism_heathe
 # objective: Watch the evening closing
 - (shrine)
 + {shrine < 4} [Look: The main shrine]
-    Venkateswara in fresh silk, a new garland: yours, the crooked one, near the bottom. # look: shrine-garland
+    Rama and Sita in fresh silk, a new garland: yours, the crooked one, near the bottom. # look: shrine-garland
     -> shrine
 + {shrine < 4} [Look: The Shiva shrine]
     The smooth dark stone, the lingam, still shining from the morning's milk. A brass pot hanging above it, dripping, slowly. # look: shiva-lingam
     -> shrine
 + {shrine < 4} [Look: The schedule board]
-    "6:30 am Suprabhatam. 8:00 Abhishekam (Fri). 12:00 Naivedyam. 7:00 pm Aarti. 8:30 Ekanta Seva (closing)." Every day. Every single day. # look: temple-schedule
+    "6:30 am Kakad Aarti. 8:00 Abhishek (Mon). 12:00 Bhog. 7:00 pm Sandhya Aarti. 8:30 Shayan Aarti (closing)." Every day. Every single day. # look: temple-schedule
     -> shrine
-* {shrine >= 2} [Talk: Pandit Raghavan]
+* {shrine >= 2} [Talk: Mangala Tai]
 -
-Pandit Raghavan: You're here a lot now. Good. I always say: the temple is where God lives, but it's the people who keep the lights on. # vo: ch5-hinduism_raghavan_0014
-* [Talk: Pandit Raghavan (ask how he became a priest)]
-    ~ record_choice("ch5.p2.raghavan", "how", "You asked Panditji how he became a priest. His father was one, and his grandfather, and he went to a Vedic school at eight.")
+Mangala Tai: You're here a lot now. Good. I always say: the temple is where God lives, but it's the people who keep the lights on. # vo: ch5-hinduism_mangala_0014
+* [Talk: Mangala Tai (ask how she became a priest)]
+    ~ record_choice("ch5.p2.mangala", "how", "You asked Mangala Tai how she became a priest. She learned the chants listening at the door while her father taught her brothers, and trained in Pune after her children were grown.")
     Maya: How did you become a priest? # vo: ch5-hinduism_maya_0015
-    Pandit Raghavan: My father was a priest. His father. His father. At eight years old I went to a Vedic school. Twelve years of chanting before I was allowed to touch the lamp. Twelve years! I was not a patient boy. # vo: ch5-hinduism_raghavan_0016
-* [Talk: Pandit Raghavan (ask about the closing)]
-    ~ record_choice("ch5.p2.raghavan", "closing", "You asked Panditji about the closing ceremony. He said every day the Lord is woken, bathed, fed, and put to bed, like a beloved guest.")
+    Mangala Tai: My father was a priest. He taught my brothers, and I sat outside the door and learned every word. At thirty-five, children grown, I went to Pune and trained properly. Some families still say no, a woman can't. More say: Tai, you explain it, so we want you. # vo: ch5-hinduism_mangala_0016
+* [Talk: Mangala Tai (ask about the closing)]
+    ~ record_choice("ch5.p2.mangala", "closing", "You asked Mangala Tai about the closing aarti. She said every day the Lord is woken, bathed, fed, and put to bed, like a beloved guest.")
     Maya: What happens at the closing? # vo: ch5-hinduism_maya_0017
-    Pandit Raghavan: Every day we wake Him with a song. We bathe Him, dress Him, feed Him, and at night we sing Him to sleep. Like a beloved guest. Every day. Even when I'm tired. Especially then. # vo: ch5-hinduism_raghavan_0018
+    Mangala Tai: Every day we wake Him with a song. We bathe Him, dress Him, feed Him, and at night we sing Him to sleep. Like a beloved guest. Every day. Even when I'm tired. Especially then. # vo: ch5-hinduism_mangala_0018
 -
 Maya: Every day. Even when you're tired. Somebody's taking care of someone, every single day. # vo: ch5-hinduism_maya_0019
 Heather (inside): That's what I do. That's what I've always done. # vo: ch5-hinduism_heather-inside_0020

@@ -33,7 +33,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Help with the lamps
 
-**Priya's mother:** Diwali! Lamps on every step. Light chases away darkness, that's the story. Here, you do this side.
+**Lakshmi:** Diwali! Lamps on every step. Light chases away darkness, that's the story. Here, you do this side.
 
 **Explore** (glowing things; the player picks):
 
@@ -68,17 +68,17 @@ _(A switch: Maya comes forward. The player has no control over it.)_
     - Lamps on every ledge, a thousand small flames, the shrines in silk and gold. The whole hall smells of ghee and flowers.
 - **Look: The children**
     - Sparklers outside the door, held at arm's length, a grandfather supervising very seriously.
-- **Talk: Pandit Raghavan**
+- **Talk: Mangala Tai**
 
-**Pandit Raghavan:** Happy Diwali! You look different. Lighter. Something good happened?
+**Mangala Tai:** Happy Diwali! You look different. Lighter. Something good happened?
 
 **Explore** (glowing things; the player picks):
 
-- **Talk: Pandit Raghavan (tell him)**
+- **Talk: Mangala Tai (tell her)**
     - **Maya:** Someone who looks after me lit the lamps tonight. And I was there for it. I was there for the whole thing.
-    - **Pandit Raghavan:** Then two lights were lit tonight. Take the aarti. Both of you.
-- **Talk: Pandit Raghavan (just say Happy Diwali)**
-    - **Maya:** Happy Diwali, Panditji.
+    - **Mangala Tai:** Then two lights were lit tonight. Take the aarti. Both of you.
+- **Talk: Mangala Tai (just say Happy Diwali)**
+    - **Maya:** Happy Diwali, Mangala Tai.
 
 Warm, over your palms. Warm, over your eyes.
 
