@@ -150,7 +150,7 @@ Every close-up in the chapters is listed scene by scene in [ART_BY_SCENE.md](ART
 `challah-cloth`). These are the props that come back across chapters, so make them first:
 | | Id | What | First in |
 |---|---|---|---|
-| [ ] First | `mira_stone` | Mira's stone, with the white line all the way round (Maya carries it all game) | Prologue |
+| [ ] First | `mira_stone` | Mira's stone: a hag stone, grey and flat, with a hole worn right through by water (Maya carries it all game) | Prologue |
 | [ ] First | `mira_napkin` | The napkin with Mira's phone number (torn in Ch 1.5) | Prologue |
 | [ ] First | `bulletin`, `hymnal`, `coffee_cup`, `bible` | Church of Friends things | Prologue |
 | [ ] First | `dear_mira_letters` | The unfinished "Dear Mira" letters | Prologue |

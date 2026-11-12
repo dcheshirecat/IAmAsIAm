@@ -69,7 +69,7 @@ Reneé: So. You left too? # vo: ch4-islam_renee_0020
 Reneé: There's something I've wanted to tell you for twenty years. I didn't know if I should. # vo: ch4-islam_renee_0025
 Heather (inside): Hold the stone. Whatever it is. Hold the stone first. # vo: ch4-islam_heather-inside_0026
 * [Use: Mira's stone (in your pocket)]
-    The stone. The white line. Heather's hand and yours, on it. # look: stone-before-news
+    The stone. The hole through it. Heather's hand and yours, on it. # look: stone-before-news
 -
 -> overheard
 

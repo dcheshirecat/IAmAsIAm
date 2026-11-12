@@ -116,7 +116,7 @@ Mira: I'm glad. I'm so glad, Maya. # vo: prologue-quaker_mira_0101
 = gift
 Mira: From my garden. I used to hold it in meeting, when my mind wandered off. You can have it now. For when you feel far away. # vo: prologue-quaker_mira_0102
 * [Look: Mira's stone]
-    A stone, grey and flat and smooth as soap. A white line all the way around. # look: mira-stone
+    A stone, grey and flat and smooth as soap, with a hole worn right through it by water. Just big enough for your fingertip. # look: mira-stone
 -
 Something to hold. # exercise: grounding-object
 ~ learn_skill("grounding-object")

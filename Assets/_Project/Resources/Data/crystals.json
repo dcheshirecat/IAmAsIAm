@@ -340,14 +340,15 @@
     {
       "id": "miras-stone",
       "name": "Mira's stone",
-      "mineral": "A garden pebble with a ring of white quartz (or calcite) all the way around: a vein that filled a crack in the rock",
-      "mohsHardness": "about 6–7",
+      "mineral": "A hag stone: a pebble with a hole worn right through it by water (a softer pocket in the rock, worn away by sand and pebbles)",
+      "mohsHardness": "varies (often flint or chalk)",
       "modernAssociations": [
-        "wishes",
-        "holding on",
+        "protection",
+        "sleep without nightmares",
+        "seeing truly",
         "someone who saw you"
       ],
-      "tactile": "Grey, flat and smooth as soap. Your thumb finds the white line without looking.",
+      "tactile": "Grey, flat and smooth as soap. Your fingertip fits the hole, worn soft at its edges.",
       "careNotes": [
         "Nothing. It's been in your pocket for years."
       ],
@@ -358,8 +359,8 @@
         "Touch",
         "See"
       ],
-      "history": "From Mira's garden. In British and wider European coastal folklore, a stone with one unbroken white ring all the way around is a wishing stone: trace the line with a finger, make a wish, and give it back to the sea, or give it to someone else. Mira gave it to you.",
-      "charmMeaning": "for being held, and a wish (a wishing stone)"
+      "history": "From Mira. A stone with a natural hole is a hag stone (also holey, adder or fairy stone) in British folklore. They were hung on bedposts against nightmares and 'hag-riding' (a witch sitting on a sleeper's chest: what we might now call sleep paralysis), over doors and in stables for protection; looking through the hole was said to let you see fairies, or past enchantment. Holed stones as charms against nightmares go back at least to the 1400s. Mira gave it to you.",
+      "charmMeaning": "for protection, and quiet sleep (a hag stone)"
     }
   ]
 }

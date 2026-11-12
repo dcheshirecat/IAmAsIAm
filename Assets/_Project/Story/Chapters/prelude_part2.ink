@@ -107,7 +107,7 @@ Selene: I have to run, Jess is waiting. We should get coffee! For real this time
 ~ journal("Note", "Full moon. The shop. Last night. I don't remember.")
 # objective:
 * [Use: Mira's stone]
-    The stone's white line, all the way around. Around and around. # look: stone-line-quad
+    The stone's hole, worn smooth. Your thumb around it, around and around. # look: stone-line-quad
 * [Use: Feet on the floor]
     Bricks under your shoes. Still here. # look: feet-bricks
 -

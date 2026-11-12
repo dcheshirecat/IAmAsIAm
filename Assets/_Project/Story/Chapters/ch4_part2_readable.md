@@ -59,7 +59,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **Explore** (glowing things; the player picks):
 
 - **Use: Mira's stone (in your pocket)**
-    - The stone. The white line. Heather's hand and yours, on it.
+    - The stone. The hole through it. Heather's hand and yours, on it.
 
 ## Overheard
 

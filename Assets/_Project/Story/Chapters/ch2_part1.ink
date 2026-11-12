@@ -118,7 +118,7 @@ Eudora Jones: Who booked three school groups into this hall at once? Somebody te
     Heads down. Nobody looks at you. Everybody looks at you. # look: assistants-heads-down
     -> gallery
 * [Use: Mira's stone (in your pocket)]
-    The stone. The white line. # look: stone-pocket
+    The stone. Your thumb in the hole. # look: stone-pocket
     ~ nudge(-0.1)
 * [Wait (keep working)]
 -

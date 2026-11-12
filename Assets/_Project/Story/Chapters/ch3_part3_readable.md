@@ -43,7 +43,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Wait (day three: keep your eyes closed)**
     - Dark. And further away than dark. Your hands aren't yours. They're very far down there, in somebody's lap.
 - **Use: Mira's stone (in your pocket)**
-    - The white line. Around and around. Your thumb, someone's thumb.
+    - The hole. Around and around. Your thumb, someone's thumb.
 
 Izzy is quiet. Nobody inside is talking. The silence goes all the way down.
 

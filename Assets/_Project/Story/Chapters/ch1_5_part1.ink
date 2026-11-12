@@ -37,7 +37,7 @@ Axel: Somebody here has her life together. Respect. # vo: ch1-5-axel_axel_0001
 -> mirror.room
 
 = stone
-A grey stone with a white line around it. Smooth from being held. # look: stone-axel
+A grey stone with a hole worn right through it. Smooth from being held. # look: stone-axel
 -> mirror.room
 
 = napkin

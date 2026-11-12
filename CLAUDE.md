@@ -462,7 +462,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   altar ritual once learned). Selene gives a charm bag at Ch 1 Part 3's Samhain (`gift_charm_bag`); Tanya texts runes and
   cleansing (no new voiced lines). Details: docs/WiccanPractice.md §9.
   **Herbs and stones (owner):** gained **from different people** (and sometimes **found**); only what she has goes in a charm bag,
-  labelled with its researched meaning and giver; **Mira's stone can go in a bag** (a wishing stone, "from Mira"). Data:
+  labelled with its researched meaning and giver; **Mira's stone can go in a bag** ("from Mira"; owner: **Mira's stone is a HAG STONE**, a hole worn through by water, not a white line). Data:
   herbs.json `charmMeaning`, crystals.json `history` + `charmMeaning` (+ bay, jet, amber, miras-stone). Book page "Herbs & stones".
   Ink `gain_herb(id, giver)` / `gain_stone(id, giver)` (giver "" = found). The gifts (Claude's list, owner: "yes"): Mira (her stone,
   Sunday 3), Selene (rosemary + jet, Samhain 2016; lavender + smoky quartz, 2019), Tanya (bay + amber at Yule; moonstone by post,

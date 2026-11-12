@@ -60,7 +60,7 @@ Teacher: Sit comfortably. Close your eyes. Observe the breath, just as it is. # 
     Dark. And further away than dark. Your hands aren't yours. They're very far down there, in somebody's lap. # look: day-three
 * [Use: Mira's stone (in your pocket)]
     ~ record_choice("ch3.p3.eyes", "stone", "On the silent course, you held Mira's stone in your pocket. It helped, a little. Not enough.")
-    The white line. Around and around. Your thumb, someone's thumb. # look: day-three-stone
+    The hole. Around and around. Your thumb, someone's thumb. # look: day-three-stone
 -
 Izzy is quiet. Nobody inside is talking. The silence goes all the way down. # look: inside-quiet
 ~ set_experience("Depersonalization", 0.8)

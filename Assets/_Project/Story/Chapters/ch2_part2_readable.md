@@ -121,7 +121,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **Explore** (glowing things; the player picks):
 
 - **Use: Mira's stone**
-    - The stone. The white line, around and around.
+    - The stone. Your thumb around the hole, around and around.
 
 _(An unexpected switch may happen here, if another alter is unlocked.)_
 

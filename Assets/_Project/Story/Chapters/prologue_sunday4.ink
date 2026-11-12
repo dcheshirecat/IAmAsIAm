@@ -46,7 +46,7 @@
     "Jamie wuz here", in pencil, inside the back cover. # look: hymnbook-jamie
 * [Use: Mira's stone (wait for the quiet part)]
     ~ record_choice("prologue.s4.sermon", "stone", "On the last Sunday, you held Mira's stone and waited for the quiet part.")
-    Mira's stone. The white line, all the way around. # look: stone-line
+    Mira's stone. The hole, worn smooth, all the way through. # look: stone-line
 * [Wait for the end]
     ~ record_choice("prologue.s4.sermon", "listened", "On the last Sunday, you listened to the sermon about the lost sheep.")
     The last hymn. # look: last-hymn

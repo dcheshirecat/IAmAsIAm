@@ -133,7 +133,7 @@ Rabbi Abe: Questions are welcome here. Any question. We're a people who argue wi
     Sunday afternoon. Adeena at her parents'. The apartment so quiet you can hear the fridge thinking. # look: apartment-quiet
 -
 * [Use: Mira's stone]
-    The stone. The white line, around and around. # look: stone-quiet
+    The stone. Your thumb around the hole, around and around. # look: stone-quiet
 -
 ~ set_experience("TimeLoss", 0.4)
 # maybe-switch

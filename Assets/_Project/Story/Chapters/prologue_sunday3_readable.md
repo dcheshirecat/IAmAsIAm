@@ -110,7 +110,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **Explore** (glowing things; the player picks):
 
 - **Look: Mira's stone**
-    - A stone, grey and flat and smooth as soap. A white line all the way around.
+    - A stone, grey and flat and smooth as soap, with a hole worn right through it by water. Just big enough for your fingertip.
 
 Something to hold. _(the player does the "grounding-object" exercise here)_
 

@@ -27,7 +27,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Use: The hymnbook**
     - "Jamie wuz here", in pencil, inside the back cover.
 - **Use: Mira's stone (wait for the quiet part)**
-    - Mira's stone. The white line, all the way around.
+    - Mira's stone. The hole, worn smooth, all the way through.
 - **Wait for the end**
     - The last hymn.
 

@@ -31,7 +31,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 ## Stone
 
-A grey stone with a white line around it. Smooth from being held.
+A grey stone with a hole worn right through it. Smooth from being held.
 
 ## Napkin
 

@@ -121,7 +121,7 @@ Your phone. # device: phone
 -> spring_signs.room
 
 = fade
-The stone. The white line, around and around. # look: stone-line-spring
+The stone. Your thumb around the hole, around and around. # look: stone-line-spring
 ~ set_experience("TimeLoss", 1.0)
 # maybe-switch
 -> black_screen

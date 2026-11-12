@@ -99,7 +99,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 ## Fade
 
-The stone. The white line, around and around.
+The stone. Your thumb around the hole, around and around.
 
 _(An unexpected switch may happen here, if another alter is unlocked.)_
 

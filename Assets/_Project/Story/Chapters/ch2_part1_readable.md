@@ -90,7 +90,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 - **Look: The other guides**
     - Heads down. Nobody looks at you. Everybody looks at you.
 - **Use: Mira's stone (in your pocket)**
-    - The stone. The white line.
+    - The stone. Your thumb in the hole.
 - **Wait (keep working)**
 
 _(An unexpected switch may happen here, if another alter is unlocked.)_

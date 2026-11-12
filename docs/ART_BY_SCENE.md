@@ -161,7 +161,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `carter-alone`: Mr. Carter by the window. His arm along the back of the pew. The pew is empty.
 - `pulpit`: The lost sheep. The ninety-nine, and the one.
 - `hymnbook-jamie`: "Jamie wuz here", in pencil, inside the back cover.
-- `stone-line`: Mira's stone. The white line, all the way around.
+- `stone-line`: Mira's stone. The hole, worn smooth, all the way through.
 - `last-hymn`: The last hymn.
 
 ### Church of Friends: the fellowship hall (`church_fellowship_hall`)
@@ -188,7 +188,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `last-grape`: The last grape.
 - `mira-number`: A napkin. Mira's number, in shaky blue pen.
 - `fly-window`: A fly on the window, walking up and falling down.
-- `mira-stone`: A stone, grey and flat and smooth as soap. A white line all the way around.
+- `mira-stone`: A stone, grey and flat and smooth as soap, with a hole worn right through it by water. Just big enough for your fingertip.
 - `mira-address`: Mira's new address, in Oregon. Shaky blue pen.
 - `mira-wave`: Mira's hand, lifting, at the door.
 - `stacked-chairs`: Chairs, stacked. Mrs. Hines, Mr. Jones and the new youth leader, all around Mom.
@@ -267,9 +267,9 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `seedling-dead`: The paper cup from Ostara. A seedling, folded over, dry.
 - `flannel-shirt`: A flannel shirt, green and black. A man's. Your size.
 - `phone-friday`: Friday. The last thing you remember is Tuesday.
-- `stone-line-spring`: The stone. The white line, around and around.
+- `stone-line-spring`: The stone. Your thumb around the hole, around and around.
 - `maya-planner`: "Thursday 7pm, T." "Water the seed." Neat little letters. Not yours.
-- `stone-axel`: A grey stone with a white line around it. Smooth from being held.
+- `stone-axel`: A grey stone with a hole worn right through it. Smooth from being held.
 - `napkin-axel`: A paper napkin. A phone number in shaky blue pen. "Mira."
 - `closet-dresses`: Dresses. A blue one at the back, too small, kept anyway.
 - `email-professors`: "Hi Professor, I wanted to let you know I go by Axel now, and he/him. Thanks!" Four times. Send.
@@ -280,7 +280,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 - `quad-bricks`: Bricks. Moss in the cracks. You count them.
 - `selene-going`: Selene's scarf, getting smaller across the quad.
-- `stone-line-quad`: The stone's white line, all the way around. Around and around.
+- `stone-line-quad`: The stone's hole, worn smooth. Your thumb around it, around and around.
 - `feet-bricks`: Bricks under your shoes. Still here.
 - `quad-turn-away`: People you don't know, who know you. One of them sees you, and turns away.
 - `left-the-group`: "Jordan left the group." "Sam left the group." "Riley left the group."
@@ -410,7 +410,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `stone-dresser`: On the dresser, by your keys, where you'll see it.
 - `stone-dresser-evening`: By your keys. Where you'll see it.
 - `apartment-quiet`: Sunday afternoon. Adeena at her parents'. The apartment so quiet you can hear the fridge thinking.
-- `stone-quiet`: The stone. The white line, around and around.
+- `stone-quiet`: The stone. Your thumb around the hole, around and around.
 - `tall-candle-sill`: A candle. One, tall, in a glass. Lit. Burning low, like it's been burning all night.
 - `matches-sill`: The box from the kitchen drawer. On the sill. You don't keep matches by the window.
 - `phone-january`: Thursday, January 18. A date that means something, and you can't think what.
@@ -420,7 +420,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `christie-chamomile`: In your bag, from work: chamomile tea bags, a whole row of them, taped together. "For the bad nights. -C"
 - `friday-hole`: Friday. Friday is a hole in the week now.
 - `renewal-flyer`: "Kabbalat Shabbat with drums! Everyone welcome. Bring your voice." A flyer someone shared.
-- `stone-alone`: On the dresser. The white line.
+- `stone-alone`: On the dresser. The hole worn through it, and the dresser showing through.
 - `sill-wax`: The windowsill. Empty. A ring of old wax in the corner.
 - `unopened-mail`: A drift of it by the door. Three envelopes from the same doctor's office, unopened.
 - `fridge-notes`: Sticky notes. "Buy milk." "CALL TANYA BACK." "you're doing ok." Three different handwritings. All of them yours.
@@ -455,7 +455,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 - `empty-case`: Half-lit cases. A ladder. Labels still in their plastic. Four o'clock, and it isn't ready.
 - `assistants-heads-down`: Heads down. Nobody looks at you. Everybody looks at you.
-- `stone-pocket`: The stone. The white line.
+- `stone-pocket`: The stone. Your thumb in the hole.
 - `case-done`: The preview is over. Everyone's gone. The clock says ten to six, and the afternoon is just... gone.
 
 ### Adeena's apartment (`adeena_apartment`)
@@ -511,7 +511,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `renewal-drums`: Hand drums, a guitar, a man with a tambourine and his eyes shut. Somebody's grandma, dancing.
 - `niggun-circle`: Sixty people singing a melody with no words, over and over, until it sounds like one voice.
 - `renewal-candles`: Two candles on a little table. A woman lighting them, and covering her eyes.
-- `stone-drums`: The stone. The white line. The drums, coming back.
+- `stone-drums`: The stone. Your finger through the hole. The drums, coming back.
 - `renewal-outside`: Cold air. The singing, through the wall.
 
 ### The Reform temple (`reform_temple`)
@@ -588,7 +588,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `phone-envelope`: A paper envelope with your name on it. Your phone goes in. The envelope goes in a box.
 - `day-one`: In. Out. Your knees. Your back. In. Out.
 - `day-three`: Dark. And further away than dark. Your hands aren't yours. They're very far down there, in somebody's lap.
-- `day-three-stone`: The white line. Around and around. Your thumb, someone's thumb.
+- `day-three-stone`: The hole. Around and around. Your thumb, someone's thumb.
 - `inside-quiet`: Izzy is quiet. Nobody inside is talking. The silence goes all the way down.
 - `kept-silence`: Noble silence. You keep it. You keep it so well you almost aren't there.
 - `just-nod`: You nod. You nod at everything. It's very easy to nod.
@@ -632,7 +632,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `step-free-door`: No step. A wide door. A little blue sign. Reneé picked this place on purpose.
 - `renee-table`: Two mugs already there. A woman with short grey-streaked hair, a manual wheelchair, a leather jacket with a small rainbow pin.
 - `cardamom-buns`: Cardamom buns. Izzy wants all of them.
-- `stone-before-news`: The stone. The white line. Heather's hand and yours, on it.
+- `stone-before-news`: The stone. The hole through it. Heather's hand and yours, on it.
 - `renee-hand`: Reneé's hand on yours, on the table, until the coffee is cold.
 - `renee-rose-quartz`: Reneé leaves something pink on the table by your cup: a rose quartz, the size of a thumb. She gives one to every friend who's had a bad year.
 - hidden memory `sunday2-overheard` (a scene played only by an alter)

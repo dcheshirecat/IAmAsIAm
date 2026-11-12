@@ -93,6 +93,6 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 **Explore** (glowing things; the player picks):
 
 - **Use: Mira's stone**
-    - The stone's white line, all the way around. Around and around.
+    - The stone's hole, worn smooth. Your thumb around it, around and around.
 - **Use: Feet on the floor**
     - Bricks under your shoes. Still here.

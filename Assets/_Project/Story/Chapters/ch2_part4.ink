@@ -81,7 +81,7 @@ In your bag, from work: chamomile tea bags, a whole row of them, taped together.
     "Kabbalat Shabbat with drums! Everyone welcome. Bring your voice." A flyer someone shared. # look: renewal-flyer
     -> week
 + {week < 4} [Look: Mira's stone]
-    On the dresser. The white line. # look: stone-alone
+    On the dresser. The hole worn through it, and the dresser showing through. # look: stone-alone
     -> week
 * [Use: The window (cleanse the apartment)]
     The windowsill where the Friday candles stood. You open the window anyway. # ritual: cleansing hard
@@ -114,7 +114,7 @@ Your phone. # device: phone
 ~ set_experience("Derealization", 0.6)
 * [Use: Mira's stone (hold on)]
     ~ record_choice("ch2.p4.renewal", "stone", "At the Renewal service, the candles took you somewhere far away. You held Mira's stone until you came back.")
-    The stone. The white line. The drums, coming back. # look: stone-drums
+    The stone. Your finger through the hole. The drums, coming back. # look: stone-drums
     ~ nudge(-0.15)
 * [Use: The door (go outside)]
     ~ record_choice("ch2.p4.renewal", "left", "At the Renewal service, the candles took you somewhere far away, and you went outside until you could breathe.")

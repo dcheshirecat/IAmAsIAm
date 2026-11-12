@@ -174,7 +174,7 @@ These are proposals for the writing tools. Claude adds them when building.
    Chapter 5 Part 1, Seattle: Tanya texts "cleanse it before the boxes"; "Use: The doorway" = `# ritual: cleansing`. Chicago's
    move-in isn't played (Chapter 2 starts three years in), so there's no Chicago cleansing.
    **Herbs and stones (owner):** Maya gains them **from different people through the game**, and they go in her charm bags;
-   she can also **find** some; **Mira's stone can go in a bag** (as "from Mira": a wishing stone). Each has a researched
+   she can also **find** some; **Mira's stone can go in a bag** (as "from Mira"; owner: it's a hag stone, a hole worn through by water: against nightmares, and for seeing truly). Each has a researched
    meaning: herbs.json `charmMeaning` (the folk association: rosemary for remembrance, bay for victory and storms, rowan for
    protection, calendula "Mary's gold"...), crystals.json `history` (documented history: hematite from Greek haima, amethyst
    "not drunk", jet and Victorian mourning, amber and Jūratė, labradorite's Inuit story...) and `charmMeaning` (modern crystal

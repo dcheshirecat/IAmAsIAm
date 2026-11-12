@@ -67,7 +67,7 @@ In your bag, from work: chamomile tea bags, a whole row of them, taped together.
 - **Look: Your phone**
     - "Kabbalat Shabbat with drums! Everyone welcome. Bring your voice." A flyer someone shared.
 - **Look: Mira's stone**
-    - On the dresser. The white line.
+    - On the dresser. The hole worn through it, and the dresser showing through.
 - **Use: The window (cleanse the apartment)**
     - The windowsill where the Friday candles stood. You open the window anyway.
 - **Use: Your phone**
@@ -93,7 +93,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 **Explore** (glowing things; the player picks):
 
 - **Use: Mira's stone (hold on)**
-    - The stone. The white line. The drums, coming back.
+    - The stone. Your finger through the hole. The drums, coming back.
 - **Use: The door (go outside)**
     - Cold air. The singing, through the wall.
 
