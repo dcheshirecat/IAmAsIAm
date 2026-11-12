@@ -275,7 +275,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   together **two and a half years**. Adeena is **Conservative** and becomes **Hasidic**. She meets and marries **Michael only after they
   break up**: a **present-day fact mentioned in Chapter 6**, which Maya hears **from an old friend from work**, and it's **triggering**:
   they shared a **special moment over the Shabbat candles every week** while dating. **Show every stream** (none left out).
-  **Guide: Rabbi Abe** (78, he/him), **vital and refreshing**. Alters: **Izzy and Nina**; **Heather only leaves a message** (`sent_while_away("heather", ...)`), she is **not unlocked** yet (owner correction).
+  **Guide: Rabbi Abe** (78, he/him), **vital and refreshing**. Alters: **Izzy and Nina**; **Heather only leaves a sign** (now: the tall candle, below), she is **not unlocked** yet (owner correction).
 - 2026-11-12: **Chapter 2 answers (owner):** COVID skipped; the chapter **starts in Chicago in 2023**. Maya **works at a museum**.
   **Adeena: 27**, stern and serious with a heart of gold (her look comes with the owner's character design). **The candles:** Adeena
   lights, and Maya covers her eyes with her for the blessing, every Friday. **The breakup:** Maya dissociates more, Adeena notices she
