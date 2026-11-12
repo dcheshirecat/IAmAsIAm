@@ -1,4 +1,5 @@
 // DRAFT: not canon until the owner approves it. Prologue "This Little Light", Sunday 3.
+// vo-speakers: Maya=maya-11
 // ─────────────────────────────────────────────────────────────────────────────
 //  Sunday 3. Iowa City, 2009. Maya is 11.
 //  Owner's beats: Maya "performs okay" (neat clothes, a smile, good answers), and Mira believes
@@ -26,13 +27,13 @@
 = morning
 Maya is eleven, and she has a system.
 
-Saturday night: iron the blue dress, the one with the collar. Hang it on the closet door. Shoes polished with a paper towel. Hair brushed one hundred times, then the braid, then the clip.
+On Saturday night she irons the blue dress, the one with the collar, and hangs it on the closet door. Shoes polished with a paper towel. Hair brushed one hundred times, then the braid, then the clip.
 
-Sunday morning: up before Mom. Toast, if there's bread. Teeth. Dress. Smile, in the bathroom mirror, until it looks right.
+On Sunday morning she's up before Mom. Toast, if there's bread. Teeth. Dress. Smile, in the bathroom mirror, until it looks right.
 
 Mom says "Don't you look nice" every Sunday. It's the best part of the week.
 
-Sarah: Don't you look nice. Grab the bulletins, would you, sweetheart? They're on the printer.
+Sarah: Don't you look nice. Grab the bulletins, would you, sweetheart? They're on the printer. # vo: prologue-quaker_sarah_0080
 
 Maya grabs the bulletins. She is very good at this.
 -> church
@@ -42,15 +43,15 @@ Maya grabs the bulletins. She is very good at this.
 # shot: wide
 At church, Maya hands out the bulletins at the door. She knows everybody's name.
 
-Mrs. Hines: Good morning, Maya. Aren't you a credit to your mother.
-Maya: Good morning, Mrs. Hines. I like your brooch.
-Mr. Jones: There's our girl.
-Maya: Good morning, Mr. Jones. How's your knee?
+Mrs. Hines: Good morning, Maya. Aren't you a credit to your mother. # vo: prologue-quaker_hines_0081
+Maya: Good morning, Mrs. Hines. I like your brooch. # vo: prologue-quaker_maya-11_0082
+Mr. Jones: There's our girl. # vo: prologue-quaker_jones_0083
+Maya: Good morning, Mr. Jones. How's your knee? # vo: prologue-quaker_maya-11_0084
 
 Rebecca comes in with her family, and Jamie and Justin and Will right behind. Rebecca has her hair in a high ponytail now, like the older girls.
-Rebecca: Hey, Maya.
-Maya: Hey! I like your ponytail.
-Rebecca: Thanks. Will, wait up!
+Rebecca: Hey, Maya. # vo: prologue-quaker_rebecca_0085
+Maya: Hey! I like your ponytail. # vo: prologue-quaker_maya-11_0086
+Rebecca: Thanks. Will, wait up! # vo: prologue-quaker_rebecca_0087
 
 The Carters come in last, like always. Mr. Carter holds the door. Reneé swings through on her crutches, and gives Maya a little nod, the kind big kids give little kids when they're being nice.
 
@@ -64,25 +65,25 @@ Sometimes, lately, it's like there's somebody else doing the smiling. Somebody v
 # place: church_fellowship_hall
 # shot: wide
 After worship, Mira is waiting by the coffee, like always. But today she has her coat on already.
-Mira: Maya, dear. Will you sit with me a minute? I've some news, and I wanted you to hear it from me.
+Mira: Maya, dear. Will you sit with me a minute? I've some news, and I wanted you to hear it from me. # vo: prologue-quaker_mira_0088
 
 They sit in the two chairs by the window. Mira's chairs.
-Mira: I'm moving to Oregon. To be near my daughter, Ellen. My legs aren't what they were, and she worries.
-Mira: I leave on Thursday.
+Mira: I'm moving to Oregon. To be near my daughter, Ellen. My legs aren't what they were, and she worries. # vo: prologue-quaker_mira_0089
+Mira: I leave on Thursday. # vo: prologue-quaker_mira_0090
 
 Thursday. That's four days.
 
 * [Say it's great news.]
     ~ record_choice("prologue.s3.news", "great", "When Mira said she was moving away, you told her it was great news.")
-    Maya: That's great! Oregon is really pretty. We did it in social studies.
+    Maya: That's great! Oregon is really pretty. We did it in social studies. # vo: prologue-quaker_maya-11_0091
     Mira looks at her for a long moment.
-    Mira: It is pretty. I'll send you pictures.
+    Mira: It is pretty. I'll send you pictures. # vo: prologue-quaker_mira_0092
 * [Ask her not to go.]
     ~ record_choice("prologue.s3.news", "asked", "When Mira said she was moving away, you almost asked her not to go. You asked about the weather instead.")
     Maya opens her mouth to say don't go.
     What comes out is:
-    Maya: Does it rain a lot there?
-    Mira: Oh, all the time. I'll grow moss, like my cardigan.
+    Maya: Does it rain a lot there? # vo: prologue-quaker_maya-11_0093
+    Mira: Oh, all the time. I'll grow moss, like my cardigan. # vo: prologue-quaker_mira_0094
     Maya laughs, because Mira wants her to.
 * [Say nothing.]
     ~ record_choice("prologue.s3.news", "nothing", "When Mira said she was moving away, you didn't say anything for a long time.")
@@ -93,7 +94,7 @@ Thursday. That's four days.
 
 = the_question
 Then Mira takes Maya's hand, the way she did when Maya was little.
-Mira: Maya. Before I go, I want to ask you something, and I want a true answer. Are you all right? At home? Really?
+Mira: Maya. Before I go, I want to ask you something, and I want a true answer. Are you all right? At home? Really? # vo: prologue-quaker_mira_0095
 
 This is the moment. Maya knows it is.
 
@@ -106,21 +107,21 @@ And the somebody who is good at smiling is already smiling.
 
 * [Tell her you're fine.]
     ~ record_choice("prologue.s3.question", "fine", "Mira asked if you were really all right. You told her you were fine.")
-    Maya: I'm fine! Really. I'm good at looking after myself. Mom says I'm very independent.
+    Maya: I'm fine! Really. I'm good at looking after myself. Mom says I'm very independent. # vo: prologue-quaker_maya-11_0096
 * [Tell her it's better now.]
     ~ record_choice("prologue.s3.question", "better", "Mira asked if you were really all right. You told her things were better now.")
-    Maya: It's better now. I'm older. I can make pasta and everything.
+    Maya: It's better now. I'm older. I can make pasta and everything. # vo: prologue-quaker_maya-11_0097
 * [Start to tell her, then stop.]
     ~ record_choice("prologue.s3.question", "almost", "Mira asked if you were really all right. You almost told her. Then you said you were fine.")
-    Maya: Sometimes it's...
+    Maya: Sometimes it's... # vo: prologue-quaker_maya-11_0098
     She stops. Mira's eyes are so kind. They'd break.
-    Maya: Sometimes it's boring, that's all. When Mom's at meetings. But I read a lot. I'm fine.
+    Maya: Sometimes it's boring, that's all. When Mom's at meetings. But I read a lot. I'm fine. # vo: prologue-quaker_maya-11_0099
 -
 Mira searches her face. Maya keeps the smile very still, like holding a full glass.
 
 Then Mira lets out a long breath, and her shoulders come down.
-Mira: Well. You've grown into a very capable young lady. I'm proud of you.
-Mira: I'm glad. I'm so glad, Maya.
+Mira: Well. You've grown into a very capable young lady. I'm proud of you. # vo: prologue-quaker_mira_0100
+Mira: I'm glad. I'm so glad, Maya. # vo: prologue-quaker_mira_0101
 
 She believes it. Maya can see her believe it.
 
@@ -131,7 +132,7 @@ It should feel like winning.
 Mira opens her handbag and takes out something wrapped in a handkerchief.
 
 It's a stone. Grey, and flat, and smooth as soap, with a white line all the way around it like a ribbon.
-Mira: From my garden. I used to hold it in meeting, when my mind wandered off. You can have it now. For when you feel far away.
+Mira: From my garden. I used to hold it in meeting, when my mind wandered off. You can have it now. For when you feel far away. # vo: prologue-quaker_mira_0102
 
 The stone is warm from her bag. It's heavy for its size, in a good way.
 
@@ -140,8 +141,8 @@ Something to hold. # exercise: grounding-object
 ~ nudge(-0.1)
 
 Mira writes her new address on a card, in her shaky blue pen.
-Mira: Write to me. Tell me about school, and books, and everything.
-Maya: I will. I promise.
+Mira: Write to me. Tell me about school, and books, and everything. # vo: prologue-quaker_mira_0103
+Maya: I will. I promise. # vo: prologue-quaker_maya-11_0104
 
 Mira hugs her. She smells like soap and coffee, the way she always has.
 ~ journal("Note", "Mira's stone. Mira's address in Oregon. Write to her.")

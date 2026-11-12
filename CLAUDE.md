@@ -123,8 +123,13 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   `maya-05/08/11/15`; inner voices `<id>-inside`; outside chapters `daily`). Voicing is optional per line (unvoiced = text only).
   In the game: `Assets/_Project/Audio/Voice/<chapter-id>/`. `docs/VOICE.md`. Not built yet: playback, `# vo:` tags, script export.
   Note: `*.mp3` is in LFS and LFS uploads are blocked from cloud sessions: decide how to commit voice files when the first arrive.
-- 2026-11-12: **The owner does ALL voice-over work** (recording, script lists, deciding which lines are voiced). Claude does
-  none of it: no script lists, no `# vo:` tagging, no voice generation, unless the owner asks for something specific.
+- 2026-11-12: **Voice-over (owner, corrected):** the owner records every voice. **Never generate voices** (no TTS, no AI voices).
+  Claude DOES the logistics: script lists, file names, ids, importing the files, playback in the game.
+  Every spoken line gets a permanent `# vo: <chapter>_<speaker>_<0000>` tag (= `vo_<...>.mp3`) from
+  `tools/StoryDocs/voice_script.py --chapter <id> --assign --csv ... <files>`; numbers never change or get reused. The script
+  list goes to Drive Voice-Over → Scripts as a Google Sheet ("00 Prologue - script list (draft)",
+  id 1JRpAvAoa5fmtixrocBLkNuJCbr1aL5i06RiXMNBdIps: 117 lines). Prologue Maya voices: `maya-05/08/11/15` (`// vo-speakers:` header).
+  Narration isn't voiced (ask the owner if that changes). Rebuild the Sheet when lines change, keeping the owner's Recorded ticks.
 
 - 2026-11-12: **Push everything to `main`** (owner): the Android build runs automatically on every push to `main`
   (and still by hand). Each build's version code is the run number (`v0.1.<run>`, shown bottom right in the game), and it is

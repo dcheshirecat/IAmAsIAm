@@ -34,6 +34,13 @@ The number is the line's number on the script list. Never reuse a number for a d
 This game touches hard things. Record in short sessions, take breaks, and skip any line you don't want to voice:
 it stays as text and the game still works. Nothing has to be voiced.
 
+## How the numbers work (for Claude)
+Each spoken line in the story carries a tag with its file name, e.g. `Mira: Hello, floor. # vo: prologue-quaker_mira_0036`.
+`tools/StoryDocs/voice_script.py` adds tags to new lines and writes the script list. A line keeps its number when its words
+change, and numbers are never reused, so a recording always belongs to one line. If a line's words change after it was
+recorded, its row in the script list says so, and it can be re-recorded into Retakes with the same name.
+Narration (lines without a speaker) isn't voiced. Voices are never generated: every voice is the owner's own recording.
+
 ## Telling Claude
 Say "new voice lines are in the Drive folder". Claude copies each file into `Assets/_Project/Audio/Voice/<chapter-id>/`,
 checks its name, format and loudness, links it to its line in the story, and tells you which lines are now voiced.

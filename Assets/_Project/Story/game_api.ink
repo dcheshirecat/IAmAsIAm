@@ -14,6 +14,7 @@
 //    # shot: wide | close | over-shoulder | inner     (camera hint)
 //    # place: <location-id>         (scene/location change)
 //    # chapter-end                  (shows the choices recap)
+//    # vo: <chapter>_<speaker>_<0000>  (this line's voice file, vo_<...>.mp3; added by tools/StoryDocs/voice_script.py)
 //  SPEAKERS: start a line with "Name: ". Lines without a name are narration.
 //  Inner voices (co-consciousness) use "Name (inside): ".
 // ─────────────────────────────────────────────────────────────────────────────

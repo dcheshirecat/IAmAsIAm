@@ -152,6 +152,10 @@ static class InkCheck
                 else if (parts[0] != "tarot" && parts[0] != "craft" && parts[0] != "rune" && parts[0] != "sachet") Fail("unknown ritual");
                 break;
             case "switch": if (!_members.Contains(value)) Fail("unknown member to switch to"); break;
+            case "vo":
+                // A voice line's file name without "vo_" and ".mp3": <chapter-id>_<speaker>_<4-digit number> (docs/VOICE.md).
+                if (!System.Text.RegularExpressions.Regex.IsMatch(value, @"^[a-z0-9-]+_[a-z0-9-]+_\d{4}$")) Fail("voice tag must look like prologue-quaker_mira_0012");
+                break;
             case "shot": case "place": case "chapter-end": case "front": break;
             default: Fail("unknown tag (see game_api.ink)"); break;
         }

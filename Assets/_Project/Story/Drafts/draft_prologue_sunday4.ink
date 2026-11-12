@@ -1,4 +1,5 @@
 // DRAFT: not canon until the owner approves it. Prologue "This Little Light", Sunday 4.
+// vo-speakers: Maya=maya-15
 // ─────────────────────────────────────────────────────────────────────────────
 //  Sunday 4. Iowa City, 2013. Maya is 15.
 //  Owner's beats: an ordinary Sunday. In the car home, among other church news, Sarah mentions in
@@ -56,11 +57,11 @@ Maya stacks chairs in the fellowship hall, because somebody has to, and waits by
 # place: car
 # shot: over-shoulder
 In the car, Mom does the news. She does it every week now, like Maya is a secretary.
-Sarah: Mr. Jones is having the other knee done in March. The roof fund is short again, I could scream. Rebecca's mother wants to start a book group, which is lovely, but on Wednesdays, which is choir.
+Sarah: Mr. Jones is having the other knee done in March. The roof fund is short again, I could scream. Rebecca's mother wants to start a book group, which is lovely, but on Wednesdays, which is choir. # vo: prologue-quaker_sarah_0105
 
 The wipers go back and forth. The sky is the color of dishwater. It always is, in February.
-Sarah: Oh, and Mira Smith passed. Last week, in Oregon. Her daughter phoned the office. I'll mention it in joys and concerns next Sunday.
-Sarah: Anyway, the youth group wants to do a car wash, in February, can you imagine...
+Sarah: Oh, and Mira Smith passed. Last week, in Oregon. Her daughter phoned the office. I'll mention it in joys and concerns next Sunday. # vo: prologue-quaker_sarah_0106
+Sarah: Anyway, the youth group wants to do a car wash, in February, can you imagine... # vo: prologue-quaker_sarah_0107
 
 Mom keeps talking.
 
@@ -72,8 +73,8 @@ The car is very bright. The dashboard is very clear, every scratch, every crumb.
 
 * [Say something.]
     ~ record_choice("prologue.s4.news", "spoke", "When Mom said Mira had died, you said \"Oh.\" It was all you could say.")
-    Maya: Oh.
-    Sarah: Hm? Mm. She was a sweetheart. She was very fond of you. Now, the car wash...
+    Maya: Oh. # vo: prologue-quaker_maya-15_0108
+    Sarah: Hm? Mm. She was a sweetheart. She was very fond of you. Now, the car wash... # vo: prologue-quaker_sarah_0109
 * [Say nothing.]
     ~ record_choice("prologue.s4.news", "silent", "When Mom said Mira had died, you didn't say anything. Mom didn't notice.")
     Maya doesn't say anything. Mom doesn't notice that she doesn't say anything.
@@ -82,7 +83,7 @@ The car is very bright. The dashboard is very clear, every scratch, every crumb.
     Maya grips the stone in her pocket so hard the edge bites her palm. It's the only real thing in the car.
 -
 Mom drops her at the house.
-Sarah: There's soup in the cupboard. I've got the deacons' supper, don't wait up. Love you!
+Sarah: There's soup in the cupboard. I've got the deacons' supper, don't wait up. Love you! # vo: prologue-quaker_sarah_0110
 
 The car goes. The house is dark.
 -> room
@@ -126,22 +127,22 @@ And then there's a voice.
 
 Not out loud. Inside. Close, like someone sitting right behind her eyes. A girl's voice, younger than her. Very polite. Very calm.
 ~ set_experience("CoConsciousness", 0.5)
-Nina (inside): Don't cry. It's all right.
+Nina (inside): Don't cry. It's all right. # vo: prologue-quaker_nina-inside_0111
 
 Maya goes very still.
 
 That isn't her. That isn't her thinking. She knows what her own thinking sounds like, and that isn't it.
-Nina (inside): You don't have to. I'm good at this part. I'm always good.
-Nina (inside): Let me. I'll be quiet, and neat, and nobody will have to worry. I'll take care of it.
+Nina (inside): You don't have to. I'm good at this part. I'm always good. # vo: prologue-quaker_nina-inside_0112
+Nina (inside): Let me. I'll be quiet, and neat, and nobody will have to worry. I'll take care of it. # vo: prologue-quaker_nina-inside_0113
 
 * [Who are you?]
     ~ record_choice("prologue.s4.voice", "who", "When the voice spoke, you asked who it was. It didn't answer.")
-    Maya: Who are you?
-    Nina (inside): Shh. It's all right. You can rest.
+    Maya: Who are you? # vo: prologue-quaker_maya-15_0114
+    Nina (inside): Shh. It's all right. You can rest. # vo: prologue-quaker_nina-inside_0115
 * [No. I want to feel this.]
     ~ record_choice("prologue.s4.voice", "no", "When the voice spoke, you said no: you wanted to feel it. It came anyway.")
-    Maya: No. I want to... I want to feel it. She was mine. She was the only...
-    Nina (inside): I know. I know. That's why.
+    Maya: No. I want to... I want to feel it. She was mine. She was the only... # vo: prologue-quaker_maya-15_0116
+    Nina (inside): I know. I know. That's why. # vo: prologue-quaker_nina-inside_0117
 * [Say nothing. Let it.]
     ~ record_choice("prologue.s4.voice", "let", "When the voice spoke, you didn't say anything. You let it.")
     Maya doesn't say anything. She's so tired. She has been so tired for so long.
