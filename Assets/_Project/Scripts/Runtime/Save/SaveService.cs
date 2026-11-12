@@ -88,13 +88,19 @@ namespace IAmAsIAm.Runtime.Save
             Save(slot);
         }
 
-        /// <summary>Saves to the active slot. Does nothing on the title screen or while a story is playing.</summary>
-        public static bool Autosave(StoryRunner runner = null)
+        /// <summary>
+        /// Saves to the active slot. Does nothing on the title screen. In the middle of a chapter it saves only at a
+        /// checkpoint (a choice), never halfway through a conversation: <paramref name="atCheckpoint"/>.
+        /// </summary>
+        public static bool Autosave(StoryRunner runner = null, bool atCheckpoint = false)
         {
-            if (ActiveSlot == 0 || (runner != null && runner.IsPlaying)) return false;
+            if (ActiveSlot == 0 || (runner != null && runner.IsPlaying && !atCheckpoint)) return false;
             Save(ActiveSlot, runner);
             return true;
         }
+
+        /// <summary>A chapter to pick back up after a load (the story screen resumes it once it's ready).</summary>
+        public static StoryRunner.StoryCheckpoint PendingResume { get; internal set; }
 
         public static void Save(int slot, StoryRunner runner = null)
         {
@@ -105,6 +111,9 @@ namespace IAmAsIAm.Runtime.Save
             var runs = GameServices.ChapterRuns;
             var run = runs?.ExportRun() ?? new ChapterRunState();
             var chapter = GameServices.Chapter(run.chapterId);
+            // In the middle of a chapter: the checkpoint (the last choice), never a half-said line.
+            var cp = runner != null && runner.IsPlaying ? runner.Checkpoint : null;
+            if (runner != null && runner.IsPlaying && cp == null) return;
 
             var data = new SaveData
             {
@@ -118,7 +127,11 @@ namespace IAmAsIAm.Runtime.Save
                 journal = GameServices.Journal.Entries.ToList(),
                 gaps = GameServices.Journal.Gaps.ToList(),
                 learnedSkillIds = GameServices.Skills.LearnedIds.ToList(),
-                inkStateJson = runner != null ? runner.SaveState() ?? "" : "",
+                inkStateJson = cp != null ? cp.Ink : runner != null ? runner.SaveState() ?? "" : "",
+                storyResume = cp != null,
+                storyPlace = cp?.Place ?? "",
+                storyObjective = cp?.Objective ?? "",
+                storyPath = cp?.Path ?? "",
                 choices = GameServices.Choices?.Records.ToList() ?? new List<ChoiceRecord>(),
                 exploredTraditionIds = GameServices.Traditions?.ExploredIds.ToList() ?? new List<string>(),
                 triedPracticeIds = GameServices.Traditions?.TriedPracticeIds.ToList() ?? new List<string>(),
@@ -175,7 +188,17 @@ namespace IAmAsIAm.Runtime.Save
             GameServices.Book?.Restore(data.book);
 
             runner ??= UnityEngine.Object.FindAnyObjectByType<StoryRunner>();
-            if (runner != null && !string.IsNullOrEmpty(data.inkStateJson))
+            PendingResume = null;
+            if (data.storyResume && !string.IsNullOrEmpty(data.chapterRun?.chapterId))
+            {
+                // Saved in the middle of a chapter: the story screen picks it back up at the last choice.
+                PendingResume = new StoryRunner.StoryCheckpoint
+                {
+                    Ink = data.inkStateJson, Place = data.storyPlace, Objective = data.storyObjective,
+                    ChapterId = data.chapterRun.chapterId, Path = data.storyPath,
+                };
+            }
+            else if (runner != null && !string.IsNullOrEmpty(data.inkStateJson))
             {
                 try { runner.LoadState(data.inkStateJson); }
                 catch (Exception e) { Debug.LogWarning($"[IAmAsIAm] The story position in slot {slot} couldn't be restored: {e.Message}"); }
@@ -230,6 +253,7 @@ namespace IAmAsIAm.Runtime.Save
             _storage = null;
             _slots = null;
             ActiveSlot = 0;
+            PendingResume = null;
             Loaded = null;
             Saved = null;
         }

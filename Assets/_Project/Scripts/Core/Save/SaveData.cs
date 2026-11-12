@@ -57,6 +57,17 @@ namespace IAmAsIAm.Core.Save
 
         /// <summary>Maya's Book of Shadows: practices learned, readings, sabbats, dreams, notes (v4; empty in older saves).</summary>
         public IAmAsIAm.Core.Practices.BookOfShadowsState book = new IAmAsIAm.Core.Practices.BookOfShadowsState();
+
+        /// <summary>
+        /// Saved in the middle of a chapter (owner: "Continue" started from the beginning): the story stopped at a choice,
+        /// and "Continue" picks it up there, in this place, with this goal line. False = between chapters.
+        /// </summary>
+        public bool storyResume;
+        public string storyPlace = "";
+        public string storyObjective = "";
+        /// <summary>The Ink path of the checkpoint (e.g. ch1_part3.samhain): if the story changed in an update and the exact
+        /// position can't be restored, the chapter part starts again from its beginning instead of from the very start.</summary>
+        public string storyPath = "";
     }
 
     /// <summary>

@@ -239,6 +239,14 @@ namespace IAmAsIAm.Runtime.Story
         {
             EnsureEventSystem();
 
+            // A save from the middle of a chapter (owner: "Continue" used to start over): pick it back up at its last choice.
+            var resume = IAmAsIAm.Runtime.Save.SaveService.PendingResume;
+            if (resume != null && GameServices.IsReady && !runner.IsPlaying)
+            {
+                IAmAsIAm.Runtime.Save.SaveService.PendingResume = null;
+                if (!runner.Resume(resume)) Debug.LogWarning("[IAmAsIAm] Couldn't pick the chapter back up; open it from the chapter tree.");
+            }
+
             if (_pacer != null)
             {
                 _pacer.Tick(Time.unscaledDeltaTime);

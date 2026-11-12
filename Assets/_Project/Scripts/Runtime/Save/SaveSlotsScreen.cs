@@ -57,12 +57,15 @@ namespace IAmAsIAm.Runtime.Save
 
         void OnEnable()
         {
-            if (runner != null) runner.Ended += OnStoryEnded;
+            if (runner != null) { runner.Ended += OnStoryEnded; runner.CheckpointReached += OnCheckpoint; }
         }
+
+        // Owner: "Continue" started from the beginning after an update. Every choice in a chapter is now a save point.
+        void OnCheckpoint() => SaveService.Autosave(runner, atCheckpoint: true);
 
         void OnDisable()
         {
-            if (runner != null) runner.Ended -= OnStoryEnded;
+            if (runner != null) { runner.Ended -= OnStoryEnded; runner.CheckpointReached -= OnCheckpoint; }
             if (_open == this) _open = null;
         }
 
@@ -88,7 +91,8 @@ namespace IAmAsIAm.Runtime.Save
 
         void OnApplicationPause(bool paused)
         {
-            if (paused) SaveService.Autosave(runner); // Android: the app may be closed from the background.
+            // Android: the app may be closed from the background. Mid-chapter, the last checkpoint is already saved.
+            if (paused) SaveService.Autosave(runner);
         }
 
         void OnApplicationQuit() => SaveService.Autosave(runner);

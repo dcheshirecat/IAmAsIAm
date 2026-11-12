@@ -126,8 +126,21 @@ namespace IAmAsIAm.Runtime.Story
                 return;
             }
 
-            if (_story.currentChoices.Count > 0) ChoicesReady?.Invoke(_story.currentChoices);
-            else { IsPlaying = false; Place = null; Ended?.Invoke(); }
+            if (_story.currentChoices.Count > 0)
+            {
+                // A safe point to save: waiting at a choice, nothing half-done.
+                if (_pending == null)
+                {
+                    Checkpoint = new StoryCheckpoint
+                    {
+                        Ink = _story.state.ToJson(), Place = Place, Objective = Objective, ChapterId = _chapterId,
+                        Path = _story.currentChoices[0].sourcePath ?? _story.state.currentPathString ?? "",
+                    };
+                    CheckpointReached?.Invoke();
+                }
+                ChoicesReady?.Invoke(_story.currentChoices);
+            }
+            else { IsPlaying = false; Place = null; Checkpoint = null; Ended?.Invoke(); }
         }
 
         public void Choose(int index)
@@ -147,6 +160,57 @@ namespace IAmAsIAm.Runtime.Story
                 foreach (var kv in results)
                     if (_story.variablesState.GlobalVariableExistsWithName(kv.Key)) _story.variablesState[kv.Key] = kv.Value;
             Next();
+        }
+
+        /// <summary>
+        /// A safe point to save in the middle of a chapter: the story is waiting at a choice, nothing half-done. Taken every
+        /// time choices appear, so a chapter can be picked up again after the app closes (owner: "Continue" started over).
+        /// </summary>
+        public sealed class StoryCheckpoint
+        {
+            public string Ink;
+            public string Place;
+            public string Objective;
+            public string ChapterId;
+            public string Path;
+        }
+
+        public StoryCheckpoint Checkpoint { get; private set; }
+        /// <summary>Raised when a new checkpoint is taken (the save screen writes it to the active slot).</summary>
+        public event Action CheckpointReached;
+
+        /// <summary>
+        /// Picks a chapter back up from a save: the story's state is put back at its checkpoint, the place is rebuilt and the
+        /// goal line shown, and the choices come up again. If the story changed in an update and the exact spot is gone, the
+        /// chapter part starts again from its beginning.
+        /// </summary>
+        public bool Resume(StoryCheckpoint cp)
+        {
+            if (cp == null || !EnsureLoaded() || IsPlaying) return false;
+            bool exact = false;
+            try { _story.state.LoadJson(cp.Ink); exact = _story.currentChoices.Count > 0; }
+            catch (Exception e) { Debug.LogWarning($"[IAmAsIAm] The saved story position couldn't be restored exactly: {e.Message}"); }
+            if (!exact)
+            {
+                string part = string.IsNullOrEmpty(cp.Path) ? "" : cp.Path.Split('.')[0];
+                if (string.IsNullOrEmpty(part) || _story.KnotContainerWithName(part) == null) return false;
+                _story.ChoosePathString(part);
+            }
+            _chapterId = cp.ChapterId;
+            SyncFronting();
+            IsPlaying = true;
+            Started?.Invoke(null);
+            if (exact)
+            {
+                Place = null;
+                _cutNext = true;
+                if (!string.IsNullOrEmpty(cp.Place)) GoTo(cp.Place);
+                Objective = cp.Objective ?? "";
+                ObjectiveChanged?.Invoke(Objective);
+            }
+            else { Place = null; _cutNext = true; }
+            Next();
+            return true;
         }
 
         public string SaveState() => _story?.state.ToJson();
