@@ -37,6 +37,46 @@ namespace IAmAsIAm.Core.Practices
         public List<CandleColour> candleColours = new List<CandleColour>();
         /// <summary>Cards that can sometimes stir something up (owner: practice can be hard, sometimes).</summary>
         public List<string> hardCardIds = new List<string>();
+        /// <summary>Runes that can sometimes stir something up (hail, need, ice).</summary>
+        public List<string> hardRuneIds = new List<string>();
+        /// <summary>Charm bag ingredients: herb and stone ids (herbs.json, crystals.json) and "something of yours".</summary>
+        public List<string> charmHerbIds = new List<string>();
+        public List<string> charmStoneIds = new List<string>();
+        public List<string> charmOwnThings = new List<string>();
+        /// <summary>Small things that turn up in the charm bag after lost time (owner: alters react to it). Never says who.</summary>
+        public List<string> charmAdditions = new List<string>();
+        /// <summary>Who takes the bag out of her pocket and leaves it in the altar's drawer (owner: Jacob despises the tools).</summary>
+        public List<string> charmRemoverIds = new List<string>();
+        /// <summary>Who, in lost time, puts something small into the bag (Izzy).</summary>
+        public List<string> charmAdderIds = new List<string>();
+    }
+
+    /// <summary>One thing that turned up in the charm bag. Who put it there is saved, never shown.</summary>
+    [Serializable]
+    public sealed class CharmBagAddition
+    {
+        public string thing;
+        public string memberId;
+        public bool noticed;
+    }
+
+    /// <summary>
+    /// The charm bag Maya made (owner: she carries it and can hold it to ground; alters react to it). It wears out after
+    /// a while (the knots come loose) and she can make another.
+    /// </summary>
+    [Serializable]
+    public sealed class CharmBagState
+    {
+        public bool has;
+        /// <summary>In her pocket (false = left in the altar's drawer).</summary>
+        public bool carried;
+        public string herb = "";
+        public string stone = "";
+        public string own = "";
+        public string intent = "";
+        public int madeDay;
+        public int holds;
+        public List<CharmBagAddition> added = new List<CharmBagAddition>();
     }
 
     [Serializable]
@@ -85,6 +125,7 @@ namespace IAmAsIAm.Core.Practices
         public List<LearnedPractice> learned = new List<LearnedPractice>();
         public List<BookEntry> entries = new List<BookEntry>();
         public int nextId = 1;
+        public CharmBagState charmBag = new CharmBagState();
     }
 
     /// <summary>
@@ -100,6 +141,7 @@ namespace IAmAsIAm.Core.Practices
         readonly Dictionary<string, CraftPractice> _practices;
         readonly HashSet<string> _wiccan;
         readonly Dictionary<string, string> _refusals;
+        readonly CraftData _data;
         readonly List<LearnedPractice> _learned = new List<LearnedPractice>();
         readonly List<BookEntry> _entries = new List<BookEntry>();
         int _nextId = 1;
@@ -107,6 +149,7 @@ namespace IAmAsIAm.Core.Practices
         public BookOfShadows(CraftData data)
         {
             data ??= new CraftData();
+            _data = data;
             _practices = (data.practices ?? new List<CraftPractice>()).Where(p => !string.IsNullOrEmpty(p.id))
                 .GroupBy(p => p.id).ToDictionary(g => g.Key, g => g.First());
             _wiccan = new HashSet<string>(data.wiccanMemberIds ?? new List<string>());
@@ -181,8 +224,81 @@ namespace IAmAsIAm.Core.Practices
         public List<(CraftPractice practice, LearnedPractice learned)> LearnedPractices() =>
             _learned.Select(l => (Practice(l.practiceId), l)).Where(p => p.Item1 != null).ToList();
 
+        // ── The charm bag ───────────────────────────────────────────────────────
+
+        /// <summary>How many times it can be held before the knots come loose.</summary>
+        public const int CharmBagHolds = 6;
+
+        public CharmBagState CharmBag { get; private set; } = new CharmBagState();
+
+        /// <summary>She made a new charm bag (it replaces the old one) and put it in her pocket.</summary>
+        public void MakeCharmBag(string herb, string stone, string own, string intent, int day)
+        {
+            CharmBag = new CharmBagState
+            {
+                has = true, carried = true, herb = herb ?? "", stone = stone ?? "", own = own ?? "",
+                intent = (intent ?? "").Trim(), madeDay = day,
+            };
+            Changed?.Invoke();
+        }
+
+        /// <summary>Can the one fronting hold it right now? Only the ones who practise (owner); it has to be in her pocket.</summary>
+        public bool CanHoldCharmBag(string frontingId) => CharmBag.has && CharmBag.carried && Practises(frontingId);
+
+        /// <summary>
+        /// She holds it (a touch anchor). Returns what's new in it (things that turned up in lost time, never saying who),
+        /// and whether the knots came loose this time (then it's done, and she can make another).
+        /// </summary>
+        public (List<string> found, bool cameApart) HoldCharmBag()
+        {
+            var found = new List<string>();
+            if (!CharmBag.has || !CharmBag.carried) return (found, false);
+            foreach (var a in CharmBag.added)
+                if (!a.noticed) { a.noticed = true; found.Add(a.thing); }
+            CharmBag.holds++;
+            bool apart = CharmBag.holds >= CharmBagHolds;
+            if (apart) { CharmBag.has = false; CharmBag.carried = false; }
+            Changed?.Invoke();
+            return (found, apart);
+        }
+
+        /// <summary>She takes it back out of the altar's drawer.</summary>
+        public void TakeCharmBag()
+        {
+            if (!CharmBag.has || CharmBag.carried) return;
+            CharmBag.carried = true;
+            Changed?.Invoke();
+        }
+
+        /// <summary>
+        /// Someone else came forward while she carried the bag (owner: alters react to it). Some leave it alone; Jacob takes
+        /// it out of her pocket and puts it in the drawer; Izzy sometimes adds something small. Nothing is ever pointed out.
+        /// <paramref name="roll"/> is 0..1 (random); <paramref name="pick"/> chooses which thing turns up.
+        /// </summary>
+        public bool OnFrontChanged(string newId, double roll, int pick)
+        {
+            if (!CharmBag.has || !CharmBag.carried || string.IsNullOrEmpty(newId)) return false;
+            if ((_data.charmRemoverIds ?? new List<string>()).Contains(newId) && roll < 0.6)
+            {
+                CharmBag.carried = false;
+                Changed?.Invoke();
+                return true;
+            }
+            var things = _data.charmAdditions ?? new List<string>();
+            if ((_data.charmAdderIds ?? new List<string>()).Contains(newId) && roll < 0.4 && CharmBag.added.Count < 3 && things.Count > 0)
+            {
+                var left = things.Where(t => CharmBag.added.All(a => a.thing != t)).ToList();
+                if (left.Count == 0) return false;
+                CharmBag.added.Add(new CharmBagAddition { thing = left[Math.Abs(pick) % left.Count], memberId = newId });
+                Changed?.Invoke();
+                return true;
+            }
+            return false;
+        }
+
         public BookOfShadowsState Export() => new BookOfShadowsState
         {
+            charmBag = CharmBag,
             has = Has,
             givenById = GivenById,
             learned = _learned.ToList(),
@@ -197,6 +313,8 @@ namespace IAmAsIAm.Core.Practices
             Has = state?.has ?? false;
             GivenById = state?.givenById ?? "";
             _nextId = 1;
+            CharmBag = state?.charmBag ?? new CharmBagState();
+            CharmBag.added ??= new List<CharmBagAddition>();
             if (state != null)
             {
                 _learned.AddRange((state.learned ?? new List<LearnedPractice>()).Where(l => l != null && !string.IsNullOrEmpty(l.practiceId)));

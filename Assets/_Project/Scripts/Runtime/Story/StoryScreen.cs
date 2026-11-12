@@ -92,6 +92,9 @@ namespace IAmAsIAm.Runtime.Story
             _book.Blocked = () => _anchorOpen || (_action != null && _action.activeSelf) || IAmAsIAm.Runtime.Practices.RitualScreen.IsOpen;
             // Rituals (owner: they feel like rituals, not games), at the altar or when the story calls for one.
             _ritual = gameObject.AddComponent<IAmAsIAm.Runtime.Practices.RitualScreen>();
+            // The charm bag in her pocket (owner: hold it to ground; alters react to it): shows while she's drifting.
+            var charmBag = gameObject.AddComponent<IAmAsIAm.Runtime.Practices.CharmBagButton>();
+            charmBag.Blocked = () => _anchorOpen || (_action != null && _action.activeSelf) || ChapterTreeScreen.IsOpen || MapScreen.IsOpen;
             // Not while replaying a chapter from before she had it (the Prologue and the Prelude).
             _book.Available = () => !runner.IsPlaying
                 || (GameServices.Chapter(runner.ChapterId)?.number ?? int.MaxValue) > (GameServices.Chapter("prelude-wicca")?.number ?? -1);
@@ -527,11 +530,12 @@ namespace IAmAsIAm.Runtime.Story
             string arg = parts.Length > 1 ? parts[1] : "";
 
             // The craft's rituals (owner: small steps that feel like rituals): # ritual: candle, # ritual: grounding-centering,
-            // and # ritual: tarot on its own (one card). A spread (# ritual: tarot three-card) is read below.
+            // runes, charm-bag, cleansing [hard], circle-casting, and # ritual: tarot on its own (one card). A spread (# ritual: tarot three-card) is read below.
             if (IAmAsIAm.Core.Practices.RitualSession.IsSupported(kind) && (kind != "tarot" || arg.Length == 0))
             {
                 string who = GameServices.Roster?.FrontingId ?? "maya";
-                _ritual.Run(kind, who, r => runner.CompleteAction(r?.Vars ?? new Dictionary<string, string>()));
+                // # ritual: cleansing hard = the moment stirs something up (after the breakup).
+                _ritual.Run(kind, who, r => runner.CompleteAction(r?.Vars ?? new Dictionary<string, string>()), variant: arg);
                 return;
             }
 

@@ -87,6 +87,10 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 - **Wait (say nothing)**
     - The candles. Everyone's faces, gold.
 
+Selene presses a little cloth bag into your hand. Lavender, a smooth grey stone, three tight knots. She made it in August, just in case.
+
+📱 **Text from Tanya:** Thursdays again, if you want them. This month: runes. I have a spare bag. Bring nothing but yourself.
+
 ## Sundays
 
 **Explore** (glowing things; the player picks):

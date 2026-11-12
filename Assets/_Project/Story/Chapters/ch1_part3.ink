@@ -104,6 +104,12 @@ Tanya: Names, if you want to. Anyone you miss. # vo: ch1-christianity_tanya_0026
 * [Wait (say nothing)]
     The candles. Everyone's faces, gold. # look: samhain-faces
 -
+// The charm bag and runes (owner: the craft is an active part of the game). Claude's addition: no new voiced lines.
+Selene presses a little cloth bag into your hand. Lavender, a smooth grey stone, three tight knots. She made it in August, just in case. # look: selene-charm-bag
+~ gift_charm_bag("selene", "Lavender", "Smoky quartz", "Come back")
+~ learn_practice("charm-bag", "selene")
+~ text_from("tanya", "Thursdays again, if you want them. This month: runes. I have a spare bag. Bring nothing but yourself.")
+~ learn_practice("runes", "tanya")
 -> sundays
 
 = sundays

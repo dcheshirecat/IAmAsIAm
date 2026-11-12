@@ -110,6 +110,17 @@ namespace IAmAsIAm.Tests
             foreach (var m in members)
                 if (!craft.wiccanMemberIds.Contains(m) && m != "theresa" && m != "holden")
                     Assert.That(craft.refusals.Exists(r => r.memberId == m), Is.True, $"'{m}' doesn't practise Wicca: give them a line for the closed Book");
+
+            var runes = Load<RuneData>("runes.json").runes.ConvertAll(r => r.id);
+            var herbs = Load<HerbData>("herbs.json").herbs.ConvertAll(h => h.id);
+            var stones = Load<CrystalData>("crystals.json").crystals.ConvertAll(c => c.id);
+            foreach (var id in craft.hardRuneIds) Assert.That(runes, Has.Member(id), $"hard rune '{id}'");
+            foreach (var id in craft.charmHerbIds) Assert.That(herbs, Has.Member(id), $"charm herb '{id}'");
+            foreach (var id in craft.charmStoneIds) Assert.That(stones, Has.Member(id), $"charm stone '{id}'");
+            foreach (var id in System.Linq.Enumerable.Concat(craft.charmRemoverIds, craft.charmAdderIds)) Assert.That(members.Contains(id), Is.True, id);
+            Assert.That(craft.charmOwnThings.Count, Is.GreaterThan(0));
+            Assert.That(craft.charmAdditions.Count, Is.GreaterThan(0));
+            foreach (var id in RitualSession.Supported) Assert.That(craft.practices.Exists(p => p.id == id), Is.True, $"ritual '{id}' has no practice in craft.json");
         }
     }
 }

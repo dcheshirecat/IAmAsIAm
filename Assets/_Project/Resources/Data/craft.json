@@ -124,6 +124,13 @@
     { "id": "silver", "name": "Silver", "meaning": "for the moon, and remembering" }
   ],
   "hardCardIds": ["major-13-death", "major-16-tower", "major-15-devil", "major-18-moon"],
+  "hardRuneIds": ["hagalaz", "naudiz", "isa"],
+  "charmHerbIds": ["lavender", "rosemary", "chamomile", "mugwort", "calendula", "rowan"],
+  "charmStoneIds": ["hematite", "smoky-quartz", "clear-quartz", "amethyst", "rose-quartz", "moonstone"],
+  "charmOwnThings": ["a thread from your sleeve", "a button from your old coat", "a strand of your hair", "a ticket stub from your pocket"],
+  "charmAdditions": ["a tiny silver bell", "a dried violet", "a glass bead, blue", "a folded fortune from a cookie"],
+  "charmRemoverIds": ["jacob"],
+  "charmAdderIds": ["izzy"],
   "refusals": [
     { "memberId": "jacob", "line": "Not touching that." },
     { "memberId": "axel", "line": "Maya's thing. Pass." },

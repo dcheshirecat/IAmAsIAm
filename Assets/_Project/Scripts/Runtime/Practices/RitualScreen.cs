@@ -34,7 +34,8 @@ namespace IAmAsIAm.Runtime.Practices
         Font _font;
         GameObject _root, _breath;
         Text _title, _phase, _body;
-        RectTransform _actions;
+        RectTransform _actions, _tokens;
+        Font _runic;
         Image _holdFill;
         RitualSession _session;
         Action<RitualResult> _done;
@@ -71,14 +72,22 @@ namespace IAmAsIAm.Runtime.Practices
             _phase.text = "";
             Clear(_actions);
             _breath.SetActive(false);
-            var known = RitualSession.Supported.Where(id => book != null && book.HasLearned(id)).ToList();
+            var known = RitualSession.AtTheAltar.Where(id => book != null && book.HasLearned(id)).ToList();
             // Grounding is always there: it's the first thing Tanya teaches, and it's never wrong to start with it.
             if (!known.Contains("grounding-centering")) known.Insert(0, "grounding-centering");
+            // Owner: casting a circle is its own ritual AND an optional opening around any other one.
+            bool circle = book != null && book.HasLearned("circle-casting");
             _body.text = "What would you like to do?";
+            // The charm bag in the drawer (someone took it out of her pocket: never said who).
+            if (book != null && book.CharmBag.has && !book.CharmBag.carried)
+            {
+                _body.text = "Your charm bag is in the drawer, under a folded cloth.\n\nWhat would you like to do?";
+                Button(_actions, "Take the charm bag", () => { book.TakeCharmBag(); OpenWheel(closed); }, ButtonColour);
+            }
             foreach (var id in known)
             {
                 string practice = id;
-                Button(_actions, book?.Practice(id)?.name ?? id, () => Run(practice, front, _ => closed?.Invoke()), ButtonColour);
+                Button(_actions, book?.Practice(id)?.name ?? id, () => Run(practice, front, _ => closed?.Invoke(), offerCircle: circle), ButtonColour);
             }
             Button(_actions, "Not today", () => { Hide(); closed?.Invoke(); }, Quiet);
         }
@@ -101,11 +110,11 @@ namespace IAmAsIAm.Runtime.Practices
         // ── A ritual ─────────────────────────────────────────────────────────────
 
         /// <summary>Runs one ritual. <paramref name="done"/> gets the result (null if she stopped: "Not today").</summary>
-        public void Run(string practiceId, string memberId, Action<RitualResult> done)
+        public void Run(string practiceId, string memberId, Action<RitualResult> done, string variant = "", bool offerCircle = false)
         {
             if (!RitualSession.IsSupported(practiceId)) { done?.Invoke(null); return; }
             _session = new RitualSession(practiceId, memberId, _craft, GameServices.Practices, Environment.TickCount,
-                GameServices.Comfort?.allowTarotReversals ?? false);
+                GameServices.Comfort?.allowTarotReversals ?? false, offerCircle, variant);
             _done = done;
             Show();
             _title.text = _session.Title;
@@ -129,6 +138,7 @@ namespace IAmAsIAm.Runtime.Practices
                 _ => "Close",
             };
             _body.text = step.Text;
+            ShowTokens(step);
 
             // Owner: practice can sometimes be hard. A card that stirs something up starts a gentle depersonalization.
             if (step.Phase == RitualPhase.Moment && _session.Result != null && _session.Result.StirredUp && _depersonalizationWas < 0f)
@@ -165,6 +175,36 @@ namespace IAmAsIAm.Runtime.Practices
                     break;
             }
             Button(_actions, "Not today", LeaveEarly, Quiet, 90, 34);
+        }
+
+        /// <summary>
+        /// Runes on the cloth (owner: each with its meaning listed above it): a row of columns, meaning on top, the rune, its
+        /// name. The text moves down under them.
+        /// </summary>
+        void ShowTokens(RitualStep step)
+        {
+            Clear(_tokens);
+            bool any = step.Tokens != null && step.Tokens.Count > 0;
+            _tokens.gameObject.SetActive(any);
+            Place(_body.rectTransform, new Vector2(0.08f, any ? 0.49f : 0.50f), new Vector2(0.92f, any ? 0.58f : 0.82f));
+            _body.fontSize = any ? 36 : 44;
+            if (!any) return;
+            foreach (var t in step.Tokens)
+            {
+                var col = new GameObject("Rune", typeof(RectTransform), typeof(Image), typeof(LayoutElement));
+                col.transform.SetParent(_tokens, false);
+                col.GetComponent<Image>().color = new Color(0.24f, 0.19f, 0.28f, 1f);
+                col.GetComponent<LayoutElement>().preferredWidth = 240;
+                var caption = MakeText(col.transform, t.Caption, step.Tokens.Count > 4 ? 24 : 28, FontStyle.Italic, Faded, TextAnchor.LowerCenter);
+                Place(caption.rectTransform, new Vector2(0.04f, 0.62f), new Vector2(0.96f, 0.98f));
+                var glyph = MakeText(col.transform, t.Glyph, 110, FontStyle.Normal, Warm, TextAnchor.MiddleCenter);
+                if (_runic != null) glyph.font = _runic;
+                glyph.horizontalOverflow = HorizontalWrapMode.Overflow;
+                glyph.verticalOverflow = VerticalWrapMode.Overflow;
+                Place(glyph.rectTransform, new Vector2(0f, 0.22f), new Vector2(1f, 0.62f));
+                var name = MakeText(col.transform, t.Name, 32, FontStyle.Bold, Ink, TextAnchor.MiddleCenter);
+                Place(name.rectTransform, new Vector2(0f, 0.03f), new Vector2(1f, 0.20f));
+            }
         }
 
         void Update()
@@ -220,6 +260,8 @@ namespace IAmAsIAm.Runtime.Practices
             var book = GameServices.Book;
             if (book != null)
             {
+                if (r.CharmBag != null) book.MakeCharmBag(r.CharmBag.herb, r.CharmBag.stone, r.CharmBag.own, r.CharmBag.intent, GameServices.InGameDay);
+                if (r.InCircle) book.Learn("circle-casting", "", GameServices.InGameDay, GameServices.ChapterRuns?.CurrentChapterId ?? "");
                 book.Learn(r.PracticeId, "", GameServices.InGameDay, GameServices.ChapterRuns?.CurrentChapterId ?? "");
                 if (book.Has && !string.IsNullOrWhiteSpace(r.Text))
                     book.Write(r.Tab, r.MemberId, r.Title, r.Text, GameServices.InGameDay, GameServices.ChapterRuns?.CurrentChapterId ?? "", byPlayer: true);
@@ -279,6 +321,21 @@ namespace IAmAsIAm.Runtime.Practices
             _body = MakeText(cloth.transform, "", 44, FontStyle.Normal, Ink, TextAnchor.MiddleCenter);
             Place(_body.rectTransform, new Vector2(0.08f, 0.50f), new Vector2(0.92f, 0.82f));
             _body.verticalOverflow = VerticalWrapMode.Overflow;
+
+            // The runes' row (only while runes are on the cloth).
+            var tk = new GameObject("Tokens", typeof(RectTransform));
+            tk.transform.SetParent(cloth.transform, false);
+            _tokens = tk.GetComponent<RectTransform>();
+            Place(_tokens, new Vector2(0.04f, 0.59f), new Vector2(0.96f, 0.84f));
+            var th = tk.AddComponent<HorizontalLayoutGroup>();
+            th.spacing = 12;
+            th.childAlignment = TextAnchor.MiddleCenter;
+            th.childControlWidth = true; th.childForceExpandWidth = false;
+            th.childControlHeight = true; th.childForceExpandHeight = true;
+            tk.SetActive(false);
+            // The legacy font has no runes: ask the system for one that does (Android has Noto Sans Runic).
+            try { _runic = Font.CreateDynamicFontFromOSFont(new[] { "Noto Sans Runic", "NotoSansRunic-Regular", "Segoe UI Historic", "Segoe UI Symbol" }, 110); }
+            catch { _runic = null; }
 
             var go = new GameObject("Actions", typeof(RectTransform));
             go.transform.SetParent(cloth.transform, false);

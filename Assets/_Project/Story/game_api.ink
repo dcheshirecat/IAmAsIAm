@@ -35,6 +35,9 @@
 //  learn_practice(<craft.json id>, <teacher people id or "">) writes a practice's steps in it; practised(<id>) asks.
 //  bos_entry(<member>, <Practices|Readings|Wheel|Dreams|Notes>, <title>, <text>) writes in it, in that member's hand
 //  (lost time: never pointed out). Only Maya and Izzy practise Wicca (craft.json); for anyone else the Book stays shut.
+//  gift_charm_bag(<giver>, <herb>, <stone>, <intent>) puts a charm bag someone made her in her pocket (she can hold it to
+//  ground while she's drifting; alters react to it). Practice moments: # ritual: runes / charm-bag / circle-casting /
+//  cleansing (or "cleansing hard": the moment stirs something up).
 //
 //  EXPLORING (owner: little narration). A place is a hub of sticky choices the 3D scene turns into
 //  glowing things to look at, use or talk to:  + [Look: The stone]  + [Use: The phone]  + [Talk: Mira]
@@ -77,6 +80,7 @@ EXTERNAL gain_book_of_shadows(giver)
 EXTERNAL learn_practice(practice, teacher)
 EXTERNAL bos_entry(member, tab, title, text)
 EXTERNAL practised(practice)
+EXTERNAL gift_charm_bag(giver, herb, stone, intent)
 
 === function set_experience(kind, amount) ===
 ~ return
@@ -159,6 +163,10 @@ EXTERNAL practised(practice)
 
 // The story writes in the Book, in someone's hand. tab: Practices, Readings, Wheel, Dreams or Notes.
 === function bos_entry(member, tab, title, text) ===
+~ return
+
+// Someone gives her a charm bag (herb and stone as words, e.g. "Lavender", "Smoky quartz"). It goes in her pocket.
+=== function gift_charm_bag(giver, herb, stone, intent) ===
 ~ return
 
 // Has she ever learned this practice?

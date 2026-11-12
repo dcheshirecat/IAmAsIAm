@@ -176,6 +176,12 @@ static class InkCheck
         story.BindExternalFunctionGeneral("co_conscious", a => { Check(_members.Contains(S(a[0])), $"co_conscious: unknown member '{a[0]}'"); return null; });
         // The Book of Shadows: known practices (craft.json), members, tabs.
         story.BindExternalFunctionGeneral("gain_book_of_shadows", a => { Contact(a[0], "gain_book_of_shadows"); return null; });
+        story.BindExternalFunctionGeneral("gift_charm_bag", a =>
+        {
+            Contact(a[0], "gift_charm_bag");
+            Check(S(a[1]).Trim().Length > 0 && S(a[2]).Trim().Length > 0, "gift_charm_bag: herb and stone");
+            return null;
+        });
         story.BindExternalFunctionGeneral("learn_practice", a =>
         {
             Check(_craft.Contains(S(a[0])), $"learn_practice: unknown practice '{a[0]}' (craft.json)");
@@ -212,7 +218,9 @@ static class InkCheck
                 var parts = value.Split(' ', StringSplitOptions.RemoveEmptyEntries);
                 if (parts.Length == 0) { Fail("empty ritual"); break; }
                 if (parts[0] == "tarot" && parts.Length >= 2 && !_spreads.Contains(parts[1])) Fail("unknown tarot spread");
-                else if (parts[0] == "tarot" || parts[0] == "candle" || parts[0] == "grounding-centering") { }
+                else if (parts[0] == "tarot" || parts[0] == "candle" || parts[0] == "grounding-centering" || parts[0] == "runes"
+                         || parts[0] == "charm-bag" || parts[0] == "circle-casting") { }
+                else if (parts[0] == "cleansing") { if (parts.Length >= 2 && parts[1] != "hard") Fail("cleansing takes only 'hard'"); }
                 else if (parts[0] == "craft" && (parts.Length < 2 || !_charms.Contains(parts[1]))) Fail("unknown charm");
                 else if (parts[0] != "tarot" && parts[0] != "craft" && parts[0] != "rune" && parts[0] != "sachet") Fail("unknown ritual");
                 break;

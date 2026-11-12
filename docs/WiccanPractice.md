@@ -151,6 +151,28 @@ These are proposals for the writing tools. Claude adds them when building.
    craft.json `hardCardIds`) can sometimes start a gentle depersonalization, eased when the ritual closes. Candle colours:
    craft.json `candleColours`. Tanya teaches candles (and says a windowsill altar is plenty) at Chapter 1's first Thursday.
 3. Runes, the charm bag, cleansing, casting a circle.
+   **Owner's answers:** runes: the player chooses **one rune, three (what was, what is, what may come), or a cast on the
+   cloth**, with **each rune's meaning listed above it**. The charm bag: **carried and held to ground, and alters react to it**.
+   Cleansing: **when she moves into a new home, and after the breakup**. Casting a circle: **an optional opening before any
+   ritual, AND its own ritual**.
+   **BUILT:** `RitualSession` runes (Elder Futhark from runes.json; a row of runes on the cloth, meaning above each; `hardRuneIds`
+   hail, need, ice can sometimes stir something up; vars `ritual_runes`, `rune_pulled`), charm-bag (a herb, a stone, something of
+   hers, the intention folded in, three knots: craft.json `charmHerbIds` / `charmStoneIds` / `charmOwnThings`), cleansing
+   (window, rosemary and bay / salt water / the bell, room by room, "what do you want it to hold now"; `# ritual: cleansing hard`
+   stirs something up; vars `ritual_cleansing`, `ritual_holds`; NOT on the altar wheel, story moments only), circle-casting (walk
+   the edge, the four quarters, sit inside, open it again; and "Cast a circle first?" after the first breath of any other altar
+   ritual once she's learned it, except grounding). **The charm bag** (`BookOfShadows.CharmBag`, saved): `Runtime/Practices/
+   CharmBagButton.cs`, a pouch on the left edge shown only while she's drifting (presence < 0.85) and carrying it, for Maya or
+   Izzy; hold it ~2.5 s to ease the dissociation a little; it comes apart after 6 holds (make another at the altar). **Alters
+   react** (craft.json `charmRemoverIds` jacob, `charmAdderIds` izzy, `charmAdditions`): when Jacob comes forward he sometimes
+   takes it out of her pocket and leaves it in the altar's drawer ("Your charm bag is in the drawer, under a folded cloth"; take
+   it back at the altar); when Izzy comes forward she sometimes adds something small (a tiny silver bell...), found the next
+   time Maya holds it: "There's something in it you didn't put there". Never says who. Ink: `gift_charm_bag(giver, herb, stone,
+   intent)`. **Story (Claude's additions, no new voiced lines):** Chapter 1 Part 3, Samhain: Selene gives her a charm bag
+   (lavender, smoky quartz, "Come back"); Tanya texts that Thursdays are runes this month. Chapter 2 Part 4, after the breakup:
+   Tanya texts how to cleanse; "Use: The window" = `# ritual: cleansing hard` (the windowsill where the Friday candles stood).
+   Chapter 5 Part 1, Seattle: Tanya texts "cleanse it before the boxes"; "Use: The doorway" = `# ritual: cleansing`. Chicago's
+   move-in isn't played (Chapter 2 starts three years in), so there's no Chicago cleansing.
 4. The other divination practices, the ancestor altar, offerings, sigils, the dream journal.
 5. The Wheel of the Year and the moons in the calendar; Tanya's sabbat texts.
 6. Alter responses and lost-time traces; hard moments.

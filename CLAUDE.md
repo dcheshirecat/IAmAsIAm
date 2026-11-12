@@ -454,6 +454,13 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   tests `RitualSessionTests`), `Runtime/Practices/RitualScreen.cs` (sort 45; never timed; "Not today"), `Runtime/World/AltarSpot.cs`
   (places.json `altar: true` on Maya's 4 homes; usable while exploring; no glow). Ink `# ritual: tarot` (alone = one card) / `candle` /
   `grounding-centering`. Tanya teaches candles at Ch 1's first Thursday (`ch1-christianity_tanya_0034`).
+  **Step 3 BUILT (owner's answers):** **runes** (the player picks one, three: what was / is / may come, or a cast on the cloth;
+  each rune's meaning shown ABOVE it), **the charm bag** (carried; hold it to ground while drifting: `CharmBagButton`, left edge,
+  Maya/Izzy only; wears out after 6 holds; **alters react**: Jacob sometimes puts it in the altar's drawer, Izzy sometimes adds
+  a small thing, never pointed out), **cleansing** (story moments only: moving into a new home = Seattle, Ch 5 Part 1; after the
+  breakup = Ch 2 Part 4, `# ritual: cleansing hard`), **casting a circle** (its own ritual AND "Cast a circle first?" before any
+  altar ritual once learned). Selene gives a charm bag at Ch 1 Part 3's Samhain (`gift_charm_bag`); Tanya texts runes and
+  cleansing (no new voiced lines). Details: docs/WiccanPractice.md §9.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

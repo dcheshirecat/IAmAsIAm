@@ -294,6 +294,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `selene-saving`: Selene, cross-legged on a chair, saving the one beside her with her scarf.
 - `scarf-moved`: Selene's scarf, on your old chair. She moves it.
 - `samhain-faces`: The candles. Everyone's faces, gold.
+- `selene-charm-bag`: Selene presses a little cloth bag into your hand. Lavender, a smooth grey stone, three tight knots. She made it in August, just in case.
 
 ### The park: the Yule circle (`park_yule_circle`)
 

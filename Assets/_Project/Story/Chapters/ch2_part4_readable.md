@@ -56,6 +56,8 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 
 📱 **Text from Christie:** Heard about you and Adeena. I'm so sorry. Snack drawer is yours all week. No questions. -C
 
+📱 **Text from Tanya:** When you're ready, and only then: open a window, rosemary or salt or the bell, room by room. Say what you want the place to hold now. It's still yours.
+
 **Explore** (glowing things; the player picks):
 
 - **Look: The calendar**
@@ -64,6 +66,8 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
     - "Kabbalat Shabbat with drums! Everyone welcome. Bring your voice." A flyer someone shared.
 - **Look: Mira's stone**
     - On the dresser. The white line.
+- **Use: The window (cleanse the apartment)**
+    - The windowsill where the Friday candles stood. You open the window anyway.
 - **Use: Your phone**
 - **Use: Your keys (go)**
 

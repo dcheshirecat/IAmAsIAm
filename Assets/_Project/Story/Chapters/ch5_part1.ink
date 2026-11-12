@@ -24,6 +24,9 @@
 ~ gain_app("systemlog")
 ~ text_from("tanya", "Seattle!! Further away than ever. You'd better text me twice as much.")
 ~ text_from("chaplain_amal", "Thinking of you on moving day. The rain is supposed to be lovely, once you stop noticing it.")
+// Owner: cleansing when she moves into a new home. Claude's addition: no new voiced lines.
+~ text_from("tanya", "Cleanse it before the boxes. Window open, room by room. Say what you want it to hold. A fresh start deserves a clean one.")
+~ learn_practice("cleansing", "tanya")
 -> move_in
 
 = move_in
@@ -39,6 +42,9 @@
     -> boxes
 + {boxes < 4} [Look: The windowsill]
     You put Mira's stone there first. Then the little brass prayer wheel. Then the khata, folded. # look: sill-unpacked
+    -> boxes
+* [Use: The doorway (cleanse the new place)]
+    Wet air and cedar through the window. Nothing in here has been yours yet. # ritual: cleansing
     -> boxes
 * {boxes >= 2} [Use: The boxes (unpack, this time)]
     ~ record_choice("ch5.p1.unpack", "unpacked", "In Seattle, you unpacked every box in the first week. In Chicago they stayed taped for three years.")

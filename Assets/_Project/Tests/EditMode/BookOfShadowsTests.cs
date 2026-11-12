@@ -67,5 +67,49 @@ namespace IAmAsIAm.Tests
             empty.Restore(null);
             Assert.That(empty.Has, Is.False);
         }
+    
+        [Test]
+        public void CharmBag_WearsOut_AndAltersReactInLostTime()
+        {
+            var data = new CraftData
+            {
+                wiccanMemberIds = new List<string> { "maya", "izzy" },
+                charmAdditions = new List<string> { "a tiny silver bell" },
+                charmRemoverIds = new List<string> { "jacob" },
+                charmAdderIds = new List<string> { "izzy" },
+            };
+            var book = new BookOfShadows(data);
+            book.MakeCharmBag("Lavender", "Hematite", "a thread", "steady", 3);
+            Assert.That(book.CanHoldCharmBag("maya"), Is.True);
+            Assert.That(book.CanHoldCharmBag("jacob"), Is.False, "only the ones who practise hold it");
+
+            // Izzy adds something; Maya finds it the next time she holds it (never told who).
+            Assert.That(book.OnFrontChanged("izzy", 0.1, 0), Is.True);
+            var (found, apart) = book.HoldCharmBag();
+            Assert.That(found, Is.EqualTo(new[] { "a tiny silver bell" }));
+            Assert.That(apart, Is.False);
+            Assert.That(book.HoldCharmBag().found, Is.Empty, "found once");
+
+            // Jacob takes it out of her pocket; she takes it back from the drawer.
+            Assert.That(book.OnFrontChanged("axel", 0.0, 0), Is.False, "others leave it alone");
+            Assert.That(book.OnFrontChanged("jacob", 0.1, 0), Is.True);
+            Assert.That(book.CharmBag.carried, Is.False);
+            Assert.That(book.CanHoldCharmBag("maya"), Is.False);
+            book.TakeCharmBag();
+            Assert.That(book.CanHoldCharmBag("maya"), Is.True);
+
+            // It wears out: the knots come loose.
+            bool cameApart = false;
+            for (int i = 0; i < BookOfShadows.CharmBagHolds && !cameApart; i++) cameApart = book.HoldCharmBag().cameApart;
+            Assert.That(cameApart, Is.True);
+            Assert.That(book.CharmBag.has, Is.False);
+
+            // Saved and restored.
+            book.MakeCharmBag("Rosemary", "Moonstone", "a button", "", 9);
+            var copy = new BookOfShadows(data);
+            copy.Restore(book.Export());
+            Assert.That(copy.CharmBag.herb, Is.EqualTo("Rosemary"));
+            Assert.That(copy.CanHoldCharmBag("izzy"), Is.True);
+        }
     }
 }

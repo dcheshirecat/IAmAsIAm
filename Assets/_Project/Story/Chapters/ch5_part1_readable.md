@@ -15,6 +15,8 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Chaplain Amal:** Thinking of you on moving day. The rain is supposed to be lovely, once you stop noticing it.
 
+📱 **Text from Tanya:** Cleanse it before the boxes. Window open, room by room. Say what you want it to hold. A fresh start deserves a clean one.
+
 ## Move in
 
 > **Objective:** Unpack
@@ -27,6 +29,8 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
     - Rain on the glass, soft and endless. Somewhere behind it, a mountain you've been promised but haven't seen.
 - **Look: The windowsill**
     - You put Mira's stone there first. Then the little brass prayer wheel. Then the khata, folded.
+- **Use: The doorway (cleanse the new place)**
+    - Wet air and cedar through the window. Nothing in here has been yours yet.
 - **Use: The boxes (unpack, this time)**
     - Every box, open. Books on shelves. It takes a week. In Chicago it took never.
 

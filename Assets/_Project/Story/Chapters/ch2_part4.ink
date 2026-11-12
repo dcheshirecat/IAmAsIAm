@@ -67,6 +67,9 @@ Adeena: Get help, Maya. Real help. Promise me that one thing. # vo: ch2-judaism_
 # objective: Find somewhere to be on Friday night
 ~ text_from("tanya", "Maya. I'm so sorry. Call me, or don't, but I'm here. Every Thursday, every day.")
 ~ text_from("christie", "Heard about you and Adeena. I'm so sorry. Snack drawer is yours all week. No questions. -C")
+// Owner: cleansing after the breakup (it can be hard). Claude's addition: no new voiced lines.
+~ text_from("tanya", "When you're ready, and only then: open a window, rosemary or salt or the bell, room by room. Say what you want the place to hold now. It's still yours.")
+~ learn_practice("cleansing", "tanya")
 - (week)
 + {week < 4} [Look: The calendar]
     Friday. Friday is a hole in the week now. # look: friday-hole
@@ -76,6 +79,9 @@ Adeena: Get help, Maya. Real help. Promise me that one thing. # vo: ch2-judaism_
     -> week
 + {week < 4} [Look: Mira's stone]
     On the dresser. The white line. # look: stone-alone
+    -> week
+* [Use: The window (cleanse the apartment)]
+    The windowsill where the Friday candles stood. You open the window anyway. # ritual: cleansing hard
     -> week
 + [Use: Your phone] -> phone
 * {week >= 2} [Use: Your keys (go)]
