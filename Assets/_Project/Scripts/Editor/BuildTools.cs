@@ -109,7 +109,7 @@ namespace IAmAsIAm.EditorTools
         /// Uses Art/UI/app_icon.png as the default icon for every platform. It's a temporary "TEST" icon; the artist
         /// replaces it by overwriting the file (same name, 1024 × 1024, keep the important part in the middle ~70%).
         /// </summary>
-        static void SetAppIcon() => ApplyAppIcon();
+        static void SetAppIcon() => ApplyAppIcon(fixImport: true, stage: "configure");
 
         /// <summary>Where the last icon report goes (the CI workflow puts it on the run's Summary page).</summary>
         const string IconReportPath = "build/icon_report.txt";
@@ -119,15 +119,19 @@ namespace IAmAsIAm.EditorTools
         /// configured AND again right before the player is built (<see cref="AppIconBeforeBuild"/>), the way Seven Witches'
         /// AppIconSetter does, so nothing in between can undo it.
         /// </summary>
-        public static string ApplyAppIcon()
+        public static string ApplyAppIcon(bool fixImport, string stage)
         {
             const string iconPath = "Assets/_Project/Art/UI/app_icon.png";
             var report = new System.Text.StringBuilder();
+            report.AppendLine($"[{stage}]");
             try
             {
                 if (!File.Exists(iconPath)) { report.AppendLine("No app icon at " + iconPath); return Report(report); }
-                AssetDatabase.ImportAsset(iconPath, ImportAssetOptions.ForceUpdate);
-                if (AssetImporter.GetAtPath(iconPath) is TextureImporter importer &&
+                // Never reimport while a build is running (it can unload the texture): only when configuring.
+                if (fixImport) AssetDatabase.ImportAsset(iconPath, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ForceSynchronousImport);
+                var anyImporter = AssetImporter.GetAtPath(iconPath);
+                report.AppendLine($"guid {AssetDatabase.AssetPathToGUID(iconPath)}, importer {(anyImporter == null ? "none" : anyImporter.GetType().Name)}, main asset {AssetDatabase.GetMainAssetTypeAtPath(iconPath)?.Name ?? "none"}");
+                if (fixImport && anyImporter is TextureImporter importer &&
                     (importer.textureType != TextureImporterType.Default || importer.textureCompression != TextureImporterCompression.Uncompressed
                      || importer.mipmapEnabled || importer.npotScale != TextureImporterNPOTScale.None || !importer.isReadable))
                 {
@@ -139,8 +143,16 @@ namespace IAmAsIAm.EditorTools
                     importer.SaveAndReimport();
                     report.AppendLine("Icon import settings fixed (uncompressed, readable, no mipmaps).");
                 }
-                var icon = AssetDatabase.LoadAssetAtPath<Texture2D>(iconPath);
-                if (icon == null) { report.AppendLine("Couldn't load the app icon texture."); return Report(report); }
+                var icon = AssetDatabase.LoadAssetAtPath<Texture2D>(iconPath)
+                           ?? AssetDatabase.LoadAllAssetsAtPath(iconPath).OfType<Texture2D>().FirstOrDefault();
+                if (icon == null)
+                {
+                    report.AppendLine("Couldn't load the app icon texture. Re-importing and trying once more.");
+                    AssetDatabase.ImportAsset(iconPath, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ForceSynchronousImport);
+                    icon = AssetDatabase.LoadAssetAtPath<Texture2D>(iconPath);
+                    report.AppendLine($"  second try: {(icon != null ? "loaded" : "still nothing")}; main asset {AssetDatabase.GetMainAssetTypeAtPath(iconPath)?.Name ?? "none"}");
+                    if (icon == null) return Report(report);
+                }
                 report.AppendLine($"Icon: {iconPath} ({icon.width} x {icon.height})");
 
                 PlayerSettings.SetIcons(NamedBuildTarget.Unknown, new[] { icon }, IconKind.Any);
@@ -183,7 +195,7 @@ namespace IAmAsIAm.EditorTools
             try
             {
                 Directory.CreateDirectory(Path.GetDirectoryName(IconReportPath));
-                File.WriteAllText(IconReportPath, text);
+                File.AppendAllText(IconReportPath, text + "\n"); // Both stages: configure, then before the build.
             }
             catch (Exception) { }
             return text;
@@ -448,6 +460,7 @@ namespace IAmAsIAm.EditorTools
         static void Build(BuildTarget target, string path, bool exitOnFinish)
         {
             int code = 0;
+            try { if (File.Exists(IconReportPath)) File.Delete(IconReportPath); } catch (Exception) { }
             try
             {
                 var issues = IAmAsIAm.Core.DataValidator.Validate(DataValidationMenu.LoadBundle());
@@ -530,6 +543,6 @@ namespace IAmAsIAm.EditorTools
     public sealed class AppIconBeforeBuild : IPreprocessBuildWithReport
     {
         public int callbackOrder => 0;
-        public void OnPreprocessBuild(BuildReport report) => BuildTools.ApplyAppIcon();
+        public void OnPreprocessBuild(BuildReport report) => BuildTools.ApplyAppIcon(fixImport: false, stage: "before build");
     }
 }
