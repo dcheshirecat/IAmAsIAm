@@ -174,8 +174,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Izzy's signs; the tarot deck glows only while Izzy fronts), Part 3 Tanya (2019, 21, the shop + public Yule circle, ends in a switch to
   Izzy). Guesses for the owner are in each file's header (Champaign-Urbana, Selene she/her, the shop "Hearth & Moon", Izzy as the
   Prelude's alter, the years). Drive: Story Drafts → `01 Prelude - Wicca (title to come)` (17eY31XFZ0v2E3liYuC-ORgtSgCA5ICTx): Docs
-  Part 1 (1ai3eAnNAQ6z9TZJRpVl5Fog1-TDXqZTAyRFWWXSlhkA), Part 2 (1fIkJsKhwIQOccIJ4ga0nWSEYxttD8YlnVlvwRTEbbl0), Part 3
-  (1Djdlk-troTYDrBivsUSY5bSELmlYeHzwsth-de9TLLg). Voice script Sheet "01 Prelude - script list (draft)"
+  Part 1 (1GuxKO437a9k-hE71Aos57_-wv_yVRrWVdSe5M5E1LR4), Part 2 (1LkFoMEOnh-zQrxJE8we-KNAF_kW9cn9-X87jI-W8eLE), Part 3
+  (14OEKB0LC2Nwu_6bwxDN6PNHUGmNBBuGKhXB3wbY2qZc). Voice script Sheet "01 Prelude - script list (draft)"
   (13hCLEyK389yBOGnqVDwA63BBoFms9bjgSgCax_Ztnjc: 46 lines; Maya's adult voice is `maya`). Voice-Over Scripts folder id 15B1SB8Y855lNM5Q3sJp2lIDesOkeLD9w.
 - 2026-11-12: **Tanya stays (owner):** Maya is in touch with Tanya **through the whole game**, mostly by **SMS and email**, meeting up
   **less and less** as time goes by, with a **final meeting at the end of the game**. The game needs **phone, computer and laptop
@@ -527,6 +527,10 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   not met yet (not the host, not unlocked) = "???" in a neutral colour. Rules in `Core/Story/PartMarkerText.cs` (tests).
 - 2026-11-12: **Owner: the parts should be more fleshed out, showing more of each part of Maya's day in every part** (morning,
   getting there, work/school, meals, evening, bed). Being done chapter by chapter, in order, as drafts (owner's Doc edits first).
+  DONE: Prologue (Sunday 1 waking + toast dinner + bedtime; Sunday 2 dry-cereal breakfast + the evening alone; Sunday 3 breakfast
+  for two; Sunday 4 Mom's early note + a ride with Mr. Carter), Prelude (Part 1 lunch alone + the library job, Part 2 a library
+  shift with a Wicca book on hold under her name + night, Part 3 finals week + Mom's Christmas text). Maya's campus job = the
+  library (Claude's guess). NEXT: Chapter 1, then 1.5, 2, 3, 4, 5, 6.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
