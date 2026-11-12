@@ -120,5 +120,30 @@ namespace IAmAsIAm.Tests
             Assert.That(d.Messages.Count, Is.EqualTo(0));
             Assert.That(d.CanEmail, Is.False);
         }
+
+        [Test]
+        public void SystemLog_IsSigned_TrimmedAndSaved()
+        {
+            var d = new Devices();
+            Assert.That(d.HasApp(Devices.SystemLogApp), Is.False);
+            d.GainApp(Devices.SystemLogApp);
+            Assert.That(d.HasApp(Devices.SystemLogApp), Is.True);
+            Assert.That(d.Log("izzy", "   ", 1), Is.Null, "blank notes are ignored");
+            var a = d.Log("izzy", "  bought oat milk  ", 1, "ch4-islam");
+            var b = d.Log("maya", new string('x', Devices.MaxLogLength + 50), 2, "", byPlayer: true);
+            Assert.That(a.text, Is.EqualTo("bought oat milk"));
+            Assert.That(a.memberId, Is.EqualTo("izzy"));
+            Assert.That(b.text.Length, Is.EqualTo(Devices.MaxLogLength));
+            Assert.That(b.byPlayer, Is.True);
+
+            var e = new Devices();
+            e.Restore(d.Export());
+            Assert.That(e.HasApp(Devices.SystemLogApp), Is.True);
+            Assert.That(e.SystemLog.Count, Is.EqualTo(2));
+            var c = e.Log("heather", "drink water", 3);
+            Assert.That(c.id, Is.GreaterThan(b.id), "ids stay unique after loading");
+            var m = e.Send(MessageChannel.Text, "selene", "hi", 3);
+            Assert.That(m.id, Is.GreaterThan(c.id));
+        }
     }
 }

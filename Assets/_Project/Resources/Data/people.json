@@ -388,9 +388,22 @@
       "pronouns": "she/her"
     },
     {
-      "id": "reverend_mori",
-      "name": "Reverend Mori",
-      "role": "The minister at a Jodo Shinshu (Pure Land) Buddhist temple in Chicago (Claude's placeholder name).",
+      "id": "pasang",
+      "name": "Pasang Lhamo Sherpa",
+      "role": "Chapter 3's guide: the temple-stay host (about 55, she/her). Runs her family's guest house behind a monastery in Boudha, Kathmandu; her brother-in-law is a monk there. Practical and motherly; walks the kora around the stupa with Maya at dawn.",
+      "tradition": "buddhism",
+      "description": "",
+      "chapterIds": [
+        "ch3-buddhism"
+      ],
+      "memberLinks": [],
+      "age": "55",
+      "pronouns": "she/her"
+    },
+    {
+      "id": "course_teacher",
+      "name": "Teacher",
+      "role": "The teacher at the 10-day silent Vipassana course at Dharma Shringa (unnamed).",
       "tradition": "buddhism",
       "description": "",
       "chapterIds": [

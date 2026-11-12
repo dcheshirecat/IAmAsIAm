@@ -31,6 +31,8 @@ namespace IAmAsIAm.Core.Story
         /// and the Prelude; from Chapter 1 on, the map on Maya's phone opens instead.
         /// </summary>
         public bool doorToDoor;
+        /// <summary>An app finishing this chapter puts on Maya's phone (owner: Chapter 4 unlocks "systemlog"). Empty = none.</summary>
+        public string unlocksAppId;
         /// <summary>Where and when, e.g. "Iowa City, Iowa; Maya's childhood (the body was born in 1998)".</summary>
         public string setting;
         public string skillFamily;

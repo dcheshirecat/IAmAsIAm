@@ -15,6 +15,14 @@
     {
       "id": "chicago",
       "name": "Chicago"
+    },
+    {
+      "id": "kathmandu",
+      "name": "Kathmandu"
+    },
+    {
+      "id": "lumbini",
+      "name": "Lumbini"
     }
   ],
   "places": [
@@ -371,11 +379,51 @@
       "chapterId": "ch3-buddhism"
     },
     {
-      "id": "buddhist_temple_chicago",
-      "name": "The Buddhist temple",
+      "id": "ohare_airport",
+      "name": "O'Hare Airport",
       "city": "chicago",
-      "x": 0.42,
-      "y": 0.08,
+      "x": 0.08,
+      "y": 0.4,
+      "chapterId": "ch3-buddhism"
+    },
+    {
+      "id": "boudha_guest_house",
+      "name": "Pasang's guest house",
+      "city": "kathmandu",
+      "x": 0.62,
+      "y": 0.52,
+      "chapterId": "ch3-buddhism"
+    },
+    {
+      "id": "boudha_stupa",
+      "name": "Boudhanath Stupa",
+      "city": "kathmandu",
+      "x": 0.6,
+      "y": 0.46,
+      "chapterId": "ch3-buddhism"
+    },
+    {
+      "id": "boudha_monastery",
+      "name": "The monastery behind the guest house",
+      "city": "kathmandu",
+      "x": 0.64,
+      "y": 0.56,
+      "chapterId": "ch3-buddhism"
+    },
+    {
+      "id": "dharma_shringa_hall",
+      "name": "Dharma Shringa: the meditation hall",
+      "city": "kathmandu",
+      "x": 0.45,
+      "y": 0.9,
+      "chapterId": "ch3-buddhism"
+    },
+    {
+      "id": "lumbini_sacred_garden",
+      "name": "Lumbini: the Sacred Garden",
+      "city": "lumbini",
+      "x": 0.5,
+      "y": 0.45,
       "chapterId": "ch3-buddhism"
     },
     {

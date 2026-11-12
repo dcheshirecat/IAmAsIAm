@@ -18,6 +18,8 @@ namespace IAmAsIAm.Runtime.Story
         public string Speaker;
         /// <summary>True for "Name (inside): ..." (an inner voice / co-consciousness).</summary>
         public bool Inner;
+        /// <summary>True for "Name (on video): ...": someone on a video call, so not standing in the place.</summary>
+        public bool Remote;
         public string Text;
         public List<string> Tags = new List<string>();
     }
@@ -243,6 +245,7 @@ namespace IAmAsIAm.Runtime.Story
             {
                 string name = line.Text.Substring(0, colon);
                 if (name.EndsWith(" (inside)")) { line.Inner = true; name = name.Substring(0, name.Length - 9); }
+                else if (name.EndsWith(" (on video)")) { line.Remote = true; name = name.Substring(0, name.Length - 11); }
                 line.Speaker = name;
                 line.Text = line.Text.Substring(colon + 2);
             }
@@ -303,6 +306,20 @@ namespace IAmAsIAm.Runtime.Story
             _story.BindExternalFunctionGeneral("text_to", a => { devices?.Send(IAmAsIAm.Core.Devices.MessageChannel.Text, S(a[0]), S(a[1]), GameServices.InGameDay); return null; });
             _story.BindExternalFunctionGeneral("email_from", a => { devices?.Receive(IAmAsIAm.Core.Devices.MessageChannel.Email, S(a[0]), S(a[2]), GameServices.InGameDay, S(a[1])); return null; });
             _story.BindExternalFunctionGeneral("email_to", a => { devices?.Send(IAmAsIAm.Core.Devices.MessageChannel.Email, S(a[0]), S(a[2]), GameServices.InGameDay, S(a[1])); return null; });
+            _story.BindExternalFunctionGeneral("gain_app", a => { devices?.GainApp(S(a[0])); return null; });
+            _story.BindExternalFunctionGeneral("system_log", a =>
+            {
+                devices?.Log(S(a[0]), S(a[1]), GameServices.InGameDay, _chapterId);
+                return null;
+            });
+            _story.BindExternalFunctionGeneral("co_conscious", a =>
+            {
+                var roster = GameServices.Roster;
+                bool present = a[1] is bool b ? b : Convert.ToInt32(a[1]) != 0;
+                try { roster?.SetCoConscious(S(a[0]), present); }
+                catch (ArgumentException) { Debug.LogWarning($"[IAmAsIAm] co_conscious: unknown member '{S(a[0])}'."); }
+                return null;
+            });
             _story.BindExternalFunctionGeneral("sent_while_away", a =>
             {
                 var channel = S(a[1]).Equals("email", StringComparison.OrdinalIgnoreCase)

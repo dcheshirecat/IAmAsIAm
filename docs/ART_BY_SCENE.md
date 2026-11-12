@@ -52,7 +52,12 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 42 | `effie_house` | Effie's house | chicago | Chapter 2: Judaism (ch2_part4) | Effie, Maya (the body, 27) |
 | 43 | `lakefront_path` | The lakefront path | chicago | Chapter 2: Judaism (ch2_part4) | Rabbi Abe, Maya (the body, 27) |
 | 44 | `therapist_office` | Angie's office | chicago | Chapter 3: Buddhism (ch3_part1) | Angie, Maya (the body, 27) |
-| 45 | `buddhist_temple_chicago` | The Buddhist temple | chicago | Chapter 3: Buddhism (ch3_part1) | Reverend Mori, Maya (the body, 27) |
+| 45 | `ohare_airport` | O'Hare Airport | chicago | Chapter 3: Buddhism (ch3_part1) | - |
+| 46 | `boudha_guest_house` | Pasang's guest house | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27), Angie |
+| 47 | `boudha_stupa` | Boudhanath Stupa | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27) |
+| 48 | `dharma_shringa_hall` | Dharma Shringa: the meditation hall | kathmandu | Chapter 3: Buddhism (ch3_part3) | Teacher, Maya (the body, 27), Pasang Lhamo |
+| 49 | `boudha_monastery` | The monastery behind the guest house | kathmandu | Chapter 3: Buddhism (ch3_part3) | Pasang Lhamo, Heather (the body, 27) |
+| 50 | `lumbini_sacred_garden` | Lumbini: the Sacred Garden | lumbini | Chapter 3: Buddhism (ch3_part4) | Maya (the body, 27) |
 
 ## 2. People, in the order they first appear
 
@@ -61,7 +66,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | # | Who | Id | Kind | First in | Ages (the body) | Places |
 |---|---|---|---|---|---|---|
 | 1 | Sarah | `mother` | person | Prologue: This Little Light | - | home_kitchen, car, church_sanctuary, church_fellowship_hall, home_maya_room, college_dorm_selene |
-| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27 | home_kitchen, car, church_fellowship_hall, church_first_day_school, church_sanctuary, home_maya_room, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, buddhist_temple_chicago |
+| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27 | home_kitchen, car, church_fellowship_hall, church_first_day_school, church_sanctuary, home_maya_room, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden |
 | 3 | Miss Eloise | `eloise` | person | Prologue: This Little Light | - | church_first_day_school |
 | 4 | Rebecca | `rebecca` | person | Prologue: This Little Light | - | church_first_day_school, church_sanctuary |
 | 5 | Mrs. Hines | `hines` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
@@ -85,8 +90,10 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 23 | Grandma | `grandma` | person | Chapter 2: Judaism | - | adeena_parents_house |
 | 24 | Hannah | `hannah` | person | Chapter 2: Judaism | - | havurah_living_room |
 | 25 | Tigist | `tigist` | person | Chapter 2: Judaism | - | sigd_community_hall |
-| 26 | Angie | `angie` | person | Chapter 3: Buddhism | - | therapist_office |
-| 27 | Reverend Mori | `reverend_mori` | person | Chapter 3: Buddhism | - | buddhist_temple_chicago |
+| 26 | Angie | `angie` | person | Chapter 3: Buddhism | - | therapist_office, boudha_guest_house |
+| 27 | Pasang Lhamo | `pasang` | person | Chapter 3: Buddhism | - | boudha_guest_house, boudha_stupa, dharma_shringa_hall, boudha_monastery |
+| 28 | Teacher | `course_teacher` | person | Chapter 3: Buddhism | - | dharma_shringa_hall |
+| 29 | Heather | `heather` | system member | Chapter 3: Buddhism | 27 | boudha_monastery |
 
 ## 3. Close-ups and props, scene by scene
 
@@ -394,8 +401,10 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `fridge-notes`: Sticky notes. "Buy milk." "CALL TANYA BACK." "you're doing ok." Three different handwritings. All of them yours.
 - `sill-wax-winter`: A ring of old wax in the corner, from a candle you don't remember.
 - `phone-call-angie`: Your phone. Ringing. Tanya's hand on your back, steady.
-- `stone-passport`: On the dresser, by your passport.
-- `empty-suitcase`: Open on the bed. Empty. It looks very brave.
+- `one-way-ticket`: One tab. A photo: prayer flags over white mountains, a monk smiling at the camera. "Kathmandu. One way. Tonight, 11:40 pm."
+- `himalaya-postcard`: The Himalayas, bought years ago at the museum gift shop. You've never been anywhere.
+- `dusty-suitcase`: Under the bed. Dusty. It has never been on a plane.
+- `ticket-bought`: Click. A confirmation number. Your heart, very loud.
 
 ### The Field Museum: Stanley Field Hall (`field_museum_hall`)
 
@@ -504,10 +513,66 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `angie-calendar`: March. Six Thursdays.
 - `angie-waits`: Angie waits. She doesn't hurry you. The clock. Gerald, outside, being overwatered.
 
-### The Buddhist temple (`buddhist_temple_chicago`)
+### O'Hare Airport (`ohare_airport`)
 
-- `shin-altar`: Gold, and quiet. A standing Buddha, small, one hand raised as if to say "it's all right". Incense, thin and straight.
-- `service-book`: "Namu Amida Butsu." In English underneath: "I take refuge in the Buddha of Immeasurable Light."
-- `shin-sangha`: Grandparents, toddlers, a man in a suit, two students in hoodies. Nobody asks why you're here.
-- `nembutsu`: Namu Amida Butsu. Everyone, together. Your voice lost in theirs, which is all right.
+- `departures-board`: "DOHA, then KATHMANDU. ON TIME." Real letters. A real place.
+- `ohare-window`: Planes in the dark, lit up like little cities. Your reflection over them, holding a backpack she packed in ten minutes.
+- `ohare-people`: A family asleep on each other. A man on the phone, crying quietly. Nobody looking at you.
+
+### Pasang's guest house (`boudha_guest_house`)
+
+- `stupa-from-window`: Over the rooftops, the great white dome of the stupa, and the Buddha's eyes looking out, all four ways. Also: a satellite dish, laundry, a dog asleep on a water tank.
+- `tiger-blanket`: A thin mattress. A thick, heavy blanket with tigers on it. It's colder than you thought it would be.
+- `bucket-shower`: A bucket, a heater that takes twenty minutes, and a sign: "PLEASE SAVE WATER. THANK YOU. PASANG."
+- `momos`: A steamer of dumplings, folded by Pasang's daughter faster than you can watch. Chilli sauce that makes your eyes water.
+- `kitchen-altar`: A small shelf above the stove: a photo of a lama, seven little bowls of water in a row, a butter lamp.
+- `vipassana-flyer`: "VIPASSANA. 10 days. Noble silence. Dharma Shringa, Budhanilkantha. Courses run on donation."
+- `angie-plan-thought`: Short sits. Eyes open. Walk when you need to. Ten days isn't short. You sign up anyway.
+- `heather-note`: Your notebook, open on the blanket. In round, careful handwriting that isn't quite yours: "Water first. Then food. Then Angie. -H"
+- `window-watched`: The stupa, the eyes, the dogs. Pasang's daughter hanging out laundry, looking up at your window every few minutes.
+- `tea-flask`: A flask of sweet milky tea outside your door. A note: "DRINK. -PASANG"
+- `full-suitcase`: Full now. Prayer flags for Tanya, a magnet for Christie, a little brass prayer wheel for Angie's office. Something for Gerald.
+- `heather-note-last`: The last page, in that round, careful hand: "Go home gently. -H"
+- `khata`: A white silk scarf, a khata, placed around your neck.
+- `pasang-hug`: She smells of butter lamps and laundry soap. You hold on for a long time.
+
+### Boudhanath Stupa (`boudha_stupa`)
+
+- `prayer-wheels`: A row of brass wheels, worn smooth by a million hands. You spin one. It keeps turning after you've gone.
+- `butter-lamps`: Hundreds of little flames in a glass house, and the smell, rich and warm. A woman fills them one by one.
+- `kora-grandmothers`: Old women in long dresses, beads clicking through their fingers, walking faster than you. One of them pats your arm as she passes.
+- `monks-phone`: Two young monks in maroon, laughing at something on a phone. A third buying momos.
+- `stupa-tourists`: Selfie sticks. A tour group in matching hats. A man in white linen, meditating loudly on the steps.
+- `prayer-wheels-open`: Brass under your palm, warm from the sun and from everyone before you. One, and the next, and the next. You're here for every one of them.
+- `pigeons-lift`: A hundred pigeons lifting all at once, and settling again. Grey wings. Real.
+- `own-feet`: Left, right, on old stone. Clockwise. Your feet, yours.
+
+### Dharma Shringa: the meditation hall (`dharma_shringa_hall`)
+
+- `noble-silence-rules`: "Noble silence: no talking, no gestures, no eye contact, from the first evening to the morning of day ten. You may speak to the teacher when necessary."
+- `course-timetable`: "4:00 am: wake-up bell. 4:30 to 6:30: meditation." It goes on. It goes on for a long time.
+- `shivapuri-hills`: Forest all around, and Kathmandu down in its bowl of haze. Monkeys on the wall, watching.
+- `phone-envelope`: A paper envelope with your name on it. Your phone goes in. The envelope goes in a box.
+- `day-one`: In. Out. Your knees. Your back. In. Out.
+- `day-three`: Dark. And further away than dark. Your hands aren't yours. They're very far down there, in somebody's lap.
+- `day-three-stone`: The white line. Around and around. Your thumb, someone's thumb.
+- `inside-quiet`: Izzy is quiet. Nobody inside is talking. The silence goes all the way down.
+- `kept-silence`: Noble silence. You keep it. You keep it so well you almost aren't there.
+- `just-nod`: You nod. You nod at everything. It's very easy to nod.
+
+### The monastery behind the guest house (`boudha_monastery`)
+
+- `lamp-room`: A narrow room behind the shrine hall, warm with a thousand small flames. Nobody here, this late.
+- `heather-hands`: Steady hands. Not shaking at all. Somebody's been looking after these hands.
+- `heather-lamp`: One more flame. For Mira. For the little girl in the fellowship hall. For the one who sat for ten days and nearly didn't come back.
+- `shrine-hall`: A great golden Buddha, and smaller ones all around, and offerings: water bowls, oranges, a packet of biscuits someone left.
+- `young-monks`: Little monks at the back, chanting, one of them yawning, one of them poking another. A teacher's look, and they're quiet.
+- `five-minutes`: Five minutes. Eyes open. A flame. The stone in your pocket. The chanting, like rain on a roof. You stay. You stay the whole five minutes.
+
+### Lumbini: the Sacred Garden (`lumbini_sacred_garden`)
+
+- `maya-devi-temple`: A plain white building, and inside, under glass, a stone. The place where, they say, he was born. People kneel. You don't know what to do, so you stand very still.
+- `ashoka-pillar`: A stone pillar, older than almost anything, put here by an emperor to say: here. It happened here.
+- `lumbini-pond`: Green water. A bodhi tree hung with so many prayer flags you can hardly see the leaves.
+- `monastic-zone`: Down the long canal: a Thai temple, white and gold; a Burmese one with a golden spire; a Chinese gate; a German one; a Japanese peace pagoda. Everyone came.
 

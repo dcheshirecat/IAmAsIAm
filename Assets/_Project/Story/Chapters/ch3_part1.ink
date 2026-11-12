@@ -10,9 +10,9 @@
 //   - Tanya drives up from Champaign-Urbana: one of their rare visits now. Tanya doesn't leave until Maya calls Angie.
 //   - A tour where Maya loses her place mid-sentence, and Christie takes over without a fuss.
 //   - Angie's office: the first session, and a few weeks later, the words "a dissociative disorder".
-//   - Before she goes: a Sunday service at a Buddhist temple in Chicago (Jodo Shinshu: chanting together, "come as you
-//     are"), where she first hears about temple stays. Where she travels: the owner chooses (Part 2).
-//   - Starting alter and unlock for this chapter: still to set with the owner (Maya for now; nobody unlocked).
+//  Owner: Maya and Izzy share time (co-consciousness) through this chapter; Heather comes out at the Buddhist temple in Nepal,
+//  appears more and more, and is unlocked at the end. The trip is impulsive: straight from the diagnosis to O'Hare. No temple in
+//  Chicago (owner: cut): Maya has romanticized ideas about finding herself in Nepal, and has to cope with the reality.
 // ─────────────────────────────────────────────────────────────────────────────
 
 === ch3_part1 ===
@@ -21,6 +21,8 @@
 # cw: medical-setting
 # cw: religious-content
 ~ explore_tradition("buddhism")
+// Owner: Maya and Izzy share time in this chapter.
+~ co_conscious("izzy", true)
 ~ text_from("tanya", "I'm coming up Saturday. Don't argue. I'm bringing soup.")
 -> door
 
@@ -41,6 +43,7 @@
     -> mess
 * {mess >= 1} [Use: The door]
 -
+Izzy (inside): Soup. She always brings soup. I love her. # vo: ch3-buddhism_izzy-inside_0034
 Tanya: There you are. # vo: ch3-buddhism_tanya_0001
 Tanya: Sit. Soup first. Then we talk. Then you call someone, and I don't leave until you do. # vo: ch3-buddhism_tanya_0002
 * [Talk: Tanya (say you're fine)]
@@ -81,6 +84,7 @@ Tanya: I found someone. A therapist who knows about this. Not about being "a bit
 Christie: ...and SUE, upstairs, is sixty-seven million years old, which Maya taught me, didn't you, Maya? Let's go see her. # vo: ch3-buddhism_christie_0008
 * [Talk: Christie]
 -
+Izzy (inside): Breathe. I've got the dinosaur facts if you need them. Sixty-seven million. # vo: ch3-buddhism_izzy-inside_0035
 Christie: Hey. You stopped. In the middle of a word. I've got the rest of this one. Go sit in the office. Snack drawer. # vo: ch3-buddhism_christie_0009
 * [Talk: Christie (thank her)]
     ~ record_choice("ch3.p1.christie", "thanks", "When you stopped in the middle of a tour, Christie took over, and you thanked her.")
@@ -155,65 +159,59 @@ Angie: You don't have to do anything with it today. Just let it be true. # vo: c
 ~ journal("Note", "\"A dissociative disorder.\" Not a box. A map. It isn't my fault.")
 ~ text_to("tanya", "She said it has a name. Sort of. I'm okay. I think I'm okay.")
 ~ text_from("tanya", "I'm so proud of you. You did the hardest part.")
--> temple
+-> impulse
 
-= temple
-// A Buddhist temple in Chicago (fictional people): Jodo Shinshu (Shin, Pure Land), a Japanese American tradition. Sunday
-// service in English; everyone chants the nembutsu together; the teaching that you're embraced as you are.
-# place: buddhist_temple_chicago
-# shot: wide
-# objective: Find a seat at the Sunday service
-- (hondo)
-+ {hondo < 4} [Look: The altar]
-    Gold, and quiet. A standing Buddha, small, one hand raised as if to say "it's all right". Incense, thin and straight. # look: shin-altar
-    -> hondo
-+ {hondo < 4} [Look: The service book]
-    "Namu Amida Butsu." In English underneath: "I take refuge in the Buddha of Immeasurable Light." # look: service-book
-    -> hondo
-+ {hondo < 4} [Look: The people]
-    Grandparents, toddlers, a man in a suit, two students in hoodies. Nobody asks why you're here. # look: shin-sangha
-    -> hondo
-* {hondo >= 2} [Wait (chant with them)]
--
-Namu Amida Butsu. Everyone, together. Your voice lost in theirs, which is all right. # look: nembutsu
-~ nudge(-0.2)
-Reverend Mori: Shinran taught that we don't have to fix ourselves first. We're embraced just as we are, the broken parts too. Especially the broken parts. # vo: ch3-buddhism_reverend-mori_0027
--> after_service
-
-= after_service
-# place: buddhist_temple_chicago
-# shot: over-shoulder
-# objective: Stay for tea
-* [Talk: Reverend Mori]
--
-Reverend Mori: First time? Welcome. There's tea, and there's manju, and nobody will make you talk about Buddhism over either. # vo: ch3-buddhism_reverend-mori_0028
-* [Talk: Reverend Mori (ask about going further)]
-    ~ record_choice("ch3.p1.mori", "further", "After the service, you asked Reverend Mori how people go deeper. He told you about temple stays, and to go gently.")
-    Maya: How do people... go further? With this? # vo: ch3-buddhism_maya_0029
-    Reverend Mori: Some go to a temple far away for a while. A temple stay. If you go, go gently. Bring your doctor's advice in your pocket, next to your passport. # vo: ch3-buddhism_reverend-mori_0030
-* [Talk: Reverend Mori (just say thank you)]
-    ~ record_choice("ch3.p1.mori", "thanks", "After the service, you just thanked Reverend Mori. He said the door's open on Sundays.")
-    Maya: Thank you. For having me. # vo: ch3-buddhism_maya_0031
-    Reverend Mori: The door's open every Sunday. Some people come for years. Some go far away and come back. Both are fine. # vo: ch3-buddhism_reverend-mori_0032
--
--> plan
-
-= plan
+= impulse
+// Owner: impulsive. Straight from the diagnosis to O'Hare, and away. Maya has romanticized ideas about finding herself in
+// Nepal after the diagnosis, and will have to cope with the reality.
 # place: chicago_apartment
 # shot: close
-# objective: Talk to Angie about going away
-~ email_from("angie", "Before you go", "Maya, I think a trip could be good for you, with a plan. Short sits, eyes open is fine, walk when you need to. Your grounding stone in your pocket. Text Tanya every day. Call me if you need to: we'll do a session on video. You can come back early. That isn't failing. A.")
-- (evening)
-+ {evening < 3} [Look: Mira's stone]
-    On the dresser, by your passport. # look: stone-passport
-    -> evening
-+ {evening < 3} [Look: The suitcase]
-    Open on the bed. Empty. It looks very brave. # look: empty-suitcase
-    -> evening
-* {evening >= 1} [Use: Your laptop]
-    Your laptop. Angie's email, and a dozen tabs about temple stays. # device: laptop
+# objective: Go home
+~ set_experience("CoConsciousness", 0.6)
+Izzy (inside): Go. Just go. When have we ever just gone anywhere? # vo: ch3-buddhism_izzy-inside_0036
+- (night)
++ {night < 4} [Look: The laptop]
+    One tab. A photo: prayer flags over white mountains, a monk smiling at the camera. "Kathmandu. One way. Tonight, 11:40 pm." # look: one-way-ticket
+    -> night
++ {night < 4} [Look: The postcard on the fridge]
+    The Himalayas, bought years ago at the museum gift shop. You've never been anywhere. # look: himalaya-postcard
+    -> night
++ {night < 4} [Look: The suitcase]
+    Under the bed. Dusty. It has never been on a plane. # look: dusty-suitcase
+    -> night
+* {night >= 2} [Use: Your laptop (buy the ticket)]
+    ~ record_choice("ch3.p1.ticket", "bought", "The night Angie gave it a name, you bought a one-way ticket to Kathmandu.")
+    Click. A confirmation number. Your heart, very loud. # look: ticket-bought
 -
-~ journal("Note", "Angie's plan: short sits, eyes open, walk when I need to. Text Tanya every day. Coming back early isn't failing.")
-// Where she travels: the owner chooses. Part 2 isn't written yet.
-To be continued.
--> END
+Maya: I'm going to find myself. That's what people do. They go to the mountains and they come back... whole. # vo: ch3-buddhism_maya_0033
+Izzy (inside): Or we come back with a really good tan. Either way! # vo: ch3-buddhism_izzy-inside_0037
+-> ohare
+
+= ohare
+# place: ohare_airport
+# shot: wide
+# objective: Find your gate
+~ text_to("angie", "This is going to sound crazy. I'm at O'Hare. I'm going to Nepal. Tonight. Please don't be mad.")
+~ text_to("christie", "I need someone to cover my tours. For a while. A long while. I'm so sorry.")
+~ text_from("christie", "WHAT. Okay. Okay! Go. I've got the dinosaurs. Bring me a magnet.")
+~ text_from("tanya", "NEPAL?? Maya. Okay. Text me every single day. Every day. I mean it.")
+- (gate)
++ {gate < 4} [Look: The departures board]
+    "DOHA, then KATHMANDU. ON TIME." Real letters. A real place. # look: departures-board
+    -> gate
++ {gate < 4} [Look: The window]
+    Planes in the dark, lit up like little cities. Your reflection over them, holding a backpack she packed in ten minutes. # look: ohare-window
+    -> gate
++ {gate < 4} [Look: The people]
+    A family asleep on each other. A man on the phone, crying quietly. Nobody looking at you. # look: ohare-people
+    -> gate
+* {gate >= 1} [Use: Your phone]
+    Your phone. # device: phone
+-
+~ email_from("angie", "Okay. Here's the plan.", "Maya, I'm not mad. I'd have liked a plan. So here's one, from me, for you: short sits, eyes open is fine, walk when you need to. Your grounding stone in your pocket. Text Tanya every day. We'll do our Thursdays on video. You can come home early. That isn't failing. Go gently. A.")
+* [Use: Your laptop (read Angie's email)]
+    Your laptop. Angie's email, already. # device: laptop
+-
+~ journal("Note", "Angie's plan: short sits, eyes open, walk when I need to. Text Tanya every day. Coming home early isn't failing.")
+Izzy (inside): Window seat. Obviously. # vo: ch3-buddhism_izzy-inside_0038
+-> ch3_part2  // the next part of the same chapter (one run)

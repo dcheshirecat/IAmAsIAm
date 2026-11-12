@@ -111,16 +111,17 @@
       "inkKnot": "ch3_buddhism",
       "startingMemberId": "maya",
       "featuredMemberId": "",
-      "setting": "Chicago, 2026, and then (to come) a temple stay abroad",
+      "setting": "Chicago, then Nepal (Boudha, Budhanilkantha, Lumbini), 2026",
       "skillFamily": "",
       "contentTags": [
         "religious-content",
         "time-loss",
         "involuntary-switch",
-        "medical-setting"
+        "medical-setting",
+        "depersonalization"
       ],
-      "summary": "Tanya gets through to Maya at last, and Maya starts seeing Angie, a therapist who knows about dissociation. A few weeks in, Angie gives it words: a dissociative disorder. Christie covers for her at the museum. At a Buddhist temple in Chicago, Maya hears that she's embraced just as she is, and hears about temple stays far away. With Angie's plan in her pocket, she gets ready to go. (The trip is still to be written.)",
-      "unlocksMemberId": ""
+      "summary": "Tanya gets through to Maya at last, and Angie, a therapist who knows about dissociation, gives it words: a dissociative disorder. That same night Maya buys a one-way ticket and flies from O'Hare to Kathmandu, to find herself. Nepal isn't the poster. At Pasang Lhamo Sherpa's guest house in Boudha she learns the kora, and then goes into a ten-day silent course that takes her much too far away. Nobody notices until it's almost too late, and someone called Heather comes out in the monastery's lamp room to look after her. With Angie on video and Pasang watching properly, the practice changes: eyes open, five minutes, prayer wheels, Mira's stone. Lumbini. Home, gently.",
+      "unlocksMemberId": "heather"
     },
     {
       "id": "ch4-islam",
@@ -135,7 +136,8 @@
       "contentTags": [
         "religious-content"
       ],
-      "summary": "Islam."
+      "summary": "Islam.",
+      "unlocksAppId": "systemlog"
     },
     {
       "id": "ch5-hinduism",

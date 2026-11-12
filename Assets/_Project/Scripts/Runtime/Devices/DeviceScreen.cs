@@ -36,6 +36,11 @@ namespace IAmAsIAm.Runtime.Devices
         /// <summary>The phone's Maps tab (owner: the map lives on Maya's phone). Set by the story screen.</summary>
         public Func<bool> MapAvailable = () => false;
         public Action ShowMap;
+        /// <summary>
+        /// SystemLog (owner: unlocked at the end of Chapter 4) is on the phone once gained, but not while replaying a chapter from
+        /// before it. Set by the story screen.
+        /// </summary>
+        public Func<bool> SystemLogAvailable = () => true;
 
         Font _font;
         GameObject _phoneButton, _laptopButton, _panel, _banner;
@@ -155,13 +160,14 @@ namespace IAmAsIAm.Runtime.Devices
             var channels = Channels().ToList();
             // Maps, on the phone, when she's somewhere with a map (not while the story is waiting on this phone moment).
             bool maps = _openOn == DeviceKind.Phone && _onClosed == null && ShowMap != null && MapAvailable();
-            if (channels.Count > 1 || maps)
+            if (channels.Count > 1 || maps || LogTab())
                 foreach (var c in channels)
                 {
                     var ch = c;
                     Button(_tabs, c == MessageChannel.Text ? "Messages" : "Email", () => ShowList(ch), c == channel ? ButtonColor : QuietButtonColor, 90);
                 }
             if (maps) Button(_tabs, "Maps", () => { Close(); ShowMap(); }, QuietButtonColor, 90);
+            if (LogTab()) Button(_tabs, "SystemLog", () => ShowLog(), QuietButtonColor, 90);
 
             var threads = D.Threads(channel);
             if (threads.Count == 0) Label(_list, "Nothing here yet.", 42, FontStyle.Italic, Dim, 90);
@@ -177,6 +183,67 @@ namespace IAmAsIAm.Runtime.Devices
             if (page > 0) Button(_footer, "Newer", () => ShowList(channel, page - 1), QuietButtonColor, 100);
             if ((page + 1) * PageSize < threads.Count) Button(_footer, "Older", () => ShowList(channel, page + 1), QuietButtonColor, 100);
             Button(_footer, "Close", Close, ButtonColor, 100);
+        }
+
+        // ── SystemLog: notes the system leaves for each other (owner) ────────────
+
+        bool LogTab() => _openOn == DeviceKind.Phone && D.HasApp(IAmAsIAm.Core.Devices.Devices.SystemLogApp) && SystemLogAvailable();
+
+        /// <summary>The notes, newest first, each signed by who wrote it in their colour; and a way to write one.</summary>
+        void ShowLog(int page = 0)
+        {
+            Clear(_tabs); Clear(_list); Clear(_footer);
+            _title.text = "SystemLog";
+            var notes = D.SystemLog.Reverse().ToList();
+            if (notes.Count == 0) Label(_list, "No notes yet. Leave one for whoever comes next.", 40, FontStyle.Italic, Dim, 120);
+            const int perPage = 5;
+            foreach (var n in notes.Skip(page * perPage).Take(perPage))
+            {
+                var def = GameServices.Roster?.GetDefinition(n.memberId);
+                string who = def != null ? def.displayName : n.memberId;
+                string colour = def != null && !string.IsNullOrEmpty(def.colorHex) ? def.colorHex : "#bfb6a8";
+                Label(_list, $"<color={colour}><b>{who}</b></color>  <color=#bfb6a8>Day {Math.Max(1, n.day)}</color>\n{n.text}", 38, FontStyle.Normal, TextColor, 150, TextAnchor.UpperLeft);
+            }
+            if (page > 0) Button(_footer, "Newer", () => ShowLog(page - 1), QuietButtonColor, 100);
+            if ((page + 1) * perPage < notes.Count) Button(_footer, "Older", () => ShowLog(page + 1), QuietButtonColor, 100);
+            Button(_footer, "Write", ShowWrite, ButtonColor, 100);
+            Button(_footer, "Back", () => ShowList(MessageChannel.Text), QuietButtonColor, 100);
+        }
+
+        /// <summary>Writing a note, signed by whoever is fronting right now.</summary>
+        void ShowWrite()
+        {
+            Clear(_tabs); Clear(_list); Clear(_footer);
+            var roster = GameServices.Roster;
+            string me = roster?.FrontingId ?? "maya";
+            var def = roster?.GetDefinition(me);
+            _title.text = "SystemLog: a note from " + (def != null ? def.displayName : me);
+
+            var go = new GameObject("Note", typeof(RectTransform), typeof(Image), typeof(InputField), typeof(LayoutElement));
+            go.transform.SetParent(_list, false);
+            go.GetComponent<LayoutElement>().preferredHeight = 420;
+            go.GetComponent<Image>().color = new Color(0.95f, 0.93f, 0.9f);
+            var text = MakeText(go.transform, "", 40, FontStyle.Normal, new Color(0.1f, 0.1f, 0.12f), TextAnchor.UpperLeft);
+            Place(text.rectTransform, Vector2.zero, Vector2.one);
+            text.rectTransform.offsetMin = new Vector2(24, 20); text.rectTransform.offsetMax = new Vector2(-24, -20);
+            text.supportRichText = false;
+            text.verticalOverflow = VerticalWrapMode.Overflow;
+            var hint = MakeText(go.transform, "Write a note for the others...", 40, FontStyle.Italic, new Color(0.1f, 0.1f, 0.12f, 0.45f), TextAnchor.UpperLeft);
+            Place(hint.rectTransform, Vector2.zero, Vector2.one);
+            hint.rectTransform.offsetMin = new Vector2(24, 20); hint.rectTransform.offsetMax = new Vector2(-24, -20);
+            var input = go.GetComponent<InputField>();
+            input.textComponent = text;
+            input.placeholder = hint;
+            input.lineType = InputField.LineType.MultiLineNewline;
+            input.characterLimit = IAmAsIAm.Core.Devices.Devices.MaxLogLength;
+
+            Button(_footer, "Post", () =>
+            {
+                D.Log(me, input.text, GameServices.InGameDay, GameServices.ChapterRuns?.CurrentChapterId ?? "", byPlayer: true);
+                ShowLog();
+            }, ButtonColor, 100);
+            Button(_footer, "Cancel", () => ShowLog(), QuietButtonColor, 100);
+            input.ActivateInputField();
         }
 
         // ── One conversation / correspondent ─────────────────────────────────────

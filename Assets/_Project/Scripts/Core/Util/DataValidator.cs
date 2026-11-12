@@ -151,6 +151,8 @@ namespace IAmAsIAm.Core
                     if (unlock == null) issues.Add($"chapter '{c.id}': unlocked member '{c.unlocksMemberId}' doesn't exist.");
                     else if (!unlock.canFront) issues.Add($"chapter '{c.id}': unlocked member '{c.unlocksMemberId}' can't front.");
                 }
+                if (!string.IsNullOrEmpty(c.unlocksAppId) && c.unlocksAppId != IAmAsIAm.Core.Devices.Devices.SystemLogApp)
+                    issues.Add($"chapter '{c.id}': unknown app '{c.unlocksAppId}' (the only app is '{IAmAsIAm.Core.Devices.Devices.SystemLogApp}').");
                 if (!string.IsNullOrEmpty(c.featuredMemberId) && members.Count > 0 && !memberIds.Contains(c.featuredMemberId))
                     issues.Add($"chapter '{c.id}': featured member '{c.featuredMemberId}' doesn't exist.");
                 foreach (var tag in c.contentTags ?? new List<string>())

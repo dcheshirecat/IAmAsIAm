@@ -37,6 +37,28 @@ namespace IAmAsIAm.Core.Devices
         public List<string> owned = new List<string>();
         public List<DeviceMessage> messages = new List<DeviceMessage>();
         public int nextId = 1;
+        /// <summary>Apps on the phone (e.g. "systemlog"). Empty in older saves.</summary>
+        public List<string> apps = new List<string>();
+        /// <summary>SystemLog: notes the system leaves for each other. Empty in older saves.</summary>
+        public List<SystemLogEntry> systemLog = new List<SystemLogEntry>();
+    }
+
+    /// <summary>
+    /// One note in SystemLog (owner, 2026-11-12: an app on Maya's phone, unlocked at the end of Chapter 4, that the system uses
+    /// to talk between alters who pop in). Unlike messages sent during lost time, a SystemLog note IS signed: that's the
+    /// point of the app.
+    /// </summary>
+    [Serializable]
+    public sealed class SystemLogEntry
+    {
+        public int id;
+        public string memberId;
+        public string text;
+        public int day;
+        /// <summary>The chapter it was written in (empty outside a chapter).</summary>
+        public string chapterId;
+        /// <summary>True when the player typed it; false when the story wrote it.</summary>
+        public bool byPlayer;
     }
 
     /// <summary>One conversation (texts) or one correspondent (email), newest activity first.</summary>
@@ -59,6 +81,37 @@ namespace IAmAsIAm.Core.Devices
         public const int ComputerAge = 12;
         public const int PhoneAge = 18;
         public const int LaptopAge = 18;
+        /// <summary>The SystemLog app's id (owner: unlocked at the end of Chapter 4).</summary>
+        public const string SystemLogApp = "systemlog";
+        /// <summary>Longest SystemLog note, so a note fits on the phone screen.</summary>
+        public const int MaxLogLength = 500;
+
+        readonly HashSet<string> _apps = new HashSet<string>();
+        readonly List<SystemLogEntry> _log = new List<SystemLogEntry>();
+
+        public bool HasApp(string app) => !string.IsNullOrEmpty(app) && _apps.Contains(app);
+        public IReadOnlyList<SystemLogEntry> SystemLog => _log;
+
+        /// <summary>Puts an app on the phone (from the story).</summary>
+        public void GainApp(string app)
+        {
+            if (!string.IsNullOrEmpty(app) && _apps.Add(app)) Changed?.Invoke();
+        }
+
+        /// <summary>
+        /// Adds a SystemLog note, signed by <paramref name="memberId"/>. Blank notes are ignored; long ones are cut to
+        /// <see cref="MaxLogLength"/>. Returns the note, or null.
+        /// </summary>
+        public SystemLogEntry Log(string memberId, string text, int day, string chapterId = "", bool byPlayer = false)
+        {
+            if (string.IsNullOrEmpty(memberId) || string.IsNullOrWhiteSpace(text)) return null;
+            text = text.Trim();
+            if (text.Length > MaxLogLength) text = text.Substring(0, MaxLogLength);
+            var e = new SystemLogEntry { id = _nextId++, memberId = memberId, text = text, day = day, chapterId = chapterId ?? "", byPlayer = byPlayer };
+            _log.Add(e);
+            Changed?.Invoke();
+            return e;
+        }
 
         readonly HashSet<DeviceKind> _owned = new HashSet<DeviceKind>();
         readonly List<DeviceMessage> _messages = new List<DeviceMessage>();
@@ -165,12 +218,16 @@ namespace IAmAsIAm.Core.Devices
             owned = _owned.Select(d => d.ToString()).OrderBy(s => s).ToList(),
             messages = _messages.ToList(),
             nextId = _nextId,
+            apps = _apps.OrderBy(a => a).ToList(),
+            systemLog = _log.ToList(),
         };
 
         public void Restore(DevicesState state)
         {
             _owned.Clear();
             _messages.Clear();
+            _apps.Clear();
+            _log.Clear();
             Age = state?.age ?? 0;
             _nextId = 1;
             if (state != null)
@@ -178,7 +235,10 @@ namespace IAmAsIAm.Core.Devices
                 foreach (var s in state.owned ?? new List<string>())
                     if (Enum.TryParse<DeviceKind>(s, out var d)) _owned.Add(d);
                 _messages.AddRange(state.messages ?? new List<DeviceMessage>());
-                _nextId = Math.Max(state.nextId, _messages.Count == 0 ? 1 : _messages.Max(m => m.id) + 1);
+                foreach (var a in state.apps ?? new List<string>()) if (!string.IsNullOrEmpty(a)) _apps.Add(a);
+                _log.AddRange(state.systemLog ?? new List<SystemLogEntry>());
+                int maxId = Math.Max(_messages.Count == 0 ? 0 : _messages.Max(m => m.id), _log.Count == 0 ? 0 : _log.Max(e => e.id));
+                _nextId = Math.Max(state.nextId, maxId + 1);
             }
             Changed?.Invoke();
         }

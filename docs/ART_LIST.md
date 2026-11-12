@@ -62,6 +62,13 @@ What's IN each place (the props and close-ups) is in [ART_BY_SCENE.md](ART_BY_SC
 | [ ] | 41 | `sigd_community_hall` | The Sigd celebration | Ch 2 | Kessim under bright umbrellas, white shawls (check details with Beta Israel sources) |
 | [ ] | 42 | `effie_house` | Effie's house | Ch 2 | Modern Orthodox family home, lamps on timers |
 | [ ] | 43 | `lakefront_path` | The lakefront path | Ch 2 | Outdoor: Lake Michigan, grey, rocks |
+| [ ] | 44 | `therapist_office` | Angie's office (and waiting room) | Ch 3 | Gerald the plant, a basket of grounding things, leaflets, the big chair |
+| [ ] | 45 | `ohare_airport` | O'Hare Airport, at night | Ch 3 | A real place: the gate, the departures board, planes in the dark |
+| [ ] | 46 | `boudha_guest_house` | Pasang's guest house, Boudha | Ch 3 | Fourth-floor room (tiger blanket, bucket shower), the kitchen with its altar shelf; rooftops and the stupa from the window |
+| [ ] | 47 | `boudha_stupa` | Boudhanath Stupa | Ch 3 | A real place, outdoor: the white dome, the Buddha's eyes, prayer wheels, butter-lamp house, pigeons, prayer flags |
+| [ ] | 48 | `dharma_shringa_hall` | Dharma Shringa: the meditation hall, Budhanilkantha | Ch 3 | A real place: cushions in rows, forest hills, monkeys on the wall |
+| [ ] | 49 | `boudha_monastery` | The monastery behind the guest house | Ch 3 | Shrine hall (golden Buddha, water bowls, young monks) and the narrow lamp room full of butter lamps |
+| [ ] | 50 | `lumbini_sacred_garden` | Lumbini: the Sacred Garden | Ch 3 | A real place, outdoor: the Maya Devi Temple, the Ashoka pillar, the pond and bodhi tree with prayer flags; the monasteries along the canal in the distance |
 
 ## Part 2: Maps (2D, one per city: `Assets/_Project/Resources/Maps/map_<city-id>.png`) *Auto*
 **A map app on Maya's phone (owner).** It opens from Chapter 1 on to get from scene to scene (the Prologue and the Prelude are
@@ -73,6 +80,8 @@ roads, parks, water; no labels needed: the game adds the dot, pins, route and na
 | [ ] | `map_champaign_urbana.png` | Champaign-Urbana | Ch 1, Ch 1.5 |
 | [ ] | `map_indianapolis.png` | Indianapolis | Ch 1.5 |
 | [ ] | `map_chicago.png` | Chicago (Lake Michigan to the east) | Ch 2 onwards |
+| [ ] | `map_kathmandu.png` | Kathmandu (Boudha in the east, Budhanilkantha to the north) | Ch 3 |
+| [ ] | `map_lumbini.png` | Lumbini (the Sacred Garden, the monastic zone) | Ch 3 |
 | [ ] | `ui_map_dot.png`, `ui_map_pin.png`, `ui_map_frame.png` *Claude* | The blue "you are here" dot, the red destination pin, the phone frame around the map | 128 × 128, 128 × 192, 1024 × 2048 |
 
 ## Part 3: People (3D, Nomad → Procreate → **Grab3D**; `3D Models/<id>/model_<id>.glb`), in story order
@@ -113,6 +122,10 @@ The body changes age through the game; each alter has their own hair, clothes an
 | [ ] | `ruth`, `lee`, `effie`, `grandma` | Adeena's mother, uncle, cousin, grandmother | Ch 2 | Effie also has four children (background) |
 | [ ] | `hannah` | Hannah, Adeena's friend | Ch 2 | |
 | [ ] | `tigist` | Tigist (placeholder name), Beta Israel community | Ch 2 | |
+| [ ] | `christie` | Christie, fellow tour guide at The Field Museum | Ch 2, Ch 3 (and Ch 6) | |
+| [ ] | `angie` | Angie (35, she/her), Maya's therapist | Ch 3 on | Also seen on a laptop screen (video calls) |
+| [ ] | `pasang` | Pasang Lhamo Sherpa (about 55, she/her), the temple-stay host | Ch 3 | Practical and motherly; gives Maya a white khata at goodbye |
+| [ ] | `course_teacher` | The teacher at the silent course | Ch 3 | |
 | [ ] | `ex_jewish_spouse` | Michael, Adeena's husband | Ch 6 | Mentioned only so far |
 
 ### 3c. Background people (idle / walk / talk only), by setting
@@ -126,6 +139,11 @@ The body changes age through the game; each alter has their own hair, clothes an
 | [ ] | `bg_museum_1..4` | Museum visitors, fourth-graders in yellow shirts, other guides | Ch 2 |
 | [ ] | `bg_shul_1..6` | Congregants across the streams (incl. a woman in a tallit) | Ch 2 |
 | [ ] | `bg_kes`, `bg_sigd_1..4` | A kes in white with an umbrella; Sigd families in white shawls | Ch 2 |
+| [ ] | `bg_airport_1..4` | Travellers at O'Hare at night | Ch 3 |
+| [ ] | `bg_monk_1..4`, `bg_young_monk_1..3` | Monks in maroon (Tibetan Buddhist), young monks | Ch 3 |
+| [ ] | `bg_kora_1..6` | People walking the kora: grandmothers with prayer beads, tourists, Pasang's daughter | Ch 3 |
+| [ ] | `bg_meditator_1..6` | Students on the silent course | Ch 3 |
+| [ ] | `bg_pilgrim_1..4` | Pilgrims at Lumbini, from many countries | Ch 3 |
 
 ## Part 4: Props (3D, no rig: `model_prop_<id>.obj` + `tex_prop_<id>_color.png`)
 Every close-up in the chapters is listed scene by scene in [ART_BY_SCENE.md](ART_BY_SCENE.md) part 3 (e.g. `kitchen-table`,
@@ -147,6 +165,10 @@ Every close-up in the chapters is listed scene by scene in [ART_BY_SCENE.md](ART
 | [ ] | `siddur`, `kippah`, `tallit` | Prayer book, head covering, prayer shawl | Ch 2 |
 | [ ] | `seder_plate` | Egg, bone, bitter herbs, charoset, parsley, salt water | Ch 2 |
 | [ ] | `tall_candle` | Heather's single tall candle in a glass | Ch 2 |
+| [ ] | `notebook` | Maya's notebook (Heather's notes in it, signed "H") | Ch 3 |
+| [ ] | `prayer_wheel`, `butter_lamp`, `khata` | A brass prayer wheel; a butter lamp; the white silk scarf | Ch 3 |
+| [ ] | `meditation_cushion`, `phone_envelope` | A cushion; the envelope her phone is handed in in | Ch 3 |
+| [ ] | `suitcase`, `backpack` | Her dusty suitcase and the backpack packed in ten minutes | Ch 3 |
 | [ ] | `orit`, `kes_umbrella` | The Orit wrapped in cloth; a bright ceremonial umbrella | Ch 2 |
 | [ ] | `rune_pouch`, `rune_stave` | Runes | (practice) |
 | [ ] | `herb_<id>` × 14, `herb_bundle_dried` | Herbs (ids in herbs.json) | (practice) |
@@ -174,6 +196,8 @@ Face paintings go on the 3D models in the world; portraits sit beside the dialog
 | [ ] | `ui_icon_phone.png`, `ui_icon_laptop.png` | The phone and laptop icons on the right edge | 256 × 256 | Claude |
 | [ ] | `ui_device_phone.png`, `ui_device_laptop.png` (9-slice) | The phone and laptop screens (messages and email) | 1024 × 1536 / 1536 × 1024 | Claude |
 | [ ] | `ui_bubble_mine.png`, `ui_bubble_theirs.png` (9-slice) | Text-message bubbles | 512 × 256 | Claude |
+| [ ] | `ui_icon_systemlog.png`, `ui_systemlog_note.png` (9-slice) | SystemLog (from the end of Ch 4): its icon and a note card | 256 × 256 / 1024 × 256 | Claude |
+| [ ] | `ui_tree_trunk.png`, `ui_tree_node.png`, `ui_tree_node_next.png`, `ui_tree_leaf.png`, `bg_chapter_tree.png` | The chapter tree (the hub): trunk, chapter node, the next chapter, an alter's leaf (tinted in their colour), background | 64 × 512 / 256 / 256 / 192 / 4440 × 2048 | Claude |
 | [ ] | `ui_banner.png` (9-slice) | The "new message" banner | 1024 × 160 | Claude |
 | [ ] | `ui_breath_guide.png` | The lantern/circle that grows and shrinks | 1024 × 1024 | Claude |
 | [ ] | `ui_panel.png`, `ui_nameplate.png`, `ui_inner_voice_frame.png` (9-slice) | Panels, speaker name, inner-voice frame | 512 × 512 / 512 × 256 | Claude |

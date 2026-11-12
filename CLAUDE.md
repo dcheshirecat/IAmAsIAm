@@ -354,6 +354,31 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   `docs/Chapter3_BuddhismResearch.md`; the owner picks); **the meditation goes wrong first (a long silent sit), then helps once
   adapted**. The owner didn't remember "Reverend Mori" (the Shin minister in Part 1's Chicago temple scene): asked whether to keep,
   change or cut that scene.
+- 2026-11-12: **Chapter 3 decided (owner):** host **Pasang Lhamo Sherpa** (`pasang`, ~55, she/her; family guest house behind a
+  monastery in Boudha; brother-in-law a monk; practical, motherly; walks the kora with Maya at dawn). **Maya and Izzy share time**
+  through the chapter (`co_conscious("izzy", true)`); **Heather comes out at the Buddhist temple** (the monastery's lamp room in
+  Boudha, a scripted `# switch: heather`), appears more and more (inside voice, notes signed "H", `co_conscious("heather")`), and
+  is **unlocked at the end** (`unlocksMemberId: heather`). **The trip is impulsive:** straight from the diagnosis to O'Hare. **The
+  Chicago temple scene is CUT** (Reverend Mori is gone): Maya has **romanticized ideas about finding herself in Nepal** and copes
+  with the reality. **The silent course (Dharma Shringa) goes wrong and Pasang doesn't notice until it's too late.** Then the
+  adapted practice (Angie on video, eyes open, five minutes, prayer wheels, Mira's stone), **Lumbini**, home. In the game:
+  `Story/Chapters/ch3_part1..4.ink`: 1 Someone to talk to (Chicago, Jan-Mar 2026: Tanya, Christie, Angie, "a dissociative
+  disorder", the one-way ticket, O'Hare), 2 Boudha (Apr: the guest house, the kora, momos, the flyer), 3 Noble silence (May: the
+  course, the days, Pasang's pickup, Heather in the lamp room), 4 Gently (Jun-Jul: Angie on video, the kora with eyes open, five
+  minutes in the shrine hall, Lumbini, the khata goodbye; `# chapter-end`). 81 voiced lines.
+- 2026-11-12: **"Name (on video): ..."** = someone on a video call: shown as "Angie (on video)", voiced as that person, not
+  standing in the place (StoryRunner `StoryLine.Remote`). **`co_conscious(member, true/false)`** = sharing time: the top-left
+  label shows "Maya + Izzy" in their colours; cleared when the story ends.
+- 2026-11-12: **The chapter hub is a TREE (owner):** `Runtime/Story/ChapterTreeScreen.cs` (opens from Chapters and by itself on a
+  new game / after a recap): a trunk growing up from the Prologue; the next chapter glows (tap to begin); every finished chapter
+  branches into one leaf per alter who can start it (everyone unlocked), full if it's been played as them, faint if not; tap a
+  leaf to replay as them (content warnings first, then "Begin as ..."). `ChapterRuns.PlayedAs` (saved in `ChapterUnlock.playedAsIds`).
+  Test builds can open every chapter from the tree.
+- 2026-11-12: **SystemLog (owner): an app on Maya's phone, unlocked at the END of Chapter 4** (`chapters.json` `unlocksAppId:
+  "systemlog"`, applied at the recap; or Ink `gain_app("systemlog")`). The system uses it to talk between alters who pop in: a
+  "SystemLog" tab on the phone lists notes newest first, each SIGNED by its member in their colour (unlike lost-time messages,
+  which are never pointed out); "Write" posts a note as whoever is fronting (an InputField, 500 characters). The story can leave
+  notes with `system_log(member, text)`. Saved in `DevicesState.apps` / `systemLog`. Hidden while replaying chapters before Ch 4.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

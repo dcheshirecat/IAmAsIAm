@@ -66,6 +66,7 @@ namespace IAmAsIAm.Runtime.Story
         IAmAsIAm.Runtime.Devices.DeviceScreen _devices;
         StoryWorld _world;
         MapScreen _map;
+        ChapterTreeScreen _tree;
         IAmAsIAm.Core.Story.PlaceData _places;
         readonly HashSet<string> _visited = new HashSet<string>();
         /// <summary>The last thing used in the world ("Go" means she just walked out: no second walk to get there).</summary>
@@ -86,16 +87,20 @@ namespace IAmAsIAm.Runtime.Story
             _world = gameObject.AddComponent<StoryWorld>();
             _world.Init(cameraRig != null ? cameraRig.Target : null, () => { if (cameraRig != null) cameraRig.SnapBehind(); });
             _map = gameObject.AddComponent<MapScreen>();
+            _tree = gameObject.AddComponent<ChapterTreeScreen>();
             _places = DataLoader.Load<IAmAsIAm.Core.Story.PlaceData>("places");
             // The phone's Maps tab: the city she's in, just to look (from Chapter 1 on).
             _devices.MapAvailable = () => !string.IsNullOrEmpty(_lastCity) && !(GameServices.Chapter(runner.ChapterId)?.doorToDoor ?? true) && runner.IsPlaying;
+            // SystemLog (owner: from the end of Chapter 4): not while replaying a chapter from before it.
+            _devices.SystemLogAvailable = () => !runner.IsPlaying
+                || (GameServices.Chapter(runner.ChapterId)?.number ?? int.MaxValue) >= (GameServices.Chapter("ch4-islam")?.number ?? 0);
             _devices.ShowMap = () => _map.Show(_places, _lastCity, _world.Place, null, _visited, null, null);
 
             _advance = new InputAction("Advance", binding: "<Keyboard>/space");
             _advance.AddBinding("<Keyboard>/enter");
             _advance.AddBinding("<Gamepad>/buttonSouth");
             // Ignore the press that opened this line (Use and Advance share gamepad A).
-            _advance.performed += _ => { if (!_anchorOpen && _dialogue.activeSelf && !_choices.activeSelf && Time.frameCount > _lineShownFrame) runner.Next(); };
+            _advance.performed += _ => { if (!_anchorOpen && !IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen && _dialogue.activeSelf && !_choices.activeSelf && Time.frameCount > _lineShownFrame) runner.Next(); };
 
             // Esc is also the Android back button in the Input System.
             _anchorKey = new InputAction("Anchor", binding: "<Keyboard>/escape");
@@ -190,12 +195,19 @@ namespace IAmAsIAm.Runtime.Story
             _choices.SetActive(false);
             StopExploring();
             if (_world != null) _world.Leave();
+            // Sharing time ends with the story.
+            var roster = GameServices.Roster;
+            if (roster != null) foreach (var id in roster.CoConscious.ToList()) roster.SetCoConscious(id, false);
             if (cameraRig != null) cameraRig.SetTalkPartner(null);
         }
 
         void Start()
         {
-            if (GameServices.Roster != null) GameServices.Roster.FrontChanged += _ => UpdateFrontLabel();
+            if (GameServices.Roster != null)
+            {
+                GameServices.Roster.FrontChanged += _ => UpdateFrontLabel();
+                GameServices.Roster.CoConsciousChanged += (_, __) => UpdateFrontLabel();
+            }
             UpdateFrontLabel();
             if (!string.IsNullOrEmpty(startKnot)) runner.Play(startKnot);
         }
@@ -214,7 +226,7 @@ namespace IAmAsIAm.Runtime.Story
             if (_triggerPanel.activeSelf && Time.unscaledTime > _triggerHideAt) _triggerPanel.SetActive(false);
 
             bool busy = _anchorOpen || _dialogue.activeSelf || _choices.activeSelf || _action.activeSelf || (runner.IsPlaying && !_exploring)
-                        || IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen || MapScreen.IsOpen;
+                        || IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen || MapScreen.IsOpen || ChapterTreeScreen.IsOpen;
             // Saves, the phone and the chapter list still wait for the story, even while exploring.
             IsBusy = busy || runner.IsPlaying;
             busy |= IAmAsIAm.Runtime.Save.SaveSlotsScreen.IsOpen || IAmAsIAm.Runtime.Loading.LoadingScreen.IsShowing;
@@ -252,9 +264,9 @@ namespace IAmAsIAm.Runtime.Story
             StopExploring();
             _dialogue.SetActive(true);
             _lineShownFrame = Time.frameCount;
-            _speaker.text = line.Speaker == null ? "" : line.Inner ? line.Speaker + " (inside)" : line.Speaker;
+            _speaker.text = line.Speaker == null ? "" : line.Inner ? line.Speaker + " (inside)" : line.Remote ? line.Speaker + " (on video)" : line.Speaker;
             // Whoever speaks is standing here, and the camera turns to them (not the system's own voices: that's the body).
-            if (line.Speaker != null && !line.Inner && _world != null && !IsSystemMember(line.Speaker))
+            if (line.Speaker != null && !line.Inner && !line.Remote && _world != null && !IsSystemMember(line.Speaker))
             {
                 var person = _world.Person(line.Speaker);
                 if (person != null) OnStoryStarted(person);
@@ -370,6 +382,13 @@ namespace IAmAsIAm.Runtime.Story
             if (roster == null || _frontLabel == null) return;
             var def = roster.GetDefinition(roster.FrontingId);
             _frontLabel.text = def != null ? def.displayName : roster.FrontingId;
+            // Sharing time (co-consciousness): "Maya + Izzy", the others in their own colours.
+            foreach (var id in roster.CoConscious)
+            {
+                var other = roster.GetDefinition(id);
+                if (other == null) continue;
+                _frontLabel.text += $" <color={other.colorHex}>+ {other.displayName}</color>";
+            }
             if (def != null && ColorUtility.TryParseHtmlString(def.colorHex, out var col)) _frontLabel.color = col;
         }
 
@@ -530,6 +549,15 @@ namespace IAmAsIAm.Runtime.Story
             {
                 foreach (var id in runs.Complete(GameServices.Chapter(chapterId)?.unlocksMemberId))
                     body += $"\n\n<b>{MemberName(id)}</b> came forward. You can now replay the chapters you've finished as {MemberName(id)}.";
+                // An app on her phone (owner: SystemLog at the end of Chapter 4).
+                string app = GameServices.Chapter(chapterId)?.unlocksAppId;
+                var devices = GameServices.Devices;
+                if (!string.IsNullOrEmpty(app) && devices != null && !devices.HasApp(app))
+                {
+                    devices.GainApp(app);
+                    if (app == IAmAsIAm.Core.Devices.Devices.SystemLogApp)
+                        body += "\n\n<b>SystemLog</b> is on Maya's phone now: a place for everyone to leave each other notes.";
+                }
             }
             OpenAction("Your choices", body, ("Continue", () => { Finish(); _wantChapterList = true; }));
         }
@@ -537,7 +565,10 @@ namespace IAmAsIAm.Runtime.Story
         // ── Starting a chapter: content warnings, who to start as, or a summary instead ──
 
         /// <summary>Opens a chapter's start screen. Content warnings are always shown first (owner's rule).</summary>
-        public void OpenChapter(string chapterId)
+        public void OpenChapter(string chapterId) => OpenChapter(chapterId, null);
+
+        /// <summary>The start screen for a chapter; with <paramref name="asMember"/>, only "Begin as" them (from the tree).</summary>
+        public void OpenChapter(string chapterId, string asMember)
         {
             var ch = GameServices.Chapter(chapterId);
             if (ch == null || runner.IsPlaying || _action.activeSelf) return;
@@ -549,7 +580,8 @@ namespace IAmAsIAm.Runtime.Story
             string body = $"{setting}<b>Content warnings</b>\n{warnings}\n\nYou can open the Anchor at any time.";
 
             var buttons = new List<(string, Action)>();
-            var starters = GameServices.ChapterRuns?.StartersFor(ch.id, ch.startingMemberId) ?? new List<string>();
+            IReadOnlyList<string> starters = GameServices.ChapterRuns?.StartersFor(ch.id, ch.startingMemberId) ?? new List<string>();
+            if (!string.IsNullOrEmpty(asMember)) starters = new List<string> { asMember };
             if (starters.Count == 0) buttons.Add(("Begin", () => BeginChapter(ch, null)));
             foreach (var id in starters)
             {
@@ -557,7 +589,7 @@ namespace IAmAsIAm.Runtime.Story
                 buttons.Add(($"Begin as {MemberName(starter)}", () => BeginChapter(ch, starter)));
             }
             buttons.Add(("Skip and read a summary", () => OpenAction(ch.title, "<b>Summary</b>\n" + ch.summary, ("Close", CloseAction))));
-            buttons.Add(("Not now", CloseAction));
+            buttons.Add(("Back", () => { CloseAction(); OpenChapterList(); }));
             OpenAction(ch.title, body, buttons.ToArray());
         }
 
@@ -567,6 +599,20 @@ namespace IAmAsIAm.Runtime.Story
         /// </summary>
         public void OpenChapterList(int replayPage = -1)
         {
+            // The hub (owner): a tree that grows up from the Prologue, with a leaf for every alter who can replay a chapter.
+            if (replayPage < 0 && _tree != null)
+            {
+                if (runner.IsPlaying) return;
+                var chapters = GameServices.Chapters?.chapters ?? new List<IAmAsIAm.Core.Story.ChapterDefinition>();
+                _tree.Show(chapters, GameServices.ChapterRuns, id =>
+                {
+                    var def = GameServices.Roster?.GetDefinition(id);
+                    Color c = new Color(0.8f, 0.8f, 0.8f);
+                    if (def != null && !string.IsNullOrEmpty(def.colorHex)) ColorUtility.TryParseHtmlString(def.colorHex, out c);
+                    return (def != null ? def.displayName : id, c);
+                }, TestJumps, (chapterId, member) => OpenChapter(chapterId, member), null);
+                return;
+            }
             if (runner.IsPlaying) return;
             var all = GameServices.Chapters?.chapters ?? new List<IAmAsIAm.Core.Story.ChapterDefinition>();
             var runs = GameServices.ChapterRuns;

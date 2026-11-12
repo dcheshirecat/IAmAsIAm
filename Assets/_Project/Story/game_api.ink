@@ -28,6 +28,9 @@
 //  computer. Contacts are people ids (people.json).
 //  LOST TIME ON DEVICES (owner): after a blackout, an extra sent message may be there that Maya didn't write:
 //  sent_while_away(<member>, "text"|"email", <contact>, <text>). It's never pointed out: very subtle at first.
+//  APPS (owner): gain_app("systemlog") puts SystemLog on her phone (the end of Chapter 4). system_log(<member>, <text>)
+//  leaves a SIGNED note there from that member (the system talking to itself; the player can write notes too).
+//  SHARING TIME (owner): co_conscious(<member>, true/false): an alter is present alongside whoever fronts (co-consciousness).
 //
 //  EXPLORING (owner: little narration). A place is a hub of sticky choices the 3D scene turns into
 //  glowing things to look at, use or talk to:  + [Look: The stone]  + [Use: The phone]  + [Talk: Mira]
@@ -63,6 +66,9 @@ EXTERNAL text_to(contact, text)
 EXTERNAL email_from(contact, subject, text)
 EXTERNAL email_to(contact, subject, text)
 EXTERNAL sent_while_away(member, channel, contact, text)
+EXTERNAL gain_app(app)
+EXTERNAL system_log(member, text)
+EXTERNAL co_conscious(member, present)
 
 === function set_experience(kind, amount) ===
 ~ return
@@ -120,6 +126,15 @@ EXTERNAL sent_while_away(member, channel, contact, text)
 ~ return
 
 === function sent_while_away(member, channel, contact, text) ===
+~ return
+
+=== function gain_app(app) ===
+~ return
+
+=== function system_log(member, text) ===
+~ return
+
+=== function co_conscious(member, present) ===
 ~ return
 
 // True only while this alter is fronting right now. Use it for hidden memories.

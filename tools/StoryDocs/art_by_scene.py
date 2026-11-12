@@ -14,7 +14,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 STORY = os.path.join(ROOT, "Assets", "_Project", "Story", "Chapters")
 DATA = os.path.join(ROOT, "Assets", "_Project", "Resources", "Data")
 
-SPEAKER = re.compile(r"^\s*(?P<name>[A-Z][\w.' ]*?)(?P<inside> \(inside\))?: (?P<text>.+?)\s*(#.*)?$")
+SPEAKER = re.compile(r"^\s*(?P<name>[A-Z][\w.' ]*?)(?P<inside> \(inside\)| \(on video\))?: (?P<text>.+?)\s*(#.*)?$")
 LOOK = re.compile(r"#\s*look:\s*([a-z0-9-]+)")
 MEMORY = re.compile(r"#\s*memory:\s*([a-z0-9-]+)")
 PLACE = re.compile(r"#\s*place:\s*([a-z0-9_]+)")
@@ -57,6 +57,7 @@ def main():
     members = {m["displayName"]: m for m in load("system_members.json")["members"]}
     for p in list(people.values()):  # "Mira" speaks; people.json has "Mira Smith".
         people.setdefault(p["name"].split(" ")[0], p)
+        people.setdefault(" ".join(p["name"].split(" ")[:2]), p)
 
     place_order, place_info = [], {}
     person_order, person_info = [], {}

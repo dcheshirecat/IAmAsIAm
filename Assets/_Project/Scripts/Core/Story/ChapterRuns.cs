@@ -10,6 +10,8 @@ namespace IAmAsIAm.Core.Story
     {
         public string chapterId;
         public List<string> memberIds = new List<string>();
+        /// <summary>Who this chapter has been played through as (the chapter tree's branches). Empty in older saves.</summary>
+        public List<string> playedAsIds = new List<string>();
     }
 
     /// <summary>A chapter run in progress, as saved (so a save between scenes of a chapter keeps the run).</summary>
@@ -40,6 +42,11 @@ namespace IAmAsIAm.Core.Story
 
         readonly Dictionary<string, HashSet<string>> _unlocked = new Dictionary<string, HashSet<string>>();
         readonly List<string> _frontedThisRun = new List<string>();
+        readonly Dictionary<string, HashSet<string>> _playedAs = new Dictionary<string, HashSet<string>>();
+
+        /// <summary>Who a chapter has been played through as, in full (for the chapter tree). Empty if never finished.</summary>
+        public IReadOnlyCollection<string> PlayedAs(string chapterId) =>
+            _playedAs.TryGetValue(chapterId ?? "", out var set) ? (IReadOnlyCollection<string>)set : Array.Empty<string>();
 
         public string CurrentChapterId { get; private set; }
         public string StartedAsId { get; private set; }
@@ -79,6 +86,11 @@ namespace IAmAsIAm.Core.Story
                 set.Add(unlocksMemberId);
             }
             string chapter = CurrentChapterId;
+            if (!string.IsNullOrEmpty(StartedAsId))
+            {
+                if (!_playedAs.TryGetValue(chapter, out var played)) _playedAs[chapter] = played = new HashSet<string>();
+                played.Add(StartedAsId);
+            }
             CurrentChapterId = null;
             _frontedThisRun.Clear();
             if (fresh.Count > 0) Unlocked?.Invoke(chapter, fresh);
@@ -124,7 +136,12 @@ namespace IAmAsIAm.Core.Story
             _unlocked.Values.SelectMany(s => s).Distinct().OrderBy(id => id, StringComparer.Ordinal).ToList();
 
         public List<ChapterUnlock> Export() =>
-            _unlocked.Select(kv => new ChapterUnlock { chapterId = kv.Key, memberIds = kv.Value.OrderBy(x => x, StringComparer.Ordinal).ToList() }).ToList();
+            _unlocked.Select(kv => new ChapterUnlock
+            {
+                chapterId = kv.Key,
+                memberIds = kv.Value.OrderBy(x => x, StringComparer.Ordinal).ToList(),
+                playedAsIds = PlayedAs(kv.Key).OrderBy(x => x, StringComparer.Ordinal).ToList(),
+            }).ToList();
 
         /// <summary>The run in progress, for saving. An empty chapterId means none.</summary>
         public ChapterRunState ExportRun() => new ChapterRunState
@@ -148,11 +165,14 @@ namespace IAmAsIAm.Core.Story
         public void Restore(IEnumerable<ChapterUnlock> unlocks)
         {
             _unlocked.Clear();
+            _playedAs.Clear();
             foreach (var u in unlocks ?? Enumerable.Empty<ChapterUnlock>())
             {
                 if (string.IsNullOrEmpty(u?.chapterId)) continue;
                 if (!_unlocked.TryGetValue(u.chapterId, out var set)) _unlocked[u.chapterId] = set = new HashSet<string>();
                 foreach (var id in u.memberIds ?? new List<string>()) if (!string.IsNullOrEmpty(id)) set.Add(id);
+                if (!_playedAs.TryGetValue(u.chapterId, out var played)) _playedAs[u.chapterId] = played = new HashSet<string>();
+                foreach (var id in u.playedAsIds ?? new List<string>()) if (!string.IsNullOrEmpty(id)) played.Add(id);
             }
         }
     }

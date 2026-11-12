@@ -107,5 +107,24 @@ namespace IAmAsIAm.Tests
             Assert.That(runs.Complete(), Is.Empty);
             Assert.That(runs.HasFinished("ch2-judaism"), Is.True);
         }
+
+        [Test]
+        public void PlayedAs_RecordsWhoFinishedEachChapter_AndIsSaved()
+        {
+            var runs = new ChapterRuns();
+            runs.Begin("prologue-quaker", "maya");
+            runs.Complete("nina");
+            runs.Begin("prologue-quaker", "nina");
+            runs.Abandon();
+            Assert.That(runs.PlayedAs("prologue-quaker"), Is.EquivalentTo(new[] { "maya" }), "an abandoned run isn't a branch");
+            runs.Begin("prologue-quaker", "nina");
+            runs.Complete("nina");
+            Assert.That(runs.PlayedAs("prologue-quaker"), Is.EquivalentTo(new[] { "maya", "nina" }));
+
+            var loaded = new ChapterRuns();
+            loaded.Restore(runs.Export());
+            Assert.That(loaded.PlayedAs("prologue-quaker"), Is.EquivalentTo(new[] { "maya", "nina" }));
+            Assert.That(loaded.PlayedAs("prelude-wicca"), Is.Empty);
+        }
     }
 }

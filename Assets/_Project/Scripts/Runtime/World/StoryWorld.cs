@@ -114,8 +114,8 @@ namespace IAmAsIAm.Runtime.World
             Color Tint(Color c, float amount) => Color.Lerp(c, new Color((float)rng.NextDouble(), (float)rng.NextDouble(), (float)rng.NextDouble()), amount);
 
             bool black = id == "black";
-            _outdoors = Has(id, "park", "quad", "lake", "path", "march", "pride", "lawn", "street", "protest", "garden", "yard", "outside", "field", "cemetery", "parking");
-            bool large = Has(id, "church", "synagogue", "temple", "hall", "shul", "meeting", "chapel", "sanctuary", "ministry", "gallery", "museum", "renewal", "lecture", "school");
+            _outdoors = Has(id, "park", "quad", "lake", "path", "march", "pride", "lawn", "street", "protest", "garden", "yard", "outside", "field", "cemetery", "parking", "stupa", "sacred_garden");
+            bool large = Has(id, "church", "synagogue", "temple", "hall", "shul", "meeting", "chapel", "sanctuary", "ministry", "gallery", "museum", "renewal", "lecture", "school", "monastery", "airport");
             bool small = Has(id, "car", "bathroom", "closet", "guest_room");
             _half = black ? new Vector2(5f, 5f) : _outdoors ? new Vector2(12f, 12f) : large ? new Vector2(7f, 9f) : small ? new Vector2(2.6f, 3f) : new Vector2(4.5f, 4f);
 

@@ -165,6 +165,14 @@ static class InkCheck
             Contact(a[2], "sent_while_away");
             return null;
         });
+        story.BindExternalFunctionGeneral("gain_app", a => { Check(S(a[0]) == "systemlog", $"gain_app: unknown app '{a[0]}'"); return null; });
+        story.BindExternalFunctionGeneral("system_log", a =>
+        {
+            Check(_members.Contains(S(a[0])), $"system_log: unknown member '{a[0]}'");
+            Check(S(a[1]).Trim().Length > 0, "system_log: empty note");
+            return null;
+        });
+        story.BindExternalFunctionGeneral("co_conscious", a => { Check(_members.Contains(S(a[0])), $"co_conscious: unknown member '{a[0]}'"); return null; });
         story.BindExternalFunctionGeneral("explore_tradition", a => { Check(_traditions.Contains(S(a[0])), $"explore_tradition: unknown tradition '{a[0]}'"); return null; });
         story.BindExternalFunctionGeneral("card_name", a => "The Star");
         story.BindExternalFunctionGeneral("card_prompt", a => "A prompt.");
