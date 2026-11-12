@@ -175,8 +175,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Izzy's signs; the tarot deck glows only while Izzy fronts), Part 3 Tanya (2019, 21, the shop + public Yule circle, ends in a switch to
   Izzy). Guesses for the owner are in each file's header (Champaign-Urbana, Selene she/her, the shop "Hearth & Moon", Izzy as the
   Prelude's alter, the years). Drive: Story Drafts → `01 Prelude - Wicca (title to come)` (17eY31XFZ0v2E3liYuC-ORgtSgCA5ICTx): Docs
-  Part 1 (1ywET_kBp6Y6LQKOmHucUQARrsmPpDFkK8_dpnG82uqw), Part 2 (1V01Tsv3ndHN9TCDn48A1530817qU8gwc5Hd-BYAwRdY), Part 3
-  (1vio64LgjvHSZRTi6wN6IBE9sHEbmewyeaMxG7FJRYcI). Voice script Sheet "01 Prelude - script list (draft)"
+  Part 1 (1FebgWOw5gpwyVk6QUShDjOamkEg0yKdV4ykbfKFZe4I), Part 2 (11IUeeaov7uyiLzI5NHnxBpRnHWFtgmYPsCE-P0lKBiU), Part 3
+  (1BF9FEZobJ4cPg9rQ8TK_MB0VVmtT7qLJWtbog8Qu8fk). Voice script Sheet "01 Prelude - script list (draft)"
   (1Kc5rTVwGt09SHL7efDKoqK3f0GWwgwznNmKC5oMoLNE: 45 lines; Maya's adult voice is `maya`). Voice-Over Scripts folder id 15B1SB8Y855lNM5Q3sJp2lIDesOkeLD9w.
 - 2026-11-12: **Tanya stays (owner):** Maya is in touch with Tanya **through the whole game**, mostly by **SMS and email**, meeting up
   **less and less** as time goes by, with a **final meeting at the end of the game**. The game needs **phone, computer and laptop
