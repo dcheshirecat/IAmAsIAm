@@ -157,6 +157,9 @@ namespace IAmAsIAm.Core
                     issues.Add($"chapter '{c.id}': featured member '{c.featuredMemberId}' doesn't exist.");
                 foreach (var tag in c.contentTags ?? new List<string>())
                     if (!ContentTags.All.Contains(tag)) issues.Add($"chapter '{c.id}': unknown content tag '{tag}'.");
+                // The introduction's quote is a real quotation: it always says whose words they are.
+                if (!string.IsNullOrWhiteSpace(c.introQuote) && string.IsNullOrWhiteSpace(c.introQuoteBy))
+                    issues.Add($"chapter '{c.id}': its intro quote needs introQuoteBy (who said or wrote it).");
             }
 
             // Traditions (docs/TraditionsAndTeacher.md)

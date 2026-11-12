@@ -40,6 +40,12 @@ namespace IAmAsIAm.Core.Story
         public List<string> contentTags = new List<string>();
         /// <summary>Short summary shown in place of skipped content, and on the chapter select.</summary>
         public string summary;
+        /// <summary>
+        /// The quote on the chapter's introduction (owner: an "introduction", a loading screen with a quote, before each chapter).
+        /// Real quotations only, quoted exactly, with who said or wrote it (and the translation) in <see cref="introQuoteBy"/>.
+        /// </summary>
+        public string introQuote;
+        public string introQuoteBy;
     }
 
     [Serializable]

@@ -12,6 +12,26 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - Sarah phones during it, busy with the church's harvest supper; she doesn't ask about Maya.
 - The first sign at college: Maya wakes up and her shoes are muddy, from a walk she doesn't remember.
 
+## Morning
+
+📱 **Text from Sarah:** Hope classes are going well sweetie! Crazy week here, the roof fund again. Call Sunday? Love, Mom
+
+✉️ **Email from Rebecca: "how's illinois"** how is it?? is it all corn. will and i broke up (finally lol). miss u. write back!!
+
+> **Objective:** Get ready for class
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Your side of the room**
+    - A bed, a desk, a poster you bought because the girl down the hall had one. Your roommate's side is louder.
+- **Use: Your phone**
+_(Maya's phone opens: the player can read her messages, then closes it.)_
+
+- **Use: Your laptop**
+_(Maya's laptop opens: the player can read her messages, then closes it.)_
+
+- **Go: Class**
+
 ## Class
 
 > **Objective:** Find a seat

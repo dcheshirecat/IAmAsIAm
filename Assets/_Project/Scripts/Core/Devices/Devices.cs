@@ -41,6 +41,8 @@ namespace IAmAsIAm.Core.Devices
         public List<string> apps = new List<string>();
         /// <summary>SystemLog: notes the system leaves for each other. Empty in older saves.</summary>
         public List<SystemLogEntry> systemLog = new List<SystemLogEntry>();
+        /// <summary>The devices and apps whose "how to use it" card has been shown (owner: the game introduces them).</summary>
+        public List<string> introduced = new List<string>();
     }
 
     /// <summary>
@@ -87,6 +89,18 @@ namespace IAmAsIAm.Core.Devices
         public const int MaxLogLength = 500;
 
         readonly HashSet<string> _apps = new HashSet<string>();
+        readonly HashSet<string> _introduced = new HashSet<string>();
+
+        /// <summary>
+        /// Whether the game has shown how to use this device or app (owner: the game introduces the phone and the computer).
+        /// Keys: "computer", "phone", "laptop", or an app id. Saved per slot; replays don't show them again.
+        /// </summary>
+        public bool WasIntroduced(string key) => !string.IsNullOrEmpty(key) && _introduced.Contains(key);
+
+        /// <summary>Marks an introduction as shown. Returns false if it already had been.</summary>
+        public bool MarkIntroduced(string key) => !string.IsNullOrEmpty(key) && _introduced.Add(key);
+
+        public static string Key(DeviceKind kind) => kind.ToString().ToLowerInvariant();
         readonly List<SystemLogEntry> _log = new List<SystemLogEntry>();
 
         public bool HasApp(string app) => !string.IsNullOrEmpty(app) && _apps.Contains(app);
@@ -220,6 +234,7 @@ namespace IAmAsIAm.Core.Devices
             nextId = _nextId,
             apps = _apps.OrderBy(a => a).ToList(),
             systemLog = _log.ToList(),
+            introduced = _introduced.OrderBy(k => k).ToList(),
         };
 
         public void Restore(DevicesState state)
@@ -228,6 +243,7 @@ namespace IAmAsIAm.Core.Devices
             _messages.Clear();
             _apps.Clear();
             _log.Clear();
+            _introduced.Clear();
             Age = state?.age ?? 0;
             _nextId = 1;
             if (state != null)
@@ -237,6 +253,7 @@ namespace IAmAsIAm.Core.Devices
                 _messages.AddRange(state.messages ?? new List<DeviceMessage>());
                 foreach (var a in state.apps ?? new List<string>()) if (!string.IsNullOrEmpty(a)) _apps.Add(a);
                 _log.AddRange(state.systemLog ?? new List<SystemLogEntry>());
+                foreach (var k in state.introduced ?? new List<string>()) if (!string.IsNullOrEmpty(k)) _introduced.Add(k);
                 int maxId = Math.Max(_messages.Count == 0 ? 0 : _messages.Max(m => m.id), _log.Count == 0 ? 0 : _log.Max(e => e.id));
                 _nextId = Math.Max(state.nextId, maxId + 1);
             }

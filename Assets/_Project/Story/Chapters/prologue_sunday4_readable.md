@@ -60,6 +60,24 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 
 **Sarah:** There's soup in the cupboard. I've got the deacons' supper, don't wait up. Love you!
 
+## Home
+
+✉️ **Email from Rebecca: "bio??"** did u do the bio worksheet. i lost mine AGAIN. also will says hi
+
+> **Objective:** Find the soup
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The fridge**
+    - **A sticky note:** "Deacons' supper. Soup in cupboard. Don't wait up! Love, Mom." The same note as last Sunday. New tape.
+- **Look: The house**
+    - Every light off but this one. The heating ticks.
+- **Use: The family computer**
+_(Maya's computer opens: the player can read her messages, then closes it.)_
+
+- **Use: The cupboard (the soup)**
+    - Tomato soup, heated in the mug, eaten standing up.
+
 ## Room
 
 **Explore** (glowing things; the player picks):

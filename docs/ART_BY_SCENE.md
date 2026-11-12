@@ -14,8 +14,8 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 4 | `church_sanctuary` | Church of Friends: the sanctuary | iowa_city | Prologue: This Little Light (prologue_sunday1) | Sarah, Mrs. Hines, Maya (the body, 11), Mr. Jones, Rebecca |
 | 5 | `church_fellowship_hall` | Church of Friends: the fellowship hall | iowa_city | Prologue: This Little Light (prologue_sunday1) | Mrs. Hines, Mr. Jones, Sarah, Mira, Maya (the body, 5), Maya (the body, 8), Maya (the body, 11) |
 | 6 | `home_maya_room` | Home: Maya's room | iowa_city | Prologue: This Little Light (prologue_sunday3) | Sarah, Maya (the body, 15) |
-| 7 | `college_lecture_hall` | The lecture hall | champaign_urbana | Prelude (prelude_part1) | Selene, Maya (the body, 18), Mark, Axel (the body, 20) |
-| 8 | `college_dorm_maya` | Maya's dorm room | champaign_urbana | Prelude (prelude_part1) | - |
+| 7 | `college_dorm_maya` | Maya's dorm room | champaign_urbana | Prelude (prelude_part1) | - |
+| 8 | `college_lecture_hall` | The lecture hall | champaign_urbana | Prelude (prelude_part1) | Selene, Maya (the body, 18), Mark, Axel (the body, 20) |
 | 9 | `college_dorm_selene` | Selene's dorm room | champaign_urbana | Prelude (prelude_part1) | Selene, Maya (the body, 18), Sarah |
 | 10 | `college_apartment_maya` | Maya's apartment | champaign_urbana | Prelude (prelude_part2) | Axel (the body, 20) |
 | 11 | `college_quad` | The Quad | champaign_urbana | Prelude (prelude_part2) | Selene, Maya (the body, 18) |
@@ -129,6 +129,9 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `cracker-cupboard`: A chair, pushed to the cupboard. One soft cracker.
 - `front-door`: Waiting.
 - `shoes`: Shoes with sticky straps. On the wrong feet.
+- `fridge-note`: A sticky note: "Deacons' supper. Soup in cupboard. Don't wait up! Love, Mom." The same note as last Sunday. New tape.
+- `dark-house`: Every light off but this one. The heating ticks.
+- `soup-mug`: Tomato soup, heated in the mug, eaten standing up.
 
 ### Mom's car (`car`)
 
@@ -222,14 +225,9 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `somebody-hand`: The stone, in somebody's hand.
 - hidden memory `nina-lost-hours` (a scene played only by an alter)
 
-### The lecture hall (`college_lecture_hall`)
-
-- `lecture-screen`: "Intro to World Religions. Week 8: New Religious Movements."
-- `notebook-candle`: Neat notes. A doodle of a candle in the margin, not yours.
-- `selene-bag`: A pentacle charm on the zip. A paperback with a cracked spine, full of sticky notes.
-
 ### Maya's dorm room (`college_dorm_maya`)
 
+- `dorm-side`: A bed, a desk, a poster you bought because the girl down the hall had one. Your roommate's side is louder.
 - `planner`: A planner, every hour filled in. A mug of cold tea.
 - `muddy-shoes`: Your running shoes, caked in mud. You haven't been running.
 - `bare-wall`: Nothing on it. Everyone else on the floor has posters.
@@ -245,6 +243,12 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `tanya-reply`: The phone buzzes almost at once.
 - `laptop-closed`: The laptop, closed. Quiet.
 - `selene-oracle-deck`: A padded envelope from Selene: twelve cards, hand-painted, one word on each. Her own oracle deck.
+
+### The lecture hall (`college_lecture_hall`)
+
+- `lecture-screen`: "Intro to World Religions. Week 8: New Religious Movements."
+- `notebook-candle`: Neat notes. A doodle of a candle in the margin, not yours.
+- `selene-bag`: A pentacle charm on the zip. A paperback with a cracked spine, full of sticky notes.
 
 ### Selene's dorm room (`college_dorm_selene`)
 

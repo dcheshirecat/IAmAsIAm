@@ -22,7 +22,9 @@
       ],
       "summary": "Quaker: the backstory, in Iowa City, over four Sundays at ages 5, 8, 11 and 15. Young Maya is raised by Sarah, a single mother and the minister of a programmed Friends church, who is well-meaning but absent, and neglectful to the point of harm. Mira, a kind older Friend, meets Maya at 5, raises her worries with Sarah at 8 and backs down, and moves away when Maya is 11, never knowing how bad things were. At 15, Sarah mentions in passing that Mira has died. That night, home alone in her room, Maya hears a voice inside that is not hers, and then loses time.",
       "unlocksMemberId": "nina",
-      "doorToDoor": true
+      "doorToDoor": true,
+      "introQuote": "Walk cheerfully over the world, answering that of God in every one.",
+      "introQuoteBy": "George Fox, founder of the Quakers, 1656"
     },
     {
       "id": "prelude-wicca",
@@ -39,7 +41,9 @@
       ],
       "summary": "Wicca: more backstory. The character has left organised religion and found Wicca.",
       "unlocksMemberId": "izzy",
-      "doorToDoor": true
+      "doorToDoor": true,
+      "introQuote": "If that which thou seekest thou findest not within thee, thou wilt never find it without thee.",
+      "introQuoteBy": "The Charge of the Goddess, Doreen Valiente"
     },
     {
       "id": "ch1-christianity",
@@ -61,7 +65,9 @@
         "pandemic"
       ],
       "summary": "Christianity, in college. Maya loses her junior year: it passes on a black screen, never explained. She comes back at the end of it to a life she doesn't recognise: a boyfriend, Mark, a kind, queer Episcopalian, and a body that has been living as a trans man. She detransitions and breaks up with Mark, who is left confused and hurt, and spends her senior year abandoned by everyone around her. She graduates alone, in the pandemic. Gracie, a young Catholic nun in training who volunteers at the campus ministry, is the guide. At a prayer service after graduation, Jacob comes forward.",
-      "unlocksMemberId": "jacob"
+      "unlocksMemberId": "jacob",
+      "introQuote": "Yea, the darkness hideth not from thee; but the night shineth as the day: the darkness and the light are both alike to thee.",
+      "introQuoteBy": "Psalm 139:12 (King James Version)"
     },
     {
       "id": "ch1-5-axel",
@@ -81,7 +87,9 @@
         "detransition"
       ],
       "summary": "A flashback, never explained, just played: the junior year Maya lost. Axel fronts, comes out as a trans man as the body, and dates Mark, a kind, queer Episcopalian classmate, who never learns about the system. Tanya keeps inviting and checking in, and Axel ignores all of it. It ends when Maya comes back. The first time, this chapter is always played as Axel.",
-      "unlocksMemberId": "axel"
+      "unlocksMemberId": "axel",
+      "introQuote": "I will praise thee; for I am fearfully and wonderfully made.",
+      "introQuoteBy": "Psalm 139:14 (King James Version)"
     },
     {
       "id": "ch2-judaism",
@@ -101,7 +109,9 @@
         "isolation"
       ],
       "summary": "Maya moves to Chicago for a job at a museum and meets Adeena, the registrar: stern, serious, with a heart of gold. Every Friday Adeena lights the Shabbat candles and Maya covers her eyes with her. Through Adeena's Conservative synagogue, her family, her friends and the holidays, Maya meets many ways of being Jewish, and Rabbi Abe. But the lost time grows, and after two and a half years Adeena ends it: Maya isn't there. The first time, this chapter is always played as Maya.",
-      "unlocksMemberId": ""
+      "unlocksMemberId": "",
+      "introQuote": "Many waters cannot quench love, neither can the floods drown it.",
+      "introQuoteBy": "Song of Songs 8:7 (King James Version)"
     },
     {
       "id": "ch3-buddhism",
@@ -121,7 +131,9 @@
         "depersonalization"
       ],
       "summary": "Tanya gets through to Maya at last, and Angie, a therapist who knows about dissociation, gives it words: a dissociative disorder. That same night Maya buys a one-way ticket and flies from O'Hare to Kathmandu, to find herself. Nepal isn't the poster. At Pasang Lhamo Sherpa's guest house in Boudha she learns the kora, and then goes into a ten-day silent course that takes her much too far away. Nobody notices until it's almost too late, and someone called Heather comes out in the monastery's lamp room to look after her. With Angie on video and Pasang watching properly, the practice changes: eyes open, five minutes, prayer wheels, Mira's stone. Lumbini. Home, gently.",
-      "unlocksMemberId": "heather"
+      "unlocksMemberId": "heather",
+      "introQuote": "Self is the lord of self, who else could be the lord?",
+      "introQuoteBy": "The Dhammapada, verse 160 (trans. F. Max Müller)"
     },
     {
       "id": "ch4-islam",
@@ -141,7 +153,9 @@
         "neglect"
       ],
       "summary": "Back from Nepal, Izzy and Heather go to a psychiatric day program, where Chaplain Amal, a Muslim chaplain, sits with anyone who wants her. Reneé Carter, from the Church of Friends, finds them in Chicago, and tells them what she overheard when Maya was eight: Mira saw, and told Sarah, and Sarah said Maya was \"very independent\". That night Nina builds a fort and writes MIRA TRIED. Sawsan counts her grandmother's prayer beads from Nablus; Fadi's Thursday dhikr goes round and round; a Ramadan iftar breaks the fast together. Angie suggests one place where all of them can leave each other notes: SystemLog. The first time, this chapter is always played as Izzy.",
-      "unlocksAppId": "systemlog"
+      "unlocksAppId": "systemlog",
+      "introQuote": "So truly where there is hardship there is also ease; truly where there is hardship there is also ease.",
+      "introQuoteBy": "The Qur'an 94:5-6 (trans. M. A. S. Abdel Haleem)"
     },
     {
       "id": "ch5-hinduism",
@@ -158,7 +172,9 @@
         "involuntary-switch"
       ],
       "summary": "Chicago holds too many memories, so Maya moves to Seattle for a fresh start, more grounded now, and unpacks every box in the first week. Priya, from work, brings her to her family's temple, where Mangala Tai, the priest, shows her how to take the light at the aarti. On Saturdays she threads marigold garlands, crooked until Heather shares her hands. The temple's day, wake, bathe, dress, feed, sleep, is someone taking care of someone, every day. At Navaratri she dances the garba badly and happily; on Diwali Heather lights the lamps, and for the first time Maya is there the whole time.",
-      "unlocksMemberId": ""
+      "unlocksMemberId": "",
+      "introQuote": "Lead me from the unreal to the real, from darkness to light, from death to immortality.",
+      "introQuoteBy": "Brihadaranyaka Upanishad 1.3.28"
     },
     {
       "id": "ch6-sikhism",
@@ -177,7 +193,9 @@
         "involuntary-switch"
       ],
       "summary": "Gurleen, from the Burke, brings Maya to her grandmother's gurdwara in Kent: a scarf, shoes off, karah prasad in cupped hands, and langar on the floor in rows, where nobody sits higher. Bibi Harjit, who has run the Sunday kitchen for thirty-five years, puts a rolling pin in her hand. At Vaisakhi, in the middle of the procession, Christie calls: Adeena has married Michael. Afterwards there is chai Maya didn't pour, and a thousand plates to wash until she's back. On Guru Nanak's birthday everyone prays for the good of everyone, sarbat da bhala, and Bibi Harjit says: chardi kala.",
-      "unlocksMemberId": ""
+      "unlocksMemberId": "",
+      "introQuote": "Nanak naam chardi kala, tere bhane sarbat da bhala.\n(Through the Name, Nanak, may the spirit rise; by Your will, may all be well.)",
+      "introQuoteBy": "The last line of the Ardas, the Sikh prayer"
     },
     {
       "id": "ch7-daoism",
@@ -192,7 +210,9 @@
       "contentTags": [
         "religious-content"
       ],
-      "summary": "Daoism."
+      "summary": "Daoism.",
+      "introQuote": "The highest excellence is like that of water.",
+      "introQuoteBy": "Tao Te Ching, chapter 8 (trans. James Legge)"
     },
     {
       "id": "ch8-druidry",
@@ -207,7 +227,9 @@
       "contentTags": [
         "religious-content"
       ],
-      "summary": "Druidry."
+      "summary": "Druidry.",
+      "introQuote": "Grant, O God, thy protection; and in protection, strength; and in strength, understanding.",
+      "introQuoteBy": "The Gorsedd Prayer (Iolo Morganwg), said in many Druid groups"
     },
     {
       "id": "ch9-humanism",
@@ -222,7 +244,9 @@
       "contentTags": [
         "religious-content"
       ],
-      "summary": "Humanism."
+      "summary": "Humanism.",
+      "introQuote": "The time to be happy is now. The place to be happy is here. The way to be happy is to make others so.",
+      "introQuoteBy": "Robert G. Ingersoll"
     },
     {
       "id": "ch10-unitarian-universalism",
@@ -237,7 +261,9 @@
       "contentTags": [
         "religious-content"
       ],
-      "summary": "Unitarian Universalism."
+      "summary": "Unitarian Universalism.",
+      "introQuote": "The inherent worth and dignity of every person.",
+      "introQuoteBy": "The first of the Unitarian Universalist Principles (1985)"
     },
     {
       "id": "ch11-jainism",
@@ -252,7 +278,9 @@
       "contentTags": [
         "religious-content"
       ],
-      "summary": "Jainism."
+      "summary": "Jainism.",
+      "introQuote": "Souls render service to one another.",
+      "introQuoteBy": "Tattvartha Sutra 5.21 (parasparopagraho jivanam)"
     },
     {
       "id": "ch12-hellenic-polytheism",
@@ -267,7 +295,9 @@
       "contentTags": [
         "religious-content"
       ],
-      "summary": "Hellenic polytheism."
+      "summary": "Hellenic polytheism.",
+      "introQuote": "Know thyself.",
+      "introQuoteBy": "Inscribed at the Temple of Apollo at Delphi"
     },
     {
       "id": "ch13-eastern-orthodox",
@@ -282,7 +312,9 @@
       "contentTags": [
         "religious-content"
       ],
-      "summary": "Eastern Orthodox Christianity."
+      "summary": "Eastern Orthodox Christianity.",
+      "introQuote": "Lord Jesus Christ, Son of God, have mercy on me, a sinner.",
+      "introQuoteBy": "The Jesus Prayer"
     }
   ]
 }

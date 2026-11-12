@@ -24,6 +24,27 @@
 # cw: neglect
 # cw: depersonalization
 # cw: time-loss
+-> morning
+
+= morning
+// Owner: the game introduces the phone and the laptop (both at 18). Claude's scene: no new voiced lines.
+~ text_from("mother", "Hope classes are going well sweetie! Crazy week here, the roof fund again. Call Sunday? Love, Mom")
+~ email_from("rebecca", "how's illinois", "how is it?? is it all corn. will and i broke up (finally lol). miss u. write back!!")
+# place: college_dorm_maya
+# shot: wide
+# objective: Get ready for class
+- (d)
++ {d < 3} [Look: Your side of the room]
+    A bed, a desk, a poster you bought because the girl down the hall had one. Your roommate's side is louder. # look: dorm-side
+    -> d
+* (phone) [Use: Your phone]
+    Your phone. The first one that's ever been yours: two summers of babysitting. It buzzes. # device: phone
+    -> d
+* (laptop) [Use: Your laptop]
+    Your laptop, a hand-me-down from the church office, stickers scraped off. It goes everywhere now. # device: laptop
+    -> d
+* {phone && laptop} [Go: Class]
+-
 -> class
 
 = class

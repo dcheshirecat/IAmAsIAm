@@ -145,5 +145,19 @@ namespace IAmAsIAm.Tests
             var m = e.Send(MessageChannel.Text, "selene", "hi", 3);
             Assert.That(m.id, Is.GreaterThan(c.id));
         }
-    }
+    
+        [Test]
+        public void Introductions_ShowOnce_AndAreSaved()
+        {
+            var d = new Devices();
+            Assert.That(d.WasIntroduced(Devices.Key(DeviceKind.Phone)), Is.False);
+            Assert.That(d.MarkIntroduced(Devices.Key(DeviceKind.Phone)), Is.True);
+            Assert.That(d.MarkIntroduced("phone"), Is.False, "only once");
+            d.SetAge(12); // a replay of an earlier age doesn't forget it
+            var e = new Devices();
+            e.Restore(d.Export());
+            Assert.That(e.WasIntroduced("phone"), Is.True);
+            Assert.That(e.WasIntroduced("computer"), Is.False);
+        }
+}
 }

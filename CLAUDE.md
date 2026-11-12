@@ -507,6 +507,20 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Drive: Story Drafts → `08 Chapter 6 - Sikhism (title to come)` (1TwMDcJ8B-CWntR2GLCVOLEv8dmVSrwdu): Part 1
   (1mHjXc_XNB-zekkICn4spbyr9wkv_QGWq3MR-aLZyrng), Part 2 (1L8ryDQdygbp5hJOjuhKZBIASFUzsMxOqRZBfruO8VmY), Part 3
   (1kHntN9_9___E6FCJFqWHcQ7i8H43OShddpmg6fYjTYU); Sheet "08 Chapter 6 - script list (draft)" (1wHLcjFyA9BOEBlWe4mY6YsFbs88YH30ADsksAXDrsDc, 35 lines).
+- 2026-11-12: **The game introduces the phone and the computer (owner).** Story: Prologue Sunday 4 (15) gains a `home` scene
+  (the kitchen: Mom's sticky note, the family computer with an email from Rebecca, `# device: computer`, then the soup);
+  Prelude Part 1 (18) starts with a `morning` scene in her dorm (her first phone, a text from Mom; the laptop, an email from
+  Rebecca; both before "Go: Class"). No new voiced lines. Runtime: the FIRST time each device (computer, phone, laptop) or
+  SystemLog is there, a "how to use it" card shows once per save (`DeviceScreen.ShowIntro`, a pointer at the side icon;
+  `Devices.WasIntroduced/MarkIntroduced`, saved in `DevicesState.introduced`). Placeholder wording in `DeviceScreen.IntroText`.
+- 2026-11-12: **An introduction before every chapter (owner: "a loading screen with a quote").** `Runtime/Story/ChapterIntro.cs`
+  (sort 110): the chapter's number and name, its setting, then its quote and who said it, fading in over a small rising light;
+  "Tap to begin" after 3.5 s, carries on by itself at 14 s; first plays and replays, never on a resume. Data: chapters.json
+  `introQuote` + `introQuoteBy` (the validator requires the attribution). **Quotes are Claude's picks, real and attributed, for the
+  owner to change:** Prologue George Fox 1656 ("answering that of God in every one"), Prelude the Charge of the Goddess (Valiente),
+  Ch1 Psalm 139:12 KJV, Ch1.5 Psalm 139:14 KJV, Ch2 Song of Songs 8:7 KJV, Ch3 Dhammapada 160 (Müller), Ch4 Qur'an 94:5-6 (Abdel
+  Haleem), Ch5 Brihadaranyaka Upanishad 1.3.28, Ch6 the last line of the Ardas, Ch7 Tao Te Ching 8 (Legge), Ch8 the Gorsedd Prayer,
+  Ch9 Ingersoll, Ch10 the first UU Principle, Ch11 Tattvartha Sutra 5.21, Ch12 "Know thyself" (Delphi), Ch13 the Jesus Prayer.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

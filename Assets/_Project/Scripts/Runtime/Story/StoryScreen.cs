@@ -263,7 +263,7 @@ namespace IAmAsIAm.Runtime.Story
                         || IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen || IAmAsIAm.Runtime.Practices.BookScreen.IsOpen || IAmAsIAm.Runtime.Practices.RitualScreen.IsOpen || MapScreen.IsOpen || ChapterTreeScreen.IsOpen;
             // Saves, the phone and the chapter list still wait for the story, even while exploring.
             IsBusy = busy || runner.IsPlaying;
-            busy |= IAmAsIAm.Runtime.Save.SaveSlotsScreen.IsOpen || IAmAsIAm.Runtime.Loading.LoadingScreen.IsShowing;
+            busy |= IAmAsIAm.Runtime.Save.SaveSlotsScreen.IsOpen || IAmAsIAm.Runtime.Loading.LoadingScreen.IsShowing || ChapterIntro.IsShowing;
             PlayerMotor.Blocked = busy;
             _tap.SetActive(_dialogue.activeSelf && !_choices.activeSelf && !_anchorOpen);
             if (_touch != null) _touch.SetActive(!busy);
@@ -755,6 +755,12 @@ namespace IAmAsIAm.Runtime.Story
         void BeginChapter(IAmAsIAm.Core.Story.ChapterDefinition ch, string starterId)
         {
             CloseAction();
+            // Owner: an introduction (the chapter's name and a quote) before every chapter, then the chapter itself.
+            ChapterIntro.Show(ch, () => StartChapterRun(ch, starterId));
+        }
+
+        void StartChapterRun(IAmAsIAm.Core.Story.ChapterDefinition ch, string starterId)
+        {
             var roster = GameServices.Roster;
             string starter = starterId ?? roster?.FrontingId;
             GameServices.ChapterRuns?.Begin(ch.id, starter);

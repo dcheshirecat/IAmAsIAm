@@ -51,6 +51,11 @@ namespace IAmAsIAm.Runtime.Devices
         DeviceKind _openOn;
         MessageChannel _channel;
         Dictionary<string, string> _names;
+        // The "how to use it" card (owner: the game introduces the phone and the computer).
+        GameObject _intro;
+        Text _introTitle, _introBody;
+        RectTransform _introArrow, _introButtons;
+        Action _introDone;
 
         IAmAsIAm.Core.Devices.Devices D => GameServices.Devices;
 
@@ -76,7 +81,8 @@ namespace IAmAsIAm.Runtime.Devices
             var d = D;
             // Owner: the phone and the laptop are always-usable icons on the side of the screen (once she has them),
             // not only something the story offers.
-            bool usable = d != null && !IsOpen && !Blocked() && !IAmAsIAm.Runtime.Practices.BookScreen.IsOpen
+            bool introUp = _intro.activeSelf;
+            bool usable = d != null && (!IsOpen || introUp) && !Blocked() && !IAmAsIAm.Runtime.Practices.BookScreen.IsOpen
                           && Save.SaveService.ActiveSlot != 0 && !Save.SaveSlotsScreen.IsOpen && !Loading.LoadingScreen.IsShowing;
             bool phone = usable && d.CanText, laptop = usable && d.Has(DeviceKind.Laptop);
             _phoneButton.SetActive(phone);
@@ -92,6 +98,55 @@ namespace IAmAsIAm.Runtime.Devices
                 _laptopLabel.text = unread > 0 ? $"Laptop ({unread})" : "Laptop";
             }
             if (_banner.activeSelf && Time.unscaledTime > _bannerHideAt) _banner.SetActive(false);
+
+            // The first time the phone, the laptop or SystemLog is there to use, the game shows how (once per save).
+            if (!introUp && !IsOpen)
+            {
+                if (phone && !d.WasIntroduced(IAmAsIAm.Core.Devices.Devices.Key(DeviceKind.Phone))) ShowIntro(IAmAsIAm.Core.Devices.Devices.Key(DeviceKind.Phone), null);
+                else if (laptop && !d.WasIntroduced(IAmAsIAm.Core.Devices.Devices.Key(DeviceKind.Laptop))) ShowIntro(IAmAsIAm.Core.Devices.Devices.Key(DeviceKind.Laptop), null);
+                else if (phone && d.HasApp(IAmAsIAm.Core.Devices.Devices.SystemLogApp) && SystemLogAvailable() && !d.WasIntroduced(IAmAsIAm.Core.Devices.Devices.SystemLogApp))
+                    ShowIntro(IAmAsIAm.Core.Devices.Devices.SystemLogApp, null);
+            }
+        }
+
+        // ── Introducing a device (once) ──────────────────────────────────────────
+
+        /// <summary>What each introduction says. Plain, short, in the game's voice (placeholder wording, owner to edit).</summary>
+        static (string title, string body, float arrowY) IntroText(string key) => key switch
+        {
+            "computer" => ("The family computer",
+                "It lives at home, on the desk in the corner. When you sit down at it, you can read your email and write back.\n\nEmail from people you know waits here until you're home again.", -1f),
+            "phone" => ("Your phone",
+                "It goes everywhere with you now. Tap <b>Phone</b> on the right any time, even while you're exploring or talking to someone, to read and answer texts.\n\nWhen a text arrives it shows at the top of the screen, and the number beside Phone is how many you haven't read.", 0.68f),
+            "laptop" => ("Your laptop",
+                "Email comes with you now, not just at home. Tap <b>Laptop</b> on the right any time to read and write email.", 0.49f),
+            IAmAsIAm.Core.Devices.Devices.SystemLogApp => ("SystemLog",
+                "A new app on your phone: one place where all of you can leave each other notes. Open <b>Phone</b> and choose <b>SystemLog</b>.\n\nWhoever is fronting can write. Every note is signed.", 0.68f),
+            _ => (key, "", -1f),
+        };
+
+        void ShowIntro(string key, Action done)
+        {
+            var d = D;
+            if (d == null || !d.MarkIntroduced(key)) { done?.Invoke(); return; }
+            var (title, body, arrowY) = IntroText(key);
+            _introTitle.text = title;
+            _introBody.text = body;
+            _introArrow.gameObject.SetActive(arrowY > 0f);
+            if (arrowY > 0f) _introArrow.anchorMin = _introArrow.anchorMax = new Vector2(0.872f, arrowY);
+            _introDone = done;
+            _banner.SetActive(false);
+            IsOpen = true; // Nothing else opens over it; the story waits.
+            _intro.SetActive(true);
+        }
+
+        void CloseIntro()
+        {
+            _intro.SetActive(false);
+            IsOpen = false;
+            var done = _introDone;
+            _introDone = null;
+            done?.Invoke();
         }
 
         void OnReceived(DeviceMessage m)
@@ -114,6 +169,8 @@ namespace IAmAsIAm.Runtime.Devices
             var d = D;
             if (d == null) { onClosed?.Invoke(); return; }
             d.Gain(kind); // A story that sits her at a device means she has it.
+            // The first time: how to use it, then the device itself.
+            if (!_intro.activeSelf && !d.WasIntroduced(IAmAsIAm.Core.Devices.Devices.Key(kind))) { ShowIntro(IAmAsIAm.Core.Devices.Devices.Key(kind), () => Open(kind, onClosed)); return; }
             _openOn = kind;
             _onClosed = onClosed;
             IsOpen = true;
@@ -335,6 +392,22 @@ namespace IAmAsIAm.Runtime.Devices
             _list = Column(_panel.transform, "List", new Vector2(0.05f, 0.14f), new Vector2(0.95f, 0.81f), horizontal: false);
             _footer = Column(_panel.transform, "Footer", new Vector2(0.06f, 0.02f), new Vector2(0.94f, 0.12f), horizontal: true);
             _panel.SetActive(false);
+
+            // The introduction card: a dimmed screen (it takes the taps), a card beside the side icons, a pointer to the icon.
+            _intro = Panel(root, "Device Intro", new Color(0f, 0f, 0f, 0.55f), Vector2.zero, Vector2.one);
+            var card = Panel(_intro.transform, "Card", PhoneColor, new Vector2(0.46f, 0.30f), new Vector2(0.86f, 0.84f));
+            _introTitle = MakeText(card.transform, "", 56, FontStyle.Bold, TextColor, TextAnchor.MiddleLeft);
+            Place(_introTitle.rectTransform, new Vector2(0.07f, 0.82f), new Vector2(0.93f, 0.96f));
+            _introBody = MakeText(card.transform, "", 40, FontStyle.Normal, TextColor, TextAnchor.UpperLeft);
+            Place(_introBody.rectTransform, new Vector2(0.07f, 0.2f), new Vector2(0.93f, 0.8f));
+            _introButtons = Column(card.transform, "Buttons", new Vector2(0.3f, 0.04f), new Vector2(0.7f, 0.16f), horizontal: true);
+            Button(_introButtons, "Got it", CloseIntro, ButtonColor, 100);
+            var arrow = Panel(_intro.transform, "Pointer", PhoneColor, new Vector2(0.872f, 0.68f), new Vector2(0.872f, 0.68f));
+            _introArrow = arrow.GetComponent<RectTransform>();
+            _introArrow.sizeDelta = new Vector2(70, 70);
+            _introArrow.localEulerAngles = new Vector3(0, 0, 45f);
+            arrow.GetComponent<Image>().raycastTarget = false;
+            _intro.SetActive(false);
         }
 
         /// <summary>A round-cornered tile on the right edge with a drawn icon and a name under it (with unread counts).</summary>

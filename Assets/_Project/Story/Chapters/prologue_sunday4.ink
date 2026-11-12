@@ -81,6 +81,27 @@ Sarah: Anyway, the youth group wants to do a car wash, in February, can you imag
     The stone's edge, biting your palm. The only real thing in the car. # look: stone-grip
 -
 Sarah: There's soup in the cupboard. I've got the deacons' supper, don't wait up. Love you! # vo: prologue-quaker_sarah_0110
+-> home
+
+= home
+// Owner: the game introduces the family computer (Maya has had it since 12). Claude's scene: no new voiced lines.
+~ email_from("rebecca", "bio??", "did u do the bio worksheet. i lost mine AGAIN. also will says hi")
+# place: home_kitchen
+# shot: wide
+# objective: Find the soup
+- (k)
++ {k < 3} [Look: The fridge]
+    A sticky note: "Deacons' supper. Soup in cupboard. Don't wait up! Love, Mom." The same note as last Sunday. New tape. # look: fridge-note
+    -> k
++ {k < 3} [Look: The house]
+    Every light off but this one. The heating ticks. # look: dark-house
+    -> k
+* (computer) [Use: The family computer]
+    The family computer, humming on the desk in the corner. Mom's church emails, a hundred of them. One for you. # device: computer
+    -> k
+* {computer} [Use: The cupboard (the soup)]
+    Tomato soup, heated in the mug, eaten standing up. # look: soup-mug
+-
 -> room
 
 = room
