@@ -110,10 +110,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   **The owner voices everyone who speaks, including the alters' voices** (every spoken line goes on the Drive script lists).
   Prologue drafts: `Story/Drafts/draft_prologue_sunday1..4.ink` (+ `_readable.md`), not canon until approved.
 - 2026-11-12: **The owner edits drafts in Google Drive**: "Game Art - I Am As I Am" → **Story Drafts** (id 17BRsPRw6Ql9tObnHT4Cr0Nnb1i9LT-6q)
-  → `00 Prologue - This Little Light` (id 1RPF_IaN8Yvj-yEwbJ15OuAYeh05nzL_a): Docs "Sunday 1 - Maya, 5 (2003)"
-  (1Oc3yBDsDZ3o_580cjnfQCqyksMNQw0QRD2Z3mCb1dmk), "Sunday 2 - Maya, 8 (2006)" (1rCyxdJyOhH69T6Ck_zhQm8W1H4IjBhkkr_4JhT-j5wk),
-  "Sunday 3 - Maya, 11 (2009)" (1B-SxMEWDG-9waIb81SBkGMXQvWzQEVdV6dOTOTFDSfs), "Sunday 4 - Maya, 15 (2013)"
-  (1EEl3yFsKhWMMJ-cwU-zRCQ8tkeO8qCxz1oUPqJPVExw). **The Docs are the source once the owner edits them**: read the Doc (with
+  → `00 Prologue - This Little Light` (id 1RPF_IaN8Yvj-yEwbJ15OuAYeh05nzL_a): explore-first Docs "Sunday 1 - Maya, 5 (2003)"
+  (1GRTItageeHxbWhCaz083ZYb6Q-XDI3eAE0R81aEsbSE), "Sunday 2 - Maya, 8 (2006)" (1GgcPAhX8pfzqdyFYT-Z6BZeIrEboLxMNijcsgWZcYeo),
+  "Sunday 3 - Maya, 11 (2009)" (1mdi5zq-RoXj6ZoFSJVB0q5AULZRzPXISi-__OUjKCFA), "Sunday 4 - Maya, 15 (2013)"
+  (1K4J-ViOl47-vZCCy2DTf_rMdIgBWJlXCIQruYv8swZg); the first, narrated versions are in its "Old versions (narrated)" folder.
+  **The Docs are the source once the owner edits them**: read the Doc (with
   comments) and carry the changes back into the Ink. Docs are made from Ink with `tools/StoryDocs/ink_to_doc.py`.
 
 - 2026-11-12: **The owner voices parts of the game.** Drive "Game Art - I Am As I Am" → **Voice-Over** (id 1pluvFHsiS_BqpKREdIr1B2tOQnxYMnho):
@@ -169,6 +170,8 @@ Every chapter's content (ask, chapter by chapter); confirm the chapter order 5�
   rules (tests, the editor menu, and the pre-build gate).
 - Story: Ink in `Assets/_Project/Story` (`main.ink`, `game_api.ink`). `StoryRunner` binds the functions, and tags become
   interactive moments (`# exercise:`, `# ritual:`, `# explore:`, `# cue:`, `# cw:`). `StoryScreen` builds its UI in code.
+  Explore-first tags: `# objective:` (goal line), `# look: <id>` (close-up + label), `# memory: <id>`, `# maybe-switch[: %]`;
+  places are hubs of sticky choices `+ [Look: …]` / `[Use: …]` / `[Talk: …]`; `unlocked("<member>")` gates hidden memories.
 - `Editor/BuildTools.cs`: Compile Story, Configure Project (creates the URP asset), Rebuild Boot Scene (the scene is
   GENERATED: change the builder, don't hand-edit), Build Android APK. CI calls `BuildTools.BuildAndroid`.
 - Reset statics with `[RuntimeInitializeOnLoadMethod(SubsystemRegistration)]` (Fast Enter Play Mode).
