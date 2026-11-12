@@ -112,7 +112,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   → `00 Prologue - This Little Light` (id 1RPF_IaN8Yvj-yEwbJ15OuAYeh05nzL_a): explore-first Docs "Sunday 1 - Maya, 5 (2003)"
   (1GRTItageeHxbWhCaz083ZYb6Q-XDI3eAE0R81aEsbSE), "Sunday 2 - Maya, 8 (2006)" (1GgcPAhX8pfzqdyFYT-Z6BZeIrEboLxMNijcsgWZcYeo),
   "Sunday 3 - Maya, 11 (2009)" (14WEH8Ty-TPJHln1RnyrgD_JzRzDl46sLuHPmX2OuQ00), "Sunday 4 - Maya, 15 (2013)"
-  (1DXFTLKH6_zrXRqQW8sSUYchjQ4kkRLSlIwVhVsrTjiI); the first, narrated versions are in its "Old versions (narrated)" folder.
+  (1Not5l1n7x8am0pGpSTU2Z-n0kUxyP69nHxwaiO10IXo); the first, narrated versions are in its "Old versions (narrated)" folder.
   **The Docs are the source once the owner edits them**: read the Doc (with
   comments) and carry the changes back into the Ink. Docs are made from Ink with `tools/StoryDocs/ink_to_doc.py`.
 
@@ -174,7 +174,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Izzy's signs; the tarot deck glows only while Izzy fronts), Part 3 Tanya (2019, 21, the shop + public Yule circle, ends in a switch to
   Izzy). Guesses for the owner are in each file's header (Champaign-Urbana, Selene she/her, the shop "Hearth & Moon", Izzy as the
   Prelude's alter, the years). Drive: Story Drafts → `01 Prelude - Wicca (title to come)` (17eY31XFZ0v2E3liYuC-ORgtSgCA5ICTx): Docs
-  Part 1 (1VbApYb1-hYYSO21PCNmG4-Y0f0yu6WA-X8pYNJpp_Ps), Part 2 (1fIkJsKhwIQOccIJ4ga0nWSEYxttD8YlnVlvwRTEbbl0), Part 3
+  Part 1 (1ai3eAnNAQ6z9TZJRpVl5Fog1-TDXqZTAyRFWWXSlhkA), Part 2 (1fIkJsKhwIQOccIJ4ga0nWSEYxttD8YlnVlvwRTEbbl0), Part 3
   (1Djdlk-troTYDrBivsUSY5bSELmlYeHzwsth-de9TLLg). Voice script Sheet "01 Prelude - script list (draft)"
   (13hCLEyK389yBOGnqVDwA63BBoFms9bjgSgCax_Ztnjc: 46 lines; Maya's adult voice is `maya`). Voice-Over Scripts folder id 15B1SB8Y855lNM5Q3sJp2lIDesOkeLD9w.
 - 2026-11-12: **Tanya stays (owner):** Maya is in touch with Tanya **through the whole game**, mostly by **SMS and email**, meeting up
