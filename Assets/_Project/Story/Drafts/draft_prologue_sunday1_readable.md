@@ -1,10 +1,20 @@
-# DRAFT: Prologue "This Little Light", Sunday 1 (Iowa City, 2003, Maya is 5)
+# Sunday 1. Iowa City, 2003. Maya is 5.
 
-Not canon until you approve it. Choices are shown as **options**; what follows each option is what happens if the player picks it. Every option leads on to the same next part (small choices only).
+_Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**My guesses for you to check:** a grey March morning; First Day School is before worship; the service has the hymn "This Little Light of Mine", Sarah's sermon, then a few minutes of silent open worship; the church smells of wood polish, old hymnbooks and coffee (this becomes the adult trigger "meeting-house smell"); Mira teaches "feet on the floor"; Mira only says "She's been waiting a long while" to Sarah, saving her speaking up properly for Sunday 2.
+**What happens (your beats):** Maya goes "floaty" in the long service (a first, gentle depersonalization), then is forgotten at church after it. Mira finds her. Small choices only (they change feel, memory and the recap; the events always happen). The writing is a five-year-old's.
 
-## Morning, at home
+**My guesses, for you to check:**
+
+- The season (a grey, cold March morning).
+- First Day School comes BEFORE worship (common in programmed Friends churches).
+- The service: a hymn ("This Little Light of Mine", a public-domain spiritual, as the title echo), a reading, Sarah's sermon, then a few minutes of open worship (silence), as many pastoral Friends churches do.
+- The smell of the building (wood polish, old hymnals, coffee) is planted here: it is the adult trigger "meeting-house-smell". No trigger cue fires in the prologue.
+- Mira teaches "feet on the floor", the first skill.
+- Sarah is seen only from outside, through Maya. We never hear her reasons.
+- Mira only says "She's been waiting a long while" to Sarah here; she speaks up properly on Sunday 2 (age 8).
+
+## Morning
 
 It is Sunday. Sunday is church.
 
@@ -16,26 +26,26 @@ The house is cold. Mommy is in the kitchen, talking on the phone in her church v
 
 Maya waits by the table. There is no bowl out. There is a coffee cup, and Mommy's Bible, and lots of papers with writing on them.
 
-- **Option: Ask for breakfast.**<br>
-  **Maya:** Mommy? I'm hungry.<br>
-  Mommy puts her hand over the phone.<br>
-  **Sarah:** There'll be snacks at church, honey. Get your coat.<br>
-  Then she takes her hand away, and she is talking to Mrs. Hines again.
+**Choice:**
 
-- **Option: Get a cracker from the cupboard.**<br>
-  Maya pulls a chair over to the cupboard. She is not supposed to climb. But Mommy is busy, and the crackers are right there.<br>
-  The cracker is a bit soft. She eats it anyway, standing on the chair.<br>
-  Nobody says get down.
-
-- **Option: Wait. Mommy is busy.**<br>
-  Maya waits. She is good at waiting. Everybody at church says so.<br>
-  Her tummy makes a noise. She holds it with both hands so it will be quiet.
+- **Ask for breakfast.**
+    - **Maya:** Mommy? I'm hungry.
+    - Mommy puts her hand over the phone.
+    - **Sarah:** There'll be snacks at church, honey. Get your coat.
+    - Then she takes her hand away, and she is talking to Mrs. Hines again.
+- **Get a cracker from the cupboard.**
+    - Maya pulls a chair over to the cupboard. She is not supposed to climb. But Mommy is busy, and the crackers are right there.
+    - The cracker is a bit soft. She eats it anyway, standing on the chair.
+    - Nobody says get down.
+- **Wait. Mommy is busy.**
+    - Maya waits. She is good at waiting. Everybody at church says so.
+    - Her tummy makes a noise. She holds it with both hands so it will be quiet.
 
 **Sarah:** Shoes, Maya. We're late.
 
 Maya's shoes are on the wrong feet. They feel funny, like two lefts. Mommy doesn't see. Maya doesn't say.
 
-## The drive
+## Car
 
 In the car, Mommy talks to herself. She is practicing her sermon. She does it every Sunday.
 
@@ -43,20 +53,20 @@ In the car, Mommy talks to herself. She is practicing her sermon. She does it ev
 
 The windshield wipers go back and forth. Back and forth. The sky is the color of dishwater.
 
-- **Option: Count the red cars.**<br>
-  One red car. Two. A truck that is almost red, but Maya decides it doesn't count.<br>
-  By the time they get to church, she has five. Five, like her.
+**Choice:**
 
-- **Option: Ask Mommy a question.**<br>
-  **Maya:** Mommy, where does light come from?<br>
-  **Sarah:** Each of us carries... hm? In a minute, sweetheart.<br>
-  Maya waits for the minute. It doesn't come.
+- **Count the red cars.**
+    - One red car. Two. A truck that is almost red, but Maya decides it doesn't count.
+    - By the time they get to church, she has five. Five, like her.
+- **Ask Mommy a question.**
+    - **Maya:** Mommy, where does light come from?
+    - **Sarah:** Each of us carries... hm? In a minute, sweetheart.
+    - Maya waits for the minute. It doesn't come.
+- **Draw on the foggy window.**
+    - Maya draws a house on the window with her finger. A door, a window, a sun.
+    - The sun drips. She draws a smile on it so it looks happy anyway.
 
-- **Option: Draw on the foggy window.**<br>
-  Maya draws a house on the window with her finger. A door, a window, a sun.<br>
-  The sun drips. She draws a smile on it so it looks happy anyway.
-
-## First Day School
+## First day school
 
 The church smells like it always does. Wood polish, and old hymnbooks, and coffee from the big silver pot in the hall.
 
@@ -78,20 +88,20 @@ Then Jamie and Justin and Will come in, loud, with their coats still on.
 
 Rebecca picks up her lantern and goes to their table. She doesn't say bye. She just goes.
 
-- **Option: Follow her.**<br>
-  Maya takes her lantern and goes too. There isn't a chair. She stands at the end of the table.<br>
-  **Rebecca:** You can watch, Maya.<br>
-  Rebecca says it nicely. Maya watches.
+**Choice:**
 
-- **Option: Stay where you are.**<br>
-  Maya stays. The glue is still here. She finishes her lantern by herself.<br>
-  **Miss Eloise:** That's lovely, Maya. Very neat.<br>
-  It is very neat. Maya is good at neat.
-
-- **Option: Give Rebecca your lantern.**<br>
-  Maya walks over and gives Rebecca her lantern. So Rebecca can have two.<br>
-  **Rebecca:** Thanks!<br>
-  Rebecca puts it on the table with the others. She doesn't look at it again. But she said thanks.
+- **Follow her.**
+    - Maya takes her lantern and goes too. There isn't a chair. She stands at the end of the table.
+    - **Rebecca:** You can watch, Maya.
+    - Rebecca says it nicely. Maya watches.
+- **Stay where you are.**
+    - Maya stays. The glue is still here. She finishes her lantern by herself.
+    - **Miss Eloise:** That's lovely, Maya. Very neat.
+    - It is very neat. Maya is good at neat.
+- **Give Rebecca your lantern.**
+    - Maya walks over and gives Rebecca her lantern. So Rebecca can have two.
+    - **Rebecca:** Thanks!
+    - Rebecca puts it on the table with the others. She doesn't look at it again. But she said thanks.
 
 **Miss Eloise:** Time for worship, everybody. Lanterns stay here. You can take them home after.
 
@@ -101,7 +111,7 @@ The big room has long wooden benches called pews. Mommy is at the front, up high
 
 Everybody else sits with their families. Maya sits in the front pew, by herself, where Mommy can see her.
 
-Across the room is Mr. Carter, with Thomas and Reneé. Thomas and Reneé are big. They are almost grown-ups. Mr. Carter has his arm along the back of the pew, behind them both, like a fence.
+Across the room is Mr. Carter, with Thomas and Reneé. Thomas and Reneé are big. They are almost grown-ups. Reneé's crutches lean on the end of the pew, the silver kind with cuffs. Mr. Carter has his arm along the back of the pew, behind them both, like a fence.
 
 They sing. Maya knows this song.
 
@@ -115,7 +125,7 @@ Then Mommy talks. Mommy talks for a long time.
 
 Maya swings her feet. Her shoes are still on the wrong feet. The pew is hard.
 
-## The quiet part
+## Floaty
 
 Then everybody stops. It's the quiet part. In the quiet part, you don't talk. You wait for God.
 
@@ -131,32 +141,35 @@ Her body is sitting on the pew. And Maya is... a little bit up. A little bit beh
 
 It doesn't hurt. It's floaty. It's a bit like a dream.
 
-- **Option: Hold onto something.**
+**Choice:**
 
-- **Option: Float.**<br>
-  Maya lets herself float. Up, and up. The quiet goes on, and on.<br>
-  She can see the top of her own head, nearly. A little girl in a blue dress, on a pew, very still. Very good.
+- **Hold onto something.**
+- **Float.**
+    - Maya lets herself float. Up, and up. The quiet goes on, and on.
+    - She can see the top of her own head, nearly. A little girl in a blue dress, on a pew, very still. Very good.
 
-## (If Maya holds onto something)
+## Floaty hold
 
 Maya looks for something to hold onto.
 
-- **Option: The wood of the pew.**<br>
-  She puts her hand flat on the pew. The wood has lines in it, like a fingerprint. She follows one line with her finger. It goes around a knot, like a river going around a rock.
+**Choice:**
 
-- **Option: The buckle on her shoe.**<br>
-  She touches the strap on her shoe. Scratchy side. Smooth side. Scratchy side.
-
-- **Option: The light on the floor.**<br>
-  There is a square of light on the floor from the high window. Tiny dust is dancing in it. Maya watches one piece of dust all the way down.
+- **The wood of the pew.**
+    - She puts her hand flat on the pew. The wood has lines in it, like a fingerprint. She follows one line with her finger. It goes around a knot, like a river going around a rock.
+- **The buckle on her shoe.**
+    - She touches the strap on her shoe. Scratchy side. Smooth side. Scratchy side.
+- **The light on the floor.**
+    - There is a square of light on the floor from the high window. Tiny dust is dancing in it. Maya watches one piece of dust all the way down.
 
 A little bit of her comes back down. Not all the way. But some.
+
+## Floaty end
 
 Then Mommy says something, and everybody stands up, and it's over.
 
 Maya stands up too. Her legs are pins and needles. Her body did the standing. She's not sure she did.
 
-## After church
+## Forgotten
 
 After church there are snacks in the hall. Grown-ups hold coffee cups up high, where Maya can't knock them.
 
@@ -176,7 +189,7 @@ Then she's gone, between the coats.
 
 Maya waits right here.
 
-The Carters leave. Mr. Carter does up Reneé's scarf, even though she's big. Then everybody else leaves too, in ones and twos. The coffee pot gets washed. The lights in the hall go off, all except one.
+The Carters leave. Mr. Carter does up Reneé's scarf, even though she's big, and holds the door while she swings through on her crutches. Then everybody else leaves too, in ones and twos. The coffee pot gets washed. The lights in the hall go off, all except one.
 
 The square of light on the floor slides slowly across the floor, and up the wall.
 
@@ -184,17 +197,17 @@ Maya is counting the squares in the window. Eleven, twelve... and then the light
 
 That's funny. She was only counting.
 
-- **Option: Go and knock on Mommy's office door.**<br>
-  Maya walks down the hall to Mommy's door. It's closed. She can hear talking behind it. Numbers, and Mrs. Hines laughing.<br>
-  She lifts her hand to knock. Then she puts it down. Mommy said wait right here. This isn't right here.<br>
-  She goes back.
+**Choice:**
 
-- **Option: Get your lantern from First Day School.**<br>
-  Maya gets her lantern (or, if she gave hers away: Rebecca's lantern instead, the yellow one, because Rebecca forgot it). She sits back down right here, and holds it in her lap.<br>
-  It isn't a real lantern. It doesn't light up. But it's something.
-
-- **Option: Stay. Be good.**<br>
-  Maya stays. She doesn't move at all. If she is very good, Mommy will come.
+- **Go and knock on Mommy's office door.**
+    - Maya walks down the hall to Mommy's door. It's closed. She can hear talking behind it. Numbers, and Mrs. Hines laughing.
+    - She lifts her hand to knock. Then she puts it down. Mommy said wait right here. This isn't right here.
+    - She goes back.
+- **Get your lantern from First Day School.**
+    - Maya gets her lantern [or, if earlier: Rebecca's lantern instead, the yellow one, because Rebecca forgot it]. She sits back down right here, and holds it in her lap.
+    - It isn't a real lantern. It doesn't light up. But it's something.
+- **Stay. Be good.**
+    - Maya stays. She doesn't move at all. If she is very good, Mommy will come.
 
 Her tummy hurts now. A lot.
 
@@ -220,22 +233,22 @@ She has crackers in her cardigan pocket, in a napkin, from snack time.
 
 **Mira:** Would you like these? I always take too many.
 
-- **Option: Take them. Say you're really hungry.**<br>
-  **Maya:** I'm really, really hungry.<br>
-  Mira gives her all the crackers. Then she finds a little box of raisins in her bag, too.<br>
-  **Mira:** Have you had any lunch, dear?<br>
-  Maya shakes her head. Mira's mouth goes thin, like a line drawn with a ruler. But her voice stays soft.<br>
-  **Mira:** Well. We'll fix that.
+**Choice:**
 
-- **Option: Take one. Say you're fine.**<br>
-  **Maya:** Just one. I'm fine.<br>
-  **Mira:** Of course. Take one. And then, if it turns out you're a two-cracker sort of person, take another.<br>
-  Maya takes all of them in the end. Mira doesn't say anything. She just nods, like that's what she thought.
-
-- **Option: Don't say anything. Lean on her arm.**<br>
-  Maya doesn't say anything. She leans against the old lady's arm. The cardigan is soft and smells like soap.<br>
-  Mira stays very still, the way you stay still when a bird lands near you.<br>
-  Then, slowly, she puts the crackers in Maya's lap.
+- **Take them. Say you're really hungry.**
+    - **Maya:** I'm really, really hungry.
+    - Mira gives her all the crackers. Then she finds a little box of raisins in her bag, too.
+    - **Mira:** Have you had any lunch, dear?
+    - Maya shakes her head. Mira's mouth goes thin, like a line drawn with a ruler. But her voice stays soft.
+    - **Mira:** Well. We'll fix that.
+- **Take one. Say you're fine.**
+    - **Maya:** Just one. I'm fine.
+    - **Mira:** Of course. Take one. And then, if it turns out you're a two-cracker sort of person, take another.
+    - Maya takes all of them in the end. Mira doesn't say anything. She just nods, like that's what she thought.
+- **Don't say anything. Lean on her arm.**
+    - Maya doesn't say anything. She leans against the old lady's arm. The cardigan is soft and smells like soap.
+    - Mira stays very still, the way you stay still when a bird lands near you.
+    - Then, slowly, she puts the crackers in Maya's lap.
 
 They wait. Maya eats. Mira hums the song from church, very low. This little light of mine.
 
@@ -251,7 +264,7 @@ Mira thinks about that for a long time. She doesn't laugh.
 
 **Mira:** Shall we try? Shoes and all.
 
-Feet on the floor.
+Feet on the floor. _(the player does the "feet-on-floor" exercise here)_
 
 **Maya:** Hello, floor.
 
@@ -259,7 +272,7 @@ Feet on the floor.
 
 Mira looks down at Maya's feet. She bends, slowly, and swaps the shoes onto the right feet. She doesn't say anything about that either.
 
-## Mommy comes back
+## Sarah returns
 
 Then Mommy's door opens, down the hall. Voices, and coats.
 
@@ -286,4 +299,3 @@ In the car, Mommy is on the phone again, with the phone squashed against her sho
 Maya puts her feet flat on the floor of the car. She pushes, just a little.
 
 Hello, floor.
-

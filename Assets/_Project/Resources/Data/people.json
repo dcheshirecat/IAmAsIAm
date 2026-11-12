@@ -113,13 +113,14 @@
     {
       "id": "renee_carter",
       "name": "Reneé",
-      "role": "Mr. Carter's daughter, much older than Maya",
+      "role": "Mr. Carter's daughter, much older than Maya; later, Maya's friend",
       "tradition": "quakers",
-      "description": "Watched from afar.",
+      "description": "Watched from afar in the prologue. As a child she used crutches; as an adult she uses a manual wheelchair. She overheard Mira raising her worries with Sarah (Sunday 2, Maya 8). Years later (chapter 4 or 5) she and adult Maya meet up to talk about being queer and ex-religious: Reneé is an out bisexual and has left Sarah's church, but still identifies as Quaker. She tells Maya what she overheard.",
       "chapterIds": [
         "prologue-quaker"
       ],
-      "memberLinks": []
+      "memberLinks": [],
+      "pronouns": "she/her"
     },
     {
       "id": "rebecca",

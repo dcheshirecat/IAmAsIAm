@@ -104,9 +104,17 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   "very independent", and is called away by Mrs. Hines. **Maya never knows in the prologue:** the scene is shown LATER in the game,
   when adult Maya meets a childhood companion who overheard it. **Sunday 3 (11):** Maya **performs okay** (neat, smiling, good
   answers) and Mira believes it, then moves away. **Sunday 4 (15):** an **ordinary Sunday**; the news in the car lands on it.
-- 2026-11-12: Whoever overheard Mira and Sarah (Sunday 2) is **Thomas or Reneé** (which one: to ask); the reunion is in **chapter 4 or 5**.
+- 2026-11-12: **Reneé** overheard Mira and Sarah (Sunday 2). She used **crutches** as a child and uses a **manual wheelchair** as an
+  adult. Adult Reneé is an **out bisexual**, has **left the church but still identifies as Quaker**; in **chapter 4 or 5** she and
+  Maya meet up to talk about being **queer and ex-religious**, and she tells Maya what she heard.
   **The owner voices everyone who speaks, including the alters' voices** (every spoken line goes on the Drive script lists).
-  Sunday 1 draft: `Story/Drafts/draft_prologue_sunday1.ink` (+ `_readable.md`), not canon until approved.
+  Prologue drafts: `Story/Drafts/draft_prologue_sunday1..4.ink` (+ `_readable.md`), not canon until approved.
+- 2026-11-12: **The owner edits drafts in Google Drive**: "Game Art - I Am As I Am" → **Story Drafts** (id 17BRsPRw6Ql9tObnHT4Cr0Nnb1i9LT-6q)
+  → `00 Prologue - This Little Light` (id 1RPF_IaN8Yvj-yEwbJ15OuAYeh05nzL_a): Docs "Sunday 1 - Maya, 5 (2003)"
+  (1Oc3yBDsDZ3o_580cjnfQCqyksMNQw0QRD2Z3mCb1dmk), "Sunday 2 - Maya, 8 (2006)" (1rCyxdJyOhH69T6Ck_zhQm8W1H4IjBhkkr_4JhT-j5wk),
+  "Sunday 3 - Maya, 11 (2009)" (1B-SxMEWDG-9waIb81SBkGMXQvWzQEVdV6dOTOTFDSfs), "Sunday 4 - Maya, 15 (2013)"
+  (1EEl3yFsKhWMMJ-cwU-zRCQ8tkeO8qCxz1oUPqJPVExw). **The Docs are the source once the owner edits them**: read the Doc (with
+  comments) and carry the changes back into the Ink. Docs are made from Ink with `tools/StoryDocs/ink_to_doc.py`.
 
 - 2026-11-12: **The owner voices parts of the game.** Drive "Game Art - I Am As I Am" → **Voice-Over** (id 1pluvFHsiS_BqpKREdIr1B2tOQnxYMnho):
   one folder per chapter (`00 Prologue (prologue-quaker)` … `14 …`), `Daily Life and Inner Voices`, `Scripts (what to record)`

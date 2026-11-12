@@ -127,7 +127,7 @@ The big room has long wooden benches called pews. Mommy is at the front, up high
 
 Everybody else sits with their families. Maya sits in the front pew, by herself, where Mommy can see her.
 
-Across the room is Mr. Carter, with Thomas and Reneé. Thomas and Reneé are big. They are almost grown-ups. Mr. Carter has his arm along the back of the pew, behind them both, like a fence.
+Across the room is Mr. Carter, with Thomas and Reneé. Thomas and Reneé are big. They are almost grown-ups. Reneé's crutches lean on the end of the pew, the silver kind with cuffs. Mr. Carter has his arm along the back of the pew, behind them both, like a fence.
 
 They sing. Maya knows this song.
 This little light of mine, I'm gonna let it shine.
@@ -208,7 +208,7 @@ Then she's gone, between the coats.
 
 Maya waits right here.
 
-The Carters leave. Mr. Carter does up Reneé's scarf, even though she's big. Then everybody else leaves too, in ones and twos. The coffee pot gets washed. The lights in the hall go off, all except one.
+The Carters leave. Mr. Carter does up Reneé's scarf, even though she's big, and holds the door while she swings through on her crutches. Then everybody else leaves too, in ones and twos. The coffee pot gets washed. The lights in the hall go off, all except one.
 
 The square of light on the floor slides slowly across the floor, and up the wall.
 ~ set_experience("TimeLoss", 0.2)
