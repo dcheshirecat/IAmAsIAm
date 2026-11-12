@@ -93,6 +93,8 @@ namespace IAmAsIAm.Core.Practices
         public CharmBagState CharmBag;
         /// <summary>She cast a circle around it.</summary>
         public bool InCircle;
+        /// <summary>An alter's own practice (not Wicca): it never goes in the Book of Shadows.</summary>
+        public bool Private;
     }
 
     /// <summary>
@@ -192,6 +194,51 @@ namespace IAmAsIAm.Core.Practices
             };
             _steps = offerCircle && practiceId != "circle-casting" && practiceId != "grounding-centering" ? WithCircle(steps) : steps;
             Advance();
+        }
+
+        /// <summary>
+        /// An alter's own practice (owner: Jacob's rosary, Nina's and Lily's quiet, Heather's candle...), from its data steps.
+        /// Same gentle frame: no timer, no score, "Not today" always. Never written in the Book of Shadows.
+        /// </summary>
+        public RitualSession(IAmAsIAm.Core.PluralSystem.OwnPractice own, string memberId, int seed = 0)
+        {
+            if (own == null) throw new ArgumentNullException(nameof(own));
+            PracticeId = "own:" + own.id;
+            MemberId = memberId ?? own.memberId;
+            _craft = new CraftData();
+            _rng = new Random(seed);
+            _variant = "";
+            Title = own.name;
+            Result = new RitualResult { PracticeId = PracticeId, MemberId = MemberId, Private = true, Grounding = own.grounding, Title = own.name };
+            _steps = Own(own);
+            Advance();
+        }
+
+        IEnumerator<RitualStep> Own(IAmAsIAm.Core.PluralSystem.OwnPractice own)
+        {
+            int i = 0;
+            foreach (var d in own.steps ?? new List<IAmAsIAm.Core.PluralSystem.OwnPracticeStep>())
+            {
+                var phase = Enum.TryParse<RitualPhase>(d.phase, true, out var ph) ? ph : RitualPhase.Moment;
+                var kind = Enum.TryParse<RitualStepKind>(d.kind, true, out var k) ? k : RitualStepKind.Tap;
+                var step = Step(phase, kind, d.text ?? "", string.IsNullOrEmpty(d.action) ? "Continue" : d.action, d.seconds > 0 ? d.seconds : 6f);
+                if (kind == RitualStepKind.Breathe && d.seconds <= 0) step.Seconds = 8f;
+                if (kind == RitualStepKind.Choose)
+                {
+                    var opts = d.options ?? new List<string>();
+                    for (int o = 0; o < opts.Count; o++) step.Options.Add(new RitualOption(o.ToString(), opts[o]));
+                    if (step.Options.Count == 0) step.Options.Add(new RitualOption("0", "Continue"));
+                }
+                if (kind == RitualStepKind.Write) step.MaxLength = 300;
+                yield return step;
+                if (kind == RitualStepKind.Choose)
+                {
+                    var picked = step.Options.FirstOrDefault(o => o.Id == _answer) ?? step.Options[0];
+                    Result.Vars[$"own_{own.id}_{i}"] = picked.Label;
+                }
+                else if (kind == RitualStepKind.Write) Result.Text = _answer.Trim();
+                i++;
+            }
         }
 
         /// <summary>The player did the current step: a choice id for Choose, the text for Write, anything (or "") otherwise.</summary>

@@ -21,6 +21,8 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
     - The L going by, close enough to wave at. Grey lake light.
 - **Look: The boxes**
     - Still taped. Three years in Chicago, and still taped. "MAYA - BOOKS - CHAMPAIGN."
+- **Look: The tarot cards**
+    - Three cards laid out on the altar. A spread you don't remember dealing. The Star in the middle.
 - **Look: Mira's stone**
     - On the dresser, by your keys, where you'll see it.
 - **Use: Your phone**

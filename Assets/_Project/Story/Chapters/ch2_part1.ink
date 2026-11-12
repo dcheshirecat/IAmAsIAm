@@ -35,6 +35,10 @@
 + {room < 4} [Look: The boxes]
     Still taped. Three years in Chicago, and still taped. "MAYA - BOOKS - CHAMPAIGN." # look: taped-boxes
     -> room
+// Owner: lost-time traces of the craft, rarely, never explained (Izzy's reading).
++ {room < 4} [Look: The tarot cards]
+    Three cards laid out on the altar. A spread you don't remember dealing. The Star in the middle. # look: spread-unremembered
+    -> room
 + {room < 4} [Look: Mira's stone]
     On the dresser, by your keys, where you'll see it. # look: stone-dresser
     -> room

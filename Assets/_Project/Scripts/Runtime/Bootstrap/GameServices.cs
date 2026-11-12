@@ -39,6 +39,11 @@ namespace IAmAsIAm.Runtime
 
         internal static void InitializeBook(BookOfShadows book) => Book = book ?? new BookOfShadows(new CraftData());
 
+        /// <summary>How well Maya knows each alter; their own practices open as it grows (owner). Saved per slot.</summary>
+        public static IAmAsIAm.Core.PluralSystem.AlterBonds Bonds { get; private set; } = new IAmAsIAm.Core.PluralSystem.AlterBonds(null);
+
+        internal static void InitializeBonds(IAmAsIAm.Core.PluralSystem.AlterBonds bonds) => Bonds = bonds ?? new IAmAsIAm.Core.PluralSystem.AlterBonds(null);
+
         public static int InGameDay { get; set; } = 1;
         /// <summary>Time played in the active save slot (seconds, real time). Shown on the save screen.</summary>
         public static float PlaySeconds { get; set; }
@@ -100,6 +105,7 @@ namespace IAmAsIAm.Runtime
             Chapters = null; ChapterRuns = null; Preferences = null;
             Devices = new IAmAsIAm.Core.Devices.Devices();
             Book = new BookOfShadows(new CraftData());
+            Bonds = new IAmAsIAm.Core.PluralSystem.AlterBonds(null);
             InGameDay = 1;
             PlaySeconds = 0f;
             IsReady = false;

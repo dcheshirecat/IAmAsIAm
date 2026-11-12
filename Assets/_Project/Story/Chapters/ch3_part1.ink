@@ -18,6 +18,8 @@
 === ch3_part1 ===
 ~ set_age(27)
 ~ set_date(2026, 1, 12)  // Claude's guess at the exact day (owner: change it freely)
+// Owner: lost-time traces of the craft, rarely, never explained (a reading in the Book, in Izzy's hand).
+~ bos_entry("izzy", "Readings", "Before", "The Fool. Of course it's the Fool. Pack light.")
 # cw: time-loss
 # cw: medical-setting
 # cw: religious-content

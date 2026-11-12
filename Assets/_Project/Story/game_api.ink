@@ -89,6 +89,7 @@ EXTERNAL gift_charm_bag(giver, herb, stone, intent)
 EXTERNAL gain_herb(herb, giver)
 EXTERNAL honour_ancestor(person)
 EXTERNAL set_date(year, month, day)
+EXTERNAL get_to_know(member, amount)
 EXTERNAL gain_stone(stone, giver)
 
 === function set_experience(kind, amount) ===
@@ -184,6 +185,11 @@ EXTERNAL gain_stone(stone, giver)
 // The story's date (owner: a moon phase always shown; Tanya texts on the sabbats). At the start of every chapter part,
 // after set_age, and again when a part jumps ahead (e.g. before a sabbat scene).
 === function set_date(year, month, day) ===
+~ return
+
+// Maya gets to know an alter a little better (owner: each alter's own practices open this way; never shown as a number).
+// Also happens by itself at the start of each part for whoever fronts or shares time, and when they do their practices.
+=== function get_to_know(member, amount) ===
 ~ return
 
 // Someone she honours at the ancestor altar from now on (a people.json id).

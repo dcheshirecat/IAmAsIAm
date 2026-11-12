@@ -606,7 +606,7 @@ namespace IAmAsIAm.Runtime.Story
         {
             string front = GameServices.Roster?.FrontingId ?? "maya";
             var book = GameServices.Book;
-            if (book != null && !book.Practises(front)) { _ritual.ShowLine(MemberName(front), book.RefusalLine(front), null); return; }
+            if (book != null && !book.Practises(front)) { _ritual.OpenOwn(MemberName(front), book.RefusalLine(front), front, null); return; }
             _ritual.OpenWheel(null);
         }
 

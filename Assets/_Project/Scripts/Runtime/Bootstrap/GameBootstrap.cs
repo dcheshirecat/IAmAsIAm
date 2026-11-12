@@ -60,6 +60,7 @@ namespace IAmAsIAm.Runtime
 
             // The Book of Shadows (owner: Tanya gives it at Yule; only Maya and Izzy practise Wicca).
             GameServices.InitializeBook(new BookOfShadows(DataLoader.Load<CraftData>("craft")));
+            GameServices.InitializeBonds(new IAmAsIAm.Core.PluralSystem.AlterBonds(DataLoader.Load<IAmAsIAm.Core.PluralSystem.OwnPracticeData>("own_practices")));
 
             GameServices.Initialize(
                 new MindModel(initialWindowHalfWidth),

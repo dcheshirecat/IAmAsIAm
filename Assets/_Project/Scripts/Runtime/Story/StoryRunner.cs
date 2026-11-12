@@ -360,7 +360,21 @@ namespace IAmAsIAm.Runtime.Story
             });
             // Devices (owner): the family computer at 12, a phone and a laptop at 18; texts and emails.
             var devices = GameServices.Devices;
-            _story.BindExternalFunctionGeneral("set_age", a => { devices?.SetAge(Convert.ToInt32(a[0])); _cutNext = true; return null; });
+            _story.BindExternalFunctionGeneral("set_age", a =>
+            {
+                devices?.SetAge(Convert.ToInt32(a[0]));
+                _cutNext = true;
+                // A new part: whoever is here (fronting or sharing time) gets known a little better (owner: their own
+                // practices open by getting to know them better and better).
+                var r = GameServices.Roster;
+                if (r != null && GameServices.Bonds != null)
+                {
+                    if (r.FrontingId != "maya") GameServices.Bonds.GetToKnow(r.FrontingId, 1);
+                    foreach (var c in r.CoConscious) if (c != "maya") GameServices.Bonds.GetToKnow(c, 1);
+                }
+                return null;
+            });
+            _story.BindExternalFunctionGeneral("get_to_know", a => { GameServices.Bonds?.GetToKnow(S(a[0]), Convert.ToInt32(a[1])); return null; });
             _story.BindExternalFunctionGeneral("gain_device", a =>
             {
                 if (Enum.TryParse<IAmAsIAm.Core.Devices.DeviceKind>(S(a[0]), true, out var kind)) devices?.Gain(kind);

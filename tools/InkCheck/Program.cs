@@ -190,6 +190,7 @@ static class InkCheck
             Check(y >= 1998 && y <= 2040 && m >= 1 && m <= 12 && d >= 1 && d <= DateTime.DaysInMonth(Math.Clamp(y, 1, 9999), Math.Clamp(m, 1, 12)), $"set_date: bad date {y}-{m}-{d}");
             return null;
         });
+        story.BindExternalFunctionGeneral("get_to_know", a => { Check(_members.Contains(S(a[0])), $"get_to_know: unknown member '{a[0]}'"); return null; });
         story.BindExternalFunctionGeneral("honour_ancestor", a => { Contact(a[0], "honour_ancestor"); return null; });
         story.BindExternalFunctionGeneral("gain_herb", a => { Check(_herbs.Contains(S(a[0])), $"gain_herb: unknown herb '{a[0]}' (herbs.json)"); if (S(a[1]).Length > 0) Contact(a[1], "gain_herb"); return null; });
         story.BindExternalFunctionGeneral("gain_stone", a => { Check(_stones.Contains(S(a[0])), $"gain_stone: unknown stone '{a[0]}' (crystals.json)"); if (S(a[1]).Length > 0) Contact(a[1], "gain_stone"); return null; });

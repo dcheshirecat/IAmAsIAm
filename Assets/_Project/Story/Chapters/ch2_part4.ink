@@ -81,6 +81,10 @@ In your bag, from work: chamomile tea bags, a whole row of them, taped together.
 + {week < 4} [Look: Your phone]
     "Kabbalat Shabbat with drums! Everyone welcome. Bring your voice." A flyer someone shared. # look: renewal-flyer
     -> week
+// Owner: lost-time traces of the craft, rarely, never explained (Jacob's rosary).
++ {week < 4} [Look: The rosary]
+    A rosary on the altar, between your candles. Wooden beads. You've never owned a rosary. # look: rosary-on-altar
+    -> week
 + {week < 4} [Look: Mira's stone]
     On the dresser. The hole worn through it, and the dresser showing through. # look: stone-alone
     -> week

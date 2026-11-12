@@ -415,6 +415,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 - `window-l-train`: The L going by, close enough to wave at. Grey lake light.
 - `taped-boxes`: Still taped. Three years in Chicago, and still taped. "MAYA - BOOKS - CHAMPAIGN."
+- `spread-unremembered`: Three cards laid out on the altar. A spread you don't remember dealing. The Star in the middle.
 - `stone-dresser`: On the dresser, by your keys, where you'll see it.
 - `stone-dresser-evening`: By your keys. Where you'll see it.
 - `apartment-quiet`: Sunday afternoon. Adeena at her parents'. The apartment so quiet you can hear the fridge thinking.
@@ -431,6 +432,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `christie-chamomile`: In your bag, from work: chamomile tea bags, a whole row of them, taped together. "For the bad nights. -C"
 - `friday-hole`: Friday. Friday is a hole in the week now.
 - `renewal-flyer`: "Kabbalat Shabbat with drums! Everyone welcome. Bring your voice." A flyer someone shared.
+- `rosary-on-altar`: A rosary on the altar, between your candles. Wooden beads. You've never owned a rosary.
 - `stone-alone`: On the dresser. The hole worn through it, and the dresser showing through.
 - `sill-wax`: The windowsill. Empty. A ring of old wax in the corner.
 - `unopened-mail`: A drift of it by the door. Three envelopes from the same doctor's office, unopened.

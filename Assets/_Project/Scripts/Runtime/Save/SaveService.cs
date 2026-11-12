@@ -129,6 +129,7 @@ namespace IAmAsIAm.Runtime.Save
                 learnedSkillIds = GameServices.Skills.LearnedIds.ToList(),
                 inkStateJson = cp != null ? cp.Ink : runner != null ? runner.SaveState() ?? "" : "",
                 storyResume = cp != null,
+                alterKnown = GameServices.Bonds?.Export() ?? new List<IAmAsIAm.Core.PluralSystem.KnownState>(),
                 storyPlace = cp?.Place ?? "",
                 storyObjective = cp?.Objective ?? "",
                 storyPath = cp?.Path ?? "",
@@ -186,6 +187,7 @@ namespace IAmAsIAm.Runtime.Save
             GameServices.ChapterRuns?.RestoreRun(data.chapterRun);
             GameServices.Devices?.Restore(data.devices);
             GameServices.Book?.Restore(data.book);
+            GameServices.Bonds?.Restore(data.alterKnown);
 
             runner ??= UnityEngine.Object.FindAnyObjectByType<StoryRunner>();
             PendingResume = null;

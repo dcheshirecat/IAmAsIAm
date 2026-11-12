@@ -485,6 +485,10 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   **every sabbat played at least once** (new scenes: Beltane Ch1 P1, Imbolc Ch2 P3, Litha Ch3 P4, Mabon Ch4 P1 (Izzy), Lammas Ch5
   P2), **a moon phase ALWAYS shown** (`MoonBadge`, top left; esbat on full/new moons), **some sabbats hard sometimes** (Samhain,
   Yule). Every part has `set_date(y, m, d)` (Claude's guesses). `Core/Practices/WheelOfTheYear.cs`; craft.json `sabbats`.
+  **Step 6 BUILT (owner's answers):** each alter's **own practices appear with whoever fronts, opening as Maya gets to know them**
+  (`AlterBonds`, `own_practices.json`: 3 each for Jacob, Nina, Lily, Heather, Serena, Axel; never in the Book; Ink
+  `get_to_know`); **lost-time traces of the craft, rare, never explained** (Ch2 P1 spread, Ch2 P4 rosary, Ch3 P1 Izzy's reading);
+  **Heather's faith stays a mystery the WHOLE game** (owner): never name or explain it.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

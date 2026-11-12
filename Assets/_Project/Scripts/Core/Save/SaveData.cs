@@ -63,6 +63,8 @@ namespace IAmAsIAm.Core.Save
         /// and "Continue" picks it up there, in this place, with this goal line. False = between chapters.
         /// </summary>
         public bool storyResume;
+        /// <summary>How well Maya knows each alter (their own practices open as it grows).</summary>
+        public List<IAmAsIAm.Core.PluralSystem.KnownState> alterKnown = new List<IAmAsIAm.Core.PluralSystem.KnownState>();
         public string storyPlace = "";
         public string storyObjective = "";
         /// <summary>The Ink path of the checkpoint (e.g. ch1_part3.samhain): if the story changed in an update and the exact

@@ -237,6 +237,22 @@ These are proposals for the writing tools. Claude adds them when building.
    **Mabon** 2026, Izzy's (apples on the windowsill, three thanks in her hand), Ch 4 Part 1. **Lammas** 2027, bread in Seattle
    (someone already knocked the dough back), Ch 5 Part 2.
 6. Alter responses and lost-time traces; hard moments.
+   **Owner's answers:** each alter's own practices **appear with whoever is fronting, but open by getting to know the alter
+   better and better**; at the altar they do **their own small ritual**, never touching Maya's tools and never in the Book;
+   **lost-time traces of the craft, rarely, never explained**; **Heather's faith stays a mystery the whole game**.
+   **BUILT:** `Core/PluralSystem/AlterPractices.cs` (`AlterBonds`: how well Maya knows each alter, never shown as a number;
+   `OwnPractice`), `Resources/Data/own_practices.json`: three practices per alter at levels 1-3 (known 2, 5, 9):
+   **Jacob** (Catholic): the Sign of the Cross and the Our Father; a decade of the rosary; a candle for Saint Michael.
+   **Nina** (Quaker): waiting in the quiet; holding someone in the Light; a query. **Lily** (Quaker, 4): still under a
+   blanket; a drawing for Mira; the little light song. **Heather** (a mystery): her candle; tea for everyone; a name she
+   doesn't say. **Serena** (no religion): a long walk; a note to the young ones; the long view (old photos). **Axel**: loud
+   music on purpose; running it off; "Keep watch, dear Lord" (Compline, which Pastor Key taught him). They're known better at
+   the start of each part where they front or share time (`set_age`), each time they do a practice, and by Ink
+   `get_to_know(member, amount)`. `RitualSession(OwnPractice)` (same gentle frame; `Result.Private`: no Book entry).
+   `RitualScreen.OpenOwn`: their line about Maya's tools, then their own practices. Saved: SaveData `alterKnown`.
+   **Lost-time traces (no new voiced lines):** Ch 2 Part 1, a three-card spread on the altar she doesn't remember dealing
+   (Izzy); Ch 2 Part 4, a wooden rosary between her candles (Jacob); Ch 3 Part 1, a reading in the Book in Izzy's hand
+   ("The Fool. Of course it's the Fool. Pack light.").
 7. Going back through the written chapters to add practice moments (with the owner's OK, chapter by chapter).
 
 Art: every new object (the altar per home, the Book of Shadows, candles, the charm bag, runes, the pendulum, the scrying bowl,

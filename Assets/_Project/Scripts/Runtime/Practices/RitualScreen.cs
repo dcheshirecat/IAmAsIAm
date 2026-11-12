@@ -91,6 +91,7 @@ namespace IAmAsIAm.Runtime.Practices
             _phase.text = "";
             Clear(_actions);
             _row = null;
+            ShowTokens(new RitualStep());
             _breath.SetActive(false);
             // A charm bag needs a herb and a stone someone has given her (owner).
             var known = RitualSession.AtTheAltar.Where(id => book != null && book.HasLearned(id) && (id != "charm-bag" || book.CanMakeCharmBag)).ToList();
@@ -129,6 +130,39 @@ namespace IAmAsIAm.Runtime.Practices
         /// For someone who doesn't practise Wicca (owner: they keep their own faith and leave the tools alone): one line in
         /// their voice at the altar, then back. (Their own small practices come later: docs/WiccanPractice.md step 6.)
         /// </summary>
+        /// <summary>
+        /// Someone who doesn't practise Wicca at the altar (owner): they leave Maya's tools alone (their line), and do their own
+        /// small practice instead, whichever have opened as Maya has got to know them.
+        /// </summary>
+        public void OpenOwn(string who, string line, string memberId, Action closed)
+        {
+            var mine = GameServices.Bonds?.Unlocked(memberId) ?? new List<IAmAsIAm.Core.PluralSystem.OwnPractice>();
+            if (mine.Count == 0) { ShowLine(who, line, closed); return; }
+            Show();
+            _title.text = who;
+            _phase.text = "";
+            _breath.SetActive(false);
+            Clear(_actions);
+            _row = null;
+            ShowTokens(new RitualStep());
+            _body.text = $"<i>{line}</i>";
+            foreach (var p in mine)
+            {
+                var practice = p;
+                WheelButton(p.name, () => RunOwn(practice, memberId, closed));
+            }
+            Button(_actions, "Not today", () => { Hide(); closed?.Invoke(); }, Quiet, 90, 34);
+        }
+
+        void RunOwn(IAmAsIAm.Core.PluralSystem.OwnPractice practice, string memberId, Action closed)
+        {
+            _session = new RitualSession(practice, memberId, Environment.TickCount);
+            _done = _ => closed?.Invoke();
+            Show();
+            _title.text = _session.Title;
+            ShowStep();
+        }
+
         public void ShowLine(string who, string line, Action closed)
         {
             Show();
@@ -136,6 +170,7 @@ namespace IAmAsIAm.Runtime.Practices
             _phase.text = "";
             _breath.SetActive(false);
             Clear(_actions);
+            ShowTokens(new RitualStep());
             _body.text = $"<b>{who}:</b> {line}";
             Button(_actions, "Leave it", () => { Hide(); closed?.Invoke(); }, Quiet);
         }
@@ -316,6 +351,14 @@ namespace IAmAsIAm.Runtime.Practices
         /// <summary>What a finished ritual leaves behind: the Book entry, a little grounding, the practice remembered.</summary>
         static void Apply(RitualResult r)
         {
+            // An alter's own practice: never in the Book (it isn't Wicca); it steadies them, and they're known a little better.
+            if (r.Private)
+            {
+                if (r.Grounding > 0f) GameServices.Mind?.Nudge(-r.Grounding);
+                GameServices.Mind?.RecordPractice();
+                GameServices.Bonds?.GetToKnow(r.MemberId, 1);
+                return;
+            }
             var book = GameServices.Book;
             if (book != null)
             {

@@ -1,0 +1,915 @@
+{
+  "sourceNote": "Each alter's own small practices (owner, 2026-11-12): their own faith or way of being, never Maya's Wiccan tools; they open as Maya gets to know each alter better (levelThresholds). Jacob's prayers are traditional Catholic prayers (the Sign of the Cross, the Our Father, the Hail Mary, the Glory Be, the Prayer to Saint Michael of Leo XIII); Nina's and Lily's are Quaker (waiting worship, holding someone in the Light, queries); Axel's is from Compline in the Book of Common Prayer ('Keep watch, dear Lord'). Heather's candle is her own faith and stays a mystery all game (owner): never explained.",
+  "levelThresholds": [
+    2,
+    5,
+    9
+  ],
+  "practices": [
+    {
+      "id": "jacob-sign",
+      "memberId": "jacob",
+      "name": "The Sign of the Cross",
+      "level": 1,
+      "grounding": 0.2,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "Kneel, or just sit up straight. One breath.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "In the name of the Father, and of the Son, and of the Holy Spirit.",
+          "action": "Cross yourself",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Our Father, who art in heaven... Say it all the way through, in your head.",
+          "action": "Pray",
+          "seconds": 7
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "Who are you praying for?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Maya",
+            "All of us",
+            "Nobody. Just me."
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Amen.",
+          "action": "Amen",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "jacob-rosary",
+      "memberId": "jacob",
+      "name": "A decade of the rosary",
+      "level": 2,
+      "grounding": 0.3,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "The rosary from the drawer. Cold beads. One breath.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "One Our Father, on the big bead.",
+          "action": "Our Father",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Ten Hail Marys, one bead at a time. Don't rush.",
+          "action": "Pray",
+          "seconds": 10
+        },
+        {
+          "phase": "Moment",
+          "kind": "tap",
+          "text": "Glory be to the Father, and to the Son, and to the Holy Spirit.",
+          "action": "Glory be",
+          "seconds": 0
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "Which mysteries tonight?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "The Joyful",
+            "The Sorrowful",
+            "The Glorious",
+            "The Luminous"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Kiss the crucifix. Put it back in the drawer.",
+          "action": "Put it back",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "jacob-michael",
+      "memberId": "jacob",
+      "name": "A candle for Saint Michael",
+      "level": 3,
+      "grounding": 0.3,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "A candle for Saint Michael, who guards the door. One breath.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "Light it.",
+          "action": "Light it",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Saint Michael the Archangel, defend us in battle. Be our protection...",
+          "action": "Pray",
+          "seconds": 7
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "What are you guarding tonight?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "The door",
+            "The little ones",
+            "Maya"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Check the lock. Then sleep.",
+          "action": "Check the lock",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "nina-quiet",
+      "memberId": "nina",
+      "name": "Waiting in the quiet",
+      "level": 1,
+      "grounding": 0.25,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "Sit on the floor, back against the bed, like in meeting.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "Hands in your lap. Nobody's watching. You don't have to be good.",
+          "action": "Hands in lap",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Wait. If something comes, you can say it. You don't have to.",
+          "action": "Wait",
+          "seconds": 10
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "Did anything come?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Something",
+            "Just quiet",
+            "I was being good again"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Meeting's over. You can get up.",
+          "action": "Get up",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "nina-light",
+      "memberId": "nina",
+      "name": "Holding someone in the Light",
+      "level": 2,
+      "grounding": 0.25,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "Sit in the quiet. One breath.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "choose",
+          "text": "Who do you want to hold in the Light?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Mira",
+            "Lily",
+            "Maya",
+            "Mom"
+          ]
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Picture them. Picture the Light all around them.",
+          "action": "Hold them",
+          "seconds": 8
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "How does it feel?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Warm",
+            "Sad",
+            "Both"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Let them go, gently.",
+          "action": "Let go",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "nina-query",
+      "memberId": "nina",
+      "name": "A query",
+      "level": 3,
+      "grounding": 0.25,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "Sit in the quiet. One breath.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "choose",
+          "text": "Pick a query, like the ones read out in meeting.",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Do I let my life speak?",
+            "Do I tell the truth, even when it's hard?",
+            "Do I take care of myself, as well as others?"
+          ]
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Sit with it. No right answer.",
+          "action": "Sit",
+          "seconds": 8
+        },
+        {
+          "phase": "Reflect",
+          "kind": "write",
+          "text": "Write your answer. Nobody has to read it.",
+          "action": "Keep it",
+          "seconds": 0
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Fold it up small.",
+          "action": "Fold it",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "lily-blanket",
+      "memberId": "lily",
+      "name": "Still, under a blanket",
+      "level": 1,
+      "grounding": 0.3,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "The softest blanket. Get under it.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "Count your fingers: one, two, three, four, five.",
+          "action": "Count",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Breathe like a balloon. In... and out.",
+          "action": "Balloon",
+          "seconds": 8
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "How do you feel?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Better",
+            "Still waiting",
+            "Sleepy"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Peek out.",
+          "action": "Peek out",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "lily-drawing",
+      "memberId": "lily",
+      "name": "A drawing for Mira",
+      "level": 2,
+      "grounding": 0.25,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "Crayons, and the back of an envelope.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "choose",
+          "text": "Which colour?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Yellow",
+            "Blue",
+            "Purple",
+            "Green"
+          ]
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Draw. Anything at all.",
+          "action": "Draw",
+          "seconds": 6
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "What is it?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "A house",
+            "Mira",
+            "The sun",
+            "A dog"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Put it on the fridge.",
+          "action": "On the fridge",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "lily-song",
+      "memberId": "lily",
+      "name": "The little light song",
+      "level": 3,
+      "grounding": 0.3,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "Sit by the window.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "Hold up one finger, like a candle.",
+          "action": "One finger",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Hum it: this little light of mine...",
+          "action": "Hum",
+          "seconds": 8
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "Again?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Sing it again",
+            "That's enough"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Let it shine.",
+          "action": "Let it shine",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "heather-candle",
+      "memberId": "heather",
+      "name": "Her candle",
+      "level": 1,
+      "grounding": 0.3,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "The windowsill. One breath.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "One tall candle. Her matches.",
+          "action": "Strike one",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "She lights it, and watches it. She doesn't explain.",
+          "action": "Watch",
+          "seconds": 8
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "...",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Stay a while",
+            "Enough for tonight"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "She leaves it burning, and stays near it.",
+          "action": "Stay near",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "heather-tea",
+      "memberId": "heather",
+      "name": "Tea for everyone",
+      "level": 2,
+      "grounding": 0.3,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "The kettle. One breath.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "Cups for everyone. More cups than there are people in the room.",
+          "action": "Set them out",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Pour. Wrap your hands around yours.",
+          "action": "Hold it",
+          "seconds": 6
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "Who needs looking after tonight?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "The little ones",
+            "Maya",
+            "Me, too"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Rinse the cups. Leave them out for later.",
+          "action": "Rinse them",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "heather-name",
+      "memberId": "heather",
+      "name": "A name she doesn't say",
+      "level": 3,
+      "grounding": 0.25,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "The candle, again. One breath.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "Light it.",
+          "action": "Light it",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "She says a name. Not out loud.",
+          "action": "...",
+          "seconds": 8
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "...",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Stay",
+            "Go"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "She lets it burn all the way down.",
+          "action": "Let it burn",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "serena-walk",
+      "memberId": "serena",
+      "name": "A long walk",
+      "level": 1,
+      "grounding": 0.25,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "Coat. Keys. One breath.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "Out the door. No headphones.",
+          "action": "Go",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Walk. Notice five things.",
+          "action": "Walk",
+          "seconds": 8
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "What did you notice?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "The sky",
+            "A dog",
+            "Someone's garden",
+            "Nothing much, and that's fine"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Home. Shoes off.",
+          "action": "Shoes off",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "serena-note",
+      "memberId": "serena",
+      "name": "A note to the young ones",
+      "level": 2,
+      "grounding": 0.2,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "A pen, and the back of a receipt.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "Sit at the kitchen table.",
+          "action": "Sit",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "write",
+          "text": "Write something kind for the younger ones to find.",
+          "action": "Write it",
+          "seconds": 0
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "Where will they find it?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "On the fridge",
+            "In the kitchen drawer",
+            "Under the pillow"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Leave it there.",
+          "action": "Leave it",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "serena-photos",
+      "memberId": "serena",
+      "name": "The long view",
+      "level": 3,
+      "grounding": 0.3,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "Old photos, in a shoebox. One breath.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "Pick one.",
+          "action": "Pick one",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Look at the girl in it. She made it this far.",
+          "action": "Look",
+          "seconds": 8
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "What would you tell her?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "You were right to be scared",
+            "It gets bigger than this",
+            "Nothing. Just sit with her"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Put the lid back on.",
+          "action": "Lid on",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "axel-music",
+      "memberId": "axel",
+      "name": "Loud music, on purpose",
+      "level": 1,
+      "grounding": 0.25,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "Phone, speaker, volume up.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "choose",
+          "text": "What's playing?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Something loud",
+            "Something to dance to",
+            "Something angry"
+          ]
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Dance like nobody's in here. (Somebody always is.)",
+          "action": "Dance",
+          "seconds": 8
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "Better?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Better",
+            "Still angry",
+            "Both"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Turn it down before the neighbours do.",
+          "action": "Turn it down",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "axel-run",
+      "memberId": "axel",
+      "name": "Running it off",
+      "level": 2,
+      "grounding": 0.3,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "Laces. One breath.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "Out the door.",
+          "action": "Go",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Run until your lungs burn. Then a little less.",
+          "action": "Run",
+          "seconds": 8
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "How was it?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Faster next time",
+            "Enough for today"
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Shower. Water. Food.",
+          "action": "Close",
+          "seconds": 0
+        }
+      ]
+    },
+    {
+      "id": "axel-compline",
+      "memberId": "axel",
+      "name": "Keep watch, dear Lord",
+      "level": 3,
+      "grounding": 0.3,
+      "steps": [
+        {
+          "phase": "Arrive",
+          "kind": "breathe",
+          "text": "The old prayer Pastor Key taught him. He'd never admit he still says it.",
+          "action": "Breathe",
+          "seconds": 0
+        },
+        {
+          "phase": "Prepare",
+          "kind": "tap",
+          "text": "Sit on the edge of the bed.",
+          "action": "Sit",
+          "seconds": 0
+        },
+        {
+          "phase": "Moment",
+          "kind": "hold",
+          "text": "Keep watch, dear Lord, with those who work, or watch, or weep this night...",
+          "action": "Pray",
+          "seconds": 7
+        },
+        {
+          "phase": "Reflect",
+          "kind": "choose",
+          "text": "Who's it for tonight?",
+          "action": "",
+          "seconds": 0,
+          "options": [
+            "Mark",
+            "Everyone in here",
+            "No one. Just habit."
+          ]
+        },
+        {
+          "phase": "Close",
+          "kind": "tap",
+          "text": "Lights off.",
+          "action": "Lights off",
+          "seconds": 0
+        }
+      ]
+    }
+  ]
+}

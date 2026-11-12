@@ -186,6 +186,8 @@ Every close-up in the chapters is listed scene by scene in [ART_BY_SCENE.md](ART
 | [ ] | `offering_dish` | A small dish: bread, milk or flowers | Ch 1 |
 | [ ] | `maypole`, `beltane_fire_bowl` | A birch maypole with ribbons in every colour; a small fire in a bowl | Ch 1 |
 | [ ] | `lammas_loaf` | A round loaf, the first slice set aside | Ch 5 |
+| [ ] | `rosary`, `saint_michael_candle` | Jacob's wooden rosary; a glass votive with Saint Michael on it | Ch 2+ |
+| [ ] | `crayon_drawing` | Lily's drawing for Mira on the back of an envelope (on the fridge) | (practice) |
 
 ## Part 5: Dialogue portraits and faces (2D)
 Face paintings go on the 3D models in the world; portraits sit beside the dialogue box (`Character Art - Finished/Talking Heads`). *Claude*

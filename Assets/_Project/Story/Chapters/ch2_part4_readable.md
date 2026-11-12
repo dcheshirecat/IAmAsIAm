@@ -66,6 +66,8 @@ In your bag, from work: chamomile tea bags, a whole row of them, taped together.
     - Friday. Friday is a hole in the week now.
 - **Look: Your phone**
     - "Kabbalat Shabbat with drums! Everyone welcome. Bring your voice." A flyer someone shared.
+- **Look: The rosary**
+    - A rosary on the altar, between your candles. Wooden beads. You've never owned a rosary.
 - **Look: Mira's stone**
     - On the dresser. The hole worn through it, and the dresser showing through.
 - **Use: The window (cleanse the apartment)**
