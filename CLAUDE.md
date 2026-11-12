@@ -140,6 +140,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   the disk cleanup runs in parallel in the background while the code and the Library cache download. `main` is the
   default branch (owner).
 
+- 2026-11-12: **Storytelling style (owner): very little narration.** The story is mostly **explored**: the player walks the
+  places, looks at and uses things, overhears and talks, and the game gently **points them in the right direction** (the owner's
+  reference for the feel: *Tell Me Why*; take only the approach, never its story, characters or look). Narration isn't voiced.
+  Claude may draft every chapter (owner: "yes"), as drafts in Drive for the owner to edit.
+
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
