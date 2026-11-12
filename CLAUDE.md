@@ -137,8 +137,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   signed with ONE fixed key from the repo secrets `ANDROID_KEYSTORE_BASE64` + `ANDROID_KEYSTORE_PASS` (alias `iamasiam`), so
   updates install over the old app with no uninstall. Without the secrets it falls back to a throwaway key (warning in the
   run's Summary). Never print or commit the key. Test builds show errors on screen (`Runtime/Diagnostics/ErrorOverlay.cs`).
-- 2026-11-12: **Builds are never cut off** (owner): `cancel-in-progress: false`. A running build finishes; pushes made meanwhile
-  wait, and only the newest waiting one builds next (GitHub replaces older waiting runs).
+- 2026-11-12: **Builds are never cut off, and never wait** (owner): no `concurrency` block, so every push to `main` gets its own
+  build and they run side by side (each APK = that push). None is cancelled.
 - 2026-11-12: **Touch fixes:** the story screen's dialogue box started visible, so the game was always "busy" (no movement, no
   touch controls, an invisible tap layer ate every touch): it now starts hidden (build 14+). The EventSystem is now kept for the
   whole run (DontDestroyOnLoad) and re-made if missing (`StoryScreen.EnsureEventSystem`), because switching slots reloads the scene.
