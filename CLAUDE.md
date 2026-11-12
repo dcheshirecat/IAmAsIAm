@@ -144,6 +144,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   places, looks at and uses things, overhears and talks, and the game gently **points them in the right direction** (the owner's
   reference for the feel: *Tell Me Why*; take only the approach, never its story, characters or look). Narration isn't voiced.
   Claude may draft every chapter (owner: "yes"), as drafts in Drive for the owner to edit.
+  **Guidance:** an **objective line** (in the fronting alter's words), **inner voices** nudging, and a **soft glow** on things
+  worth looking at. **Looking at an object shows only its label**; a **memory scene** plays only if the object is very significant
+  to the host or to an alter **already unlocked**. **Playing a chapter as an unlocked alter reveals hidden memories (cutscenes).**
+  Once another alter's version of a chapter is unlocked (or a new alter is met), an **unexpected switch** can always happen.
+  The prologue drafts are to be **reworked into this explore-first style** (same events and dialogue; keep the owner's Doc edits).
 
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
