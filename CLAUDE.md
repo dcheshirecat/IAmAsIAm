@@ -233,9 +233,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Parts: 1 Thursdays (spring 2018, 19: class, first reading, Ostara, growing lost time, black screen), 2 Coming back (May 2019, 20),
   3 Senior year (fall 2019, 21: Mark's email, abandoned, the coat drive and Gracie, Samhain with Tanya and Selene, quiet Sundays),
   4 Alone (2020: lockdown, Zoom graduation, the prayer service, Jacob). Drive: Story Drafts → `02 Chapter 1 - Christianity (title to
-  come)` (1ZNBBCoAvZZQi2bK9kD3NFSC_ciUCQwWg): Part 1 (1s0ZFBiQusFethA8Yyla1prrikx0_Z5gxUzwGf3yMx2o), Part 2
-  (1i_4R0_4pg60TRjLSlRJpr7VIog5wWqr_7CvHtAHuQmY), Part 3 (13mn_dcWCEDA4ndvEe3TFwK8Xy6Ever7jxYlxkLn55AI), Part 4
-  (1jwSdV_oyeRmqTB2DHZKxABwEq-bN0DuV-OdJgj7Wjm8). Script Sheet "02 Chapter 1 - script list (draft)" (1_fEDa_uaOlDYmY1UK0vj0ypcg4957A4ibSZYJhq01Dw, 34 lines).
+  come)` (1ZNBBCoAvZZQi2bK9kD3NFSC_ciUCQwWg): Part 1 (1JUfAW2Tt9BEOpbX8TAllGM2QxINiT-GEZcsULYBaYV0), Part 2
+  (1EQmSahaqBDFC1ccMLYQ3jrZL78-cVABTwgpl2bHAgE0), Part 3 (18mvBkU4G1rVieF2XCamwBjUdDvfHz9f2u67J1MppV58), Part 4
+  (1wZ2k6JIA1297Om18-5J4A6e58TpOMF32kA-HnuiDfK4). Script Sheet "02 Chapter 1 - script list (draft)" (1_fEDa_uaOlDYmY1UK0vj0ypcg4957A4ibSZYJhq01Dw, 34 lines).
 - 2026-11-12: **Chapter 1.5, Axel (owner):** Axel's first act is **a haircut and new clothes**. **Axel:** a **dark sense of humour**, loves
   fun and **parties**, never at anyone's expense; loves quality time with Mark. **Angry at the Quaker church** but **cautiously open to
   mainstream Christianity through friends**; he goes to church with Mark **only on holidays**, once they've dated a few months.
@@ -530,7 +530,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   DONE: Prologue (Sunday 1 waking + toast dinner + bedtime; Sunday 2 dry-cereal breakfast + the evening alone; Sunday 3 breakfast
   for two; Sunday 4 Mom's early note + a ride with Mr. Carter), Prelude (Part 1 lunch alone + the library job, Part 2 a library
   shift with a Wicca book on hold under her name + night, Part 3 finals week + Mom's Christmas text). Maya's campus job = the
-  library (Claude's guess). NEXT: Chapter 1, then 1.5, 2, 3, 4, 5, 6.
+  library (Claude's guess). Chapter 1 (a whole Thursday; the night she came back; senior-year shifts swapped + dinner alone;
+  lockdown grab-and-go). NEXT: Chapter 1.5, then 2, 3, 4, 5, 6.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
