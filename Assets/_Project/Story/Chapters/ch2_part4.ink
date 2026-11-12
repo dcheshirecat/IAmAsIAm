@@ -66,6 +66,7 @@ Adeena: Get help, Maya. Real help. Promise me that one thing. # vo: ch2-judaism_
 # shot: close
 # objective: Find somewhere to be on Friday night
 ~ text_from("tanya", "Maya. I'm so sorry. Call me, or don't, but I'm here. Every Thursday, every day.")
+~ text_from("christie", "Heard about you and Adeena. I'm so sorry. Snack drawer is yours all week. No questions. -C")
 - (week)
 + {week < 4} [Look: The calendar]
     Friday. Friday is a hole in the week now. # look: friday-hole

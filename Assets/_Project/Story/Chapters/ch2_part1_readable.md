@@ -72,6 +72,9 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
     - A binder, colour-coded, labelled in Adeena's tiny capitals. "SUE." "MÁXIMO." "TSAVO LIONS." "ASK ME FIRST."
 - **Look: The clock**
     - The members' preview is at four. It's twenty past one.
+- **Talk: Christie**
+    - **Christie:** New guide? Christie. I've done the dinosaur tour four hundred times. Snack drawer's here. Don't tell Adeena it exists.
+    - **Christie:** Kidding. She knows. She pretends not to. That's love, at the Field.
 - **Go: Back to the floor**
 
 ## Install

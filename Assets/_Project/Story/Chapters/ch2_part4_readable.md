@@ -54,6 +54,8 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 
 📱 **Text from Tanya:** Maya. I'm so sorry. Call me, or don't, but I'm here. Every Thursday, every day.
 
+📱 **Text from Christie:** Heard about you and Adeena. I'm so sorry. Snack drawer is yours all week. No questions. -C
+
 **Explore** (glowing things; the player picks):
 
 - **Look: The calendar**

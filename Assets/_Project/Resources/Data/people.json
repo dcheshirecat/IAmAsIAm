@@ -359,6 +359,44 @@
         "ch2-judaism"
       ],
       "memberLinks": []
+    },
+    {
+      "id": "christie",
+      "name": "Christie",
+      "role": "Maya's friend at The Field Museum, another tour guide: kind, funny, covers for her. Years later (Chapter 6) she's the one who tells Maya about Adeena's wedding.",
+      "tradition": "",
+      "description": "",
+      "chapterIds": [
+        "ch2-judaism",
+        "ch3-buddhism",
+        "ch6-sikhism"
+      ],
+      "memberLinks": [],
+      "pronouns": "she/her"
+    },
+    {
+      "id": "angie",
+      "name": "Angie",
+      "role": "Maya's therapist (35, she/her), found by Tanya. Knows about dissociation. Only ever says 'a dissociative disorder', never a label.",
+      "tradition": "",
+      "description": "",
+      "chapterIds": [
+        "ch3-buddhism"
+      ],
+      "memberLinks": [],
+      "age": "35",
+      "pronouns": "she/her"
+    },
+    {
+      "id": "reverend_mori",
+      "name": "Reverend Mori",
+      "role": "The minister at a Jodo Shinshu (Pure Land) Buddhist temple in Chicago (Claude's placeholder name).",
+      "tradition": "buddhism",
+      "description": "",
+      "chapterIds": [
+        "ch3-buddhism"
+      ],
+      "memberLinks": []
     }
   ]
 }

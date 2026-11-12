@@ -363,6 +363,22 @@
       "chapterId": "ch2-judaism"
     },
     {
+      "id": "therapist_office",
+      "name": "Angie's office",
+      "city": "chicago",
+      "x": 0.48,
+      "y": 0.62,
+      "chapterId": "ch3-buddhism"
+    },
+    {
+      "id": "buddhist_temple_chicago",
+      "name": "The Buddhist temple",
+      "city": "chicago",
+      "x": 0.42,
+      "y": 0.08,
+      "chapterId": "ch3-buddhism"
+    },
+    {
       "id": "black",
       "name": "",
       "city": "",

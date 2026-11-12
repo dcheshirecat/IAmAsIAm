@@ -586,8 +586,30 @@ namespace IAmAsIAm.Runtime.Story
             var list = new List<(string, Action)>();
             if (next != null) list.Add(($"Begin: {ShortTitle(next)}", () => { CloseAction(); OpenChapter(next.id); }));
             if (finished.Count > 0) list.Add(("Replay a chapter", () => OpenChapterList(0)));
+            if (TestJumps) list.Add(("Test: any chapter", () => OpenTestChapterList(0)));
             list.Add(("Not now", CloseAction));
             OpenAction("Chapters", body, list.ToArray());
+        }
+
+        /// <summary>
+        /// Test builds only: start ANY chapter, so the owner can test a new scene without replaying everything before it.
+        /// Every build is a test build for now; set this to false for a release.
+        /// </summary>
+        const bool TestJumps = true;
+
+        void OpenTestChapterList(int page)
+        {
+            const int perPage = 2;
+            var all = GameServices.Chapters?.chapters ?? new List<IAmAsIAm.Core.Story.ChapterDefinition>();
+            var buttons = new List<(string, Action)>();
+            foreach (var c in all.Skip(page * perPage).Take(perPage))
+            {
+                var ch = c;
+                buttons.Add((ShortTitle(ch), () => { CloseAction(); OpenChapter(ch.id); }));
+            }
+            if ((page + 1) * perPage < all.Count) buttons.Add(("More", () => OpenTestChapterList(page + 1)));
+            buttons.Add(("Back", () => OpenChapterList()));
+            OpenAction("Test: any chapter", "For testing: start any chapter, even one you haven't reached. (Not in the finished game.)", buttons.ToArray());
         }
 
         static string ShortTitle(IAmAsIAm.Core.Story.ChapterDefinition c) =>

@@ -35,9 +35,9 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 25 | `episcopal_church` | St. Luke's Episcopal | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Pastor Key, Axel (the body, 20) |
 | 26 | `protest_march` | The vigil march | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Mark, Izzy (the body, 20), Axel (the body, 20) |
 | 27 | `queer_affirming_church` | The queer-affirming church | indianapolis | Chapter 1.5: Axel (ch1_5_part3) | Mark, Axel (the body, 20) |
-| 28 | `chicago_apartment` | Maya's apartment | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 25) |
-| 29 | `field_museum_hall` | The Field Museum: Stanley Field Hall | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 24) |
-| 30 | `field_museum_office` | The Field Museum: the registrar's office | chicago | Chapter 2: Judaism (ch2_part1) | - |
+| 28 | `chicago_apartment` | Maya's apartment | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 25), Tanya, Maya (the body, 27) |
+| 29 | `field_museum_hall` | The Field Museum: Stanley Field Hall | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 24), Christie, Maya (the body, 27) |
+| 30 | `field_museum_office` | The Field Museum: the registrar's office | chicago | Chapter 2: Judaism (ch2_part1) | Christie |
 | 31 | `field_museum_gallery` | The Field Museum: the new gallery | chicago | Chapter 2: Judaism (ch2_part1) | Eudora Jones, Adeena, Maya (the body, 24) |
 | 32 | `adeena_apartment` | Adeena's apartment | chicago | Chapter 2: Judaism (ch2_part2) | Adeena, Maya (the body, 25), Maya (the body, 27) |
 | 33 | `synagogue_conservative` | Congregation Etz Chaim | chicago | Chapter 2: Judaism (ch2_part2) | Adeena |
@@ -51,6 +51,8 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 41 | `sigd_community_hall` | The Sigd celebration | chicago | Chapter 2: Judaism (ch2_part4) | Tigist, Maya (the body, 27) |
 | 42 | `effie_house` | Effie's house | chicago | Chapter 2: Judaism (ch2_part4) | Effie, Maya (the body, 27) |
 | 43 | `lakefront_path` | The lakefront path | chicago | Chapter 2: Judaism (ch2_part4) | Rabbi Abe, Maya (the body, 27) |
+| 44 | `therapist_office` | Angie's office | chicago | Chapter 3: Buddhism (ch3_part1) | Angie, Maya (the body, 27) |
+| 45 | `buddhist_temple_chicago` | The Buddhist temple | chicago | Chapter 3: Buddhism (ch3_part1) | Reverend Mori, Maya (the body, 27) |
 
 ## 2. People, in the order they first appear
 
@@ -59,14 +61,14 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | # | Who | Id | Kind | First in | Ages (the body) | Places |
 |---|---|---|---|---|---|---|
 | 1 | Sarah | `mother` | person | Prologue: This Little Light | - | home_kitchen, car, church_sanctuary, church_fellowship_hall, home_maya_room, college_dorm_selene |
-| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27 | home_kitchen, car, church_fellowship_hall, church_first_day_school, church_sanctuary, home_maya_room, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path |
+| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27 | home_kitchen, car, church_fellowship_hall, church_first_day_school, church_sanctuary, home_maya_room, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, buddhist_temple_chicago |
 | 3 | Miss Eloise | `eloise` | person | Prologue: This Little Light | - | church_first_day_school |
 | 4 | Rebecca | `rebecca` | person | Prologue: This Little Light | - | church_first_day_school, church_sanctuary |
 | 5 | Mrs. Hines | `hines` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
 | 6 | Mr. Jones | `jones` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
 | 7 | Mira | `guide_quaker` | person | Prologue: This Little Light | - | church_fellowship_hall |
 | 8 | Selene | `selene` | person | Prelude | - | college_lecture_hall, college_dorm_selene, college_quad, park_ostara, shop_the_circle, campus_cafe |
-| 9 | Tanya | `tanya` | person | Prelude | - | shop_the_circle, park_yule_circle, park_ostara |
+| 9 | Tanya | `tanya` | person | Prelude | - | shop_the_circle, park_yule_circle, park_ostara, chicago_apartment |
 | 10 | Gracie | `gracie` | person | Chapter 1: Christianity | - | campus_ministry, campus_ministry_chapel, campus_ministry_lawn |
 | 11 | Axel | `axel` | system member | Chapter 1.5: Axel | 20 | college_apartment_maya, campus_barber, thrift_store, campus_cafe, college_lecture_hall, town_pride, methodist_church, episcopal_church, protest_march, queer_affirming_church, college_apartment_axel |
 | 12 | Mark | `ex_christian` | person | Chapter 1.5: Axel | - | college_lecture_hall, college_apartment_axel, town_pride, methodist_church, protest_march, queer_affirming_church |
@@ -74,14 +76,17 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 14 | Pastor Key | `mark_priest` | person | Chapter 1.5: Axel | - | episcopal_church |
 | 15 | Izzy | `izzy` | system member | Chapter 1.5: Axel | 20 | protest_march |
 | 16 | Adeena | `ex_jewish` | person | Chapter 2: Judaism | - | field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_conservative, adeena_parents_house, lgbtq_synagogue, chabad_house, chicago_apartment |
-| 17 | Eudora Jones | `eudora` | person | Chapter 2: Judaism | - | field_museum_gallery |
-| 18 | Rabbi Abe | `rabbi_abe` | person | Chapter 2: Judaism | - | synagogue_social_hall, lakefront_path |
-| 19 | Ruth | `ruth` | person | Chapter 2: Judaism | - | adeena_parents_house |
-| 20 | Lee | `lee` | person | Chapter 2: Judaism | - | adeena_parents_house |
-| 21 | Effie | `effie` | person | Chapter 2: Judaism | - | adeena_parents_house, effie_house |
-| 22 | Grandma | `grandma` | person | Chapter 2: Judaism | - | adeena_parents_house |
-| 23 | Hannah | `hannah` | person | Chapter 2: Judaism | - | havurah_living_room |
-| 24 | Tigist | `tigist` | person | Chapter 2: Judaism | - | sigd_community_hall |
+| 17 | Christie | `christie` | person | Chapter 2: Judaism | - | field_museum_office, field_museum_hall |
+| 18 | Eudora Jones | `eudora` | person | Chapter 2: Judaism | - | field_museum_gallery |
+| 19 | Rabbi Abe | `rabbi_abe` | person | Chapter 2: Judaism | - | synagogue_social_hall, lakefront_path |
+| 20 | Ruth | `ruth` | person | Chapter 2: Judaism | - | adeena_parents_house |
+| 21 | Lee | `lee` | person | Chapter 2: Judaism | - | adeena_parents_house |
+| 22 | Effie | `effie` | person | Chapter 2: Judaism | - | adeena_parents_house, effie_house |
+| 23 | Grandma | `grandma` | person | Chapter 2: Judaism | - | adeena_parents_house |
+| 24 | Hannah | `hannah` | person | Chapter 2: Judaism | - | havurah_living_room |
+| 25 | Tigist | `tigist` | person | Chapter 2: Judaism | - | sigd_community_hall |
+| 26 | Angie | `angie` | person | Chapter 3: Buddhism | - | therapist_office |
+| 27 | Reverend Mori | `reverend_mori` | person | Chapter 3: Buddhism | - | buddhist_temple_chicago |
 
 ## 3. Close-ups and props, scene by scene
 
@@ -385,6 +390,12 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `renewal-flyer`: "Kabbalat Shabbat with drums! Everyone welcome. Bring your voice." A flyer someone shared.
 - `stone-alone`: On the dresser. The white line.
 - `sill-wax`: The windowsill. Empty. A ring of old wax in the corner.
+- `unopened-mail`: A drift of it by the door. Three envelopes from the same doctor's office, unopened.
+- `fridge-notes`: Sticky notes. "Buy milk." "CALL TANYA BACK." "you're doing ok." Three different handwritings. All of them yours.
+- `sill-wax-winter`: A ring of old wax in the corner, from a candle you don't remember.
+- `phone-call-angie`: Your phone. Ringing. Tanya's hand on your back, steady.
+- `stone-passport`: On the dresser, by your passport.
+- `empty-suitcase`: Open on the bed. Empty. It looks very brave.
 
 ### The Field Museum: Stanley Field Hall (`field_museum_hall`)
 
@@ -392,6 +403,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `tour-group`: Forty fourth-graders in matching yellow shirts. Two teachers counting heads, again.
 - `tour-notes`: Index cards, soft at the corners. "SUE: biggest, most complete T. rex. Tell them about the broken ribs."
 - `adeena-almost-smile`: For a second, almost, something like a smile.
+- `maximo-winter`: The titanosaur. You've told its story a hundred times. You start, and then...
+- `members-tour`: Twenty adults on a members' tour, waiting. Somebody coughs.
 
 ### The Field Museum: the registrar's office (`field_museum_office`)
 
@@ -482,4 +495,19 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 - `lake-grey`: Grey to the edge of the world. Waves folding over and over on the rocks.
 - `abe-windbreaker`: Sneakers. A windbreaker. A tie with little fish on it, even here.
+
+### Angie's office (`therapist_office`)
+
+- `gerald-plant`: A big, slightly overwatered plant. Someone has named it: a little card says "Gerald."
+- `fidget-basket`: Smooth stones, a stress ball, a tangle toy, a little bag of lavender. "Take one if you like."
+- `leaflets`: "Grounding when you feel far away." "What is dissociation?" You don't take one. You read the title twice.
+- `angie-calendar`: March. Six Thursdays.
+- `angie-waits`: Angie waits. She doesn't hurry you. The clock. Gerald, outside, being overwatered.
+
+### The Buddhist temple (`buddhist_temple_chicago`)
+
+- `shin-altar`: Gold, and quiet. A standing Buddha, small, one hand raised as if to say "it's all right". Incense, thin and straight.
+- `service-book`: "Namu Amida Butsu." In English underneath: "I take refuge in the Buddha of Immeasurable Light."
+- `shin-sangha`: Grandparents, toddlers, a man in a suit, two students in hoodies. Nobody asks why you're here.
+- `nembutsu`: Namu Amida Butsu. Everyone, together. Your voice lost in theirs, which is all right.
 

@@ -92,6 +92,12 @@ Adeena: You just told forty children that SUE is sixty-seven thousand years old.
 + {desk < 3} [Look: The clock]
     The members' preview is at four. It's twenty past one. # look: museum-clock
     -> desk
+* [Talk: Christie]
+    // Owner: Christie, an old friend from work: the one who, years later (Chapter 6), tells Maya about Adeena's wedding.
+    ~ record_choice("ch2.p1.christie", "met", "On your first week at the museum, Christie, another guide, shared her snack drawer with you.")
+    Christie: New guide? Christie. I've done the dinosaur tour four hundred times. Snack drawer's here. Don't tell Adeena it exists. # vo: ch2-judaism_christie_0067
+    Christie: Kidding. She knows. She pretends not to. That's love, at the Field. # vo: ch2-judaism_christie_0068
+    -> desk
 * {desk >= 1} [Go: Back to the floor]
 -
 ~ journal("Note", "Adeena, the registrar. SUE is sixty-seven MILLION years old. The fact sheets are in her binder.")

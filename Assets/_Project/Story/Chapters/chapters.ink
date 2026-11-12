@@ -15,3 +15,6 @@
 
 === ch2_judaism ===
 -> ch2_part1
+
+=== ch3_buddhism ===
+-> ch3_part1

@@ -107,14 +107,18 @@
       "title": "Chapter 3: Buddhism (title to come)",
       "sabbat": "",
       "inkKnot": "ch3_buddhism",
-      "startingMemberId": "",
+      "startingMemberId": "maya",
       "featuredMemberId": "",
-      "setting": "",
+      "setting": "Chicago, 2026, and then (to come) a temple stay abroad",
       "skillFamily": "",
       "contentTags": [
-        "religious-content"
+        "religious-content",
+        "time-loss",
+        "involuntary-switch",
+        "medical-setting"
       ],
-      "summary": "Buddhism."
+      "summary": "Tanya gets through to Maya at last, and Maya starts seeing Angie, a therapist who knows about dissociation. A few weeks in, Angie gives it words: a dissociative disorder. Christie covers for her at the museum. At a Buddhist temple in Chicago, Maya hears that she's embraced just as she is, and hears about temple stays far away. With Angie's plan in her pocket, she gets ready to go. (The trip is still to be written.)",
+      "unlocksMemberId": ""
     },
     {
       "id": "ch4-islam",
