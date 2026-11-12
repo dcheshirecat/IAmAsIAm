@@ -520,6 +520,10 @@ namespace IAmAsIAm.Runtime.Story
             _dialogue.GetComponent<Image>().raycastTarget = false;
             _speaker = Label(_dialogue.transform, "Speaker", 56, FontStyle.Bold, new Vector2(0.03f, 0.75f), new Vector2(0.97f, 0.95f));
             _line = Label(_dialogue.transform, "Line", 54, FontStyle.Normal, new Vector2(0.03f, 0.08f), new Vector2(0.97f, 0.75f));
+            // Hidden until someone speaks. (It used to start visible, which made the game think a conversation was
+            // always going on: the player couldn't move, the touch controls never appeared, and an invisible
+            // "tap to continue" layer swallowed every touch.)
+            _dialogue.SetActive(false);
 
             _choices = Panel(_root, "Choices", new Color(0, 0, 0, 0), new Vector2(0.2f, 0.36f), new Vector2(0.8f, 0.9f));
             var vlg = _choices.AddComponent<VerticalLayoutGroup>();
