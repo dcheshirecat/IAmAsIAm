@@ -64,8 +64,10 @@ namespace IAmAsIAm.Core.Practices
         public const float AppearSeconds = 0.45f;
         public const float FlipStart = 0.7f;
         public const float FlipSeconds = 0.7f;
-        /// <summary>The loading screen stays at least this long, so the card can be seen and its name read.</summary>
-        public const float MinimumSeconds = 2.6f;
+        /// <summary>The loading screen stays at least this long, so the card can be seen and its prompt read.</summary>
+        public const float MinimumSeconds = 4f;
+        /// <summary>The first one, when the game starts, stays longer (owner: it was too short): time to read the card and its prompt.</summary>
+        public const float StartupMinimumSeconds = 7f;
         public const float FadeOutSeconds = 0.4f;
         /// <summary>One slow breath of the glow and float, in seconds.</summary>
         public const float BreathSeconds = 4.5f;

@@ -53,6 +53,7 @@ namespace IAmAsIAm.Runtime.Loading
 
         bool _showing, _hideRequested;
         float _shownAt, _fadeStartedAt = -1f;
+        float _minSeconds = LoadingCardAnimation.MinimumSeconds;
 
         public static bool IsShowing => _instance != null && _instance._showing;
 
@@ -90,7 +91,7 @@ namespace IAmAsIAm.Runtime.Loading
             _picker = new LoadingCardPicker(_cards, System.Environment.TickCount);
             Build();
             _group.gameObject.SetActive(false);
-            if (showOnBoot) ShowInternal();
+            if (showOnBoot) { ShowInternal(); _minSeconds = LoadingCardAnimation.StartupMinimumSeconds; }
         }
 
         void Start()
@@ -117,6 +118,7 @@ namespace IAmAsIAm.Runtime.Loading
             _showing = true;
             _fadeStartedAt = -1f;
             _shownAt = Time.unscaledTime;
+            _minSeconds = LoadingCardAnimation.MinimumSeconds;
             _group.gameObject.SetActive(true);
             _group.alpha = 1f;
             Deal();
@@ -128,7 +130,7 @@ namespace IAmAsIAm.Runtime.Loading
             if (!_showing) return;
             float t = Time.unscaledTime - _shownAt;
 
-            if (_hideRequested && _fadeStartedAt < 0f && t >= LoadingCardAnimation.MinimumSeconds) _fadeStartedAt = Time.unscaledTime;
+            if (_hideRequested && _fadeStartedAt < 0f && t >= _minSeconds) _fadeStartedAt = Time.unscaledTime;
             float fade = _fadeStartedAt < 0f ? 0f : Mathf.Clamp01((Time.unscaledTime - _fadeStartedAt) / LoadingCardAnimation.FadeOutSeconds);
 
             Apply(t, fade);
