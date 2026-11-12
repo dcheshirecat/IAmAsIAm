@@ -120,7 +120,13 @@ jobs:
           done
           EOF
           nohup bash /tmp/memlog.sh > /tmp/memory.log 2>&1 &
-      - uses: game-ci/unity-builder@v4
+      # Some builds have been killed (exit 137) a few seconds after Unity starts, while loading the cached
+      # Library, with plenty of memory free. So the build runs once with the cache and, if it fails,
+      # once more from a clean Library.
+      - name: Build
+        id: build
+        continue-on-error: true
+        uses: game-ci/unity-builder@v4
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
@@ -140,6 +146,39 @@ jobs:
           # Unity runs in a Docker container capped by default at 95% of the runner's RAM, so it could
           # never reach the swap above and got killed (exit code 137). Allow RAM + most of the swap.
           dockerMemoryLimit: 18g
+      - name: Clear the cached Library (only if the first try failed)
+        if: steps.build.outcome == 'failure'
+        run: |
+          echo "The first build try failed; trying once more from a clean Library." >> "$GITHUB_STEP_SUMMARY"
+          sudo rm -rf Library build
+      - name: Build again without the cache (only if the first try failed)
+        id: retry
+        if: steps.build.outcome == 'failure'
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: Android
+          androidExportType: androidPackage   # .apk
+          buildMethod: IAmAsIAm.EditorTools.BuildTools.BuildAndroid
+          # Higher every build, so Android treats it as an update.
+          androidVersionCode: ${{ github.run_number }}
+          # The same key every build. Empty secrets = a debug key.
+          androidKeystoreName: iamasiam.keystore
+          androidKeystoreBase64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          androidKeystorePass: ${{ secrets.ANDROID_KEYSTORE_PASS }}
+          androidKeyaliasName: iamasiam
+          androidKeyaliasPass: ${{ secrets.ANDROID_KEYSTORE_PASS }}
+          # Unity runs in a Docker container capped by default at 95% of the runner's RAM, so it could
+          # never reach the swap above and got killed (exit code 137). Allow RAM + most of the swap.
+          dockerMemoryLimit: 18g
+      - name: Stop if both tries failed
+        if: steps.build.outcome == 'failure' && steps.retry.outcome != 'success'
+        run: |
+          echo "### Both build tries failed" >> "$GITHUB_STEP_SUMMARY"
+          exit 1
       # Puts the findings on the run's Summary page (easy to read on a phone), pass or fail.
       - name: Memory log
         if: always()
