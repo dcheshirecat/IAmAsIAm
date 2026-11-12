@@ -417,7 +417,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   boxes labelled by everyone and unpacked this time; the Burke's whale; Rama Navami, the bell, taking the aarti light, prasad), 2 Every
   day (summer: Saturday garlands, Heather shares the hands; the deity's day; how Panditji became a priest), 3 Lamps (Oct-Nov, 29:
   Navaratri garba; Diwali diyas: Heather fronts to light them with Maya co-conscious and aware, the first visit she remembers;
-  SystemLog note from Maya; `# chapter-end`). 30 voiced lines. Unlock: none for now (ask).
+  SystemLog note from Maya; `# chapter-end`). 30 voiced lines. Unlock: none for now (ask). Drive: Story Drafts → `07 Chapter 5 - Hinduism (title to come)`
+  (1H6O6T9nvN33G7UT1EtBwNfjHQHSF_B4D): Part 1 (1rrYR8B7SQa3n0SZJDOl3PL359iwhFT8qe-VugvPmL9s), Part 2 (1s1uHoq1ARNPs7fXbbMwOBu0xDYV5qtwhfcn-SlecUC8),
+  Part 3 (15ajxIGZzvuIA7irqywxhZ8ThwLaayc7vSQP2ZFmwFEg); Sheet "07 Chapter 5 - script list (draft)" (1Uz4IaV8OvChmlzlcP3ULr8W6Cdfe2v9ubXybCmgCMxI).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
