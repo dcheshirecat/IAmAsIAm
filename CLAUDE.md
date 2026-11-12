@@ -428,7 +428,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   **Why Seattle:** Maya can't stand the memories Chicago brings up and believes Seattle will be a fresh start (new line `maya_0031`).
   **Fadi is Shia** (owner), Lebanese American from Beirut; a clay turbah from Karbala on the shelf; his dhikr circle welcomes Sunni and
   Shia (new line `fadi_0062`). **Tigist** (Chapter 2's Beta Israel woman at Sigd) keeps her name (owner).
-- 2026-11-12: **Wiccan practice is an active part of the game (owner).** Design + proposal: `docs/WiccanPractice.md`. Owner: an
+- 2026-11-12: **Wiccan practice is an active part of the game (owner).** Design + proposal: `docs/WiccanPractice.md` (Drive copy in Story Drafts: 1yCR0qXq4gr-n_DG70PejFEeYk3ZNzavzWuPw_4HPzK0). Owner: an
   **altar at every home** AND a **Book of Shadows** usable any time (like the phone), plus practice moments in the chapters;
   practice gives **grounding, reflection (into the Book), story changes, and alters respond** (still no stat boosts); practices:
   tarot, runes, candle magick, amulets/charm bags, sabbats + moons, **more divination** (pendulum, scrying, tea leaves, oracle),
