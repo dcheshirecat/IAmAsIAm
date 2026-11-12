@@ -123,6 +123,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   `maya-05/08/11/15`; inner voices `<id>-inside`; outside chapters `daily`). Voicing is optional per line (unvoiced = text only).
   In the game: `Assets/_Project/Audio/Voice/<chapter-id>/`. `docs/VOICE.md`. Not built yet: playback, `# vo:` tags, script export.
   Note: `*.mp3` is in LFS and LFS uploads are blocked from cloud sessions: decide how to commit voice files when the first arrive.
+- 2026-11-12: **The owner does ALL voice-over work** (recording, script lists, deciding which lines are voiced). Claude does
+  none of it: no script lists, no `# vo:` tagging, no voice generation, unless the owner asks for something specific.
 
 - 2026-11-12: **Push everything to `main`** (owner): the Android build runs automatically on every push to `main`
   (and still by hand). Each build's version code is the run number (`v0.1.<run>`, shown bottom right in the game), and it is
