@@ -688,10 +688,13 @@ namespace IAmAsIAm.Runtime.Story
             var look = Panel(_touch.transform, "Look Pad", new Color(0, 0, 0, 0), new Vector2(0.45f, 0f), new Vector2(1f, 0.88f));
             look.AddComponent<LookPad>().cameraRig = cameraRig;
 
-            var ring = Panel(_touch.transform, "Stick Ring", new Color(1, 1, 1, 0.12f), new Vector2(0.04f, 0.06f), new Vector2(0.04f, 0.06f));
+            // Round (owner): a disc with a brighter rim, and a round knob.
+            var ring = Panel(_touch.transform, "Stick Ring", new Color(1, 1, 1, 0.35f), new Vector2(0.04f, 0.06f), new Vector2(0.04f, 0.06f));
+            ring.GetComponent<Image>().sprite = Disc(rim: true);
             var ringRt = ring.GetComponent<RectTransform>();
             ringRt.pivot = Vector2.zero; ringRt.sizeDelta = new Vector2(480, 480);
-            var knob = Panel(ring.transform, "Stick", new Color(1, 1, 1, 0.35f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f));
+            var knob = Panel(ring.transform, "Stick", new Color(1, 1, 1, 0.55f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f));
+            knob.GetComponent<Image>().sprite = Disc(rim: false);
             knob.GetComponent<RectTransform>().sizeDelta = new Vector2(260, 260); // Big enough to find with a thumb.
             knob.SetActive(false); // Set the control path while inactive, then enable.
             var stick = knob.AddComponent<OnScreenStick>();
@@ -706,6 +709,36 @@ namespace IAmAsIAm.Runtime.Story
             var useLabel = Label(use.transform, "Label", 52, FontStyle.Bold, Vector2.zero, Vector2.one);
             useLabel.alignment = TextAnchor.MiddleCenter;
             useLabel.text = "Use";
+        }
+
+        static Sprite _disc, _ring;
+
+        /// <summary>
+        /// A round sprite made in code (smooth edge). With <paramref name="rim"/>: a faint fill with a brighter ring around the
+        /// edge (the joystick's base); without: a solid disc (the knob).
+        /// </summary>
+        static Sprite Disc(bool rim)
+        {
+            if (rim && _ring != null) return _ring;
+            if (!rim && _disc != null) return _disc;
+            const int size = 256;
+            var tex = new Texture2D(size, size, TextureFormat.RGBA32, false) { wrapMode = TextureWrapMode.Clamp, name = rim ? "Stick Ring" : "Stick Knob" };
+            var px = new Color32[size * size];
+            float r = size / 2f;
+            for (int y = 0; y < size; y++)
+                for (int x = 0; x < size; x++)
+                {
+                    float d = Mathf.Sqrt((x + 0.5f - r) * (x + 0.5f - r) + (y + 0.5f - r) * (y + 0.5f - r));
+                    float edge = Mathf.Clamp01(r - d);              // 1 inside, a 1-pixel soft edge
+                    float a = edge;
+                    if (rim) a *= d > r - 10f ? 1f : 0.35f;         // brighter rim, faint fill
+                    px[y * size + x] = new Color32(255, 255, 255, (byte)(a * 255));
+                }
+            tex.SetPixels32(px);
+            tex.Apply();
+            var sprite = Sprite.Create(tex, new Rect(0, 0, size, size), new Vector2(0.5f, 0.5f));
+            if (rim) _ring = sprite; else _disc = sprite;
+            return sprite;
         }
 
         GameObject Panel(Transform parent, string name, Color color, Vector2 min, Vector2 max)

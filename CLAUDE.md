@@ -265,6 +265,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   or **Replay** a finished one. The list opens by itself on a new game and after each chapter's recap.
 - 2026-11-12: **App icon:** `BuildTools.SetAppIcon` sets every Android icon kind (legacy, round, adaptive: the same picture on both
   adaptive layers) from `Art/UI/app_icon.png` (still the TEST icon until the owner's art).
+- 2026-11-12: **Round joystick (owner):** the touch joystick's base and knob are round (sprites made in code, `StoryScreen.Disc`).
 - 2026-11-12: **Fog when dissociating, in any way (owner):** `Runtime/Mind/FogOverlay.cs` (made by StoryScreen, under all UI): a light
   wash plus two slowly drifting mist layers (a generated tileable noise texture), and 3D scene fog (`RenderSettings`, exponential
   squared), all following the strongest dissociation (1 - Presence; co-consciousness alone doesn't fog). Capped by
@@ -275,7 +276,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   together **two and a half years**. Adeena is **Conservative** and becomes **Hasidic**. She meets and marries **Michael only after they
   break up**: a **present-day fact mentioned in Chapter 6**, which Maya hears **from an old friend from work**, and it's **triggering**:
   they shared a **special moment over the Shabbat candles every week** while dating. **Show every stream** (none left out).
-  **Guide: Rabbi Abe** (78, he/him), **vital and refreshing**. Alters: **Izzy and Nina**, and **Heather only once**.
+  **Guide: Rabbi Abe** (78, he/him), **vital and refreshing**. Alters: **Izzy and Nina**; **Heather only leaves a message** (`sent_while_away("heather", ...)`), she is **not unlocked** yet (owner correction).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
