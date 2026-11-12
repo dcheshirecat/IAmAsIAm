@@ -33,6 +33,18 @@ namespace IAmAsIAm.Core.Practices
         public List<string> wiccanMemberIds = new List<string>();
         public List<CraftPractice> practices = new List<CraftPractice>();
         public List<CraftRefusal> refusals = new List<CraftRefusal>();
+        /// <summary>Candle colours for candle magick (a colour and what it's for).</summary>
+        public List<CandleColour> candleColours = new List<CandleColour>();
+        /// <summary>Cards that can sometimes stir something up (owner: practice can be hard, sometimes).</summary>
+        public List<string> hardCardIds = new List<string>();
+    }
+
+    [Serializable]
+    public sealed class CandleColour
+    {
+        public string id;
+        public string name;
+        public string meaning;
     }
 
     /// <summary>The Book of Shadows' tabs.</summary>

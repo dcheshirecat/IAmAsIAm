@@ -38,6 +38,12 @@ namespace IAmAsIAm.Runtime.World
         readonly Dictionary<string, ChoiceSpot> _spots = new Dictionary<string, ChoiceSpot>();
         int _wallSlots, _innerSlots, _doorSlots;
 
+        /// <summary>Is this place one of Maya's homes, with her altar (places.json <c>altar</c>)? Set by the story screen.</summary>
+        public Func<string, bool> HasAltar = _ => false;
+        /// <summary>Can the altar be used right now (while exploring)? And what happens when it is. Set by the story screen.</summary>
+        public Func<bool> AltarUsable = () => false;
+        public Action AltarUsed;
+
         /// <summary>The place the character is in, or null in the test flat.</summary>
         public string Place => _place;
 
@@ -67,6 +73,7 @@ namespace IAmAsIAm.Runtime.World
             }
             if (_testFlat != null) _testFlat.SetActive(false);
             Build(placeId);
+            if (placeId != "black" && HasAltar != null && HasAltar(placeId)) BuildAltar();
             Teleport(Origin + new Vector3(0f, 0.05f, -_half.y + 1.2f), Quaternion.identity);
         }
 
@@ -398,6 +405,32 @@ namespace IAmAsIAm.Runtime.World
             if (n >= wall.Length) p *= 0.7f; // A second lap, further in.
             var toCentre = new Vector3(-p.x, 0, -p.z);
             facing = toCentre.sqrMagnitude > 0.01f ? Quaternion.LookRotation(toCentre) : Quaternion.identity;
+        }
+
+        /// <summary>
+        /// Maya's altar: a low table against the left wall, a cloth, two candles, the deck and a small bowl. Art replaces it
+        /// (ART_LIST: altar_cloth, candle, chalice, bowl). It grows over the years in the owner's art, not here.
+        /// </summary>
+        void BuildAltar()
+        {
+            var go = new GameObject("Altar");
+            go.transform.SetParent(_root.transform, false);
+            float hx = _half.x - 0.8f;
+            go.transform.localPosition = new Vector3(-hx, 0, 0.2f);
+            go.transform.localRotation = Quaternion.Euler(0, 90, 0);
+            Part(go, PrimitiveType.Cube, new Vector3(0, 0.35f, 0), new Vector3(1.3f, 0.7f, 0.6f), new Color(0.36f, 0.26f, 0.2f));
+            Part(go, PrimitiveType.Cube, new Vector3(0, 0.71f, 0), new Vector3(1.36f, 0.02f, 0.64f), new Color(0.35f, 0.22f, 0.42f));
+            Part(go, PrimitiveType.Cylinder, new Vector3(-0.45f, 0.86f, 0.1f), new Vector3(0.07f, 0.14f, 0.07f), new Color(0.97f, 0.95f, 0.86f));
+            Part(go, PrimitiveType.Cylinder, new Vector3(0.45f, 0.86f, 0.1f), new Vector3(0.07f, 0.14f, 0.07f), new Color(0.2f, 0.18f, 0.22f));
+            Part(go, PrimitiveType.Cube, new Vector3(0, 0.76f, 0.05f), new Vector3(0.16f, 0.06f, 0.26f), new Color(0.25f, 0.2f, 0.45f));
+            Part(go, PrimitiveType.Cylinder, new Vector3(0.18f, 0.75f, -0.15f), new Vector3(0.18f, 0.03f, 0.18f), new Color(0.75f, 0.75f, 0.8f));
+            var reach = go.AddComponent<BoxCollider>();
+            reach.isTrigger = true;
+            reach.center = new Vector3(0, 1f, 0);
+            reach.size = new Vector3(1.8f, 2f, 1.8f);
+            var spot = go.AddComponent<AltarSpot>();
+            spot.Usable = () => AltarUsable != null && AltarUsable();
+            spot.Used = () => AltarUsed?.Invoke();
         }
 
         // ── Building blocks ───────────────────────────────────────────────────

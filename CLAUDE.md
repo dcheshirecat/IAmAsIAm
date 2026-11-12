@@ -445,6 +445,10 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   with a line for non-Wiccan fronters; hidden while replaying the Prologue/Prelude). Ink: `gain_book_of_shadows(giver)`,
   `learn_practice(id, teacher)`, `bos_entry(member, tab, title, text)`, `practised(id)`. The gift: Prelude Part 3 after the Yule circle
   (`prelude-wicca_tanya_0046`); Izzy writes the first (Yule) entry in the lost night.
+  **Step 2 BUILT:** rituals + the altar: `Core/Practices/RitualSession.cs` (5 phases; tarot one card, candle, grounding-centering;
+  tests `RitualSessionTests`), `Runtime/Practices/RitualScreen.cs` (sort 45; never timed; "Not today"), `Runtime/World/AltarSpot.cs`
+  (places.json `altar: true` on Maya's 4 homes; usable while exploring; no glow). Ink `# ritual: tarot` (alone = one card) / `candle` /
+  `grounding-centering`. Tanya teaches candles at Ch 1's first Thursday (`ch1-christianity_tanya_0034`).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

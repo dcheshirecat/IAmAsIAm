@@ -141,6 +141,15 @@ These are proposals for the writing tools. Claude adds them when building.
 ### 9. Building it (in this order, each step pushed so the owner can test)
 1. The Book of Shadows (Core data, save, the side icon and tabs), Tanya's gift at Yule, and `learn_practice`.
 2. The ritual frame (the five steps above), with tarot, candle and grounding and centering first; the altar in each home.
+   **BUILT:** `Core/Practices/RitualSession.cs` (arrive, prepare, moment, reflect, close; steps Breathe / Hold / Tap / Choose /
+   Write; "Not today" any time; tests `RitualSessionTests`), `Runtime/Practices/RitualScreen.cs` (a dim veil and a cloth; a hold
+   that's let go early only pauses; Reduce motion keeps the breath circle still), `Runtime/World/AltarSpot.cs` (places.json
+   `altar: true`: her dorm, the college apartment, Chicago, Seattle; it doesn't glow; usable while exploring). The altar's wheel
+   offers grounding plus whatever she's learned; anyone but Maya or Izzy gets their line instead. Ink: `# ritual: tarot` (one card),
+   `# ritual: candle`, `# ritual: grounding-centering`. Results: a Book entry (tarot in Readings), a little grounding, story
+   variables `ritual_card` / `ritual_colour` / `ritual_word` / `ritual_here`. A hard card (Death, the Tower, the Devil, the Moon:
+   craft.json `hardCardIds`) can sometimes start a gentle depersonalization, eased when the ritual closes. Candle colours:
+   craft.json `candleColours`. Tanya teaches candles (and says a windowsill altar is plenty) at Chapter 1's first Thursday.
 3. Runes, the charm bag, cleansing, casting a circle.
 4. The other divination practices, the ancestor altar, offerings, sigils, the dream journal.
 5. The Wheel of the Year and the moons in the calendar; Tanya's sabbat texts.

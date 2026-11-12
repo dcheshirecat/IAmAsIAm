@@ -114,6 +114,16 @@
       "canBeHard": false
     }
   ],
+  "candleColours": [
+    { "id": "white", "name": "White", "meaning": "for anything: peace, a clean start" },
+    { "id": "green", "name": "Green", "meaning": "for growth, and things taking root" },
+    { "id": "blue", "name": "Blue", "meaning": "for calm, and healing" },
+    { "id": "pink", "name": "Pink", "meaning": "for friendship, and being kind to yourself" },
+    { "id": "yellow", "name": "Yellow", "meaning": "for clear thinking, and courage to begin" },
+    { "id": "purple", "name": "Purple", "meaning": "for intuition, and listening inward" },
+    { "id": "silver", "name": "Silver", "meaning": "for the moon, and remembering" }
+  ],
+  "hardCardIds": ["major-13-death", "major-16-tower", "major-15-devil", "major-18-moon"],
   "refusals": [
     { "memberId": "jacob", "line": "Not touching that." },
     { "memberId": "axel", "line": "Maya's thing. Pass." },

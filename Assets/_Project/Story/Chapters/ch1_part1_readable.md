@@ -41,6 +41,8 @@ Three cards, face down on the rug.
     - **Maya:** I don't know.
     - **Tanya:** Good. Then you'll look, instead of guessing. Look at it again.
 
+**Tanya:** Next Thursday, candles. Bring one you haven't lit yet. And you'll practise at home. An altar doesn't have to be big. A windowsill is plenty.
+
 ## Ostara
 
 > **Objective:** Plant a seed

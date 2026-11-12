@@ -211,7 +211,8 @@ static class InkCheck
             case "ritual":
                 var parts = value.Split(' ', StringSplitOptions.RemoveEmptyEntries);
                 if (parts.Length == 0) { Fail("empty ritual"); break; }
-                if (parts[0] == "tarot" && (parts.Length < 2 || !_spreads.Contains(parts[1]))) Fail("unknown tarot spread");
+                if (parts[0] == "tarot" && parts.Length >= 2 && !_spreads.Contains(parts[1])) Fail("unknown tarot spread");
+                else if (parts[0] == "tarot" || parts[0] == "candle" || parts[0] == "grounding-centering") { }
                 else if (parts[0] == "craft" && (parts.Length < 2 || !_charms.Contains(parts[1]))) Fail("unknown charm");
                 else if (parts[0] != "tarot" && parts[0] != "craft" && parts[0] != "rune" && parts[0] != "sachet") Fail("unknown ritual");
                 break;

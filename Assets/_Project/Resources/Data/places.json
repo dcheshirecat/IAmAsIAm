@@ -92,7 +92,8 @@
       "city": "champaign_urbana",
       "x": 0.38,
       "y": 0.68,
-      "chapterId": "prelude-wicca"
+      "chapterId": "prelude-wicca",
+      "altar": true
     },
     {
       "id": "college_dorm_selene",
@@ -108,7 +109,8 @@
       "city": "champaign_urbana",
       "x": 0.22,
       "y": 0.4,
-      "chapterId": "prelude-wicca"
+      "chapterId": "prelude-wicca",
+      "altar": true
     },
     {
       "id": "college_quad",
@@ -252,7 +254,8 @@
       "city": "chicago",
       "x": 0.4,
       "y": 0.2,
-      "chapterId": "ch2-judaism"
+      "chapterId": "ch2-judaism",
+      "altar": true
     },
     {
       "id": "field_museum_hall",
@@ -476,7 +479,8 @@
       "city": "seattle",
       "x": 0.5,
       "y": 0.55,
-      "chapterId": "ch5-hinduism"
+      "chapterId": "ch5-hinduism",
+      "altar": true
     },
     {
       "id": "burke_museum_hall",

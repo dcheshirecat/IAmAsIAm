@@ -65,6 +65,7 @@ namespace IAmAsIAm.Runtime.Story
         Action _onPacerTick;
         IAmAsIAm.Runtime.Devices.DeviceScreen _devices;
         IAmAsIAm.Runtime.Practices.BookScreen _book;
+        IAmAsIAm.Runtime.Practices.RitualScreen _ritual;
         StoryWorld _world;
         MapScreen _map;
         ChapterTreeScreen _tree;
@@ -84,10 +85,12 @@ namespace IAmAsIAm.Runtime.Story
             // Maya's phone / computer / laptop (texts and email). Its own canvas, under the Anchor.
             _devices = gameObject.AddComponent<IAmAsIAm.Runtime.Devices.DeviceScreen>();
             // The phone and laptop are always usable (owner), except over the Anchor or an interactive moment.
-            _devices.Blocked = () => _anchorOpen || (_action != null && _action.activeSelf);
+            _devices.Blocked = () => _anchorOpen || (_action != null && _action.activeSelf) || IAmAsIAm.Runtime.Practices.RitualScreen.IsOpen;
             // The Book of Shadows (owner: Tanya gives it at Yule, Dec 2017): an icon under the phone, usable any time.
             _book = gameObject.AddComponent<IAmAsIAm.Runtime.Practices.BookScreen>();
-            _book.Blocked = () => _anchorOpen || (_action != null && _action.activeSelf);
+            _book.Blocked = () => _anchorOpen || (_action != null && _action.activeSelf) || IAmAsIAm.Runtime.Practices.RitualScreen.IsOpen;
+            // Rituals (owner: they feel like rituals, not games), at the altar or when the story calls for one.
+            _ritual = gameObject.AddComponent<IAmAsIAm.Runtime.Practices.RitualScreen>();
             // Not while replaying a chapter from before she had it (the Prologue and the Prelude).
             _book.Available = () => !runner.IsPlaying
                 || (GameServices.Chapter(runner.ChapterId)?.number ?? int.MaxValue) > (GameServices.Chapter("prelude-wicca")?.number ?? -1);
@@ -99,6 +102,11 @@ namespace IAmAsIAm.Runtime.Story
             // The owner's recorded voice lines (never generated): played when their line shows, if the file is there.
             _voice = gameObject.AddComponent<IAmAsIAm.Runtime.Audio.VoicePlayer>();
             _places = DataLoader.Load<IAmAsIAm.Core.Story.PlaceData>("places");
+            // Maya's altar in each of her homes (owner): usable while exploring there.
+            _world.HasAltar = id => _places?.Find(id)?.altar ?? false;
+            _world.AltarUsable = () => _exploring && !_anchorOpen && !IAmAsIAm.Runtime.Practices.RitualScreen.IsOpen
+                && !IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen && !IAmAsIAm.Runtime.Practices.BookScreen.IsOpen;
+            _world.AltarUsed = OpenAltar;
             // The phone's Maps tab: the city she's in, just to look (from Chapter 1 on).
             _devices.MapAvailable = () => !string.IsNullOrEmpty(_lastCity) && !(GameServices.Chapter(runner.ChapterId)?.doorToDoor ?? true) && runner.IsPlaying;
             // SystemLog (owner: from the end of Chapter 4): not while replaying a chapter from before it.
@@ -110,7 +118,7 @@ namespace IAmAsIAm.Runtime.Story
             _advance.AddBinding("<Keyboard>/enter");
             _advance.AddBinding("<Gamepad>/buttonSouth");
             // Ignore the press that opened this line (Use and Advance share gamepad A).
-            _advance.performed += _ => { if (!_anchorOpen && !IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen && !IAmAsIAm.Runtime.Practices.BookScreen.IsOpen && _dialogue.activeSelf && !_choices.activeSelf && Time.frameCount > _lineShownFrame) runner.Next(); };
+            _advance.performed += _ => { if (!_anchorOpen && !IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen && !IAmAsIAm.Runtime.Practices.BookScreen.IsOpen && !IAmAsIAm.Runtime.Practices.RitualScreen.IsOpen && _dialogue.activeSelf && !_choices.activeSelf && Time.frameCount > _lineShownFrame) runner.Next(); };
 
             // Esc is also the Android back button in the Input System.
             _anchorKey = new InputAction("Anchor", binding: "<Keyboard>/escape");
@@ -237,7 +245,7 @@ namespace IAmAsIAm.Runtime.Story
             if (_triggerPanel.activeSelf && Time.unscaledTime > _triggerHideAt) _triggerPanel.SetActive(false);
 
             bool busy = _anchorOpen || _dialogue.activeSelf || _choices.activeSelf || _action.activeSelf || (runner.IsPlaying && !_exploring)
-                        || IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen || IAmAsIAm.Runtime.Practices.BookScreen.IsOpen || MapScreen.IsOpen || ChapterTreeScreen.IsOpen;
+                        || IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen || IAmAsIAm.Runtime.Practices.BookScreen.IsOpen || IAmAsIAm.Runtime.Practices.RitualScreen.IsOpen || MapScreen.IsOpen || ChapterTreeScreen.IsOpen;
             // Saves, the phone and the chapter list still wait for the story, even while exploring.
             IsBusy = busy || runner.IsPlaying;
             busy |= IAmAsIAm.Runtime.Save.SaveSlotsScreen.IsOpen || IAmAsIAm.Runtime.Loading.LoadingScreen.IsShowing;
@@ -491,6 +499,15 @@ namespace IAmAsIAm.Runtime.Story
             string kind = parts.Length > 0 ? parts[0] : "";
             string arg = parts.Length > 1 ? parts[1] : "";
 
+            // The craft's rituals (owner: small steps that feel like rituals): # ritual: candle, # ritual: grounding-centering,
+            // and # ritual: tarot on its own (one card). A spread (# ritual: tarot three-card) is read below.
+            if (IAmAsIAm.Core.Practices.RitualSession.IsSupported(kind) && (kind != "tarot" || arg.Length == 0))
+            {
+                string who = GameServices.Roster?.FrontingId ?? "maya";
+                _ritual.Run(kind, who, r => runner.CompleteAction(r?.Vars ?? new Dictionary<string, string>()));
+                return;
+            }
+
             if (kind == "tarot")
             {
                 var spread = GameServices.Spreads?.spreads.FirstOrDefault(s => s.id == arg);
@@ -537,6 +554,18 @@ namespace IAmAsIAm.Runtime.Story
             }
 
             Finish();
+        }
+
+        /// <summary>
+        /// Maya's altar at home. Maya and Izzy (the ones who practise Wicca, owner) get the practice wheel; anyone else
+        /// leaves the tools alone, with a line in their own voice.
+        /// </summary>
+        void OpenAltar()
+        {
+            string front = GameServices.Roster?.FrontingId ?? "maya";
+            var book = GameServices.Book;
+            if (book != null && !book.Practises(front)) { _ritual.ShowLine(MemberName(front), book.RefusalLine(front), null); return; }
+            _ritual.OpenWheel(null);
         }
 
         void RunExplore(string traditionId)

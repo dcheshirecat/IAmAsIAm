@@ -18,6 +18,8 @@ namespace IAmAsIAm.Core.Story
         public float y;
         /// <summary>The chapter it first appears in (the art list orders places by this).</summary>
         public string chapterId;
+        /// <summary>One of Maya's homes, with her altar in it (owner: an altar in every home, from the Prelude on).</summary>
+        public bool altar;
     }
 
     [Serializable]

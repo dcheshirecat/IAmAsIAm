@@ -53,6 +53,8 @@ Tanya: Maya. What could help? # vo: ch1-christianity_tanya_0003
 -
 ~ journal("TarotReflection", "My first reading, at Tanya's. What could help: {card_name(tarot_help)}.")
 ~ learn_practice("tarot", "tanya")
+Tanya: Next Thursday, candles. Bring one you haven't lit yet. And you'll practise at home. An altar doesn't have to be big. A windowsill is plenty. # vo: ch1-christianity_tanya_0034
+~ learn_practice("candle", "tanya")
 ~ bos_entry("maya", "Readings", "My first reading", "Three cards at Tanya's. What was: {card_name(tarot_was)}. What is: {card_name(tarot_is)}. What could help: {card_name(tarot_help)}.")
 -> ostara
 
