@@ -259,6 +259,8 @@ namespace IAmAsIAm.Runtime.Story
                 string id = S(a[0]);
                 return id == GameServices.Roster?.FrontingId || (GameServices.ChapterRuns?.IsUnlockedAnywhere(id) ?? false);
             });
+            // Hidden memories (owner): only while that alter is fronting at this moment.
+            _story.BindExternalFunctionGeneral("fronts", a => S(a[0]) == GameServices.Roster?.FrontingId);
             _story.BindExternalFunctionGeneral("card_prompt", a => GameServices.Practices?.GetCard(S(a[0]))?.reflectionPrompt ?? "");
         }
     }

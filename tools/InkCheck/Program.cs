@@ -130,6 +130,7 @@ static class InkCheck
         story.BindExternalFunctionGeneral("find_clue", a => null);
         // Hidden memories: random answers, so the auto-play walks both the locked and the unlocked paths.
         story.BindExternalFunctionGeneral("unlocked", a => { Check(_members.Contains(S(a[0])), $"unlocked: unknown member '{a[0]}'"); return Rng.Next(2) == 0; });
+        story.BindExternalFunctionGeneral("fronts", a => { Check(_members.Contains(S(a[0])), $"fronts: unknown member '{a[0]}'"); return Rng.Next(2) == 0; });
         story.BindExternalFunctionGeneral("explore_tradition", a => { Check(_traditions.Contains(S(a[0])), $"explore_tradition: unknown tradition '{a[0]}'"); return null; });
         story.BindExternalFunctionGeneral("card_name", a => "The Star");
         story.BindExternalFunctionGeneral("card_prompt", a => "A prompt.");

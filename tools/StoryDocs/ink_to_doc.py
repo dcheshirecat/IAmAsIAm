@@ -92,6 +92,8 @@ def convert(text):
             out.append("")
             continue
         l = re.sub(r"\s*#.*$", "", l)
+        fr = re.search(r'fronts\("([\w-]+)"\)', l)
+        fr_note = f"    - _(Only glows while {fr.group(1).capitalize()} is fronting. Nothing tells the player.)_" if fr else None
         opt = re.match(r"^[*+]\s*(\{[^}]*\}\s*)?(\(\w+\)\s*)?\[(.*)\]\s*(.*)$", l)
         if opt:
             label = opt.group(3)
@@ -100,6 +102,8 @@ def convert(text):
                 out += ["", "**Explore** (glowing things; the player picks):" if explore else "**Choice:**", ""]
                 in_choice = True
             out.append(f"- **{label}**")
+            if fr_note:
+                out.append(fr_note)
             rest = re.sub(r"\s*->.*$", "", opt.group(4)).strip()
             if rest:
                 out.append(f"    - {rest}")
@@ -108,6 +112,7 @@ def convert(text):
         if cond:
             out += [f"_(If {cond.group(1).capitalize()} has been unlocked, the memory below plays. Otherwise it's skipped.)_", ""]
             continue
+
         l = re.sub(r"\{[\w.]+: (.*?) \| (.*?)\}", r"\2 [or, if earlier: \1]", l)
         spk = re.match(r"^([A-Z][\w.' ]*?(?: \(inside\))?): (.*)$", l)
         if spk and len(spk.group(1)) <= 24:

@@ -17,7 +17,9 @@
 //    # vo: <chapter>_<speaker>_<0000>  (this line's voice file, vo_<...>.mp3; added by tools/StoryDocs/voice_script.py)
 //    # objective: <text>            (the goal line at the top of the screen, in the fronting alter's words)
 //    # look: <object-id>            (a close-up on an object; the line is just its label)
-//    # memory: <id>                 (a memory scene starts; only for the host or an alter it belongs to, see unlocked())
+//    # memory: <id>                 (a hidden memory scene starts; only while the alter it belongs to is fronting, see fronts())
+//  HIDDEN MEMORIES (owner): gate them with fronts("<member>"), never unlocked(). The thing that opens one only
+//  glows (only exists as a choice) while that alter is fronting. Never hint that another alter is needed.
 //    # maybe-switch[: <percent>]    (an unexpected switch MAY happen here, to an unlocked alter; default 15%)
 //
 //  EXPLORING (owner: little narration). A place is a hub of sticky choices the 3D scene turns into
@@ -46,6 +48,7 @@ EXTERNAL explore_tradition(tradition)
 EXTERNAL card_name(card)
 EXTERNAL card_prompt(card)
 EXTERNAL unlocked(member)
+EXTERNAL fronts(member)
 
 === function set_experience(kind, amount) ===
 ~ return
@@ -82,4 +85,8 @@ EXTERNAL unlocked(member)
 
 // True once this alter's version of any chapter is unlocked in this save (or it's fronting now).
 === function unlocked(member) ===
+~ return member == fronting
+
+// True only while this alter is fronting right now. Use it for hidden memories.
+=== function fronts(member) ===
 ~ return member == fronting

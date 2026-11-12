@@ -6,8 +6,9 @@
 //  it. Mira moves away. Small choices only. This Sunday also holds Maya's first real time loss.
 //  Explore-first: the performing is something the player DOES (the dress, the bulletins, the right
 //  words at the door), not narration.
-//  Hidden memory (owner: an unlocked alter reveals hidden memories): once Nina is unlocked, the
-//  dress shows what Nina did in the lost nine hours.
+//  Hidden memory (owner): only while Nina is fronting at that moment does the blue dress glow, and
+//  looking at it shows what Nina did in the lost nine hours. Nothing ever tells the player this:
+//  for anyone else the dress simply isn't one of the glowing things.
 //
 //  My guesses, for the owner to correct:
 //   - Spring (May). Mira, now about 74, is moving to Oregon to live near her daughter, Ellen.
@@ -135,7 +136,7 @@ Maya: I will. I promise. # vo: prologue-quaker_maya-11_0104
 ~ set_experience("Depersonalization", 0.7)
 ~ nudge(0.3)
 ~ set_experience("TimeLoss", 0.8)
-~ open_gap("prologue-s3-goodbye", "stone,dress,dark")
+~ open_gap("prologue-s3-goodbye", "stone,dark")
 ...
 # place: home_maya_room
 # shot: close
@@ -143,9 +144,9 @@ Maya: I will. I promise. # vo: prologue-quaker_maya-11_0104
 - (gap)
 + {not time} [Look: The clock] -> time
 + {not stone} [Look: Your pillow] -> stone
-+ {not dress} [Look: The closet door] -> dress
-* {time or stone or dress} [Use: Feet on the floor] -> steady
-* {time or stone or dress} [Use: Mira's stone] -> steady
++ {not dress and fronts("nina")} [Look: The blue dress] -> dress
+* {time or stone} [Use: Feet on the floor] -> steady
+* {time or stone} [Use: Mira's stone] -> steady
 
 = time
 ~ find_clue("prologue-s3-goodbye", "dark")
@@ -160,17 +161,14 @@ Mira's stone, in the middle of your pillow. # look: stone-pillow
 -> lost.gap
 
 = dress
-~ find_clue("prologue-s3-goodbye", "dress")
-~ record_choice("prologue.s3.lost", "dress", "The first time you lost time, you looked at your dress. Someone had hung it up perfectly.")
-The blue dress on its hanger. The sash tied in a bow. You never tie it like that. # look: dress-bow
-{ unlocked("nina"): -> nina_memory }
--> lost.gap
+~ record_choice("prologue.s3.lost", "dress", "The first time Maya lost time, you looked at the blue dress, and remembered the hours.")
+The blue dress on its hanger. The sash tied in a bow. # look: dress-bow
+-> nina_memory
 
 = nina_memory
-// Hidden memory (owner): only once Nina is unlocked. What Nina did in the lost hours.
+// Hidden memory (owner): only reachable while Nina is fronting. What Nina did in the lost hours.
 # memory: nina-lost-hours
 # shot: inner
-A memory that isn't yours. # look: memory-start
 * [Look: The car, at the curb]
     Waiting at the curb with the bulletins. Smiling for Mrs. Hines. # look: nina-curb
 -

@@ -112,7 +112,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
 - 2026-11-12: **The owner edits drafts in Google Drive**: "Game Art - I Am As I Am" → **Story Drafts** (id 17BRsPRw6Ql9tObnHT4Cr0Nnb1i9LT-6q)
   → `00 Prologue - This Little Light` (id 1RPF_IaN8Yvj-yEwbJ15OuAYeh05nzL_a): explore-first Docs "Sunday 1 - Maya, 5 (2003)"
   (1GRTItageeHxbWhCaz083ZYb6Q-XDI3eAE0R81aEsbSE), "Sunday 2 - Maya, 8 (2006)" (1GgcPAhX8pfzqdyFYT-Z6BZeIrEboLxMNijcsgWZcYeo),
-  "Sunday 3 - Maya, 11 (2009)" (1mdi5zq-RoXj6ZoFSJVB0q5AULZRzPXISi-__OUjKCFA), "Sunday 4 - Maya, 15 (2013)"
+  "Sunday 3 - Maya, 11 (2009)" (1N38TzeYBpk8ZAh41NZp8QWgYfffjcldK5ar64LuUns8), "Sunday 4 - Maya, 15 (2013)"
   (1K4J-ViOl47-vZCCy2DTf_rMdIgBWJlXCIQruYv8swZg); the first, narrated versions are in its "Old versions (narrated)" folder.
   **The Docs are the source once the owner edits them**: read the Doc (with
   comments) and carry the changes back into the Ink. Docs are made from Ink with `tools/StoryDocs/ink_to_doc.py`.
@@ -153,6 +153,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Once another alter's version of a chapter is unlocked (or a new alter is met), an **unexpected switch** can always happen.
   The prologue drafts are to be **reworked into this explore-first style** (same events and dialogue; keep the owner's Doc edits).
 
+- 2026-11-12: **Hidden memories (owner, correction):** a hidden memory opens only when its alter is **unlocked AND fronting at
+  that moment** (Ink `fronts("<member>")`, never `unlocked()`). Otherwise the thing that opens it **simply doesn't glow**: the game
+  must **never hint** that another alter, or Nina, is needed. Example: Sunday 3's blue dress glows only while Nina fronts.
 - 2026-11-12: **Prelude (owner):** Maya meets Wicca at **college** but only gets **serious in her early twenties**. She finds it first
   through **a person**, later through **a shop or coven**. The guide is **a coven elder**. The system: **lost time grows**
   (more blackouts, signs of others: notes, things moved) and Maya doesn't understand it yet.
@@ -173,7 +176,7 @@ Every chapter's content (ask, chapter by chapter); confirm the chapter order 5�
 - Story: Ink in `Assets/_Project/Story` (`main.ink`, `game_api.ink`). `StoryRunner` binds the functions, and tags become
   interactive moments (`# exercise:`, `# ritual:`, `# explore:`, `# cue:`, `# cw:`). `StoryScreen` builds its UI in code.
   Explore-first tags: `# objective:` (goal line), `# look: <id>` (close-up + label), `# memory: <id>`, `# maybe-switch[: %]`;
-  places are hubs of sticky choices `+ [Look: …]` / `[Use: …]` / `[Talk: …]`; `unlocked("<member>")` gates hidden memories.
+  places are hubs of sticky choices `+ [Look: …]` / `[Use: …]` / `[Talk: …]`; `fronts("<member>")` gates hidden memories (`unlocked()` is for unexpected switches only).
 - `Editor/BuildTools.cs`: Compile Story, Configure Project (creates the URP asset), Rebuild Boot Scene (the scene is
   GENERATED: change the builder, don't hand-edit), Build Android APK. CI calls `BuildTools.BuildAndroid`.
 - Reset statics with `[RuntimeInitializeOnLoadMethod(SubsystemRegistration)]` (Fast Enter Play Mode).

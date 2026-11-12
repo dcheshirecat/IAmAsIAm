@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** Maya "performs okay" (neat clothes, a smile, good answers), and Mira believes it. Mira moves away. Small choices only. This Sunday also holds Maya's first real time loss. Explore-first: the performing is something the player DOES (the dress, the bulletins, the right words at the door), not narration. Hidden memory (owner: an unlocked alter reveals hidden memories): once Nina is unlocked, the dress shows what Nina did in the lost nine hours.
+**What happens (your beats):** Maya "performs okay" (neat clothes, a smile, good answers), and Mira believes it. Mira moves away. Small choices only. This Sunday also holds Maya's first real time loss. Explore-first: the performing is something the player DOES (the dress, the bulletins, the right words at the door), not narration. Hidden memory (owner): only while Nina is fronting at that moment does the blue dress glow, and looking at it shows what Nina did in the lost nine hours. Nothing ever tells the player this: for anyone else the dress simply isn't one of the glowing things.
 
 **My guesses, for you to check:**
 
@@ -138,7 +138,8 @@ Something to hold. _(the player does the "grounding-object" exercise here)_
 
 - **Look: The clock**
 - **Look: Your pillow**
-- **Look: The closet door**
+- **Look: The blue dress**
+    - _(Only glows while Nina is fronting. Nothing tells the player.)_
 - **Use: Feet on the floor**
 - **Use: Mira's stone**
 
@@ -152,15 +153,11 @@ Mira's stone, in the middle of your pillow.
 
 ## Dress
 
-The blue dress on its hanger. The sash tied in a bow. You never tie it like that.
-
-_(If Nina has been unlocked, the memory below plays. Otherwise it's skipped.)_
+The blue dress on its hanger. The sash tied in a bow.
 
 ## Nina memory
 
 _(A memory scene: "nina-lost-hours")_
-
-A memory that isn't yours.
 
 **Explore** (glowing things; the player picks):
 
