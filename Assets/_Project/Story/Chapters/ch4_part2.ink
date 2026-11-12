@@ -120,6 +120,11 @@ That evening.
 + {nina < 5} [Look: The fridge]
     A grown-up fridge. Grown-up food. You eat a whole sleeve of crackers, sitting on the floor. # look: crackers-floor
     -> nina
+// Owner: Nina is a devout Quaker. Only while Nina fronts (never hinted otherwise). No new voiced lines.
++ {nina < 5} [Use: The floor (wait in the silence, like meeting)]
+    Back against the couch, hands in your lap. Waiting, like in meeting. Waiting is something you know how to do. # look: nina-meeting-floor
+    ~ get_to_know("nina", 1)
+    -> nina
 + {nina < 5} [Look: The notes inside]
     Heather's round letters. Izzy's loopy ones. You find a pen. # look: notebook-nina
     -> nina

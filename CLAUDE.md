@@ -489,6 +489,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   (`AlterBonds`, `own_practices.json`: 3 each for Jacob, Nina, Lily, Heather, Serena, Axel; never in the Book; Ink
   `get_to_know`); **lost-time traces of the craft, rare, never explained** (Ch2 P1 spread, Ch2 P4 rosary, Ch3 P1 Izzy's reading);
   **Heather's faith stays a mystery the WHOLE game** (owner): never name or explain it.
+  **Step 7 (owner): only "Nina is a devout Quaker"** (moments only while Nina fronts: Ch1 P3 chapel silence, Ch2 P4 holding Mira in
+  the Light, Ch4 P2 waiting like meeting; system_members faith "Quaker (devout)"). **No other practice moments added to the
+  written chapters: back to writing the rest of the game** (Chapter 6, Sikhism, next).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

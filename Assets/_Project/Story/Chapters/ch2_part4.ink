@@ -91,6 +91,11 @@ In your bag, from work: chamomile tea bags, a whole row of them, taped together.
 * [Use: The window (cleanse the apartment)]
     The windowsill where the Friday candles stood. You open the window anyway. # ritual: cleansing hard
     -> week
+// Owner: Nina is a devout Quaker. Only while Nina fronts (never hinted otherwise). No new voiced lines.
++ {fronts("nina") && week < 4} [Use: The rug (hold Mira in the Light)]
+    Cross-legged on the rug. You hold Mira in the Light, the way Mira held you. Then Maya. Then everyone in here. # look: nina-holding-light
+    ~ get_to_know("nina", 1)
+    -> week
 + [Use: Your phone] -> phone
 * {week >= 2} [Use: Your keys (go)]
 -

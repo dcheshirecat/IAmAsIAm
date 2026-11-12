@@ -353,6 +353,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 - `chapel-back-row`: The back row. Four people, far apart. Nobody turns around.
 - `quiet-prayer`: Quiet. Not talking to anyone in particular. Not having to.
+- `nina-chapel-silence`: Hands in your lap. Eyes down. The silence, like meeting at home. Here it's allowed to just be quiet.
 - `quiet-sitting`: Quiet. The candle. Nobody wanting anything.
 
 ### The campus ministry lawn (`campus_ministry_lawn`)
@@ -434,6 +435,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `renewal-flyer`: "Kabbalat Shabbat with drums! Everyone welcome. Bring your voice." A flyer someone shared.
 - `rosary-on-altar`: A rosary on the altar, between your candles. Wooden beads. You've never owned a rosary.
 - `stone-alone`: On the dresser. The hole worn through it, and the dresser showing through.
+- `nina-holding-light`: Cross-legged on the rug. You hold Mira in the Light, the way Mira held you. Then Maya. Then everyone in here.
 - `sill-wax`: The windowsill. Empty. A ring of old wax in the corner.
 - `unopened-mail`: A drift of it by the door. Three envelopes from the same doctor's office, unopened.
 - `fridge-notes`: Sticky notes. "Buy milk." "CALL TANYA BACK." "you're doing ok." Three different handwritings. All of them yours.
@@ -449,6 +451,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `blanket-fort`: The tiger blanket from Nepal, the couch cushions, two chairs. A fort. Nobody can see in.
 - `napkin-taped`: The napkin with Mira's number, taped together very carefully. The tape is old now.
 - `crackers-floor`: A grown-up fridge. Grown-up food. You eat a whole sleeve of crackers, sitting on the floor.
+- `nina-meeting-floor`: Back against the couch, hands in your lap. Waiting, like in meeting. Waiting is something you know how to do.
 - `notebook-nina`: Heather's round letters. Izzy's loopy ones. You find a pen.
 - `mira-tried`: Big letters, pressing hard: "MIRA TRIED. -N"
 

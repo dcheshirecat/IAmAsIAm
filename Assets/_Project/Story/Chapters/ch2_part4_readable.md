@@ -72,6 +72,9 @@ In your bag, from work: chamomile tea bags, a whole row of them, taped together.
     - On the dresser. The hole worn through it, and the dresser showing through.
 - **Use: The window (cleanse the apartment)**
     - The windowsill where the Friday candles stood. You open the window anyway.
+- **Use: The rug (hold Mira in the Light)**
+    - _(Only glows while Nina is fronting. Nothing tells the player.)_
+    - Cross-legged on the rug. You hold Mira in the Light, the way Mira held you. Then Maya. Then everyone in here.
 - **Use: Your phone**
 - **Use: Your keys (go)**
 

@@ -106,6 +106,9 @@ Selene presses a little cloth bag into your hand. Lavender, a smooth grey stone,
 
 - **Wait (pray, quietly)**
     - Quiet. Not talking to anyone in particular. Not having to.
+- **Wait (wait in the silence, like meeting)**
+    - _(Only glows while Nina is fronting. Nothing tells the player.)_
+    - Hands in your lap. Eyes down. The silence, like meeting at home. Here it's allowed to just be quiet.
 - **Wait (just sit)**
     - Quiet. The candle. Nobody wanting anything.
 

@@ -102,6 +102,8 @@ _(A switch: Nina comes forward. The player has no control over it.)_
     - The napkin with Mira's number, taped together very carefully. The tape is old now.
 - **Look: The fridge**
     - A grown-up fridge. Grown-up food. You eat a whole sleeve of crackers, sitting on the floor.
+- **Use: The floor (wait in the silence, like meeting)**
+    - Back against the couch, hands in your lap. Waiting, like in meeting. Waiting is something you know how to do.
 - **Look: The notes inside**
     - Heather's round letters. Izzy's loopy ones. You find a pen.
 - **Use: The notebook (write)**

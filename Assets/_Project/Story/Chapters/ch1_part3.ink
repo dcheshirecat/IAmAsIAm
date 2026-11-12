@@ -131,6 +131,11 @@ Selene presses a little cloth bag into your hand. Lavender, a smooth grey stone,
 * [Wait (pray, quietly)]
     ~ record_choice("ch1.p3.sundays", "prayed", "On Sundays that year, you sat in the back of the chapel and prayed quietly.")
     Quiet. Not talking to anyone in particular. Not having to. # look: quiet-prayer
+// Owner: Nina is a devout Quaker. Only while Nina fronts (never hinted otherwise). No new voiced lines.
+* {fronts("nina")} [Wait (wait in the silence, like meeting)]
+    ~ record_choice("ch1.p3.sundays", "meeting", "On a Sunday in the chapel, Nina waited in the silence the way she was taught in meeting, and felt held.")
+    Hands in your lap. Eyes down. The silence, like meeting at home. Here it's allowed to just be quiet. # look: nina-chapel-silence
+    ~ get_to_know("nina", 1)
 * [Wait (just sit)]
     ~ record_choice("ch1.p3.sundays", "sat", "On Sundays that year, you sat in the back of the chapel. You didn't pray. You just sat.")
     Quiet. The candle. Nobody wanting anything. # look: quiet-sitting
