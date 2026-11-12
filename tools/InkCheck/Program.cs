@@ -100,6 +100,8 @@ static class InkCheck
         }
     }
 
+    static readonly Random Rng = new Random(99);
+
     static void Bind(Ink.Runtime.Story story, string label)
     {
         // Drafts may use retired names (not canon), so only the real story is checked for known ids.
@@ -126,6 +128,8 @@ static class InkCheck
         });
         story.BindExternalFunctionGeneral("open_gap", a => null);
         story.BindExternalFunctionGeneral("find_clue", a => null);
+        // Hidden memories: random answers, so the auto-play walks both the locked and the unlocked paths.
+        story.BindExternalFunctionGeneral("unlocked", a => { Check(_members.Contains(S(a[0])), $"unlocked: unknown member '{a[0]}'"); return Rng.Next(2) == 0; });
         story.BindExternalFunctionGeneral("explore_tradition", a => { Check(_traditions.Contains(S(a[0])), $"explore_tradition: unknown tradition '{a[0]}'"); return null; });
         story.BindExternalFunctionGeneral("card_name", a => "The Star");
         story.BindExternalFunctionGeneral("card_prompt", a => "A prompt.");
@@ -156,6 +160,9 @@ static class InkCheck
                 // A voice line's file name without "vo_" and ".mp3": <chapter-id>_<speaker>_<4-digit number> (docs/VOICE.md).
                 if (!System.Text.RegularExpressions.Regex.IsMatch(value, @"^[a-z0-9-]+_[a-z0-9-]+_\d{4}$")) Fail("voice tag must look like prologue-quaker_mira_0012");
                 break;
+            case "objective": break; // Empty clears the goal line.
+            case "look": case "memory": if (!System.Text.RegularExpressions.Regex.IsMatch(value, @"^[a-z0-9-]+$")) Fail("needs a lowercase id"); break;
+            case "maybe-switch": if (value.Length > 0 && (!int.TryParse(value, out int pct) || pct < 1 || pct > 100)) Fail("percent must be 1-100"); break;
             case "shot": case "place": case "chapter-end": case "front": break;
             default: Fail("unknown tag (see game_api.ink)"); break;
         }

@@ -38,7 +38,7 @@ def convert(text):
             guesses[-1] += " " + c.strip()
         elif mode == "guesses" and raw.startswith("//     ") and guesses:
             guesses[-1] += " " + c.strip()
-        elif c and mode is None:
+        elif c and mode is None and not c.startswith("vo-speakers:"):
             beats.append(c)
 
     out = []
@@ -49,7 +49,7 @@ def convert(text):
     out.append("")
     notes = [b for b in beats if b != heading]
     if notes:
-        out.append("**What happens (your beats):** " + re.sub(r"^Owner.s beats: ", "", " ".join(notes)))
+        out.append("**What happens (your beats):** " + re.sub(r"Owner.s beats: ", "", " ".join(notes)))
         out.append("")
     if guesses:
         out.append("**My guesses, for you to check:**")
@@ -70,6 +70,14 @@ def convert(text):
             out += ["", f"## {humanize(m.group(1))}", ""]
             continue
         ex = re.search(r"#\s*exercise:\s*([\w-]+)", l)
+        ob = re.search(r"#\s*objective:\s*([^#]+)", l)
+        if ob:
+            out += ["", f"> **Objective:** {ob.group(1).strip()}", ""]
+        mem = re.search(r"#\s*memory:\s*([\w-]+)", l)
+        if mem:
+            out += ["", f"_(A memory scene: \"{mem.group(1)}\")_", ""]
+        if re.search(r"#\s*maybe-switch", l):
+            out += ["_(An unexpected switch may happen here, if another alter is unlocked.)_", ""]
         sw = re.search(r"#\s*switch:\s*([\w-]+)", l)
         if sw:
             out += [f"_(A switch: {sw.group(1).capitalize()} comes forward. The player has no control over it.)_", ""]
@@ -79,19 +87,26 @@ def convert(text):
             l = re.sub(r"\s*#.*$", "", l)
             out += [l, "", "_(The chapter ends here, with the recap of the player's choices.)_", ""]
             continue
-        if l == "-":
+        if l == "-" or re.match(r"^-\s*\(\w+\)\s*$", l):
             in_choice = False
             out.append("")
             continue
         l = re.sub(r"\s*#.*$", "", l)
-        opt = re.match(r"^\*\s*(\(\w+\)\s*)?\[(.*)\]\s*(.*)$", l)
+        opt = re.match(r"^[*+]\s*(\{[^}]*\}\s*)?(\(\w+\)\s*)?\[(.*)\]\s*(.*)$", l)
         if opt:
+            label = opt.group(3)
             if not in_choice:
-                out += ["", "**Choice:**", ""]
+                explore = re.match(r"^(Look|Use|Talk|Go|Wait)\b", label)
+                out += ["", "**Explore** (glowing things; the player picks):" if explore else "**Choice:**", ""]
                 in_choice = True
-            out.append(f"- **{opt.group(2)}**")
-            if opt.group(3):
-                out.append(f"    - {opt.group(3)}")
+            out.append(f"- **{label}**")
+            rest = re.sub(r"\s*->.*$", "", opt.group(4)).strip()
+            if rest:
+                out.append(f"    - {rest}")
+            continue
+        cond = re.match(r'^\{\s*unlocked\("([\w-]+)"\)\s*:\s*->\s*\w+\s*\}$', l)
+        if cond:
+            out += [f"_(If {cond.group(1).capitalize()} has been unlocked, the memory below plays. Otherwise it's skipped.)_", ""]
             continue
         l = re.sub(r"\{[\w.]+: (.*?) \| (.*?)\}", r"\2 [or, if earlier: \1]", l)
         spk = re.match(r"^([A-Z][\w.' ]*?(?: \(inside\))?): (.*)$", l)

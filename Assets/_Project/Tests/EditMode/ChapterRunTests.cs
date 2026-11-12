@@ -64,5 +64,19 @@ namespace IAmAsIAm.Tests
             runs.Begin("prologue-quaker", "lily");
             Assert.That(runs.Complete(), Is.Empty, "The starter isn't 'new'.");
         }
-    }
+    
+        [Test]
+        public void UnlockedAnywhereFollowsFinishedRuns()
+        {
+            var runs = new ChapterRuns();
+            Assert.That(runs.IsUnlockedAnywhere("nina"), Is.False);
+            runs.Begin("prologue-quaker", "maya");
+            runs.RecordFront("nina");
+            Assert.That(runs.IsUnlockedAnywhere("nina"), Is.False, "Not until the chapter is finished.");
+            runs.Complete();
+            Assert.That(runs.IsUnlockedAnywhere("nina"));
+            Assert.That(runs.IsUnlockedAnywhere("maya"), Is.False, "The default starter isn't an unlock.");
+            Assert.That(runs.AllUnlocked(), Is.EqualTo(new[] { "nina" }));
+        }
+}
 }

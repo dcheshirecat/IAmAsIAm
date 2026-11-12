@@ -45,7 +45,7 @@ namespace IAmAsIAm.Runtime.Story
         RectTransform _root;
         Text _speaker, _line, _frontLabel, _triggerText, _actionTitle, _actionBody, _anchorBody;
         GameObject _dialogue, _choices, _action, _anchor, _triggerPanel, _tap, _touch;
-        Text _prompt;
+        Text _prompt, _objective;
         RectTransform _actionButtons, _breathCircle;
         Image _fog;
         InputAction _advance, _anchorKey;
@@ -88,6 +88,7 @@ namespace IAmAsIAm.Runtime.Story
             TriggerRunner.Fired += ShowTrigger;
             runner.Started += OnStoryStarted;
             runner.Ended += OnStoryEnded;
+            runner.ObjectiveChanged += ShowObjective;
             IAmAsIAm.Runtime.Save.SaveService.Loaded += UpdateFrontLabel;
         }
 
@@ -101,6 +102,7 @@ namespace IAmAsIAm.Runtime.Story
             TriggerRunner.Fired -= ShowTrigger;
             runner.Started -= OnStoryStarted;
             runner.Ended -= OnStoryEnded;
+            runner.ObjectiveChanged -= ShowObjective;
             IAmAsIAm.Runtime.Save.SaveService.Loaded -= UpdateFrontLabel;
             PlayerMotor.Blocked = false;
         }
@@ -162,6 +164,8 @@ namespace IAmAsIAm.Runtime.Story
             var usable = busy || interactor == null ? null : interactor.Target;
             _prompt.text = usable == null ? "" : (Touchscreen.current != null ? "" : "E  ") + usable.Prompt;
         }
+
+        void ShowObjective(string text) { if (_objective != null) _objective.text = text; }
 
         // ── Dialogue ──────────────────────────────────────────────────────────────
 
@@ -547,6 +551,9 @@ namespace IAmAsIAm.Runtime.Story
             _triggerPanel.SetActive(false);
 
             _frontLabel = Label(_root, "Fronting", 52, FontStyle.Bold, new Vector2(0.02f, 0.92f), new Vector2(0.4f, 0.99f));
+
+            // The goal line (# objective:), under who's fronting: the main way the game points the way.
+            _objective = Label(_root, "Objective", 44, FontStyle.Italic, new Vector2(0.02f, 0.86f), new Vector2(0.6f, 0.92f));
 
             // The Anchor button and panel: top right, on their own canvas above every other screen.
             var anchorLayer = new GameObject("Anchor Layer", typeof(RectTransform), typeof(Canvas), typeof(GraphicRaycaster));

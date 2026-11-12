@@ -2,32 +2,43 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** Maya "performs okay" (neat clothes, a smile, good answers), and Mira believes it. Mira moves away. Small choices only. The writing is an eleven-year-old's. This Sunday also holds Maya's first real time loss (the prologue eases the player into it).
+**What happens (your beats):** Maya "performs okay" (neat clothes, a smile, good answers), and Mira believes it. Mira moves away. Small choices only. This Sunday also holds Maya's first real time loss. Explore-first: the performing is something the player DOES (the dress, the bulletins, the right words at the door), not narration. Hidden memory (owner: an unlocked alter reveals hidden memories): once Nina is unlocked, the dress shows what Nina did in the lost nine hours.
 
 **My guesses, for you to check:**
 
-- Spring (May). Mira, now about 74, is moving to Oregon to live near her daughter.
+- Spring (May). Mira, now about 74, is moving to Oregon to live near her daughter, Ellen.
 - Mira gives Maya a smooth stone from her garden ("something to hold"): the grounding-object skill.
 - Mira gives Maya her new address; Maya means to write and doesn't.
-- The first time loss: after the goodbye, Maya is suddenly at home in her room, with no memory of the drive. (Nina is 11, "formed to be the minister's perfect, quiet child": her presence is felt here as the performing, but she isn't named until Sunday 4.)
+- The first time loss: after the goodbye, Maya is suddenly at home in her room, with no memory of the drive. Nina (11, "the minister's perfect, quiet child") did the smiling and the hours; she isn't named until Sunday 4.
 
 ## Morning
 
-Maya is eleven, and she has a system.
+> **Objective:** Look perfect for church
 
-**Saturday night:** iron the blue dress, the one with the collar. Hang it on the closet door. Shoes polished with a paper towel. Hair brushed one hundred times, then the braid, then the clip.
+**Explore** (glowing things; the player picks):
 
-**Sunday morning:** up before Mom. Toast, if there's bread. Teeth. Dress. Smile, in the bathroom mirror, until it looks right.
+- **Look: The mirror**
+    - A smile. Practiced until it looks right.
+- **Use: The blue dress**
+    - The blue dress, ironed last night. The collar straight.
 
-Mom says "Don't you look nice" every Sunday. It's the best part of the week.
+**Explore** (glowing things; the player picks):
+
+- **Use: Your hair**
+    - One hundred brushes. The braid. The clip.
 
 **Sarah:** Don't you look nice. Grab the bulletins, would you, sweetheart? They're on the printer.
 
-Maya grabs the bulletins. She is very good at this.
+> **Objective:** Bring the bulletins
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The bulletins**
+    - A stack of bulletins, still warm from the printer.
 
 ## Church
 
-At church, Maya hands out the bulletins at the door. She knows everybody's name.
+> **Objective:** Hand out the bulletins
 
 **Mrs. Hines:** Good morning, Maya. Aren't you a credit to your mother.
 
@@ -37,150 +48,150 @@ At church, Maya hands out the bulletins at the door. She knows everybody's name.
 
 **Maya:** Good morning, Mr. Jones. How's your knee?
 
-Rebecca comes in with her family, and Jamie and Justin and Will right behind. Rebecca has her hair in a high ponytail now, like the older girls.
-
 **Rebecca:** Hey, Maya.
 
 **Maya:** Hey! I like your ponytail.
 
 **Rebecca:** Thanks. Will, wait up!
 
-The Carters come in last, like always. Mr. Carter holds the door. Reneé swings through on her crutches, and gives Maya a little nod, the kind big kids give little kids when they're being nice.
+**Explore** (glowing things; the player picks):
 
-Maya smiles for everybody. Her face is starting to ache. It's fine. She's used to it.
-
-Sometimes, lately, it's like there's somebody else doing the smiling. Somebody very good at it. Maya just watches from a little way behind her own eyes, and lets her.
+- **Look: The Carters**
+    - Mr. Carter holding the door. Reneé on her crutches. A nod, the kind big kids give little kids.
+- **Look: Your face in the glass door**
+    - Smiling. Somebody very good at it.
+- **Go: Into worship**
 
 ## News
 
-After worship, Mira is waiting by the coffee, like always. But today she has her coat on already.
+> **Objective:** Sit with Mira
 
 **Mira:** Maya, dear. Will you sit with me a minute? I've some news, and I wanted you to hear it from me.
-
-They sit in the two chairs by the window. Mira's chairs.
 
 **Mira:** I'm moving to Oregon. To be near my daughter, Ellen. My legs aren't what they were, and she worries.
 
 **Mira:** I leave on Thursday.
 
-Thursday. That's four days.
+**Explore** (glowing things; the player picks):
 
-**Choice:**
-
-- **Say it's great news.**
+- **Talk: Mira (say it's great news)**
     - **Maya:** That's great! Oregon is really pretty. We did it in social studies.
-    - Mira looks at her for a long moment.
     - **Mira:** It is pretty. I'll send you pictures.
-- **Ask her not to go.**
-    - Maya opens her mouth to say don't go.
-    - What comes out is:
+- **Talk: Mira (ask her not to go)**
     - **Maya:** Does it rain a lot there?
     - **Mira:** Oh, all the time. I'll grow moss, like my cardigan.
-    - Maya laughs, because Mira wants her to.
-- **Say nothing.**
-    - Maya doesn't say anything. She looks at the window. There's a fly on it, walking up and up and falling down.
-    - Mira waits. She's always been good at waiting.
+- **Look: The window**
+    - A fly on the window, walking up and falling down.
 
 ## The question
 
-Then Mira takes Maya's hand, the way she did when Maya was little.
-
 **Mira:** Maya. Before I go, I want to ask you something, and I want a true answer. Are you all right? At home? Really?
 
-This is the moment. Maya knows it is.
+> **Objective:** Tell Mira the truth
 
-She could tell her. About the crackers. About Wednesday nights, and Thursday nights, and the time the power went out and she sat in the dark for three hours with the phone in her lap. About going floaty, which happens nearly every day now.
+**Explore** (glowing things; the player picks):
 
-But Mira is leaving on Thursday. And she looks so tired. And if Maya tells, Mira will be sad all the way to Oregon. And Mom might get in trouble.
-
-And the somebody who is good at smiling is already smiling.
-
-**Choice:**
-
-- **Tell her you're fine.**
+- **Talk: Mira (say you're fine)**
     - **Maya:** I'm fine! Really. I'm good at looking after myself. Mom says I'm very independent.
-- **Tell her it's better now.**
+- **Talk: Mira (say it's better now)**
     - **Maya:** It's better now. I'm older. I can make pasta and everything.
-- **Start to tell her, then stop.**
+- **Talk: Mira (start to tell her)**
     - **Maya:** Sometimes it's...
-    - She stops. Mira's eyes are so kind. They'd break.
     - **Maya:** Sometimes it's boring, that's all. When Mom's at meetings. But I read a lot. I'm fine.
-
-Mira searches her face. Maya keeps the smile very still, like holding a full glass.
-
-Then Mira lets out a long breath, and her shoulders come down.
 
 **Mira:** Well. You've grown into a very capable young lady. I'm proud of you.
 
 **Mira:** I'm glad. I'm so glad, Maya.
 
-She believes it. Maya can see her believe it.
-
-It should feel like winning.
-
 ## Gift
-
-Mira opens her handbag and takes out something wrapped in a handkerchief.
-
-It's a stone. Grey, and flat, and smooth as soap, with a white line all the way around it like a ribbon.
 
 **Mira:** From my garden. I used to hold it in meeting, when my mind wandered off. You can have it now. For when you feel far away.
 
-The stone is warm from her bag. It's heavy for its size, in a good way.
+**Explore** (glowing things; the player picks):
+
+- **Look: Mira's stone**
+    - A stone, grey and flat and smooth as soap. A white line all the way around.
 
 Something to hold. _(the player does the "grounding-object" exercise here)_
-
-Mira writes her new address on a card, in her shaky blue pen.
 
 **Mira:** Write to me. Tell me about school, and books, and everything.
 
 **Maya:** I will. I promise.
 
-Mira hugs her. She smells like soap and coffee, the way she always has.
+**Explore** (glowing things; the player picks):
+
+- **Look: The card**
+    - Mira's new address, in Oregon. Shaky blue pen.
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Mira, at the door**
+    - Mira's hand, lifting, at the door.
 
 ## Lost
 
-Mira walks to the door with her cane. At the door she turns and lifts her hand.
-
-Maya lifts hers.
-
-And then.
-
 ...
 
-Maya is sitting on her bed.
+> **Objective:** What happened?
 
-It's dark outside. Her blue dress is hung up on the closet door, neatly, on its hanger. She's in her pajamas. There's a plate on her desk with toast crumbs on it.
+**Explore** (glowing things; the player picks):
 
-She doesn't remember the drive home. She doesn't remember taking off the dress, or making toast, or the sun going down.
+- **Look: The clock**
+- **Look: Your pillow**
+- **Look: The closet door**
+- **Use: Feet on the floor**
+- **Use: Mira's stone**
 
-The last thing she remembers is Mira's hand, lifting, at the door.
+## Time
 
-**Choice:**
+8:47. Church ended at noon.
 
-- **Check the time.**
-    - The clock on her desk says 8:47. Church ended at noon.
-    - Almost nine hours. Gone, like a page torn out.
-- **Look for the stone.**
-    - The stone is on her pillow, right in the middle, like somebody put it there on purpose so she'd find it.
-    - She doesn't remember putting it there.
-- **Look at the dress.**
-    - The dress is hung up perfectly. Collar straight. Sash tied in a bow around the hanger.
-    - Maya never ties the sash like that. It's very neat. Neater than she does it.
+## Stone
 
-The room looks like her room. It looks exactly like her room. That's what's wrong with it.
+Mira's stone, in the middle of your pillow.
 
-She holds very still and listens. The house is empty. Mom's car isn't in the drive. Thursday is the board, but this is Sunday, so it's something else.
+## Dress
 
-**Choice:**
+The blue dress on its hanger. The sash tied in a bow. You never tie it like that.
 
-- **Hold the stone.**
-    - Maya finds Mira's stone and holds it in both hands. It's cool now. Heavy. Real.
-- **Feet on the floor.**
-    - Maya puts her feet flat on the floor and pushes. Hello, floor.
+_(If Nina has been unlocked, the memory below plays. Otherwise it's skipped.)_
 
-She doesn't tell anybody. There isn't anybody to tell.
+## Nina memory
 
-She means to write to Mira on Monday, and on Tuesday, and every day after. She writes "Dear Mira" on a piece of paper four different times. She never finishes. What would she say?
+_(A memory scene: "nina-lost-hours")_
 
-She keeps the stone, though. She keeps it in her pocket, every Sunday.
+A memory that isn't yours.
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The car, at the curb**
+    - Waiting at the curb with the bulletins. Smiling for Mrs. Hines.
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The kitchen**
+    - Toast, cut into triangles. The plate rinsed. Nobody asked.
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The closet**
+    - The dress, hung up perfectly. The sash, a bow. Good girls are neat.
+
+## Steady
+
+> **Objective:** Write to Mira
+
+**Explore** (glowing things; the player picks):
+
+- **Use: A piece of paper**
+    - "Dear Mira,"
+
+**Explore** (glowing things; the player picks):
+
+- **Use: A piece of paper**
+    - "Dear Mira,"
+
+**Explore** (glowing things; the player picks):
+
+- **Use: Mira's stone**
+    - The stone, in your pocket. Every Sunday.

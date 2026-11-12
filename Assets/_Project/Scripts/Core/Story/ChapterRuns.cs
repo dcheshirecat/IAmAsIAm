@@ -91,6 +91,17 @@ namespace IAmAsIAm.Core.Story
             return list;
         }
 
+        /// <summary>
+        /// True if this alter has been unlocked as a starter for any chapter in this save. Hidden memories and unexpected
+        /// switches use it: once an alter's version of a chapter is unlocked, they can surface anywhere.
+        /// </summary>
+        public bool IsUnlockedAnywhere(string memberId) =>
+            !string.IsNullOrEmpty(memberId) && _unlocked.Values.Any(set => set.Contains(memberId));
+
+        /// <summary>Every alter unlocked anywhere in this save, in a stable order.</summary>
+        public IReadOnlyList<string> AllUnlocked() =>
+            _unlocked.Values.SelectMany(s => s).Distinct().OrderBy(id => id, StringComparer.Ordinal).ToList();
+
         public List<ChapterUnlock> Export() =>
             _unlocked.Select(kv => new ChapterUnlock { chapterId = kv.Key, memberIds = kv.Value.OrderBy(x => x, StringComparer.Ordinal).ToList() }).ToList();
 

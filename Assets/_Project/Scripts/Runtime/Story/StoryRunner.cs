@@ -56,6 +56,9 @@ namespace IAmAsIAm.Runtime.Story
         /// <summary>A conversation or look-at began; partner is the person talked to (or null for objects).</summary>
         public event Action<Transform> Started;
         public event Action Ended;
+        /// <summary>The goal line changed (# objective:). Empty clears it.</summary>
+        public event Action<string> ObjectiveChanged;
+        public string Objective { get; private set; } = "";
 
         public bool IsWaitingForAction => _pending != null;
         public bool IsPlaying { get; private set; }
@@ -151,6 +154,8 @@ namespace IAmAsIAm.Runtime.Story
                 else if (key == "cue") EncounterCue(value, trapped: false);
                 else if (key == "cue-held") EncounterCue(value, trapped: true);
                 else if (key == "switch") ScriptedSwitch(value);
+                else if (key == "objective") { Objective = value; ObjectiveChanged?.Invoke(value); }
+                else if (key == "maybe-switch") MaybeSwitch(value);
                 else if (ActionTags.Contains(key)) _pending = new StoryAction { Kind = key, Value = value };
                 // "shot", "place" and "front" are read by the view and camera from line.Tags.
             }
@@ -171,6 +176,25 @@ namespace IAmAsIAm.Runtime.Story
             try { roster.ForceSwitch(memberId); }
             catch (ArgumentException) { Debug.LogWarning($"[IAmAsIAm] # switch: unknown member '{memberId}'."); return; }
             SyncFronting();
+        }
+
+        static readonly System.Random Chance = new System.Random();
+
+        /// <summary>
+        /// Owner's rule: once another alter's version of a chapter is unlocked, a switch can always happen unexpectedly.
+        /// Here the story marks moments where it may: a chance (default 15%) of switching to an unlocked alter.
+        /// </summary>
+        void MaybeSwitch(string value)
+        {
+            var roster = GameServices.Roster;
+            var runs = GameServices.ChapterRuns;
+            if (roster == null || runs == null) return;
+            var pool = new List<string>();
+            foreach (var id in runs.AllUnlocked()) if (id != roster.FrontingId && roster.GetDefinition(id) != null) pool.Add(id);
+            if (pool.Count == 0) return;
+            int percent = int.TryParse(value, out int p) ? Mathf.Clamp(p, 1, 100) : 15;
+            if (Chance.Next(100) >= percent) return;
+            ScriptedSwitch(pool[Chance.Next(pool.Count)]);
         }
 
         void SyncFronting()
@@ -230,6 +254,11 @@ namespace IAmAsIAm.Runtime.Story
             _story.BindExternalFunctionGeneral("find_clue", a => { GameServices.Journal?.FindClue(S(a[0]), S(a[1])); return null; });
             _story.BindExternalFunctionGeneral("explore_tradition", a => { GameServices.Traditions?.Explore(S(a[0])); return null; });
             _story.BindExternalFunctionGeneral("card_name", a => GameServices.Practices?.GetCard(S(a[0]))?.name ?? "");
+            _story.BindExternalFunctionGeneral("unlocked", a =>
+            {
+                string id = S(a[0]);
+                return id == GameServices.Roster?.FrontingId || (GameServices.ChapterRuns?.IsUnlockedAnywhere(id) ?? false);
+            });
             _story.BindExternalFunctionGeneral("card_prompt", a => GameServices.Practices?.GetCard(S(a[0]))?.reflectionPrompt ?? "");
         }
     }

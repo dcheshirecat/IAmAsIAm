@@ -71,11 +71,11 @@ def scan(path):
             continue
         if s.startswith("==="):
             continue
-        o = re.match(r"^\*\s*(\(\w+\)\s*)?\[(.*)\]", s)
+        o = re.match(r"^[*+]\s*(\{[^}]*\}\s*)?(\(\w+\)\s*)?\[(.*)\]", s)
         if o:
-            option = o.group(2)
+            option = o.group(3)
             continue
-        if s == "-":
+        if s == "-" or re.match(r"^-\s*\(\w+\)\s*$", s):
             option = None
             continue
         if not raw.startswith("    "):
