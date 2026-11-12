@@ -153,6 +153,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
 - 2026-11-12: **Prelude (owner):** Maya meets Wicca at **college** but only gets **serious in her early twenties**. She finds it first
   through **a person**, later through **a shop or coven**. The guide is **a coven elder**. The system: **lost time grows**
   (more blackouts, signs of others: notes, things moved) and Maya doesn't understand it yet.
+  College is **out of state**; the first person is **a classmate**; the coven is an **open, eclectic teaching coven** with public
+  sabbat circles (only open practice shown). The elder: the owner will describe them (name, age, pronouns, personality).
 
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
