@@ -47,7 +47,7 @@ What's IN each place (the props and close-ups) is in [ART_BY_SCENE.md](ART_BY_SC
 | [ ] | 26 | `protest_march` | The vigil march | Ch 1.5 | Outdoor, night, candles, crowd |
 | [ ] | 27 | `queer_affirming_church` | The queer-affirming church | Ch 1.5 | Easter evening |
 | [ ] | 28 | `chicago_apartment` | Maya's apartment, Chicago | Ch 2 | The L outside the window; taped boxes |
-| [ ] | 29 | `field_museum_hall` | The Field Museum: Stanley Field Hall | Ch 2 | A real place: Máximo the titanosaur (an original model, not a copy of the museum's own designs) |
+| [ ] | 29 | `field_museum_hall` | The Field Museum: Stanley Field Hall | Ch 2 | **The real place (owner)**: model it from reference photos of the real hall, with Máximo the titanosaur |
 | [ ] | 30 | `field_museum_office` | The Field Museum: the registrar's office | Ch 2 | Adeena's desk |
 | [ ] | 31 | `field_museum_gallery` | The Field Museum: the new gallery | Ch 2 | Half-lit cases, a ladder |
 | [ ] | 32 | `adeena_apartment` | Adeena's apartment | Ch 2 | The Shabbat table, the candlesticks |
@@ -64,15 +64,16 @@ What's IN each place (the props and close-ups) is in [ART_BY_SCENE.md](ART_BY_SC
 | [ ] | 43 | `lakefront_path` | The lakefront path | Ch 2 | Outdoor: Lake Michigan, grey, rocks |
 
 ## Part 2: Maps (2D, one per city: `Assets/_Project/Resources/Maps/map_<city-id>.png`) *Auto*
-The map opens from college on, to get from scene to scene. 4:3, e.g. **2048 × 1536**, sRGB. Pins are placed by the game from
-places.json (x, y from the bottom left), so leave room around each place; tell Claude if a pin should move.
+**A map app on Maya's phone (owner).** It opens from Chapter 1 on to get from scene to scene (the Prologue and the Prelude are
+door to door), and from the phone's Maps tab. **Portrait 3:4, e.g. 1536 × 2048**, sRGB, drawn like a map app (streets, main
+roads, parks, water; no labels needed: the game adds the dot, pins, route and names). Pins are placed from places.json
+(x, y from the bottom left), so tell Claude if a pin should move.
 | | File | City | Chapters |
 |---|---|---|---|
-| [ ] | `map_champaign_urbana.png` | Champaign-Urbana | Prelude, Ch 1, Ch 1.5 |
+| [ ] | `map_champaign_urbana.png` | Champaign-Urbana | Ch 1, Ch 1.5 |
 | [ ] | `map_indianapolis.png` | Indianapolis | Ch 1.5 |
 | [ ] | `map_chicago.png` | Chicago (Lake Michigan to the east) | Ch 2 onwards |
-| [ ] | `map_iowa_city.png` | Iowa City (optional: no map before college) | Prologue (not used yet) |
-| [ ] | `ui_map_pin.png`, `ui_map_pin_next.png` (9-slice) *Claude* | Pins: a place she's been, and where she's heading | 512 × 160 |
+| [ ] | `ui_map_dot.png`, `ui_map_pin.png`, `ui_map_frame.png` *Claude* | The blue "you are here" dot, the red destination pin, the phone frame around the map | 128 × 128, 128 × 192, 1024 × 2048 |
 
 ## Part 3: People (3D, Nomad → Procreate → **Grab3D**; `3D Models/<id>/model_<id>.glb`), in story order
 ### 3a. The system: one shared body, each alter's look

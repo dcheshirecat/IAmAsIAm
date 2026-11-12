@@ -320,8 +320,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   during exploring and dialogue (not over the Anchor or an interactive moment). The story's `# device:` beats stay too.
 - 2026-11-12: **Walking between scenes + the map (owner).** Within a chapter part, when the story moves to a new `# place:`,
   Maya WALKS there, guided: the story waits (a "travel" moment, `StoryRunner.GoTo`), a glowing doorway "Go: <place>" appears
-  in the current place and the objective says "Head to <place>". **From college on (age >= `PlaceData.MapAge` = 18; owner: "a map,
-  gained when she leaves for college")** using the way out opens the **city map** (`Runtime/World/MapScreen.cs`): places she's
+  in the current place and the objective says "Head to <place>". **From Chapter 1 on (owner, later: the Prologue and the Prelude are door to door;
+  chapters.json `doorToDoor`)** using the way out opens the **city map on Maya's phone, like a map app** (owner) (`Runtime/World/MapScreen.cs`): places she's
   been are marked, the next one glows and is the only one to tap (guided); "Not yet" goes back. Cuts (no walk): the first place
   of a run, the first place of each part (`set_age` marks a part = a jump in time), and to/from `black`. Using a story `Go:`
   just before a move skips the second walk. **Places data:** `Resources/Data/places.json` (name, city, map x/y 0..1, the chapter
@@ -345,6 +345,10 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   (1YPpk5n3Wo1PeIsruhV6PjTCbituHuGV0HLFqjLUOjPE, 32 lines). Chapter 3 starts as Maya and unlocks nobody FOR NOW: remind the owner to set it.
 - 2026-11-12: **Test builds: "Test: any chapter"** in the chapter list (`StoryScreen.TestJumps`) starts any chapter, so the owner
   can test new scenes without replaying everything. Turn it off for a release. **Owner: push when there's a new scene to test.**
+- 2026-11-12: **Map + Field Museum (owner):** the map is a **phone map app** (`MapScreen`: a phone in the middle of the screen,
+  blue "you are here" dot, places visited, a red pin and a blue route to the next place, Go / Not yet; also the phone's **Maps
+  tab**, just to look). **Prologue and Prelude are door to door** (`doorToDoor: true`). **The Field Museum is modelled as the real
+  place** (from reference photos).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

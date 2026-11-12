@@ -44,10 +44,5 @@ namespace IAmAsIAm.Core.Story
             return string.IsNullOrEmpty(id) ? "" : char.ToUpperInvariant(id[0]) + id.Substring(1).Replace('_', ' ');
         }
 
-        /// <summary>
-        /// The map: from when Maya leaves for college (owner, 2026-11-12), getting between scenes opens the city map.
-        /// Before that (the Prologue, at home and church), she just walks out of the door.
-        /// </summary>
-        public const int MapAge = 18;
     }
 }

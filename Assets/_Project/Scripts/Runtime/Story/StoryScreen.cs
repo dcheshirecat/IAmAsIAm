@@ -87,6 +87,9 @@ namespace IAmAsIAm.Runtime.Story
             _world.Init(cameraRig != null ? cameraRig.Target : null, () => { if (cameraRig != null) cameraRig.SnapBehind(); });
             _map = gameObject.AddComponent<MapScreen>();
             _places = DataLoader.Load<IAmAsIAm.Core.Story.PlaceData>("places");
+            // The phone's Maps tab: the city she's in, just to look (from Chapter 1 on).
+            _devices.MapAvailable = () => !string.IsNullOrEmpty(_lastCity) && !(GameServices.Chapter(runner.ChapterId)?.doorToDoor ?? true) && runner.IsPlaying;
+            _devices.ShowMap = () => _map.Show(_places, _lastCity, _world.Place, null, _visited, null, null);
 
             _advance = new InputAction("Advance", binding: "<Keyboard>/space");
             _advance.AddBinding("<Keyboard>/enter");
@@ -143,9 +146,13 @@ namespace IAmAsIAm.Runtime.Story
             }
         }
 
+        string _lastCity;
+
         void OnPlace(string placeId)
         {
             _visited.Add(placeId);
+            var city = _places?.Find(placeId)?.city;
+            if (!string.IsNullOrEmpty(city)) _lastCity = city;
             if (_world != null) _world.Enter(placeId);
         }
 
@@ -162,10 +169,11 @@ namespace IAmAsIAm.Runtime.Story
 
         void Depart(string destination)
         {
+            // Owner: the Prologue and the Prelude are door to door; from Chapter 1 the map on Maya's phone opens.
             var place = _places.Find(destination);
-            int age = GameServices.Devices?.Age ?? 0;
-            if (place != null && !string.IsNullOrEmpty(place.city) && age >= IAmAsIAm.Core.Story.PlaceData.MapAge)
-                _map.Show(_places, place.city, destination, _visited, () => Arrive(destination), () => RunTravel(destination));
+            bool doorToDoor = GameServices.Chapter(runner.ChapterId)?.doorToDoor ?? false;
+            if (place != null && !string.IsNullOrEmpty(place.city) && !doorToDoor)
+                _map.Show(_places, place.city, _world.Place, destination, _visited, () => Arrive(destination), () => RunTravel(destination));
             else Arrive(destination);
         }
 

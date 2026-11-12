@@ -47,6 +47,8 @@ namespace IAmAsIAm.Runtime.Story
         StoryAction _pending;
         bool _announced;
         string _chapterId = "";
+        /// <summary>The chapter being played (chapters.json id), or empty.</summary>
+        public string ChapterId => _chapterId;
 
         public event Action<StoryLine> LineReady;
         public event Action<List<Choice>> ChoicesReady;

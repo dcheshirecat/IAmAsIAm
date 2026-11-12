@@ -33,6 +33,9 @@ namespace IAmAsIAm.Runtime.Devices
 
         /// <summary>Set by the story screen: true while the player shouldn't open the phone (dialogue, the Anchor...).</summary>
         public Func<bool> Blocked = () => false;
+        /// <summary>The phone's Maps tab (owner: the map lives on Maya's phone). Set by the story screen.</summary>
+        public Func<bool> MapAvailable = () => false;
+        public Action ShowMap;
 
         Font _font;
         GameObject _phoneButton, _laptopButton, _panel, _banner;
@@ -150,12 +153,15 @@ namespace IAmAsIAm.Runtime.Devices
             _title.text = DeviceName() + (channel == MessageChannel.Email ? ": Email" : ": Messages");
 
             var channels = Channels().ToList();
-            if (channels.Count > 1)
+            // Maps, on the phone, when she's somewhere with a map (not while the story is waiting on this phone moment).
+            bool maps = _openOn == DeviceKind.Phone && _onClosed == null && ShowMap != null && MapAvailable();
+            if (channels.Count > 1 || maps)
                 foreach (var c in channels)
                 {
                     var ch = c;
                     Button(_tabs, c == MessageChannel.Text ? "Messages" : "Email", () => ShowList(ch), c == channel ? ButtonColor : QuietButtonColor, 90);
                 }
+            if (maps) Button(_tabs, "Maps", () => { Close(); ShowMap(); }, QuietButtonColor, 90);
 
             var threads = D.Threads(channel);
             if (threads.Count == 0) Label(_list, "Nothing here yet.", 42, FontStyle.Italic, Dim, 90);

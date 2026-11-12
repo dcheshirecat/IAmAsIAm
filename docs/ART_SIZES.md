@@ -42,8 +42,8 @@ Android compresses textures as ASTC, so painting at these sizes is enough for ta
 | Choice buttons, wide buttons (9-slice) | 640 × 200 |
 | The Anchor button (+ `_pressed`), always on screen | 384 × 384 |
 | Small UI icons | 128 × 128 |
-| City maps (`Resources/Maps/map_<city-id>.png`), 4:3 | 2048 × 1536 |
-| Map pins (9-slice) | 512 × 160 |
+| City maps on the phone (`Resources/Maps/map_<city-id>.png`), portrait 3:4 | 1536 × 2048 |
+| Map dot / pin / phone frame | 128 × 128 / 128 × 192 / 1024 × 2048 |
 | Phone and laptop icons (right edge) | 256 × 256 |
 | Joystick ring / knob, Use button | 512 × 512 / 256 × 256 / 384 × 384 |
 | Phone screen / laptop screen (9-slice) | 1024 × 1536 / 1536 × 1024 |

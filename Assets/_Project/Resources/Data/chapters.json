@@ -21,7 +21,8 @@
         "involuntary-switch"
       ],
       "summary": "Quaker: the backstory, in Iowa City, over four Sundays at ages 5, 8, 11 and 15. Young Maya is raised by Sarah, a single mother and the minister of a programmed Friends church, who is well-meaning but absent, and neglectful to the point of harm. Mira, a kind older Friend, meets Maya at 5, raises her worries with Sarah at 8 and backs down, and moves away when Maya is 11, never knowing how bad things were. At 15, Sarah mentions in passing that Mira has died. That night, home alone in her room, Maya hears a voice inside that is not hers, and then loses time.",
-      "unlocksMemberId": "nina"
+      "unlocksMemberId": "nina",
+      "doorToDoor": true
     },
     {
       "id": "prelude-wicca",
@@ -37,7 +38,8 @@
         "religious-content"
       ],
       "summary": "Wicca: more backstory. The character has left organised religion and found Wicca.",
-      "unlocksMemberId": "izzy"
+      "unlocksMemberId": "izzy",
+      "doorToDoor": true
     },
     {
       "id": "ch1-christianity",
