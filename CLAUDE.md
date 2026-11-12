@@ -357,8 +357,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   `# exercise: five-senses`; weeks later "a dissociative disorder"; a Sunday service at a Jodo Shinshu temple in Chicago
   (**Reverend Mori**, Claude's placeholder name) who mentions temple stays; Angie's travel plan by email). It ends "To be
   continued." (no `# chapter-end` yet). Drive: Story Drafts → `05 Chapter 3 - Buddhism (title to come)`
-  (1_dSAszvSd6Azj1ZpyHq2QuCwni6lsWDX): Part 1 (1XbmeegxoVr3JN0VebSs5-vJp0O1nzNQO_BqoYWviMi8), Part 2 (1lROoLmnkbc4M0Hbww_7tDM_5N1Tgraj1HN_8ynKchwE),
-  Part 3 (1JwCk7tJ9QX9KZLXLtwf_GpBoEd4eNEDhCpemhZARzqw), Part 4 (1Q3DXFB1UKKiyDIYm_usJnYPWieRIGV9R_7jzU6g4PFw); Sheet "05 Chapter 3 - script list (draft)"
+  (1_dSAszvSd6Azj1ZpyHq2QuCwni6lsWDX): Part 1 (1kGux2qPWGXRqh6hVSBNpqyaAUEoOHFJKsbddLMvtRUQ), Part 2 (1ui6Ut0gqqmJMZFzjJQzB9V594y1Yqef6J4u598B5JH8),
+  Part 3 (1ri_SXKlVBXuq0Bh7z2ibn6fZQT11B-LOlFUcXguKzng), Part 4 (1329nocSdrZcuBAhd5U2tDyvvS2U7wJlRFps56Nk7gX0); Sheet "05 Chapter 3 - script list (draft)"
   (1LieVbr82W_V2Xb7QbateA-sKM38Leu1k0dPGkyBE6aQ, 81 lines). Chapter 3 starts as Maya and unlocks nobody FOR NOW: remind the owner to set it.
 - 2026-11-12: **Test builds: "Test: any chapter"** in the chapter list (`StoryScreen.TestJumps`) starts any chapter, so the owner
   can test new scenes without replaying everything. Turn it off for a release. **Owner: push when there's a new scene to test.**
@@ -536,7 +536,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   morning run; the last day of classes), Chapter 2 FULL DAYS (the L `cta_train`, lunch on the steps, the Friday before the
   first Shabbat + the walk home, January 18th at work, the day it ended), Chapter 6 FULL DAYS (Sunday from waking, Gurleen's
   car, nani's foil packets; Vaisakhi from Christie's coffee to cold dal in bed; Gurpurab from the dawn hymn walk to a lamp on the
-  sill). NEXT: Chapter 3, 4, 5 (full days).
+  sill), Chapter 3 FULL DAYS (the L in January, the evening after Angie, Boudha lanes + rooftop, the course by the bell,
+  dal bhat with Pasang's family). NEXT: Chapter 4, 5 (full days).
 - 2026-11-12: **Chapter 6 answers (owner):** keep **Bibi Harjit** (langar) as the guide; **Christie VISITS** Seattle (a work trip)
   and tells Maya in person, over coffee (not a phone call); **Chapter 6 unlocks nobody**. **Chapters 2-6: a FULL DAY in every
   part** (owner): wake up, get there, work/school, lunch, home, dinner, bed, around the part's existing scenes.
