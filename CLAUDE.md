@@ -506,8 +506,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   2028; `# chapter-end`). 35 voiced lines (speakers maya, gurleen, harjit, christie, heather-inside). New: `Name (on the phone): ...`
   = a remote speaker like `(on video)` (StoryLine.Via).
   Drive: Story Drafts → `08 Chapter 6 - Sikhism (title to come)` (1TwMDcJ8B-CWntR2GLCVOLEv8dmVSrwdu): Part 1
-  (1mHjXc_XNB-zekkICn4spbyr9wkv_QGWq3MR-aLZyrng), Part 2 (1L8ryDQdygbp5hJOjuhKZBIASFUzsMxOqRZBfruO8VmY), Part 3
-  (1kHntN9_9___E6FCJFqWHcQ7i8H43OShddpmg6fYjTYU); Sheet "08 Chapter 6 - script list (draft)" (1wHLcjFyA9BOEBlWe4mY6YsFbs88YH30ADsksAXDrsDc, 35 lines).
+  (11T7jviZ2m-ggCG7gL7Zfe9EJ4v7pI3zJTt8KIYUcENw), Part 2 (1IRJa43Tuzdv4Gct9uAOl_lGLlDkJiFQ8vT2mADm7f9U), Part 3
+  (1TPwQeju52VA0T4mpyJ3CeTevlLJSIkN-4pxHgkEwOOA); Sheet "08 Chapter 6 - script list (draft)" (1ymvlLfxBYKddkFaDWgzZPw58HM3LBSAwsOve-RAdzF8, 35 lines).
 - 2026-11-12: **The game introduces the phone and the computer (owner).** Story: Prologue Sunday 4 (15) gains a `home` scene
   (the kitchen: Mom's sticky note, the family computer with an email from Rebecca, `# device: computer`, then the soup);
   Prelude Part 1 (18) starts with a `morning` scene in her dorm (her first phone, a text from Mom; the laptop, an email from
