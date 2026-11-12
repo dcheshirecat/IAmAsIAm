@@ -13,6 +13,49 @@ import re
 import sys
 
 
+def _people():
+    import json, os
+    here = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.join(here, "..", "..", "Assets", "_Project", "Resources", "Data", "people.json")
+    try:
+        return {p["id"]: p["name"] for p in json.load(open(path, encoding="utf-8"))["people"]}
+    except Exception:
+        return {}
+
+
+PEOPLE = _people()
+
+
+def who(pid):
+    return PEOPLE.get(pid, pid.capitalize())
+
+
+def device_line(l):
+    """Texts and emails, as the owner should read them in the Doc."""
+    a = r'"((?:[^"\\]|\\.)*)"'
+    m = re.match(r"^~\s*text_from\(" + a + r",\s*" + a + r"\)", l)
+    if m:
+        return f"📱 **Text from {who(m.group(1))}:** {m.group(2)}"
+    m = re.match(r"^~\s*text_to\(" + a + r",\s*" + a + r"\)", l)
+    if m:
+        return f"📱 **Maya texts {who(m.group(1))}:** {m.group(2)}"
+    m = re.match(r"^~\s*email_from\(" + a + r",\s*" + a + r",\s*" + a + r"\)", l)
+    if m:
+        return f"✉️ **Email from {who(m.group(1))}: \"{m.group(2)}\"** {m.group(3)}"
+    m = re.match(r"^~\s*email_to\(" + a + r",\s*" + a + r",\s*" + a + r"\)", l)
+    if m:
+        return f"✉️ **Maya emails {who(m.group(1))}: \"{m.group(2)}\"** {m.group(3)}"
+    m = re.match(r"^~\s*sent_while_away\(" + a + r",\s*" + a + r",\s*" + a + r",\s*" + a + r"\)", l)
+    if m:
+        kind = "text" if m.group(2) == "text" else "email"
+        return (f"_(Quietly, in Maya's sent {kind}s, written by {m.group(1).capitalize()} during lost time; never pointed out:"
+                f" to {who(m.group(3))}: \"{m.group(4)}\")_")
+    m = re.match(r"^~\s*set_age\((\d+)\)", l)
+    if m:
+        return None
+    return None
+
+
 def humanize(name):
     return name.replace("_", " ").strip().capitalize()
 
@@ -62,7 +105,12 @@ def convert(text):
     for raw in lines[body_start:]:
         indent = len(raw) - len(raw.lstrip(" "))
         l = raw.strip()
-        if not l or l.startswith("//") or l.startswith("~") or l.startswith("->") or l.startswith("==="):
+        if l.startswith("~"):
+            d = device_line(l)
+            if d:
+                out += [f"    - {d}" if in_choice and indent >= 4 else d, ""]
+            continue
+        if not l or l.startswith("//") or l.startswith("->") or l.startswith("==="):
             continue
         m = re.match(r"^= (\w+)", l)
         if m:
@@ -78,6 +126,10 @@ def convert(text):
             out += ["", f"_(A memory scene: \"{mem.group(1)}\")_", ""]
         if re.search(r"#\s*maybe-switch", l):
             out += ["_(An unexpected switch may happen here, if another alter is unlocked.)_", ""]
+        dv = re.search(r"#\s*device:\s*([\w-]+)", l)
+        if dv:
+            out += [f"_(Maya's {dv.group(1)} opens: the player can read her messages, then closes it.)_", ""]
+            continue
         sw = re.search(r"#\s*switch:\s*([\w-]+)", l)
         if sw:
             out += [f"_(A switch: {sw.group(1).capitalize()} comes forward. The player has no control over it.)_", ""]

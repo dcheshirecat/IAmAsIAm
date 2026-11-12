@@ -17,6 +17,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 === prologue_sunday2 ===
+~ set_age(8)
 # cw: childhood-reference
 # cw: neglect
 # cw: child-alone

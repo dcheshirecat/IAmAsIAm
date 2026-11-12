@@ -20,6 +20,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 === prelude_part3 ===
+~ set_age(21)
 # cw: religious-content
 # cw: depersonalization
 # cw: time-loss
@@ -131,6 +132,9 @@ Tanya: And now the light comes back. One flame, passed on. # vo: prelude-wicca_t
 ...
 # switch: izzy
 ~ open_gap("prelude-yule", "book,wax,ticket")
+// During the lost night (owner: subtle): Tanya's text arrives, and a reply Maya never wrote is already under it.
+~ text_from("tanya", "Thank you for staying to help stack the chairs. Thursday, 7. Phone off.")
+~ sent_while_away("izzy", "text", "tanya", "I'll be there. Thank you. Really.")
 ...
 # switch: maya
 # place: college_apartment_maya
@@ -140,6 +144,7 @@ Tanya: And now the light comes back. One flame, passed on. # vo: prelude-wicca_t
 + {not book} [Look: Your bag] -> book
 + {not wax} [Look: Your hands] -> wax
 + {not ticket} [Look: Your coat pocket] -> ticket
++ [Use: Your phone] -> phone
 * {book or wax or ticket} [Use: Feet on the floor] -> end
 
 = book
@@ -156,6 +161,10 @@ Candle wax on your fingers, peeled into a little moon. # look: wax-fingers
 = ticket
 ~ find_clue("prelude-yule", "ticket")
 A receipt from Hearth & Moon. "Intro to the Craft, 8 weeks. PAID." # look: class-receipt
+-> gone.after
+
+= phone
+Your phone. # device: phone
 -> gone.after
 
 = end

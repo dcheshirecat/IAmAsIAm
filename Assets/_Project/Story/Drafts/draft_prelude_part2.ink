@@ -18,6 +18,9 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 === prelude_part2 ===
+~ set_age(20)
+// Lost time on the phone (owner: subtle, never pointed out): a text Maya didn't send is just there.
+~ sent_while_away("izzy", "text", "selene", "omg yes. tues!! im bringing the oat milk")
 # cw: religious-content
 # cw: depersonalization
 # cw: derealization
@@ -34,6 +37,7 @@
 + {not sill} [Look: The windowsill] -> sill
 + {not deck and fronts("izzy")} [Look: The tarot deck] -> deck
 + {not exam} [Look: The calendar] -> exam
++ [Use: Your phone] -> phone
 * {note or sill or exam} [Use: Your keys (go to class)] -> late
 
 = note
@@ -71,6 +75,10 @@ A tarot deck, the box soft at the corners. # look: tarot-deck
 ~ record_choice("prelude.p2.signs", "exam", "That spring, your calendar said you'd missed a midterm. You had no memory of the day.")
 "PSYCH 216 MIDTERM, 9 AM." Tuesday. Today is Thursday. # look: missed-exam
 ~ nudge(0.2)
+-> apartment.things
+
+= phone
+Your phone. # device: phone
 -> apartment.things
 
 = late

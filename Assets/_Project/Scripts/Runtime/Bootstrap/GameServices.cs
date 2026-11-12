@@ -32,6 +32,8 @@ namespace IAmAsIAm.Runtime
         public static ChapterData Chapters { get; private set; }
         public static ChapterRuns ChapterRuns { get; private set; }
         public static PreferencesData Preferences { get; private set; }
+        /// <summary>Maya's family computer, phone and laptop, with her texts and emails (saved per slot).</summary>
+        public static IAmAsIAm.Core.Devices.Devices Devices { get; private set; } = new IAmAsIAm.Core.Devices.Devices();
 
         public static int InGameDay { get; set; } = 1;
         /// <summary>Time played in the active save slot (seconds, real time). Shown on the save screen.</summary>
@@ -92,6 +94,7 @@ namespace IAmAsIAm.Runtime
             Comfort = new ComfortSettings();
             Triggers = null; Choices = null; Traditions = null; Spreads = null;
             Chapters = null; ChapterRuns = null; Preferences = null;
+            Devices = new IAmAsIAm.Core.Devices.Devices();
             InGameDay = 1;
             PlaySeconds = 0f;
             IsReady = false;

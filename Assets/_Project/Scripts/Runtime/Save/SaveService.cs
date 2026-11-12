@@ -125,6 +125,7 @@ namespace IAmAsIAm.Runtime.Save
                 triggerProgress = GameServices.Triggers?.ExportProgress().ToList() ?? new List<TriggerProgress>(),
                 chapterUnlocks = runs?.Export() ?? new List<ChapterUnlock>(),
                 chapterRun = run,
+                devices = GameServices.Devices?.Export() ?? new IAmAsIAm.Core.Devices.DevicesState(),
                 header = new SaveSlotHeader
                 {
                     chapterId = run.chapterId,
@@ -169,6 +170,7 @@ namespace IAmAsIAm.Runtime.Save
             GameServices.Triggers?.Restore(data.triggerProgress);
             GameServices.ChapterRuns?.Restore(data.chapterUnlocks);
             GameServices.ChapterRuns?.RestoreRun(data.chapterRun);
+            GameServices.Devices?.Restore(data.devices);
 
             runner ??= UnityEngine.Object.FindAnyObjectByType<StoryRunner>();
             if (runner != null && !string.IsNullOrEmpty(data.inkStateJson))

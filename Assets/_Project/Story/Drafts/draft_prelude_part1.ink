@@ -18,6 +18,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 === prelude_part1 ===
+~ set_age(18)
 # cw: religious-content
 # cw: neglect
 # cw: depersonalization
@@ -56,6 +57,7 @@ Selene: This week's us, by the way. Witches. Page two-forty. Don't believe anyth
 -
 Selene: We're doing a little Samhain thing on Monday. In my room. Candles, apple cider, the dead. You should come. # vo: prelude-wicca_selene_0009
 ~ journal("Note", "Selene's room, Monday. Samhain.")
+~ text_from("selene", "hi it's selene from world religions!! monday, 8pm, room 412. bring nothing. or a candle")
 -> dorm
 
 = dorm
@@ -139,4 +141,5 @@ Selene: Everything okay? # vo: prelude-wicca_selene_0020
     Selene: Yes! Oh my gosh. Don't read my notes, they're embarrassing. Read my notes. # vo: prelude-wicca_selene_0023
 -
 ~ explore_tradition("wicca")
+~ text_from("selene", "thank u for coming tonight. mira sounds like she was really special")
 -> END

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using IAmAsIAm.Core.Devices;
 using IAmAsIAm.Core.PluralSystem;
 using IAmAsIAm.Core.Safety;
 using IAmAsIAm.Core.Skills;
@@ -15,8 +16,8 @@ namespace IAmAsIAm.Core.Save
     [Serializable]
     public sealed class SaveData
     {
-        /// <summary>2: save slots (header, chapter run in progress, play time).</summary>
-        public const int CurrentVersion = 2;
+        /// <summary>2: save slots (header, chapter run in progress, play time). 3: devices and messages.</summary>
+        public const int CurrentVersion = 3;
 
         public int version = CurrentVersion;
         /// <summary>What the save screen shows. Also kept in its own small file (see <see cref="SaveSlots"/>).</summary>
@@ -50,6 +51,9 @@ namespace IAmAsIAm.Core.Save
         public List<ChapterUnlock> chapterUnlocks = new List<ChapterUnlock>();
         /// <summary>A chapter run in progress when the game saved (empty chapterId = none).</summary>
         public ChapterRunState chapterRun = new ChapterRunState();
+
+        /// <summary>Maya's age in the scene, her devices, and her texts and emails (v3; empty in older saves).</summary>
+        public DevicesState devices = new DevicesState();
     }
 
     /// <summary>

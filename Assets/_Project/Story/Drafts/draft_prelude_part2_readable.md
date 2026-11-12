@@ -11,6 +11,8 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - Selene is drifting: she has a girlfriend now and less time. She saw "Maya" at a full moon meet-up at the shop that Maya doesn't remember.
 - The shop is "Hearth & Moon", a small witchcraft shop in town (the name is a placeholder).
 
+_(Quietly, in Maya's sent texts, written by Izzy during lost time; never pointed out: to Selene: "omg yes. tues!! im bringing the oat milk")_
+
 ## Apartment
 
 > **Objective:** Get ready for class
@@ -22,6 +24,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Look: The tarot deck**
     - _(Only glows while Izzy is fronting. Nothing tells the player.)_
 - **Look: The calendar**
+- **Use: Your phone**
 - **Use: Your keys (go to class)**
 
 ## Note
@@ -58,6 +61,10 @@ _(A memory scene: "izzy-the-deck")_
 ## Exam
 
 "PSYCH 216 MIDTERM, 9 AM." Tuesday. Today is Thursday.
+
+## Phone
+
+_(Maya's phone opens: the player can read her messages, then closes it.)_
 
 ## Late
 

@@ -47,6 +47,8 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Selene:** We're doing a little Samhain thing on Monday. In my room. Candles, apple cider, the dead. You should come.
 
+📱 **Text from Selene:** hi it's selene from world religions!! monday, 8pm, room 412. bring nothing. or a candle
+
 ## Dorm
 
 > **Objective:** Get ready for Selene's
@@ -116,3 +118,5 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Talk: Selene (ask about the book)**
     - **Maya:** Can I borrow your book? The one with the sticky notes.
     - **Selene:** Yes! Oh my gosh. Don't read my notes, they're embarrassing. Read my notes.
+
+📱 **Text from Selene:** thank u for coming tonight. mira sounds like she was really special

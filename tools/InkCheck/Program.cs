@@ -25,7 +25,7 @@ static class InkCheck
     static readonly List<string> Problems = new List<string>();
     static readonly JsonSerializerOptions Json = new JsonSerializerOptions { IncludeFields = true };
 
-    static HashSet<string> _members, _skills, _practiceSkills, _traditions, _spreads, _charms, _cues;
+    static HashSet<string> _people, _members, _skills, _practiceSkills, _traditions, _spreads, _charms, _cues;
 
     static int Main(string[] args)
     {
@@ -131,6 +131,21 @@ static class InkCheck
         // Hidden memories: random answers, so the auto-play walks both the locked and the unlocked paths.
         story.BindExternalFunctionGeneral("unlocked", a => { Check(_members.Contains(S(a[0])), $"unlocked: unknown member '{a[0]}'"); return Rng.Next(2) == 0; });
         story.BindExternalFunctionGeneral("fronts", a => { Check(_members.Contains(S(a[0])), $"fronts: unknown member '{a[0]}'"); return Rng.Next(2) == 0; });
+        // Devices: contacts are people ids; ages and devices as the owner set them.
+        void Contact(object c, string fn) => Check(_people.Contains(S(c)), $"{fn}: unknown contact '{c}' (people.json)");
+        story.BindExternalFunctionGeneral("set_age", a => { Check(int.TryParse(S(a[0]), out int age) && age >= 0 && age < 120, $"set_age: not an age '{a[0]}'"); return null; });
+        story.BindExternalFunctionGeneral("gain_device", a => { Check(new[] { "computer", "phone", "laptop" }.Contains(S(a[0])), $"gain_device: unknown device '{a[0]}'"); return null; });
+        story.BindExternalFunctionGeneral("text_from", a => { Contact(a[0], "text_from"); return null; });
+        story.BindExternalFunctionGeneral("text_to", a => { Contact(a[0], "text_to"); return null; });
+        story.BindExternalFunctionGeneral("email_from", a => { Contact(a[0], "email_from"); return null; });
+        story.BindExternalFunctionGeneral("email_to", a => { Contact(a[0], "email_to"); return null; });
+        story.BindExternalFunctionGeneral("sent_while_away", a =>
+        {
+            Check(_members.Contains(S(a[0])), $"sent_while_away: unknown member '{a[0]}'");
+            Check(S(a[1]) == "text" || S(a[1]) == "email", $"sent_while_away: channel must be text or email, not '{a[1]}'");
+            Contact(a[2], "sent_while_away");
+            return null;
+        });
         story.BindExternalFunctionGeneral("explore_tradition", a => { Check(_traditions.Contains(S(a[0])), $"explore_tradition: unknown tradition '{a[0]}'"); return null; });
         story.BindExternalFunctionGeneral("card_name", a => "The Star");
         story.BindExternalFunctionGeneral("card_prompt", a => "A prompt.");
@@ -165,6 +180,7 @@ static class InkCheck
             case "look": case "memory": if (!System.Text.RegularExpressions.Regex.IsMatch(value, @"^[a-z0-9-]+$")) Fail("needs a lowercase id"); break;
             case "maybe-switch": if (value.Length > 0 && (!int.TryParse(value, out int pct) || pct < 1 || pct > 100)) Fail("percent must be 1-100"); break;
             case "shot": case "place": case "chapter-end": case "front": break;
+            case "device": if (value != "computer" && value != "phone" && value != "laptop") Fail("device must be computer, phone or laptop"); break;
             default: Fail("unknown tag (see game_api.ink)"); break;
         }
     }
@@ -180,6 +196,8 @@ static class InkCheck
         _spreads = new HashSet<string>(Load<TarotSpreadData>("tarot_spreads.json").spreads.Select(s => s.id));
         _charms = new HashSet<string>(Load<CharmData>("charms.json").charms.Select(c => c.id));
         _cues = new HashSet<string>(Load<TriggerData>("triggers.json").triggers.SelectMany(t => t.cues));
+        using (var people = JsonDocument.Parse(File.ReadAllText(Path.Combine(dataDir, "people.json"))))
+            _people = new HashSet<string>(people.RootElement.GetProperty("people").EnumerateArray().Select(p => p.GetProperty("id").GetString()));
     }
 
     static string FindRepoRoot()

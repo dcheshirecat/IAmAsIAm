@@ -21,6 +21,13 @@
 //  HIDDEN MEMORIES (owner): gate them with fronts("<member>"), never unlocked(). The thing that opens one only
 //  glows (only exists as a choice) while that alter is fronting. Never hint that another alter is needed.
 //    # maybe-switch[: <percent>]    (an unexpected switch MAY happen here, to an unlocked alter; default 15%)
+//    # device: computer|phone|laptop  (opens that device's messages; the story waits until it's closed)
+//
+//  DEVICES (owner): the family computer at 12; a phone and a laptop at 18. Call set_age(<Maya's age>) at the start of
+//  every chapter part, which gives her exactly the devices she has at that age. Texts need the phone; email needs a
+//  computer. Contacts are people ids (people.json).
+//  LOST TIME ON DEVICES (owner): after a blackout, an extra sent message may be there that Maya didn't write:
+//  sent_while_away(<member>, "text"|"email", <contact>, <text>). It's never pointed out: very subtle at first.
 //
 //  EXPLORING (owner: little narration). A place is a hub of sticky choices the 3D scene turns into
 //  glowing things to look at, use or talk to:  + [Look: The stone]  + [Use: The phone]  + [Talk: Mira]
@@ -49,6 +56,13 @@ EXTERNAL card_name(card)
 EXTERNAL card_prompt(card)
 EXTERNAL unlocked(member)
 EXTERNAL fronts(member)
+EXTERNAL set_age(age)
+EXTERNAL gain_device(device)
+EXTERNAL text_from(contact, text)
+EXTERNAL text_to(contact, text)
+EXTERNAL email_from(contact, subject, text)
+EXTERNAL email_to(contact, subject, text)
+EXTERNAL sent_while_away(member, channel, contact, text)
 
 === function set_experience(kind, amount) ===
 ~ return
@@ -86,6 +100,27 @@ EXTERNAL fronts(member)
 // True once this alter's version of any chapter is unlocked in this save (or it's fronting now).
 === function unlocked(member) ===
 ~ return member == fronting
+
+=== function set_age(age) ===
+~ return
+
+=== function gain_device(device) ===
+~ return
+
+=== function text_from(contact, text) ===
+~ return
+
+=== function text_to(contact, text) ===
+~ return
+
+=== function email_from(contact, subject, text) ===
+~ return
+
+=== function email_to(contact, subject, text) ===
+~ return
+
+=== function sent_while_away(member, channel, contact, text) ===
+~ return
 
 // True only while this alter is fronting right now. Use it for hidden memories.
 === function fronts(member) ===

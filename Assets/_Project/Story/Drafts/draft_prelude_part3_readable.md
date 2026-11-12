@@ -111,6 +111,10 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 
 _(A switch: Izzy comes forward. The player has no control over it.)_
 
+📱 **Text from Tanya:** Thank you for staying to help stack the chairs. Thursday, 7. Phone off.
+
+_(Quietly, in Maya's sent texts, written by Izzy during lost time; never pointed out: to Tanya: "I'll be there. Thank you. Really.")_
+
 ...
 
 _(A switch: Maya comes forward. The player has no control over it.)_
@@ -122,6 +126,7 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 - **Look: Your bag**
 - **Look: Your hands**
 - **Look: Your coat pocket**
+- **Use: Your phone**
 - **Use: Feet on the floor**
 
 ## Book
@@ -135,6 +140,10 @@ Candle wax on your fingers, peeled into a little moon.
 ## Ticket
 
 A receipt from Hearth & Moon. "Intro to the Craft, 8 weeks. PAID."
+
+## Phone
+
+_(Maya's phone opens: the player can read her messages, then closes it.)_
 
 ## End
 

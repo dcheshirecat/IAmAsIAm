@@ -20,6 +20,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 === prologue_sunday3 ===
+~ set_age(11)
 # cw: childhood-reference
 # cw: neglect
 # cw: depersonalization

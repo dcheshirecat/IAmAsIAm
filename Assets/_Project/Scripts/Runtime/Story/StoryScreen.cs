@@ -60,11 +60,15 @@ namespace IAmAsIAm.Runtime.Story
 
         BreathingPacer _pacer;
         Action _onPacerTick;
+        IAmAsIAm.Runtime.Devices.DeviceScreen _devices;
 
         void Awake()
         {
             _font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             BuildCanvas();
+            // Maya's phone / computer / laptop (texts and email). Its own canvas, under the Anchor.
+            _devices = gameObject.AddComponent<IAmAsIAm.Runtime.Devices.DeviceScreen>();
+            _devices.Blocked = () => IsBusy;
 
             _advance = new InputAction("Advance", binding: "<Keyboard>/space");
             _advance.AddBinding("<Keyboard>/enter");
@@ -155,7 +159,8 @@ namespace IAmAsIAm.Runtime.Story
 
             if (_triggerPanel.activeSelf && Time.unscaledTime > _triggerHideAt) _triggerPanel.SetActive(false);
 
-            bool busy = _anchorOpen || _dialogue.activeSelf || _choices.activeSelf || _action.activeSelf || runner.IsPlaying;
+            bool busy = _anchorOpen || _dialogue.activeSelf || _choices.activeSelf || _action.activeSelf || runner.IsPlaying
+                        || IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen;
             IsBusy = busy;
             busy |= IAmAsIAm.Runtime.Save.SaveSlotsScreen.IsOpen || IAmAsIAm.Runtime.Loading.LoadingScreen.IsShowing;
             PlayerMotor.Blocked = busy;
@@ -229,6 +234,10 @@ namespace IAmAsIAm.Runtime.Story
                 case "ritual": RunRitual(action.Value); break;
                 case "explore": RunExplore(action.Value); break;
                 case "chapter-end": RunRecap(); break;
+                case "device":
+                    if (Enum.TryParse<IAmAsIAm.Core.Devices.DeviceKind>(action.Value, true, out var kind)) _devices.Open(kind, Finish);
+                    else Finish();
+                    break;
                 default: Finish(); break;
             }
         }

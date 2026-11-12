@@ -38,7 +38,7 @@ namespace IAmAsIAm.Runtime.Story
     /// </summary>
     public sealed class StoryRunner : MonoBehaviour
     {
-        static readonly HashSet<string> ActionTags = new HashSet<string> { "exercise", "ritual", "explore", "chapter-end" };
+        static readonly HashSet<string> ActionTags = new HashSet<string> { "exercise", "ritual", "explore", "chapter-end", "device" };
 
         [SerializeField] TextAsset compiledStory;
         [SerializeField] FrontingController fronting;
@@ -258,6 +258,26 @@ namespace IAmAsIAm.Runtime.Story
             {
                 string id = S(a[0]);
                 return id == GameServices.Roster?.FrontingId || (GameServices.ChapterRuns?.IsUnlockedAnywhere(id) ?? false);
+            });
+            // Devices (owner): the family computer at 12, a phone and a laptop at 18; texts and emails.
+            var devices = GameServices.Devices;
+            _story.BindExternalFunctionGeneral("set_age", a => { devices?.SetAge(Convert.ToInt32(a[0])); return null; });
+            _story.BindExternalFunctionGeneral("gain_device", a =>
+            {
+                if (Enum.TryParse<IAmAsIAm.Core.Devices.DeviceKind>(S(a[0]), true, out var kind)) devices?.Gain(kind);
+                else Debug.LogError($"[IAmAsIAm] gain_device: unknown device '{a[0]}'");
+                return null;
+            });
+            _story.BindExternalFunctionGeneral("text_from", a => { devices?.Receive(IAmAsIAm.Core.Devices.MessageChannel.Text, S(a[0]), S(a[1]), GameServices.InGameDay); return null; });
+            _story.BindExternalFunctionGeneral("text_to", a => { devices?.Send(IAmAsIAm.Core.Devices.MessageChannel.Text, S(a[0]), S(a[1]), GameServices.InGameDay); return null; });
+            _story.BindExternalFunctionGeneral("email_from", a => { devices?.Receive(IAmAsIAm.Core.Devices.MessageChannel.Email, S(a[0]), S(a[2]), GameServices.InGameDay, S(a[1])); return null; });
+            _story.BindExternalFunctionGeneral("email_to", a => { devices?.Send(IAmAsIAm.Core.Devices.MessageChannel.Email, S(a[0]), S(a[2]), GameServices.InGameDay, S(a[1])); return null; });
+            _story.BindExternalFunctionGeneral("sent_while_away", a =>
+            {
+                var channel = S(a[1]).Equals("email", StringComparison.OrdinalIgnoreCase)
+                    ? IAmAsIAm.Core.Devices.MessageChannel.Email : IAmAsIAm.Core.Devices.MessageChannel.Text;
+                devices?.SentWhileAway(S(a[0]), channel, S(a[2]), S(a[3]), GameServices.InGameDay);
+                return null;
             });
             // Hidden memories (owner): only while that alter is fronting at this moment.
             _story.BindExternalFunctionGeneral("fronts", a => S(a[0]) == GameServices.Roster?.FrontingId);

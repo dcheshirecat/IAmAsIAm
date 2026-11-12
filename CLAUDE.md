@@ -180,7 +180,16 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   (1Kc5rTVwGt09SHL7efDKoqK3f0GWwgwznNmKC5oMoLNE: 45 lines; Maya's adult voice is `maya`). Voice-Over Scripts folder id 15B1SB8Y855lNM5Q3sJp2lIDesOkeLD9w.
 - 2026-11-12: **Tanya stays (owner):** Maya is in touch with Tanya **through the whole game**, mostly by **SMS and email**, meeting up
   **less and less** as time goes by, with a **final meeting at the end of the game**. The game needs **phone, computer and laptop
-  features**, which Maya **gains as she ages** (not built yet; when she gets each device: ask the owner).
+  features**, which Maya **gains as she ages**: the **family computer at 12**, a **phone and a laptop at 18** (owner).
+- 2026-11-12: **Devices, BUILT:** `Core/Devices/Devices.cs` (tests `DeviceTests`), save v3 `devices`, `GameServices.Devices`,
+  `Runtime/Devices/DeviceScreen.cs` (made by StoryScreen; canvas sort 40; a Phone button left of Saves once she has a phone, with
+  email there too once she has the laptop; a banner for incoming texts). Ink: `set_age(n)` at the start of EVERY chapter part
+  (gives exactly the devices for that age, so replays are right), `gain_device`, `text_from/text_to(contact, text)`,
+  `email_from/email_to(contact, subject, text)`, tag `# device: computer|phone|laptop` (opens it; the story waits). Texts need the
+  phone; the family computer only opens from the story (it's at home). Contacts = people ids.
+  **Lost time on devices (owner):** after a blackout, an extra sent message may be there that Maya didn't write:
+  `sent_while_away(member, "text"|"email", contact, text)`. It looks exactly like her own (no marker, no banner) and is **never
+  pointed out; very subtle at first**, just one here and there. Who wrote it is saved but never shown.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
