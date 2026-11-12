@@ -408,8 +408,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   from Heather and Izzy; Maya reads them; `# chapter-end`). 61 voiced lines. **Chapter 4 unlocks nobody** (owner).
 - 2026-11-12: **Chapter 4 Drive:** Story Drafts → `06 Chapter 4 - Islam (title to come)` (1ENhOVuU74tWb4yjEgE0pkONOhh1k3EZ5): Part 1
   (1OJV4fbW3j_rDl-PKaQfzPkJbvnPU03hVbGcZmDC-N5g), Part 2 (189farIxOpqUkSvKHCVQwZbmC-YIkYSjJn6VCOyeULuM), Part 3
-  (1oGGlPxC8wyvJmhgTyxJDhf9HGocHIngL1x6VPK_4qUM), Part 4 (1Xkr74NwKIZOraKTQgLnCpJrd9QRfntiu4dFYpgzFJpU); Sheet "06 Chapter 4 - script
-  list (draft)" (1E_JETrjM7YPJk9SpWG4KLA-452bhG5FClUpInibA-Kc, 61 lines). **Owner renamed them: Sawsan (`sawsan`, was Zahra) and Fadi (`fadi`, was Idris).**
+  (1UVk39Dy2hOcZiE2nFUPIW9EnMNLMjgtgnoD2Q3S8aqI), Part 4 (1Xkr74NwKIZOraKTQgLnCpJrd9QRfntiu4dFYpgzFJpU); Sheet "06 Chapter 4 - script
+  list (draft)" (1YPoDcqVlRPpgy1wq3K6xHlSk37cgbslJwCV6xHBaL3M, 62 lines). **Owner renamed them: Sawsan (`sawsan`, was Zahra) and Fadi (`fadi`, was Idris).**
 - 2026-11-12: **Chapter 5, Hinduism:** the owner asked for research and options for Hindu leaders: `docs/Chapter5_HinduismResearch.md`.
 - 2026-11-12: **Chapter 5, Hinduism (owner):** **Maya moves to Seattle** at this point in the game; the guide is **a temple priest**; it
   **starts as Maya, now more grounded but still experiencing "visits" from Heather**. Owner: she moves **for other reasons (ask which)** and starts working at the **Burke Museum almost immediately** (an educator: Claude's guess); a South Indian temple on the Eastside (fictional; Venkateswara with Shiva, the Goddess and
@@ -419,8 +419,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   day (summer: Saturday garlands, Heather shares the hands; the deity's day; how Panditji became a priest), 3 Lamps (Oct-Nov, 29:
   Navaratri garba; Diwali diyas: Heather fronts to light them with Maya co-conscious and aware, the first visit she remembers;
   SystemLog note from Maya; `# chapter-end`). 30 voiced lines. **Chapter 5 unlocks nobody** (owner). Drive: Story Drafts → `07 Chapter 5 - Hinduism (title to come)`
-  (1H6O6T9nvN33G7UT1EtBwNfjHQHSF_B4D): Part 1 (1rrYR8B7SQa3n0SZJDOl3PL359iwhFT8qe-VugvPmL9s), Part 2 (1s1uHoq1ARNPs7fXbbMwOBu0xDYV5qtwhfcn-SlecUC8),
-  Part 3 (15ajxIGZzvuIA7irqywxhZ8ThwLaayc7vSQP2ZFmwFEg); Sheet "07 Chapter 5 - script list (draft)" (1Uz4IaV8OvChmlzlcP3ULr8W6Cdfe2v9ubXybCmgCMxI).
+  (1H6O6T9nvN33G7UT1EtBwNfjHQHSF_B4D): Part 1 (1rGk9YnCXhLxPmKhGQCBReWdV4WitJd3oE8g1q5hFE20), Part 2 (1yPtGPT4HMPDzM6PJLJvOr8dBcPMMEjPFMQnxY4j7yRI),
+  Part 3 (1fHDv2Fjm15eWEo90XUteyT0Y09RVIpbw4TmDOFiCyKE); Sheet "07 Chapter 5 - script list (draft)" (1gaExPcF0t1y5yy2InQcWlUJjyofLryd-xLxLUf78wgs).
 - 2026-11-12: **Chapter 5 decided (owner):** the priest is a **woman, Mangala Joshi (62, she/her), "Mangala Tai"** (`mangala_joshi`,
   was the placeholder Pandit Raghavan; vo speaker `mangala`): Maharashtrian, learned the chants at the door while her father taught her
   brothers, trained as a purohita in Pune in her thirties. So the temple is a **North Indian-style community mandir** (Rama and Sita,
