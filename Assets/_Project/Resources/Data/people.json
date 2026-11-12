@@ -209,6 +209,28 @@
         "prologue-quaker"
       ],
       "memberLinks": []
+    },
+    {
+      "id": "selene",
+      "name": "Selene",
+      "role": "Maya's classmate at college in Illinois; the first person through whom Maya meets Wicca",
+      "tradition": "wicca",
+      "description": "",
+      "chapterIds": [
+        "prelude-wicca"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "tanya",
+      "name": "Tanya",
+      "role": "The coven elder (42, they/them): kind but strict. Runs an open, eclectic teaching coven with public sabbat circles; the Prelude's guide",
+      "tradition": "wicca",
+      "description": "",
+      "chapterIds": [
+        "prelude-wicca"
+      ],
+      "memberLinks": []
     }
   ]
 }

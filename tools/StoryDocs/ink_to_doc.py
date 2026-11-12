@@ -42,7 +42,7 @@ def convert(text):
             beats.append(c)
 
     out = []
-    heading = next((b for b in beats if re.match(r"^Sunday \d|^Chapter|^Prelude|^Prologue", b)), "")
+    heading = next((b for b in beats if re.match(r"^Sunday \d|^Part \d|^Chapter|^Prelude|^Prologue", b)), "")
     out.append(f"# {heading or title}")
     out.append("")
     out.append("_Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._")

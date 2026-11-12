@@ -1,0 +1,165 @@
+// DRAFT: not canon until the owner approves it. Prelude (Wicca), Part 3.
+// vo-speakers: Maya=maya
+// ─────────────────────────────────────────────────────────────────────────────
+//  Part 3. Tanya. The same town, December 2019 (Yule). Maya is 21.
+//  Owner's beats: in her early twenties Maya gets serious, through a shop and a coven: an open, eclectic
+//  teaching coven with public sabbat circles (only open practice shown). The guide is the coven elder,
+//  Tanya (42, they/them, kind but strict). Lost time keeps growing, and Maya still doesn't understand it.
+//  Explore-first: the shop and the circle carry it. Tanya teaches grounding first, always.
+//
+//  My guesses, for the owner to correct:
+//   - Maya finds the shop's flyer in her own bag ("Open Yule circle. All welcome.") and goes.
+//   - Tanya runs the shop and the teaching coven; they're the person behind the counter Izzy met in Part 2.
+//     Tanya's strictness: phones off, ground first, no skipping steps, "you can't cast a circle if you're
+//     not in the room."
+//   - Tanya notices Maya drifting and asks where she went, gently; Maya says she's fine. Tanya doesn't
+//     push yet. (Tanya is the guide who stays, unlike Mira: to check.)
+//   - The public Yule circle is in the park: the longest night, every candle out, then lit one by one.
+//   - The chapter ends with a switch to Izzy at the circle: Maya loses the rest of the night, and wakes
+//     with a Book of Shadows whose first page is in round handwriting, signed "I".
+// ─────────────────────────────────────────────────────────────────────────────
+
+=== prelude_part3 ===
+# cw: religious-content
+# cw: depersonalization
+# cw: time-loss
+# cw: involuntary-switch
+-> flyer
+
+= flyer
+# place: college_apartment_maya
+# shot: close
+# objective:
+* [Look: Your bag]
+    A flyer, folded in four, at the bottom of your bag. "Hearth & Moon. Open Yule circle, December 21st. All welcome." # look: yule-flyer
+-
+* [Look: The back of the flyer]
+    "GO." Round letters. Underlined three times. # look: flyer-go
+    ~ set_experience("Derealization", 0.25)
+-
+~ journal("Note", "Hearth & Moon. Yule, the 21st.")
+-> shop
+
+= shop
+# place: shop_hearth_moon
+# shot: wide
+# objective: Find the circle
+- (shelves)
++ {shelves < 4} [Look: The shelves]
+    Herbs in jars, labelled by hand. Candles by colour. A wall of tarot decks. # look: shop-shelves
+    -> shelves
++ {shelves < 4} [Look: The notice board]
+    "Intro to the Craft, Thursdays, 7 pm. Ground first. Always. - T." # look: notice-board
+    -> shelves
++ {shelves < 4} [Look: The bell over the door]
+    A brass bell. It sounds like your old church's, only smaller. # look: shop-bell
+    ~ set_experience("Depersonalization", 0.2)
+    -> shelves
+* [Talk: The person at the counter]
+-
+Tanya: You're here for Yule? Good. Phone off, please, not on silent, off. I'm Tanya, they/them. # vo: prelude-wicca_tanya_0030
+* [Talk: Tanya (say it's your first time)]
+    ~ record_choice("prelude.p3.first", "first", "When you met Tanya, you told them it was your first circle.")
+    Maya: It's my first time. At one of these. I'm Maya. # vo: prelude-wicca_maya_0031
+    Tanya: Hm. Is it? # vo: prelude-wicca_tanya_0032
+    Tanya: Well. Then you'll do it properly. Everyone does it properly, first time or fortieth. # vo: prelude-wicca_tanya_0033
+* [Talk: Tanya (ask what to do)]
+    ~ record_choice("prelude.p3.first", "asked", "When you met Tanya, you asked them what you were supposed to do.")
+    Maya: I'm Maya. What do I do? I don't want to get it wrong. # vo: prelude-wicca_maya_0034
+    Tanya: You'll get some of it wrong. Everybody does. What I won't have is anybody skipping steps. # vo: prelude-wicca_tanya_0035
+-
+-> ground
+
+= ground
+# shot: close
+# objective: Ground first
+Tanya: Before anything else, we ground. You can't cast a circle if you're not in the room. # vo: prelude-wicca_tanya_0036
+Tanya: Feet flat. Feel the floor push back. Now imagine roots, going down, as far as they need to. # vo: prelude-wicca_tanya_0037
+Roots, down through the floor. # exercise: feet-on-floor
+~ learn_skill("feet-on-floor")
+~ nudge(-0.15)
+Tanya: Good. Where did you go, just then? Before your feet found the floor. # vo: prelude-wicca_tanya_0038
+* [Talk: Tanya (say you're fine)]
+    ~ record_choice("prelude.p3.where", "fine", "When Tanya asked where you'd gone, you said you were fine.")
+    Maya: Nowhere. I'm fine. I'm always a bit spacey. # vo: prelude-wicca_maya_0039
+    Tanya: Mm. Spacey. All right. # vo: prelude-wicca_tanya_0040
+* [Talk: Tanya (say you don't know)]
+    ~ record_choice("prelude.p3.where", "unsure", "When Tanya asked where you'd gone, you told the truth: you didn't know.")
+    Maya: I don't know. Sometimes I'm just... not there. # vo: prelude-wicca_maya_0041
+    Tanya: That's an honest answer. I'll take an honest answer over a pretty one, any day. # vo: prelude-wicca_tanya_0042
+-
+Tanya: Thursdays, seven o'clock, if you want to learn. You'd have to come every week. I mean every week. # vo: prelude-wicca_tanya_0043
+~ journal("Note", "Tanya. Thursdays, 7. Every week. Ground first.")
+-> circle
+
+= circle
+# place: park_yule_circle
+# shot: wide
+# objective: Join the circle
+- (park)
++ {park < 3} [Look: The circle]
+    Twenty people in coats, in a ring in the snow. Children too. A dog. # look: yule-ring
+    -> park
++ {park < 3} [Look: The candles]
+    A candle in every hand. None of them lit. # look: yule-candles
+    -> park
+* [Use: Your place in the ring]
+-
+Tanya: The longest night. Let it be dark for a moment. Nobody has to fill it. # vo: prelude-wicca_tanya_0044
+~ set_experience("Depersonalization", 0.5)
+~ nudge(0.3)
+# maybe-switch
+* [Look: The dark]
+    Dark. Breath, in clouds. Somebody's hand, somewhere near yours. # look: yule-dark
+* [Use: Feet on the floor]
+    ~ record_choice("prelude.p3.dark", "roots", "In the dark at Yule, you tried Tanya's roots, and your feet found the snow.")
+    Snow under your boots. Roots, going down. # look: yule-roots
+    ~ nudge(-0.1)
+* [Use: Mira's stone]
+    ~ record_choice("prelude.p3.dark", "stone", "In the dark at Yule, you held Mira's stone.")
+    The stone, cold through your glove. # look: yule-stone
+-
+Tanya: And now the light comes back. One flame, passed on. # vo: prelude-wicca_tanya_0045
+* [Look: The flame coming around the ring]
+    Hand to hand. Closer. Somebody's face, lit gold. # look: flame-coming
+-
+~ set_experience("TimeLoss", 1.0)
+-> gone
+
+= gone
+# shot: inner
+...
+# switch: izzy
+~ open_gap("prelude-yule", "book,wax,ticket")
+...
+# switch: maya
+# place: college_apartment_maya
+# shot: close
+# objective: What happened?
+- (after)
++ {not book} [Look: Your bag] -> book
++ {not wax} [Look: Your hands] -> wax
++ {not ticket} [Look: Your coat pocket] -> ticket
+* {book or wax or ticket} [Use: Feet on the floor] -> end
+
+= book
+~ find_clue("prelude-yule", "book")
+~ record_choice("prelude.p3.after", "book", "After Yule, you found a new notebook in your bag. The first page wasn't in your handwriting.")
+A new notebook, black, with a moon on the cover. First page: "Book of Shadows. Blessed be. -I" # look: book-of-shadows
+-> gone.after
+
+= wax
+~ find_clue("prelude-yule", "wax")
+Candle wax on your fingers, peeled into a little moon. # look: wax-fingers
+-> gone.after
+
+= ticket
+~ find_clue("prelude-yule", "ticket")
+A receipt from Hearth & Moon. "Intro to the Craft, 8 weeks. PAID." # look: class-receipt
+-> gone.after
+
+= end
+~ set_experience("TimeLoss", 0.0)
+~ nudge(-0.2)
+Thursday. Seven o'clock. # chapter-end
+-> END
