@@ -23,7 +23,7 @@
 
 === ch6_part1 ===
 ~ set_age(29)
-~ set_date(2028, 3, 5)  // Claude's guess at the exact day (a Sunday; owner: change it freely)
+~ set_date(2028, 3, 4)  // Claude's guess (the Saturday family day; the gurdwara is the next day)
 # cw: religious-content
 ~ explore_tradition("sikhism")
 ~ co_conscious("heather", false)
@@ -51,6 +51,40 @@ Gurleen: You were amazing with the dinosaur kid. I'd have cried. I'm going to my
     ~ record_choice("ch6.p1.gurleen", "okay", "After the family day at the Burke, you asked Gurleen if it was okay for you to come to the gurdwara. She laughed.")
     Maya: Is it okay? For someone who isn't Sikh? # vo: ch6-sikhism_maya_0003
     Gurleen: The kitchen feeds anyone who walks in. That's the whole point. Bring a scarf. # vo: ch6-sikhism_gurleen_0004
+-
+-> sunday
+
+= sunday
+// Owner: a full day in every part. Claude's scenes: the Sunday from waking up to bed.
+~ set_date(2028, 3, 5)
+# place: seattle_apartment
+# shot: close
+# objective: Be ready when Gurleen comes
+~ text_from("gurleen", "outside in 10!! dont eat breakfast. i mean it. nani will be offended")
+- (room)
++ {room < 3} [Look: The scarf]
+    Gurleen's blue scarf, folded on the chair. You practise tying it in the mirror. It looks like a scarf someone else tied. # look: scarf-practice
+    -> room
++ {room < 3} [Look: The windowsill]
+    Mira's stone, the prayer wheel, the khata, a dry marigold from the mandir. The sill is getting crowded. # look: sill-crowded
+    -> room
+* [Use: Your keys]
+-
+-> drive
+
+= drive
+# place: gurleen_car
+# shot: over-shoulder
+# objective: Ride to Kent
+- (car)
++ {car < 3} [Look: The road]
+    I-5 in the rain, the warehouses, the mountain hiding. Forty minutes south. # look: i5-rain
+    -> car
++ {car < 3} [Look: Gurleen]
+    Singing along to Punjabi pop at full volume, badly, happily, drumming on the wheel. # look: gurleen-singing
+    -> car
+* [Talk: Gurleen (ask what to do)]
+    "Shoes off, head covered, wash your hands, sit on the floor. If you don't know, copy nani. Everybody copies nani." # look: gurleen-rules
 -
 -> darbar
 
@@ -145,4 +179,20 @@ Bibi Harjit: Next Sunday, seven o'clock. The onions need someone. # vo: ch6-sikh
 ~ journal("Note", "Langar in Kent. Scarf, shoes off, wash hands. Sit in a row with everyone. Waheguru = more, please. Bibi Harjit: next Sunday, seven, onions.")
 ~ text_to("tanya", "I rolled forty rotis today for strangers. A woman called Bibi Harjit told me not to think. It worked.")
 ~ text_from("tanya", "Forty! Kitchen magic is the oldest kind. Go back.")
+-> evening
+
+= evening
+# place: seattle_apartment
+# shot: close
+# objective: Get home
+- (room)
++ {room < 2} [Look: Your hands]
+    Flour still in the creases of your knuckles. You don't wash it off yet. # look: flour-knuckles
+    -> room
+* [Use: The fridge (Gurleen's nani's leftovers)]
+    Three foil packets Gurleen's nani pressed on you at the door. Dal, sabzi, two rotis. Dinner, and lunch tomorrow. # look: nani-foil
+-
+* [Use: The bed]
+    Your feet ache from the kitchen floor in a good way. Press, turn, press, turn, until you're asleep. # look: press-turn-sleep
+-
 -> ch6_part2  // the next part of the same chapter (one run)

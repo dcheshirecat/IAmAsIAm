@@ -499,7 +499,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   in Kent, 2028** (29-30); guide **Bibi Harjit** (`bibi_harjit`, placeholder name, ~70, she/her, runs the Sunday langar kitchen);
   **Gurleen** (`gurleen`, placeholder, Burke colleague; she cuts her hair, her dad keeps his and wears a turban, her brother Arjan
   took amrit: streams within one family; also Nihang gatka, a woman in a dastar reading the Akhand Path, a clean-shaven uncle);
-  **Christie PHONES during the Vaisakhi nagar kirtan** (`# cue: wedding`, then `# maybe-switch`); seva (dishes, water) brings
+  **Christie VISITS (owner): coffee in Seattle the morning of Vaisakhi** (`seattle_cafe`, `# cue: wedding`, then `# maybe-switch`;
+  Maya comes to in the gurdwara kitchen, onions half peeled); seva (dishes, water) brings
   Maya back; Heather "keeps the Friday candles safe". **Starts as Maya, unlocks nobody (guess: ask about Serena/Lily).**
   `Story/Chapters/ch6_part1..3.ink`: 1 Langar (Mar 2028), 2 Vaisakhi (Apr 2028), 3 Sarbat da bhala (Guru Nanak's Gurpurab, Nov
   2028; `# chapter-end`). 35 voiced lines (speakers maya, gurleen, harjit, christie, heather-inside). New: `Name (on the phone): ...`
@@ -533,7 +534,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   library (Claude's guess). Chapter 1 (a whole Thursday; the night she came back; senior-year shifts swapped + dinner alone;
   lockdown grab-and-go), Chapter 1.5 (his first party; breakfast for two + Maya's library voicemail; Halloween with Mark; a
   morning run; the last day of classes), Chapter 2 FULL DAYS (the L `cta_train`, lunch on the steps, the Friday before the
-  first Shabbat + the walk home, January 18th at work, the day it ended). NEXT: Chapter 3, 4, 5, 6 (full days).
+  first Shabbat + the walk home, January 18th at work, the day it ended), Chapter 6 FULL DAYS (Sunday from waking, Gurleen's
+  car, nani's foil packets; Vaisakhi from Christie's coffee to cold dal in bed; Gurpurab from the dawn hymn walk to a lamp on the
+  sill). NEXT: Chapter 3, 4, 5 (full days).
 - 2026-11-12: **Chapter 6 answers (owner):** keep **Bibi Harjit** (langar) as the guide; **Christie VISITS** Seattle (a work trip)
   and tells Maya in person, over coffee (not a phone call); **Chapter 6 unlocks nobody**. **Chapters 2-6: a FULL DAY in every
   part** (owner): wake up, get there, work/school, lunch, home, dinner, bed, around the part's existing scenes.

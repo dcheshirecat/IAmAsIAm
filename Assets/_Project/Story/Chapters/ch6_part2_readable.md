@@ -6,13 +6,62 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **My guesses, for you to check:**
 
-- HOW: Christie phones, out of the blue, in the middle of the Vaisakhi nagar kirtan (the street procession). She's kind and has no idea how hard it will land, the way Sarah had no idea about Mira (an echo, never pointed out). Somebody from the Field Museum posted the wedding photos; there was a chuppah (the `weddings` trigger, cue "wedding").
+- HOW (owner): Christie VISITS: in Seattle for a work conference, she meets Maya for coffee that morning. She's kind and has no idea how hard it will land, the way Sarah had no idea about Mira (an echo, never pointed out). Somebody from the Field Museum posted the wedding photos; there was a chuppah (the `weddings` trigger, cue "wedding").
 - What happens next is the trigger system's (dissociation, maybe a switch to someone unlocked; no player control). Bibi Harjit finds her afterwards and does what she does: sits her down, feeds her, gives her hands something to do (seva as DBT's Contributing, from ACCEPTS: `# exercise: accepts`).
 - Vaisakhi (research): the harvest festival, and the day in 1699 when Guru Gobind Singh founded the Khalsa. The nagar kirtan: the Guru Granth Sahib on a decorated float, the Panj Pyare (the five beloved) in saffron walking ahead barefoot with swords, sevadars sweeping the road in front of the float, free food stalls all along the route, a gatka (Sikh martial art) display by Nihang Sikhs (the traditional order in blue, with tall turbans).
+
+## Wake
+
+> **Objective:** Meet Christie for coffee
+
+📱 **Text from Christie:** I'M IN SEATTLE. Conference, flying out tonight. Coffee?? 9am, the place by the market. I'll be the one in the Field Museum hoodie
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The window**
+    - Rain, soft, and for once the mountain, out over everything, pink in the early light.
+- **Look: Your scarf**
+    - The blue scarf on the hook. Vaisakhi at the gurdwara this afternoon. Bibi Harjit expects you at noon.
+- **Use: Your keys**
+
+## Coffee
+
+> **Objective:** Find Christie
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The café**
+    - Steamed windows, a line out the door, someone's dog asleep under a table.
+- **Talk: Christie**
+
+**Christie:** Maya! Hey, stranger! Look at you. You look so good. Seattle suits you.
+
+**Maya:** Christie, hi! How are you? How's the Field?
+
+**Christie:** Good, good. Listen, I didn't know if I should tell you. But I'd want to know. Adeena got married.
+
+**Christie:** Last month. A guy called Michael, from her community. Somebody from registration posted the photos. There was a chuppah and everything, she looked so happy.
+
+Friday. Two flames. Her hands over her eyes, and yours over hers. Every week. Somebody else's hands now.
+
+**Christie:** Maya? Are you okay?
+
+**Explore** (glowing things; the player picks):
+
+- **Talk: Christie (say you're glad for her)**
+    - **Maya:** That's... I'm glad. I'm glad she's happy. I have to go, Christie.
+- **Talk: Christie (say you have to go)**
+    - **Maya:** I have to go. Sorry. I'm sorry.
+- **Wait (say nothing)**
+    - The coffee machine screaming. Christie's hand on yours, small and far away. Your name, again.
+
+_(An unexpected switch may happen here, if another alter is unlocked.)_
 
 ## Onions
 
 > **Objective:** Peel the onions
+
+The onions are half peeled. You don't remember the drive to Kent.
 
 **Explore** (glowing things; the player picks):
 
@@ -44,30 +93,9 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
     - A ring of people. Inside it, men in blue with tall turbans spin sticks and swords so fast they blur. A little girl in blue does it too, better than some of them.
 - **Look: The food stalls**
     - Every few houses, a table: samosas, oranges, bottled water, chai. Free. Uncles pressing them into your hands whether you want them or not.
-- **Use: Your phone (it's ringing)**
+- **Wait (walk with them)**
 
-Christie. You haven't talked in a year.
-
-**Christie (on the phone):** Maya! Hey, stranger! Are you at a parade? I can hear drums.
-
-**Maya:** Sort of. Christie, hi! How are you?
-
-**Christie (on the phone):** Good, good. Listen, I didn't know if I should tell you. But I'd want to know. Adeena got married.
-
-**Christie (on the phone):** Last month. A guy called Michael, from her community. Somebody from registration posted the photos. There was a chuppah and everything, she looked so happy.
-
-Friday. Two flames. Her hands over her eyes, and yours over hers. Every week. Somebody else's hands now.
-
-**Christie (on the phone):** Maya? Are you there?
-
-**Explore** (glowing things; the player picks):
-
-- **Talk: Christie (say you're glad for her)**
-    - **Maya:** That's... I'm glad. I'm glad she's happy. I have to go, Christie.
-- **Talk: Christie (say you have to go)**
-    - **Maya:** I have to go. Sorry. I'm sorry.
-- **Wait (say nothing)**
-    - The drums. The phone, warm against your ear. Your name, again, small. Then nothing.
+The drums. The singing. Your feet keep walking with everyone else's, and you aren't really in them.
 
 _(An unexpected switch may happen here, if another alter is unlocked.)_
 
@@ -101,3 +129,16 @@ You're on the floor of the langar hall. You don't remember walking back. There's
 📱 **Maya texts Tanya:** Adeena got married. Christie told me. I'm okay. I'm not okay. I washed a thousand plates.
 
 📱 **Text from Tanya:** Oh, love. A thousand plates is a real spell. Call me tonight, any time, I'll be up.
+
+## Night
+
+> **Objective:** Go home
+
+📱 **Text from Christie:** I'm at the airport. I'm so sorry, I didn't think. Are you ok? I mean it. Call me whenever.
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The windowsill**
+    - Mira's stone, the prayer wheel, the khata. You put your hands flat on the sill.
+- **Use: The bed**
+    - Dal from the langar in a takeout box, eaten cold, in bed. Heather hums something under your thoughts until you sleep.

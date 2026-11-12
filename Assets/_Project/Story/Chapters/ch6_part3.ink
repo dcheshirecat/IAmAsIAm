@@ -21,6 +21,25 @@
 ~ set_date(2028, 11, 5)  // Claude's guess (owner: change it freely)
 # cw: religious-content
 ~ text_from("tanya", "Thinking of you this morning. Samhain was quiet here. I lit one for Mira, and one for you lot.")
+-> dawn
+
+= dawn
+// Owner: a full day in every part. Claude's scenes: Guru Nanak's birthday from before dawn (a prabhat pheri, the early-morning
+// hymn walk some sangats do around a gurpurab) to the lamp on the sill at night.
+# place: nagar_kirtan_street
+# shot: wide
+# objective: Walk with the morning hymns
+- (street)
++ {street < 3} [Look: The singers]
+    Five in the morning, dark and cold. Twenty people walking slowly, singing, one harmonium carried on a strap. Porch lights coming on as they pass. # look: prabhat-pheri
+    -> street
++ {street < 3} [Look: The house they stop at]
+    A family on their steps in coats over pyjamas, handing out cups of hot tea and sweets to the singers. # look: pheri-tea
+    -> street
+* [Use: The cup of tea]
+    Sweet, hot, cardamom. Your hands around it. The sky going grey behind the warehouses. # look: pheri-cup
+    ~ nudge(-0.1)
+-
 -> reading
 
 = reading
@@ -89,6 +108,22 @@ Heather (inside): Round. Told you. Good hands. # vo: ch6-sikhism_heather-inside_
 ~ journal("Note", "Gurpurab. Sarbat da bhala: the good of everyone. Chardi kala: the spirit goes up, even in the dark, because you keep feeding people.")
 ~ text_to("tanya", "Chardi kala. It means the spirit rising even in the dark. I think it might be what you've been doing for me all these years.")
 ~ text_from("tanya", "Ha. Don't tell anyone. They'll all want some.")
+-> lamp
+
+= lamp
+# place: seattle_apartment
+# shot: close
+# objective: Light a lamp on the sill
+- (sill)
++ {sill < 2} [Look: The street]
+    Two houses down, someone has strung lights along the porch rail for the Gurpurab. # look: porch-lights-gurpurab
+    -> sill
+* [Use: The lamp (light it)]
+    One small clay lamp from the gurdwara shop, on the sill by Mira's stone. Your hands, and Heather's, steady. # look: lamp-sill-gurpurab
+-
+* [Use: The bed]
+    The little flame on the ceiling. The good of everyone. You fall asleep in the middle of the list. # look: flame-ceiling
+-
 # shot: inner
 # place: black
 Kent, Washington. November 2028. # chapter-end

@@ -73,10 +73,12 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 63 | `eastside_mandir_kitchen` | The temple on the Eastside: the kitchen | seattle | Chapter 5: Hinduism (ch5_part2) | Lakshmi |
 | 64 | `garba_community_hall` | The Navaratri garba | seattle | Chapter 5: Hinduism (ch5_part3) | Maya (the body, 29), Priya |
 | 65 | `priya_family_house` | Priya's family's house | seattle | Chapter 5: Hinduism (ch5_part3) | Lakshmi, Heather (the body, 29) |
-| 66 | `gurdwara_darbar_hall` | The gurdwara in Kent: the darbar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
-| 67 | `gurdwara_langar_hall` | The gurdwara in Kent: the langar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29) |
-| 68 | `gurdwara_kitchen` | The gurdwara in Kent: the kitchen | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29), Maya (the body, 30) |
-| 69 | `nagar_kirtan_street` | The Vaisakhi procession, Kent | seattle | Chapter 6: Sikhism (ch6_part2) | Maya (the body, 29), Christie |
+| 66 | `gurleen_car` | Gurleen's car | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
+| 67 | `gurdwara_darbar_hall` | The gurdwara in Kent: the darbar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
+| 68 | `gurdwara_langar_hall` | The gurdwara in Kent: the langar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29) |
+| 69 | `gurdwara_kitchen` | The gurdwara in Kent: the kitchen | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29), Maya (the body, 30) |
+| 70 | `seattle_cafe` | A café by the market | seattle | Chapter 6: Sikhism (ch6_part2) | Christie, Maya (the body, 29) |
+| 71 | `nagar_kirtan_street` | The Vaisakhi procession, Kent | seattle | Chapter 6: Sikhism (ch6_part2) | - |
 
 ## 2. People, in the order they first appear
 
@@ -85,7 +87,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | # | Who | Id | Kind | First in | Ages (the body) | Places |
 |---|---|---|---|---|---|---|
 | 1 | Sarah | `mother` | person | Prologue: This Little Light | - | home_kitchen, car, church_sanctuary, church_fellowship_hall, home_maya_room, college_dorm_selene |
-| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30 | home_kitchen, car, church_fellowship_hall, home_maya_room, church_first_day_school, church_sanctuary, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room, seattle_apartment, burke_museum_hall, eastside_mandir_hall, garba_community_hall, gurdwara_kitchen, nagar_kirtan_street, gurdwara_langar_hall |
+| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30 | home_kitchen, car, church_fellowship_hall, home_maya_room, church_first_day_school, church_sanctuary, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room, seattle_apartment, burke_museum_hall, eastside_mandir_hall, garba_community_hall, gurdwara_kitchen, seattle_cafe, gurdwara_langar_hall |
 | 3 | Miss Eloise | `eloise` | person | Prologue: This Little Light | - | church_first_day_school |
 | 4 | Rebecca | `rebecca` | person | Prologue: This Little Light | - | church_first_day_school, church_sanctuary |
 | 5 | Mrs. Hines | `hines` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
@@ -101,7 +103,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 15 | Pastor Key | `mark_priest` | person | Chapter 1.5: Axel | - | episcopal_church |
 | 16 | Izzy | `izzy` | system member | Chapter 1.5: Axel | 20, 28 | protest_march, day_ward_group_room, day_ward_quiet_room, andersonville_cafe, therapist_office |
 | 17 | Adeena | `ex_jewish` | person | Chapter 2: Judaism | - | field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_conservative, adeena_parents_house, lgbtq_synagogue, chabad_house, chicago_apartment |
-| 18 | Christie | `christie` | person | Chapter 2: Judaism | - | field_museum_office, field_museum_gallery, field_museum_hall, nagar_kirtan_street |
+| 18 | Christie | `christie` | person | Chapter 2: Judaism | - | field_museum_office, field_museum_gallery, field_museum_hall, seattle_cafe |
 | 19 | Eudora Jones | `eudora` | person | Chapter 2: Judaism | - | field_museum_gallery |
 | 20 | Rabbi Abe | `rabbi_abe` | person | Chapter 2: Judaism | - | synagogue_social_hall, lakefront_path |
 | 21 | Ruth | `ruth` | person | Chapter 2: Judaism | - | adeena_parents_house |
@@ -122,7 +124,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 36 | Priya | `priya` | person | Chapter 5: Hinduism | - | burke_museum_hall, garba_community_hall |
 | 37 | Mangala Tai | `mangala_joshi` | person | Chapter 5: Hinduism | - | eastside_mandir_hall |
 | 38 | Lakshmi | `lakshmi` | person | Chapter 5: Hinduism | - | eastside_mandir_kitchen, priya_family_house |
-| 39 | Gurleen | `gurleen` | person | Chapter 6: Sikhism | - | burke_museum_hall, gurdwara_darbar_hall |
+| 39 | Gurleen | `gurleen` | person | Chapter 6: Sikhism | - | burke_museum_hall, gurleen_car, gurdwara_darbar_hall |
 | 40 | Bibi Harjit | `bibi_harjit` | person | Chapter 6: Sikhism | - | gurdwara_kitchen, gurdwara_langar_hall |
 
 ## 3. Close-ups and props, scene by scene
@@ -832,6 +834,18 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `lammas-dough`: It rose overnight under a tea towel. Somebody already knocked it back: neat, careful knuckle marks.
 - `lammas-rain`: Rain, in August. The plant on the sill drinking it in.
 - `lammas-floor`: You sit on the kitchen floor in the warm, and wait.
+- `scarf-practice`: Gurleen's blue scarf, folded on the chair. You practise tying it in the mirror. It looks like a scarf someone else tied.
+- `sill-crowded`: Mira's stone, the prayer wheel, the khata, a dry marigold from the mandir. The sill is getting crowded.
+- `flour-knuckles`: Flour still in the creases of your knuckles. You don't wash it off yet.
+- `nani-foil`: Three foil packets Gurleen's nani pressed on you at the door. Dal, sabzi, two rotis. Dinner, and lunch tomorrow.
+- `press-turn-sleep`: Your feet ache from the kitchen floor in a good way. Press, turn, press, turn, until you're asleep.
+- `mountain-out`: Rain, soft, and for once the mountain, out over everything, pink in the early light.
+- `scarf-hook`: The blue scarf on the hook. Vaisakhi at the gurdwara this afternoon. Bibi Harjit expects you at noon.
+- `sill-hands`: Mira's stone, the prayer wheel, the khata. You put your hands flat on the sill.
+- `dal-in-bed`: Dal from the langar in a takeout box, eaten cold, in bed. Heather hums something under your thoughts until you sleep.
+- `porch-lights-gurpurab`: Two houses down, someone has strung lights along the porch rail for the Gurpurab.
+- `lamp-sill-gurpurab`: One small clay lamp from the gurdwara shop, on the sill by Mira's stone. Your hands, and Heather's, steady.
+- `flame-ceiling`: The little flame on the ceiling. The good of everyone. You fall asleep in the middle of the list.
 
 ### The Burke Museum (`burke_museum_hall`)
 
@@ -874,6 +888,12 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `diyas`: Little clay lamps, a cotton wick in oil, a row of them up every step and along every window.
 - `heather-diyas`: One flame. Then the next. Heather's hands, steady, the way they were in the lamp room in Boudha.
 
+### Gurleen's car (`gurleen_car`)
+
+- `i5-rain`: I-5 in the rain, the warehouses, the mountain hiding. Forty minutes south.
+- `gurleen-singing`: Singing along to Punjabi pop at full volume, badly, happily, drumming on the wheel.
+- `gurleen-rules`: "Shoes off, head covered, wash your hands, sit on the floor. If you don't know, copy nani. Everybody copies nani."
+
 ### The gurdwara in Kent: the darbar hall (`gurdwara_darbar_hall`)
 
 - `gurdwara-shoes`: Racks of shoes, and a basket of orange scarves for anyone who forgot. You tie the blue one Gurleen lent you. Water for your hands, cold.
@@ -909,11 +929,18 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `maya-roti`: A ball of dough. A small board. A rolling pin. Yours comes out shaped like Ohio.
 - `roti-round`: Press. Turn. Press. Turn. The board, the flour, the warmth from the griddle. Nearly round.
 - `stone-flour`: Your finger through the hole. Then the flour. Then press, turn.
+- `onions-half`: The onions are half peeled. You don't remember the drive to Kent.
 - `onion-sack`: A sack of them, taller than a child. Four Sundays now. You've stopped crying into them. Mostly.
 - `bibi-stirring`: Stirring, tasting, scolding a nephew, all at once. Her steel bracelet clicks on the pot every time.
 - `maya-roti-round`: Yours are round now. Round-ish. The aunties have stopped re-rolling them when you're not looking.
 - `bibi-photo`: A faded photo taped to the wall: the old kitchen, 1990, a young woman with flour to her elbows, laughing. It takes you a second.
 - `roti-gurpurab`: Press, turn. Waheguru, under your breath, because the hands like it. Two thousand people, and every one gets a roti that's warm.
+
+### A café by the market (`seattle_cafe`)
+
+- `cafe-steam`: Steamed windows, a line out the door, someone's dog asleep under a table.
+- `candles-remembered`: Friday. Two flames. Her hands over her eyes, and yours over hers. Every week. Somebody else's hands now.
+- `cafe-far-away`: The coffee machine screaming. Christie's hand on yours, small and far away. Your name, again.
 
 ### The Vaisakhi procession, Kent (`nagar_kirtan_street`)
 
@@ -922,7 +949,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `road-sweepers`: People with brooms walk in front of the float, sweeping the road clean before the Guru reaches it. Arjan is one of them, very serious.
 - `gatka`: A ring of people. Inside it, men in blue with tall turbans spin sticks and swords so fast they blur. A little girl in blue does it too, better than some of them.
 - `kirtan-stalls`: Every few houses, a table: samosas, oranges, bottled water, chai. Free. Uncles pressing them into your hands whether you want them or not.
-- `phone-christie`: Christie. You haven't talked in a year.
-- `candles-remembered`: Friday. Two flames. Her hands over her eyes, and yours over hers. Every week. Somebody else's hands now.
-- `call-ended`: The drums. The phone, warm against your ear. Your name, again, small. Then nothing.
+- `walking-far`: The drums. The singing. Your feet keep walking with everyone else's, and you aren't really in them.
+- `prabhat-pheri`: Five in the morning, dark and cold. Twenty people walking slowly, singing, one harmonium carried on a strap. Porch lights coming on as they pass.
+- `pheri-tea`: A family on their steps in coats over pyjamas, handing out cups of hot tea and sweets to the singers.
+- `pheri-cup`: Sweet, hot, cardamom. Your hands around it. The sky going grey behind the warehouses.
 

@@ -555,6 +555,22 @@
       "chapterId": "ch5-hinduism"
     },
     {
+      "id": "seattle_cafe",
+      "name": "A café by the market",
+      "city": "seattle",
+      "x": 0.45,
+      "y": 0.5,
+      "chapterId": "ch6-sikhism"
+    },
+    {
+      "id": "gurleen_car",
+      "name": "Gurleen's car",
+      "city": "seattle",
+      "x": 0.5,
+      "y": 0.3,
+      "chapterId": "ch6-sikhism"
+    },
+    {
       "id": "gurdwara_darbar_hall",
       "name": "The gurdwara in Kent: the darbar hall",
       "city": "seattle",

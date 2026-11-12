@@ -14,6 +14,19 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Tanya:** Thinking of you this morning. Samhain was quiet here. I lit one for Mira, and one for you lot.
 
+## Dawn
+
+> **Objective:** Walk with the morning hymns
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The singers**
+    - Five in the morning, dark and cold. Twenty people walking slowly, singing, one harmonium carried on a strap. Porch lights coming on as they pass.
+- **Look: The house they stop at**
+    - A family on their steps in coats over pyjamas, handing out cups of hot tea and sweets to the singers.
+- **Use: The cup of tea**
+    - Sweet, hot, cardamom. Your hands around it. The sky going grey behind the warehouses.
+
 ## Reading
 
 > **Objective:** Listen to the end of the reading
@@ -78,6 +91,22 @@ Everybody stands. One man's voice, then everyone's, at the end: "sarbat da bhala
 📱 **Maya texts Tanya:** Chardi kala. It means the spirit rising even in the dark. I think it might be what you've been doing for me all these years.
 
 📱 **Text from Tanya:** Ha. Don't tell anyone. They'll all want some.
+
+## Lamp
+
+> **Objective:** Light a lamp on the sill
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The street**
+    - Two houses down, someone has strung lights along the porch rail for the Gurpurab.
+- **Use: The lamp (light it)**
+    - One small clay lamp from the gurdwara shop, on the sill by Mira's stone. Your hands, and Heather's, steady.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The bed**
+    - The little flame on the ceiling. The good of everyone. You fall asleep in the middle of the list.
 
 Kent, Washington. November 2028.
 

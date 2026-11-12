@@ -35,6 +35,33 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
     - **Maya:** Is it okay? For someone who isn't Sikh?
     - **Gurleen:** The kitchen feeds anyone who walks in. That's the whole point. Bring a scarf.
 
+## Sunday
+
+> **Objective:** Be ready when Gurleen comes
+
+📱 **Text from Gurleen:** outside in 10!! dont eat breakfast. i mean it. nani will be offended
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The scarf**
+    - Gurleen's blue scarf, folded on the chair. You practise tying it in the mirror. It looks like a scarf someone else tied.
+- **Look: The windowsill**
+    - Mira's stone, the prayer wheel, the khata, a dry marigold from the mandir. The sill is getting crowded.
+- **Use: Your keys**
+
+## Drive
+
+> **Objective:** Ride to Kent
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The road**
+    - I-5 in the rain, the warehouses, the mountain hiding. Forty minutes south.
+- **Look: Gurleen**
+    - Singing along to Punjabi pop at full volume, badly, happily, drumming on the wheel.
+- **Talk: Gurleen (ask what to do)**
+    - "Shoes off, head covered, wash your hands, sit on the floor. If you don't know, copy nani. Everybody copies nani."
+
 ## Darbar
 
 > **Objective:** Cover your head and go in
@@ -118,3 +145,19 @@ A ball of dough. A small board. A rolling pin. Yours comes out shaped like Ohio.
 📱 **Maya texts Tanya:** I rolled forty rotis today for strangers. A woman called Bibi Harjit told me not to think. It worked.
 
 📱 **Text from Tanya:** Forty! Kitchen magic is the oldest kind. Go back.
+
+## Evening
+
+> **Objective:** Get home
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Your hands**
+    - Flour still in the creases of your knuckles. You don't wash it off yet.
+- **Use: The fridge (Gurleen's nani's leftovers)**
+    - Three foil packets Gurleen's nani pressed on you at the door. Dal, sabzi, two rotis. Dinner, and lunch tomorrow.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The bed**
+    - Your feet ache from the kitchen floor in a good way. Press, turn, press, turn, until you're asleep.
