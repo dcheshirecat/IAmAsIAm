@@ -88,6 +88,24 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 📱 **Text from Tanya:** That's the bravest five minutes I've ever heard of.
 
+## Evening
+
+> **Objective:** Come down for dinner
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The kitchen**
+    - Pasang at the pressure cooker, her daughter doing homework at the end of the table, the TV on with no sound.
+- **Look: Your plate**
+    - **Dal bhat:** rice, lentils, greens, a sharp pickle. Pasang refills it before you can say no. Twice.
+- **Use: The washing up**
+    - You wash, the daughter dries, neither of you saying much. She teaches you the Nepali for "spoon". You forget it at once and she laughs.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The bed**
+    - The dogs, the prayer wheels creaking in the dark, the stone under your pillow. Five minutes. Tomorrow, five more.
+
 ## Litha
 
 > **Objective:** Watch the sunrise from the roof

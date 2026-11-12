@@ -66,6 +66,21 @@ Tanya: I found someone. A therapist who knows about this. Not about being "a bit
 -
 ~ journal("Note", "Angie. Thursday, 6 pm. Tanya stayed until I called.")
 ~ nudge(-0.2)
+-> train
+
+= train
+// Owner: a full day in every part. Claude's scenes.
+# place: cta_train
+# shot: over-shoulder
+# objective: Get to work
+- (car)
++ {car < 2} [Look: The window]
+    January. The lake steaming in the cold. Tanya's text already: "Proud of you for opening the door." # look: l-january
+    -> car
+* [Use: The pole (hold on)]
+    Your hand on the pole. Somebody else's hand. Your hand again. # look: l-pole-january
+    ~ set_experience("Depersonalization", 0.2)
+-
 -> tour
 
 = tour
@@ -134,6 +149,25 @@ Feet on the floor. The chair holding you. # exercise: five-senses
 // Owner: herbs and stones from different people (Claude's list, owner: "yes"). No new voiced lines.
 On your way out, Angie holds out the bowl by the door. Worry stones. You take a hematite one: heavy, cool, smooth. For the train home. # look: angie-hematite
 ~ gain_stone("hematite", "angie")
+-> evening
+
+= evening
+# place: chicago_apartment
+# shot: close
+# objective: Make dinner
+- (k)
++ {k < 3} [Look: The windowsill]
+    The hematite next to Mira's stone. Two stones from two people who noticed. # look: two-stones
+    -> k
++ {k < 3} [Look: Angie's card]
+    "Angie, LCPC. Next appointment: Thursday, 4 pm." On the fridge, under the SUE magnet. # look: angie-card
+    -> k
+* [Use: The stove (eggs)]
+    Eggs on toast. Izzy wants hot sauce on them. You let her. # look: eggs-hot-sauce
+-
+* [Use: The bed]
+    You write "Thursday 4pm" on your hand, just in case. You sleep with the light on, but you sleep. # look: hand-thursday
+-
 -> weeks
 
 = weeks

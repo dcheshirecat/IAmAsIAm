@@ -83,6 +83,23 @@ Pasang Lhamo: It is holy. And it's noisy. Both. You want quiet, you go inside. Y
 ~ nudge(-0.15)
 Izzy (inside): I like it out here. Everyone's walking the same way. Nobody's lost. # vo: ch3-buddhism_izzy-inside_0049
 ~ journal("Note", "The kora: clockwise, the stupa on your right. Prayer wheels keep turning after you've gone.")
+-> lanes
+
+= lanes
+// Owner: a full day in every part. Claude's scenes: midday in the lanes around the stupa, the rooftop at night.
+# place: boudha_street_lanes
+# shot: wide
+# objective: Find lunch
+- (shops)
++ {shops < 3} [Look: The shops]
+    Singing bowls stacked like pots, prayer flags by the metre, a shop that only sells incense and phone cases. # look: boudha-shops
+    -> shops
++ {shops < 3} [Look: The monks]
+    Two young monks in maroon, sharing earbuds, laughing at a phone. # look: monks-earbuds
+    -> shops
+* [Use: The noodle shop]
+    A bowl of thukpa the size of your head, steam on your face. Izzy: "THIS is finding yourself." # look: thukpa
+-
 -> kitchen
 
 = kitchen
@@ -112,4 +129,20 @@ Pasang Lhamo: Ten days no talking? I can't do ten minutes! Go, go. Many guests g
 Izzy (inside): Ten days without talking? Who's going to talk to me? # vo: ch3-buddhism_izzy-inside_0054
 ~ text_to("tanya", "I signed up for a silent retreat! 10 days. No phone. Don't worry if I don't text.")
 ~ text_from("tanya", "Maya. Did you talk to Angie about this first?")
+-> roof
+
+= roof
+# place: boudha_guest_house
+# shot: wide
+# objective: Go up to the roof
+- (top)
++ {top < 3} [Look: The stupa]
+    The great white dome lit gold at the edges, the eyes looking out over everything in the dark. # look: stupa-night
+    -> top
++ {top < 3} [Look: The dogs]
+    The street dogs of Boudha, starting their night shift. One barks, and the whole valley answers. # look: boudha-dogs
+    -> top
+* [Use: The bed]
+    A thin mattress, a heavy blanket, jet lag at three in the morning. Izzy narrating the dogs until you laugh into the pillow. # look: jetlag-dogs
+-
 -> ch3_part3  // the next part of the same chapter (one run)

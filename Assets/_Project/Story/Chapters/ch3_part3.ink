@@ -44,6 +44,26 @@
 -
 Teacher: Sit comfortably. Close your eyes. Observe the breath, just as it is. # vo: ch3-buddhism_teacher_0055
 ~ co_conscious("izzy", false)
+-> schedule
+
+= schedule
+// Owner: a full day in every part. Claude's scene: one whole day of the course, by the bell.
+# place: dharma_shringa_dorm
+# shot: close
+# objective: Get up for the bell
+- (dorm)
++ {dorm < 3} [Look: The schedule on the wall]
+    "4:00 wake-up bell. 4:30-6:30 meditate. 6:30 breakfast. 8:00-11:00 meditate. 11:00 lunch. 1:00-5:00 meditate. 5:00 tea. 6:00 meditate. 7:00 discourse. 9:30 lights out." # look: course-schedule
+    -> dorm
++ {dorm < 3} [Look: The other women]
+    Eleven strangers, folding blankets in the dark, not looking at each other. Not even a smile allowed. # look: dorm-strangers
+    -> dorm
+* [Use: The cold water]
+    A bucket of cold water and a cup. You pour it over your hands and your face, and gasp without a sound. # look: cold-water-gasp
+-
+* [Use: The silent lunch]
+    Rice, dal, greens, eaten in silence at a long table, eyes on your own plate. The spoon sounds enormous. # look: silent-lunch
+-
 -> days
 
 = days

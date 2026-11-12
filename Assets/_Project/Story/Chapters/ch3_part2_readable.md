@@ -71,6 +71,19 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Izzy (inside):** I like it out here. Everyone's walking the same way. Nobody's lost.
 
+## Lanes
+
+> **Objective:** Find lunch
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The shops**
+    - Singing bowls stacked like pots, prayer flags by the metre, a shop that only sells incense and phone cases.
+- **Look: The monks**
+    - Two young monks in maroon, sharing earbuds, laughing at a phone.
+- **Use: The noodle shop**
+    - A bowl of thukpa the size of your head, steam on your face. Izzy: "THIS is finding yourself."
+
 ## Kitchen
 
 > **Objective:** Eat something
@@ -101,3 +114,16 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 📱 **Maya texts Tanya:** I signed up for a silent retreat! 10 days. No phone. Don't worry if I don't text.
 
 📱 **Text from Tanya:** Maya. Did you talk to Angie about this first?
+
+## Roof
+
+> **Objective:** Go up to the roof
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The stupa**
+    - The great white dome lit gold at the edges, the eyes looking out over everything in the dark.
+- **Look: The dogs**
+    - The street dogs of Boudha, starting their night shift. One barks, and the whole valley answers.
+- **Use: The bed**
+    - A thin mattress, a heavy blanket, jet lag at three in the morning. Izzy narrating the dogs until you laugh into the pillow.

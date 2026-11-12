@@ -442,6 +442,14 @@
       "chapterId": "ch3-buddhism"
     },
     {
+      "id": "boudha_street_lanes",
+      "name": "The lanes around the stupa",
+      "city": "kathmandu",
+      "x": 0.6,
+      "y": 0.5,
+      "chapterId": "ch3-buddhism"
+    },
+    {
       "id": "boudha_monastery",
       "name": "The monastery behind the guest house",
       "city": "kathmandu",
@@ -455,6 +463,14 @@
       "city": "kathmandu",
       "x": 0.45,
       "y": 0.9,
+      "chapterId": "ch3-buddhism"
+    },
+    {
+      "id": "dharma_shringa_dorm",
+      "name": "The course dormitory",
+      "city": "kathmandu",
+      "x": 0.45,
+      "y": 0.94,
       "chapterId": "ch3-buddhism"
     },
     {

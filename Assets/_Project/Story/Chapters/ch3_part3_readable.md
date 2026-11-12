@@ -29,6 +29,24 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Teacher:** Sit comfortably. Close your eyes. Observe the breath, just as it is.
 
+## Schedule
+
+> **Objective:** Get up for the bell
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The schedule on the wall**
+    - "4:00 wake-up bell. 4:30-6:30 meditate. 6:30 breakfast. 8:00-11:00 meditate. 11:00 lunch. 1:00-5:00 meditate. 5:00 tea. 6:00 meditate. 7:00 discourse. 9:30 lights out."
+- **Look: The other women**
+    - Eleven strangers, folding blankets in the dark, not looking at each other. Not even a smile allowed.
+- **Use: The cold water**
+    - A bucket of cold water and a cup. You pour it over your hands and your face, and gasp without a sound.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The silent lunch**
+    - Rice, dal, greens, eaten in silence at a long table, eyes on your own plate. The spoon sounds enormous.
+
 ## Days
 
 > **Objective:** Sit

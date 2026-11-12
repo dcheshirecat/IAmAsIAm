@@ -106,6 +106,26 @@ Heather (inside): There. That's it. That's all it has to be. # vo: ch3-buddhism_
 Izzy (inside): Five minutes! New record! # vo: ch3-buddhism_izzy-inside_0081
 ~ text_to("tanya", "Day 47. Five minutes, eyes open. I stayed for all of it.")
 ~ text_from("tanya", "That's the bravest five minutes I've ever heard of.")
+-> evening
+
+= evening
+// Owner: a full day in every part. Claude's scene: dinner with Pasang's family, the evening after five minutes.
+# place: boudha_guest_house
+# shot: wide
+# objective: Come down for dinner
+- (table)
++ {table < 3} [Look: The kitchen]
+    Pasang at the pressure cooker, her daughter doing homework at the end of the table, the TV on with no sound. # look: pasang-kitchen-evening
+    -> table
++ {table < 3} [Look: Your plate]
+    Dal bhat: rice, lentils, greens, a sharp pickle. Pasang refills it before you can say no. Twice. # look: dal-bhat
+    -> table
+* [Use: The washing up]
+    You wash, the daughter dries, neither of you saying much. She teaches you the Nepali for "spoon". You forget it at once and she laughs. # look: washing-up-boudha
+-
+* [Use: The bed]
+    The dogs, the prayer wheels creaking in the dark, the stone under your pillow. Five minutes. Tomorrow, five more. # look: five-more
+-
 -> litha
 
 = litha

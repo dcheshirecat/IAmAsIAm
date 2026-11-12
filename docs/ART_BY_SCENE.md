@@ -59,26 +59,28 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 49 | `ohare_airport` | O'Hare Airport | chicago | Chapter 3: Buddhism (ch3_part1) | - |
 | 50 | `boudha_guest_house` | Pasang's guest house | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27), Angie |
 | 51 | `boudha_stupa` | Boudhanath Stupa | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27) |
-| 52 | `dharma_shringa_hall` | Dharma Shringa: the meditation hall | kathmandu | Chapter 3: Buddhism (ch3_part3) | Teacher, Maya (the body, 27), Pasang Lhamo |
-| 53 | `boudha_monastery` | The monastery behind the guest house | kathmandu | Chapter 3: Buddhism (ch3_part3) | Pasang Lhamo, Heather (the body, 27) |
-| 54 | `lumbini_sacred_garden` | Lumbini: the Sacred Garden | lumbini | Chapter 3: Buddhism (ch3_part4) | Maya (the body, 27) |
-| 55 | `day_ward_group_room` | The day program: the group room | chicago | Chapter 4: Islam (ch4_part1) | Izzy (the body, 28), Chaplain Amal |
-| 56 | `day_ward_quiet_room` | The day program: the quiet room | chicago | Chapter 4: Islam (ch4_part1) | Chaplain Amal, Izzy (the body, 28), Maya (the body, 28), Sawsan |
-| 57 | `andersonville_cafe` | A café in Andersonville | chicago | Chapter 4: Islam (ch4_part2) | Reneé, Izzy (the body, 28) |
-| 58 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Fadi, Maya (the body, 28) |
-| 59 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Sawsan, Chaplain Amal |
-| 60 | `seattle_apartment` | Maya's apartment, Seattle | seattle | Chapter 5: Hinduism (ch5_part1) | Maya (the body, 28) |
-| 61 | `burke_museum_hall` | The Burke Museum | seattle | Chapter 5: Hinduism (ch5_part1) | Priya, Maya (the body, 28), Gurleen, Maya (the body, 29) |
-| 62 | `eastside_mandir_hall` | The temple on the Eastside | seattle | Chapter 5: Hinduism (ch5_part1) | Mangala Tai, Maya (the body, 28), Maya (the body, 29) |
-| 63 | `eastside_mandir_kitchen` | The temple on the Eastside: the kitchen | seattle | Chapter 5: Hinduism (ch5_part2) | Lakshmi |
-| 64 | `garba_community_hall` | The Navaratri garba | seattle | Chapter 5: Hinduism (ch5_part3) | Maya (the body, 29), Priya |
-| 65 | `priya_family_house` | Priya's family's house | seattle | Chapter 5: Hinduism (ch5_part3) | Lakshmi, Heather (the body, 29) |
-| 66 | `gurleen_car` | Gurleen's car | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
-| 67 | `gurdwara_darbar_hall` | The gurdwara in Kent: the darbar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
-| 68 | `gurdwara_langar_hall` | The gurdwara in Kent: the langar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29) |
-| 69 | `gurdwara_kitchen` | The gurdwara in Kent: the kitchen | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29), Maya (the body, 30) |
-| 70 | `seattle_cafe` | A café by the market | seattle | Chapter 6: Sikhism (ch6_part2) | Christie, Maya (the body, 29) |
-| 71 | `nagar_kirtan_street` | The Vaisakhi procession, Kent | seattle | Chapter 6: Sikhism (ch6_part2) | - |
+| 52 | `boudha_street_lanes` | The lanes around the stupa | kathmandu | Chapter 3: Buddhism (ch3_part2) | - |
+| 53 | `dharma_shringa_hall` | Dharma Shringa: the meditation hall | kathmandu | Chapter 3: Buddhism (ch3_part3) | Teacher, Maya (the body, 27), Pasang Lhamo |
+| 54 | `dharma_shringa_dorm` | The course dormitory | kathmandu | Chapter 3: Buddhism (ch3_part3) | - |
+| 55 | `boudha_monastery` | The monastery behind the guest house | kathmandu | Chapter 3: Buddhism (ch3_part3) | Pasang Lhamo, Heather (the body, 27) |
+| 56 | `lumbini_sacred_garden` | Lumbini: the Sacred Garden | lumbini | Chapter 3: Buddhism (ch3_part4) | Maya (the body, 27) |
+| 57 | `day_ward_group_room` | The day program: the group room | chicago | Chapter 4: Islam (ch4_part1) | Izzy (the body, 28), Chaplain Amal |
+| 58 | `day_ward_quiet_room` | The day program: the quiet room | chicago | Chapter 4: Islam (ch4_part1) | Chaplain Amal, Izzy (the body, 28), Maya (the body, 28), Sawsan |
+| 59 | `andersonville_cafe` | A café in Andersonville | chicago | Chapter 4: Islam (ch4_part2) | Reneé, Izzy (the body, 28) |
+| 60 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Fadi, Maya (the body, 28) |
+| 61 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Sawsan, Chaplain Amal |
+| 62 | `seattle_apartment` | Maya's apartment, Seattle | seattle | Chapter 5: Hinduism (ch5_part1) | Maya (the body, 28) |
+| 63 | `burke_museum_hall` | The Burke Museum | seattle | Chapter 5: Hinduism (ch5_part1) | Priya, Maya (the body, 28), Gurleen, Maya (the body, 29) |
+| 64 | `eastside_mandir_hall` | The temple on the Eastside | seattle | Chapter 5: Hinduism (ch5_part1) | Mangala Tai, Maya (the body, 28), Maya (the body, 29) |
+| 65 | `eastside_mandir_kitchen` | The temple on the Eastside: the kitchen | seattle | Chapter 5: Hinduism (ch5_part2) | Lakshmi |
+| 66 | `garba_community_hall` | The Navaratri garba | seattle | Chapter 5: Hinduism (ch5_part3) | Maya (the body, 29), Priya |
+| 67 | `priya_family_house` | Priya's family's house | seattle | Chapter 5: Hinduism (ch5_part3) | Lakshmi, Heather (the body, 29) |
+| 68 | `gurleen_car` | Gurleen's car | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
+| 69 | `gurdwara_darbar_hall` | The gurdwara in Kent: the darbar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
+| 70 | `gurdwara_langar_hall` | The gurdwara in Kent: the langar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29) |
+| 71 | `gurdwara_kitchen` | The gurdwara in Kent: the kitchen | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29), Maya (the body, 30) |
+| 72 | `seattle_cafe` | A café by the market | seattle | Chapter 6: Sikhism (ch6_part2) | Christie, Maya (the body, 29) |
+| 73 | `nagar_kirtan_street` | The Vaisakhi procession, Kent | seattle | Chapter 6: Sikhism (ch6_part2) | - |
 
 ## 2. People, in the order they first appear
 
@@ -558,6 +560,10 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `fridge-notes`: Sticky notes. "Buy milk." "CALL TANYA BACK." "you're doing ok." Three different handwritings. All of them yours.
 - `sill-wax-winter`: A ring of old wax in the corner, from a candle you don't remember.
 - `phone-call-angie`: Your phone. Ringing. Tanya's hand on your back, steady.
+- `two-stones`: The hematite next to Mira's stone. Two stones from two people who noticed.
+- `angie-card`: "Angie, LCPC. Next appointment: Thursday, 4 pm." On the fridge, under the SUE magnet.
+- `eggs-hot-sauce`: Eggs on toast. Izzy wants hot sauce on them. You let her.
+- `hand-thursday`: You write "Thursday 4pm" on your hand, just in case. You sleep with the light on, but you sleep.
 - `one-way-ticket`: One tab. A photo: prayer flags over white mountains, a monk smiling at the camera. "Kathmandu. One way. Tonight, 11:40 pm."
 - `himalaya-postcard`: The Himalayas, bought years ago at the museum gift shop. You've never been anywhere.
 - `dusty-suitcase`: Under the bed. Dusty. It has never been on a plane.
@@ -579,6 +585,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `l-pole`: Cold metal, the train leaning into the curve. Feet on the floor. Your stop.
 - `l-window-snow`: Snow on the tracks, the lake frozen white at the edges.
 - `l-matches`: You keep thinking about the candle. Your hands smell of matches.
+- `l-january`: January. The lake steaming in the cold. Tanya's text already: "Proud of you for opening the door."
+- `l-pole-january`: Your hand on the pole. Somebody else's hand. Your hand again.
 
 ### The Field Museum: Stanley Field Hall (`field_museum_hall`)
 
@@ -723,9 +731,16 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `kitchen-altar`: A small shelf above the stove: a photo of a lama, seven little bowls of water in a row, a butter lamp.
 - `vipassana-flyer`: "VIPASSANA. 10 days. Noble silence. Dharma Shringa, Budhanilkantha. Courses run on donation."
 - `angie-plan-thought`: Short sits. Eyes open. Walk when you need to. Ten days isn't short. You sign up anyway.
+- `stupa-night`: The great white dome lit gold at the edges, the eyes looking out over everything in the dark.
+- `boudha-dogs`: The street dogs of Boudha, starting their night shift. One barks, and the whole valley answers.
+- `jetlag-dogs`: A thin mattress, a heavy blanket, jet lag at three in the morning. Izzy narrating the dogs until you laugh into the pillow.
 - `heather-note`: Your notebook, open on the blanket. In round, careful handwriting that isn't quite yours: "Water first. Then food. Then Angie. -H"
 - `window-watched`: The stupa, the eyes, the dogs. Pasang's daughter hanging out laundry, looking up at your window every few minutes.
 - `tea-flask`: A flask of sweet milky tea outside your door. A note: "DRINK. -PASANG"
+- `pasang-kitchen-evening`: Pasang at the pressure cooker, her daughter doing homework at the end of the table, the TV on with no sound.
+- `dal-bhat`: Dal bhat: rice, lentils, greens, a sharp pickle. Pasang refills it before you can say no. Twice.
+- `washing-up-boudha`: You wash, the daughter dries, neither of you saying much. She teaches you the Nepali for "spoon". You forget it at once and she laughs.
+- `five-more`: The dogs, the prayer wheels creaking in the dark, the stone under your pillow. Five minutes. Tomorrow, five more.
 - `litha-stupa`: The white dome, grey in the dark, then pink. The painted eyes on the tower, catching the light first.
 - `litha-flags`: Five colours, snapping in the wind off the hills.
 - `litha-sunrise`: The sun comes up over the stupa. All that light.
@@ -745,6 +760,12 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `pigeons-lift`: A hundred pigeons lifting all at once, and settling again. Grey wings. Real.
 - `own-feet`: Left, right, on old stone. Clockwise. Your feet, yours.
 
+### The lanes around the stupa (`boudha_street_lanes`)
+
+- `boudha-shops`: Singing bowls stacked like pots, prayer flags by the metre, a shop that only sells incense and phone cases.
+- `monks-earbuds`: Two young monks in maroon, sharing earbuds, laughing at a phone.
+- `thukpa`: A bowl of thukpa the size of your head, steam on your face. Izzy: "THIS is finding yourself."
+
 ### Dharma Shringa: the meditation hall (`dharma_shringa_hall`)
 
 - `noble-silence-rules`: "Noble silence: no talking, no gestures, no eye contact, from the first evening to the morning of day ten. You may speak to the teacher when necessary."
@@ -757,6 +778,13 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `inside-quiet`: Izzy is quiet. Nobody inside is talking. The silence goes all the way down.
 - `kept-silence`: Noble silence. You keep it. You keep it so well you almost aren't there.
 - `just-nod`: You nod. You nod at everything. It's very easy to nod.
+
+### The course dormitory (`dharma_shringa_dorm`)
+
+- `course-schedule`: "4:00 wake-up bell. 4:30-6:30 meditate. 6:30 breakfast. 8:00-11:00 meditate. 11:00 lunch. 1:00-5:00 meditate. 5:00 tea. 6:00 meditate. 7:00 discourse. 9:30 lights out."
+- `dorm-strangers`: Eleven strangers, folding blankets in the dark, not looking at each other. Not even a smile allowed.
+- `cold-water-gasp`: A bucket of cold water and a cup. You pour it over your hands and your face, and gasp without a sound.
+- `silent-lunch`: Rice, dal, greens, eaten in silence at a long table, eyes on your own plate. The spoon sounds enormous.
 
 ### The monastery behind the guest house (`boudha_monastery`)
 

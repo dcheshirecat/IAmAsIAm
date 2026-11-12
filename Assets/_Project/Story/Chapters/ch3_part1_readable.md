@@ -50,6 +50,17 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Use: Your phone (call Angie)**
     - Your phone. Ringing. Tanya's hand on your back, steady.
 
+## Train
+
+> **Objective:** Get to work
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The window**
+    - January. The lake steaming in the cold. Tanya's text already: "Proud of you for opening the door."
+- **Use: The pole (hold on)**
+    - Your hand on the pole. Somebody else's hand. Your hand again.
+
 ## Tour
 
 > **Objective:** Give the eleven o'clock tour
@@ -113,6 +124,24 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 Feet on the floor. The chair holding you. _(the player does the "five-senses" exercise here)_
 
 On your way out, Angie holds out the bowl by the door. Worry stones. You take a hematite one: heavy, cool, smooth. For the train home.
+
+## Evening
+
+> **Objective:** Make dinner
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The windowsill**
+    - The hematite next to Mira's stone. Two stones from two people who noticed.
+- **Look: Angie's card**
+    - "Angie, LCPC. Next appointment: Thursday, 4 pm." On the fridge, under the SUE magnet.
+- **Use: The stove (eggs)**
+    - Eggs on toast. Izzy wants hot sauce on them. You let her.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The bed**
+    - You write "Thursday 4pm" on your hand, just in case. You sleep with the light on, but you sleep.
 
 ## Weeks
 
