@@ -428,6 +428,16 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   **Why Seattle:** Maya can't stand the memories Chicago brings up and believes Seattle will be a fresh start (new line `maya_0031`).
   **Fadi is Shia** (owner), Lebanese American from Beirut; a clay turbah from Karbala on the shelf; his dhikr circle welcomes Sunni and
   Shia (new line `fadi_0062`). **Tigist** (Chapter 2's Beta Israel woman at Sigd) keeps her name (owner).
+- 2026-11-12: **Wiccan practice is an active part of the game (owner).** Design + proposal: `docs/WiccanPractice.md`. Owner: an
+  **altar at every home** AND a **Book of Shadows** usable any time (like the phone), plus practice moments in the chapters;
+  practice gives **grounding, reflection (into the Book), story changes, and alters respond** (still no stat boosts); practices:
+  tarot, runes, candle magick, amulets/charm bags, sabbats + moons, **more divination** (pendulum, scrying, tea leaves, oracle),
+  **circle work** (grounding/centering, casting, quarters, cleansing, meditation), **ancestors + devotion** (ancestor altar,
+  offerings, sigils, dream journal); **open practices only** (no white sage, no hoodoo). **Small hands-on steps that feel like
+  rituals, not games** (no timer, score or failure). **Only Maya, Izzy (tarot) and Heather (candles) practise Wicca**; everyone
+  else keeps their own religion and ignores or despises the tools (**Jacob**: devout Catholic, prays to saints). **Tanya gives the
+  Book of Shadows.** Practice **can sometimes be hard** (a reading too close, lost time leaving a reading behind). Not built yet:
+  waiting for the owner's OK on the proposal.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
