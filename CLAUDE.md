@@ -504,6 +504,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   `Story/Chapters/ch6_part1..3.ink`: 1 Langar (Mar 2028), 2 Vaisakhi (Apr 2028), 3 Sarbat da bhala (Guru Nanak's Gurpurab, Nov
   2028; `# chapter-end`). 35 voiced lines (speakers maya, gurleen, harjit, christie, heather-inside). New: `Name (on the phone): ...`
   = a remote speaker like `(on video)` (StoryLine.Via).
+  Drive: Story Drafts → `08 Chapter 6 - Sikhism (title to come)` (1TwMDcJ8B-CWntR2GLCVOLEv8dmVSrwdu): Part 1
+  (1mHjXc_XNB-zekkICn4spbyr9wkv_QGWq3MR-aLZyrng), Part 2 (1L8ryDQdygbp5hJOjuhKZBIASFUzsMxOqRZBfruO8VmY), Part 3
+  (1kHntN9_9___E6FCJFqWHcQ7i8H43OShddpmg6fYjTYU); Sheet "08 Chapter 6 - script list (draft)" (1wHLcjFyA9BOEBlWe4mY6YsFbs88YH30ADsksAXDrsDc, 35 lines).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
