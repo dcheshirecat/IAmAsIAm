@@ -42,6 +42,13 @@ Android compresses textures as ASTC, so painting at these sizes is enough for ta
 | Choice buttons, wide buttons (9-slice) | 640 × 200 |
 | The Anchor button (+ `_pressed`), always on screen | 384 × 384 |
 | Small UI icons | 128 × 128 |
+| City maps (`Resources/Maps/map_<city-id>.png`), 4:3 | 2048 × 1536 |
+| Map pins (9-slice) | 512 × 160 |
+| Phone and laptop icons (right edge) | 256 × 256 |
+| Joystick ring / knob, Use button | 512 × 512 / 256 × 256 / 384 × 384 |
+| Phone screen / laptop screen (9-slice) | 1024 × 1536 / 1536 × 1024 |
+| Message bubbles (9-slice) | 512 × 256 |
+| Dissociation mist (`fx_mist.png`, seamless) | 1024 × 1024 |
 | Breathing guide (a lantern or circle that grows and shrinks) | 1024 × 1024 |
 | Title logo | 2048 wide |
 | App icon (no transparency; Android rounds it) | 1024 × 1024 |

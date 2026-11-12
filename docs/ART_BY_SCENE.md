@@ -1,0 +1,485 @@
+# Art by scene (generated)
+
+_Made by `tools/StoryDocs/art_by_scene.py` from the chapters in the game. Don't edit by hand: re-run it._
+
+Everything the chapters show, **in story order** (owner: models in chronological order). Each place lists who is there and every close-up (`# look:`), which are the props and details to model or paint. Hidden memories (`# memory:`) are scenes seen only by an alter.
+
+## 1. Places, in the order they first appear
+
+| # | Place id | Place | City | First in | People there |
+|---|---|---|---|---|---|
+| 1 | `home_kitchen` | Home: the kitchen | iowa_city | Prologue: This Little Light (prologue_sunday1) | Sarah, Maya (the body, 5) |
+| 2 | `car` | Mom's car | - | Prologue: This Little Light (prologue_sunday1) | Sarah, Maya (the body, 5), Maya (the body, 8), Maya (the body, 15) |
+| 3 | `church_first_day_school` | Church of Friends: First Day School | iowa_city | Prologue: This Little Light (prologue_sunday1) | Miss Eloise, Rebecca, Maya (the body, 8) |
+| 4 | `church_sanctuary` | Church of Friends: the sanctuary | iowa_city | Prologue: This Little Light (prologue_sunday1) | Sarah, Mrs. Hines, Maya (the body, 11), Mr. Jones, Rebecca |
+| 5 | `church_fellowship_hall` | Church of Friends: the fellowship hall | iowa_city | Prologue: This Little Light (prologue_sunday1) | Mrs. Hines, Mr. Jones, Sarah, Mira, Maya (the body, 5), Maya (the body, 8), Maya (the body, 11) |
+| 6 | `home_maya_room` | Home: Maya's room | iowa_city | Prologue: This Little Light (prologue_sunday3) | Sarah, Maya (the body, 15) |
+| 7 | `college_lecture_hall` | The lecture hall | champaign_urbana | Prelude (prelude_part1) | Selene, Maya (the body, 18), Mark, Axel (the body, 20) |
+| 8 | `college_dorm_maya` | Maya's dorm room | champaign_urbana | Prelude (prelude_part1) | - |
+| 9 | `college_dorm_selene` | Selene's dorm room | champaign_urbana | Prelude (prelude_part1) | Selene, Maya (the body, 18), Sarah |
+| 10 | `college_apartment_maya` | Maya's apartment | champaign_urbana | Prelude (prelude_part2) | Axel (the body, 20) |
+| 11 | `college_quad` | The Quad | champaign_urbana | Prelude (prelude_part2) | Selene, Maya (the body, 18) |
+| 12 | `shop_the_circle` | The Circle | champaign_urbana | Prelude (prelude_part3) | Tanya, Maya (the body, 19), Selene, Maya (the body, 21) |
+| 13 | `park_yule_circle` | The park: the Yule circle | champaign_urbana | Prelude (prelude_part3) | Tanya |
+| 14 | `park_ostara` | The park: Ostara | champaign_urbana | Chapter 1: Christianity (ch1_part1) | Selene, Maya (the body, 19), Tanya |
+| 15 | `college_apartment_axel` | The apartment (Axel's year) | champaign_urbana | Chapter 1: Christianity (ch1_part2) | Maya (the body, 20), Mark, Axel (the body, 20) |
+| 16 | `campus_ministry` | The campus ministry | champaign_urbana | Chapter 1: Christianity (ch1_part3) | Gracie, Maya (the body, 21) |
+| 17 | `campus_ministry_chapel` | The campus ministry chapel | champaign_urbana | Chapter 1: Christianity (ch1_part3) | Gracie |
+| 18 | `campus_ministry_lawn` | The campus ministry lawn | champaign_urbana | Chapter 1: Christianity (ch1_part4) | Gracie |
+| 19 | `campus_barber` | The barber | champaign_urbana | Chapter 1.5: Axel (ch1_5_part1) | Axel (the body, 20) |
+| 20 | `thrift_store` | The thrift store | champaign_urbana | Chapter 1.5: Axel (ch1_5_part1) | Axel (the body, 20) |
+| 21 | `campus_cafe` | The campus café | champaign_urbana | Chapter 1.5: Axel (ch1_5_part1) | Selene, Axel (the body, 20) |
+| 22 | `town_pride` | Pride downtown | champaign_urbana | Chapter 1.5: Axel (ch1_5_part2) | Mark, Axel (the body, 20) |
+| 23 | `methodist_church` | The Methodist church | indianapolis | Chapter 1.5: Axel (ch1_5_part2) | Cassie, Mark, Axel (the body, 20) |
+| 24 | `mark_family_guest_room` | Cassie's house: the guest room | indianapolis | Chapter 1.5: Axel (ch1_5_part2) | - |
+| 25 | `episcopal_church` | St. Luke's Episcopal | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Pastor Key, Axel (the body, 20) |
+| 26 | `protest_march` | The vigil march | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Mark, Izzy (the body, 20), Axel (the body, 20) |
+| 27 | `queer_affirming_church` | The queer-affirming church | indianapolis | Chapter 1.5: Axel (ch1_5_part3) | Mark, Axel (the body, 20) |
+| 28 | `chicago_apartment` | Maya's apartment | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 25) |
+| 29 | `field_museum_hall` | The Field Museum: Stanley Field Hall | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 24) |
+| 30 | `field_museum_office` | The Field Museum: the registrar's office | chicago | Chapter 2: Judaism (ch2_part1) | - |
+| 31 | `field_museum_gallery` | The Field Museum: the new gallery | chicago | Chapter 2: Judaism (ch2_part1) | Eudora Jones, Adeena, Maya (the body, 24) |
+| 32 | `adeena_apartment` | Adeena's apartment | chicago | Chapter 2: Judaism (ch2_part2) | Adeena, Maya (the body, 25), Maya (the body, 27) |
+| 33 | `synagogue_conservative` | Congregation Etz Chaim | chicago | Chapter 2: Judaism (ch2_part2) | Adeena |
+| 34 | `synagogue_social_hall` | Congregation Etz Chaim: the social hall | chicago | Chapter 2: Judaism (ch2_part2) | Rabbi Abe, Maya (the body, 25) |
+| 35 | `adeena_parents_house` | Ruth's house | chicago | Chapter 2: Judaism (ch2_part3) | Ruth, Lee, Effie, Grandma, Adeena |
+| 36 | `havurah_living_room` | Hannah's living room | chicago | Chapter 2: Judaism (ch2_part3) | Hannah |
+| 37 | `lgbtq_synagogue` | The LGBTQ synagogue | chicago | Chapter 2: Judaism (ch2_part3) | Adeena, Maya (the body, 25) |
+| 38 | `chabad_house` | The Chabad house | chicago | Chapter 2: Judaism (ch2_part3) | Adeena, Maya (the body, 25) |
+| 39 | `renewal_shabbat` | The Renewal Shabbat | chicago | Chapter 2: Judaism (ch2_part4) | - |
+| 40 | `reform_temple` | The Reform temple | chicago | Chapter 2: Judaism (ch2_part4) | - |
+| 41 | `sigd_community_hall` | The Sigd celebration | chicago | Chapter 2: Judaism (ch2_part4) | Tigist, Maya (the body, 27) |
+| 42 | `effie_house` | Effie's house | chicago | Chapter 2: Judaism (ch2_part4) | Effie, Maya (the body, 27) |
+| 43 | `lakefront_path` | The lakefront path | chicago | Chapter 2: Judaism (ch2_part4) | Rabbi Abe, Maya (the body, 27) |
+
+## 2. People, in the order they first appear
+
+System members are one shared body: list each ALTER's look (hair, clothes, posture) for the ages shown.
+
+| # | Who | Id | Kind | First in | Ages (the body) | Places |
+|---|---|---|---|---|---|---|
+| 1 | Sarah | `mother` | person | Prologue: This Little Light | - | home_kitchen, car, church_sanctuary, church_fellowship_hall, home_maya_room, college_dorm_selene |
+| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27 | home_kitchen, car, church_fellowship_hall, church_first_day_school, church_sanctuary, home_maya_room, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path |
+| 3 | Miss Eloise | `eloise` | person | Prologue: This Little Light | - | church_first_day_school |
+| 4 | Rebecca | `rebecca` | person | Prologue: This Little Light | - | church_first_day_school, church_sanctuary |
+| 5 | Mrs. Hines | `hines` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
+| 6 | Mr. Jones | `jones` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
+| 7 | Mira | `guide_quaker` | person | Prologue: This Little Light | - | church_fellowship_hall |
+| 8 | Selene | `selene` | person | Prelude | - | college_lecture_hall, college_dorm_selene, college_quad, park_ostara, shop_the_circle, campus_cafe |
+| 9 | Tanya | `tanya` | person | Prelude | - | shop_the_circle, park_yule_circle, park_ostara |
+| 10 | Gracie | `gracie` | person | Chapter 1: Christianity | - | campus_ministry, campus_ministry_chapel, campus_ministry_lawn |
+| 11 | Axel | `axel` | system member | Chapter 1.5: Axel | 20 | college_apartment_maya, campus_barber, thrift_store, campus_cafe, college_lecture_hall, town_pride, methodist_church, episcopal_church, protest_march, queer_affirming_church, college_apartment_axel |
+| 12 | Mark | `ex_christian` | person | Chapter 1.5: Axel | - | college_lecture_hall, college_apartment_axel, town_pride, methodist_church, protest_march, queer_affirming_church |
+| 13 | Cassie | `mark_mom` | person | Chapter 1.5: Axel | - | methodist_church |
+| 14 | Pastor Key | `mark_priest` | person | Chapter 1.5: Axel | - | episcopal_church |
+| 15 | Izzy | `izzy` | system member | Chapter 1.5: Axel | 20 | protest_march |
+| 16 | Adeena | `ex_jewish` | person | Chapter 2: Judaism | - | field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_conservative, adeena_parents_house, lgbtq_synagogue, chabad_house, chicago_apartment |
+| 17 | Eudora Jones | `eudora` | person | Chapter 2: Judaism | - | field_museum_gallery |
+| 18 | Rabbi Abe | `rabbi_abe` | person | Chapter 2: Judaism | - | synagogue_social_hall, lakefront_path |
+| 19 | Ruth | `ruth` | person | Chapter 2: Judaism | - | adeena_parents_house |
+| 20 | Lee | `lee` | person | Chapter 2: Judaism | - | adeena_parents_house |
+| 21 | Effie | `effie` | person | Chapter 2: Judaism | - | adeena_parents_house, effie_house |
+| 22 | Grandma | `grandma` | person | Chapter 2: Judaism | - | adeena_parents_house |
+| 23 | Hannah | `hannah` | person | Chapter 2: Judaism | - | havurah_living_room |
+| 24 | Tigist | `tigist` | person | Chapter 2: Judaism | - | sigd_community_hall |
+
+## 3. Close-ups and props, scene by scene
+
+### Home: the kitchen (`home_kitchen`)
+
+- `kitchen-table`: The kitchen table. A coffee cup, Mommy's Bible, sermon papers. No bowl.
+- `sermon-notes`: Sermon notes: "Let your light shine."
+- `cracker-cupboard`: A chair, pushed to the cupboard. One soft cracker.
+- `front-door`: Waiting.
+- `shoes`: Shoes with sticky straps. On the wrong feet.
+
+### Mom's car (`car`)
+
+- `red-cars`: Red cars: five.
+- `foggy-window`: A house on the window. A sun with a smile on it.
+- `car-floor`: Hello, floor.
+- `back-seat`: Coffee cups. Bulletins. Church papers.
+- `susan-note`: A note from Miss Susan: "Please sign and return. Parent-teacher conference." Nine days old.
+- `note-falls`: The note, sliding off the dashboard, under the seat.
+- `note-kept`: The note. Soft at the corners.
+- `note-signed`: "Sarah", in an eight-year-old's neatest writing. Folded small.
+- `napkin-kept`: The napkin with the number. Kept, not called. Kept for years.
+- `wipers`: Wipers, back and forth. Like a picture of wipers.
+- `stone-grip`: The stone's edge, biting your palm. The only real thing in the car.
+
+### Church of Friends: First Day School (`church_first_day_school`)
+
+- `light-poster`: "Let your light shine before others." A lamp under a basket.
+- `rebecca`: Rebecca. Purple hairband. She can whistle.
+- `lanterns`: Two yellow lanterns.
+- `rebecca-table`: Rebecca, Jamie, Justin and Will. One chair in the corner.
+- `corner-chair`: A video game you don't have. Laughing a little bit late.
+
+### Church of Friends: the sanctuary (`church_sanctuary`)
+
+- `the-carters`: Mr. Carter, Thomas and Reneé. Reneé's crutches lean on the end of the pew. His arm is along the pew behind them.
+- `hymnbook`: "This Little Light of Mine."
+- `hands`: Your hands. Like a doll's hands. Far away.
+- `pew-grain`: Wood grain, like a river around a rock.
+- `shoe-strap`: Scratchy side. Smooth side.
+- `light-square`: A square of light. Dust, falling.
+- `from-above`: A little girl in a blue dress, very still. Very good.
+- `carters-door`: Mr. Carter holding the door. Reneé on her crutches. A nod, the kind big kids give little kids.
+- `glass-smile`: Smiling. Somebody very good at it.
+- `rebecca-will`: Rebecca and Will, three rows back. Jamie and Justin kicking the pew.
+- `carter-alone`: Mr. Carter by the window. His arm along the back of the pew. The pew is empty.
+- `pulpit`: The lost sheep. The ninety-nine, and the one.
+- `hymnbook-jamie`: "Jamie wuz here", in pencil, inside the back cover.
+- `stone-line`: Mira's stone. The white line, all the way around.
+- `last-hymn`: The last hymn.
+
+### Church of Friends: the fellowship hall (`church_fellowship_hall`)
+
+- `coffee-pot`: The big silver coffee pot. Washed and put away.
+- `hall-door`: The Carters, leaving. Mr. Carter does up Reneé's scarf and holds the door for her crutches.
+- `window-squares`: Window squares. Eleven, twelve...
+- `light-moved`: The light is higher on the wall now.
+- `office-door`: Mommy's door. Closed. Numbers, and Mrs. Hines laughing.
+- `lantern`: {first_day_school.gave: Rebecca's lantern. She left it behind. | Your yellow lantern.}
+- `one-light`: One light left on.
+- `mira-cardigan`: A moss-green cardigan. It smells like soap.
+- `shoes-right`: Your shoes. Mira has put them on the right feet.
+- `mira-watching`: Mira, holding the back of the chair, watching you go.
+- `snack-table`: Cookies. Cheese on toothpicks. Grapes.
+- `napkin-pocket`: A napkin full, in your pocket, for later.
+- `napkin-hidden`: Mrs. Hines, right there. The napkin stays in your pocket.
+- `slow-mouth`: Your mouth. Slow, like in a dream.
+- `far-down`: Your knees. The napkin. Mira's hand. Very far down.
+- `hallway`: Mira with her cane, going to Mommy's office.
+- `renee-bench`: Reneé Carter, resting, her crutches across her knees. Looking at the floor, very politely.
+- `grapes`: Grapes. One at a time, slowly.
+- `mira-slower`: Mira, walking slower than before. Picking a grape up off the floor.
+- `last-grape`: The last grape.
+- `mira-number`: A napkin. Mira's number, in shaky blue pen.
+- `fly-window`: A fly on the window, walking up and falling down.
+- `mira-stone`: A stone, grey and flat and smooth as soap. A white line all the way around.
+- `mira-address`: Mira's new address, in Oregon. Shaky blue pen.
+- `mira-wave`: Mira's hand, lifting, at the door.
+- `stacked-chairs`: Chairs, stacked. Mrs. Hines, Mr. Jones and the new youth leader, all around Mom.
+
+### Home: Maya's room (`home_maya_room`)
+
+- `mirror-smile`: A smile. Practiced until it looks right.
+- `blue-dress`: The blue dress, ironed last night. The collar straight.
+- `braid`: One hundred brushes. The braid. The clip.
+- `bulletins`: A stack of bulletins, still warm from the printer.
+- `clock-847`: 8:47. Church ended at noon.
+- `stone-pillow`: Mira's stone, in the middle of your pillow.
+- `dress-bow`: The blue dress on its hanger. The sash tied in a bow.
+- `nina-curb`: Waiting at the curb with the bulletins. Smiling for Mrs. Hines.
+- `nina-toast`: Toast, cut into triangles. The plate rinsed. Nobody asked.
+- `nina-dress`: The dress, hung up perfectly. The sash, a bow. Good girls are neat.
+- `dear-mira`: "Dear Mira,"
+- `dear-mira-2`: "Dear Mira,"
+- `stone-pocket`: The stone, in your pocket. Every Sunday.
+- `dress-small`: The blue dress, at the back. Too small. The sash still tied in a bow.
+- `four-letters`: "Dear Mira." "Dear Mira." "Dear Mira." "Dear Mira."
+- `disconnected`: "The number you have dialed is no longer in service."
+- `stone-floor`: The stone, in both hands. Feet on the floor. The floor says nothing back.
+- `so-tired`: So tired.
+- `somebody-hand`: The stone, in somebody's hand.
+- hidden memory `nina-lost-hours` (a scene played only by an alter)
+
+### The lecture hall (`college_lecture_hall`)
+
+- `lecture-screen`: "Intro to World Religions. Week 8: New Religious Movements."
+- `notebook-candle`: Neat notes. A doodle of a candle in the margin, not yours.
+- `selene-bag`: A pentacle charm on the zip. A paperback with a cracked spine, full of sticky notes.
+
+### Maya's dorm room (`college_dorm_maya`)
+
+- `planner`: A planner, every hour filled in. A mug of cold tea.
+- `muddy-shoes`: Your running shoes, caked in mud. You haven't been running.
+- `bare-wall`: Nothing on it. Everyone else on the floor has posters.
+- `stone-coat`: Mira's stone, in your coat pocket. Still.
+- `empty-quad`: The quad, empty. A single person with a dog, very far away.
+- `dorm-desk`: A laptop. A cold mug. A mask on the lamp.
+- `zoom-class`: Six small squares. Tanya's ceiling fan. Everyone with their feet on their own floor.
+- `dorm-ceiling`: The ceiling. The light moving across it. Morning, afternoon.
+- `zoom-grid`: A grid of faces. Muted. Names scrolling.
+- `name-on-screen`: "Maya ___." Two seconds on the screen. Gone.
+- `zoom-chat`: "congrats everyone!!" "CLASS OF 2020" Nobody says your name.
+- `cap-plastic`: A cap, still in its plastic, on the bed.
+- `tanya-reply`: The phone buzzes almost at once.
+- `laptop-closed`: The laptop, closed. Quiet.
+
+### Selene's dorm room (`college_dorm_selene`)
+
+- `dorm-altar`: A desk under a scarf. Candles in jam jars. A bowl of water, a bowl of salt.
+- `ancestor-photos`: Photos of people who've died. A grandmother. A dog. A boy in a graduation gown.
+- `apple-star`: An apple, cut across. The seeds make a star.
+- `mira-silent`: Mira.
+- `stone-warm`: The stone, warm from your hand.
+- `phone-mom`: "Mom." The screen lights up the whole dark room.
+- `phone-stops`: It rings, and stops. No message.
+
+### Maya's apartment (`college_apartment_maya`)
+
+- `fridge-note`: "Full moon Tues!! Don't forget. Bought oat milk. -I" Round letters. Not yours.
+- `three-candles`: Three candles on the windowsill. White, silver, black. Burned halfway down.
+- `tarot-deck`: A tarot deck, the box soft at the corners.
+- `izzy-shelf`: Decks, a whole wall of them. This one, with the moon on the box.
+- `izzy-counter`: Short grey hair. Reading glasses on a chain. A look over the top of them, kind, and not fooled.
+- `izzy-bag`: Cash from the jar. A paper bag. A flyer tucked inside it: "Classes, Thursdays."
+- `missed-exam`: "PSYCH 216 MIDTERM, 9 AM." Tuesday. Today is Thursday.
+- `yule-flyer`: A flyer, folded in four, at the bottom of your bag. "The Circle. Open Yule circle, December 21st. All welcome."
+- `flyer-go`: "GO." Round letters. Underlined three times.
+- `book-of-shadows`: A new notebook, black, with a moon on the cover. First page: "Book of Shadows. Blessed be. -I"
+- `wax-fingers`: Candle wax on your fingers, peeled into a little moon.
+- `class-receipt`: A receipt from The Circle. "Intro to the Craft, 8 weeks. PAID."
+- `seedling-dead`: The paper cup from Ostara. A seedling, folded over, dry.
+- `flannel-shirt`: A flannel shirt, green and black. A man's. Your size.
+- `phone-friday`: Friday. The last thing you remember is Tuesday.
+- `stone-line-spring`: The stone. The white line, around and around.
+- `maya-planner`: "Thursday 7pm, T." "Water the seed." Neat little letters. Not yours.
+- `stone-axel`: A grey stone with a white line around it. Smooth from being held.
+- `napkin-axel`: A paper napkin. A phone number in shaky blue pen. "Mira."
+- `closet-dresses`: Dresses. A blue one at the back, too small, kept anyway.
+- `email-professors`: "Hi Professor, I wanted to let you know I go by Axel now, and he/him. Thanks!" Four times. Send.
+- `professor-replies`: "Thanks for telling me, Axel. See you Tuesday." "Noted! Welcome back." "Thank you, Axel."
+- hidden memory `izzy-the-deck` (a scene played only by an alter)
+
+### The Quad (`college_quad`)
+
+- `quad-bricks`: Bricks. Moss in the cracks. You count them.
+- `selene-going`: Selene's scarf, getting smaller across the quad.
+- `stone-line-quad`: The stone's white line, all the way around. Around and around.
+- `feet-bricks`: Bricks under your shoes. Still here.
+- `quad-turn-away`: People you don't know, who know you. One of them sees you, and turns away.
+- `left-the-group`: "Jordan left the group." "Sam left the group." "Riley left the group."
+- `coat-drive-flyer`: "Campus Ministry Coat Drive! Bring a coat, take a coat, get a hot chocolate!" Three exclamation marks.
+
+### The Circle (`shop_the_circle`)
+
+- `shop-shelves`: Herbs in jars, labelled by hand. Candles by colour. A wall of tarot decks.
+- `notice-board`: "Intro to the Craft, Thursdays, 7 pm. Ground first. Always. - T."
+- `shop-bell`: A brass bell. It sounds like your old church's, only smaller.
+- `class-chairs`: Six folding chairs. A rug. A candle in the middle, unlit.
+- `selene-saving`: Selene, cross-legged on a chair, saving the one beside her with her scarf.
+- `scarf-moved`: Selene's scarf, on your old chair. She moves it.
+- `samhain-faces`: The candles. Everyone's faces, gold.
+
+### The park: the Yule circle (`park_yule_circle`)
+
+- `yule-ring`: Twenty people in coats, in a ring in the snow. Children too. A dog.
+- `yule-candles`: A candle in every hand. None of them lit.
+- `yule-dark`: Dark. Breath, in clouds. Somebody's hand, somewhere near yours.
+- `yule-roots`: Snow under your boots. Roots, going down.
+- `yule-stone`: The stone, cold through your glove.
+- `flame-coming`: Hand to hand. Closer. Somebody's face, lit gold.
+
+### The park: Ostara (`park_ostara`)
+
+- `ostara-coven`: A dozen people in the wet grass. Tanya with a basket of paper cups. Somebody's baby in a sling.
+- `ostara-eggs`: Eggs dyed with onion skins, orange-brown, set in a ring.
+- `seed-silent`: A seed, pressed into the dark with one finger.
+
+### The apartment (Axel's year) (`college_apartment_axel`)
+
+- `mirror-axel`: Short hair. A man's shirt, buttoned to the top. Something tight around your chest.
+- `mail-axel`: Envelopes. "Axel." "Axel." Your address. Your last name.
+- `closet-dress`: Men's jeans. Flannel shirts. At the very back, one dress, still in dry-cleaner plastic.
+- `binder-off`: The binder, off. Breath, all the way down.
+- `dress-fits`: The dress, cold from the plastic. It still fits.
+- `floor-long`: The floor. Your back against the bed. A long time.
+- `may-2019`: May 2019. The last thing you remember is the spring of 2018.
+- `mark-upside-down`: Mark, upside down on the couch, the book on his face.
+- `fridge-note-axel`: A note in round letters. "Full moon Tues!! -I". You don't know an I.
+- `couch-cuddle`: Mark's arm. The book on the floor. Durkheim can wait.
+- `page-43`: Page forty. Page forty-one. Mark asleep on your shoulder by page forty-three.
+- `year-photos`: Pride. Christmas Eve, both of you holding candles. Easter, Mark crying a little, laughing at himself.
+- `corkboard-napkin`: Ticket stubs. A party flyer. In the corner, under everything, the napkin with Mira's number.
+- `napkin-tear`: A sound like paper.
+- `napkin-halves`: Two halves. "Mi" on one. "ra" on the other.
+- `napkin-tape`: Tape. Very straight. Very careful. Somebody else's careful hands.
+- `mark-asleep`: Mark, asleep, one arm over his face.
+- `ceiling-axel`: The ceiling. A long time.
+
+### The campus ministry (`campus_ministry`)
+
+- `chapel-door`: A small chapel, through the door. Empty. Quiet. One candle burning.
+- `quiet-prayer-sheet`: "Quiet prayer, Sundays, 4 pm. All welcome, no need to say anything."
+
+### The campus ministry chapel (`campus_ministry_chapel`)
+
+- `chapel-back-row`: The back row. Four people, far apart. Nobody turns around.
+- `quiet-prayer`: Quiet. Not talking to anyone in particular. Not having to.
+- `quiet-sitting`: Quiet. The candle. Nobody wanting anything.
+
+### The campus ministry lawn (`campus_ministry_lawn`)
+
+- `chairs-rows`: Folding chairs in rows, far apart. Masks. Everyone very still.
+- `way-out`: The path to the road, behind the last row. Everyone would turn.
+- `hymn-first-line`: "This little light of mine."
+- `way-out-turn`: The path, behind the last row. Every face would turn.
+- `roots-far`: Grass. Roots. Too far down. Too far away.
+- `stone-mira-door`: The stone. Mira's hand, lifting at the door.
+- `hymn-second-line`: "I'm gonna let it shine."
+
+### The barber (`campus_barber`)
+
+- `barber-mirror`: Hair on the floor. A face in the mirror. Yours.
+
+### The thrift store (`thrift_store`)
+
+- `thrift-flannels`: Green and black. Red and black. All of them, honestly.
+- `thrift-boots`: Brown boots, scuffed at the toes. Somebody else's walking, already in them.
+
+### The campus café (`campus_cafe`)
+
+- `tanya-unread`: "Tanya." A shop with candles in the window. Someone who expects a girl named Maya.
+
+### Pride downtown (`town_pride`)
+
+- `church-banner`: "St. Luke's Episcopal Church: All Are Welcome. We Mean It." A rainbow dove.
+- `pride-crowd`: Glitter. Strollers. A drag queen with a parasol. A grandmother with a sign: "I love my trans grandson."
+- `pride-hand`: His hand. Warm. Nobody looking twice.
+
+### The Methodist church (`methodist_church`)
+
+- `methodist-candles`: A small candle in every hand, a paper ring around each one to catch the wax.
+- `methodist-hymnal`: A Methodist hymnal. Somebody's grandmother's name inside the cover.
+
+### Cassie's house: the guest room (`mark_family_guest_room`)
+
+- `bed-corners`: The bed, made with tight corners, the pillow squared. You don't remember making it.
+
+### St. Luke's Episcopal (`episcopal_church`)
+
+- `episcopal-windows`: Stained glass. A woman at a well. A man with a lamb.
+- `episcopal-board`: "Pride committee meets Tuesdays." "Trans Day of Visibility potluck." "Bring a dish, bring a friend."
+
+### The vigil march (`protest_march`)
+
+- `vigil-candles`: Hundreds of candles in paper cups. Singing, somewhere up ahead.
+- `child-shoulders`: Hand-painted signs. A child on someone's shoulders, holding one bigger than she is.
+- `izzy-candle`: The flame, bending in the wind. Round, careful hands around it.
+- `axel-wax`: Wax on your fingers. A candle you don't remember lighting.
+
+### The queer-affirming church (`queer_affirming_church`)
+
+- `affirming-pastor`: A pastor in a rainbow stole, hugging people at the door like she's known them for years.
+- `affirming-congregation`: Two dads with a toddler. Old women in hats. A boy in a binder and a blazer, beaming.
+- `easter-hand`: His hand, shaking a little. Then not.
+
+### Maya's apartment (`chicago_apartment`)
+
+- `window-l-train`: The L going by, close enough to wave at. Grey lake light.
+- `taped-boxes`: Still taped. Three years in Chicago, and still taped. "MAYA - BOOKS - CHAMPAIGN."
+- `stone-dresser`: On the dresser, by your keys, where you'll see it.
+- `stone-dresser-evening`: By your keys. Where you'll see it.
+- `apartment-quiet`: Sunday afternoon. Adeena at her parents'. The apartment so quiet you can hear the fridge thinking.
+- `stone-quiet`: The stone. The white line, around and around.
+- `tall-candle-sill`: A candle. One, tall, in a glass. Lit. Burning low, like it's been burning all night.
+- `matches-sill`: The box from the kitchen drawer. On the sill. You don't keep matches by the window.
+- `phone-january`: Thursday, January 18. A date that means something, and you can't think what.
+- `candle-left`: You leave it. It seems important to leave it.
+- `candle-out`: A thin line of smoke. Then you feel sorry, and you don't know why.
+- `apartment-quiet-2`: Sunday. Adeena at a class. The fridge, thinking.
+- `friday-hole`: Friday. Friday is a hole in the week now.
+- `renewal-flyer`: "Kabbalat Shabbat with drums! Everyone welcome. Bring your voice." A flyer someone shared.
+- `stone-alone`: On the dresser. The white line.
+- `sill-wax`: The windowsill. Empty. A ring of old wax in the corner.
+
+### The Field Museum: Stanley Field Hall (`field_museum_hall`)
+
+- `maximo`: The titanosaur, neck up into the light, longer than the hall feels. The fourth-graders always gasp. You still do, a little.
+- `tour-group`: Forty fourth-graders in matching yellow shirts. Two teachers counting heads, again.
+- `tour-notes`: Index cards, soft at the corners. "SUE: biggest, most complete T. rex. Tell them about the broken ribs."
+- `adeena-almost-smile`: For a second, almost, something like a smile.
+
+### The Field Museum: the registrar's office (`field_museum_office`)
+
+- `adeena-desk`: Everything square. A mug that says "Registrars Do It By The Number." A small brass candlestick.
+- `fact-sheets`: A binder, colour-coded, labelled in Adeena's tiny capitals. "SUE." "MÁXIMO." "TSAVO LIONS." "ASK ME FIRST."
+- `museum-clock`: The members' preview is at four. It's twenty past one.
+
+### The Field Museum: the new gallery (`field_museum_gallery`)
+
+- `empty-case`: Half-lit cases. A ladder. Labels still in their plastic. Four o'clock, and it isn't ready.
+- `assistants-heads-down`: Heads down. Nobody looks at you. Everybody looks at you.
+- `stone-pocket`: The stone. The white line.
+- `case-done`: The preview is over. Everyone's gone. The clock says ten to six, and the afternoon is just... gone.
+
+### Adeena's apartment (`adeena_apartment`)
+
+- `challah-cloth`: Two loaves under an embroidered cloth. She braided them herself. She doesn't say so. You can tell.
+- `brass-candlesticks`: The small brass one from her desk at work, and its twin. "My grandmother's. Both of them. Don't touch, please."
+- `adeena-bookshelf`: Prayer books with soft spines, cookbooks with softer ones. A photo: a big family, squinting into the sun.
+- `candles-first`: Two flames. Her hands, circling them, three times, drawing the light in.
+- `candles-covered`: Your hands over your eyes. Warm dark. Her voice, beside you.
+- `adeena-candlelight`: She isn't stern now. She's just here.
+- `candles-weekly`: Warm dark. Her voice. Every Friday.
+- `candles-weekly-2`: Warm dark. The summer going. Her voice.
+- `adeena-smile`: Two flames, and Adeena, smiling, which she almost never does anywhere else.
+- `candles-far`: Warm dark. Her voice, very far away. Further every week.
+- `adeena-looking`: She's looking at you. She's been looking at you for a while.
+- `adeena-crying`: The candles. Her face, gold, and wet.
+
+### Congregation Etz Chaim (`synagogue_conservative`)
+
+- `etz-chaim-sign`: "Congregation Etz Chaim. Tree of Life. All are welcome." Under it, a man at the door who nods at Adeena by name.
+- `siddur`: Hebrew on the right-hand page, English on the left. You read from the back to the front.
+- `ark-ner-tamid`: A curtain, deep blue, with gold letters. A small lamp above it that never goes out.
+- `shul-families`: Families together. A woman in a tallit reading from the scroll. A baby, loudly, and nobody minding.
+
+### Congregation Etz Chaim: the social hall (`synagogue_social_hall`)
+
+- `keruv-circle`: Couples, mostly. A man in a kippah holding hands with a man who keeps checking his phone. Two women, one very pregnant.
+- `rabbi-abe`: Seventy-eight, and moving like he's late for something wonderful. Sneakers. A tie with little fish on it.
+
+### Ruth's house (`adeena_parents_house`)
+
+- `seder-plate`: An egg, a bone, bitter herbs, something brown and sweet, parsley, salt water. Every one of them a story.
+
+### Hannah's living room (`havurah_living_room`)
+
+- `havurah-books`: A stack of prayer books someone made themselves, photocopied, stapled, full of notes in the margins.
+- `havurah-circle`: Cushions, a sofa, a cat that thinks it's leading. Nobody in charge, and everybody listening.
+
+### The LGBTQ synagogue (`lgbtq_synagogue`)
+
+- `pride-shabbat-flags`: A rainbow flag beside the ark. A trans flag beside that. Nobody explaining why.
+- `old-couple-kippot`: Two old men in matching kippot, holding hands like they've done it for fifty years. They have.
+- `adeena-hand`: Her hand. She squeezes, once, hard.
+
+### The Chabad house (`chabad_house`)
+
+- `chabad-class`: Adeena at a long table, leaning in, asking something, the rebbetzin laughing and answering. You haven't seen her lean in like that.
+- `rebbe-portrait`: An old man with a white beard, in a frame by the door. Kind eyes. Everyone here seems to know him.
+- `walk-home-chabad`: She talks the whole way home. You listen to most of it.
+
+### The Renewal Shabbat (`renewal_shabbat`)
+
+- `renewal-drums`: Hand drums, a guitar, a man with a tambourine and his eyes shut. Somebody's grandma, dancing.
+- `niggun-circle`: Sixty people singing a melody with no words, over and over, until it sounds like one voice.
+- `renewal-candles`: Two candles on a little table. A woman lighting them, and covering her eyes.
+- `stone-drums`: The stone. The white line. The drums, coming back.
+- `renewal-outside`: Cold air. The singing, through the wall.
+
+### The Reform temple (`reform_temple`)
+
+- `reform-bimah`: A rabbi in a flowered tallit, a cantor with a guitar. Half the prayers in English.
+- `mourners-names`: "Those we remember this week." Someone reads the names aloud. People stand for their own.
+
+### The Sigd celebration (`sigd_community_hall`)
+
+- `kes-umbrella`: An old man in white, a white turban, a bright umbrella held over him like a little sky. He reads in a language you've never heard.
+- `orit`: Wrapped in cloth. Tigist says it's the Orit, the Torah in Ge'ez. "My grandmother kissed it every year. So now I do."
+- `sigd-families`: White shawls with coloured borders. Children asleep on laps. Teenagers filming on phones, and singing anyway.
+
+### Effie's house (`effie_house`)
+
+- `shabbat-timers`: The lamps on timers. Nobody touches a switch from Friday night to Saturday night. Rest, Effie says, from making things happen.
+- `rivka-children`: Four of them, all talking at once, all in their Shabbat clothes, one with jam on hers.
+
+### The lakefront path (`lakefront_path`)
+
+- `lake-grey`: Grey to the edge of the world. Waves folding over and over on the rocks.
+- `abe-windbreaker`: Sneakers. A windbreaker. A tie with little fish on it, even here.
+
