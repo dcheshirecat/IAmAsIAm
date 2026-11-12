@@ -401,23 +401,22 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Chicago and comes to catch up**; she tells them what she overheard (Sunday 2) and **then they switch to Nina at home** (confirmed).
   `Story/Chapters/ch4_part1..4.ink`: 1 The day program (Sept: name tags, TIPP, the quiet room's qibla arrow, Noor; Maya surfaces),
   2 Reneé (Oct: an Andersonville café, queer and ex-religious, the overheard scene as a `# memory:`, Nina's blanket fort and "MIRA
-  TRIED. -N"), 3 Remembrance (Dec: Zahra (placeholder, Shia) and her turbah; Idris's (placeholder, Sufi) Thursday dhikr, eyes open;
+  TRIED. -N"), 3 Remembrance (Dec: Sawsan (placeholder, Shia) and her turbah; Fadi's (placeholder, Sufi) Thursday dhikr, eyes open;
   Maya surfaces), 4 Iftar (Ramadan 2027: an open community iftar; the last day; Angie suggests SystemLog: `gain_app` + first notes
   from Heather and Izzy; Maya reads them; `# chapter-end`). 61 voiced lines. **Chapter 4 unlocks nobody** (owner).
 - 2026-11-12: **Chapter 4 Drive:** Story Drafts → `06 Chapter 4 - Islam (title to come)` (1ENhOVuU74tWb4yjEgE0pkONOhh1k3EZ5): Part 1
   (1OJV4fbW3j_rDl-PKaQfzPkJbvnPU03hVbGcZmDC-N5g), Part 2 (189farIxOpqUkSvKHCVQwZbmC-YIkYSjJn6VCOyeULuM), Part 3
   (1tA8e2jyyekOPR1JDIwXf91OP4lGZHYNIl9jTftkPrYA), Part 4 (1CjppQS0syQLXUlRhv404h93vVOZLFxAEG3KCMJc8HME); Sheet "06 Chapter 4 - script
-  list (draft)" (1JulajdX19QUM23Zx6VClkKTZ5gWUfVzoSIj8jayapek, 61 lines). Zahra and Idris: still placeholder names (owner asked who they are).
+  list (draft)" (1JulajdX19QUM23Zx6VClkKTZ5gWUfVzoSIj8jayapek, 61 lines). **Owner renamed them: Sawsan (`sawsan`, was Zahra) and Fadi (`fadi`, was Idris).**
 - 2026-11-12: **Chapter 5, Hinduism:** the owner asked for research and options for Hindu leaders: `docs/Chapter5_HinduismResearch.md`.
 - 2026-11-12: **Chapter 5, Hinduism (owner):** **Maya moves to Seattle** at this point in the game; the guide is **a temple priest**; it
-  **starts as Maya, now more grounded but still experiencing "visits" from Heather**. Claude's guesses (to confirm): she moves for a job
-  as an educator at the **Burke Museum**; a South Indian temple on the Eastside (fictional; Venkateswara with Shiva, the Goddess and
+  **starts as Maya, now more grounded but still experiencing "visits" from Heather**. Owner: she moves **for other reasons (ask which)** and starts working at the **Burke Museum almost immediately** (an educator: Claude's guess); a South Indian temple on the Eastside (fictional; Venkateswara with Shiva, the Goddess and
   Ganesha shrines); the priest **"Pandit Raghavan"** (`pandit_raghavan`, placeholder name, ~55, he/him; priestly family, Vedic school at
   eight; "Panditji"); **Priya** (colleague) and **Priya's mother** (placeholders). `Story/Chapters/ch5_part1..3.ink`: 1 Rain (Apr 2027:
   boxes labelled by everyone and unpacked this time; the Burke's whale; Rama Navami, the bell, taking the aarti light, prasad), 2 Every
   day (summer: Saturday garlands, Heather shares the hands; the deity's day; how Panditji became a priest), 3 Lamps (Oct-Nov, 29:
   Navaratri garba; Diwali diyas: Heather fronts to light them with Maya co-conscious and aware, the first visit she remembers;
-  SystemLog note from Maya; `# chapter-end`). 30 voiced lines. Unlock: none for now (ask). Drive: Story Drafts → `07 Chapter 5 - Hinduism (title to come)`
+  SystemLog note from Maya; `# chapter-end`). 30 voiced lines. **Chapter 5 unlocks nobody** (owner). Drive: Story Drafts → `07 Chapter 5 - Hinduism (title to come)`
   (1H6O6T9nvN33G7UT1EtBwNfjHQHSF_B4D): Part 1 (1rrYR8B7SQa3n0SZJDOl3PL359iwhFT8qe-VugvPmL9s), Part 2 (1s1uHoq1ARNPs7fXbbMwOBu0xDYV5qtwhfcn-SlecUC8),
   Part 3 (15ajxIGZzvuIA7irqywxhZ8ThwLaayc7vSQP2ZFmwFEg); Sheet "07 Chapter 5 - script list (draft)" (1Uz4IaV8OvChmlzlcP3ULr8W6Cdfe2v9ubXybCmgCMxI).
 ## Open (ask the owner)

@@ -59,10 +59,10 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 49 | `boudha_monastery` | The monastery behind the guest house | kathmandu | Chapter 3: Buddhism (ch3_part3) | Pasang Lhamo, Heather (the body, 27) |
 | 50 | `lumbini_sacred_garden` | Lumbini: the Sacred Garden | lumbini | Chapter 3: Buddhism (ch3_part4) | Maya (the body, 27) |
 | 51 | `day_ward_group_room` | The day program: the group room | chicago | Chapter 4: Islam (ch4_part1) | Izzy (the body, 28), Chaplain Amal |
-| 52 | `day_ward_quiet_room` | The day program: the quiet room | chicago | Chapter 4: Islam (ch4_part1) | Chaplain Amal, Izzy (the body, 28), Maya (the body, 28), Zahra |
+| 52 | `day_ward_quiet_room` | The day program: the quiet room | chicago | Chapter 4: Islam (ch4_part1) | Chaplain Amal, Izzy (the body, 28), Maya (the body, 28), Sawsan |
 | 53 | `andersonville_cafe` | A café in Andersonville | chicago | Chapter 4: Islam (ch4_part2) | Reneé, Izzy (the body, 28) |
-| 54 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Idris, Maya (the body, 28) |
-| 55 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Zahra, Chaplain Amal |
+| 54 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Fadi, Maya (the body, 28) |
+| 55 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Sawsan, Chaplain Amal |
 | 56 | `seattle_apartment` | Maya's apartment, Seattle | seattle | Chapter 5: Hinduism (ch5_part1) | Maya (the body, 28) |
 | 57 | `burke_museum_hall` | The Burke Museum | seattle | Chapter 5: Hinduism (ch5_part1) | Priya, Maya (the body, 28) |
 | 58 | `eastside_mandir_hall` | The temple on the Eastside | seattle | Chapter 5: Hinduism (ch5_part1) | Pandit Raghavan, Maya (the body, 28), Maya (the body, 29) |
@@ -108,8 +108,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 30 | Chaplain Amal | `chaplain_amal` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall, day_ward_group_room |
 | 31 | Reneé | `renee_carter` | person | Chapter 4: Islam | - | andersonville_cafe |
 | 32 | Nina | `nina` | system member | Chapter 4: Islam | 28 | chicago_apartment |
-| 33 | Zahra | `zahra` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall |
-| 34 | Idris | `idris` | person | Chapter 4: Islam | - | sufi_dhikr_room |
+| 33 | Sawsan | `sawsan` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall |
+| 34 | Fadi | `fadi` | person | Chapter 4: Islam | - | sufi_dhikr_room |
 | 35 | Priya | `priya` | person | Chapter 5: Hinduism | - | burke_museum_hall, garba_community_hall |
 | 36 | Pandit Raghavan | `pandit_raghavan` | person | Chapter 5: Hinduism | - | eastside_mandir_hall |
 | 37 | Priya's mother | `priyas_mother` | person | Chapter 5: Hinduism | - | eastside_mandir_kitchen, priya_family_house |
@@ -608,7 +608,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `group-circle`: Twelve chairs, a box of tissues on every third one, a woman knitting very fast, a young man asleep in his hoodie.
 - `tipp-board`: "TIPP: Temperature. Intense exercise. Paced breathing. Paired muscle relaxation." Someone has drawn a little ice cube with a face.
 - `last-circle`: The same twelve chairs. You know everyone's names now, and which one is the knitting woman's.
-- `goodbye-card`: A card signed by the group. Zahra has drawn a tiny turbah. Someone has drawn an ice cube with a face.
+- `goodbye-card`: A card signed by the group. Sawsan has drawn a tiny turbah. Someone has drawn an ice cube with a face.
 
 ### The day program: the quiet room (`day_ward_quiet_room`)
 
@@ -616,7 +616,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `interfaith-shelf`: Prayer rugs, folded. A Quran on a stand, a Bible, a Tanakh, a little brass Buddha, a box of tissues. Room for everyone.
 - `car-park-tree`: The hospital car park, and one tree going orange. Someone has put a bird feeder out.
 - `name-tag-maya`: "IZZY (Maya)". In your writing. Round letters. Not yours.
-- `zahra-praying`: Zahra, from group, on a prayer rug under the qibla arrow. Standing, bowing, kneeling, her forehead resting on a small round tablet of clay.
+- `sawsan-praying`: Sawsan, from group, on a prayer rug under the qibla arrow. Standing, bowing, kneeling, her forehead resting on a small round tablet of clay.
 - `car-park-winter`: The tree in the car park is bare now. The bird feeder is busier.
 
 ### A café in Andersonville (`andersonville_cafe`)
@@ -631,10 +631,10 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 ### Idris's Thursday dhikr (`sufi_dhikr_room`)
 
 - `dhikr-circle`: Twenty people on cushions, knees almost touching. Old men, young women, a teenager in headphones around her neck.
-- `idris`: White beard, a knitted cap, a string of prayer beads moving through his fingers. He smiles at you like he's been expecting you.
+- `fadi`: White beard, a knitted cap, a string of prayer beads moving through his fingers. He smiles at you like he's been expecting you.
 - `shoes-row`: Forty shoes in a row by the door. Yours at the end, a little apart.
 - `dhikr-chant`: La ilaha illallah. Over and over, low, together, like the sea.
-- `dhikr-eyes-open`: Eyes open. The stone. Izzy counting the beads going round Idris's fingers: thirty-one, thirty-two. You stay.
+- `dhikr-eyes-open`: Eyes open. The stone. Izzy counting the beads going round Fadi's fingers: thirty-one, thirty-two. You stay.
 - `dhikr-eyes-closed`: Dark, and the sound, and further... Heather opens your eyes. Gently. Not tonight.
 - `maya-shoes`: Your shoes. The last pair. Your hands, tying them. Yours, for a minute.
 
@@ -646,7 +646,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `adhan-iftar`: The call to prayer, from the front of the hall, rising and falling. Three hundred people breaking their fast at once.
 - `date-eaten`: Sweet, sticky, very sweet. Someone passes you water before you ask.
 - `rows-praying`: Rows, shoulder to shoulder, everyone moving together: standing, bowing, kneeling, foreheads to the floor. Then stillness.
-- `guard-samosas`: Zahra's mom hands you a serving spoon and a look that means: guard the samosas. You guard them with your life.
+- `guard-samosas`: Sawsan's mom hands you a serving spoon and a look that means: guard the samosas. You guard them with your life.
 
 ### Maya's apartment, Seattle (`seattle_apartment`)
 

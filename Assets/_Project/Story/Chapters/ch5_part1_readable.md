@@ -6,7 +6,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **My guesses, for you to check:**
 
-- Why Seattle: a job as an educator at the Burke Museum (a real natural history museum, at the University of Washington).
+- Owner: she moves to Seattle for other reasons (to ask), and starts working at the Burke Museum (a real natural history museum, at the University of Washington) almost immediately, as an educator (Claude's guess for the job).
 - The temple: a South Indian temple on the Eastside (fictional, like the real temples in Bothell and Bellevue), to Sri Venkateswara (Vishnu), with shrines to Shiva, the Goddess and Ganesha.
 - The priest: "Pandit Raghavan" (placeholder name; about 55, he/him), from a priestly family in South India, trained from boyhood at a Vedic school. People call him Panditji.
 - Heather's visits: a voice inside, a note in SystemLog, sometimes sharing time.

@@ -7,7 +7,7 @@
 //  My guesses, for the owner to correct:
 //   - Amal invites them to a mosque's open community iftar in Ramadan: everyone waits for sunset, breaks the fast with dates and
 //     water at the call to prayer, the community prays (guests wait at the back), and then dinner, long and loud.
-//   - Their last day at the day program: Zahra, Amal, a goodbye.
+//   - Their last day at the day program: Sawsan, Amal, a goodbye.
 //   - Angie, in her office: "a notebook for all of you, on your phone". The first notes, from Heather and Izzy, and Maya reading them.
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -15,7 +15,7 @@
 ~ set_age(28)
 # cw: religious-content
 ~ co_conscious("heather", true)
-~ text_from("zahra", "Ramadan Mubarak!! Amal says you're coming to the iftar. Sit with me. My mom made too much food. She always makes too much food.")
+~ text_from("sawsan", "Ramadan Mubarak!! Amal says you're coming to the iftar. Sit with me. My mom made too much food. She always makes too much food.")
 -> iftar
 
 = iftar
@@ -33,9 +33,9 @@
 + {hall < 4} [Look: The clock]
     Sunset: 5:41. It's 5:38. Three hundred people watching the same minute hand. # look: iftar-clock
     -> hall
-* {hall >= 1} [Talk: Zahra]
+* {hall >= 1} [Talk: Sawsan]
 -
-Zahra: When you hear the call, you eat the date. That's it. That's the whole secret. # vo: ch4-islam_zahra_0049
+Sawsan: When you hear the call, you eat the date. That's it. That's the whole secret. # vo: ch4-islam_sawsan_0049
 The call to prayer, from the front of the hall, rising and falling. Three hundred people breaking their fast at once. # look: adhan-iftar
 * [Use: The date]
     ~ record_choice("ch4.p4.iftar", "date", "At the iftar, you ate the date at the call to prayer, with everyone.")
@@ -46,8 +46,8 @@ Chaplain Amal: Now they pray, and then they eat everything. Guests can wait here
     ~ record_choice("ch4.p4.prayer", "watched", "At the iftar, you watched the prayer from the back of the hall, in rows, shoulder to shoulder.")
     Rows, shoulder to shoulder, everyone moving together: standing, bowing, kneeling, foreheads to the floor. Then stillness. # look: rows-praying
 * [Wait (stay at the table)]
-    ~ record_choice("ch4.p4.prayer", "table", "At the iftar, you stayed at the table and helped Zahra's mom guard the samosas.")
-    Zahra's mom hands you a serving spoon and a look that means: guard the samosas. You guard them with your life. # look: guard-samosas
+    ~ record_choice("ch4.p4.prayer", "table", "At the iftar, you stayed at the table and helped Sawsan's mom guard the samosas.")
+    Sawsan's mom hands you a serving spoon and a look that means: guard the samosas. You guard them with your life. # look: guard-samosas
 -
 Heather (inside): Everyone eating together. Nobody alone. That's the part I needed. # vo: ch4-islam_heather-inside_0051
 ~ nudge(-0.25)
@@ -62,7 +62,7 @@ Heather (inside): Everyone eating together. Nobody alone. That's the part I need
     The same twelve chairs. You know everyone's names now, and which one is the knitting woman's. # look: last-circle
     -> goodbyes
 + {goodbyes < 3} [Look: The card]
-    A card signed by the group. Zahra has drawn a tiny turbah. Someone has drawn an ice cube with a face. # look: goodbye-card
+    A card signed by the group. Sawsan has drawn a tiny turbah. Someone has drawn an ice cube with a face. # look: goodbye-card
     -> goodbyes
 * {goodbyes >= 1} [Talk: Chaplain Amal]
 -

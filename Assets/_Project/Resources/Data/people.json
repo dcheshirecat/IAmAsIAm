@@ -427,9 +427,9 @@
       "age": "28"
     },
     {
-      "id": "zahra",
-      "name": "Zahra",
-      "role": "Another patient at the day program (placeholder name; 30s, she/her): Shia (Twelver), Iraqi American. Prays on a turbah; invites them to iftar.",
+      "id": "sawsan",
+      "name": "Sawsan",
+      "role": "Another patient at the day program (owner's name; 30s, she/her): Shia (Twelver), Iraqi American. Prays on a turbah; invites them to iftar.",
       "tradition": "islam",
       "description": "",
       "chapterIds": [
@@ -439,9 +439,9 @@
       "pronouns": "she/her"
     },
     {
-      "id": "idris",
-      "name": "Idris",
-      "role": "A Sufi teacher who leads a Thursday-night dhikr, Noor's friend (placeholder name; 60s, he/him).",
+      "id": "fadi",
+      "name": "Fadi",
+      "role": "A Sufi teacher who leads a Thursday-night dhikr, Noor's friend (owner's name; 60s, he/him).",
       "tradition": "islam",
       "description": "",
       "chapterIds": [

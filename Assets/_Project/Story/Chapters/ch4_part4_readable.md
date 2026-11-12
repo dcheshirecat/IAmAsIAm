@@ -7,10 +7,10 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **My guesses, for you to check:**
 
 - Amal invites them to a mosque's open community iftar in Ramadan: everyone waits for sunset, breaks the fast with dates and water at the call to prayer, the community prays (guests wait at the back), and then dinner, long and loud.
-- Their last day at the day program: Zahra, Amal, a goodbye.
+- Their last day at the day program: Sawsan, Amal, a goodbye.
 - Angie, in her office: "a notebook for all of you, on your phone". The first notes, from Heather and Izzy, and Maya reading them.
 
-📱 **Text from Zahra:** Ramadan Mubarak!! Amal says you're coming to the iftar. Sit with me. My mom made too much food. She always makes too much food.
+📱 **Text from Sawsan:** Ramadan Mubarak!! Amal says you're coming to the iftar. Sit with me. My mom made too much food. She always makes too much food.
 
 ## Iftar
 
@@ -24,9 +24,9 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
     - Kids running between the tables with plates of samosas they're not allowed to touch yet. A grandmother catches one, laughing.
 - **Look: The clock**
     - **Sunset:** 5:41. It's 5:38. Three hundred people watching the same minute hand.
-- **Talk: Zahra**
+- **Talk: Sawsan**
 
-**Zahra:** When you hear the call, you eat the date. That's it. That's the whole secret.
+**Sawsan:** When you hear the call, you eat the date. That's it. That's the whole secret.
 
 The call to prayer, from the front of the hall, rising and falling. Three hundred people breaking their fast at once.
 
@@ -42,7 +42,7 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
 - **Wait (watch from the back)**
     - Rows, shoulder to shoulder, everyone moving together: standing, bowing, kneeling, foreheads to the floor. Then stillness.
 - **Wait (stay at the table)**
-    - Zahra's mom hands you a serving spoon and a look that means: guard the samosas. You guard them with your life.
+    - Sawsan's mom hands you a serving spoon and a look that means: guard the samosas. You guard them with your life.
 
 **Heather (inside):** Everyone eating together. Nobody alone. That's the part I needed.
 
@@ -55,7 +55,7 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
 - **Look: The circle of chairs**
     - The same twelve chairs. You know everyone's names now, and which one is the knitting woman's.
 - **Look: The card**
-    - A card signed by the group. Zahra has drawn a tiny turbah. Someone has drawn an ice cube with a face.
+    - A card signed by the group. Sawsan has drawn a tiny turbah. Someone has drawn an ice cube with a face.
 - **Talk: Chaplain Amal**
 
 **Chaplain Amal:** You did the work here. All of you. I'll pray for you, if that's okay. For all of you.
