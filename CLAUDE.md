@@ -198,7 +198,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   starts **taking it seriously**. **Chapter 1 ends with graduation, as Maya.** Then **Chapter 1.5** is a **flashback, never explained,
   just played**: the first time, it **must be played as Axel**, whoever was chosen; it can be how Axel is unlocked.
   **Guide: Gracie** (25, she/her), a **young nun still in training**, very bright, peppy and excited about her faith, never harmful.
-  **Christian streams shown:** Catholic (Jacob, Gracie), mainline (Episcopal: Mark; Methodist), queer-affirming (Orthodox: Chapter 13 only). **Not** an evangelical
+  **Christian streams shown:** Catholic (Jacob, Gracie), mainline (Episcopal: Mark; Methodist), queer-affirming. Orthodox: Chapter 13 only. **Not** an evangelical
   megachurch (owner: definite no); **no Black church** unless the research is thorough enough (Claude: not without sourced, consented
   testimony). **Tanya** texts and emails all chapter: check-ins, events, holidays, readings, coven meetings, meals. **Axel ignores all of it.**
 - 2026-11-12: **Timeline (owner):** the **Yule circle is December 2017** (Maya 19, sophomore year), so Maya and Tanya build a solid
