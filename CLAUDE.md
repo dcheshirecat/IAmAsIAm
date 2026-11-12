@@ -217,6 +217,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   any chapter, but **only to the host or an unlocked alter** (`ChapterRuns.CanSwitchTo`, used by `TriggerSystem.CanSwitchTo` and
   `# maybe-switch`; e.g. Heather can't come forward in the Prelude). Story-scripted `# switch:` happens as written.
   `ChapterRuns.Complete(unlocksMemberId)`, `StartersFor(id, startingMemberId)`. Later chapters' starters/unlocks: ask the owner.
+  **Unlocks happen only at the END of the whole chapter** (owner): a chapter's parts play in order as ONE run; only the last part has
+  `# chapter-end` (the recap, then the unlock). A scripted switch earlier (e.g. Izzy at Yule) doesn't unlock anyone by itself.
+  **Starters and unlocks are set chapter by chapter** with the owner; **not every chapter unlocks a new alter** (leave `unlocksMemberId` empty).
 - 2026-11-12: **Chapter 1 beats (owner):** sophomore spring after Yule = **Thursday classes with Tanya, first sabbats, a first reading**;
   the sign Axel is coming is **more and more lost time**. The **black screen says only "Junior year." then "May 2019."**
   **Coming back:** Maya finds her body **"dressed up as a man"**; she's **scared and confused**. The breakup with Mark isn't played:
