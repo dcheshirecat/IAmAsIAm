@@ -349,6 +349,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   blue "you are here" dot, places visited, a red pin and a blue route to the next place, Go / Not yet; also the phone's **Maps
   tab**, just to look). **Prologue and Prelude are door to door** (`doorToDoor: true`). **The Field Museum is modelled as the real
   place** (from reference photos).
+- 2026-11-12: **Chapter 3 trip (owner):** **Nepal, three months, alone**; the guide is a **temple-stay host** (Claude researched who
+  that usually is: a lay family running a guest house beside a monastery around Boudhanath; names in
+  `docs/Chapter3_BuddhismResearch.md`; the owner picks); **the meditation goes wrong first (a long silent sit), then helps once
+  adapted**. The owner didn't remember "Reverend Mori" (the Shin minister in Part 1's Chicago temple scene): asked whether to keep,
+  change or cut that scene.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

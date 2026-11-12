@@ -66,3 +66,42 @@ country after the diagnosis). Nothing here is canon until the owner decides.
 - Zen Buddhist Temple of Chicago (Pluralism Project / W&M): https://americanbuddhism.pages.wm.edu/?p=122
 - Wat Dhammaram: https://dhammaramusa.blogspot.com
 - Abhayagiri, monastery etiquette (Theravada rules for visitors): https://www.abhayagiri.org/visiting/monastery-etiquette
+
+## Owner's choice (2026-11-12): Nepal, three months, alone, with a temple-stay host
+The owner chose **Nepal**, for **three months, alone**. The guide is **a temple-stay host**, and the meditation **goes wrong
+first, then helps once it's adapted**.
+
+### Who hosts a "temple stay" in Nepal
+- **Monasteries rarely keep long-term lay guests.** Kopan Monastery (Gelug, FPMT, above Boudhanath; the first in Kathmandu to
+  teach foreigners, in the 1970s) runs courses from a week to a month (the November course), and private stays only in set
+  periods. It says it doesn't take long-term guests.
+- **The usual long stay is a family-run guest house beside a monastery**, especially around the Boudhanath stupa. For example,
+  a lama's family runs a guest house behind a monastery, living there with long-term guests who study Buddhism, meditation or
+  yoga. Some guest houses are run by the monastery itself, with a monk as guest master.
+- **So the host is a lay householder:** often a Sherpa or Tamang family from the mountains (Tibetan Buddhist), or a Newar family
+  in the Kathmandu valley (Newar Buddhism, with householder priests from the Bajracharya and Shakya families).
+
+### Names (for fictional people)
+- **Sherpa** names usually come from the day of the week a person was born: Nima (Sunday), Dawa (Monday), Mingma (Tuesday),
+  Lhakpa (Wednesday), Phurba (Thursday), Pasang (Friday), Pemba (Saturday). They're used by women and men, often with a second
+  name, for example Lhamo, Dolma or Doma for women. The surname is Sherpa.
+- **Tamang**: the surname is Tamang; given names are often Tibetan-rooted.
+- **Newar Buddhist**: the surnames Shakya and Bajracharya; Nepali given names (e.g. Sujata, Rajani, Bijaya).
+- Avoid using a real guest house or a real person's full name.
+
+### A three-month shape this suggests (for the owner to correct)
+1. A family guest house behind a monastery in Boudha. The host teaches her the rhythm: circling the stupa (kora) at dawn,
+   butter lamps, prayer wheels, momos.
+2. A long silent course: a 10-day Vipassana course at Dharma Shringa (Budhanilkantha, silence until day 10). This is where it
+   goes wrong: she dissociates badly. She can talk to the teachers when necessary, and the host comes to get her.
+3. Adapted practice with the host and Angie (on video): eyes open, short sits, walking the kora, prostrations or prayer wheels
+   instead of long stillness, a grounding object. This is where it starts to help.
+4. Perhaps Lumbini (the Buddha's birthplace, with monasteries from many countries) or Namo Buddha, before going home.
+
+### Sources
+- Kopan Monastery, visitor guide and FAQ: https://kopanmonastery.com/visitor-guide , https://kopanmonastery.com/faq
+- Dragon Guest House, Boudha (family-run, long-term guests): https://muktinath.org/travel/dragon.htm
+- Monasteries around Boudhanath: https://www.bestheritagetour.com/blog/monasteries-around-boudhanath-stupa
+- Dharma Shringa course schedule: https://schedule.vridhamma.org/courses/shringa
+- Sherpa names (Himalayan Club): https://www.himalayanclub.org/hj/20/19/suggested-explanations-of-sheepa-names/
+- Sherpa day names: https://sherpalegend.com/?p=848
