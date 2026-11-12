@@ -217,6 +217,22 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   any chapter, but **only to the host or an unlocked alter** (`ChapterRuns.CanSwitchTo`, used by `TriggerSystem.CanSwitchTo` and
   `# maybe-switch`; e.g. Heather can't come forward in the Prelude). Story-scripted `# switch:` happens as written.
   `ChapterRuns.Complete(unlocksMemberId)`, `StartersFor(id, startingMemberId)`. Later chapters' starters/unlocks: ask the owner.
+- 2026-11-12: **Chapter 1 beats (owner):** sophomore spring after Yule = **Thursday classes with Tanya, first sabbats, a first reading**;
+  the sign Axel is coming is **more and more lost time**. The **black screen says only "Junior year." then "May 2019."**
+  **Coming back:** Maya finds her body **"dressed up as a man"**; she's **scared and confused**. The breakup with Mark isn't played:
+  it's **explained during senior year**. **Senior year: everyone abandons her except Tanya and Selene**, who understand something was
+  wrong and **welcome her back into the coven**. **Gracie:** Maya meets her at a **donation drive**, and comes to like **praying quietly on
+  Sundays**. The Methodist and queer-affirming churches are seen **as Axel in Chapter 1.5, on a holiday off campus with Mark**; Mark's
+  Episcopal church **only in 1.5**. **COVID: alone in her dorm; a Zoom graduation where no one speaks to her**, quiet and lonely.
+  **The end:** a prayer service at **Gracie's ministry**; they sing **a hymn Maya loved as a child**, she **can't leave without a major
+  disruption**, is too scared to, starts dissociating; **the screen fades to black and Jacob's lines are spoken as a light appears**.
+  Drafts `Story/Drafts/draft_ch1_part1..4.ink`. Claude's guess: the hymn is "This Little Light of Mine" (the prologue's title).
+  Parts: 1 Thursdays (spring 2018, 19: class, first reading, Ostara, growing lost time, black screen), 2 Coming back (May 2019, 20),
+  3 Senior year (fall 2019, 21: Mark's email, abandoned, the coat drive and Gracie, Samhain with Tanya and Selene, quiet Sundays),
+  4 Alone (2020: lockdown, Zoom graduation, the prayer service, Jacob). Drive: Story Drafts → `02 Chapter 1 - Christianity (title to
+  come)` (1ZNBBCoAvZZQi2bK9kD3NFSC_ciUCQwWg): Part 1 (14YKbWiYuOV6oaFrNsicZuZO_0DDH2QhGpaP4zejpgBs), Part 2
+  (1i_4R0_4pg60TRjLSlRJpr7VIog5wWqr_7CvHtAHuQmY), Part 3 (18Bvs_-r1VFrE_X6zwsnOgjvkAv6MmvdYkV_6e45OGnc), Part 4
+  (1N1al1-P8tWZ--L6ucxfvpgFgxxSeD4RTTlrOeqxisZI). Script Sheet "02 Chapter 1 - script list (draft)" (1cSvXfcf2TbkcNSMfnW_Fii-ztjv9kVEf_7LjRMhZ-p4, 33 lines).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
