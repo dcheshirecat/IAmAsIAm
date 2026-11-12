@@ -406,8 +406,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   from Heather and Izzy; Maya reads them; `# chapter-end`). 61 voiced lines. **Chapter 4 unlocks nobody** (owner).
 - 2026-11-12: **Chapter 4 Drive:** Story Drafts → `06 Chapter 4 - Islam (title to come)` (1ENhOVuU74tWb4yjEgE0pkONOhh1k3EZ5): Part 1
   (1OJV4fbW3j_rDl-PKaQfzPkJbvnPU03hVbGcZmDC-N5g), Part 2 (189farIxOpqUkSvKHCVQwZbmC-YIkYSjJn6VCOyeULuM), Part 3
-  (1HCJjNZ1YN-4JuV2d1KN2O1gJOlypMX88Nq3iRa8Lmtk), Part 4 (1hFmg8dOX0MfVU4nRHj5Lz4_14KTAN047tGWH_3xrQCo); Sheet "06 Chapter 4 - script
-  list (draft)" (1UpkcsgNIiyTqvuI-ZuzcFOf_dyoiOFhAUUG8lmb7HQ4, 61 lines). **Owner renamed them: Sawsan (`sawsan`, was Zahra) and Fadi (`fadi`, was Idris).**
+  (1oGGlPxC8wyvJmhgTyxJDhf9HGocHIngL1x6VPK_4qUM), Part 4 (1Xkr74NwKIZOraKTQgLnCpJrd9QRfntiu4dFYpgzFJpU); Sheet "06 Chapter 4 - script
+  list (draft)" (1E_JETrjM7YPJk9SpWG4KLA-452bhG5FClUpInibA-Kc, 61 lines). **Owner renamed them: Sawsan (`sawsan`, was Zahra) and Fadi (`fadi`, was Idris).**
 - 2026-11-12: **Chapter 5, Hinduism:** the owner asked for research and options for Hindu leaders: `docs/Chapter5_HinduismResearch.md`.
 - 2026-11-12: **Chapter 5, Hinduism (owner):** **Maya moves to Seattle** at this point in the game; the guide is **a temple priest**; it
   **starts as Maya, now more grounded but still experiencing "visits" from Heather**. Owner: she moves **for other reasons (ask which)** and starts working at the **Burke Museum almost immediately** (an educator: Claude's guess); a South Indian temple on the Eastside (fictional; Venkateswara with Shiva, the Goddess and
