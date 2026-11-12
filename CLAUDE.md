@@ -110,9 +110,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Prologue: `Story/Chapters/prologue_sunday1..4.ink` (+ `_readable.md`), in the game (owner's Doc edits come first).
 - 2026-11-12: **The owner edits drafts in Google Drive**: "Game Art - I Am As I Am" → **Story Drafts** (id 17BRsPRw6Ql9tObnHT4Cr0Nnb1i9LT-6q)
   → `00 Prologue - This Little Light` (id 1RPF_IaN8Yvj-yEwbJ15OuAYeh05nzL_a): explore-first Docs "Sunday 1 - Maya, 5 (2003)"
-  (1GRTItageeHxbWhCaz083ZYb6Q-XDI3eAE0R81aEsbSE), "Sunday 2 - Maya, 8 (2006)" (1GgcPAhX8pfzqdyFYT-Z6BZeIrEboLxMNijcsgWZcYeo),
-  "Sunday 3 - Maya, 11 (2009)" (14WEH8Ty-TPJHln1RnyrgD_JzRzDl46sLuHPmX2OuQ00), "Sunday 4 - Maya, 15 (2013)"
-  (1Not5l1n7x8am0pGpSTU2Z-n0kUxyP69nHxwaiO10IXo); the first, narrated versions are in its "Old versions (narrated)" folder.
+  (1FMUIuC5gdCKDWoFo8aFCsxniisjik_HkWVphOyU3l_o), "Sunday 2 - Maya, 8 (2006)" (1ybfCNyDbTPqUMCA2FipWKYQiHJs3msgZtA4cb14542U),
+  "Sunday 3 - Maya, 11 (2009)" (1OWl3DMPiu85Vl7egkCUk-lUGQi-vif5vpAGK-XsF-Ag), "Sunday 4 - Maya, 15 (2013)"
+  (1m-oNtCI8_zgiqhflABwwCrRr3jCGBl4-INxycTxiphQ); the first, narrated versions are in its "Old versions (narrated)" folder.
   **The Docs are the source once the owner edits them**: read the Doc (with
   comments) and carry the changes back into the Ink. Docs are made from Ink with `tools/StoryDocs/ink_to_doc.py`.
 
@@ -128,7 +128,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Every spoken line gets a permanent `# vo: <chapter>_<speaker>_<0000>` tag (= `vo_<...>.mp3`) from
   `tools/StoryDocs/voice_script.py --chapter <id> --assign --csv ... <files>`; numbers never change or get reused. The script
   list goes to Drive Voice-Over → Scripts as a Google Sheet ("00 Prologue - script list (draft)",
-  id 1JRpAvAoa5fmtixrocBLkNuJCbr1aL5i06RiXMNBdIps: 117 lines). Prologue Maya voices: `maya-05/08/11/15` (`// vo-speakers:` header).
+  id 1UnDydMRSh5dSFCsOP-56gbq7QK3ce9bxRKYnho5zE6E: 129 lines). Prologue Maya voices: `maya-05/08/11/15` (`// vo-speakers:` header).
   Narration isn't voiced (ask the owner if that changes). Rebuild the Sheet when lines change, keeping the owner's Recorded ticks.
 
 - 2026-11-12: **Push everything to `main`** (owner): the Android build runs automatically on every push to `main`
