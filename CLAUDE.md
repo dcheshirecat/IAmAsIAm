@@ -90,6 +90,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   who has no idea how hard it will hit. That night: Nina's voice, the blackout. **Branches belong to who fronts** (replaying as
   another alter opens that alter's choices). Prologue cast also has **other children** (First Day School), **a family Maya envies**
   (a present parent) and **the elders/board** who keep Sarah busy. Places: **home, the church building, the car, school**.
+- 2026-11-12: School is **remembered** only (talk, memories) on the Sundays. The envied family is **a single dad** who is present
+  (the contrast with Sarah). Maya has **one friend** in First Day School, **kind but who prefers other kids** over her. At 15 Sarah
+  mentions Mira's death **in the car on the way home**, among other church news.
 
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
