@@ -114,4 +114,42 @@ Selene: I have to run, Jess is waiting. We should get coffee! For real this time
 -
 ~ set_experience("Derealization", 0.0)
 ~ set_experience("TimeLoss", 0.0)
+-> shift
+
+= shift
+// Owner: more of each part of Maya's day. Claude's scenes: her library shift, a sign on the holds shelf, the night at home.
+# place: college_library
+# shot: over-shoulder
+# objective: Start your shift
+- (desk)
++ {desk < 3} [Look: The returns]
+    The returns, the date stamp, the beep of the scanner. Normal. Normal is good. # look: returns-beep
+    -> desk
+* [Look: The holds shelf]
+    A book on hold, under your name. "Wicca: A Guide for the Solitary Practitioner." You don't remember asking for it. # look: holds-shelf
+    ~ set_experience("Derealization", 0.2)
+-
+* [Use: The book (check it out)]
+    ~ record_choice("prelude.p2.book", "took", "On your library shift, you found a book on Wicca on hold under your name. You checked it out.")
+    You check it out to yourself. The scanner beeps, like it's nothing. # look: book-checkout
+* [Use: The book (put it back)]
+    ~ record_choice("prelude.p2.book", "back", "On your library shift, you found a book on Wicca on hold under your name. You put it back on the shelf.")
+    Back in BF1566. Somebody will want it. # look: book-back
+-
+-> night
+
+= night
+# place: college_apartment_maya
+# shot: close
+# objective: Make dinner
+- (k)
++ {k < 3} [Look: The windowsill]
+    The deck on the sill, square to the edge. Exactly where you didn't leave it. # look: sill-deck-night
+    -> k
+* [Use: The stove (ramen)]
+    Ramen, an egg cracked in, eaten from the pan. # look: ramen-pan
+-
+* [Use: The bed]
+    You set two alarms. Then a third. # look: three-alarms
+-
 -> prelude_part3  // the next part of the same chapter (one run)

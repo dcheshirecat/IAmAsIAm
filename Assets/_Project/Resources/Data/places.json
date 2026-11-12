@@ -121,6 +121,22 @@
       "chapterId": "prelude-wicca"
     },
     {
+      "id": "college_dining_hall",
+      "name": "The dining hall",
+      "city": "champaign_urbana",
+      "x": 0.55,
+      "y": 0.6,
+      "chapterId": "prelude-wicca"
+    },
+    {
+      "id": "college_library",
+      "name": "The library",
+      "city": "champaign_urbana",
+      "x": 0.42,
+      "y": 0.52,
+      "chapterId": "prelude-wicca"
+    },
+    {
       "id": "shop_the_circle",
       "name": "The Circle",
       "city": "champaign_urbana",

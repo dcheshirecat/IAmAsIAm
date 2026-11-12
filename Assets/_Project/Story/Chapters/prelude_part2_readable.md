@@ -96,3 +96,37 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
     - The stone's hole, worn smooth. Your thumb around it, around and around.
 - **Use: Feet on the floor**
     - Bricks under your shoes. Still here.
+
+## Shift
+
+> **Objective:** Start your shift
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The returns**
+    - The returns, the date stamp, the beep of the scanner. Normal. Normal is good.
+- **Look: The holds shelf**
+    - A book on hold, under your name. "Wicca: A Guide for the Solitary Practitioner." You don't remember asking for it.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The book (check it out)**
+    - You check it out to yourself. The scanner beeps, like it's nothing.
+- **Use: The book (put it back)**
+    - Back in BF1566. Somebody will want it.
+
+## Night
+
+> **Objective:** Make dinner
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The windowsill**
+    - The deck on the sill, square to the edge. Exactly where you didn't leave it.
+- **Use: The stove (ramen)**
+    - Ramen, an egg cracked in, eaten from the pan.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The bed**
+    - You set two alarms. Then a third.

@@ -41,6 +41,32 @@
     ~ set_experience("Derealization", 0.25)
 -
 ~ journal("Note", "The Circle. Yule, the 21st.")
+-> finals
+
+= finals
+// Owner: more of each part of Maya's day. Claude's scene: finals week, and Mom about Christmas.
+# place: college_library
+# shot: wide
+# objective: Study for your last final
+- (study)
++ {study < 3} [Look: The tables]
+    Midnight, and every table full. Energy drinks, highlighters, someone asleep on a textbook. # look: finals-tables
+    -> study
++ {study < 3} [Look: Your notes]
+    Your notes, neat, and in the margin, in round letters: "breathe!!" # look: notes-breathe
+    -> study
+* [Use: Your phone]
+    ~ text_from("mother", "Christmas is all hands here, Christmas Eve AND Christmas Day. Maybe come the 27th? We'll figure it out! Love, Mom")
+    Your phone buzzes on the table. # look: phone-buzz-finals
+-
+* [Use: Your phone (answer Mom)]
+    ~ record_choice("prelude.p3.christmas", "stay", "In finals week Mom asked you to come home on the 27th. You told her you'd stay on campus over break.")
+    ~ text_to("mother", "It's ok. I'll stay here for break. Merry Christmas.")
+    "It's ok. I'll stay here for break." Sent. She hearts it. # look: mom-heart
+* [Use: Your notes (don't answer yet)]
+    ~ record_choice("prelude.p3.christmas", "later", "In finals week Mom asked you to come home on the 27th. You didn't answer, and studied instead.")
+    Back to the notes. You'll answer later. You don't. # look: notes-later
+-
 -> shop
 
 = shop

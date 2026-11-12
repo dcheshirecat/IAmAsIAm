@@ -69,6 +69,32 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 📱 **Text from Selene:** hi it's selene from world religions!! monday, 8pm, room 412. bring nothing. or a candle
 
+## Lunch
+
+> **Objective:** Get lunch
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The tables**
+    - Every table a group. Laughing, saving seats, passing fries. Freshmen who found each other in August.
+- **Look: Your phone**
+    - Selene's text, still open. You read it again.
+- **Use: A tray (sit by the window)**
+    - Pasta, an apple, a seat by the window. You eat fast, so it doesn't look like you're waiting for anyone.
+
+## Work
+
+> **Objective:** Shelve the returns
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The cart**
+    - A cart of returns. Call numbers, in order. Something is finally in the right order.
+- **Look: The religion shelves**
+    - BL to BX. Quakers in BX7600. You put a book back there and don't open it.
+- **Use: The cart (shelve the returns)**
+    - One book. Next book. The quiet of the stacks, the radiator ticking. Two hours, gone the good way.
+
 ## Dorm
 
 > **Objective:** Get ready for Selene's

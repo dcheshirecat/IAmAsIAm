@@ -80,6 +80,41 @@ Selene: This week's us, by the way. Witches. Page two-forty. Don't believe anyth
 Selene: We're doing a little Samhain thing on Monday. In my room. Candles, apple cider, the dead. You should come. # vo: prelude-wicca_selene_0009
 ~ journal("Note", "Selene's room, Monday. Samhain.")
 ~ text_from("selene", "hi it's selene from world religions!! monday, 8pm, room 412. bring nothing. or a candle")
+-> lunch
+
+= lunch
+// Owner: more of each part of Maya's day. Claude's scenes (guess: Maya's campus job is at the library circulation desk).
+# place: college_dining_hall
+# shot: wide
+# objective: Get lunch
+- (hall)
++ {hall < 3} [Look: The tables]
+    Every table a group. Laughing, saving seats, passing fries. Freshmen who found each other in August. # look: dining-groups
+    -> hall
++ {hall < 3} [Look: Your phone]
+    Selene's text, still open. You read it again. # look: selene-text-again
+    -> hall
+* [Use: A tray (sit by the window)]
+    ~ record_choice("prelude.p1.lunch", "window", "That autumn you ate lunch alone by the dining hall window, most days.")
+    Pasta, an apple, a seat by the window. You eat fast, so it doesn't look like you're waiting for anyone. # look: lunch-window
+-
+-> work
+
+= work
+# place: college_library
+# shot: over-shoulder
+# objective: Shelve the returns
+- (stacks)
++ {stacks < 3} [Look: The cart]
+    A cart of returns. Call numbers, in order. Something is finally in the right order. # look: returns-cart
+    -> stacks
++ {stacks < 3} [Look: The religion shelves]
+    BL to BX. Quakers in BX7600. You put a book back there and don't open it. # look: bx-shelf
+    -> stacks
+* [Use: The cart (shelve the returns)]
+    One book. Next book. The quiet of the stacks, the radiator ticking. Two hours, gone the good way. # look: shelving
+    ~ nudge(-0.1)
+-
 -> dorm
 
 = dorm

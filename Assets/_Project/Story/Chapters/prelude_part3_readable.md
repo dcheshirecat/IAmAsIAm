@@ -24,6 +24,30 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Look: The back of the flyer**
     - "GO." Round letters. Underlined three times.
 
+## Finals
+
+> **Objective:** Study for your last final
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The tables**
+    - Midnight, and every table full. Energy drinks, highlighters, someone asleep on a textbook.
+- **Look: Your notes**
+    - Your notes, neat, and in the margin, in round letters: "breathe!!"
+- **Use: Your phone**
+    - 📱 **Text from Sarah:** Christmas is all hands here, Christmas Eve AND Christmas Day. Maybe come the 27th? We'll figure it out! Love, Mom
+
+    - Your phone buzzes on the table.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: Your phone (answer Mom)**
+    - 📱 **Maya texts Sarah:** It's ok. I'll stay here for break. Merry Christmas.
+
+    - "It's ok. I'll stay here for break." Sent. She hearts it.
+- **Use: Your notes (don't answer yet)**
+    - Back to the notes. You'll answer later. You don't.
+
 ## Shop
 
 > **Objective:** Find the circle
