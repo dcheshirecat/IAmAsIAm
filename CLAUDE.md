@@ -111,8 +111,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
 - 2026-11-12: **The owner edits drafts in Google Drive**: "Game Art - I Am As I Am" → **Story Drafts** (id 17BRsPRw6Ql9tObnHT4Cr0Nnb1i9LT-6q)
   → `00 Prologue - This Little Light` (id 1RPF_IaN8Yvj-yEwbJ15OuAYeh05nzL_a): explore-first Docs "Sunday 1 - Maya, 5 (2003)"
   (1GRTItageeHxbWhCaz083ZYb6Q-XDI3eAE0R81aEsbSE), "Sunday 2 - Maya, 8 (2006)" (1GgcPAhX8pfzqdyFYT-Z6BZeIrEboLxMNijcsgWZcYeo),
-  "Sunday 3 - Maya, 11 (2009)" (1vQIvzd1A54qI_Rr5xy_YhgaPRW2ICMgrCBpkPIJe7Gc), "Sunday 4 - Maya, 15 (2013)"
-  (1K4J-ViOl47-vZCCy2DTf_rMdIgBWJlXCIQruYv8swZg); the first, narrated versions are in its "Old versions (narrated)" folder.
+  "Sunday 3 - Maya, 11 (2009)" (14WEH8Ty-TPJHln1RnyrgD_JzRzDl46sLuHPmX2OuQ00), "Sunday 4 - Maya, 15 (2013)"
+  (1DXFTLKH6_zrXRqQW8sSUYchjQ4kkRLSlIwVhVsrTjiI); the first, narrated versions are in its "Old versions (narrated)" folder.
   **The Docs are the source once the owner edits them**: read the Doc (with
   comments) and carry the changes back into the Ink. Docs are made from Ink with `tools/StoryDocs/ink_to_doc.py`.
 
@@ -174,7 +174,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Izzy's signs; the tarot deck glows only while Izzy fronts), Part 3 Tanya (2019, 21, the shop + public Yule circle, ends in a switch to
   Izzy). Guesses for the owner are in each file's header (Champaign-Urbana, Selene she/her, the shop "Hearth & Moon", Izzy as the
   Prelude's alter, the years). Drive: Story Drafts → `01 Prelude - Wicca (title to come)` (17eY31XFZ0v2E3liYuC-ORgtSgCA5ICTx): Docs
-  Part 1 (1a56BrKjRxZVA59OmuJ-FwZvHF3EXVkUXazoePti-IyQ), Part 2 (1eiJHSOO4iiKAqFmoDivSvgkBQucZ0mGGXsyxI-1sxy0), Part 3
+  Part 1 (1a56BrKjRxZVA59OmuJ-FwZvHF3EXVkUXazoePti-IyQ), Part 2 (1fIkJsKhwIQOccIJ4ga0nWSEYxttD8YlnVlvwRTEbbl0), Part 3
   (1Djdlk-troTYDrBivsUSY5bSELmlYeHzwsth-de9TLLg). Voice script Sheet "01 Prelude - script list (draft)"
   (13hCLEyK389yBOGnqVDwA63BBoFms9bjgSgCax_Ztnjc: 46 lines; Maya's adult voice is `maya`). Voice-Over Scripts folder id 15B1SB8Y855lNM5Q3sJp2lIDesOkeLD9w.
 - 2026-11-12: **Tanya stays (owner):** Maya is in touch with Tanya **through the whole game**, mostly by **SMS and email**, meeting up
@@ -233,7 +233,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Parts: 1 Thursdays (spring 2018, 19: class, first reading, Ostara, growing lost time, black screen), 2 Coming back (May 2019, 20),
   3 Senior year (fall 2019, 21: Mark's email, abandoned, the coat drive and Gracie, Samhain with Tanya and Selene, quiet Sundays),
   4 Alone (2020: lockdown, Zoom graduation, the prayer service, Jacob). Drive: Story Drafts → `02 Chapter 1 - Christianity (title to
-  come)` (1ZNBBCoAvZZQi2bK9kD3NFSC_ciUCQwWg): Part 1 (1-s5j9YCquYhplnaPOht0nfV_Dmi_ahHydlYCSd4vpZA), Part 2
+  come)` (1ZNBBCoAvZZQi2bK9kD3NFSC_ciUCQwWg): Part 1 (1BkVE4rR-y6oOzJL3AHP-xW1ZFd9l9OGGFQQL_et4smA), Part 2
   (1i_4R0_4pg60TRjLSlRJpr7VIog5wWqr_7CvHtAHuQmY), Part 3 (1oAKAew2hICoY4NiuMF6nQl3PaDaqap_1B3X08k3-twg), Part 4
   (1N1al1-P8tWZ--L6ucxfvpgFgxxSeD4RTTlrOeqxisZI). Script Sheet "02 Chapter 1 - script list (draft)" (1_fEDa_uaOlDYmY1UK0vj0ypcg4957A4ibSZYJhq01Dw, 34 lines).
 - 2026-11-12: **Chapter 1.5, Axel (owner):** Axel's first act is **a haircut and new clothes**. **Axel:** a **dark sense of humour**, loves
@@ -251,7 +251,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   church, Christmas Eve at the Methodist church), 3 Holidays (spring 2019: Ash Wednesday and the priest, the vigil where Izzy is
   triggered, Easter at a queer-affirming church), 4 The napkin (May 2019). Placeholders: "The priest" (`mark_priest`), "Mark's mom"
   (`mark_mom`), the church "St. ___'s". Drive: Story Drafts → `03 Chapter 1.5 - Axel (title to come)` (1pOOBlf0DtgjVVELZapx_fKVE_7hTOMgJ):
-  Part 1 (1ZGtbXs-7G1g-CyCH8IEG_QQ-fVeWOc43PP8riNHm8so), Part 2 (1Dz9K7UjP6UkeRcxsJscW-uxoKoTRzjAl7uwA-WubyfU), Part 3
+  Part 1 (1d4vE0SRrxrQ3tzszp2rW-DUpiqWRyUViL1JzX-uBpIQ), Part 2 (1Dz9K7UjP6UkeRcxsJscW-uxoKoTRzjAl7uwA-WubyfU), Part 3
   (1IYMBbtmGFUq5peIAWJeYkVfouQhsds5RYOAGdgAQp-A), Part 4 (1H7Ls89KivW6oT-av-x1lgLZhG0fFGCaoXcamNETZmYI). Script Sheet
   "03 Chapter 1.5 - script list (draft)" (1YGR6-Rt3Mt8VFR9vvrCxkhe6VqPXoUiFPmq3SmmNGvk, 46 lines).
 - 2026-11-12: **The story is IN THE GAME (owner).** `Story/Chapters/` holds the Prologue, Prelude, Chapter 1 and Chapter 1.5 (one
@@ -290,9 +290,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   synagogue; Adeena's first Chabad class), 4 Not here (2025, 27: the breakup; Renewal Kabbalat Shabbat (`# cue: shabbat-candles`),
   a Reform temple, Shabbat lunch at Rivka's, Rabbi Abe by the lake: pikuach nefesh). Placeholders: the museum, the curator, the
   family names, Dani, "Congregation Etz Chaim". Michael is now in Chapter 6's people. Drive: Story Drafts → `04 Chapter 2 - Judaism
-  (title to come)` (1xVD3UYELoU_vAhYc_iDteHwX71VSdrDC): Part 1 (1AspLwVYofMUhls5cd09hJsQBul7pg0iCwVkVZqTU9bk), Part 2
-  (1hJKibESyTOx_ADGuAxaCvp4u79xfKhLSOqRpD9eBxV0), Part 3 (1CTd24c5s_ksGSteynJGudt3DSj5g3NOvNDtWYh_Pun4), Part 4
-  (1hL2VQr9gDtuupBx4Bp2lfWyXOtUTk7cyJAo_fy0XLtI). Script Sheet "04 Chapter 2 - script list (draft)" (1tR5MEfk3ubI8XNQe474uecaeea2zCGroZvWUUu2WERY, 68 lines).
+  (title to come)` (1xVD3UYELoU_vAhYc_iDteHwX71VSdrDC): Part 1 (12Uu2pRN2lMvYzuvuf75ze0Wr7fCTYrCsHyi-TEXeHew), Part 2
+  (17oTJSNVo6T-H9i44kyoduMtkuZ4FgLseqE0s0IpKsjo), Part 3 (1CTd24c5s_ksGSteynJGudt3DSj5g3NOvNDtWYh_Pun4), Part 4
+  (1f_dzMlnlQAfMep6o2R96JHuFeLVrDligMYiIyf5Tnzw). Script Sheet "04 Chapter 2 - script list (draft)" (1tR5MEfk3ubI8XNQe474uecaeea2zCGroZvWUUu2WERY, 68 lines).
 - 2026-11-12: **Explore the world, not just dialogue (owner).** Every `# place: <id>` is BUILT as a space to walk around
   (`Runtime/World/StoryWorld.cs`, made by StoryScreen): placeholder geometry from the id (outdoors for park/quad/lake/path/march/
   pride/lawn..., a large hall for church/synagogue/temple/museum..., small for car/guest_room; pews, shelves, a bed by keyword),
@@ -336,7 +336,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
 - 2026-11-12: **Art: models in chronological order (owner)**, and **every illustrated/modelled asset listed in the docs**:
   `docs/ART_LIST.md` (rewritten) + `docs/ART_BY_SCENE.md` (generated by `tools/StoryDocs/art_by_scene.py` from the chapters:
   every place, person and close-up, in story order). Re-run it whenever chapters change. Drive copies (Guidelines folder
-  1DvSRmpyEemsE3PqNy_sHBlg1E_wBsK2A): "Art list" 1IQWuiBJLfjwWUr9Tgf4i920baLZrLLdBlIns4GSOwKg, "Art by scene" 1hecIWRNZvQf4iB2lPn9048kiCWb_E6F3KSILX_irVFE (replace when they change).
+  1DvSRmpyEemsE3PqNy_sHBlg1E_wBsK2A): "Art list" 1dtUxh-ylp2m4FrUsQ1a8_sXyYD2dx2kwusyPfuLTERU, "Art by scene" 11sWDuK3b2G61bYz1tIpLLNbgFXN68rgV34_5YySQ5RI (replace when they change).
 - 2026-11-12: **Chapter 3 answers (owner):** the guide comes from **option 3: Maya travels to a Buddhist country after the
   diagnosis** (the country: ask). The therapist is **Angie** (`angie`, 35, she/her); **Tanya is the one who gets through to
   Maya**. The diagnosis is only ever **"a dissociative disorder"**, never a real label. **Chicago, 2026, Maya 27.** The old work
@@ -347,7 +347,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   (**Reverend Mori**, Claude's placeholder name) who mentions temple stays; Angie's travel plan by email). It ends "To be
   continued." (no `# chapter-end` yet). Drive: Story Drafts → `05 Chapter 3 - Buddhism (title to come)`
   (1_dSAszvSd6Azj1ZpyHq2QuCwni6lsWDX): Part 1 (1XbmeegxoVr3JN0VebSs5-vJp0O1nzNQO_BqoYWviMi8), Part 2 (1lROoLmnkbc4M0Hbww_7tDM_5N1Tgraj1HN_8ynKchwE),
-  Part 3 (1mG4JjZR4HXexQ07a-pS6hAkTNWbZ97i8lKp1GlaIp-k), Part 4 (1iPHpHD9G8pJ57hiy8UT8K7__aJF3Aj3fwcwq1nErYAQ); Sheet "05 Chapter 3 - script list (draft)"
+  Part 3 (1JwCk7tJ9QX9KZLXLtwf_GpBoEd4eNEDhCpemhZARzqw), Part 4 (1iPHpHD9G8pJ57hiy8UT8K7__aJF3Aj3fwcwq1nErYAQ); Sheet "05 Chapter 3 - script list (draft)"
   (1LieVbr82W_V2Xb7QbateA-sKM38Leu1k0dPGkyBE6aQ, 81 lines). Chapter 3 starts as Maya and unlocks nobody FOR NOW: remind the owner to set it.
 - 2026-11-12: **Test builds: "Test: any chapter"** in the chapter list (`StoryScreen.TestJumps`) starts any chapter, so the owner
   can test new scenes without replaying everything. Turn it off for a release. **Owner: push when there's a new scene to test.**
@@ -412,7 +412,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Maya surfaces), 4 Iftar (Ramadan 2027: an open community iftar; the last day; Angie suggests SystemLog: `gain_app` + first notes
   from Heather and Izzy; Maya reads them; `# chapter-end`). 61 voiced lines. **Chapter 4 unlocks nobody** (owner).
 - 2026-11-12: **Chapter 4 Drive:** Story Drafts → `06 Chapter 4 - Islam (title to come)` (1ENhOVuU74tWb4yjEgE0pkONOhh1k3EZ5): Part 1
-  (1OJV4fbW3j_rDl-PKaQfzPkJbvnPU03hVbGcZmDC-N5g), Part 2 (1m4oBkzw9Kpft1jTmWUll3Mm6gVoQuovEiUFGA3NVRYA), Part 3
+  (1OJV4fbW3j_rDl-PKaQfzPkJbvnPU03hVbGcZmDC-N5g), Part 2 (1dH3nrSbPVC3aUNhcis8QzJYm-RsWC6kiC0YffvbD0Vo), Part 3
   (1UVk39Dy2hOcZiE2nFUPIW9EnMNLMjgtgnoD2Q3S8aqI), Part 4 (1Xkr74NwKIZOraKTQgLnCpJrd9QRfntiu4dFYpgzFJpU); Sheet "06 Chapter 4 - script
   list (draft)" (1YPoDcqVlRPpgy1wq3K6xHlSk37cgbslJwCV6xHBaL3M, 62 lines). **Owner renamed them: Sawsan (`sawsan`, was Zahra) and Fadi (`fadi`, was Idris).**
 - 2026-11-12: **Chapter 5, Hinduism:** the owner asked for research and options for Hindu leaders: `docs/Chapter5_HinduismResearch.md`.
@@ -433,7 +433,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   **Why Seattle:** Maya can't stand the memories Chicago brings up and believes Seattle will be a fresh start (new line `maya_0031`).
   **Fadi is Shia** (owner), Lebanese American from Beirut; a clay turbah from Karbala on the shelf; his dhikr circle welcomes Sunni and
   Shia (new line `fadi_0062`). **Tigist** (Chapter 2's Beta Israel woman at Sigd) keeps her name (owner).
-- 2026-11-12: **Wiccan practice is an active part of the game (owner).** Design + proposal: `docs/WiccanPractice.md` (Drive copy in Story Drafts: 17G-bxEnLi-kc26St4irKWLX0jR1EmSew6yOd-l7WFLc). Owner: an
+- 2026-11-12: **Wiccan practice is an active part of the game (owner).** Design + proposal: `docs/WiccanPractice.md` (Drive copy in Story Drafts: 1cjDe9dq90UzwGbzzyvGI8AWbAh72hv9o4B_QCntC94I). Owner: an
   **altar at every home** AND a **Book of Shadows** usable any time (like the phone), plus practice moments in the chapters;
   practice gives **grounding, reflection (into the Book), story changes, and alters respond** (still no stat boosts); practices:
   tarot, runes, candle magick, amulets/charm bags, sabbats + moons, **more divination** (pendulum, scrying, tea leaves, oracle),
