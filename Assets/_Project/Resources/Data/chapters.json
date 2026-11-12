@@ -43,14 +43,40 @@
       "title": "Chapter 1: Christianity (title to come)",
       "sabbat": "",
       "inkKnot": "ch1_christianity",
-      "startingMemberId": "",
+      "startingMemberId": "maya",
       "featuredMemberId": "",
-      "setting": "",
+      "setting": "Champaign-Urbana, Illinois: Maya's college years (2018 to 2020)",
       "skillFamily": "",
       "contentTags": [
-        "religious-content"
+        "religious-content",
+        "time-loss",
+        "involuntary-switch",
+        "isolation",
+        "breakup",
+        "detransition",
+        "pandemic"
       ],
-      "summary": "Christianity, with the Christian ex, Mark (ex 1)."
+      "summary": "Christianity, in college. Maya loses her junior year: it passes on a black screen, never explained. She comes back at the end of it to a life she doesn't recognise: a boyfriend, Mark, a kind, queer Episcopalian, and a body that has been living as a trans man. She detransitions and breaks up with Mark, who is left confused and hurt, and spends her senior year abandoned by everyone around her. She graduates alone, in the pandemic. Gracie, a young Catholic nun in training who volunteers at the campus ministry, is the guide. At a prayer service after graduation, Jacob comes forward."
+    },
+    {
+      "id": "ch1-5-axel",
+      "number": 2,
+      "title": "Chapter 1.5: Axel (title to come)",
+      "sabbat": "",
+      "inkKnot": "ch1_5_axel",
+      "startingMemberId": "axel",
+      "firstRunMemberId": "axel",
+      "featuredMemberId": "axel",
+      "setting": "Champaign-Urbana, Illinois: Maya's junior year (2018 to 2019), as Axel",
+      "skillFamily": "",
+      "contentTags": [
+        "religious-content",
+        "time-loss",
+        "involuntary-switch",
+        "breakup",
+        "detransition"
+      ],
+      "summary": "A flashback, never explained, just played: the junior year Maya lost. Axel fronts, comes out as a trans man as the body, and dates Mark, a kind, queer Episcopalian classmate, who never learns about the system. Tanya keeps inviting and checking in, and Axel ignores all of it. It ends when Maya comes back. The first time, this chapter is always played as Axel."
     },
     {
       "id": "ch2-judaism",

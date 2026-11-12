@@ -78,5 +78,48 @@ namespace IAmAsIAm.Tests
             Assert.That(runs.IsUnlockedAnywhere("maya"), Is.False, "The default starter isn't an unlock.");
             Assert.That(runs.AllUnlocked(), Is.EqualTo(new[] { "nina" }));
         }
+
+        [Test]
+        public void ForcedFirstRun_OnlyThatAlter_UntilTheChapterIsFinished()
+        {
+            var runs = new ChapterRuns();
+            Assert.That(runs.StartersFor("ch1-5-axel", "axel", "axel"), Is.EqualTo(new[] { "axel" }));
+
+            runs.Begin("ch1-5-axel", "axel", starterUnlocks: true);
+            runs.RecordFront("maya"); // Maya comes back at the end.
+            var fresh = runs.Complete();
+
+            Assert.That(fresh, Is.EqualTo(new[] { "axel" }), "the forced first run is how Axel is unlocked (one per run: Axel first)");
+            Assert.That(runs.HasFinished("ch1-5-axel"), Is.True);
+            Assert.That(runs.IsUnlockedAnywhere("axel"), Is.True);
+            Assert.That(runs.StartersFor("ch1-5-axel", "axel", "axel"), Is.EqualTo(new[] { "axel" }));
+
+            // A second run as Axel unlocks the next alter to front (Maya).
+            runs.Begin("ch1-5-axel", "axel");
+            runs.RecordFront("maya");
+            runs.Complete();
+            Assert.That(runs.StartersFor("ch1-5-axel", "axel", "axel"), Is.EqualTo(new[] { "axel", "maya" }));
+        }
+
+        [Test]
+        public void NormalRuns_StillDontUnlockTheirOwnStarter()
+        {
+            var runs = new ChapterRuns();
+            runs.Begin("prologue-quaker", "maya");
+            Assert.That(runs.Complete(), Is.Empty);
+            Assert.That(runs.IsUnlockedAnywhere("maya"), Is.False);
+        }
+
+        [Test]
+        public void ForcedFirstRun_SurvivesASaveMidChapter()
+        {
+            var runs = new ChapterRuns();
+            runs.Begin("ch1-5-axel", "axel", starterUnlocks: true);
+            var state = runs.ExportRun();
+            var again = new ChapterRuns();
+            again.RestoreRun(state);
+            Assert.That(again.StarterUnlocks, Is.True);
+            Assert.That(again.Complete(), Is.EqualTo(new[] { "axel" }));
+        }
 }
 }

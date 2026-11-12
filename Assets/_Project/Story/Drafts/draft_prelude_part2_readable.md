@@ -1,4 +1,4 @@
-# Part 2. Things moved. The same town, March 2018. Maya is 20.
+# Part 2. Things moved. The same town, March 2017 (freshman spring). Maya is 18.
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 

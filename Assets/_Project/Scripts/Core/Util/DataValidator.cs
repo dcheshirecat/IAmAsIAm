@@ -145,6 +145,12 @@ namespace IAmAsIAm.Core
                     if (starter == null) issues.Add($"chapter '{c.id}': starting member '{c.startingMemberId}' doesn't exist.");
                     else if (!starter.canFront) issues.Add($"chapter '{c.id}': starting member '{c.startingMemberId}' can't front.");
                 }
+                if (!string.IsNullOrEmpty(c.firstRunMemberId) && members.Count > 0)
+                {
+                    var first = members.FirstOrDefault(m => m.id == c.firstRunMemberId);
+                    if (first == null) issues.Add($"chapter '{c.id}': first-run member '{c.firstRunMemberId}' doesn't exist.");
+                    else if (!first.canFront) issues.Add($"chapter '{c.id}': first-run member '{c.firstRunMemberId}' can't front.");
+                }
                 if (!string.IsNullOrEmpty(c.featuredMemberId) && members.Count > 0 && !memberIds.Contains(c.featuredMemberId))
                     issues.Add($"chapter '{c.id}': featured member '{c.featuredMemberId}' doesn't exist.");
                 foreach (var tag in c.contentTags ?? new List<string>())

@@ -1,8 +1,9 @@
 // DRAFT: not canon until the owner approves it. Prelude (Wicca), Part 3.
 // vo-speakers: Maya=maya
 // ─────────────────────────────────────────────────────────────────────────────
-//  Part 3. Tanya. The same town, December 2019 (Yule). Maya is 21.
-//  Owner's beats: in her early twenties Maya gets serious, through a shop and a coven: an open, eclectic
+//  Part 3. Tanya. The same town, December 2017 (Yule, sophomore year). Maya is 19.
+//  (Owner: Yule 2017, so Maya and Tanya have time to build a solid relationship before Axel fronts in junior year.)
+//  Owner's beats: at 19 (the owner moved it to Yule 2017) Maya gets serious, through a shop and a coven: an open, eclectic
 //  teaching coven with public sabbat circles (only open practice shown). The guide is the coven elder,
 //  Tanya (42, they/them, kind but strict). Lost time keeps growing, and Maya still doesn't understand it.
 //  Explore-first: the shop and the circle carry it. Tanya teaches grounding first, always.
@@ -20,7 +21,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 === prelude_part3 ===
-~ set_age(21)
+~ set_age(19)
 # cw: religious-content
 # cw: depersonalization
 # cw: time-loss

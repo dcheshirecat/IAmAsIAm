@@ -198,9 +198,21 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   starts **taking it seriously**. **Chapter 1 ends with graduation, as Maya.** Then **Chapter 1.5** is a **flashback, never explained,
   just played**: the first time, it **must be played as Axel**, whoever was chosen; it can be how Axel is unlocked.
   **Guide: Gracie** (25, she/her), a **young nun still in training**, very bright, peppy and excited about her faith, never harmful.
-  **Christian streams shown:** Catholic (Jacob), mainline (Episcopal / Methodist), Orthodox, queer-affirming. **Not** an evangelical
+  **Christian streams shown:** Catholic (Jacob, Gracie), mainline (Episcopal: Mark; Methodist), queer-affirming (Orthodox: Chapter 13 only). **Not** an evangelical
   megachurch (owner: definite no); **no Black church** unless the research is thorough enough (Claude: not without sourced, consented
   testimony). **Tanya** texts and emails all chapter: check-ins, events, holidays, readings, coven meetings, meals. **Axel ignores all of it.**
+- 2026-11-12: **Timeline (owner):** the **Yule circle is December 2017** (Maya 19, sophomore year), so Maya and Tanya build a solid
+  relationship before Maya "disappears". Prelude: Part 1 Oct 2016 (18), Part 2 Mar 2017 (18), Part 3 Dec 2017 (19).
+  **Chapter 1** starts **as Maya** (an unexpected switch to **Izzy or Nina** if triggered). **Junior year (2018-19) is summarized on a
+  black screen, not explained** until Chapter 1.5, where it's played as Axel. Maya comes back at the end of junior year: she
+  **detransitions**, **breaks up with Mark**, is very confused and upset, and is **abandoned by everyone around her in senior year**.
+  **COVID is shown** (graduation May 2020). Chapter 1 **ends with Jacob coming forward at a prayer service after graduation**.
+  **Mark is Episcopal**, a **kind queer man**, left very confused and upset when Maya detransitions.
+  **Gracie** is a **Catholic** nun in training who **volunteers at the campus ministry**: fundraisers, donation drives, social
+  meetings and prayers. **Orthodox Christianity is saved for Chapter 13** (Maya exploring Europe), not shown in Chapter 1.
+  Data: `chapters.json` has `ch1-5-axel` (knot `ch1_5_axel`) with **`firstRunMemberId: axel`**: the first run can only be started as
+  Axel (`ChapterRuns.StartersFor(id, default, firstRun)`), and finishing it unlocks him (`Begin(..., starterUnlocks: true)`; a normal run
+  never unlocks its own starter). New content tags: pandemic, isolation, breakup, detransition.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

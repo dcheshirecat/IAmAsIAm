@@ -20,6 +20,8 @@ namespace IAmAsIAm.Core.Story
         public string chapterId;
         public string startedAsId;
         public List<string> frontedIds = new List<string>();
+        /// <summary>True when finishing this run unlocks the alter it started as (a forced first run, e.g. Axel's Chapter 1.5).</summary>
+        public bool starterUnlocks;
     }
 
     /// <summary>
@@ -38,17 +40,23 @@ namespace IAmAsIAm.Core.Story
 
         public string CurrentChapterId { get; private set; }
         public string StartedAsId { get; private set; }
+        /// <summary>
+        /// True when finishing this run unlocks the alter it started as. Normally the starter is already unlocked (or the
+        /// chapter's default); a forced first run (owner: Chapter 1.5 is always Axel's first) is how that alter gets unlocked.
+        /// </summary>
+        public bool StarterUnlocks { get; private set; }
         public bool InChapter => CurrentChapterId != null;
         public IReadOnlyCollection<string> FrontedThisRun => _frontedThisRun;
 
         /// <summary>Raised when finishing a chapter unlocks new starting alters.</summary>
         public event Action<string, IReadOnlyList<string>> Unlocked;
 
-        public void Begin(string chapterId, string startingMemberId)
+        public void Begin(string chapterId, string startingMemberId, bool starterUnlocks = false)
         {
             if (string.IsNullOrEmpty(chapterId)) throw new ArgumentException("A chapter run needs a chapter id.");
             CurrentChapterId = chapterId;
             StartedAsId = startingMemberId;
+            StarterUnlocks = starterUnlocks && !string.IsNullOrEmpty(startingMemberId);
             _frontedThisRun.Clear();
             if (!string.IsNullOrEmpty(startingMemberId)) _frontedThisRun.Add(startingMemberId);
 
@@ -65,10 +73,11 @@ namespace IAmAsIAm.Core.Story
         {
             if (!InChapter) return Array.Empty<string>();
             if (!_unlocked.TryGetValue(CurrentChapterId, out var set)) _unlocked[CurrentChapterId] = set = new HashSet<string>();
-            var fresh = _frontedThisRun.Where(id => id != StartedAsId && !set.Contains(id)).Take(Math.Max(0, MaxNewUnlocksPerRun)).ToList();
+            var fresh = _frontedThisRun.Where(id => (StarterUnlocks || id != StartedAsId) && !set.Contains(id)).Take(Math.Max(0, MaxNewUnlocksPerRun)).ToList();
             foreach (var id in fresh) set.Add(id);
             string chapter = CurrentChapterId;
             CurrentChapterId = null;
+            StarterUnlocks = false;
             _frontedThisRun.Clear();
             if (fresh.Count > 0) Unlocked?.Invoke(chapter, fresh);
             return fresh;
@@ -78,10 +87,25 @@ namespace IAmAsIAm.Core.Story
         public void Abandon()
         {
             CurrentChapterId = null;
+            StarterUnlocks = false;
             _frontedThisRun.Clear();
         }
 
+        /// <summary>
+        /// Who can start a chapter. With <paramref name="firstRunMemberId"/> set and the chapter never finished in this save,
+        /// only that member can (owner: Chapter 1.5 is Axel's the first time).
+        /// </summary>
+        public IReadOnlyList<string> StartersFor(string chapterId, string defaultMemberId, string firstRunMemberId)
+        {
+            if (!string.IsNullOrEmpty(firstRunMemberId) && !HasFinished(chapterId)) return new List<string> { firstRunMemberId };
+            return StartersFor(chapterId, defaultMemberId);
+        }
+
+        /// <summary>True once this chapter has been played through in full in this save.</summary>
+        public bool HasFinished(string chapterId) => _unlocked.ContainsKey(chapterId ?? "");
+
         /// <summary>Who can start this chapter: the default starter first, then the unlocked alters.</summary>
+
         public IReadOnlyList<string> StartersFor(string chapterId, string defaultMemberId)
         {
             var list = new List<string>();
@@ -111,14 +135,16 @@ namespace IAmAsIAm.Core.Story
             chapterId = CurrentChapterId ?? "",
             startedAsId = StartedAsId ?? "",
             frontedIds = InChapter ? _frontedThisRun.ToList() : new List<string>(),
+            starterUnlocks = InChapter && StarterUnlocks,
         };
 
         /// <summary>Puts back a run in progress from a save (or clears it when the save had none).</summary>
         public void RestoreRun(ChapterRunState run)
         {
             _frontedThisRun.Clear();
-            if (run == null || string.IsNullOrEmpty(run.chapterId)) { CurrentChapterId = null; StartedAsId = null; return; }
+            if (run == null || string.IsNullOrEmpty(run.chapterId)) { CurrentChapterId = null; StartedAsId = null; StarterUnlocks = false; return; }
             CurrentChapterId = run.chapterId;
+            StarterUnlocks = run.starterUnlocks;
             StartedAsId = string.IsNullOrEmpty(run.startedAsId) ? null : run.startedAsId;
             foreach (var id in run.frontedIds ?? new List<string>())
                 if (!string.IsNullOrEmpty(id) && !_frontedThisRun.Contains(id)) _frontedThisRun.Add(id);

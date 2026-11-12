@@ -1,7 +1,7 @@
 // DRAFT: not canon until the owner approves it. Prelude (Wicca), Part 2.
 // vo-speakers: Maya=maya
 // ─────────────────────────────────────────────────────────────────────────────
-//  Part 2. Things moved. The same town, March 2018. Maya is 20.
+//  Part 2. Things moved. The same town, March 2017 (freshman spring). Maya is 18.
 //  Owner's beats: lost time grows: more blackouts, and signs of others (notes, things moved). Maya
 //  doesn't understand it yet. She isn't serious about Wicca yet.
 //  Explore-first: Maya's apartment is the scene. The signs are things to find, never explained.
@@ -18,7 +18,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 === prelude_part2 ===
-~ set_age(20)
+~ set_age(18)
 // Lost time on the phone (owner: subtle, never pointed out): a text Maya didn't send is just there.
 ~ sent_while_away("izzy", "text", "selene", "omg yes. tues!! im bringing the oat milk")
 # cw: religious-content

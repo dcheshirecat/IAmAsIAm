@@ -23,12 +23,16 @@ namespace IAmAsIAm.Core.Safety
         public const string ReligiousContent = "religious-content";
         public const string Neglect = "neglect";
         public const string ChildAlone = "child-alone";
+        public const string Pandemic = "pandemic";
+        public const string Isolation = "isolation";
+        public const string Breakup = "breakup";
+        public const string Detransition = "detransition";
 
         public static readonly IReadOnlyList<string> All = new[]
         {
             TimeLoss, Depersonalization, Derealization, InvoluntarySwitch, TraumaReference,
             ChildhoodReference, MedicalSetting, RaisedVoices, SelfHarmReference, Panic, ReligiousContent,
-            Neglect, ChildAlone,
+            Neglect, ChildAlone, Pandemic, Isolation, Breakup, Detransition,
         };
 
         static readonly Dictionary<string, string> Labels = new Dictionary<string, string>
@@ -46,6 +50,10 @@ namespace IAmAsIAm.Core.Safety
             [ReligiousContent] = "Religious content",
             [Neglect] = "Childhood emotional neglect by a parent",
             [ChildAlone] = "A young child left alone",
+            [Pandemic] = "The COVID-19 pandemic",
+            [Isolation] = "Isolation and being abandoned by friends",
+            [Breakup] = "A breakup",
+            [Detransition] = "Detransition (an alter's gender transition is undone when another alter comes back)",
         };
 
         /// <summary>The words shown to the player for a tag.</summary>

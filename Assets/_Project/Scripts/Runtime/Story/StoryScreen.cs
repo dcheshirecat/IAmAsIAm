@@ -380,7 +380,7 @@ namespace IAmAsIAm.Runtime.Story
             string body = $"{setting}<b>Content warnings</b>\n{warnings}\n\nYou can open the Anchor at any time.";
 
             var buttons = new List<(string, Action)>();
-            var starters = GameServices.ChapterRuns?.StartersFor(ch.id, ch.startingMemberId) ?? new List<string>();
+            var starters = GameServices.ChapterRuns?.StartersFor(ch.id, ch.startingMemberId, ch.firstRunMemberId) ?? new List<string>();
             if (starters.Count == 0) buttons.Add(("Begin", () => BeginChapter(ch, null)));
             foreach (var id in starters)
             {
@@ -397,7 +397,10 @@ namespace IAmAsIAm.Runtime.Story
             CloseAction();
             var roster = GameServices.Roster;
             string starter = starterId ?? roster?.FrontingId;
-            GameServices.ChapterRuns?.Begin(ch.id, starter);
+            // A forced first run (Chapter 1.5 is Axel's) is how that alter is unlocked.
+            bool forcedFirst = !string.IsNullOrEmpty(ch.firstRunMemberId) && starter == ch.firstRunMemberId
+                               && !(GameServices.ChapterRuns?.HasFinished(ch.id) ?? true);
+            GameServices.ChapterRuns?.Begin(ch.id, starter, forcedFirst);
             if (roster != null && !string.IsNullOrEmpty(starterId) && roster.FrontingId != starterId) roster.ForceSwitch(starterId);
             runner.Play(ch.inkKnot, null, ch.id);
         }
