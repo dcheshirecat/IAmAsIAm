@@ -146,7 +146,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   the disk cleanup runs in parallel in the background while the code and the Library cache download. `main` is the
   default branch (owner).
 - 2026-11-12: Builds 5, 8 and 9 were killed (exit 137) ~3 s after Unity started, while loading the cached Library, with memory
-  free and no kernel OOM. The workflow now **retries once from a clean Library** if the first try fails (step ids build/retry).
+  free and no kernel OOM. The workflow **retries up to twice** (step ids build/retry/retry2). Before each retry it puts the checkout back exactly as
+  committed (chown, `git checkout -- .`, `git clean -fdq`, no Library): build 15's retry refused to start because the first try had
+  left untracked ProjectSettings files ("Branch is dirty"). Build 15's kill came ~0.5 s into "MonoManager ReloadAssembly", 2.2 GB used.
 
 - 2026-11-12: **Storytelling style (owner): very little narration.** The story is mostly **explored**: the player walks the
   places, looks at and uses things, overhears and talks, and the game gently **points them in the right direction** (the owner's
