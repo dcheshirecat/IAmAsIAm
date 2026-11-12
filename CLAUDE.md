@@ -401,7 +401,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Chicago and comes to catch up**; she tells them what she overheard (Sunday 2) and **then they switch to Nina at home** (confirmed).
   `Story/Chapters/ch4_part1..4.ink`: 1 The day program (Sept: name tags, TIPP, the quiet room's qibla arrow, Noor; Maya surfaces),
   2 Reneé (Oct: an Andersonville café, queer and ex-religious, the overheard scene as a `# memory:`, Nina's blanket fort and "MIRA
-  TRIED. -N"), 3 Remembrance (Dec: Sawsan (placeholder, Shia) and her turbah; Fadi's (placeholder, Sufi) Thursday dhikr, eyes open;
+  TRIED. -N"), 3 Remembrance (Dec: **Sawsan, Palestinian American (owner), Sunni**, and her grandmother's tasbih from Nablus; Fadi's (placeholder, Sufi) Thursday dhikr, eyes open;
   Maya surfaces), 4 Iftar (Ramadan 2027: an open community iftar; the last day; Angie suggests SystemLog: `gain_app` + first notes
   from Heather and Izzy; Maya reads them; `# chapter-end`). 61 voiced lines. **Chapter 4 unlocks nobody** (owner).
 - 2026-11-12: **Chapter 4 Drive:** Story Drafts → `06 Chapter 4 - Islam (title to come)` (1ENhOVuU74tWb4yjEgE0pkONOhh1k3EZ5): Part 1

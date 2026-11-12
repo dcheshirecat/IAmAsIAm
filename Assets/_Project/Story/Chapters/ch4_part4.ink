@@ -28,7 +28,7 @@
     Long tables, paper tablecloths, a date and a cup of water at every place. Nobody eats yet. Everyone is waiting together. # look: iftar-tables
     -> hall
 + {hall < 4} [Look: The children]
-    Kids running between the tables with plates of samosas they're not allowed to touch yet. A grandmother catches one, laughing. # look: iftar-children
+    Kids running between the tables with plates of sambousek they're not allowed to touch yet. A grandmother catches one, laughing. # look: iftar-children
     -> hall
 + {hall < 4} [Look: The clock]
     Sunset: 5:41. It's 5:38. Three hundred people watching the same minute hand. # look: iftar-clock
@@ -46,8 +46,8 @@ Chaplain Amal: Now they pray, and then they eat everything. Guests can wait here
     ~ record_choice("ch4.p4.prayer", "watched", "At the iftar, you watched the prayer from the back of the hall, in rows, shoulder to shoulder.")
     Rows, shoulder to shoulder, everyone moving together: standing, bowing, kneeling, foreheads to the floor. Then stillness. # look: rows-praying
 * [Wait (stay at the table)]
-    ~ record_choice("ch4.p4.prayer", "table", "At the iftar, you stayed at the table and helped Sawsan's mom guard the samosas.")
-    Sawsan's mom hands you a serving spoon and a look that means: guard the samosas. You guard them with your life. # look: guard-samosas
+    ~ record_choice("ch4.p4.prayer", "table", "At the iftar, you stayed at the table and helped Sawsan's mom guard the maqluba.")
+    Sawsan's mom hands you a serving spoon and a look that means: guard the maqluba. You guard it with your life. # look: guard-maqluba
 -
 Heather (inside): Everyone eating together. Nobody alone. That's the part I needed. # vo: ch4-islam_heather-inside_0051
 ~ nudge(-0.25)
@@ -62,7 +62,7 @@ Heather (inside): Everyone eating together. Nobody alone. That's the part I need
     The same twelve chairs. You know everyone's names now, and which one is the knitting woman's. # look: last-circle
     -> goodbyes
 + {goodbyes < 3} [Look: The card]
-    A card signed by the group. Sawsan has drawn a tiny turbah. Someone has drawn an ice cube with a face. # look: goodbye-card
+    A card signed by the group. Sawsan has drawn a tiny string of prayer beads. Someone has drawn an ice cube with a face. # look: goodbye-card
     -> goodbyes
 * {goodbyes >= 1} [Talk: Chaplain Amal]
 -

@@ -5,8 +5,8 @@
 //  Owner's beats: Sufi practice; only what Muslims consider Islam. Izzy and Heather; Maya sometimes.
 //
 //  My guesses, for the owner to correct:
-//   - Sawsan (owner: Sawsan; 30s, she/her), another patient at the day program: Shia (Twelver), Iraqi American. She prays in
-//     the quiet room on a small clay tablet from Karbala (a turbah), and tells Izzy about Imam Hussain.
+//   - Sawsan (owner: Sawsan, Palestinian American; 30s, she/her), another patient at the day program, Sunni (as most Palestinian
+//     Muslims are). She prays in the quiet room, then counts her tasbih (prayer beads), her grandmother's, from Nablus.
 //   - Amal invites them to a Thursday-night dhikr (remembrance) gathering led by her friend Fadi (owner: Fadi; 60s, he/him),
 //     a Sufi teacher: guests are welcome to sit and listen. Heather finds the repetition steadying; Izzy keeps count, eyes open.
 //     (Rhythm and repetition can pull a dissociative person away: they keep their eyes open, as Angie taught.)
@@ -25,7 +25,7 @@
 # objective: Find somewhere quiet after group
 - (room)
 + {room < 3} [Look: Sawsan]
-    Sawsan, from group, on a prayer rug under the qibla arrow. Standing, bowing, kneeling, her forehead resting on a small round tablet of clay. # look: sawsan-praying
+    Sawsan, from group, on a prayer rug under the qibla arrow. Standing, bowing, kneeling, forehead to the rug. Then sitting, a string of beads moving through her fingers. # look: sawsan-praying
     -> room
 + {room < 3} [Look: The window]
     The tree in the car park is bare now. The bird feeder is busier. # look: car-park-winter
@@ -33,10 +33,10 @@
 * {room >= 1} [Wait (until she's finished)]
 -
 Sawsan: Sorry, I was just finishing. You can stay. You're not in my way. # vo: ch4-islam_sawsan_0035
-* [Talk: Sawsan (ask about the clay tablet)]
-    ~ record_choice("ch4.p3.sawsan", "turbah", "Sawsan showed Izzy her turbah, the clay tablet from Karbala, and told her about Imam Hussain.")
-    Izzy: What's the little stone? You put your head on it. # vo: ch4-islam_izzy_0036
-    Sawsan: A turbah. Clay from Karbala, where Imam Hussain was killed, the Prophet's grandson. We're Shia. When I put my head on it, I remember someone who stood up when it cost everything. # vo: ch4-islam_sawsan_0037
+* [Talk: Sawsan (ask about the beads)]
+    ~ record_choice("ch4.p3.sawsan", "tasbih", "Sawsan showed Izzy her tasbih, her grandmother's prayer beads from Nablus.")
+    Izzy: What are the beads? You were counting something. # vo: ch4-islam_izzy_0036
+    Sawsan: A tasbih. Thirty-three beads. SubhanAllah, Alhamdulillah, Allahu Akbar, thirty-three times each. They were my teta's, my grandmother's, from Nablus. When my hands don't know what to do, they know this. # vo: ch4-islam_sawsan_0037
 * [Talk: Sawsan (ask how she keeps praying here)]
     ~ record_choice("ch4.p3.sawsan", "here", "Sawsan told Izzy that praying five times a day gives her somewhere to be, even on the worst days.")
     Izzy: How do you keep doing it? Five times a day, in here? # vo: ch4-islam_izzy_0038

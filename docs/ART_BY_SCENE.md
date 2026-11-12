@@ -608,7 +608,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `group-circle`: Twelve chairs, a box of tissues on every third one, a woman knitting very fast, a young man asleep in his hoodie.
 - `tipp-board`: "TIPP: Temperature. Intense exercise. Paced breathing. Paired muscle relaxation." Someone has drawn a little ice cube with a face.
 - `last-circle`: The same twelve chairs. You know everyone's names now, and which one is the knitting woman's.
-- `goodbye-card`: A card signed by the group. Sawsan has drawn a tiny turbah. Someone has drawn an ice cube with a face.
+- `goodbye-card`: A card signed by the group. Sawsan has drawn a tiny string of prayer beads. Someone has drawn an ice cube with a face.
 
 ### The day program: the quiet room (`day_ward_quiet_room`)
 
@@ -616,7 +616,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `interfaith-shelf`: Prayer rugs, folded. A Quran on a stand, a Bible, a Tanakh, a little brass Buddha, a box of tissues. Room for everyone.
 - `car-park-tree`: The hospital car park, and one tree going orange. Someone has put a bird feeder out.
 - `name-tag-maya`: "IZZY (Maya)". In your writing. Round letters. Not yours.
-- `sawsan-praying`: Sawsan, from group, on a prayer rug under the qibla arrow. Standing, bowing, kneeling, her forehead resting on a small round tablet of clay.
+- `sawsan-praying`: Sawsan, from group, on a prayer rug under the qibla arrow. Standing, bowing, kneeling, forehead to the rug. Then sitting, a string of beads moving through her fingers.
 - `car-park-winter`: The tree in the car park is bare now. The bird feeder is busier.
 
 ### A café in Andersonville (`andersonville_cafe`)
@@ -641,12 +641,12 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 ### The mosque: the iftar hall (`mosque_iftar_hall`)
 
 - `iftar-tables`: Long tables, paper tablecloths, a date and a cup of water at every place. Nobody eats yet. Everyone is waiting together.
-- `iftar-children`: Kids running between the tables with plates of samosas they're not allowed to touch yet. A grandmother catches one, laughing.
+- `iftar-children`: Kids running between the tables with plates of sambousek they're not allowed to touch yet. A grandmother catches one, laughing.
 - `iftar-clock`: Sunset: 5:41. It's 5:38. Three hundred people watching the same minute hand.
 - `adhan-iftar`: The call to prayer, from the front of the hall, rising and falling. Three hundred people breaking their fast at once.
 - `date-eaten`: Sweet, sticky, very sweet. Someone passes you water before you ask.
 - `rows-praying`: Rows, shoulder to shoulder, everyone moving together: standing, bowing, kneeling, foreheads to the floor. Then stillness.
-- `guard-samosas`: Sawsan's mom hands you a serving spoon and a look that means: guard the samosas. You guard them with your life.
+- `guard-maqluba`: Sawsan's mom hands you a serving spoon and a look that means: guard the maqluba. You guard it with your life.
 
 ### Maya's apartment, Seattle (`seattle_apartment`)
 

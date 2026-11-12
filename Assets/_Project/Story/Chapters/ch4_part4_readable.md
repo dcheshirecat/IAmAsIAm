@@ -21,7 +21,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Look: The tables**
     - Long tables, paper tablecloths, a date and a cup of water at every place. Nobody eats yet. Everyone is waiting together.
 - **Look: The children**
-    - Kids running between the tables with plates of samosas they're not allowed to touch yet. A grandmother catches one, laughing.
+    - Kids running between the tables with plates of sambousek they're not allowed to touch yet. A grandmother catches one, laughing.
 - **Look: The clock**
     - **Sunset:** 5:41. It's 5:38. Three hundred people watching the same minute hand.
 - **Talk: Sawsan**
@@ -42,7 +42,7 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
 - **Wait (watch from the back)**
     - Rows, shoulder to shoulder, everyone moving together: standing, bowing, kneeling, foreheads to the floor. Then stillness.
 - **Wait (stay at the table)**
-    - Sawsan's mom hands you a serving spoon and a look that means: guard the samosas. You guard them with your life.
+    - Sawsan's mom hands you a serving spoon and a look that means: guard the maqluba. You guard it with your life.
 
 **Heather (inside):** Everyone eating together. Nobody alone. That's the part I needed.
 
@@ -55,7 +55,7 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
 - **Look: The circle of chairs**
     - The same twelve chairs. You know everyone's names now, and which one is the knitting woman's.
 - **Look: The card**
-    - A card signed by the group. Sawsan has drawn a tiny turbah. Someone has drawn an ice cube with a face.
+    - A card signed by the group. Sawsan has drawn a tiny string of prayer beads. Someone has drawn an ice cube with a face.
 - **Talk: Chaplain Amal**
 
 **Chaplain Amal:** You did the work here. All of you. I'll pray for you, if that's okay. For all of you.

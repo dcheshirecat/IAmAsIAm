@@ -6,7 +6,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **My guesses, for you to check:**
 
-- Sawsan (owner: Sawsan; 30s, she/her), another patient at the day program: Shia (Twelver), Iraqi American. She prays in the quiet room on a small clay tablet from Karbala (a turbah), and tells Izzy about Imam Hussain.
+- Sawsan (owner: Sawsan, Palestinian American; 30s, she/her), another patient at the day program, Sunni (as most Palestinian Muslims are). She prays in the quiet room, then counts her tasbih (prayer beads), her grandmother's, from Nablus.
 - Amal invites them to a Thursday-night dhikr (remembrance) gathering led by her friend Fadi (owner: Fadi; 60s, he/him), a Sufi teacher: guests are welcome to sit and listen. Heather finds the repetition steadying; Izzy keeps count, eyes open. (Rhythm and repetition can pull a dissociative person away: they keep their eyes open, as Angie taught.)
 
 ## Quiet room
@@ -16,7 +16,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **Explore** (glowing things; the player picks):
 
 - **Look: Sawsan**
-    - Sawsan, from group, on a prayer rug under the qibla arrow. Standing, bowing, kneeling, her forehead resting on a small round tablet of clay.
+    - Sawsan, from group, on a prayer rug under the qibla arrow. Standing, bowing, kneeling, forehead to the rug. Then sitting, a string of beads moving through her fingers.
 - **Look: The window**
     - The tree in the car park is bare now. The bird feeder is busier.
 - **Wait (until she's finished)**
@@ -25,9 +25,9 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Explore** (glowing things; the player picks):
 
-- **Talk: Sawsan (ask about the clay tablet)**
-    - **Izzy:** What's the little stone? You put your head on it.
-    - **Sawsan:** A turbah. Clay from Karbala, where Imam Hussain was killed, the Prophet's grandson. We're Shia. When I put my head on it, I remember someone who stood up when it cost everything.
+- **Talk: Sawsan (ask about the beads)**
+    - **Izzy:** What are the beads? You were counting something.
+    - **Sawsan:** A tasbih. Thirty-three beads. SubhanAllah, Alhamdulillah, Allahu Akbar, thirty-three times each. They were my teta's, my grandmother's, from Nablus. When my hands don't know what to do, they know this.
 - **Talk: Sawsan (ask how she keeps praying here)**
     - **Izzy:** How do you keep doing it? Five times a day, in here?
     - **Sawsan:** On the bad days it's the only time I know exactly where I am. Facing that way. Doing this. Five little anchors.
