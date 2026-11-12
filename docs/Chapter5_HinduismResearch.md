@@ -62,3 +62,21 @@ The owner asked for research and options for Hindu leaders (the guide). Nothing 
 - Hindu priest (overview): https://en.wikipedia.org/wiki/Hindu_priest
 - Hindu chaplaincy in the US: https://www.interfaithamerica.org/article/how-hindu-chaplains-went-from-anomaly-to-necessity/
 - ISKCON Sunday open house: https://iskcon.org/activities/sunday-open-house.php
+
+## Women as leaders in Hinduism (owner's question)
+Yes, in several ways, though it varies by tradition.
+- **Women priests (purohita).** Since the 1970s, institutions in Pune, India (Shankar Seva Samiti, Jnana Prabodhini, the
+  Bhandarkar Oriental Research Institute) have trained around 1,600 women to perform household rites: weddings, house blessings,
+  pujas. In diaspora communities, women priests are still unusual but growing.
+- **Temple priests in big South Indian (Agamic) temples** are still almost always men, often from hereditary priestly families.
+  A woman in that role would be rare, and therefore a story in itself.
+- **Women monastics:** Sri Sarada Math, the women's order of the Ramakrishna tradition (its nuns are called pravrajikas; the
+  Vedanta Society of Southern California has a convent in Santa Barbara). Women ascetics are called sadhvis.
+- **Women gurus**, widely revered: Sarada Devi (Ramakrishna's wife, the "Holy Mother"), Anandamayi Ma, and Mata Amritanandamayi
+  ("Amma", famous for embracing people).
+- **The Goddess traditions (Shakta)** put the divine feminine at the centre; in many homes women lead the daily puja and the
+  festivals.
+- **Hindu chaplains** in the US are often women (Swami Sarvaananda was the first board-certified Hindu chaplain, in 2001).
+- Sources: Women priests of Pune (Google Arts & Culture): https://artsandculture.google.com/asset/women-priests-of-pune/EwG8U3YE1La7Rw ;
+  Women's eNews on Pune's women priests: https://womensenews.org/2008/02/indian-city-opens-doorway-female-hindu-priests/ ;
+  "Women priests" (academic paper, 2022): https://serialsjournals.com/abstract/43877_8-women_priests_final_december_2022.pdf
