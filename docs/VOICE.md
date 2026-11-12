@@ -42,6 +42,6 @@ recorded, its row in the script list says so, and it can be re-recorded into Ret
 Narration (lines without a speaker) isn't voiced. Voices are never generated: every voice is the owner's own recording.
 
 ## Telling Claude
-Say "new voice lines are in the Drive folder". Claude copies each file into `Assets/_Project/Audio/Voice/<chapter-id>/`,
+Say "new voice lines are in the Drive folder". Claude copies each file into `Assets/_Project/Resources/Voice/<chapter-id>/`,
 checks its name, format and loudness, links it to its line in the story, and tells you which lines are now voiced.
 A line in Retakes replaces the old file of the same name.

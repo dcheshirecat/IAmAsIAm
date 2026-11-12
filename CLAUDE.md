@@ -121,7 +121,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   (Claude puts line lists here), `Retakes`, `Masters (WAV originals, optional)`, and "Read me first - Voice-Over". MP3 mono,
   44.1/48 kHz, ≥192 kbps, one line per file, no music/effects. Names `vo_<chapter-id>_<speaker>_<number>.mp3` (prologue Maya:
   `maya-05/08/11/15`; inner voices `<id>-inside`; outside chapters `daily`). Voicing is optional per line (unvoiced = text only).
-  In the game: `Assets/_Project/Audio/Voice/<chapter-id>/`. `docs/VOICE.md`. Not built yet: playback, `# vo:` tags, script export.
+  In the game: `Assets/_Project/Resources/Voice/<chapter-id>/`. `docs/VOICE.md`. Not built yet: playback, `# vo:` tags, script export.
   Note: `*.mp3` is in LFS and LFS uploads are blocked from cloud sessions: decide how to commit voice files when the first arrive.
 - 2026-11-12: **Voice-over (owner, corrected):** the owner records every voice. **Never generate voices** (no TTS, no AI voices).
   Claude DOES the logistics: script lists, file names, ids, importing the files, playback in the game.
@@ -385,6 +385,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   (Default, uncompressed, readable, no mipmaps), and writes a report (`build/icon_report.txt`: default icon set?, each Android icon
   kind and how many sizes got the texture) that the workflow puts on the run's Summary ("App icon"). Check it if the icon is
   still wrong. Android launchers can also keep an old icon cached after an in-place update: uninstall once, or restart the phone.
+- 2026-11-12: **Voice playback BUILT** (`Runtime/Audio/VoicePlayer.cs`, made by StoryScreen): a line's `# vo:` id plays
+  `Resources/Voice/<chapter-id>/vo_<id>.mp3` when the line shows (no file = text only); the next line stops it. Inner voices are a
+  little closed-in and quieter, and every voice is muffled while she's far away, unless "no audio distortion" is on. Voice files
+  now live in `Assets/_Project/Resources/Voice/<chapter-id>/` (was Audio/Voice; no files yet). LFS uploads are still blocked from
+  cloud sessions: when the first recordings arrive, decide how to commit them.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

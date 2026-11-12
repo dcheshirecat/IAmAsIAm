@@ -67,6 +67,7 @@ namespace IAmAsIAm.Runtime.Story
         StoryWorld _world;
         MapScreen _map;
         ChapterTreeScreen _tree;
+        IAmAsIAm.Runtime.Audio.VoicePlayer _voice;
         IAmAsIAm.Core.Story.PlaceData _places;
         readonly HashSet<string> _visited = new HashSet<string>();
         /// <summary>The last thing used in the world ("Go" means she just walked out: no second walk to get there).</summary>
@@ -88,6 +89,8 @@ namespace IAmAsIAm.Runtime.Story
             _world.Init(cameraRig != null ? cameraRig.Target : null, () => { if (cameraRig != null) cameraRig.SnapBehind(); });
             _map = gameObject.AddComponent<MapScreen>();
             _tree = gameObject.AddComponent<ChapterTreeScreen>();
+            // The owner's recorded voice lines (never generated): played when their line shows, if the file is there.
+            _voice = gameObject.AddComponent<IAmAsIAm.Runtime.Audio.VoicePlayer>();
             _places = DataLoader.Load<IAmAsIAm.Core.Story.PlaceData>("places");
             // The phone's Maps tab: the city she's in, just to look (from Chapter 1 on).
             _devices.MapAvailable = () => !string.IsNullOrEmpty(_lastCity) && !(GameServices.Chapter(runner.ChapterId)?.doorToDoor ?? true) && runner.IsPlaying;
@@ -194,6 +197,7 @@ namespace IAmAsIAm.Runtime.Story
             _dialogue.SetActive(false);
             _choices.SetActive(false);
             StopExploring();
+            if (_voice != null) _voice.Stop();
             if (_world != null) _world.Leave();
             // Sharing time ends with the story.
             var roster = GameServices.Roster;
@@ -273,6 +277,7 @@ namespace IAmAsIAm.Runtime.Story
             }
             _line.fontStyle = line.Inner ? FontStyle.Italic : FontStyle.Normal;
             _line.text = line.Text;
+            if (_voice != null) _voice.Play(line);
         }
 
         void ShowChoices(List<Choice> choices)
