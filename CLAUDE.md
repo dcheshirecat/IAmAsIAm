@@ -93,6 +93,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
 - 2026-11-12: School is **remembered** only (talk, memories) on the Sundays. The envied family is **a single dad** who is present
   (the contrast with Sarah). Maya has **one friend** in First Day School, **kind but who prefers other kids** over her. At 15 Sarah
   mentions Mira's death **in the car on the way home**, among other church news.
+- 2026-11-12: The friend is **not** the single dad's child. **Sunday 1 (5):** Maya goes "floaty" in the long service (a gentle first
+  depersonalization) and is then forgotten at church after it; Mira finds her. **The writing grows with Maya** from 5 to 15.
+  Names: the owner fills in `docs/PrologueNames.md`.
 
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
