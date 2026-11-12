@@ -236,6 +236,24 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   come)` (1ZNBBCoAvZZQi2bK9kD3NFSC_ciUCQwWg): Part 1 (14YKbWiYuOV6oaFrNsicZuZO_0DDH2QhGpaP4zejpgBs), Part 2
   (1i_4R0_4pg60TRjLSlRJpr7VIog5wWqr_7CvHtAHuQmY), Part 3 (18Bvs_-r1VFrE_X6zwsnOgjvkAv6MmvdYkV_6e45OGnc), Part 4
   (1N1al1-P8tWZ--L6ucxfvpgFgxxSeD4RTTlrOeqxisZI). Script Sheet "02 Chapter 1 - script list (draft)" (1cSvXfcf2TbkcNSMfnW_Fii-ztjv9kVEf_7LjRMhZ-p4, 33 lines).
+- 2026-11-12: **Chapter 1.5, Axel (owner):** Axel's first act is **a haircut and new clothes**. **Axel:** a **dark sense of humour**, loves
+  fun and **parties**, never at anyone's expense; loves quality time with Mark. **Angry at the Quaker church** but **cautiously open to
+  mainstream Christianity through friends**; he goes to church with Mark **only on holidays**, once they've dated a few months.
+  **Coming out:** he **never tells Sarah** (barely in touch since Maya left home); tells **Selene and his professors first**, **disappears on
+  Tanya**, and starts dating Mark **after** coming out. **Mark:** instantly kind and funny, matches Axel's values and humour; dates,
+  studying, cuddling. **Mark's Episcopal church is queer-friendly and warm**; they go to **Pride and protests as a church**. **Izzy is
+  triggered at a protest** (Maya went to protests with Sarah as a child). **Christmas and Easter** with Mark's family: the **Methodist**
+  church and the **queer-affirming** one. **Axel knows a little about Maya** from context clues; **Selene just thinks he transitioned**.
+  Other alters' signs show up for Axel too, **but less than for Maya**. **The end:** Mark **accidentally tears Mira's napkin** (Sunday 2);
+  **Axel is gone the next morning**. **Guide: the priest at Mark's church**, kind, invites him for holidays, not in touch consistently.
+  **Unlocks are silent until the end of the chapter** (the recap). Drafts `Story/Drafts/draft_ch1_5_part1..4.ink`.
+  Parts: 1 Axel (Aug 2018: haircut, thrift store, Selene, professors, meeting Mark), 2 Mark (fall 2018: studying, Pride with the
+  church, Christmas Eve at the Methodist church), 3 Holidays (spring 2019: Ash Wednesday and the priest, the vigil where Izzy is
+  triggered, Easter at a queer-affirming church), 4 The napkin (May 2019). Placeholders: "The priest" (`mark_priest`), "Mark's mom"
+  (`mark_mom`), the church "St. ___'s". Drive: Story Drafts → `03 Chapter 1.5 - Axel (title to come)` (1pOOBlf0DtgjVVELZapx_fKVE_7hTOMgJ):
+  Part 1 (1ZGtbXs-7G1g-CyCH8IEG_QQ-fVeWOc43PP8riNHm8so), Part 2 (18TkSIf2OAV4hR6R-bTbHledWvd2X52UBYudsnc7p41c), Part 3
+  (1tK13LY_DCZxNTpnuO-_zyQ1UVw5aypcdZdqiNdMQP4w), Part 4 (1H7Ls89KivW6oT-av-x1lgLZhG0fFGCaoXcamNETZmYI). Script Sheet
+  "03 Chapter 1.5 - script list (draft)" (10Z4IJd5w0S4JaALNeFGbXNS2eTYKMpIho2aDCWFE9Hg, 46 lines).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

@@ -243,6 +243,28 @@
       ],
       "memberLinks": [],
       "age": "25"
+    },
+    {
+      "id": "mark_priest",
+      "name": "The priest",
+      "role": "Chapter 1.5's guide: the priest at Mark's queer-friendly Episcopal church. Kind to Axel, invites him for holidays, not in touch consistently. (Name, age and pronouns to come from the owner.)",
+      "tradition": "christianity",
+      "description": "",
+      "chapterIds": [
+        "ch1-5-axel"
+      ],
+      "memberLinks": []
+    },
+    {
+      "id": "mark_mom",
+      "name": "Mark's mom",
+      "role": "Mark's mother: Christmas and Easter at the family's Methodist church. (Name to come.)",
+      "tradition": "christianity",
+      "description": "",
+      "chapterIds": [
+        "ch1-5-axel"
+      ],
+      "memberLinks": []
     }
   ]
 }
