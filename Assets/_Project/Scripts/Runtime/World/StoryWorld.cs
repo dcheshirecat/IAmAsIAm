@@ -36,6 +36,8 @@ namespace IAmAsIAm.Runtime.World
         Color _cameraColourWas;
 
         readonly Dictionary<string, ChoiceSpot> _spots = new Dictionary<string, ChoiceSpot>();
+        /// <summary>The scenery pews and seats, front first: a story seat ("Go: The front pew") becomes one of these.</summary>
+        readonly List<GameObject> _seats = new List<GameObject>();
         int _wallSlots, _innerSlots, _doorSlots;
 
         /// <summary>Is this place one of Maya's homes, with her altar (places.json <c>altar</c>)? Set by the story screen.</summary>
@@ -94,6 +96,7 @@ namespace IAmAsIAm.Runtime.World
             _root = null;
             _place = null;
             _spots.Clear();
+            _seats.Clear();
             _wallSlots = _innerSlots = _doorSlots = 0;
         }
 
@@ -172,11 +175,12 @@ namespace IAmAsIAm.Runtime.World
                 if (Has(id, "church", "chapel", "meeting", "sanctuary", "synagogue", "shul", "temple", "renewal") && !Has(id, "fellowship", "social", "school"))
                 {
                     var wood = new Color(0.45f, 0.31f, 0.2f);
-                    for (int row = 0; row < 5; row++)
+                    for (int row = 4; row >= 0; row--)
                     {
                         // Pews either side of a wide aisle (people and things to explore stand in the aisle and by the walls).
-                        Block("Pew", new Vector3(-3.4f, 0.25f, -3.5f + row * 1.5f), new Vector3(2f, 0.5f, 0.5f), wood);
-                        Block("Pew", new Vector3(3.4f, 0.25f, -3.5f + row * 1.5f), new Vector3(2f, 0.5f, 0.5f), wood);
+                        // Front row first in _seats, so "the front pew" is the one nearest the front.
+                        _seats.Add(Block("Pew", new Vector3(-3.4f, 0.25f, -3.5f + row * 1.5f), new Vector3(2f, 0.5f, 0.5f), wood));
+                        _seats.Add(Block("Pew", new Vector3(3.4f, 0.25f, -3.5f + row * 1.5f), new Vector3(2f, 0.5f, 0.5f), wood));
                     }
                     Block("Front", new Vector3(0, 0.08f, _half.y - 2.2f), new Vector3(4f, 0.16f, 2f), Tint(wood, 0.2f)); // Low enough to step onto.
                 }
@@ -287,9 +291,31 @@ namespace IAmAsIAm.Runtime.World
             foreach (var s in _spots.Values) if (s != null) s.SetLive(null, -1, null);
         }
 
+        /// <summary>Places to sit: "Go: The front pew" or "Go: Mira's chair" is walking to a seat, not a doorway.</summary>
+        static bool IsSeat(string target) => Has(target.ToLowerInvariant(), "pew", "chair", "seat", "bench", "sofa", "couch", "cushion");
+
         ChoiceSpot MakeSpot(string verb, string target)
         {
-            var kind = verb == "Talk" ? SpotKind.Person : verb == "Go" ? SpotKind.Way : SpotKind.Thing;
+            var kind = verb == "Talk" ? SpotKind.Person : verb == "Go" && !IsSeat(target) ? SpotKind.Way : SpotKind.Thing;
+            // A pew the story names is one of the pews already standing in the room (the front one first), so the player
+            // walks to the pew they can see. It glows like any other thing on offer.
+            if (kind == SpotKind.Thing && Has(target.ToLowerInvariant(), "pew") && _seats.Count > 0)
+            {
+                var pew = _seats[0];
+                _seats.RemoveAt(0);
+                var seat = new GameObject("Spot: " + target);
+                seat.transform.SetParent(_root.transform, false);
+                seat.transform.localPosition = new Vector3(pew.transform.localPosition.x, 0, pew.transform.localPosition.z);
+                pew.transform.SetParent(seat.transform, true);
+                var seatReach = seat.AddComponent<BoxCollider>();
+                seatReach.isTrigger = true;
+                seatReach.center = new Vector3(0, 1f, 0);
+                seatReach.size = new Vector3(2.6f, 2f, 1.8f);
+                var seatSpot = seat.AddComponent<ChoiceSpot>();
+                seatSpot.Build(new Color(1f, 0.9f, 0.68f));
+                seatSpot.LabelHeight = 1.4f;
+                return seatSpot;
+            }
             var go = new GameObject("Spot: " + target);
             go.transform.SetParent(_root.transform, false);
             Vector3 p; Quaternion facing;
@@ -503,6 +529,7 @@ namespace IAmAsIAm.Runtime.World
         Color[] _base;
         MaterialPropertyBlock _block;
         bool _lit;
+        Light _light;
 
         /// <summary>Roughly the top of the thing (for the camera and future markers).</summary>
         public float LabelHeight { get; set; }
@@ -523,6 +550,17 @@ namespace IAmAsIAm.Runtime.World
                 var m = _renderers[i].sharedMaterial;
                 _base[i] = m == null ? Color.grey : m.HasProperty("_BaseColor") ? m.GetColor("_BaseColor") : m.HasProperty("_Color") ? m.GetColor("_Color") : Color.grey;
             }
+            // A small warm light that breathes with it: a shimmer on the thing itself, not a floating marker.
+            var lightGo = new GameObject("Glow");
+            lightGo.transform.SetParent(transform, false);
+            lightGo.transform.localPosition = new Vector3(0, 1.2f, 0.3f);
+            _light = lightGo.AddComponent<Light>();
+            _light.type = LightType.Point;
+            _light.range = 2.6f;
+            _light.color = glowColour;
+            _light.intensity = 0f;
+            _light.shadows = LightShadows.None;
+            _light.enabled = false;
             SetLive(null, -1, null);
         }
 
@@ -531,14 +569,17 @@ namespace IAmAsIAm.Runtime.World
             _prompt = prompt;
             _use = use;
             if (use == null && _lit) Paint(0f);
+            if (_light != null) _light.enabled = use != null;
         }
 
         void LateUpdate()
         {
             if (_use == null) return;
-            // Breathes slowly (about every four seconds: far from any flashing rate), never fully white.
+            // Breathes slowly (about every four seconds: far from any flashing rate), never fully white. Owner: more obvious,
+            // so it's a stronger shift, plus a small warm light on the thing itself.
             float t = 0.5f + 0.5f * Mathf.Sin(Time.unscaledTime * 1.5f + _phase);
-            Paint(0.16f + 0.2f * t);
+            Paint(0.38f + 0.37f * t);
+            if (_light != null) _light.intensity = 0.6f + 1.1f * t;
         }
 
         void Paint(float amount)

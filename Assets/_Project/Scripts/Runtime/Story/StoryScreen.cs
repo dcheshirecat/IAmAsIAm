@@ -46,7 +46,8 @@ namespace IAmAsIAm.Runtime.Story
         RectTransform _root;
         Text _speaker, _line, _frontLabel, _triggerText, _actionTitle, _actionBody, _anchorBody;
         GameObject _dialogue, _choices, _action, _anchor, _triggerPanel, _tap, _touch;
-        Text _prompt, _objective;
+        Text _prompt, _objective, _objectiveCard;
+        float _objectiveCardUntil;
         RectTransform _actionButtons, _breathCircle;
         IAmAsIAm.Runtime.Mind.FogOverlay _fog;
         GameObject _chaptersButton;
@@ -269,11 +270,37 @@ namespace IAmAsIAm.Runtime.Story
                 if (_wantChapterList) { _wantChapterList = false; OpenChapterList(); }
             }
 
+            // The goal line steps aside while a list of dialogue choices is up (they share the top of the screen).
+            if (_objective != null) _objective.enabled = !_choices.activeSelf;
+            if (_objectiveCard != null)
+            {
+                // Fades out over the last second; nothing moves (fine with Reduce motion).
+                float left = _objectiveCardUntil - Time.unscaledTime;
+                var c = _objectiveCard.color;
+                c.a = Mathf.Clamp01(left);
+                _objectiveCard.color = c;
+                _objectiveCard.enabled = left > 0f && !_anchorOpen;
+            }
+
             var usable = busy || interactor == null ? null : interactor.Target;
             _prompt.text = usable == null ? "" : (Touchscreen.current != null ? "" : "E  ") + usable.Prompt;
         }
 
-        void ShowObjective(string text) { if (_objective != null) _objective.text = text; }
+        /// <summary>
+        /// The goal line (owner: bigger, in the middle of the screen). A new goal shows large in the middle for a few seconds,
+        /// then stays at the top centre.
+        /// </summary>
+        void ShowObjective(string text)
+        {
+            if (_objective == null) return;
+            bool changed = _objective.text != text;
+            _objective.text = text;
+            if (changed && !string.IsNullOrEmpty(text) && _objectiveCard != null)
+            {
+                _objectiveCard.text = text;
+                _objectiveCardUntil = Time.unscaledTime + 4f;
+            }
+        }
 
         // ── Dialogue ──────────────────────────────────────────────────────────────
 
@@ -896,7 +923,15 @@ namespace IAmAsIAm.Runtime.Story
             _chaptersButton.SetActive(false);
 
             // The goal line (# objective:), under who's fronting: the main way the game points the way.
-            _objective = Label(_root, "Objective", 44, FontStyle.Italic, new Vector2(0.02f, 0.86f), new Vector2(0.46f, 0.92f));
+            // Owner: bigger and in the middle of the screen. Top centre (under the top buttons), with a dark edge to read on anything.
+            _objective = Label(_root, "Objective", 64, FontStyle.Bold, new Vector2(0.18f, 0.79f), new Vector2(0.82f, 0.89f));
+            _objective.alignment = TextAnchor.MiddleCenter;
+            Shadowed(_objective);
+            // A new goal first shows large in the middle of the screen, then fades (it stays at the top).
+            _objectiveCard = Label(_root, "Objective (new)", 88, FontStyle.Bold, new Vector2(0.08f, 0.46f), new Vector2(0.92f, 0.64f));
+            _objectiveCard.alignment = TextAnchor.MiddleCenter;
+            _objectiveCard.enabled = false;
+            Shadowed(_objectiveCard);
 
             // The Anchor button and panel: top right, on their own canvas above every other screen.
             var anchorLayer = new GameObject("Anchor Layer", typeof(RectTransform), typeof(Canvas), typeof(GraphicRaycaster));
@@ -1025,6 +1060,14 @@ namespace IAmAsIAm.Runtime.Story
             rt.anchorMin = min; rt.anchorMax = max; rt.offsetMin = Vector2.zero; rt.offsetMax = Vector2.zero;
             go.GetComponent<Image>().color = color;
             return go;
+        }
+
+        /// <summary>A dark edge so a line reads over any scene.</summary>
+        static void Shadowed(Text t)
+        {
+            var o = t.gameObject.AddComponent<Outline>();
+            o.effectColor = new Color(0f, 0f, 0f, 0.85f);
+            o.effectDistance = new Vector2(3f, -3f);
         }
 
         Text Label(Transform parent, string name, int size, FontStyle style, Vector2 min, Vector2 max)
