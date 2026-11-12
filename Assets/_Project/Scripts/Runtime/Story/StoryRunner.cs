@@ -67,6 +67,8 @@ namespace IAmAsIAm.Runtime.Story
         public event Action<string> ObjectiveChanged;
         /// <summary>A <c># place:</c> tag: the character is now somewhere else (the world builds it to explore).</summary>
         public event Action<string> PlaceChanged;
+        /// <summary>A new chapter part began (Ink set_age, at the top of every part): the screen shows its marker.</summary>
+        public event Action PartStarted;
         /// <summary>Where the story is right now (the last <c># place:</c>), or null outside a story.</summary>
         public string Place { get; private set; }
         public string Objective { get; private set; } = "";
@@ -367,6 +369,7 @@ namespace IAmAsIAm.Runtime.Story
             {
                 devices?.SetAge(Convert.ToInt32(a[0]));
                 _cutNext = true;
+                PartStarted?.Invoke();
                 // A new part: whoever is here (fronting or sharing time) gets known a little better (owner: their own
                 // practices open by getting to know them better and better).
                 var r = GameServices.Roster;

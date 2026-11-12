@@ -521,6 +521,12 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Ch1 Psalm 139:12 KJV, Ch1.5 Psalm 139:14 KJV, Ch2 Song of Songs 8:7 KJV, Ch3 Dhammapada 160 (Müller), Ch4 Qur'an 94:5-6 (Abdel
   Haleem), Ch5 Brihadaranyaka Upanishad 1.3.28, Ch6 the last line of the Ardas, Ch7 Tao Te Ching 8 (Legge), Ch8 the Gorsedd Prayer,
   Ch9 Ingersoll, Ch10 the first UU Principle, Ch11 Tattvartha Sutra 5.21, Ch12 "Know thyself" (Delphi), Ch13 the Jesus Prayer.
+- 2026-11-12: **Part markers (owner: "Maya, age 18" or "???, age 14").** Before the first line of every chapter part (Ink
+  `set_age` raises `StoryRunner.PartStarted`), `Runtime/Story/PartMarker.cs` shows who's playing and their age, with the month
+  and year under it (~3 s or a tap; the story waits). Maya = the body's age; an alter = their own age (system_members); an alter
+  not met yet (not the host, not unlocked) = "???" in a neutral colour. Rules in `Core/Story/PartMarkerText.cs` (tests).
+- 2026-11-12: **Owner: the parts should be more fleshed out, showing more of each part of Maya's day in every part** (morning,
+  getting there, work/school, meals, evening, bed). Being done chapter by chapter, in order, as drafts (owner's Doc edits first).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

@@ -137,6 +137,7 @@ namespace IAmAsIAm.Runtime.Story
         {
             _advance.Enable();
             _anchorKey.Enable();
+            runner.PartStarted += () => _partPending = true;
             runner.LineReady += ShowLine;
             runner.ChoicesReady += ShowChoices;
             runner.ActionRequested += RunAction;
@@ -263,7 +264,7 @@ namespace IAmAsIAm.Runtime.Story
                         || IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen || IAmAsIAm.Runtime.Practices.BookScreen.IsOpen || IAmAsIAm.Runtime.Practices.RitualScreen.IsOpen || MapScreen.IsOpen || ChapterTreeScreen.IsOpen;
             // Saves, the phone and the chapter list still wait for the story, even while exploring.
             IsBusy = busy || runner.IsPlaying;
-            busy |= IAmAsIAm.Runtime.Save.SaveSlotsScreen.IsOpen || IAmAsIAm.Runtime.Loading.LoadingScreen.IsShowing || ChapterIntro.IsShowing;
+            busy |= IAmAsIAm.Runtime.Save.SaveSlotsScreen.IsOpen || IAmAsIAm.Runtime.Loading.LoadingScreen.IsShowing || ChapterIntro.IsShowing || PartMarker.IsShowing;
             PlayerMotor.Blocked = busy;
             _tap.SetActive(_dialogue.activeSelf && !_choices.activeSelf && !_anchorOpen);
             if (_touch != null) _touch.SetActive(!busy);
@@ -316,10 +317,29 @@ namespace IAmAsIAm.Runtime.Story
             }
         }
 
+        // ── The part marker (owner: "Maya, age 18" or "???, age 14") ──────────────
+
+        bool _partPending;
+
+        /// <summary>Who's playing this part and how old they are, before its first line. An alter not met yet is "???".</summary>
+        void ShowPartMarker(Action then)
+        {
+            var roster = GameServices.Roster;
+            string id = roster?.FrontingId ?? IAmAsIAm.Core.Story.ChapterRuns.HostId;
+            var def = roster?.GetDefinition(id);
+            bool known = GameServices.ChapterRuns?.CanSwitchTo(id) ?? true;
+            string who = IAmAsIAm.Core.Story.PartMarkerText.Line(id, def?.displayName, known, def?.age, GameServices.Devices?.Age ?? 0);
+            string when = IAmAsIAm.Core.Story.PartMarkerText.When(GameServices.Book?.Date);
+            var colour = new Color(0.95f, 0.92f, 0.86f);
+            if (known && def != null && ColorUtility.TryParseHtmlString(def.colorHex, out var c)) colour = Color.Lerp(colour, c, 0.6f);
+            PartMarker.Show(who, when, colour, then);
+        }
+
         // ── Dialogue ──────────────────────────────────────────────────────────────
 
         void ShowLine(StoryLine line)
         {
+            if (_partPending) { _partPending = false; ShowPartMarker(() => ShowLine(line)); return; }
             _choices.SetActive(false);
             StopExploring();
             _dialogue.SetActive(true);
@@ -338,6 +358,7 @@ namespace IAmAsIAm.Runtime.Story
 
         void ShowChoices(List<Choice> choices)
         {
+            if (_partPending) { _partPending = false; ShowPartMarker(() => ShowChoices(choices)); return; }
             StopExploring();
             _lastWorldVerb = "";
             if (TryExplore(choices)) return;
