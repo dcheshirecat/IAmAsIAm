@@ -234,7 +234,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   3 Senior year (fall 2019, 21: Mark's email, abandoned, the coat drive and Gracie, Samhain with Tanya and Selene, quiet Sundays),
   4 Alone (2020: lockdown, Zoom graduation, the prayer service, Jacob). Drive: Story Drafts → `02 Chapter 1 - Christianity (title to
   come)` (1ZNBBCoAvZZQi2bK9kD3NFSC_ciUCQwWg): Part 1 (1s0ZFBiQusFethA8Yyla1prrikx0_Z5gxUzwGf3yMx2o), Part 2
-  (1i_4R0_4pg60TRjLSlRJpr7VIog5wWqr_7CvHtAHuQmY), Part 3 (1mOjpvHTQmAH2bHa_jm1qWGJy-xIcuGMy34MVfgak2sA), Part 4
+  (1i_4R0_4pg60TRjLSlRJpr7VIog5wWqr_7CvHtAHuQmY), Part 3 (13mn_dcWCEDA4ndvEe3TFwK8Xy6Ever7jxYlxkLn55AI), Part 4
   (1jwSdV_oyeRmqTB2DHZKxABwEq-bN0DuV-OdJgj7Wjm8). Script Sheet "02 Chapter 1 - script list (draft)" (1_fEDa_uaOlDYmY1UK0vj0ypcg4957A4ibSZYJhq01Dw, 34 lines).
 - 2026-11-12: **Chapter 1.5, Axel (owner):** Axel's first act is **a haircut and new clothes**. **Axel:** a **dark sense of humour**, loves
   fun and **parties**, never at anyone's expense; loves quality time with Mark. **Angry at the Quaker church** but **cautiously open to
@@ -292,7 +292,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   family names, Dani, "Congregation Etz Chaim". Michael is now in Chapter 6's people. Drive: Story Drafts → `04 Chapter 2 - Judaism
   (title to come)` (1xVD3UYELoU_vAhYc_iDteHwX71VSdrDC): Part 1 (1yDFo4vUOyVllZJL39gZrky2Tz0M260bztdqbXjDgbd4), Part 2
   (17oTJSNVo6T-H9i44kyoduMtkuZ4FgLseqE0s0IpKsjo), Part 3 (1-McfFH3x7ySaM1Cdvp9AMu_Qlwk8aZ1Zh9bQ_QkOR5k), Part 4
-  (19qiOidOSF11KHu3o32r6UEZf35_0bAmFayi8yXkxb1w). Script Sheet "04 Chapter 2 - script list (draft)" (1tR5MEfk3ubI8XNQe474uecaeea2zCGroZvWUUu2WERY, 68 lines).
+  (1v3Pg3dp26SNShBiBCUMEwS__7T90Pwl2gLKLMsFM-g0). Script Sheet "04 Chapter 2 - script list (draft)" (1tR5MEfk3ubI8XNQe474uecaeea2zCGroZvWUUu2WERY, 68 lines).
 - 2026-11-12: **Explore the world, not just dialogue (owner).** Every `# place: <id>` is BUILT as a space to walk around
   (`Runtime/World/StoryWorld.cs`, made by StoryScreen): placeholder geometry from the id (outdoors for park/quad/lake/path/march/
   pride/lawn..., a large hall for church/synagogue/temple/museum..., small for car/guest_room; pews, shelves, a bed by keyword),
@@ -421,7 +421,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Maya surfaces), 4 Iftar (Ramadan 2027: an open community iftar; the last day; Angie suggests SystemLog: `gain_app` + first notes
   from Heather and Izzy; Maya reads them; `# chapter-end`). 61 voiced lines. **Chapter 4 unlocks nobody** (owner).
 - 2026-11-12: **Chapter 4 Drive:** Story Drafts → `06 Chapter 4 - Islam (title to come)` (1ENhOVuU74tWb4yjEgE0pkONOhh1k3EZ5): Part 1
-  (1w4zu7OfXW79GAlIAo-VPoQc7JsDwPXjY8XRWvqVftGw), Part 2 (1dH3nrSbPVC3aUNhcis8QzJYm-RsWC6kiC0YffvbD0Vo), Part 3
+  (1w4zu7OfXW79GAlIAo-VPoQc7JsDwPXjY8XRWvqVftGw), Part 2 (1yiuHSqbtfxQA4DdEcpVZ6WWUfxWhX_kAEO716OTRze8), Part 3
   (1UVk39Dy2hOcZiE2nFUPIW9EnMNLMjgtgnoD2Q3S8aqI), Part 4 (1Xkr74NwKIZOraKTQgLnCpJrd9QRfntiu4dFYpgzFJpU); Sheet "06 Chapter 4 - script
   list (draft)" (1YPoDcqVlRPpgy1wq3K6xHlSk37cgbslJwCV6xHBaL3M, 62 lines). **Owner renamed them: Sawsan (`sawsan`, was Zahra) and Fadi (`fadi`, was Idris).**
 - 2026-11-12: **Chapter 5, Hinduism:** the owner asked for research and options for Hindu leaders: `docs/Chapter5_HinduismResearch.md`.
