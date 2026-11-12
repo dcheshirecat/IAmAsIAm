@@ -427,6 +427,46 @@
       "chapterId": "ch3-buddhism"
     },
     {
+      "id": "day_ward_group_room",
+      "name": "The day program: the group room",
+      "city": "chicago",
+      "x": 0.55,
+      "y": 0.72,
+      "chapterId": "ch4-islam"
+    },
+    {
+      "id": "day_ward_quiet_room",
+      "name": "The day program: the quiet room",
+      "city": "chicago",
+      "x": 0.55,
+      "y": 0.72,
+      "chapterId": "ch4-islam"
+    },
+    {
+      "id": "andersonville_cafe",
+      "name": "A café in Andersonville",
+      "city": "chicago",
+      "x": 0.46,
+      "y": 0.12,
+      "chapterId": "ch4-islam"
+    },
+    {
+      "id": "sufi_dhikr_room",
+      "name": "Idris's Thursday dhikr",
+      "city": "chicago",
+      "x": 0.3,
+      "y": 0.3,
+      "chapterId": "ch4-islam"
+    },
+    {
+      "id": "mosque_iftar_hall",
+      "name": "The mosque: the iftar hall",
+      "city": "chicago",
+      "x": 0.2,
+      "y": 0.45,
+      "chapterId": "ch4-islam"
+    },
+    {
       "id": "black",
       "name": "",
       "city": "",

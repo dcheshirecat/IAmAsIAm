@@ -18,3 +18,6 @@
 
 === ch3_buddhism ===
 -> ch3_part1
+
+=== ch4_islam ===
+-> ch4_part1

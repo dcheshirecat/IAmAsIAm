@@ -35,7 +35,7 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 25 | `episcopal_church` | St. Luke's Episcopal | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Pastor Key, Axel (the body, 20) |
 | 26 | `protest_march` | The vigil march | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Mark, Izzy (the body, 20), Axel (the body, 20) |
 | 27 | `queer_affirming_church` | The queer-affirming church | indianapolis | Chapter 1.5: Axel (ch1_5_part3) | Mark, Axel (the body, 20) |
-| 28 | `chicago_apartment` | Maya's apartment | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 25), Tanya, Maya (the body, 27) |
+| 28 | `chicago_apartment` | Maya's apartment | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 25), Tanya, Maya (the body, 27), Nina (the body, 28) |
 | 29 | `field_museum_hall` | The Field Museum: Stanley Field Hall | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 24), Christie, Maya (the body, 27) |
 | 30 | `field_museum_office` | The Field Museum: the registrar's office | chicago | Chapter 2: Judaism (ch2_part1) | Christie |
 | 31 | `field_museum_gallery` | The Field Museum: the new gallery | chicago | Chapter 2: Judaism (ch2_part1) | Eudora Jones, Adeena, Maya (the body, 24) |
@@ -51,13 +51,18 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 41 | `sigd_community_hall` | The Sigd celebration | chicago | Chapter 2: Judaism (ch2_part4) | Tigist, Maya (the body, 27) |
 | 42 | `effie_house` | Effie's house | chicago | Chapter 2: Judaism (ch2_part4) | Effie, Maya (the body, 27) |
 | 43 | `lakefront_path` | The lakefront path | chicago | Chapter 2: Judaism (ch2_part4) | Rabbi Abe, Maya (the body, 27) |
-| 44 | `therapist_office` | Angie's office | chicago | Chapter 3: Buddhism (ch3_part1) | Angie, Maya (the body, 27) |
+| 44 | `therapist_office` | Angie's office | chicago | Chapter 3: Buddhism (ch3_part1) | Angie, Maya (the body, 27), Izzy (the body, 28), Maya (the body, 28) |
 | 45 | `ohare_airport` | O'Hare Airport | chicago | Chapter 3: Buddhism (ch3_part1) | - |
 | 46 | `boudha_guest_house` | Pasang's guest house | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27), Angie |
 | 47 | `boudha_stupa` | Boudhanath Stupa | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27) |
 | 48 | `dharma_shringa_hall` | Dharma Shringa: the meditation hall | kathmandu | Chapter 3: Buddhism (ch3_part3) | Teacher, Maya (the body, 27), Pasang Lhamo |
 | 49 | `boudha_monastery` | The monastery behind the guest house | kathmandu | Chapter 3: Buddhism (ch3_part3) | Pasang Lhamo, Heather (the body, 27) |
 | 50 | `lumbini_sacred_garden` | Lumbini: the Sacred Garden | lumbini | Chapter 3: Buddhism (ch3_part4) | Maya (the body, 27) |
+| 51 | `day_ward_group_room` | The day program: the group room | chicago | Chapter 4: Islam (ch4_part1) | Izzy (the body, 28), Chaplain Noor |
+| 52 | `day_ward_quiet_room` | The day program: the quiet room | chicago | Chapter 4: Islam (ch4_part1) | Chaplain Noor, Izzy (the body, 28), Maya (the body, 28), Zahra |
+| 53 | `andersonville_cafe` | A café in Andersonville | chicago | Chapter 4: Islam (ch4_part2) | Reneé, Izzy (the body, 28) |
+| 54 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Idris, Maya (the body, 28) |
+| 55 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Zahra, Chaplain Noor |
 
 ## 2. People, in the order they first appear
 
@@ -66,7 +71,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | # | Who | Id | Kind | First in | Ages (the body) | Places |
 |---|---|---|---|---|---|---|
 | 1 | Sarah | `mother` | person | Prologue: This Little Light | - | home_kitchen, car, church_sanctuary, church_fellowship_hall, home_maya_room, college_dorm_selene |
-| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27 | home_kitchen, car, church_fellowship_hall, church_first_day_school, church_sanctuary, home_maya_room, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden |
+| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28 | home_kitchen, car, church_fellowship_hall, church_first_day_school, church_sanctuary, home_maya_room, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room |
 | 3 | Miss Eloise | `eloise` | person | Prologue: This Little Light | - | church_first_day_school |
 | 4 | Rebecca | `rebecca` | person | Prologue: This Little Light | - | church_first_day_school, church_sanctuary |
 | 5 | Mrs. Hines | `hines` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
@@ -79,7 +84,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 12 | Mark | `ex_christian` | person | Chapter 1.5: Axel | - | college_lecture_hall, college_apartment_axel, town_pride, methodist_church, protest_march, queer_affirming_church |
 | 13 | Cassie | `mark_mom` | person | Chapter 1.5: Axel | - | methodist_church |
 | 14 | Pastor Key | `mark_priest` | person | Chapter 1.5: Axel | - | episcopal_church |
-| 15 | Izzy | `izzy` | system member | Chapter 1.5: Axel | 20 | protest_march |
+| 15 | Izzy | `izzy` | system member | Chapter 1.5: Axel | 20, 28 | protest_march, day_ward_group_room, day_ward_quiet_room, andersonville_cafe, therapist_office |
 | 16 | Adeena | `ex_jewish` | person | Chapter 2: Judaism | - | field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_conservative, adeena_parents_house, lgbtq_synagogue, chabad_house, chicago_apartment |
 | 17 | Christie | `christie` | person | Chapter 2: Judaism | - | field_museum_office, field_museum_hall |
 | 18 | Eudora Jones | `eudora` | person | Chapter 2: Judaism | - | field_museum_gallery |
@@ -94,6 +99,11 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 27 | Pasang Lhamo | `pasang` | person | Chapter 3: Buddhism | - | boudha_guest_house, boudha_stupa, dharma_shringa_hall, boudha_monastery |
 | 28 | Teacher | `course_teacher` | person | Chapter 3: Buddhism | - | dharma_shringa_hall |
 | 29 | Heather | `heather` | system member | Chapter 3: Buddhism | 27 | boudha_monastery |
+| 30 | Chaplain Noor | `chaplain_noor` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall, day_ward_group_room |
+| 31 | Reneé | `renee_carter` | person | Chapter 4: Islam | - | andersonville_cafe |
+| 32 | Nina | `nina` | system member | Chapter 4: Islam | 28 | chicago_apartment |
+| 33 | Zahra | `zahra` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall |
+| 34 | Idris | `idris` | person | Chapter 4: Islam | - | sufi_dhikr_room |
 
 ## 3. Close-ups and props, scene by scene
 
@@ -405,6 +415,11 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `himalaya-postcard`: The Himalayas, bought years ago at the museum gift shop. You've never been anywhere.
 - `dusty-suitcase`: Under the bed. Dusty. It has never been on a plane.
 - `ticket-bought`: Click. A confirmation number. Your heart, very loud.
+- `blanket-fort`: The tiger blanket from Nepal, the couch cushions, two chairs. A fort. Nobody can see in.
+- `napkin-taped`: The napkin with Mira's number, taped together very carefully. The tape is old now.
+- `crackers-floor`: A grown-up fridge. Grown-up food. You eat a whole sleeve of crackers, sitting on the floor.
+- `notebook-nina`: Heather's round letters. Izzy's loopy ones. You find a pen.
+- `mira-tried`: Big letters, pressing hard: "MIRA TRIED. -N"
 
 ### The Field Museum: Stanley Field Hall (`field_museum_hall`)
 
@@ -512,6 +527,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `leaflets`: "Grounding when you feel far away." "What is dissociation?" You don't take one. You read the title twice.
 - `angie-calendar`: March. Six Thursdays.
 - `angie-waits`: Angie waits. She doesn't hurry you. The clock. Gerald, outside, being overwatered.
+- `gerald-prayer-wheel`: Gerald the plant has a little brass prayer wheel next to him now. He seems pleased about it.
 
 ### O'Hare Airport (`ohare_airport`)
 
@@ -575,4 +591,51 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `ashoka-pillar`: A stone pillar, older than almost anything, put here by an emperor to say: here. It happened here.
 - `lumbini-pond`: Green water. A bodhi tree hung with so many prayer flags you can hardly see the leaves.
 - `monastic-zone`: Down the long canal: a Thai temple, white and gold; a Burmese one with a golden spire; a Chinese gate; a German one; a Japanese peace pagoda. Everyone came.
+
+### The day program: the group room (`day_ward_group_room`)
+
+- `name-tag-izzy`: A sheet of stickers and a fat marker. You write "IZZY", then, smaller, underneath, "(Maya)".
+- `day-schedule`: "9:00 Check-in. 10:00 DBT skills. 11:30 Art. 1:00 Lunch. 2:00 Process group. 3:30 Chaplain's hour (optional)."
+- `group-circle`: Twelve chairs, a box of tissues on every third one, a woman knitting very fast, a young man asleep in his hoodie.
+- `tipp-board`: "TIPP: Temperature. Intense exercise. Paced breathing. Paired muscle relaxation." Someone has drawn a little ice cube with a face.
+- `last-circle`: The same twelve chairs. You know everyone's names now, and which one is the knitting woman's.
+- `goodbye-card`: A card signed by the group. Zahra has drawn a tiny turbah. Someone has drawn an ice cube with a face.
+
+### The day program: the quiet room (`day_ward_quiet_room`)
+
+- `qibla-arrow`: A small arrow, painted on a ceiling tile, and one word: "Qibla". The direction of Mecca, for anyone who prays.
+- `interfaith-shelf`: Prayer rugs, folded. A Quran on a stand, a Bible, a Tanakh, a little brass Buddha, a box of tissues. Room for everyone.
+- `car-park-tree`: The hospital car park, and one tree going orange. Someone has put a bird feeder out.
+- `name-tag-maya`: "IZZY (Maya)". In your writing. Round letters. Not yours.
+- `zahra-praying`: Zahra, from group, on a prayer rug under the qibla arrow. Standing, bowing, kneeling, her forehead resting on a small round tablet of clay.
+- `car-park-winter`: The tree in the car park is bare now. The bird feeder is busier.
+
+### A café in Andersonville (`andersonville_cafe`)
+
+- `step-free-door`: No step. A wide door. A little blue sign. Reneé picked this place on purpose.
+- `renee-table`: Two mugs already there. A woman with short grey-streaked hair, a manual wheelchair, a leather jacket with a small rainbow pin.
+- `cardamom-buns`: Cardamom buns. Izzy wants all of them.
+- `stone-before-news`: The stone. The white line. Heather's hand and yours, on it.
+- `renee-hand`: Reneé's hand on yours, on the table, until the coffee is cold.
+- hidden memory `sunday2-overheard` (a scene played only by an alter)
+
+### Idris's Thursday dhikr (`sufi_dhikr_room`)
+
+- `dhikr-circle`: Twenty people on cushions, knees almost touching. Old men, young women, a teenager in headphones around her neck.
+- `idris`: White beard, a knitted cap, a string of prayer beads moving through his fingers. He smiles at you like he's been expecting you.
+- `shoes-row`: Forty shoes in a row by the door. Yours at the end, a little apart.
+- `dhikr-chant`: La ilaha illallah. Over and over, low, together, like the sea.
+- `dhikr-eyes-open`: Eyes open. The stone. Izzy counting the beads going round Idris's fingers: thirty-one, thirty-two. You stay.
+- `dhikr-eyes-closed`: Dark, and the sound, and further... Heather opens your eyes. Gently. Not tonight.
+- `maya-shoes`: Your shoes. The last pair. Your hands, tying them. Yours, for a minute.
+
+### The mosque: the iftar hall (`mosque_iftar_hall`)
+
+- `iftar-tables`: Long tables, paper tablecloths, a date and a cup of water at every place. Nobody eats yet. Everyone is waiting together.
+- `iftar-children`: Kids running between the tables with plates of samosas they're not allowed to touch yet. A grandmother catches one, laughing.
+- `iftar-clock`: Sunset: 5:41. It's 5:38. Three hundred people watching the same minute hand.
+- `adhan-iftar`: The call to prayer, from the front of the hall, rising and falling. Three hundred people breaking their fast at once.
+- `date-eaten`: Sweet, sticky, very sweet. Someone passes you water before you ask.
+- `rows-praying`: Rows, shoulder to shoulder, everyone moving together: standing, bowing, kneeling, foreheads to the floor. Then stillness.
+- `guard-samosas`: Zahra's mom hands you a serving spoon and a look that means: guard the samosas. You guard them with your life.
 

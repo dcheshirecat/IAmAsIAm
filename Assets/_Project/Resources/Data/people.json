@@ -119,7 +119,8 @@
       "tradition": "quakers",
       "description": "Watched from afar in the prologue. As a child she used crutches; as an adult she uses a manual wheelchair. She overheard Mira raising her worries with Sarah (Sunday 2, Maya 8). Years later (chapter 4 or 5) she and adult Maya meet up to talk about being queer and ex-religious: Reneé is an out bisexual and has left Sarah's church, but still identifies as Quaker. She tells Maya what she overheard.",
       "chapterIds": [
-        "prologue-quaker"
+        "prologue-quaker",
+        "ch4-islam"
       ],
       "memberLinks": [],
       "pronouns": "she/her"
@@ -410,6 +411,43 @@
         "ch3-buddhism"
       ],
       "memberLinks": []
+    },
+    {
+      "id": "chaplain_noor",
+      "name": "Chaplain Noor",
+      "role": "Chapter 4's guide: a Muslim (Sunni) chaplain at the psychiatric day program (placeholder name; about 40, she/her). Gives spiritual care to anyone, of any faith or none; mostly listens; brings dates.",
+      "tradition": "islam",
+      "description": "",
+      "chapterIds": [
+        "ch4-islam"
+      ],
+      "memberLinks": [],
+      "pronouns": "she/her",
+      "age": "40"
+    },
+    {
+      "id": "zahra",
+      "name": "Zahra",
+      "role": "Another patient at the day program (placeholder name; 30s, she/her): Shia (Twelver), Iraqi American. Prays on a turbah; invites them to iftar.",
+      "tradition": "islam",
+      "description": "",
+      "chapterIds": [
+        "ch4-islam"
+      ],
+      "memberLinks": [],
+      "pronouns": "she/her"
+    },
+    {
+      "id": "idris",
+      "name": "Idris",
+      "role": "A Sufi teacher who leads a Thursday-night dhikr, Noor's friend (placeholder name; 60s, he/him).",
+      "tradition": "islam",
+      "description": "",
+      "chapterIds": [
+        "ch4-islam"
+      ],
+      "memberLinks": [],
+      "pronouns": "he/him"
     }
   ]
 }

@@ -30,6 +30,10 @@ INCLUDE Chapters/ch3_part1.ink
 INCLUDE Chapters/ch3_part2.ink
 INCLUDE Chapters/ch3_part3.ink
 INCLUDE Chapters/ch3_part4.ink
+INCLUDE Chapters/ch4_part1.ink
+INCLUDE Chapters/ch4_part2.ink
+INCLUDE Chapters/ch4_part3.ink
+INCLUDE Chapters/ch4_part4.ink
 
 -> start
 
