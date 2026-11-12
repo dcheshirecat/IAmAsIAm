@@ -90,4 +90,40 @@ Your phone. # device: phone
 ~ open_gap("ch1-junior-year", "mirror,mail,closet")
 ~ find_clue("ch1-junior-year", "mirror")
 Maya: A whole year. # vo: ch1-christianity_maya_0013
+-> outside
+
+= outside
+// Owner: more of each part of Maya's day. Claude's scenes: the same day, outside, and the night.
+# place: college_quad
+# shot: over-shoulder
+# objective: Get some air
+- (walk)
++ {walk < 3} [Look: The guy on the bench]
+    He lifts a hand. "Hey, man! Good luck Thursday!" You don't know him. You lift a hand back. # look: hey-man
+    ~ set_experience("Derealization", 0.3)
+    -> walk
++ {walk < 3} [Look: Your reflection in the library doors]
+    Short hair. Somebody's jacket. You keep walking so you don't have to look. # look: library-doors-reflection
+    -> walk
++ {walk < 3} [Look: The finals posters]
+    "Finals week: free coffee in the union!" Finals. Your finals. Which classes are yours? # look: finals-posters
+    -> walk
+* [Use: Feet on the floor]
+    The brick path. Your shoes, someone's shoes, your feet in them. Still here. # look: feet-brick-may
+    ~ nudge(-0.1)
+-
+-> night
+
+= night
+# place: college_apartment_axel
+# shot: close
+# objective: Try to sleep
+- (room)
++ {room < 2} [Look: The fridge]
+    Beer, hot sauce, leftover pad thai with "A" on the lid in marker. # look: fridge-axel
+    -> room
+* [Use: The bed]
+    ~ record_choice("ch1.p2.night", "lights", "The night you came back, you slept with every light on, in your clothes, on top of the covers.")
+    On top of the covers, in your clothes, every light on. Your phone buzzes and buzzes. You don't look. # look: lights-on-sleep
+-
 -> ch1_part3  // the next part of the same chapter (one run)

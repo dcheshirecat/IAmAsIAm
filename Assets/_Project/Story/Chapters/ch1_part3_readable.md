@@ -30,6 +30,32 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Use: Your phone (read Mark's email)**
 - **Go: To class**
 
+## Shift
+
+> **Objective:** Your shift at the library
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The schedule**
+    - Your shifts, moved. Jess swapped every one she had with you. A sticky note: "sorry, school stuff!"
+- **Look: The book drop**
+    - Thirty books in the drop box. Something to do with your hands.
+- **Use: The returns cart**
+    - Shelving alone in the stacks. Nobody to say goodnight to at the end.
+
+## Evening
+
+> **Objective:** Make dinner
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Your phone**
+    - **Selene:** "how are u. really." The only one who still asks.
+- **Look: The closet**
+    - Your clothes. Only yours. The rest went to the donation bin in a bag you didn't open.
+- **Use: The microwave**
+    - Macaroni in a mug. You eat it standing up, the way Mom ate. You sit down.
+
 ## Email
 
 _(Maya's phone opens: the player can read her messages, then closes it.)_

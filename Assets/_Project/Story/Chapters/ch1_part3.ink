@@ -47,6 +47,40 @@
 * [Use: Your phone (read Mark's email)] -> email
 * [Go: To class]
 -
+-> shift
+
+= shift
+// Owner: more of each part of Maya's day. Claude's scenes: work, where the abandonment is quiet, and the evening alone.
+# place: college_library
+# shot: over-shoulder
+# objective: Your shift at the library
+- (desk)
++ {desk < 3} [Look: The schedule]
+    Your shifts, moved. Jess swapped every one she had with you. A sticky note: "sorry, school stuff!" # look: shifts-swapped
+    ~ nudge(0.1)
+    -> desk
++ {desk < 3} [Look: The book drop]
+    Thirty books in the drop box. Something to do with your hands. # look: book-drop
+    -> desk
+* [Use: The returns cart]
+    Shelving alone in the stacks. Nobody to say goodnight to at the end. # look: shelving-alone
+-
+-> evening
+
+= evening
+# place: college_dorm_maya
+# shot: close
+# objective: Make dinner
+- (room)
++ {room < 3} [Look: Your phone]
+    Selene: "how are u. really." The only one who still asks. # look: selene-really
+    -> room
++ {room < 3} [Look: The closet]
+    Your clothes. Only yours. The rest went to the donation bin in a bag you didn't open. # look: closet-yours
+    -> room
+* [Use: The microwave]
+    Macaroni in a mug. You eat it standing up, the way Mom ate. You sit down. # look: mug-mac
+-
 -> drive
 
 = email

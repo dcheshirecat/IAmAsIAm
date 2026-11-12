@@ -14,7 +14,7 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 4 | `church_first_day_school` | Church of Friends: First Day School | iowa_city | Prologue: This Little Light (prologue_sunday1) | Miss Eloise, Rebecca, Maya (the body, 8) |
 | 5 | `church_sanctuary` | Church of Friends: the sanctuary | iowa_city | Prologue: This Little Light (prologue_sunday1) | Sarah, Mrs. Hines, Maya (the body, 11), Mr. Jones, Rebecca |
 | 6 | `church_fellowship_hall` | Church of Friends: the fellowship hall | iowa_city | Prologue: This Little Light (prologue_sunday1) | Mrs. Hines, Mr. Jones, Sarah, Mira, Maya (the body, 5), Maya (the body, 8), Maya (the body, 11) |
-| 7 | `college_dorm_maya` | Maya's dorm room | champaign_urbana | Prelude (prelude_part1) | - |
+| 7 | `college_dorm_maya` | Maya's dorm room | champaign_urbana | Prelude (prelude_part1) | Selene |
 | 8 | `college_lecture_hall` | The lecture hall | champaign_urbana | Prelude (prelude_part1) | Selene, Maya (the body, 18), Mark, Axel (the body, 20) |
 | 9 | `college_dining_hall` | The dining hall | champaign_urbana | Prelude (prelude_part1) | - |
 | 10 | `college_library` | The library | champaign_urbana | Prelude (prelude_part1) | - |
@@ -90,7 +90,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 6 | Mr. Jones | `jones` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
 | 7 | Mira | `guide_quaker` | person | Prologue: This Little Light | - | church_fellowship_hall |
 | 8 | Mr. Carter | `carter` | person | Prologue: This Little Light | - | home_kitchen, car |
-| 9 | Selene | `selene` | person | Prelude | - | college_lecture_hall, college_dorm_selene, college_quad, park_ostara, shop_the_circle, campus_cafe |
+| 9 | Selene | `selene` | person | Prelude | - | college_lecture_hall, college_dorm_selene, college_quad, park_ostara, college_dorm_maya, shop_the_circle, campus_cafe |
 | 10 | Tanya | `tanya` | person | Prelude | - | shop_the_circle, park_yule_circle, park_ostara, chicago_apartment |
 | 11 | Gracie | `gracie` | person | Chapter 1: Christianity | - | campus_ministry, campus_ministry_chapel, campus_ministry_lawn |
 | 12 | Axel | `axel` | system member | Chapter 1.5: Axel | 20 | college_apartment_maya, campus_barber, thrift_store, campus_cafe, college_lecture_hall, town_pride, methodist_church, episcopal_church, protest_march, queer_affirming_church, college_apartment_axel |
@@ -262,10 +262,31 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `muddy-shoes`: Your running shoes, caked in mud. You haven't been running.
 - `bare-wall`: Nothing on it. Everyone else on the floor has posters.
 - `stone-coat`: Mira's stone, in your coat pocket. Still.
+- `selene-really`: Selene: "how are u. really." The only one who still asks.
+- `closet-yours`: Your clothes. Only yours. The rest went to the donation bin in a bag you didn't open.
+- `mug-mac`: Macaroni in a mug. You eat it standing up, the way Mom ate. You sit down.
 - `empty-quad`: The quad, empty. A single person with a dog, very far away.
 - `dorm-desk`: A laptop. A cold mug. A mask on the lamp.
 - `zoom-class`: Six small squares. Tanya's ceiling fan. Everyone with their feet on their own floor.
 - `dorm-ceiling`: The ceiling. The light moving across it. Morning, afternoon.
+
+### The lecture hall (`college_lecture_hall`)
+
+- `lecture-screen`: "Intro to World Religions. Week 8: New Religious Movements."
+- `notebook-candle`: Neat notes. A doodle of a candle in the margin, not yours.
+- `selene-bag`: A pentacle charm on the zip. A paperback with a cracked spine, full of sticky notes.
+- `abnormal-psych`: "Abnormal Psychology. Week 2: Dissociation." You write the word down and it means nothing yet.
+- `sleeping-guy`: Asleep on his laptop, the keyboard typing "jjjjjjjjjjjjjjj" into his notes.
+- `notes-gap`: Neat notes for forty minutes. Then a gap. Then neat notes again, and the clock says eleven.
+
+### The dining hall (`college_dining_hall`)
+
+- `dining-groups`: Every table a group. Laughing, saving seats, passing fries. Freshmen who found each other in August.
+- `selene-text-again`: Selene's text, still open. You read it again.
+- `lunch-window`: Pasta, an apple, a seat by the window. You eat fast, so it doesn't look like you're waiting for anyone.
+- `chairs-up`: Chairs up on every table. Tape on the floor: stand here, six feet.
+- `dining-worker`: Mask, gloves, kind eyes. "Same as yesterday, hon?" The only voice you'll hear today.
+- `grab-and-go-box`: A styrofoam box, warm through the bag. The walk back across the empty quad.
 - `zoom-grid`: A grid of faces. Muted. Names scrolling.
 - `name-on-screen`: "Maya ___." Two seconds on the screen. Gone.
 - `zoom-chat`: "congrats everyone!!" "CLASS OF 2020" Nobody says your name.
@@ -273,18 +294,6 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `tanya-reply`: The phone buzzes almost at once.
 - `laptop-closed`: The laptop, closed. Quiet.
 - `selene-oracle-deck`: A padded envelope from Selene: twelve cards, hand-painted, one word on each. Her own oracle deck.
-
-### The lecture hall (`college_lecture_hall`)
-
-- `lecture-screen`: "Intro to World Religions. Week 8: New Religious Movements."
-- `notebook-candle`: Neat notes. A doodle of a candle in the margin, not yours.
-- `selene-bag`: A pentacle charm on the zip. A paperback with a cracked spine, full of sticky notes.
-
-### The dining hall (`college_dining_hall`)
-
-- `dining-groups`: Every table a group. Laughing, saving seats, passing fries. Freshmen who found each other in August.
-- `selene-text-again`: Selene's text, still open. You read it again.
-- `lunch-window`: Pasta, an apple, a seat by the window. You eat fast, so it doesn't look like you're waiting for anyone.
 
 ### The library (`college_library`)
 
@@ -300,6 +309,11 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `phone-buzz-finals`: Your phone buzzes on the table.
 - `mom-heart`: "It's ok. I'll stay here for break." Sent. She hearts it.
 - `notes-later`: Back to the notes. You'll answer later. You don't.
+- `holds-empty`: Nothing under your name today. You check twice.
+- `shelving-thursday`: Shelving until five. The radiators, the call numbers, the quiet. You grab a granola bar for dinner.
+- `shifts-swapped`: Your shifts, moved. Jess swapped every one she had with you. A sticky note: "sorry, school stuff!"
+- `book-drop`: Thirty books in the drop box. Something to do with your hands.
+- `shelving-alone`: Shelving alone in the stacks. Nobody to say goodnight to at the end.
 
 ### Selene's dorm room (`college_dorm_selene`)
 
@@ -330,6 +344,9 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `book-of-shadows`: Tanya's book, in your bag. Under "Ground first.", in round, loopy letters that aren't yours: "Book of Shadows. Blessed be. -I"
 - `wax-fingers`: Candle wax on your fingers, peeled into a little moon.
 - `class-receipt`: A receipt from The Circle. "Intro to the Craft, 8 weeks. PAID."
+- `schedule-fridge`: Coffee in the cheap machine. Your schedule on the fridge: classes in black, library shifts in blue, Thursdays in purple.
+- `sill-january`: Mira's stone, the candle stub from Yule, frost on the inside of the glass.
+- `coat-check`: Coat, scarf, keys, stone in the pocket. You check it twice.
 - `seedling-dead`: The paper cup from Ostara. A seedling, folded over, dry.
 - `flannel-shirt`: A flannel shirt, green and black. A man's. Your size.
 - `phone-friday`: Friday. The last thing you remember is Tuesday.
@@ -348,6 +365,10 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `selene-going`: Selene's scarf, getting smaller across the quad.
 - `stone-line-quad`: The stone's hole, worn smooth. Your thumb around it, around and around.
 - `feet-bricks`: Bricks under your shoes. Still here.
+- `hey-man`: He lifts a hand. "Hey, man! Good luck Thursday!" You don't know him. You lift a hand back.
+- `library-doors-reflection`: Short hair. Somebody's jacket. You keep walking so you don't have to look.
+- `finals-posters`: "Finals week: free coffee in the union!" Finals. Your finals. Which classes are yours?
+- `feet-brick-may`: The brick path. Your shoes, someone's shoes, your feet in them. Still here.
 - `quad-turn-away`: People you don't know, who know you. One of them sees you, and turns away.
 - `left-the-group`: "Jordan left the group." "Sam left the group." "Riley left the group."
 - `coat-drive-flyer`: "Campus Ministry Coat Drive! Bring a coat, take a coat, get a hot chocolate!" Three exclamation marks.
@@ -395,6 +416,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `dress-fits`: The dress, cold from the plastic. It still fits.
 - `floor-long`: The floor. Your back against the bed. A long time.
 - `may-2019`: May 2019. The last thing you remember is the spring of 2018.
+- `fridge-axel`: Beer, hot sauce, leftover pad thai with "A" on the lid in marker.
+- `lights-on-sleep`: On top of the covers, in your clothes, every light on. Your phone buzzes and buzzes. You don't look.
 - `mark-upside-down`: Mark, upside down on the couch, the book on his face.
 - `fridge-note-axel`: A note in round letters. "Full moon Tues!! -I". You don't know an I.
 - `couch-cuddle`: Mark's arm. The book on the floor. Durkheim can wait.

@@ -49,6 +49,23 @@
     The ceiling. The light moving across it. Morning, afternoon. # look: dorm-ceiling
     ~ set_experience("Depersonalization", 0.4)
 -
+-> grab_and_go
+
+= grab_and_go
+// Owner: more of each part of Maya's day. Claude's scene: the one walk a day, to the dining hall for boxed food.
+# place: college_dining_hall
+# shot: wide
+# objective: Pick up dinner
+- (hall)
++ {hall < 3} [Look: The tables]
+    Chairs up on every table. Tape on the floor: stand here, six feet. # look: chairs-up
+    -> hall
++ {hall < 3} [Look: The woman behind the plastic]
+    Mask, gloves, kind eyes. "Same as yesterday, hon?" The only voice you'll hear today. # look: dining-worker
+    -> hall
+* [Use: The box (take it back to your room)]
+    A styrofoam box, warm through the bag. The walk back across the empty quad. # look: grab-and-go-box
+-
 -> graduation
 
 = phone

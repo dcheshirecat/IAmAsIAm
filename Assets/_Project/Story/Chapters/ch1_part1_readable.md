@@ -10,6 +10,45 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - Her first reading is three cards, in Tanya's back room, with Tanya teaching.
 - The lost time grows across the spring: a missed Thursday, a men's flannel shirt in her laundry, a text to Selene she didn't write. Never explained.
 
+## Morning
+
+> **Objective:** Get to your nine o'clock
+
+📱 **Text from Selene:** TANYA TONIGHT. 7. dont be late she does the look
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The kitchen counter**
+    - Coffee in the cheap machine. Your schedule on the fridge: classes in black, library shifts in blue, Thursdays in purple.
+- **Look: The windowsill**
+    - Mira's stone, the candle stub from Yule, frost on the inside of the glass.
+- **Use: Your coat**
+    - Coat, scarf, keys, stone in the pocket. You check it twice.
+
+## Lecture
+
+> **Objective:** Take notes
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The screen**
+    - "Abnormal Psychology. Week 2: Dissociation." You write the word down and it means nothing yet.
+- **Look: The guy next to you**
+    - Asleep on his laptop, the keyboard typing "jjjjjjjjjjjjjjj" into his notes.
+- **Use: Your notebook**
+    - Neat notes for forty minutes. Then a gap. Then neat notes again, and the clock says eleven.
+
+## Shift
+
+> **Objective:** Your shift at the library
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The holds shelf**
+    - Nothing under your name today. You check twice.
+- **Use: The returns cart**
+    - Shelving until five. The radiators, the call numbers, the quiet. You grab a granola bar for dinner.
+
 ## Thursday
 
 > **Objective:** Get to Tanya's class on time

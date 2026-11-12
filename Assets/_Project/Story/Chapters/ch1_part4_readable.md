@@ -30,6 +30,19 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Wait (stay in bed)**
     - The ceiling. The light moving across it. Morning, afternoon.
 
+## Grab and go
+
+> **Objective:** Pick up dinner
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The tables**
+    - Chairs up on every table. Tape on the floor: stand here, six feet.
+- **Look: The woman behind the plastic**
+    - Mask, gloves, kind eyes. "Same as yesterday, hon?" The only voice you'll hear today.
+- **Use: The box (take it back to your room)**
+    - A styrofoam box, warm through the bag. The walk back across the empty quad.
+
 ## Phone
 
 _(Maya's phone opens: the player can read her messages, then closes it.)_

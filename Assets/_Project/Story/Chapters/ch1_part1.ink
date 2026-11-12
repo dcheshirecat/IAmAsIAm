@@ -21,6 +21,55 @@
 # cw: religious-content
 # cw: depersonalization
 # cw: time-loss
+-> morning
+
+= morning
+// Owner: more of each part of Maya's day. Claude's scenes: a Thursday from the start (morning, a lecture, the library job),
+// ending at Tanya's class in the evening.
+# place: college_apartment_maya
+# shot: close
+# objective: Get to your nine o'clock
+~ text_from("selene", "TANYA TONIGHT. 7. dont be late she does the look")
+- (room)
++ {room < 3} [Look: The kitchen counter]
+    Coffee in the cheap machine. Your schedule on the fridge: classes in black, library shifts in blue, Thursdays in purple. # look: schedule-fridge
+    -> room
++ {room < 3} [Look: The windowsill]
+    Mira's stone, the candle stub from Yule, frost on the inside of the glass. # look: sill-january
+    -> room
+* [Use: Your coat]
+    Coat, scarf, keys, stone in the pocket. You check it twice. # look: coat-check
+-
+-> lecture
+
+= lecture
+# place: college_lecture_hall
+# shot: wide
+# objective: Take notes
+- (hall)
++ {hall < 3} [Look: The screen]
+    "Abnormal Psychology. Week 2: Dissociation." You write the word down and it means nothing yet. # look: abnormal-psych
+    -> hall
++ {hall < 3} [Look: The guy next to you]
+    Asleep on his laptop, the keyboard typing "jjjjjjjjjjjjjjj" into his notes. # look: sleeping-guy
+    -> hall
+* [Use: Your notebook]
+    Neat notes for forty minutes. Then a gap. Then neat notes again, and the clock says eleven. # look: notes-gap
+    ~ set_experience("TimeLoss", 0.15)
+-
+-> shift
+
+= shift
+# place: college_library
+# shot: over-shoulder
+# objective: Your shift at the library
+- (desk)
++ {desk < 2} [Look: The holds shelf]
+    Nothing under your name today. You check twice. # look: holds-empty
+    -> desk
+* [Use: The returns cart]
+    Shelving until five. The radiators, the call numbers, the quiet. You grab a granola bar for dinner. # look: shelving-thursday
+-
 -> thursday
 
 = thursday

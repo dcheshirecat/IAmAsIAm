@@ -73,3 +73,29 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
     - May 2019. The last thing you remember is the spring of 2018.
 
 **Maya:** A whole year.
+
+## Outside
+
+> **Objective:** Get some air
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The guy on the bench**
+    - He lifts a hand. "Hey, man! Good luck Thursday!" You don't know him. You lift a hand back.
+- **Look: Your reflection in the library doors**
+    - Short hair. Somebody's jacket. You keep walking so you don't have to look.
+- **Look: The finals posters**
+    - "Finals week: free coffee in the union!" Finals. Your finals. Which classes are yours?
+- **Use: Feet on the floor**
+    - The brick path. Your shoes, someone's shoes, your feet in them. Still here.
+
+## Night
+
+> **Objective:** Try to sleep
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The fridge**
+    - Beer, hot sauce, leftover pad thai with "A" on the lid in marker.
+- **Use: The bed**
+    - On top of the covers, in your clothes, every light on. Your phone buzzes and buzzes. You don't look.
