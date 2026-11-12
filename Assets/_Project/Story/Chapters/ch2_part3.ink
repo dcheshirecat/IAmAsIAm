@@ -47,6 +47,54 @@
     A thin line of smoke. Then you feel sorry, and you don't know why. # look: candle-out
 -
 ~ text_from("tanya", "Thinking of you today. I know today is hard.")
+-> winter_day
+
+= winter_day
+// Owner: a full day in every part. Claude's scenes: the rest of January 18th (Mira's day), which Maya doesn't know is Mira's day.
+# place: cta_train
+# shot: over-shoulder
+# objective: Get to work
+- (car)
++ {car < 2} [Look: The window]
+    Snow on the tracks, the lake frozen white at the edges. # look: l-window-snow
+    -> car
+* [Use: The pole (hold on)]
+    You keep thinking about the candle. Your hands smell of matches. # look: l-matches
+-
+-> winter_work
+
+= winter_work
+# place: field_museum_gallery
+# shot: wide
+# objective: Give the noon tour
+- (gallery)
++ {gallery < 3} [Look: The tour group]
+    Six retirees and a man who keeps correcting your Latin. You let him. # look: retirees-latin
+    -> gallery
++ {gallery < 3} [Look: The date on the schedule]
+    "JAN 18." Something about it. You can't think what. # look: jan-18
+    ~ set_experience("Derealization", 0.2)
+    -> gallery
+* [Talk: Christie (lunch)]
+    Christie's soup, split two ways, in the break room. She does the voices of every curator. You laugh until you're here again. # look: christie-soup
+    ~ nudge(-0.1)
+-
+-> winter_evening
+
+= winter_evening
+# place: chicago_apartment
+# shot: close
+# objective: Make dinner
+- (k)
++ {k < 2} [Look: The windowsill]
+    The candle, burnt down to nothing. A ring of wax on the sill. # look: wax-ring-evening
+    -> k
+* [Use: The stove (soup)]
+    Soup from a can. You eat it at the window, looking at the ring of wax. # look: soup-window
+-
+* [Use: The bed]
+    You leave the hall light on. You don't know why. # look: hall-light-on
+-
 -> imbolc
 
 = imbolc

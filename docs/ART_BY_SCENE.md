@@ -39,43 +39,44 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 29 | `protest_march` | The vigil march | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Mark, Izzy (the body, 20), Axel (the body, 20) |
 | 30 | `queer_affirming_church` | The queer-affirming church | indianapolis | Chapter 1.5: Axel (ch1_5_part3) | Mark, Axel (the body, 20) |
 | 31 | `chicago_apartment` | Maya's apartment | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 25), Tanya, Maya (the body, 27), Nina (the body, 28) |
-| 32 | `field_museum_hall` | The Field Museum: Stanley Field Hall | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 24), Christie, Maya (the body, 27) |
-| 33 | `field_museum_office` | The Field Museum: the registrar's office | chicago | Chapter 2: Judaism (ch2_part1) | Christie |
-| 34 | `field_museum_gallery` | The Field Museum: the new gallery | chicago | Chapter 2: Judaism (ch2_part1) | Eudora Jones, Adeena, Maya (the body, 24) |
-| 35 | `adeena_apartment` | Adeena's apartment | chicago | Chapter 2: Judaism (ch2_part2) | Adeena, Maya (the body, 25), Maya (the body, 27) |
-| 36 | `synagogue_conservative` | Congregation Etz Chaim | chicago | Chapter 2: Judaism (ch2_part2) | Adeena |
-| 37 | `synagogue_social_hall` | Congregation Etz Chaim: the social hall | chicago | Chapter 2: Judaism (ch2_part2) | Rabbi Abe, Maya (the body, 25) |
-| 38 | `adeena_parents_house` | Ruth's house | chicago | Chapter 2: Judaism (ch2_part3) | Ruth, Lee, Effie, Grandma, Adeena |
-| 39 | `havurah_living_room` | Hannah's living room | chicago | Chapter 2: Judaism (ch2_part3) | Hannah |
-| 40 | `lgbtq_synagogue` | The LGBTQ synagogue | chicago | Chapter 2: Judaism (ch2_part3) | Adeena, Maya (the body, 25) |
-| 41 | `chabad_house` | The Chabad house | chicago | Chapter 2: Judaism (ch2_part3) | Adeena, Maya (the body, 25) |
-| 42 | `renewal_shabbat` | The Renewal Shabbat | chicago | Chapter 2: Judaism (ch2_part4) | - |
-| 43 | `reform_temple` | The Reform temple | chicago | Chapter 2: Judaism (ch2_part4) | - |
-| 44 | `sigd_community_hall` | The Sigd celebration | chicago | Chapter 2: Judaism (ch2_part4) | Tigist, Maya (the body, 27) |
-| 45 | `effie_house` | Effie's house | chicago | Chapter 2: Judaism (ch2_part4) | Effie, Maya (the body, 27) |
-| 46 | `lakefront_path` | The lakefront path | chicago | Chapter 2: Judaism (ch2_part4) | Rabbi Abe, Maya (the body, 27) |
-| 47 | `therapist_office` | Angie's office | chicago | Chapter 3: Buddhism (ch3_part1) | Angie, Maya (the body, 27), Izzy (the body, 28), Maya (the body, 28) |
-| 48 | `ohare_airport` | O'Hare Airport | chicago | Chapter 3: Buddhism (ch3_part1) | - |
-| 49 | `boudha_guest_house` | Pasang's guest house | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27), Angie |
-| 50 | `boudha_stupa` | Boudhanath Stupa | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27) |
-| 51 | `dharma_shringa_hall` | Dharma Shringa: the meditation hall | kathmandu | Chapter 3: Buddhism (ch3_part3) | Teacher, Maya (the body, 27), Pasang Lhamo |
-| 52 | `boudha_monastery` | The monastery behind the guest house | kathmandu | Chapter 3: Buddhism (ch3_part3) | Pasang Lhamo, Heather (the body, 27) |
-| 53 | `lumbini_sacred_garden` | Lumbini: the Sacred Garden | lumbini | Chapter 3: Buddhism (ch3_part4) | Maya (the body, 27) |
-| 54 | `day_ward_group_room` | The day program: the group room | chicago | Chapter 4: Islam (ch4_part1) | Izzy (the body, 28), Chaplain Amal |
-| 55 | `day_ward_quiet_room` | The day program: the quiet room | chicago | Chapter 4: Islam (ch4_part1) | Chaplain Amal, Izzy (the body, 28), Maya (the body, 28), Sawsan |
-| 56 | `andersonville_cafe` | A café in Andersonville | chicago | Chapter 4: Islam (ch4_part2) | Reneé, Izzy (the body, 28) |
-| 57 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Fadi, Maya (the body, 28) |
-| 58 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Sawsan, Chaplain Amal |
-| 59 | `seattle_apartment` | Maya's apartment, Seattle | seattle | Chapter 5: Hinduism (ch5_part1) | Maya (the body, 28) |
-| 60 | `burke_museum_hall` | The Burke Museum | seattle | Chapter 5: Hinduism (ch5_part1) | Priya, Maya (the body, 28), Gurleen, Maya (the body, 29) |
-| 61 | `eastside_mandir_hall` | The temple on the Eastside | seattle | Chapter 5: Hinduism (ch5_part1) | Mangala Tai, Maya (the body, 28), Maya (the body, 29) |
-| 62 | `eastside_mandir_kitchen` | The temple on the Eastside: the kitchen | seattle | Chapter 5: Hinduism (ch5_part2) | Lakshmi |
-| 63 | `garba_community_hall` | The Navaratri garba | seattle | Chapter 5: Hinduism (ch5_part3) | Maya (the body, 29), Priya |
-| 64 | `priya_family_house` | Priya's family's house | seattle | Chapter 5: Hinduism (ch5_part3) | Lakshmi, Heather (the body, 29) |
-| 65 | `gurdwara_darbar_hall` | The gurdwara in Kent: the darbar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
-| 66 | `gurdwara_langar_hall` | The gurdwara in Kent: the langar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29) |
-| 67 | `gurdwara_kitchen` | The gurdwara in Kent: the kitchen | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29), Maya (the body, 30) |
-| 68 | `nagar_kirtan_street` | The Vaisakhi procession, Kent | seattle | Chapter 6: Sikhism (ch6_part2) | Maya (the body, 29), Christie |
+| 32 | `cta_train` | The L | chicago | Chapter 2: Judaism (ch2_part1) | - |
+| 33 | `field_museum_hall` | The Field Museum: Stanley Field Hall | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 24), Christie, Maya (the body, 27) |
+| 34 | `field_museum_office` | The Field Museum: the registrar's office | chicago | Chapter 2: Judaism (ch2_part1) | Christie |
+| 35 | `field_museum_gallery` | The Field Museum: the new gallery | chicago | Chapter 2: Judaism (ch2_part1) | Eudora Jones, Adeena, Maya (the body, 24), Christie |
+| 36 | `adeena_apartment` | Adeena's apartment | chicago | Chapter 2: Judaism (ch2_part2) | Adeena, Maya (the body, 25), Maya (the body, 27) |
+| 37 | `lakefront_path` | The lakefront path | chicago | Chapter 2: Judaism (ch2_part2) | Rabbi Abe, Maya (the body, 27) |
+| 38 | `synagogue_conservative` | Congregation Etz Chaim | chicago | Chapter 2: Judaism (ch2_part2) | Adeena |
+| 39 | `synagogue_social_hall` | Congregation Etz Chaim: the social hall | chicago | Chapter 2: Judaism (ch2_part2) | Rabbi Abe, Maya (the body, 25) |
+| 40 | `adeena_parents_house` | Ruth's house | chicago | Chapter 2: Judaism (ch2_part3) | Ruth, Lee, Effie, Grandma, Adeena |
+| 41 | `havurah_living_room` | Hannah's living room | chicago | Chapter 2: Judaism (ch2_part3) | Hannah |
+| 42 | `lgbtq_synagogue` | The LGBTQ synagogue | chicago | Chapter 2: Judaism (ch2_part3) | Adeena, Maya (the body, 25) |
+| 43 | `chabad_house` | The Chabad house | chicago | Chapter 2: Judaism (ch2_part3) | Adeena, Maya (the body, 25) |
+| 44 | `renewal_shabbat` | The Renewal Shabbat | chicago | Chapter 2: Judaism (ch2_part4) | - |
+| 45 | `reform_temple` | The Reform temple | chicago | Chapter 2: Judaism (ch2_part4) | - |
+| 46 | `sigd_community_hall` | The Sigd celebration | chicago | Chapter 2: Judaism (ch2_part4) | Tigist, Maya (the body, 27) |
+| 47 | `effie_house` | Effie's house | chicago | Chapter 2: Judaism (ch2_part4) | Effie, Maya (the body, 27) |
+| 48 | `therapist_office` | Angie's office | chicago | Chapter 3: Buddhism (ch3_part1) | Angie, Maya (the body, 27), Izzy (the body, 28), Maya (the body, 28) |
+| 49 | `ohare_airport` | O'Hare Airport | chicago | Chapter 3: Buddhism (ch3_part1) | - |
+| 50 | `boudha_guest_house` | Pasang's guest house | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27), Angie |
+| 51 | `boudha_stupa` | Boudhanath Stupa | kathmandu | Chapter 3: Buddhism (ch3_part2) | Pasang Lhamo, Maya (the body, 27) |
+| 52 | `dharma_shringa_hall` | Dharma Shringa: the meditation hall | kathmandu | Chapter 3: Buddhism (ch3_part3) | Teacher, Maya (the body, 27), Pasang Lhamo |
+| 53 | `boudha_monastery` | The monastery behind the guest house | kathmandu | Chapter 3: Buddhism (ch3_part3) | Pasang Lhamo, Heather (the body, 27) |
+| 54 | `lumbini_sacred_garden` | Lumbini: the Sacred Garden | lumbini | Chapter 3: Buddhism (ch3_part4) | Maya (the body, 27) |
+| 55 | `day_ward_group_room` | The day program: the group room | chicago | Chapter 4: Islam (ch4_part1) | Izzy (the body, 28), Chaplain Amal |
+| 56 | `day_ward_quiet_room` | The day program: the quiet room | chicago | Chapter 4: Islam (ch4_part1) | Chaplain Amal, Izzy (the body, 28), Maya (the body, 28), Sawsan |
+| 57 | `andersonville_cafe` | A café in Andersonville | chicago | Chapter 4: Islam (ch4_part2) | Reneé, Izzy (the body, 28) |
+| 58 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Fadi, Maya (the body, 28) |
+| 59 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Sawsan, Chaplain Amal |
+| 60 | `seattle_apartment` | Maya's apartment, Seattle | seattle | Chapter 5: Hinduism (ch5_part1) | Maya (the body, 28) |
+| 61 | `burke_museum_hall` | The Burke Museum | seattle | Chapter 5: Hinduism (ch5_part1) | Priya, Maya (the body, 28), Gurleen, Maya (the body, 29) |
+| 62 | `eastside_mandir_hall` | The temple on the Eastside | seattle | Chapter 5: Hinduism (ch5_part1) | Mangala Tai, Maya (the body, 28), Maya (the body, 29) |
+| 63 | `eastside_mandir_kitchen` | The temple on the Eastside: the kitchen | seattle | Chapter 5: Hinduism (ch5_part2) | Lakshmi |
+| 64 | `garba_community_hall` | The Navaratri garba | seattle | Chapter 5: Hinduism (ch5_part3) | Maya (the body, 29), Priya |
+| 65 | `priya_family_house` | Priya's family's house | seattle | Chapter 5: Hinduism (ch5_part3) | Lakshmi, Heather (the body, 29) |
+| 66 | `gurdwara_darbar_hall` | The gurdwara in Kent: the darbar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
+| 67 | `gurdwara_langar_hall` | The gurdwara in Kent: the langar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29) |
+| 68 | `gurdwara_kitchen` | The gurdwara in Kent: the kitchen | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29), Maya (the body, 30) |
+| 69 | `nagar_kirtan_street` | The Vaisakhi procession, Kent | seattle | Chapter 6: Sikhism (ch6_part2) | Maya (the body, 29), Christie |
 
 ## 2. People, in the order they first appear
 
@@ -100,7 +101,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 15 | Pastor Key | `mark_priest` | person | Chapter 1.5: Axel | - | episcopal_church |
 | 16 | Izzy | `izzy` | system member | Chapter 1.5: Axel | 20, 28 | protest_march, day_ward_group_room, day_ward_quiet_room, andersonville_cafe, therapist_office |
 | 17 | Adeena | `ex_jewish` | person | Chapter 2: Judaism | - | field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_conservative, adeena_parents_house, lgbtq_synagogue, chabad_house, chicago_apartment |
-| 18 | Christie | `christie` | person | Chapter 2: Judaism | - | field_museum_office, field_museum_hall, nagar_kirtan_street |
+| 18 | Christie | `christie` | person | Chapter 2: Judaism | - | field_museum_office, field_museum_gallery, field_museum_hall, nagar_kirtan_street |
 | 19 | Eudora Jones | `eudora` | person | Chapter 2: Judaism | - | field_museum_gallery |
 | 20 | Rabbi Abe | `rabbi_abe` | person | Chapter 2: Judaism | - | synagogue_social_hall, lakefront_path |
 | 21 | Ruth | `ruth` | person | Chapter 2: Judaism | - | adeena_parents_house |
@@ -523,6 +524,11 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `spread-unremembered`: Three cards laid out on the altar. A spread you don't remember dealing. The Star in the middle.
 - `stone-dresser`: On the dresser, by your keys, where you'll see it.
 - `stone-dresser-evening`: By your keys. Where you'll see it.
+- `fridge-sue`: Takeout menus. A magnet from the Field: "SUE says hi." Not much else.
+- `pasta-couch`: Pasta with butter, eaten on the couch with the TV on for company.
+- `l-light-ceiling`: The L going by, every eleven minutes, the light sliding across the ceiling. You count three, and then you're asleep.
+- `box-fan`: The box fan in the window, pushing hot air around. July in Chicago.
+- `closet-three`: What do you wear to Shabbat? You try on three things. You'll change again after work.
 - `apartment-quiet`: Sunday afternoon. Adeena at her parents'. The apartment so quiet you can hear the fridge thinking.
 - `stone-quiet`: The stone. Your thumb around the hole, around and around.
 - `tall-candle-sill`: A candle. One, tall, in a glass. Lit. Burning low, like it's been burning all night.
@@ -530,10 +536,15 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `phone-january`: Thursday, January 18. A date that means something, and you can't think what.
 - `candle-left`: You leave it. It seems important to leave it.
 - `candle-out`: A thin line of smoke. Then you feel sorry, and you don't know why.
+- `wax-ring-evening`: The candle, burnt down to nothing. A ring of wax on the sill.
+- `soup-window`: Soup from a can. You eat it at the window, looking at the ring of wax.
+- `hall-light-on`: You leave the hall light on. You don't know why.
 - `imbolc-stub`: The tall candle's stub is still there from last month. You leave it where it is.
 - `imbolc-snow`: Grey snow on the L tracks. Under it, somewhere, seeds.
 - `imbolc-one-candle`: One candle, in the kitchen window. That's enough, this year.
 - `apartment-quiet-2`: Sunday. Adeena at a class. The fridge, thinking.
+- `mirror-teeth`: You brush your teeth and watch someone brush her teeth.
+- `we-should-talk`: Adeena: "Shabbat at mine. We should talk after." Just that.
 - `christie-chamomile`: In your bag, from work: chamomile tea bags, a whole row of them, taped together. "For the bad nights. -C"
 - `friday-hole`: Friday. Friday is a hole in the week now.
 - `renewal-flyer`: "Kabbalat Shabbat with drums! Everyone welcome. Bring your voice." A flyer someone shared.
@@ -559,12 +570,30 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `notebook-nina`: Heather's round letters. Izzy's loopy ones. You find a pen.
 - `mira-tried`: Big letters, pressing hard: "MIRA TRIED. -N"
 
+### The L (`cta_train`)
+
+- `l-window-lake`: Rooftops, water towers, somebody's laundry. Then the lake, all at once, flat and silver.
+- `l-riders`: A nurse asleep in scrubs. A kid with a cello. A man reading a paperback with the cover torn off.
+- `l-pole`: Cold metal, the train leaning into the curve. Feet on the floor. Your stop.
+- `l-window-snow`: Snow on the tracks, the lake frozen white at the edges.
+- `l-matches`: You keep thinking about the candle. Your hands smell of matches.
+
 ### The Field Museum: Stanley Field Hall (`field_museum_hall`)
 
 - `maximo`: The titanosaur, neck up into the light, longer than the hall feels. The fourth-graders always gasp. You still do, a little.
 - `tour-group`: Forty fourth-graders in matching yellow shirts. Two teachers counting heads, again.
 - `tour-notes`: Index cards, soft at the corners. "SUE: biggest, most complete T. rex. Tell them about the broken ribs."
 - `adeena-almost-smile`: For a second, almost, something like a smile.
+- `steps-lake`: From the museum steps: the lake, the sailboats, the city standing behind you like it's waiting.
+- `adeena-sandwich`: Adeena at her desk upstairs, eating a sandwich cut into exact squares, reading while she chews.
+- `gull-sandwich`: Peanut butter, slightly crushed. A gull watches every bite.
+- `campers-orange`: Thirty eight-year-olds in matching orange shirts, every one of them asking if Máximo is real.
+- `clock-sunset`: 3:40. 3:41. Sunset is 8:16.
+- `campers-answer`: "Is he real?" Real bones, cast copies, real once. They decide that's the best answer anyone's ever given.
+- `snack-drawer-friday`: Christie's snack drawer. A granola bar, in place of lunch. "Big night?" she says. You don't say how big.
+- `tour-from-back`: The same tour. The same jokes. You hear yourself say them from the back of the group.
+- `christie-covers`: Christie takes the second half of your tour without being asked. "Go sit down. I've got the dinosaur."
+- `crackers-numb`: Crackers. You eat four and can't taste them.
 - `maximo-winter`: The titanosaur. You've told its story a hundred times. You start, and then...
 - `members-tour`: Twenty adults on a members' tour, waiting. Somebody coughs.
 
@@ -580,6 +609,9 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `assistants-heads-down`: Heads down. Nobody looks at you. Everybody looks at you.
 - `stone-pocket`: The stone. Your thumb in the hole.
 - `case-done`: The preview is over. Everyone's gone. The clock says ten to six, and the afternoon is just... gone.
+- `retirees-latin`: Six retirees and a man who keeps correcting your Latin. You let him.
+- `jan-18`: "JAN 18." Something about it. You can't think what.
+- `christie-soup`: Christie's soup, split two ways, in the break room. She does the voices of every curator. You laugh until you're here again.
 
 ### Adeena's apartment (`adeena_apartment`)
 
@@ -595,6 +627,17 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `candles-far`: Warm dark. Her voice, very far away. Further every week.
 - `adeena-looking`: She's looking at you. She's been looking at you for a while.
 - `adeena-crying`: The candles. Her face, gold, and wet.
+
+### The lakefront path (`lakefront_path`)
+
+- `fireflies`: Fireflies in the grass by the path. You didn't know Chicago had fireflies.
+- `hands-wax`: Still warm from the candles. Still smelling a little of wax and challah.
+- `bench-night`: The lake, black and quiet. You sit until the warm feeling is something you could keep.
+- `lake-march-night`: Black water, a cold wind, the city lit up behind you like nothing happened.
+- `stone-walk-home`: Your thumb through the hole. Feet on the path. One step, then the next one, all the way home.
+- `lake-grey`: Grey to the edge of the world. Waves folding over and over on the rocks.
+- `lake-yarrow`: Dried yarrow, flat white heads gone brown along the path. You snap off one stalk.
+- `abe-windbreaker`: Sneakers. A windbreaker. A tie with little fish on it, even here.
 
 ### Congregation Etz Chaim (`synagogue_conservative`)
 
@@ -652,12 +695,6 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 - `shabbat-timers`: The lamps on timers. Nobody touches a switch from Friday night to Saturday night. Rest, Effie says, from making things happen.
 - `rivka-children`: Four of them, all talking at once, all in their Shabbat clothes, one with jam on hers.
-
-### The lakefront path (`lakefront_path`)
-
-- `lake-grey`: Grey to the edge of the world. Waves folding over and over on the rocks.
-- `lake-yarrow`: Dried yarrow, flat white heads gone brown along the path. You snap off one stalk.
-- `abe-windbreaker`: Sneakers. A windbreaker. A tie with little fish on it, even here.
 
 ### Angie's office (`therapist_office`)
 

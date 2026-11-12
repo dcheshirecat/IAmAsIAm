@@ -21,6 +21,40 @@
 # cw: time-loss
 # cw: breakup
 # cw: isolation
+-> wake
+
+= wake
+// Owner: a full day in every part. Claude's scenes: the whole Friday the relationship ended.
+# place: chicago_apartment
+# shot: close
+# objective: Get ready for work
+~ set_experience("Depersonalization", 0.3)
+- (room)
++ {room < 3} [Look: The mirror]
+    You brush your teeth and watch someone brush her teeth. # look: mirror-teeth
+    -> room
++ {room < 3} [Look: Your phone]
+    Adeena: "Shabbat at mine. We should talk after." Just that. # look: we-should-talk
+    -> room
+* [Use: Your keys]
+-
+-> workday
+
+= workday
+# place: field_museum_hall
+# shot: wide
+# objective: Give the eleven o'clock tour
+- (hall)
++ {hall < 3} [Look: Máximo]
+    The same tour. The same jokes. You hear yourself say them from the back of the group. # look: tour-from-back
+    ~ set_experience("Depersonalization", 0.45)
+    -> hall
+* [Talk: Christie]
+    Christie takes the second half of your tour without being asked. "Go sit down. I've got the dinosaur." # look: christie-covers
+-
+* [Use: The snack drawer (lunch)]
+    Crackers. You eat four and can't taste them. # look: crackers-numb
+-
 -> friday
 
 = friday
@@ -60,6 +94,19 @@ Adeena: Two and a half years. I love you. And most nights, I'm at this table by 
 -
 Adeena: Get help, Maya. Real help. Promise me that one thing. # vo: ch2-judaism_adeena_0050
 ~ journal("Note", "Adeena ended it. Two and a half years. \"Get help. Real help.\"")
+-> walk_home
+
+= walk_home
+# place: lakefront_path
+# shot: wide
+# objective: Go home
+- (path)
++ {path < 2} [Look: The lake]
+    Black water, a cold wind, the city lit up behind you like nothing happened. # look: lake-march-night
+    -> path
+* [Use: Mira's stone]
+    Your thumb through the hole. Feet on the path. One step, then the next one, all the way home. # look: stone-walk-home
+-
 -> alone
 
 = alone

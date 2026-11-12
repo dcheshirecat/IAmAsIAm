@@ -17,6 +17,42 @@
 ~ set_age(25)
 ~ set_date(2023, 7, 7)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
+-> wake
+
+= wake
+// Owner: a full day in every part. Claude's scenes: the Friday itself, before the first Shabbat.
+# place: chicago_apartment
+# shot: close
+# objective: Get ready for work
+~ text_from("ex_jewish", "Sunset is 8:16. Come at 7:30. Bring nothing. I mean it. Nothing.")
+- (room)
++ {room < 3} [Look: The fan]
+    The box fan in the window, pushing hot air around. July in Chicago. # look: box-fan
+    -> room
++ {room < 3} [Look: Your closet]
+    What do you wear to Shabbat? You try on three things. You'll change again after work. # look: closet-three
+    -> room
+* [Use: Your keys]
+-
+-> workday
+
+= workday
+# place: field_museum_hall
+# shot: wide
+# objective: Give the summer camp tour
+- (hall)
++ {hall < 3} [Look: The campers]
+    Thirty eight-year-olds in matching orange shirts, every one of them asking if Máximo is real. # look: campers-orange
+    -> hall
++ {hall < 3} [Look: The clock]
+    3:40. 3:41. Sunset is 8:16. # look: clock-sunset
+    -> hall
+* [Talk: The campers (answer the questions)]
+    "Is he real?" Real bones, cast copies, real once. They decide that's the best answer anyone's ever given. # look: campers-answer
+-
+* [Use: The snack drawer]
+    Christie's snack drawer. A granola bar, in place of lunch. "Big night?" she says. You don't say how big. # look: snack-drawer-friday
+-
 -> friday
 
 = friday
@@ -54,6 +90,22 @@ Adeena: Shabbat shalom. # vo: ch2-judaism_adeena_0017
 ~ set_experience("Depersonalization", 0.0)
 ~ nudge(-0.25)
 ~ journal("Note", "Friday nights at Adeena's. She lights, we cover our eyes, she says the blessing.")
+-> walk_home
+
+= walk_home
+# place: lakefront_path
+# shot: wide
+# objective: Walk home
+- (path)
++ {path < 3} [Look: The fireflies]
+    Fireflies in the grass by the path. You didn't know Chicago had fireflies. # look: fireflies
+    -> path
++ {path < 3} [Look: Your hands]
+    Still warm from the candles. Still smelling a little of wax and challah. # look: hands-wax
+    -> path
+* [Use: The bench (sit a minute)]
+    The lake, black and quiet. You sit until the warm feeling is something you could keep. # look: bench-night
+-
 -> morning
 
 = morning

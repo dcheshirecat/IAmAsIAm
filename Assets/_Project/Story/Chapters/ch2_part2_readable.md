@@ -11,6 +11,38 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - Rabbi Abe calls the meetup "keruv", bringing close (a real Conservative outreach word).
 - The Saturday morning service: Maya follows the English, stands when everyone stands, and is told that's enough.
 
+## Wake
+
+> **Objective:** Get ready for work
+
+📱 **Text from Adeena:** Sunset is 8:16. Come at 7:30. Bring nothing. I mean it. Nothing.
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The fan**
+    - The box fan in the window, pushing hot air around. July in Chicago.
+- **Look: Your closet**
+    - What do you wear to Shabbat? You try on three things. You'll change again after work.
+- **Use: Your keys**
+
+## Workday
+
+> **Objective:** Give the summer camp tour
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The campers**
+    - Thirty eight-year-olds in matching orange shirts, every one of them asking if Máximo is real.
+- **Look: The clock**
+    - 3:40. 3:41. Sunset is 8:16.
+- **Talk: The campers (answer the questions)**
+    - "Is he real?" Real bones, cast copies, real once. They decide that's the best answer anyone's ever given.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The snack drawer**
+    - Christie's snack drawer. A granola bar, in place of lunch. "Big night?" she says. You don't say how big.
+
 ## Friday
 
 > **Objective:** Get to Adeena's before sunset
@@ -46,6 +78,19 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
     - **Maya:** Shabbat shalom.
 - **Wait (just look at her)**
     - She isn't stern now. She's just here.
+
+## Walk home
+
+> **Objective:** Walk home
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The fireflies**
+    - Fireflies in the grass by the path. You didn't know Chicago had fireflies.
+- **Look: Your hands**
+    - Still warm from the candles. Still smelling a little of wax and challah.
+- **Use: The bench (sit a minute)**
+    - The lake, black and quiet. You sit until the warm feeling is something you could keep.
 
 ## Morning
 

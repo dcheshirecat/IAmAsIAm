@@ -533,6 +533,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   library (Claude's guess). Chapter 1 (a whole Thursday; the night she came back; senior-year shifts swapped + dinner alone;
   lockdown grab-and-go), Chapter 1.5 (his first party; breakfast for two + Maya's library voicemail; Halloween with Mark; a
   morning run; the last day of classes). NEXT: Chapter 2, then 3, 4, 5, 6.
+- 2026-11-12: **Chapter 6 answers (owner):** keep **Bibi Harjit** (langar) as the guide; **Christie VISITS** Seattle (a work trip)
+  and tells Maya in person, over coffee (not a phone call); **Chapter 6 unlocks nobody**. **Chapters 2-6: a FULL DAY in every
+  part** (owner): wake up, get there, work/school, lunch, home, dinner, bed, around the part's existing scenes.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

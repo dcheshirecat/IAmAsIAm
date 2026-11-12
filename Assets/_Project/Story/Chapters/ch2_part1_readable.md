@@ -28,6 +28,19 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Use: Your phone**
 - **Use: Your keys (go to work)**
 
+## Train
+
+> **Objective:** Ride the L to work
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The window**
+    - Rooftops, water towers, somebody's laundry. Then the lake, all at once, flat and silver.
+- **Look: The other riders**
+    - A nurse asleep in scrubs. A kid with a cello. A man reading a paperback with the cover torn off.
+- **Use: The pole (hold on)**
+    - Cold metal, the train leaning into the curve. Feet on the floor. Your stop.
+
 ## Phone
 
 _(Maya's phone opens: the player can read her messages, then closes it.)_
@@ -78,6 +91,19 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
     - **Christie:** New guide? Christie. I've done the dinosaur tour four hundred times. Snack drawer's here. Don't tell Adeena it exists.
     - **Christie:** Kidding. She knows. She pretends not to. That's love, at the Field.
 - **Go: Back to the floor**
+
+## Lunch
+
+> **Objective:** Take your lunch break
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The lake**
+    - **From the museum steps:** the lake, the sailboats, the city standing behind you like it's waiting.
+- **Look: Adeena, at the window**
+    - Adeena at her desk upstairs, eating a sandwich cut into exact squares, reading while she chews.
+- **Use: Your sandwich**
+    - Peanut butter, slightly crushed. A gull watches every bite.
 
 ## Install
 
@@ -132,3 +158,19 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 📱 **Maya texts Tanya:** Weird day. I think I made a friend?
 
 📱 **Text from Tanya:** That's not weird. That's good. Tell me everything Thursday.
+
+## Night
+
+> **Objective:** Make dinner
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The fridge**
+    - Takeout menus. A magnet from the Field: "SUE says hi." Not much else.
+- **Use: The stove (pasta)**
+    - Pasta with butter, eaten on the couch with the TV on for company.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The bed**
+    - The L going by, every eleven minutes, the light sliding across the ceiling. You count three, and then you're asleep.

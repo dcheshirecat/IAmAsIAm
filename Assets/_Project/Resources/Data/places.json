@@ -282,6 +282,14 @@
       "altar": true
     },
     {
+      "id": "cta_train",
+      "name": "The L",
+      "city": "chicago",
+      "x": 0.54,
+      "y": 0.45,
+      "chapterId": "ch2-judaism"
+    },
+    {
       "id": "field_museum_hall",
       "name": "The Field Museum: Stanley Field Hall",
       "city": "chicago",

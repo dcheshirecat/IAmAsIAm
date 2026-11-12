@@ -45,6 +45,23 @@
 + [Use: Your phone] -> phone
 * [Use: Your keys (go to work)]
 -
+-> train
+
+= train
+// Owner: a full day in every part. Claude's scenes.
+# place: cta_train
+# shot: over-shoulder
+# objective: Ride the L to work
+- (car)
++ {car < 3} [Look: The window]
+    Rooftops, water towers, somebody's laundry. Then the lake, all at once, flat and silver. # look: l-window-lake
+    -> car
++ {car < 3} [Look: The other riders]
+    A nurse asleep in scrubs. A kid with a cello. A man reading a paperback with the cover torn off. # look: l-riders
+    -> car
+* [Use: The pole (hold on)]
+    Cold metal, the train leaning into the curve. Feet on the floor. Your stop. # look: l-pole
+-
 -> museum
 
 = phone
@@ -106,6 +123,22 @@ Adeena: You just told forty children that SUE is sixty-seven thousand years old.
 * {desk >= 1} [Go: Back to the floor]
 -
 ~ journal("Note", "Adeena, the registrar. SUE is sixty-seven MILLION years old. The fact sheets are in her binder.")
+-> lunch
+
+= lunch
+# place: field_museum_hall
+# shot: wide
+# objective: Take your lunch break
+- (steps)
++ {steps < 3} [Look: The lake]
+    From the museum steps: the lake, the sailboats, the city standing behind you like it's waiting. # look: steps-lake
+    -> steps
++ {steps < 3} [Look: Adeena, at the window]
+    Adeena at her desk upstairs, eating a sandwich cut into exact squares, reading while she chews. # look: adeena-sandwich
+    -> steps
+* [Use: Your sandwich]
+    Peanut butter, slightly crushed. A gull watches every bite. # look: gull-sandwich
+-
 -> install
 
 = install
@@ -164,4 +197,18 @@ Adeena: See you at eight-thirty. # vo: ch2-judaism_adeena_0013
 -
 ~ text_to("tanya", "Weird day. I think I made a friend?")
 ~ text_from("tanya", "That's not weird. That's good. Tell me everything Thursday.")
+-> night
+
+= night
+# objective: Make dinner
+- (k)
++ {k < 2} [Look: The fridge]
+    Takeout menus. A magnet from the Field: "SUE says hi." Not much else. # look: fridge-sue
+    -> k
+* [Use: The stove (pasta)]
+    Pasta with butter, eaten on the couch with the TV on for company. # look: pasta-couch
+-
+* [Use: The bed]
+    The L going by, every eleven minutes, the light sliding across the ceiling. You count three, and then you're asleep. # look: l-light-ceiling
+-
 -> ch2_part2  // the next part of the same chapter (one run)

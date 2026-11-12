@@ -11,6 +11,34 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - Alone, Maya goes to a Renewal Kabbalat Shabbat (singing, drums, candles: the candles trigger her now), a Reform temple's Friday service, and Shabbat lunch at Effie's (Modern Orthodox), who stays kind to her.
 - The chapter ends with Rabbi Abe, walking by the lake, and the first text to Tanya about how bad the lost time is.
 
+## Wake
+
+> **Objective:** Get ready for work
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The mirror**
+    - You brush your teeth and watch someone brush her teeth.
+- **Look: Your phone**
+    - **Adeena:** "Shabbat at mine. We should talk after." Just that.
+- **Use: Your keys**
+
+## Workday
+
+> **Objective:** Give the eleven o'clock tour
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Máximo**
+    - The same tour. The same jokes. You hear yourself say them from the back of the group.
+- **Talk: Christie**
+    - Christie takes the second half of your tour without being asked. "Go sit down. I've got the dinosaur."
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The snack drawer (lunch)**
+    - Crackers. You eat four and can't taste them.
+
 ## Friday
 
 > **Objective:** Be here
@@ -47,6 +75,17 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
     - The candles. Her face, gold, and wet.
 
 **Adeena:** Get help, Maya. Real help. Promise me that one thing.
+
+## Walk home
+
+> **Objective:** Go home
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The lake**
+    - Black water, a cold wind, the city lit up behind you like nothing happened.
+- **Use: Mira's stone**
+    - Your thumb through the hole. Feet on the path. One step, then the next one, all the way home.
 
 ## Alone
 

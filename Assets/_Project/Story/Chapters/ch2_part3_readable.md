@@ -29,6 +29,46 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Tanya:** Thinking of you today. I know today is hard.
 
+## Winter day
+
+> **Objective:** Get to work
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The window**
+    - Snow on the tracks, the lake frozen white at the edges.
+- **Use: The pole (hold on)**
+    - You keep thinking about the candle. Your hands smell of matches.
+
+## Winter work
+
+> **Objective:** Give the noon tour
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The tour group**
+    - Six retirees and a man who keeps correcting your Latin. You let him.
+- **Look: The date on the schedule**
+    - "JAN 18." Something about it. You can't think what.
+- **Talk: Christie (lunch)**
+    - Christie's soup, split two ways, in the break room. She does the voices of every curator. You laugh until you're here again.
+
+## Winter evening
+
+> **Objective:** Make dinner
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The windowsill**
+    - The candle, burnt down to nothing. A ring of wax on the sill.
+- **Use: The stove (soup)**
+    - Soup from a can. You eat it at the window, looking at the ring of wax.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The bed**
+    - You leave the hall light on. You don't know why.
+
 ## Imbolc
 
 > **Objective:** Light the windows for Imbolc
