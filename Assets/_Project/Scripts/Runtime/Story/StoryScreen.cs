@@ -135,6 +135,7 @@ namespace IAmAsIAm.Runtime.Story
 
         void Update()
         {
+            EnsureEventSystem();
             var mind = GameServices.Mind;
             if (mind != null && _fog != null)
             {
@@ -485,11 +486,7 @@ namespace IAmAsIAm.Runtime.Story
 
         void BuildCanvas()
         {
-            if (FindAnyObjectByType<EventSystem>() == null)
-            {
-                var es = new GameObject("EventSystem", typeof(EventSystem), typeof(InputSystemUIInputModule));
-                es.GetComponent<InputSystemUIInputModule>().AssignDefaultActions();
-            }
+            EnsureEventSystem();
 
             var canvasGo = new GameObject("Story Canvas", typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
             canvasGo.transform.SetParent(transform, false);
@@ -593,6 +590,22 @@ namespace IAmAsIAm.Runtime.Story
             _breathCircle.SetAsLastSibling();
         }
 
+        /// <summary>
+        /// Every tap and button press goes through the EventSystem: without one, nothing on screen responds.
+        /// It's kept for the whole run (it used to belong to the scene, and switching save slots reloads the
+        /// scene: the new scene could find the old EventSystem just before it was destroyed, and end up with none).
+        /// Update checks every frame and makes a new one if it's ever missing.
+        /// </summary>
+        static void EnsureEventSystem()
+        {
+            if (EventSystem.current != null && EventSystem.current.isActiveAndEnabled) return;
+            var existing = FindAnyObjectByType<EventSystem>();
+            if (existing != null && existing.isActiveAndEnabled && existing.GetComponent<BaseInputModule>() != null) return;
+            var es = new GameObject("EventSystem (kept)", typeof(EventSystem), typeof(InputSystemUIInputModule));
+            es.GetComponent<InputSystemUIInputModule>().AssignDefaultActions();
+            DontDestroyOnLoad(es);
+        }
+
         static bool ShowTouchControls() => Application.isMobilePlatform || Touchscreen.current != null;
 
         /// <summary>
@@ -611,13 +624,13 @@ namespace IAmAsIAm.Runtime.Story
 
             var ring = Panel(_touch.transform, "Stick Ring", new Color(1, 1, 1, 0.12f), new Vector2(0.04f, 0.06f), new Vector2(0.04f, 0.06f));
             var ringRt = ring.GetComponent<RectTransform>();
-            ringRt.pivot = Vector2.zero; ringRt.sizeDelta = new Vector2(420, 420);
+            ringRt.pivot = Vector2.zero; ringRt.sizeDelta = new Vector2(480, 480);
             var knob = Panel(ring.transform, "Stick", new Color(1, 1, 1, 0.35f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f));
-            knob.GetComponent<RectTransform>().sizeDelta = new Vector2(180, 180);
+            knob.GetComponent<RectTransform>().sizeDelta = new Vector2(260, 260); // Big enough to find with a thumb.
             knob.SetActive(false); // Set the control path while inactive, then enable.
             var stick = knob.AddComponent<OnScreenStick>();
             stick.controlPath = "<Gamepad>/leftStick";
-            stick.movementRange = 130;
+            stick.movementRange = 150;
             knob.SetActive(true);
 
             var use = Panel(_touch.transform, "Use", ButtonColor, new Vector2(0.86f, 0.08f), new Vector2(0.86f, 0.08f));
