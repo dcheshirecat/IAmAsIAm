@@ -233,9 +233,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Parts: 1 Thursdays (spring 2018, 19: class, first reading, Ostara, growing lost time, black screen), 2 Coming back (May 2019, 20),
   3 Senior year (fall 2019, 21: Mark's email, abandoned, the coat drive and Gracie, Samhain with Tanya and Selene, quiet Sundays),
   4 Alone (2020: lockdown, Zoom graduation, the prayer service, Jacob). Drive: Story Drafts → `02 Chapter 1 - Christianity (title to
-  come)` (1ZNBBCoAvZZQi2bK9kD3NFSC_ciUCQwWg): Part 1 (1xg7sns7QnfeaglqeB5upbVckfigoIKkiRd32GuzaMyE), Part 2
+  come)` (1ZNBBCoAvZZQi2bK9kD3NFSC_ciUCQwWg): Part 1 (1-s5j9YCquYhplnaPOht0nfV_Dmi_ahHydlYCSd4vpZA), Part 2
   (1i_4R0_4pg60TRjLSlRJpr7VIog5wWqr_7CvHtAHuQmY), Part 3 (18Bvs_-r1VFrE_X6zwsnOgjvkAv6MmvdYkV_6e45OGnc), Part 4
-  (1N1al1-P8tWZ--L6ucxfvpgFgxxSeD4RTTlrOeqxisZI). Script Sheet "02 Chapter 1 - script list (draft)" (1cSvXfcf2TbkcNSMfnW_Fii-ztjv9kVEf_7LjRMhZ-p4, 33 lines).
+  (1N1al1-P8tWZ--L6ucxfvpgFgxxSeD4RTTlrOeqxisZI). Script Sheet "02 Chapter 1 - script list (draft)" (1_fEDa_uaOlDYmY1UK0vj0ypcg4957A4ibSZYJhq01Dw, 34 lines).
 - 2026-11-12: **Chapter 1.5, Axel (owner):** Axel's first act is **a haircut and new clothes**. **Axel:** a **dark sense of humour**, loves
   fun and **parties**, never at anyone's expense; loves quality time with Mark. **Angry at the Quaker church** but **cautiously open to
   mainstream Christianity through friends**; he goes to church with Mark **only on holidays**, once they've dated a few months.
@@ -428,7 +428,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   **Why Seattle:** Maya can't stand the memories Chicago brings up and believes Seattle will be a fresh start (new line `maya_0031`).
   **Fadi is Shia** (owner), Lebanese American from Beirut; a clay turbah from Karbala on the shelf; his dhikr circle welcomes Sunni and
   Shia (new line `fadi_0062`). **Tigist** (Chapter 2's Beta Israel woman at Sigd) keeps her name (owner).
-- 2026-11-12: **Wiccan practice is an active part of the game (owner).** Design + proposal: `docs/WiccanPractice.md` (Drive copy in Story Drafts: 1YBjd3-rqJDqDMdzak0r8gUVyTWsP0Fpc7O5TDzQt5zU). Owner: an
+- 2026-11-12: **Wiccan practice is an active part of the game (owner).** Design + proposal: `docs/WiccanPractice.md` (Drive copy in Story Drafts: 10qBnu3gJ9lNzqih6FyS7tnS00rF8bk75fx11Iy6hR_o). Owner: an
   **altar at every home** AND a **Book of Shadows** usable any time (like the phone), plus practice moments in the chapters;
   practice gives **grounding, reflection (into the Book), story changes, and alters respond** (still no stat boosts); practices:
   tarot, runes, candle magick, amulets/charm bags, sabbats + moons, **more divination** (pendulum, scrying, tea leaves, oracle),
