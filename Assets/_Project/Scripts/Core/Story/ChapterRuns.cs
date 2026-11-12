@@ -12,6 +12,16 @@ namespace IAmAsIAm.Core.Story
         public List<string> memberIds = new List<string>();
     }
 
+    /// <summary>A chapter run in progress, as saved (so a save between scenes of a chapter keeps the run).</summary>
+    [Serializable]
+    public sealed class ChapterRunState
+    {
+        /// <summary>Empty when no chapter was being played.</summary>
+        public string chapterId;
+        public string startedAsId;
+        public List<string> frontedIds = new List<string>();
+    }
+
     /// <summary>
     /// The owner's replay rule (2026-11-11): a chapter starts with its default alter (the prologue: young Maya).
     /// Anyone who fronts during a run of the chapter becomes a possible starting alter for that chapter,
@@ -83,6 +93,25 @@ namespace IAmAsIAm.Core.Story
 
         public List<ChapterUnlock> Export() =>
             _unlocked.Select(kv => new ChapterUnlock { chapterId = kv.Key, memberIds = kv.Value.OrderBy(x => x, StringComparer.Ordinal).ToList() }).ToList();
+
+        /// <summary>The run in progress, for saving. An empty chapterId means none.</summary>
+        public ChapterRunState ExportRun() => new ChapterRunState
+        {
+            chapterId = CurrentChapterId ?? "",
+            startedAsId = StartedAsId ?? "",
+            frontedIds = InChapter ? _frontedThisRun.ToList() : new List<string>(),
+        };
+
+        /// <summary>Puts back a run in progress from a save (or clears it when the save had none).</summary>
+        public void RestoreRun(ChapterRunState run)
+        {
+            _frontedThisRun.Clear();
+            if (run == null || string.IsNullOrEmpty(run.chapterId)) { CurrentChapterId = null; StartedAsId = null; return; }
+            CurrentChapterId = run.chapterId;
+            StartedAsId = string.IsNullOrEmpty(run.startedAsId) ? null : run.startedAsId;
+            foreach (var id in run.frontedIds ?? new List<string>())
+                if (!string.IsNullOrEmpty(id) && !_frontedThisRun.Contains(id)) _frontedThisRun.Add(id);
+        }
 
         public void Restore(IEnumerable<ChapterUnlock> unlocks)
         {

@@ -34,6 +34,8 @@ namespace IAmAsIAm.Runtime
         public static PreferencesData Preferences { get; private set; }
 
         public static int InGameDay { get; set; } = 1;
+        /// <summary>Time played in the active save slot (seconds, real time). Shown on the save screen.</summary>
+        public static float PlaySeconds { get; set; }
         public static bool IsReady { get; private set; }
 
         /// <summary>Raised whenever comfort settings change, so presentation can re-apply caps.</summary>
@@ -81,15 +83,17 @@ namespace IAmAsIAm.Runtime
 
         public static void NotifyComfortChanged() => ComfortChanged?.Invoke();
 
-        // Supports "Enter Play Mode Options" with domain reload disabled.
+        // Supports "Enter Play Mode Options" with domain reload disabled. Also used to restart the game
+        // with a fresh state when switching save slots (GameSession.Restart).
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-        static void ResetStatics()
+        internal static void ResetStatics()
         {
             Mind = null; Roster = null; Journal = null; Skills = null; Practices = null; Crisis = null;
             Comfort = new ComfortSettings();
             Triggers = null; Choices = null; Traditions = null; Spreads = null;
             Chapters = null; ChapterRuns = null; Preferences = null;
             InGameDay = 1;
+            PlaySeconds = 0f;
             IsReady = false;
             ComfortChanged = null;
             Ready = null;

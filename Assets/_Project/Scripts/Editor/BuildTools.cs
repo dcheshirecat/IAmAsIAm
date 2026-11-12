@@ -30,6 +30,7 @@ namespace IAmAsIAm.EditorTools
         const string ScenePath = "Assets/_Project/Scenes/Boot.unity";
         const string SettingsDir = "Assets/_Project/Settings";
         const string PlaceholderDir = "Assets/_Project/Art/Placeholders";
+        const string TarotArtDir = "Assets/_Project/Art/Tarot";
 
         // ── Story ────────────────────────────────────────────────────────────────
 
@@ -197,6 +198,13 @@ namespace IAmAsIAm.EditorTools
             game.AddComponent<DissociationPresentationDriver>();
             var runner = game.AddComponent<StoryRunner>();
             var screen = game.AddComponent<StoryScreen>();
+            var saves = game.AddComponent<IAmAsIAm.Runtime.Save.SaveSlotsScreen>();
+            Set(saves, "runner", runner);
+            Set(saves, "storyScreen", screen);
+
+            // The tarot loading screen (its own object: it outlives the game when switching save slots).
+            var loading = new GameObject("Loading Screen").AddComponent<IAmAsIAm.Runtime.Loading.LoadingScreen>();
+            WireTarotArt(loading);
 
             var story = AssetDatabase.LoadAssetAtPath<TextAsset>(StoryJson);
             if (story == null) Debug.LogWarning("[IAmAsIAm] Story/main.json is missing. Run IAmAsIAm → Compile Story.");
@@ -209,6 +217,55 @@ namespace IAmAsIAm.EditorTools
             EditorSceneManager.SaveScene(scene, ScenePath);
             EditorBuildSettings.scenes = new[] { new EditorBuildSettingsScene(ScenePath, true) };
             Debug.Log("[IAmAsIAm] Boot scene rebuilt.");
+        }
+
+        /// <summary>
+        /// Gives the loading screen the card art in Art/Tarot: tarot_back.png and tarot_<card-id>.png (ART_LIST.md, Part 6).
+        /// Cards without art yet are drawn as placeholders, so any number of faces can arrive one at a time.
+        /// </summary>
+        static void WireTarotArt(IAmAsIAm.Runtime.Loading.LoadingScreen loading)
+        {
+            var so = new SerializedObject(loading);
+            so.FindProperty("cardBack").objectReferenceValue = TarotSprite("tarot_back");
+
+            var ids = new System.Collections.Generic.List<string>();
+            var sprites = new System.Collections.Generic.List<Sprite>();
+            var data = AssetDatabase.LoadAssetAtPath<TextAsset>("Assets/_Project/Resources/Data/tarot_major.json");
+            var cards = data == null ? null : JsonUtility.FromJson<IAmAsIAm.Core.Practices.TarotData>(data.text)?.cards;
+            foreach (var card in cards ?? new System.Collections.Generic.List<IAmAsIAm.Core.Practices.TarotCardEntry>())
+            {
+                var sprite = TarotSprite("tarot_" + card.id);
+                if (sprite == null) continue;
+                ids.Add(card.id);
+                sprites.Add(sprite);
+            }
+
+            var idProp = so.FindProperty("faceIds");
+            var spriteProp = so.FindProperty("faceSprites");
+            idProp.arraySize = ids.Count;
+            spriteProp.arraySize = sprites.Count;
+            for (int i = 0; i < ids.Count; i++)
+            {
+                idProp.GetArrayElementAtIndex(i).stringValue = ids[i];
+                spriteProp.GetArrayElementAtIndex(i).objectReferenceValue = sprites[i];
+            }
+            so.ApplyModifiedPropertiesWithoutUndo();
+            Debug.Log($"[IAmAsIAm] Loading screen: {sprites.Count} tarot faces{(loading != null && so.FindProperty("cardBack").objectReferenceValue != null ? " and the card back" : "")} from {TarotArtDir}; the rest are placeholders.");
+        }
+
+        /// <summary>Loads Art/Tarot/&lt;name&gt;.png as a UI sprite (setting its import type if needed), or null if it isn't there.</summary>
+        static Sprite TarotSprite(string name)
+        {
+            string path = $"{TarotArtDir}/{name}.png";
+            if (!File.Exists(path)) return null;
+            if (AssetImporter.GetAtPath(path) is TextureImporter importer && importer.textureType != TextureImporterType.Sprite)
+            {
+                importer.textureType = TextureImporterType.Sprite;
+                importer.spriteImportMode = SpriteImportMode.Single;
+                importer.mipmapEnabled = false;
+                importer.SaveAndReimport();
+            }
+            return AssetDatabase.LoadAssetAtPath<Sprite>(path);
         }
 
         /// <summary>

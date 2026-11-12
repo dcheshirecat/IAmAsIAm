@@ -53,6 +53,11 @@ namespace IAmAsIAm.Runtime.Story
         float _previousTimeScale = 1f, _triggerHideAt;
         int _lineShownFrame = -1;
 
+        /// <summary>True while dialogue, a choice, an interactive moment or the Anchor is up (the saves menu waits).</summary>
+        public bool IsBusy { get; private set; }
+        /// <summary>Above the loading screen (100) and the saves screen (50): the Anchor is always reachable.</summary>
+        const int AnchorSortingOrder = 200;
+
         BreathingPacer _pacer;
         Action _onPacerTick;
 
@@ -83,6 +88,7 @@ namespace IAmAsIAm.Runtime.Story
             TriggerRunner.Fired += ShowTrigger;
             runner.Started += OnStoryStarted;
             runner.Ended += OnStoryEnded;
+            IAmAsIAm.Runtime.Save.SaveService.Loaded += UpdateFrontLabel;
         }
 
         void OnDisable()
@@ -95,6 +101,7 @@ namespace IAmAsIAm.Runtime.Story
             TriggerRunner.Fired -= ShowTrigger;
             runner.Started -= OnStoryStarted;
             runner.Ended -= OnStoryEnded;
+            IAmAsIAm.Runtime.Save.SaveService.Loaded -= UpdateFrontLabel;
             PlayerMotor.Blocked = false;
         }
 
@@ -146,6 +153,8 @@ namespace IAmAsIAm.Runtime.Story
             if (_triggerPanel.activeSelf && Time.unscaledTime > _triggerHideAt) _triggerPanel.SetActive(false);
 
             bool busy = _anchorOpen || _dialogue.activeSelf || _choices.activeSelf || _action.activeSelf || runner.IsPlaying;
+            IsBusy = busy;
+            busy |= IAmAsIAm.Runtime.Save.SaveSlotsScreen.IsOpen || IAmAsIAm.Runtime.Loading.LoadingScreen.IsShowing;
             PlayerMotor.Blocked = busy;
             _tap.SetActive(_dialogue.activeSelf && !_choices.activeSelf && !_anchorOpen);
             if (_touch != null) _touch.SetActive(!busy);
@@ -539,13 +548,21 @@ namespace IAmAsIAm.Runtime.Story
 
             _frontLabel = Label(_root, "Fronting", 52, FontStyle.Bold, new Vector2(0.02f, 0.92f), new Vector2(0.4f, 0.99f));
 
-            // The Anchor button: top right, always on top.
-            var anchorButton = Panel(_root, "Anchor Button", ButtonColor, new Vector2(0.86f, 0.9f), new Vector2(0.98f, 0.98f));
+            // The Anchor button and panel: top right, on their own canvas above every other screen.
+            var anchorLayer = new GameObject("Anchor Layer", typeof(RectTransform), typeof(Canvas), typeof(GraphicRaycaster));
+            anchorLayer.transform.SetParent(_root, false);
+            var layerRt = anchorLayer.GetComponent<RectTransform>();
+            layerRt.anchorMin = Vector2.zero; layerRt.anchorMax = Vector2.one; layerRt.offsetMin = Vector2.zero; layerRt.offsetMax = Vector2.zero;
+            var anchorCanvas = anchorLayer.GetComponent<Canvas>();
+            anchorCanvas.overrideSorting = true;
+            anchorCanvas.sortingOrder = AnchorSortingOrder;
+
+            var anchorButton = Panel(anchorLayer.transform, "Anchor Button", ButtonColor, new Vector2(0.86f, 0.9f), new Vector2(0.98f, 0.98f));
             anchorButton.AddComponent<Button>().onClick.AddListener(ToggleAnchor);
             Label(anchorButton.transform, "Label", 48, FontStyle.Bold, Vector2.zero, Vector2.one).alignment = TextAnchor.MiddleCenter;
             anchorButton.GetComponentInChildren<Text>().text = "Anchor";
 
-            _anchor = Panel(_root, "Anchor", new Color(0.12f, 0.14f, 0.13f, 0.97f), new Vector2(0.1f, 0.06f), new Vector2(0.84f, 0.88f));
+            _anchor = Panel(anchorLayer.transform, "Anchor", new Color(0.12f, 0.14f, 0.13f, 0.97f), new Vector2(0.1f, 0.06f), new Vector2(0.84f, 0.88f));
             var anchorTitle = Label(_anchor.transform, "Title", 72, FontStyle.Bold, new Vector2(0.05f, 0.86f), new Vector2(0.95f, 0.97f));
             anchorTitle.text = "Anchor";
             anchorTitle.alignment = TextAnchor.MiddleCenter;
@@ -559,6 +576,10 @@ namespace IAmAsIAm.Runtime.Story
             Button(anchorButtons.transform, "Support", AnchorSupport, 110);
             Button(anchorButtons.transform, "Return when ready", CloseAnchor, 110);
             _anchor.SetActive(false);
+
+            // The breathing circle is used by the Anchor too, so it sits on the Anchor layer, above the Anchor panel.
+            _breathCircle.SetParent(anchorLayer.transform, false);
+            _breathCircle.SetAsLastSibling();
         }
 
         static bool ShowTouchControls() => Application.isMobilePlatform || Touchscreen.current != null;

@@ -13,7 +13,8 @@ Everything is a placeholder until replaced. Tick things off as you go. Sizes: [A
 |---|---|---|
 | [ ] First | `mockup_dialogue.png` | Talking: speaker name, line, inner-voice style (co-consciousness), choices |
 | [ ] First | `mockup_anchor.png` | The Anchor safe space: breathe, ground, support, return when ready |
-| [ ] | `mockup_title.png` | Title, Continue / New / Chapters / Practice / Comfort settings |
+| [ ] | `mockup_title.png` | Title and the save slots (3 slots: Continue / New game / Delete; in-game: Save now / Save here / Load) |
+| [ ] | `mockup_loading.png` | The loading screen: one tarot card turning over, its reflection prompt underneath |
 | [ ] | `mockup_choose_alter.png` | Choosing who fronts at the start of a chapter |
 | [ ] | `mockup_trigger.png` | A trigger moment (how depersonalization, derealization or a switch looks over the scene) |
 | [ ] | `mockup_journal.png` | The Inner Journal: notes between parts, gaps in time, reflections |
@@ -85,6 +86,8 @@ Face paintings are used on the 3D models in the world; these 2D portraits sit be
 | [ ] | Faces on the 3D models: `tex_<id>_face_<expression>.png` (see 3D_PIPELINE.md, Faces) | same as `tex_<id>_color.png` |
 
 ## Part 6: 2D card and codex art
+Tarot cards go in `Assets/_Project/Art/Tarot/`. They are also the loading screen (a random card each time); a card
+without art is drawn as a plain placeholder, so faces can arrive one at a time. After adding some, run Rebuild Boot Scene.
 | | File | px |
 |---|---|---|
 | [ ] First | `tarot_back.png` | 1024 × 1768 |

@@ -137,7 +137,7 @@ namespace IAmAsIAm.Runtime.Story
         }
 
         public string SaveState() => _story?.state.ToJson();
-        public void LoadState(string json) { if (_story != null && !string.IsNullOrEmpty(json)) _story.state.LoadJson(json); }
+        public void LoadState(string json) { if (!string.IsNullOrEmpty(json) && EnsureLoaded()) _story.state.LoadJson(json); }
 
         void HandleTags(List<string> tags)
         {

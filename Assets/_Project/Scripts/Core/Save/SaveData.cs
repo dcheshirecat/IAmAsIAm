@@ -15,9 +15,12 @@ namespace IAmAsIAm.Core.Save
     [Serializable]
     public sealed class SaveData
     {
-        public const int CurrentVersion = 1;
+        /// <summary>2: save slots (header, chapter run in progress, play time).</summary>
+        public const int CurrentVersion = 2;
 
         public int version = CurrentVersion;
+        /// <summary>What the save screen shows. Also kept in its own small file (see <see cref="SaveSlots"/>).</summary>
+        public SaveSlotHeader header = new SaveSlotHeader();
         public string chapterId;
         public int inGameDay;
 
@@ -45,6 +48,8 @@ namespace IAmAsIAm.Core.Save
         public List<TriggerProgress> triggerProgress = new List<TriggerProgress>();
         /// <summary>Alters unlocked as chapter starters. Per save: they do NOT carry across saves (owner, 2026-11-12).</summary>
         public List<ChapterUnlock> chapterUnlocks = new List<ChapterUnlock>();
+        /// <summary>A chapter run in progress when the game saved (empty chapterId = none).</summary>
+        public ChapterRunState chapterRun = new ChapterRunState();
     }
 
     /// <summary>
@@ -58,6 +63,11 @@ namespace IAmAsIAm.Core.Save
         public bool acknowledgedNotTherapyNotice;
 
         public string crisisRegion;
+
+        /// <summary>The save slot played last (1-based), or 0 for none. The title screen highlights it.</summary>
+        public int lastSlot;
+        /// <summary>The card the last loading screen showed, so the next one is a different card.</summary>
+        public string lastLoadingCardId;
     }
 
     /// <summary>

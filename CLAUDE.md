@@ -70,6 +70,13 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   new alter per finished run** (`ChapterRuns.MaxNewUnlocksPerRun`). After the warnings, the player may **skip and read a summary**.
   Story-scripted switches use the tag `# switch: <member>`. Still open: Maya's (the body's) age in the prologue.
 - 2026-11-12: Owner wants **save slots** and an **animated loading screen with a random tarot card** each time.
+  Built: **3 slots** (`Core/Save/SaveSlots.cs`; each slot = full save + small header), a title screen at start-up and a
+  "Saves" button beside the Anchor (`Runtime/Save/SaveSlotsScreen.cs`). Autosave to the active slot when a scene ends and
+  on app pause/quit, **never mid-conversation**. Switching slots saves first, then reloads the scene with a fresh state
+  (`Runtime/Save/GameSession.cs`). Loading screen `Runtime/Loading/LoadingScreen.cs` (+ `Core/Practices/LoadingCard.cs`):
+  a random Major Arcana card (never the same twice running) rises, turns over and floats; shows its reflection prompt;
+  at least 2.6 s; Reduce motion = no movement; reversals follow the comfort setting. Card art from `Art/Tarot/`
+  (`tarot_back.png`, `tarot_<card-id>.png`), wired by Rebuild Boot Scene. **The Anchor is drawn above every screen** (sort 200).
 
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.

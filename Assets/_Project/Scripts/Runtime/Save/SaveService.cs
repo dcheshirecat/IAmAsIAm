@@ -1,8 +1,11 @@
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using IAmAsIAm.Core.Save;
+using IAmAsIAm.Core.Story;
+using IAmAsIAm.Core.Triggers;
+using IAmAsIAm.Runtime.Story;
 using UnityEngine;
 
 namespace IAmAsIAm.Runtime.Save
@@ -42,26 +45,70 @@ namespace IAmAsIAm.Runtime.Save
         }
     }
 
-    /// <summary>Builds <see cref="SaveData"/> from <see cref="GameServices"/>, and restores it.</summary>
+    /// <summary>JsonUtility as the save format.</summary>
+    public sealed class UnityJsonSerializer : ISaveSerializer
+    {
+        public string ToJson(object value) => JsonUtility.ToJson(value);
+        public T FromJson<T>(string json) => JsonUtility.FromJson<T>(json);
+    }
+
+    /// <summary>
+    /// Builds <see cref="SaveData"/> from <see cref="GameServices"/> and restores it, slot by slot.
+    /// One slot is "active" (the game being played); autosaves go there. Saves happen only at safe points,
+    /// when nobody is talking: Ink's state then sits between scenes, so a load always resumes cleanly.
+    /// </summary>
     public static class SaveService
     {
         const string PreferencesKey = "preferences";
 
         static ISaveStorage _storage;
+        static SaveSlots _slots;
 
         public static ISaveStorage Storage
         {
             get => _storage ??= new FileSaveStorage();
-            set => _storage = value;
+            set { _storage = value; _slots = null; }
         }
 
-        public static void Save(string slot, string chapterId)
+        public static SaveSlots Slots => _slots ??= new SaveSlots(Storage, new UnityJsonSerializer());
+
+        /// <summary>The slot being played (1-based), or 0 on the title screen.</summary>
+        public static int ActiveSlot { get; private set; }
+
+        /// <summary>Raised after a save is loaded into the game, so views can refresh (who's fronting, etc.).</summary>
+        public static event Action Loaded;
+        public static event Action<int> Saved;
+
+        /// <summary>Starts a new game in a slot. The state must be fresh (title screen, or just after a restart).</summary>
+        public static void BeginNewGame(int slot)
         {
+            ActiveSlot = slot;
+            GameServices.PlaySeconds = 0f;
+            RememberLastSlot(slot);
+            Save(slot);
+        }
+
+        /// <summary>Saves to the active slot. Does nothing on the title screen or while a story is playing.</summary>
+        public static bool Autosave(StoryRunner runner = null)
+        {
+            if (ActiveSlot == 0 || (runner != null && runner.IsPlaying)) return false;
+            Save(ActiveSlot, runner);
+            return true;
+        }
+
+        public static void Save(int slot, StoryRunner runner = null)
+        {
+            if (!GameServices.IsReady) return;
+            runner ??= UnityEngine.Object.FindAnyObjectByType<StoryRunner>();
             var mind = GameServices.Mind;
             var roster = GameServices.Roster;
+            var runs = GameServices.ChapterRuns;
+            var run = runs?.ExportRun() ?? new ChapterRunState();
+            var chapter = GameServices.Chapter(run.chapterId);
+
             var data = new SaveData
             {
-                chapterId = chapterId,
+                chapterId = run.chapterId,
                 inGameDay = GameServices.InGameDay,
                 arousal = mind.Arousal,
                 windowHalfWidth = mind.WindowHalfWidth,
@@ -71,33 +118,86 @@ namespace IAmAsIAm.Runtime.Save
                 journal = GameServices.Journal.Entries.ToList(),
                 gaps = GameServices.Journal.Gaps.ToList(),
                 learnedSkillIds = GameServices.Skills.LearnedIds.ToList(),
-                chapterUnlocks = GameServices.ChapterRuns?.Export() ?? new List<IAmAsIAm.Core.Story.ChapterUnlock>(),
+                inkStateJson = runner != null ? runner.SaveState() ?? "" : "",
+                choices = GameServices.Choices?.Records.ToList() ?? new List<ChoiceRecord>(),
+                exploredTraditionIds = GameServices.Traditions?.ExploredIds.ToList() ?? new List<string>(),
+                triedPracticeIds = GameServices.Traditions?.TriedPracticeIds.ToList() ?? new List<string>(),
+                triggerProgress = GameServices.Triggers?.ExportProgress().ToList() ?? new List<TriggerProgress>(),
+                chapterUnlocks = runs?.Export() ?? new List<ChapterUnlock>(),
+                chapterRun = run,
+                header = new SaveSlotHeader
+                {
+                    chapterId = run.chapterId,
+                    chapterTitle = chapter?.title ?? "",
+                    frontingId = roster.FrontingId,
+                    frontingName = roster.GetDefinition(roster.FrontingId)?.displayName ?? roster.FrontingId,
+                    inGameDay = GameServices.InGameDay,
+                    savedAtUtcTicks = DateTime.UtcNow.Ticks,
+                    playSeconds = GameServices.PlaySeconds,
+                },
             };
-            Storage.Write(slot, JsonUtility.ToJson(data));
-        }
 
-        public static bool TryLoad(string slot, out SaveData data)
-        {
-            data = null;
-            string json = Storage.Read(slot);
-            if (string.IsNullOrEmpty(json)) return false;
             try
             {
-                data = JsonUtility.FromJson<SaveData>(json);
+                Slots.Write(slot, data);
+                if (slot != ActiveSlot) { ActiveSlot = slot; RememberLastSlot(slot); }
+                Saved?.Invoke(slot);
             }
             catch (Exception e)
             {
-                Debug.LogError($"[IAmAsIAm] Couldn't read save '{slot}': {e.Message}");
+                Debug.LogError($"[IAmAsIAm] Couldn't save to slot {slot}: {e.Message}");
+            }
+        }
+
+        /// <summary>Loads a slot into the game. The state must be fresh (title screen, or just after a restart).</summary>
+        public static bool TryLoad(int slot, StoryRunner runner = null)
+        {
+            if (!Slots.IsValid(slot) || !Slots.TryRead(slot, out var data))
+            {
+                Debug.LogError($"[IAmAsIAm] Couldn't read save slot {slot}.");
                 return false;
             }
 
             GameServices.InGameDay = data.inGameDay;
+            GameServices.PlaySeconds = data.header?.playSeconds ?? 0f;
             GameServices.Mind.Restore(data.arousal, data.windowHalfWidth);
             GameServices.Roster.ImportStates(data.members, data.frontingId, data.coConsciousIds);
             GameServices.Journal.Restore(data.journal, data.gaps);
             GameServices.Skills.Restore(data.learnedSkillIds);
+            GameServices.Choices?.Restore(data.choices);
+            GameServices.Traditions?.Restore(data.exploredTraditionIds, data.triedPracticeIds);
+            GameServices.Triggers?.Restore(data.triggerProgress);
             GameServices.ChapterRuns?.Restore(data.chapterUnlocks);
+            GameServices.ChapterRuns?.RestoreRun(data.chapterRun);
+
+            runner ??= UnityEngine.Object.FindAnyObjectByType<StoryRunner>();
+            if (runner != null && !string.IsNullOrEmpty(data.inkStateJson))
+            {
+                try { runner.LoadState(data.inkStateJson); }
+                catch (Exception e) { Debug.LogWarning($"[IAmAsIAm] The story position in slot {slot} couldn't be restored: {e.Message}"); }
+            }
+
+            ActiveSlot = slot;
+            RememberLastSlot(slot);
+            Loaded?.Invoke();
             return true;
+        }
+
+        public static void Delete(int slot)
+        {
+            if (slot == ActiveSlot) return; // Never delete the game being played.
+            Slots.Delete(slot);
+        }
+
+        /// <summary>Back to the title screen: no slot is active.</summary>
+        internal static void ClearActiveSlot() => ActiveSlot = 0;
+
+        static void RememberLastSlot(int slot)
+        {
+            var prefs = GameServices.Preferences;
+            if (prefs == null || prefs.lastSlot == slot) return;
+            prefs.lastSlot = slot;
+            GameServices.SavePreferences();
         }
 
         public static PreferencesData LoadPreferences()
@@ -121,6 +221,13 @@ namespace IAmAsIAm.Runtime.Save
         }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-        static void ResetStatics() => _storage = null;
+        static void ResetStatics()
+        {
+            _storage = null;
+            _slots = null;
+            ActiveSlot = 0;
+            Loaded = null;
+            Saved = null;
+        }
     }
 }

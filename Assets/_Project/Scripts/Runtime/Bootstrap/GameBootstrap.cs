@@ -23,6 +23,18 @@ namespace IAmAsIAm.Runtime
 
         static GameBootstrap _instance;
 
+        /// <summary>Destroys the running game (this object and everything on it) so a reloaded scene builds a fresh one.</summary>
+        internal static void Shutdown()
+        {
+            if (_instance == null) return;
+            var go = _instance.gameObject;
+            _instance = null;
+            Destroy(go);
+        }
+
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        static void ResetStatics() => _instance = null;
+
         void Awake()
         {
             if (_instance != null) { Destroy(gameObject); return; }
