@@ -22,6 +22,7 @@
 
 === prelude_part3 ===
 ~ set_age(19)
+~ set_date(2017, 12, 14)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: depersonalization
 # cw: time-loss
@@ -96,6 +97,7 @@ Tanya: Thursdays, seven o'clock, if you want to learn. You'd have to come every 
 -> circle
 
 = circle
+~ set_date(2017, 12, 21)
 # place: park_yule_circle
 # shot: wide
 # objective: Join the circle
@@ -136,6 +138,7 @@ Tanya: Here. Everyone gets one after their first circle. A Book of Shadows. Writ
     ~ gain_herb("bay", "tanya")
     ~ gain_stone("amber", "tanya")
     ~ learn_practice("dream-journal", "tanya")
+    ~ learn_practice("sabbat", "tanya")
 -
 ~ set_experience("TimeLoss", 1.0)
 -> gone

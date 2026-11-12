@@ -93,6 +93,9 @@ namespace IAmAsIAm.Runtime.Story
             // Rituals (owner: they feel like rituals, not games), at the altar or when the story calls for one.
             _ritual = gameObject.AddComponent<IAmAsIAm.Runtime.Practices.RitualScreen>();
             // The charm bag in her pocket (owner: hold it to ground; alters react to it): shows while she's drifting.
+            // The moon tonight (owner: a moon phase always shown), from the story's date.
+            var moon = gameObject.AddComponent<IAmAsIAm.Runtime.Practices.MoonBadge>();
+            moon.Visible = () => IAmAsIAm.Runtime.Save.SaveService.ActiveSlot != 0;
             var charmBag = gameObject.AddComponent<IAmAsIAm.Runtime.Practices.CharmBagButton>();
             charmBag.Blocked = () => _anchorOpen || (_action != null && _action.activeSelf) || ChapterTreeScreen.IsOpen || MapScreen.IsOpen;
             // Not while replaying a chapter from before she had it (the Prologue and the Prelude).

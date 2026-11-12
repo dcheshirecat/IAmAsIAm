@@ -63,6 +63,25 @@ namespace IAmAsIAm.Runtime.Practices
         /// The altar's choices for whoever is fronting: the practices they've learned that can be done here. Calls
         /// <paramref name="closed"/> when the player leaves the altar (after a ritual, or "Not today").
         /// </summary>
+        RectTransform _row;
+
+        /// <summary>The altar has many practices by now: three to a row, smaller, so they all fit on the cloth.</summary>
+        void WheelButton(string label, Action onClick)
+        {
+            if (_row == null || _row.childCount >= 3)
+            {
+                var go = new GameObject("Row", typeof(RectTransform), typeof(HorizontalLayoutGroup), typeof(LayoutElement));
+                go.transform.SetParent(_actions, false);
+                go.GetComponent<LayoutElement>().preferredHeight = 92;
+                var h = go.GetComponent<HorizontalLayoutGroup>();
+                h.spacing = 12;
+                h.childControlWidth = true; h.childForceExpandWidth = true;
+                h.childControlHeight = true; h.childForceExpandHeight = true;
+                _row = go.GetComponent<RectTransform>();
+            }
+            Button(_row, label, onClick, ButtonColour, 92, 32);
+        }
+
         public void OpenWheel(Action closed)
         {
             var book = GameServices.Book;
@@ -71,6 +90,7 @@ namespace IAmAsIAm.Runtime.Practices
             _title.text = "The altar";
             _phase.text = "";
             Clear(_actions);
+            _row = null;
             _breath.SetActive(false);
             // A charm bag needs a herb and a stone someone has given her (owner).
             var known = RitualSession.AtTheAltar.Where(id => book != null && book.HasLearned(id) && (id != "charm-bag" || book.CanMakeCharmBag)).ToList();
@@ -83,14 +103,26 @@ namespace IAmAsIAm.Runtime.Practices
             if (book != null && book.CharmBag.has && !book.CharmBag.carried)
             {
                 _body.text = "Your charm bag is in the drawer, under a folded cloth.\n\nWhat would you like to do?";
-                Button(_actions, "Take the charm bag", () => { book.TakeCharmBag(); OpenWheel(closed); }, ButtonColour);
+                WheelButton("Take the charm bag", () => { book.TakeCharmBag(); OpenWheel(closed); });
+            }
+            // Owner: the Wheel of the Year. A sabbat near today's date, and the esbat on a full or new moon.
+            var sabbat = book != null && book.HasLearned("sabbat") ? book.SabbatNow() : null;
+            if (sabbat != null)
+            {
+                string sid = sabbat.id;
+                WheelButton(sabbat.name, () => Run("sabbat", front, _ => closed?.Invoke(), sid, circle));
+            }
+            if (book != null && book.HasLearned("esbat") && book.Date.HasValue && (Moon.IsFull(book.Date.Value) || Moon.IsNew(book.Date.Value)))
+            {
+                bool full = Moon.IsFull(book.Date.Value);
+                WheelButton(full ? "The full moon" : "The new moon", () => Run("esbat", front, _ => closed?.Invoke(), full ? "full" : "new", circle));
             }
             foreach (var id in known)
             {
                 string practice = id;
-                Button(_actions, book?.Practice(id)?.name ?? id, () => Run(practice, front, _ => closed?.Invoke(), offerCircle: circle), ButtonColour);
+                WheelButton(book?.Practice(id)?.name ?? id, () => Run(practice, front, _ => closed?.Invoke(), offerCircle: circle));
             }
-            Button(_actions, "Not today", () => { Hide(); closed?.Invoke(); }, Quiet);
+            Button(_actions, "Not today", () => { Hide(); closed?.Invoke(); }, Quiet, 90, 34);
         }
 
         /// <summary>

@@ -88,6 +88,23 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 📱 **Text from Tanya:** That's the bravest five minutes I've ever heard of.
 
+## Litha
+
+> **Objective:** Watch the sunrise from the roof
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The stupa**
+    - The white dome, grey in the dark, then pink. The painted eyes on the tower, catching the light first.
+- **Look: The prayer flags**
+    - Five colours, snapping in the wind off the hills.
+- **Use: The marigold (keep Midsummer)**
+    - A marigold from Pasang's kitchen, on the parapet: something yellow.
+- **Wait (just watch it come up)**
+    - The sun comes up over the stupa. All that light.
+
+📱 **Maya texts Tanya:** Midsummer sunrise from a roof in Kathmandu. Your text came at 3am. I was already up.
+
 ## Lumbini
 
 > **Objective:** See where it began

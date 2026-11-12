@@ -17,6 +17,7 @@
 
 === ch3_part1 ===
 ~ set_age(27)
+~ set_date(2026, 1, 12)  // Claude's guess at the exact day (owner: change it freely)
 # cw: time-loss
 # cw: medical-setting
 # cw: religious-content

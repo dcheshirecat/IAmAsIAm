@@ -16,6 +16,7 @@
 
 === ch3_part2 ===
 ~ set_age(27)
+~ set_date(2026, 4, 10)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 ~ co_conscious("izzy", true)
 ~ text_to("tanya", "Landed. Alive. Everything smells like incense and diesel.")

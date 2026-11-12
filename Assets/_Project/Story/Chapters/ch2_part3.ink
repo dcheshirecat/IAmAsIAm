@@ -18,6 +18,7 @@
 
 === ch2_part3 ===
 ~ set_age(25)
+~ set_date(2024, 1, 18)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: time-loss
 -> candle
@@ -46,9 +47,32 @@
     A thin line of smoke. Then you feel sorry, and you don't know why. # look: candle-out
 -
 ~ text_from("tanya", "Thinking of you today. I know today is hard.")
+-> imbolc
+
+= imbolc
+// Owner: every sabbat played at least once across the game (Claude's draft scene). No new voiced lines.
+~ set_date(2024, 2, 1)
+# place: chicago_apartment
+# shot: over-shoulder
+# objective: Light the windows for Imbolc
+- (sills)
++ {sills < 3} [Look: The windowsill]
+    The tall candle's stub is still there from last month. You leave it where it is. # look: imbolc-stub
+    -> sills
++ {sills < 3} [Look: The snow]
+    Grey snow on the L tracks. Under it, somewhere, seeds. # look: imbolc-snow
+    -> sills
+* [Use: The candles (keep Imbolc)]
+    ~ record_choice("ch2.p3.imbolc", "kept", "At Imbolc, alone in Chicago, you put a candle in every window.")
+    Brigid's day. A candle in every window, and one shelf, cleared. # ritual: sabbat imbolc
+* [Wait (just one candle)]
+    ~ record_choice("ch2.p3.imbolc", "one", "At Imbolc, you lit one candle in the kitchen window. It was enough.")
+    One candle, in the kitchen window. That's enough, this year. # look: imbolc-one-candle
+-
 -> seder
 
 = seder
+~ set_date(2024, 4, 22)
 # place: adeena_parents_house
 # shot: wide
 # objective: Find your seat at the seder

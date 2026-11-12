@@ -16,6 +16,7 @@
 
 === ch2_part4 ===
 ~ set_age(27)
+~ set_date(2025, 3, 14)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: time-loss
 # cw: breakup

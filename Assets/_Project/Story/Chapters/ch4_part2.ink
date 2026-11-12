@@ -16,6 +16,7 @@
 
 === ch4_part2 ===
 ~ set_age(28)
+~ set_date(2026, 10, 17)  // Claude's guess at the exact day (owner: change it freely)
 # cw: childhood-reference
 # cw: neglect
 # cw: involuntary-switch

@@ -19,6 +19,7 @@
 
 === prelude_part2 ===
 ~ set_age(18)
+~ set_date(2017, 3, 20)  // Claude's guess at the exact day (owner: change it freely)
 // Lost time on the phone (owner: subtle, never pointed out): a text Maya didn't send is just there.
 ~ sent_while_away("izzy", "text", "selene", "omg yes. tues!! im bringing the oat milk")
 # cw: religious-content

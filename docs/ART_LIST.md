@@ -184,6 +184,8 @@ Every close-up in the chapters is listed scene by scene in [ART_BY_SCENE.md](ART
 | [ ] | `scrying_bowl` | A dark bowl of water (or a single candle) | Ch 3+ |
 | [ ] | `ancestor_altar`, `photo_grandpa_walter` | Photos and small things on the altar; Grandpa Walter squinting into the sun by a tractor | Prelude |
 | [ ] | `offering_dish` | A small dish: bread, milk or flowers | Ch 1 |
+| [ ] | `maypole`, `beltane_fire_bowl` | A birch maypole with ribbons in every colour; a small fire in a bowl | Ch 1 |
+| [ ] | `lammas_loaf` | A round loaf, the first slice set aside | Ch 5 |
 
 ## Part 5: Dialogue portraits and faces (2D)
 Face paintings go on the 3D models in the world; portraits sit beside the dialogue box (`Character Art - Finished/Talking Heads`). *Claude*
@@ -208,6 +210,7 @@ Face paintings go on the 3D models in the world; portraits sit beside the dialog
 | [ ] | `ui_bubble_mine.png`, `ui_bubble_theirs.png` (9-slice) | Text-message bubbles | 512 × 256 | Claude |
 | [ ] | `ui_icon_book.png`, `ui_book_page.png` (9-slice), `ui_book_cover.png` | The Book of Shadows: its icon on the right edge (under the laptop), a page, and the open cover around it | 256 × 256 / 1024 × 1536 / 1536 × 2048 | Claude |
 | [ ] | `ui_icon_charm_bag.png` | The charm bag's icon on the left edge (only while she's drifting): press and hold | 256 × 256 | Claude |
+| [ ] | `ui_moon_<phase>.png` × 8 | The moon badge, top left (new, waxing-crescent, first-quarter, waxing-gibbous, full, waning-gibbous, last-quarter, waning-crescent); placeholder drawn in code | 256 × 256 | Claude |
 | [ ] | `ui_icon_systemlog.png`, `ui_systemlog_note.png` (9-slice) | SystemLog (from the end of Ch 4): its icon and a note card | 256 × 256 / 1024 × 256 | Claude |
 | [ ] | `ui_tree_trunk.png`, `ui_tree_node.png`, `ui_tree_node_next.png`, `ui_tree_leaf.png`, `bg_chapter_tree.png` | The chapter tree (the hub): trunk, chapter node, the next chapter, an alter's leaf (tinted in their colour), background | 64 × 512 / 256 / 256 / 192 / 4440 × 2048 | Claude |
 | [ ] | `ui_banner.png` (9-slice) | The "new message" banner | 1024 × 160 | Claude |

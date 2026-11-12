@@ -178,6 +178,17 @@
         "Even one word."
       ],
       "canBeHard": false
+    },
+    {
+      "id": "sabbat",
+      "name": "The sabbats",
+      "category": "wheel",
+      "steps": [
+        "Eight a year: Samhain, Yule, Imbolc, Ostara, Beltane, Litha, Lammas, Mabon.",
+        "Mark each one, even small: a candle, a loaf, a walk.",
+        "Write it on the Wheel page."
+      ],
+      "canBeHard": true
     }
   ],
   "candleColours": [
@@ -421,5 +432,144 @@
       "id": "season",
       "label": "The season"
     }
-  ]
+  ],
+  "sabbats": [
+    {
+      "id": "samhain",
+      "name": "Samhain",
+      "month": 10,
+      "day": 31,
+      "tanyaText": "Samhain tonight. A candle in the window for the dead, and an empty chair. Say their names. I'll be saying mine.",
+      "arrive": "The thin night. One breath in. One breath out.",
+      "prepare": [
+        "Set out a photo, or a name on paper.",
+        "Light a candle in the window, so they can find their way."
+      ],
+      "moment": "Say their names. Sit with the empty chair.",
+      "reflect": "What would you tell them?",
+      "close": "Let the candle burn a while. Then eat something: you're alive.",
+      "hardChance": 0.5,
+      "hardLine": "It's heavy tonight. It always is, a little. Feet on the floor. You can stop here."
+    },
+    {
+      "id": "yule",
+      "name": "Yule",
+      "month": 12,
+      "day": 21,
+      "tanyaText": "Longest night. Sit up a little with the dark, then light one candle. The sun comes back. It always does.",
+      "arrive": "The longest night. One breath in. One breath out.",
+      "prepare": [
+        "Lights off. Sit with the dark for a moment.",
+        "Bay leaves on the altar, and something evergreen."
+      ],
+      "moment": "Light one candle: the sun, coming back.",
+      "reflect": "What do you want to carry into the light?",
+      "close": "Leave the candle burning while you're in the room. The days get longer from here.",
+      "hardChance": 0.25,
+      "hardLine": "The candle's lower than it was. Was it? You're here. The dark is just the dark."
+    },
+    {
+      "id": "imbolc",
+      "name": "Imbolc",
+      "month": 2,
+      "day": 1,
+      "tanyaText": "Imbolc. Brigid's day. A candle in every window, and clean one thing. Just one.",
+      "arrive": "Deep winter, and the light starting back. One breath in. One breath out.",
+      "prepare": [
+        "Sweep the doorstep, or clear one shelf.",
+        "A candle in the window."
+      ],
+      "moment": "The first light coming back. Seeds, under the snow.",
+      "reflect": "What's waking up in you?",
+      "close": "Snuff the candles one by one. Thank Brigid.",
+      "hardChance": 0.0,
+      "hardLine": ""
+    },
+    {
+      "id": "ostara",
+      "name": "Ostara",
+      "month": 3,
+      "day": 20,
+      "tanyaText": "Ostara! Balance. Plant something today, even a seed in a paper cup.",
+      "arrive": "Spring. One breath in. One breath out.",
+      "prepare": [
+        "Dye an egg, or hold a seed.",
+        "Plant it."
+      ],
+      "moment": "Day and night the same length. Balance, for one day.",
+      "reflect": "What do you want to grow?",
+      "close": "Water it. Every day.",
+      "hardChance": 0.0,
+      "hardLine": ""
+    },
+    {
+      "id": "beltane",
+      "name": "Beltane",
+      "month": 5,
+      "day": 1,
+      "tanyaText": "Beltane! Flowers, fire, joy. Do one thing today just because it's lovely.",
+      "arrive": "May. Everything green. One breath in. One breath out.",
+      "prepare": [
+        "Flowers on the altar, or in your hair.",
+        "Tie a ribbon somewhere: a wish."
+      ],
+      "moment": "Joy, on purpose.",
+      "reflect": "What makes you feel alive?",
+      "close": "Leave the ribbon where the wind can get it.",
+      "hardChance": 0.0,
+      "hardLine": ""
+    },
+    {
+      "id": "litha",
+      "name": "Litha (Midsummer)",
+      "month": 6,
+      "day": 21,
+      "tanyaText": "Midsummer. Get up for the sunrise if you can. The longest day of the year.",
+      "arrive": "Before sunrise. One breath in. One breath out.",
+      "prepare": [
+        "Face east.",
+        "Something yellow on the altar: a flower, a lemon, a candle."
+      ],
+      "moment": "Watch it come up. All that light.",
+      "reflect": "What's in full bloom in your life?",
+      "close": "From here the days get shorter. That's all right too.",
+      "hardChance": 0.0,
+      "hardLine": ""
+    },
+    {
+      "id": "lammas",
+      "name": "Lammas",
+      "month": 8,
+      "day": 1,
+      "tanyaText": "Lammas, the first harvest. Bake bread, or buy a good loaf and break it with someone.",
+      "arrive": "High summer, turning. One breath in. One breath out.",
+      "prepare": [
+        "Bake bread, or break a good loaf.",
+        "Leave the first piece as an offering."
+      ],
+      "moment": "The first harvest: what you've grown this year.",
+      "reflect": "What have you gathered this year?",
+      "close": "Give the offering back to the earth tomorrow.",
+      "hardChance": 0.0,
+      "hardLine": ""
+    },
+    {
+      "id": "mabon",
+      "name": "Mabon",
+      "month": 9,
+      "day": 22,
+      "tanyaText": "Mabon. Balance again, and thanks. Write down three things you're grateful for.",
+      "arrive": "Autumn. One breath in. One breath out.",
+      "prepare": [
+        "Apples on the altar, or fallen leaves.",
+        "Write three things you're grateful for."
+      ],
+      "moment": "Day and night equal again, tipping toward the dark.",
+      "reflect": "What are you ready to let go of?",
+      "close": "Eat one of the apples. Thank the season.",
+      "hardChance": 0.0,
+      "hardLine": ""
+    }
+  ],
+  "sabbatNote": "Northern Hemisphere dates as an open, eclectic teaching coven keeps them (the solstices and equinoxes vary by a day or so year to year)."
 }

@@ -107,6 +107,7 @@ namespace IAmAsIAm.Core.Practices
         {
             "tarot", "candle", "grounding-centering", "runes", "charm-bag", "cleansing", "circle-casting",
             "pendulum", "tea-leaves", "oracle", "scrying", "ancestor-altar", "offering", "sigil", "dream-journal",
+            "esbat", "sabbat",
         };
         /// <summary>What the home altar offers (owner: cleansing is for moving in and after the breakup: story moments only).</summary>
         public static readonly string[] AtTheAltar =
@@ -185,6 +186,8 @@ namespace IAmAsIAm.Core.Practices
                 "offering" => Offering(),
                 "sigil" => Sigil(),
                 "dream-journal" => DreamJournal(),
+                "esbat" => Esbat(),
+                "sabbat" => Sabbat(),
                 _ => Grounding(),
             };
             _steps = offerCircle && practiceId != "circle-casting" && practiceId != "grounding-centering" ? WithCircle(steps) : steps;
@@ -766,6 +769,63 @@ namespace IAmAsIAm.Core.Practices
             Result.Title = kept == "feeling" ? "A feeling" : kept == "nothing" ? "" : "A dream";
             Result.Text = dream.Length > 0 ? dream : kept == "nothing" ? "Nothing I remember." : "Only a feeling.";
             Result.Vars["ritual_dream"] = kept;
+        }
+
+        // ── The moon (esbat): variant "full" or "new" ─────────────────────────
+
+        IEnumerator<RitualStep> Esbat()
+        {
+            bool full = _variant != "new";
+            if (full)
+            {
+                yield return Arrive("The full moon, through the window. One breath in. One breath out.");
+                yield return Step(RitualPhase.Prepare, RitualStepKind.Tap, "Fill a jar with water. Set it on the windowsill, in the moonlight.", "Set it there");
+                yield return Step(RitualPhase.Moment, RitualStepKind.Hold, "Look at the moon for a while.", "Look", 5f);
+                yield return Step(RitualPhase.Moment, RitualStepKind.Tap, "Say thank you for something from this month. Out loud, or not.", "Thank you");
+                foreach (var st in Reflect("What are you grateful for, this month?", "Write it down...")) yield return st;
+                yield return Step(RitualPhase.Close, RitualStepKind.Tap, "Leave the water there overnight. Tomorrow, water a plant with it.", "Close");
+            }
+            else
+            {
+                yield return Arrive("No moon tonight. One breath in. One breath out.");
+                yield return Step(RitualPhase.Prepare, RitualStepKind.Tap, "No candle, or just one.", "Just one");
+                yield return Step(RitualPhase.Moment, RitualStepKind.Hold, "Rest. Breathe out the whole month.", "Rest", 6f);
+                yield return Step(RitualPhase.Moment, RitualStepKind.Tap, "Now think of one small thing to begin.", "Begin");
+                foreach (var st in Reflect("What small thing will you start?", "Write it down...")) yield return st;
+                yield return Step(RitualPhase.Close, RitualStepKind.Tap, "Snuff the candle. Go to bed early.", "Close");
+            }
+            Result.Tab = BookTab.Wheel;
+            Result.Title = full ? "Full moon" : "New moon";
+            Result.Text = Written.Length > 0 ? Written : full ? "Water on the windowsill. Said thank you." : "Rested. Began something small.";
+            Result.Grounding = 0.15f;
+            Result.Vars["ritual_esbat"] = full ? "full" : "new";
+        }
+
+        // ── A sabbat at home: variant = the sabbat's id (craft.json sabbats) ──
+
+        IEnumerator<RitualStep> Sabbat()
+        {
+            var s = (_craft.sabbats ?? new List<SabbatDef>()).FirstOrDefault(x => x.id == _variant)
+                    ?? new SabbatDef { id = _variant, name = "The season", arrive = "One breath in. One breath out.", moment = "The wheel turns.", reflect = "What is this season asking of you?", close = "Thank the season." };
+            yield return Arrive(string.IsNullOrEmpty(s.arrive) ? "One breath in. One breath out." : s.arrive);
+            foreach (var p in s.prepare ?? new List<string>()) yield return Step(RitualPhase.Prepare, RitualStepKind.Tap, p, "Do it");
+            if ((s.prepare ?? new List<string>()).Count == 0) yield return Step(RitualPhase.Prepare, RitualStepKind.Tap, "Clear a space on the altar.", "Clear it");
+            yield return Step(RitualPhase.Moment, RitualStepKind.Hold, s.moment ?? "The wheel turns.", "Stay", 5f);
+            // Owner: some sabbats are hard, sometimes (Samhain: Mira; Yule: the night Izzy first came forward).
+            if (s.hardChance > 0f && _rng.NextDouble() < s.hardChance)
+            {
+                Result.StirredUp = true;
+                yield return Step(RitualPhase.Moment, RitualStepKind.Tap,
+                    string.IsNullOrEmpty(s.hardLine) ? "It's heavy tonight. Feet on the floor. You can stop here." : s.hardLine, "Feet on the floor");
+            }
+            foreach (var st in Reflect(s.reflect ?? "What is this season asking of you?", "Write it down...")) yield return st;
+            yield return Step(RitualPhase.Close, RitualStepKind.Tap, s.close ?? "Thank the season.", "Close");
+
+            Result.Tab = BookTab.Wheel;
+            Result.Title = s.name;
+            Result.Text = Written.Length > 0 ? Written : "Kept it.";
+            Result.Grounding = 0.15f;
+            Result.Vars["ritual_sabbat"] = s.id;
         }
     }
 }

@@ -316,6 +316,11 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `ostara-coven`: A dozen people in the wet grass. Tanya with a basket of paper cups. Somebody's baby in a sling.
 - `ostara-eggs`: Eggs dyed with onion skins, orange-brown, set in a ring.
 - `seed-silent`: A seed, pressed into the dark with one finger.
+- `maypole`: A birch pole, and ribbons in every colour, waiting. Selene already has flowers in her hair.
+- `beltane-fire`: A little fire in a bowl. People jump it holding hands, laughing, for luck.
+- `maypole-dance`: Over, under, over, under. The ribbons braid down the pole.
+- `maypole-watch`: The ribbons braid down the pole. You watch, and that's enough.
+- `beltane-later`: Then the ribbons are all wound and the sun is lower. Selene is laughing at something you don't remember saying.
 
 ### The apartment (Axel's year) (`college_apartment_axel`)
 
@@ -419,6 +424,9 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `phone-january`: Thursday, January 18. A date that means something, and you can't think what.
 - `candle-left`: You leave it. It seems important to leave it.
 - `candle-out`: A thin line of smoke. Then you feel sorry, and you don't know why.
+- `imbolc-stub`: The tall candle's stub is still there from last month. You leave it where it is.
+- `imbolc-snow`: Grey snow on the L tracks. Under it, somewhere, seeds.
+- `imbolc-one-candle`: One candle, in the kitchen window. That's enough, this year.
 - `apartment-quiet-2`: Sunday. Adeena at a class. The fridge, thinking.
 - `christie-chamomile`: In your bag, from work: chamomile tea bags, a whole row of them, taped together. "For the bad nights. -C"
 - `friday-hole`: Friday. Friday is a hole in the week now.
@@ -433,6 +441,9 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `himalaya-postcard`: The Himalayas, bought years ago at the museum gift shop. You've never been anywhere.
 - `dusty-suitcase`: Under the bed. Dusty. It has never been on a plane.
 - `ticket-bought`: Click. A confirmation number. Your heart, very loud.
+- `mabon-apples`: A bag of apples from the corner store. Three different kinds, because why not.
+- `mabon-leaves`: Red and yellow leaves, pressed flat under the tarot deck.
+- `mabon-crunch`: Crunch. That counts.
 - `blanket-fort`: The tiger blanket from Nepal, the couch cushions, two chairs. A fort. Nobody can see in.
 - `napkin-taped`: The napkin with Mira's number, taped together very carefully. The tape is old now.
 - `crackers-floor`: A grown-up fridge. Grown-up food. You eat a whole sleeve of crackers, sitting on the floor.
@@ -567,6 +578,9 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `heather-note`: Your notebook, open on the blanket. In round, careful handwriting that isn't quite yours: "Water first. Then food. Then Angie. -H"
 - `window-watched`: The stupa, the eyes, the dogs. Pasang's daughter hanging out laundry, looking up at your window every few minutes.
 - `tea-flask`: A flask of sweet milky tea outside your door. A note: "DRINK. -PASANG"
+- `litha-stupa`: The white dome, grey in the dark, then pink. The painted eyes on the tower, catching the light first.
+- `litha-flags`: Five colours, snapping in the wind off the hills.
+- `litha-sunrise`: The sun comes up over the stupa. All that light.
 - `full-suitcase`: Full now. Prayer flags for Tanya, a magnet for Christie, a little brass prayer wheel for Angie's office. Something for Gerald.
 - `heather-note-last`: The last page, in that round, careful hand: "Go home gently. -H"
 - `khata`: A white silk scarf, a khata, placed around your neck.
@@ -669,6 +683,9 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `tanya-moonstone`: A parcel from Champaign on the step. A moonstone in tissue paper, and Tanya's square letters: "For the new moon, and the new home."
 - `seattle-rowan`: A rowan by the steps, last autumn's berries still hanging on. You take one small sprig.
 - `boxes-unpacked`: Every box, open. Books on shelves. It takes a week. In Chicago it took never.
+- `lammas-dough`: It rose overnight under a tea towel. Somebody already knocked it back: neat, careful knuckle marks.
+- `lammas-rain`: Rain, in August. The plant on the sill drinking it in.
+- `lammas-floor`: You sit on the kitchen floor in the warm, and wait.
 
 ### The Burke Museum (`burke_museum_hall`)
 

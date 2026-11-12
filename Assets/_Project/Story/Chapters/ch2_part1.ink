@@ -17,6 +17,7 @@
 
 === ch2_part1 ===
 ~ set_age(24)
+~ set_date(2023, 4, 17)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: time-loss
 ~ explore_tradition("judaism")

@@ -13,6 +13,7 @@
 
 === ch5_part3 ===
 ~ set_age(29)
+~ set_date(2027, 10, 5)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: involuntary-switch
 -> garba

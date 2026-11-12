@@ -15,6 +15,7 @@
 
 === ch1_5_part3 ===
 ~ set_age(20)
+~ set_date(2019, 3, 6)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: childhood-reference
 # cw: derealization

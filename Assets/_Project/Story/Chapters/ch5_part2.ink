@@ -17,6 +17,7 @@
 
 === ch5_part2 ===
 ~ set_age(28)
+~ set_date(2027, 6, 19)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 ~ co_conscious("heather", false)
 -> garlands
@@ -47,6 +48,29 @@ Heather (inside): Let me. Just for a bit. I like this. # vo: ch5-hinduism_heathe
 -
 ~ system_log("heather", "Garlands are good for us. Every Saturday, please. -H")
 ~ co_conscious("heather", false)
+-> lammas
+
+= lammas
+// Owner: every sabbat played at least once across the game (Claude's draft scene). No new voiced lines.
+~ set_date(2027, 8, 1)
+# place: seattle_apartment
+# shot: over-shoulder
+# objective: Bake bread for Lammas
+- (kitchen)
++ {kitchen < 3} [Look: The dough]
+    It rose overnight under a tea towel. Somebody already knocked it back: neat, careful knuckle marks. # look: lammas-dough
+    -> kitchen
++ {kitchen < 3} [Look: The window]
+    Rain, in August. The plant on the sill drinking it in. # look: lammas-rain
+    -> kitchen
+* [Use: The oven (bake the loaf)]
+    ~ record_choice("ch5.p2.lammas", "baked", "At Lammas, you baked bread and left the first slice for the earth.")
+    The kitchen smells like every good thing at once. The first slice, saved for the earth. # ritual: sabbat lammas
+* [Wait (let it bake)]
+    ~ record_choice("ch5.p2.lammas", "waited", "At Lammas, you let the bread bake and sat on the kitchen floor in the warm.")
+    You sit on the kitchen floor in the warm, and wait. # look: lammas-floor
+-
+~ set_date(2027, 9, 10)
 -> day
 
 = day

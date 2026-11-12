@@ -17,6 +17,7 @@
 
 === ch1_part1 ===
 ~ set_age(19)
+~ set_date(2018, 1, 25)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: depersonalization
 # cw: time-loss
@@ -64,6 +65,7 @@ After class, Dot from the till reads your teacup. A bird near the rim: news, com
 -> ostara
 
 = ostara
+~ set_date(2018, 3, 20)
 # place: park_ostara
 # shot: wide
 # objective: Plant a seed
@@ -91,6 +93,35 @@ Tanya: Water it. Every day. I'll ask. # vo: ch1-christianity_tanya_0011
 ~ journal("Note", "Ostara. A seed in a paper cup. Water it every day.")
 ~ bos_entry("maya", "Wheel", "Ostara", "My first sabbat with the coven. Eggs dyed with onion skins. A seed in a paper cup. Water it every day.")
 ~ learn_practice("offering", "tanya")
+~ text_from("tanya", "And the 31st is a blue moon: two full moons in one month. Water on the windowsill, and say thank you for something.")
+~ learn_practice("esbat", "tanya")
+-> beltane
+
+= beltane
+// Owner: every sabbat played at least once across the game (Claude's draft scene). No new voiced lines.
+~ set_date(2018, 5, 1)
+# place: park_ostara
+# shot: wide
+# objective: Dance the maypole
+- (green)
++ {green < 3} [Look: The maypole]
+    A birch pole, and ribbons in every colour, waiting. Selene already has flowers in her hair. # look: maypole
+    -> green
++ {green < 3} [Look: The fire bowl]
+    A little fire in a bowl. People jump it holding hands, laughing, for luck. # look: beltane-fire
+    -> green
+* [Use: A ribbon (dance)]
+    ~ record_choice("ch1.p1.beltane", "danced", "At Beltane, you danced the maypole with the coven.")
+    Over, under, over, under. The ribbons braid down the pole. # look: maypole-dance
+* [Wait (watch from the blanket)]
+    ~ record_choice("ch1.p1.beltane", "watched", "At Beltane, you watched the maypole from a blanket on the grass.")
+    The ribbons braid down the pole. You watch, and that's enough. # look: maypole-watch
+-
+~ set_experience("TimeLoss", 0.3)
+Then the ribbons are all wound and the sun is lower. Selene is laughing at something you don't remember saying. # look: beltane-later
+~ bos_entry("maya", "Wheel", "Beltane", "Flowers and ribbons, and a gap in the middle of the afternoon.")
+~ set_experience("TimeLoss", 0.0)
+~ set_date(2018, 5, 10)
 -> spring_signs
 
 = spring_signs

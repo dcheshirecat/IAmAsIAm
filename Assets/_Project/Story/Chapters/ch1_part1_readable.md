@@ -72,6 +72,25 @@ After class, Dot from the till reads your teacup. A bird near the rim: news, com
 
 **Tanya:** Water it. Every day. I'll ask.
 
+📱 **Text from Tanya:** And the 31st is a blue moon: two full moons in one month. Water on the windowsill, and say thank you for something.
+
+## Beltane
+
+> **Objective:** Dance the maypole
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The maypole**
+    - A birch pole, and ribbons in every colour, waiting. Selene already has flowers in her hair.
+- **Look: The fire bowl**
+    - A little fire in a bowl. People jump it holding hands, laughing, for luck.
+- **Use: A ribbon (dance)**
+    - Over, under, over, under. The ribbons braid down the pole.
+- **Wait (watch from the blanket)**
+    - The ribbons braid down the pole. You watch, and that's enough.
+
+Then the ribbons are all wound and the sun is lower. Selene is laughing at something you don't remember saying.
+
 ## Spring signs
 
 📱 **Text from Tanya:** We missed you tonight. Everything all right?

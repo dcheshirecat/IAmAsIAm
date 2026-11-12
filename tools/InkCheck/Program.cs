@@ -27,7 +27,7 @@ static class InkCheck
 
     static HashSet<string> _places = new HashSet<string>();
     static HashSet<string> _craft = new HashSet<string>();
-    static HashSet<string> _herbs = new HashSet<string>(), _stones = new HashSet<string>();
+    static HashSet<string> _herbs = new HashSet<string>(), _stones = new HashSet<string>(), _sabbats = new HashSet<string>();
     static HashSet<string> _people, _members, _skills, _practiceSkills, _traditions, _spreads, _charms, _cues;
 
     static int Main(string[] args)
@@ -184,6 +184,12 @@ static class InkCheck
             Check(_stones.Contains(S(a[2])), $"gift_charm_bag: unknown stone '{a[2]}' (crystals.json)");
             return null;
         });
+        story.BindExternalFunctionGeneral("set_date", a =>
+        {
+            int y = Convert.ToInt32(a[0]), m = Convert.ToInt32(a[1]), d = Convert.ToInt32(a[2]);
+            Check(y >= 1998 && y <= 2040 && m >= 1 && m <= 12 && d >= 1 && d <= DateTime.DaysInMonth(Math.Clamp(y, 1, 9999), Math.Clamp(m, 1, 12)), $"set_date: bad date {y}-{m}-{d}");
+            return null;
+        });
         story.BindExternalFunctionGeneral("honour_ancestor", a => { Contact(a[0], "honour_ancestor"); return null; });
         story.BindExternalFunctionGeneral("gain_herb", a => { Check(_herbs.Contains(S(a[0])), $"gain_herb: unknown herb '{a[0]}' (herbs.json)"); if (S(a[1]).Length > 0) Contact(a[1], "gain_herb"); return null; });
         story.BindExternalFunctionGeneral("gain_stone", a => { Check(_stones.Contains(S(a[0])), $"gain_stone: unknown stone '{a[0]}' (crystals.json)"); if (S(a[1]).Length > 0) Contact(a[1], "gain_stone"); return null; });
@@ -226,7 +232,8 @@ static class InkCheck
                 else if (parts[0] == "tarot" || parts[0] == "candle" || parts[0] == "grounding-centering" || parts[0] == "runes"
                          || parts[0] == "charm-bag" || parts[0] == "circle-casting" || parts[0] == "pendulum" || parts[0] == "tea-leaves"
                          || parts[0] == "oracle" || parts[0] == "scrying" || parts[0] == "ancestor-altar" || parts[0] == "offering"
-                         || parts[0] == "sigil" || parts[0] == "dream-journal") { }
+                         || parts[0] == "sigil" || parts[0] == "dream-journal" || parts[0] == "esbat") { }
+                else if (parts[0] == "sabbat") { if (parts.Length < 2 || !_sabbats.Contains(parts[1])) Fail("sabbat needs a sabbat id (craft.json sabbats)"); }
                 else if (parts[0] == "cleansing") { if (parts.Length >= 2 && parts[1] != "hard") Fail("cleansing takes only 'hard'"); }
                 else if (parts[0] == "craft" && (parts.Length < 2 || !_charms.Contains(parts[1]))) Fail("unknown charm");
                 else if (parts[0] != "tarot" && parts[0] != "craft" && parts[0] != "rune" && parts[0] != "sachet") Fail("unknown ritual");
@@ -259,6 +266,7 @@ static class InkCheck
         _cues = new HashSet<string>(Load<TriggerData>("triggers.json").triggers.SelectMany(t => t.cues));
         _craft = new HashSet<string>(Load<CraftData>("craft.json").practices.Select(p => p.id));
         _herbs = new HashSet<string>(Load<HerbData>("herbs.json").herbs.Select(h => h.id));
+        _sabbats = new HashSet<string>(Load<CraftData>("craft.json").sabbats.Select(s => s.id));
         _stones = new HashSet<string>(Load<CrystalData>("crystals.json").crystals.Select(c => c.id));
         _places = new HashSet<string>(Load<IAmAsIAm.Core.Story.PlaceData>("places.json").places.Select(p => p.id));
         using (var people = JsonDocument.Parse(File.ReadAllText(Path.Combine(dataDir, "people.json"))))

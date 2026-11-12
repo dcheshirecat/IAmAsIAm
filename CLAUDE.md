@@ -481,6 +481,10 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   (**Mira, her grandparents, the land/season, people she loses later: the owner decides who**; Ink `honour_ancestor(person)`),
   offerings, sigils, the dream journal. Grandparents = **Claude's guess**: Grandma June (`grandma_june`, d. 2002) and Grandpa Walter
   (`grandpa_walter`), Sarah's Quaker parents. Details: docs/WiccanPractice.md §9 step 4.
+  **Step 5 BUILT (owner's answers):** the Wheel of the Year: **Tanya texts each sabbat + a home ritual** (`# ritual: sabbat <id>`),
+  **every sabbat played at least once** (new scenes: Beltane Ch1 P1, Imbolc Ch2 P3, Litha Ch3 P4, Mabon Ch4 P1 (Izzy), Lammas Ch5
+  P2), **a moon phase ALWAYS shown** (`MoonBadge`, top left; esbat on full/new moons), **some sabbats hard sometimes** (Samhain,
+  Yule). Every part has `set_date(y, m, d)` (Claude's guesses). `Core/Practices/WheelOfTheYear.cs`; craft.json `sabbats`.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

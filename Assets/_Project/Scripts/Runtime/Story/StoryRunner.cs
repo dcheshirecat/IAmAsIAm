@@ -367,6 +367,18 @@ namespace IAmAsIAm.Runtime.Story
                 else Debug.LogError($"[IAmAsIAm] gain_device: unknown device '{a[0]}'");
                 return null;
             });
+            // The story's date (owner: a moon phase always shown). Near a sabbat, Tanya texts (owner: Tanya's sabbat texts).
+            _story.BindExternalFunctionGeneral("set_date", a =>
+            {
+                try
+                {
+                    var date = new DateTime(Convert.ToInt32(a[0]), Convert.ToInt32(a[1]), Convert.ToInt32(a[2]));
+                    var sabbat = GameServices.Book?.SetDate(date);
+                    if (sabbat != null) devices?.Receive(IAmAsIAm.Core.Devices.MessageChannel.Text, "tanya", sabbat.tanyaText, GameServices.InGameDay);
+                }
+                catch (ArgumentException e) { Debug.LogError($"[IAmAsIAm] set_date: bad date ({e.Message})"); }
+                return null;
+            });
             _story.BindExternalFunctionGeneral("text_from", a => { devices?.Receive(IAmAsIAm.Core.Devices.MessageChannel.Text, S(a[0]), S(a[1]), GameServices.InGameDay); return null; });
             _story.BindExternalFunctionGeneral("text_to", a => { devices?.Send(IAmAsIAm.Core.Devices.MessageChannel.Text, S(a[0]), S(a[1]), GameServices.InGameDay); return null; });
             _story.BindExternalFunctionGeneral("email_from", a => { devices?.Receive(IAmAsIAm.Core.Devices.MessageChannel.Email, S(a[0]), S(a[2]), GameServices.InGameDay, S(a[1])); return null; });

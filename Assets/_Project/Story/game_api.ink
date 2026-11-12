@@ -88,6 +88,7 @@ EXTERNAL practised(practice)
 EXTERNAL gift_charm_bag(giver, herb, stone, intent)
 EXTERNAL gain_herb(herb, giver)
 EXTERNAL honour_ancestor(person)
+EXTERNAL set_date(year, month, day)
 EXTERNAL gain_stone(stone, giver)
 
 === function set_experience(kind, amount) ===
@@ -178,6 +179,11 @@ EXTERNAL gain_stone(stone, giver)
 ~ return
 
 === function gain_stone(stone, giver) ===
+~ return
+
+// The story's date (owner: a moon phase always shown; Tanya texts on the sabbats). At the start of every chapter part,
+// after set_age, and again when a part jumps ahead (e.g. before a sabbat scene).
+=== function set_date(year, month, day) ===
 ~ return
 
 // Someone she honours at the ancestor altar from now on (a people.json id).

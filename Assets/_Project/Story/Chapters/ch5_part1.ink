@@ -19,6 +19,7 @@
 
 === ch5_part1 ===
 ~ set_age(28)
+~ set_date(2027, 4, 15)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 ~ explore_tradition("hinduism")
 ~ gain_app("systemlog")

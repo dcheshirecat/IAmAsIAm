@@ -19,6 +19,7 @@
 
 === prologue_sunday4 ===
 ~ set_age(15)
+~ set_date(2013, 1, 20)  // Claude's guess at the exact day (owner: change it freely)
 # cw: childhood-reference
 # cw: neglect
 # cw: child-alone

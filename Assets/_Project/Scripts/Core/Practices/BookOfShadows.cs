@@ -55,6 +55,8 @@ namespace IAmAsIAm.Core.Practices
         public List<OracleCard> oracleCards = new List<OracleCard>();
         public List<CraftOption> offeringThings = new List<CraftOption>();
         public List<CraftOption> offeringFor = new List<CraftOption>();
+        /// <summary>The eight sabbats (Northern Hemisphere dates), Tanya's texts and their home rituals.</summary>
+        public List<SabbatDef> sabbats = new List<SabbatDef>();
     }
 
     [Serializable] public sealed class TeaLeafShape { public string shape; public string meaning; }
@@ -162,6 +164,10 @@ namespace IAmAsIAm.Core.Practices
         public CharmBagState charmBag = new CharmBagState();
         public List<CharmIngredient> ingredients = new List<CharmIngredient>();
         public List<Ancestor> ancestors = new List<Ancestor>();
+        /// <summary>The story's date, "yyyy-mm-dd" (owner: a moon phase always shown). Ink set_date at each part.</summary>
+        public string date = "";
+        /// <summary>Sabbats Tanya has already texted about, as "id-year".</summary>
+        public List<string> sabbatsTexted = new List<string>();
     }
 
     /// <summary>
@@ -286,6 +292,33 @@ namespace IAmAsIAm.Core.Practices
         }
 
         readonly List<Ancestor> _ancestors = new List<Ancestor>();
+        readonly List<string> _sabbatsTexted = new List<string>();
+
+        /// <summary>The story's date right now (null before any set_date).</summary>
+        public DateTime? Date { get; private set; }
+
+        public IReadOnlyList<SabbatDef> Sabbats => _data.sabbats ?? new List<SabbatDef>();
+
+        /// <summary>The sabbat near today's story date (within a few days), or null.</summary>
+        public SabbatDef SabbatNow(int days = 10) => Date.HasValue ? WheelOfTheYear.Near(Date.Value, _data.sabbats, days) : null;
+
+        /// <summary>
+        /// The story moves to a date. Returns the sabbat Tanya should text about now (owner: Tanya's sabbat texts), once a
+        /// year each, and only once Tanya has given her the Book; otherwise null.
+        /// </summary>
+        public SabbatDef SetDate(DateTime date)
+        {
+            Date = date.Date;
+            Changed?.Invoke();
+            if (!Has || GivenById != "tanya") return null;
+            var s = WheelOfTheYear.Near(date, _data.sabbats, 7);
+            if (s == null || string.IsNullOrEmpty(s.tanyaText)) return null;
+            int year = s.month == 12 && date.Month == 1 ? date.Year - 1 : s.month == 1 && date.Month == 12 ? date.Year + 1 : date.Year;
+            string key = $"{s.id}-{year}";
+            if (_sabbatsTexted.Contains(key)) return null;
+            _sabbatsTexted.Add(key);
+            return s;
+        }
 
         /// <summary>The people she honours at the ancestor altar (owner: Mira, her grandparents, and people she loses later).</summary>
         public IReadOnlyList<Ancestor> Ancestors => _ancestors;
@@ -372,6 +405,8 @@ namespace IAmAsIAm.Core.Practices
             charmBag = CharmBag,
             ingredients = _ingredients.ToList(),
             ancestors = _ancestors.ToList(),
+            date = Date.HasValue ? Date.Value.ToString("yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture) : "",
+            sabbatsTexted = _sabbatsTexted.ToList(),
             has = Has,
             givenById = GivenById,
             learned = _learned.ToList(),
@@ -390,6 +425,9 @@ namespace IAmAsIAm.Core.Practices
             CharmBag.added ??= new List<CharmBagAddition>();
             _ingredients.Clear();
             _ancestors.Clear();
+            _sabbatsTexted.Clear();
+            Date = WheelOfTheYear.Parse(state?.date);
+            if (state?.sabbatsTexted != null) _sabbatsTexted.AddRange(state.sabbatsTexted.Where(k => !string.IsNullOrEmpty(k)));
             if (state?.ancestors != null) _ancestors.AddRange(state.ancestors.Where(a => a != null && !string.IsNullOrEmpty(a.personId)));
             if (state?.ingredients != null) _ingredients.AddRange(state.ingredients.Where(i => i != null && !string.IsNullOrEmpty(i.id)));
             if (state != null)

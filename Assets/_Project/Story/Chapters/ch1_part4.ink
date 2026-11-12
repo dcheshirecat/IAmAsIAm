@@ -16,6 +16,7 @@
 
 === ch1_part4 ===
 ~ set_age(21)
+~ set_date(2020, 3, 20)  // Claude's guess at the exact day (owner: change it freely)
 # cw: pandemic
 # cw: isolation
 # cw: religious-content
@@ -55,6 +56,7 @@ Your phone. # device: phone
 -> lockdown.dorm
 
 = graduation
+~ set_date(2020, 5, 16)
 # objective: Graduate
 # shot: close
 * [Use: The laptop (the ceremony)]

@@ -12,6 +12,7 @@
 
 === ch1_5_part4 ===
 ~ set_age(20)
+~ set_date(2019, 5, 2)  // Claude's guess at the exact day (owner: change it freely)
 # cw: time-loss
 # cw: involuntary-switch
 -> packing

@@ -219,6 +219,23 @@ These are proposals for the writing tools. Claude adds them when building.
    offerings. Ch 1 Part 3: Tanya's text, sigils after runes. Ch 1 Part 4: "Use: The book by the bed (dreams)" in lockdown;
    Selene's oracle deck arrives after graduation. Ch 3 Part 4, the end: Tanya's text opens scrying.
 5. The Wheel of the Year and the moons in the calendar; Tanya's sabbat texts.
+   **Owner's answers:** each sabbat gets **Tanya's text + a home ritual**, AND **every sabbat is played as a scene at least once
+   across the game**; **a moon phase is always shown**; **some sabbats are hard, sometimes**; every part gets an exact date
+   (Claude's guesses, the owner can change them).
+   **BUILT:** `Core/Practices/WheelOfTheYear.cs`: `Moon` (age, phase, full/new within 1.5 days; mean synodic month from the new
+   moon of 6 Jan 2000; tests against real moons), `WheelOfTheYear.Near`, `SabbatDef` (craft.json `sabbats`: Northern Hemisphere
+   dates, Tanya's text, the home ritual's steps, `hardChance`: Samhain 50% (Mira), Yule 25% (lost time)). The Book keeps the
+   story date and which sabbats Tanya has texted (`SetDate`; once a year each, only after she gave Maya the Book). Ink
+   `set_date(y, m, d)` at the start of EVERY part (Claude's guesses) and before dated scenes. Rituals `esbat` (full: water on the
+   windowsill, thanks; new: rest, begin something small) and `sabbat <id>`, both on the Wheel tab. The altar offers today's
+   sabbat (within 10 days) and the esbat on a full/new moon; its practices now sit three to a row. `Runtime/Practices/MoonBadge.cs`:
+   the moon in its phase at the top left with its name, always shown in a game. Learned: the sabbats come with the Book (Yule
+   2017); the esbat at Ostara 2018 (Tanya's text about the blue moon of 31 March 2018).
+   **Played sabbats (Samhain, Yule and Ostara already were; no new voiced lines):** **Beltane** 2018 with the coven in the park
+   (the maypole; lost time in the middle of the afternoon), Ch 1 Part 1. **Imbolc** 2024 alone in Chicago (a candle in every
+   window), Ch 2 Part 3. **Litha** 2026 on the guest-house roof in Boudha (sunrise over the stupa, a marigold), Ch 3 Part 4.
+   **Mabon** 2026, Izzy's (apples on the windowsill, three thanks in her hand), Ch 4 Part 1. **Lammas** 2027, bread in Seattle
+   (someone already knocked the dough back), Ch 5 Part 2.
 6. Alter responses and lost-time traces; hard moments.
 7. Going back through the written chapters to add practice moments (with the owner's OK, chapter by chapter).
 

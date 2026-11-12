@@ -15,6 +15,7 @@
 
 === ch4_part3 ===
 ~ set_age(28)
+~ set_date(2026, 12, 10)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: medical-setting
 ~ co_conscious("heather", true)

@@ -19,6 +19,7 @@
 
 === prelude_part1 ===
 ~ set_age(18)
+~ set_date(2016, 10, 27)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: neglect
 # cw: depersonalization
@@ -82,6 +83,7 @@ Selene: We're doing a little Samhain thing on Monday. In my room. Candles, apple
 -> samhain
 
 = samhain
+~ set_date(2016, 10, 31)
 # place: college_dorm_selene
 # shot: wide
 # objective:

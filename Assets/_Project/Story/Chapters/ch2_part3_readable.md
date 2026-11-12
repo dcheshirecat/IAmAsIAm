@@ -29,6 +29,21 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Tanya:** Thinking of you today. I know today is hard.
 
+## Imbolc
+
+> **Objective:** Light the windows for Imbolc
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The windowsill**
+    - The tall candle's stub is still there from last month. You leave it where it is.
+- **Look: The snow**
+    - Grey snow on the L tracks. Under it, somewhere, seeds.
+- **Use: The candles (keep Imbolc)**
+    - Brigid's day. A candle in every window, and one shelf, cleared.
+- **Wait (just one candle)**
+    - One candle, in the kitchen window. That's enough, this year.
+
 ## Seder
 
 > **Objective:** Find your seat at the seder

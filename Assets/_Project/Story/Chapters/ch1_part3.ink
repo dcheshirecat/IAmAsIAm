@@ -19,6 +19,7 @@
 
 === ch1_part3 ===
 ~ set_age(21)
+~ set_date(2019, 9, 30)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: isolation
 # cw: breakup
@@ -84,6 +85,7 @@ Gracie drops a paper twist into your coat pocket: dried calendula, from the mini
 -> samhain
 
 = samhain
+~ set_date(2019, 10, 31)
 # place: shop_the_circle
 # shot: wide
 # objective: Go to Samhain at The Circle

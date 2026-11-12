@@ -16,6 +16,7 @@
 
 === ch1_5_part1 ===
 ~ set_age(20)
+~ set_date(2018, 8, 20)  // Claude's guess at the exact day (owner: change it freely)
 # cw: time-loss
 # cw: religious-content
 -> mirror

@@ -91,3 +91,18 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 _(A switch: Izzy comes forward. The player has no control over it.)_
 
 **Izzy:** Tea! Yes. Tea.
+
+## Mabon
+
+> **Objective:** Mabon! Apples. Thanks. Go.
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The apples**
+    - A bag of apples from the corner store. Three different kinds, because why not.
+- **Look: The leaves**
+    - Red and yellow leaves, pressed flat under the tarot deck.
+- **Use: The windowsill (keep Mabon)**
+    - Apples on the windowsill, crooked. Good enough.
+- **Wait (eat an apple)**
+    - Crunch. That counts.

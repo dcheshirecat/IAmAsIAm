@@ -13,6 +13,7 @@
 
 === ch4_part4 ===
 ~ set_age(28)
+~ set_date(2027, 2, 20)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 ~ co_conscious("heather", true)
 ~ text_from("sawsan", "Ramadan Mubarak!! Amal says you're coming to the iftar. Sit with me. My mom made too much food. She always makes too much food.")

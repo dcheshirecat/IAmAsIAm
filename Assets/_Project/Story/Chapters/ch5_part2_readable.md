@@ -33,6 +33,21 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Wait (let Heather's hands work)**
     - Your hands, and Heather's, threading. Straight now. Steady. You're both here. Nobody goes far away.
 
+## Lammas
+
+> **Objective:** Bake bread for Lammas
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The dough**
+    - It rose overnight under a tea towel. Somebody already knocked it back: neat, careful knuckle marks.
+- **Look: The window**
+    - Rain, in August. The plant on the sill drinking it in.
+- **Use: The oven (bake the loaf)**
+    - The kitchen smells like every good thing at once. The first slice, saved for the earth.
+- **Wait (let it bake)**
+    - You sit on the kitchen floor in the warm, and wait.
+
 ## Day
 
 > **Objective:** Watch the evening closing

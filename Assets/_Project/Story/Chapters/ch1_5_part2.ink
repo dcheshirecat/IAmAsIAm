@@ -13,6 +13,7 @@
 
 === ch1_5_part2 ===
 ~ set_age(20)
+~ set_date(2018, 10, 6)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: time-loss
 -> study

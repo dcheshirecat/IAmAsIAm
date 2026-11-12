@@ -16,6 +16,7 @@
 
 === ch4_part1 ===
 ~ set_age(28)
+~ set_date(2026, 9, 14)  // Claude's guess at the exact day (owner: change it freely)
 # cw: medical-setting
 # cw: religious-content
 # cw: involuntary-switch
@@ -106,4 +107,28 @@ Chaplain Amal: You were. Someone very funny was here a minute ago. And someone v
 ~ set_experience("TimeLoss", 0.0)
 Izzy: Tea! Yes. Tea. # vo: ch4-islam_izzy_0014
 ~ journal("Note", "Day program. Chaplain Amal, Thursdays at 3:30. She said: you don't have to explain anything to me.")
+-> mabon
+
+= mabon
+// Owner: every sabbat played at least once across the game (Claude's draft scene). No new voiced lines.
+// Izzy practises Wicca too (owner): this one is hers.
+~ set_date(2026, 9, 22)
+# place: chicago_apartment
+# shot: over-shoulder
+# objective: Mabon! Apples. Thanks. Go.
+- (home)
++ {home < 3} [Look: The apples]
+    A bag of apples from the corner store. Three different kinds, because why not. # look: mabon-apples
+    -> home
++ {home < 3} [Look: The leaves]
+    Red and yellow leaves, pressed flat under the tarot deck. # look: mabon-leaves
+    -> home
+* [Use: The windowsill (keep Mabon)]
+    ~ record_choice("ch4.p1.mabon", "kept", "At Mabon, Izzy kept the sabbat at the windowsill: apples, leaves, three things to be grateful for.")
+    Apples on the windowsill, crooked. Good enough. # ritual: sabbat mabon
+* [Wait (eat an apple)]
+    ~ record_choice("ch4.p1.mabon", "apple", "At Mabon, Izzy just ate an apple on the windowsill and called it a sabbat.")
+    Crunch. That counts. # look: mabon-crunch
+-
+~ bos_entry("izzy", "Wheel", "Mabon", "Three things: tea. The quiet room. Not being alone in here.")
 -> ch4_part2  // the next part of the same chapter (one run)

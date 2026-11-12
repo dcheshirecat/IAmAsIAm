@@ -14,6 +14,7 @@
 
 === ch3_part4 ===
 ~ set_age(27)
+~ set_date(2026, 6, 10)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: time-loss
 ~ co_conscious("izzy", true)
@@ -105,6 +106,29 @@ Heather (inside): There. That's it. That's all it has to be. # vo: ch3-buddhism_
 Izzy (inside): Five minutes! New record! # vo: ch3-buddhism_izzy-inside_0081
 ~ text_to("tanya", "Day 47. Five minutes, eyes open. I stayed for all of it.")
 ~ text_from("tanya", "That's the bravest five minutes I've ever heard of.")
+-> litha
+
+= litha
+// Owner: every sabbat played at least once across the game (Claude's draft scene). No new voiced lines.
+~ set_date(2026, 6, 21)
+# place: boudha_guest_house
+# shot: wide
+# objective: Watch the sunrise from the roof
+- (roof)
++ {roof < 3} [Look: The stupa]
+    The white dome, grey in the dark, then pink. The painted eyes on the tower, catching the light first. # look: litha-stupa
+    -> roof
++ {roof < 3} [Look: The prayer flags]
+    Five colours, snapping in the wind off the hills. # look: litha-flags
+    -> roof
+* [Use: The marigold (keep Midsummer)]
+    ~ record_choice("ch3.p4.litha", "kept", "On Midsummer morning in Boudha, you kept the sabbat on the guest-house roof with a marigold.")
+    A marigold from Pasang's kitchen, on the parapet: something yellow. # ritual: sabbat litha
+* [Wait (just watch it come up)]
+    ~ record_choice("ch3.p4.litha", "watched", "On Midsummer morning in Boudha, you watched the sun come up over the stupa.")
+    The sun comes up over the stupa. All that light. # look: litha-sunrise
+-
+~ text_to("tanya", "Midsummer sunrise from a roof in Kathmandu. Your text came at 3am. I was already up.")
 -> lumbini
 
 = lumbini
