@@ -1,4 +1,4 @@
-// DRAFT: not canon until the owner approves it. Prelude (Wicca), Part 1.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prelude (Wicca), Part 1.
 // vo-speakers: Maya=maya
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. Selene. A college town in Illinois, October 2016. Maya is 18.
@@ -142,4 +142,4 @@ Selene: Everything okay? # vo: prelude-wicca_selene_0020
 -
 ~ explore_tradition("wicca")
 ~ text_from("selene", "thank u for coming tonight. mira sounds like she was really special")
--> END
+-> prelude_part2  // the next part of the same chapter (one run)

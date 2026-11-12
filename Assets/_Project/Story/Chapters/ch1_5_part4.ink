@@ -1,4 +1,4 @@
-// DRAFT: not canon until the owner approves it. Chapter 1.5 (Axel), Part 4.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1.5 (Axel), Part 4.
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 4. The napkin. Champaign-Urbana, May 2019. The body is 20.
 //  Owner's beats: Mark accidentally breaks something from Maya's childhood: he tears Mira's napkin (the phone number from

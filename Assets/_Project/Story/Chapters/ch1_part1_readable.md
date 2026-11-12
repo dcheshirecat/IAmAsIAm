@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** after Yule, Maya's life with Tanya and the coven: Thursday classes, her first sabbat, a first reading. The sign that Axel is coming: more and more lost time. Then junior year passes on a black screen that says only "Junior year." and "May 2019." It isn't explained until Chapter 1.5. Played as Maya the first time. An unexpected switch (to an unlocked alter: Nina, Izzy) may happen. Explore-first: The Circle and Maya's room carry it.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1 (Christianity), Part 1. after Yule, Maya's life with Tanya and the coven: Thursday classes, her first sabbat, a first reading. The sign that Axel is coming: more and more lost time. Then junior year passes on a black screen that says only "Junior year." and "May 2019." It isn't explained until Chapter 1.5. Played as Maya the first time. An unexpected switch (to an unlocked alter: Nina, Izzy) may happen. Explore-first: The Circle and Maya's room carry it.
 
 **My guesses, for you to check:**
 

@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** the breakup with Mark is explained during senior year (not played). Everyone abandons Maya except Tanya and Selene, who understand something was wrong and welcome her back into the coven. Maya meets Gracie (a young Catholic nun in training who volunteers at the campus ministry) at a donation drive, and comes to like praying quietly on Sundays. Mark: Episcopal, a kind queer man, left very confused and upset. Explore-first: the quad, the coven, the ministry.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1 (Christianity), Part 3. the breakup with Mark is explained during senior year (not played). Everyone abandons Maya except Tanya and Selene, who understand something was wrong and welcome her back into the coven. Maya meets Gracie (a young Catholic nun in training who volunteers at the campus ministry) at a donation drive, and comes to like praying quietly on Sundays. Mark: Episcopal, a kind queer man, left very confused and upset. Explore-first: the quad, the coven, the ministry.
 
 **My guesses, for you to check:**
 

@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** small signs add up over the morning (Maya is hungry and eats all the fellowship-hour snacks; she mentions being home alone in the evenings while Sarah is at meetings; she goes "floaty" and doesn't answer her name). Mira speaks to Sarah. Sarah thanks her warmly, calls Maya "very independent", and is called away by Mrs. Hines. MAYA NEVER KNOWS: the conversation itself is not shown here. Reneé (on crutches, resting in the hallway) overhears it; adult Reneé tells Maya in chapter 4 or 5. Explore-first: the signs are things the player finds (the note, the snack table), not narration.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prologue "This Little Light", Sunday 2. small signs add up over the morning (Maya is hungry and eats all the fellowship-hour snacks; she mentions being home alone in the evenings while Sarah is at meetings; she goes "floaty" and doesn't answer her name). Mira speaks to Sarah. Sarah thanks her warmly, calls Maya "very independent", and is called away by Mrs. Hines. MAYA NEVER KNOWS: the conversation itself is not shown here. Reneé (on crutches, resting in the hallway) overhears it; adult Reneé tells Maya in chapter 4 or 5. Explore-first: the signs are things the player finds (the note, the snack table), not narration.
 
 **My guesses, for you to check:**
 

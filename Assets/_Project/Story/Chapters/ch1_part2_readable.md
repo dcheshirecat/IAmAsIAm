@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** Maya comes back after the most lost time so far, to her body "dressed up as a man". She's scared and confused. She starts taking the lost time seriously. (The breakup with Mark isn't played: it's explained in senior year.) Care: Axel is real and his transition is his own; Maya is a woman, and undoing it is about who is fronting, never a judgement on trans people. Nothing here says Axel was wrong. Explore-first: the room and the phone carry it. Very little narration.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1 (Christianity), Part 2. Maya comes back after the most lost time so far, to her body "dressed up as a man". She's scared and confused. She starts taking the lost time seriously. (The breakup with Mark isn't played: it's explained in senior year.) Care: Axel is real and his transition is his own; Maya is a woman, and undoing it is about who is fronting, never a judgement on trans people. Nothing here says Axel was wrong. Explore-first: the room and the phone carry it. Very little narration.
 
 **My guesses, for you to check:**
 

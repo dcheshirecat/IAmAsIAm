@@ -47,7 +47,9 @@ namespace IAmAsIAm.Runtime.Story
         GameObject _dialogue, _choices, _action, _anchor, _triggerPanel, _tap, _touch;
         Text _prompt, _objective;
         RectTransform _actionButtons, _breathCircle;
-        Image _fog;
+        IAmAsIAm.Runtime.Mind.FogOverlay _fog;
+        GameObject _chaptersButton;
+        bool _wantChapterList, _offeredStart;
         InputAction _advance, _anchorKey;
         bool _anchorOpen;
         float _previousTimeScale = 1f, _triggerHideAt;
@@ -140,15 +142,6 @@ namespace IAmAsIAm.Runtime.Story
         void Update()
         {
             EnsureEventSystem();
-            var mind = GameServices.Mind;
-            if (mind != null && _fog != null)
-            {
-                // A simple stand-in for the URP dissociation volumes: the screen greys as presence drops.
-                float target = GameServices.Comfort.CapDistortion(1f - mind.Presence) * 0.55f;
-                var c = _fog.color;
-                c.a = Mathf.MoveTowards(c.a, target, Time.unscaledDeltaTime / 2f);
-                _fog.color = c;
-            }
 
             if (_pacer != null)
             {
@@ -166,6 +159,22 @@ namespace IAmAsIAm.Runtime.Story
             PlayerMotor.Blocked = busy;
             _tap.SetActive(_dialogue.activeSelf && !_choices.activeSelf && !_anchorOpen);
             if (_touch != null) _touch.SetActive(!busy);
+
+            // Chapters (owner: the story is in the game). The list opens by itself when a new game starts and after a chapter
+            // ends; the Chapters button opens it any time nothing else is going on.
+            bool inGame = IAmAsIAm.Runtime.Save.SaveService.ActiveSlot != 0;
+            _chaptersButton.SetActive(inGame && !busy);
+            var runs = GameServices.ChapterRuns;
+            if (inGame && !busy && runs != null && !runs.InChapter)
+            {
+                if (!_offeredStart)
+                {
+                    _offeredStart = true;
+                    if (!(GameServices.Chapters?.chapters ?? new List<IAmAsIAm.Core.Story.ChapterDefinition>()).Any(c => runs.HasFinished(c.id)))
+                        _wantChapterList = true;
+                }
+                if (_wantChapterList) { _wantChapterList = false; OpenChapterList(); }
+            }
 
             var usable = busy || interactor == null ? null : interactor.Target;
             _prompt.text = usable == null ? "" : (Touchscreen.current != null ? "" : "E  ") + usable.Prompt;
@@ -362,7 +371,7 @@ namespace IAmAsIAm.Runtime.Story
                 foreach (var id in runs.Complete(GameServices.Chapter(chapterId)?.unlocksMemberId))
                     body += $"\n\n<b>{MemberName(id)}</b> came forward. You can now replay the chapters you've finished as {MemberName(id)}.";
             }
-            OpenAction("Your choices", body, ("Continue", Finish));
+            OpenAction("Your choices", body, ("Continue", () => { Finish(); _wantChapterList = true; }));
         }
 
         // ── Starting a chapter: content warnings, who to start as, or a summary instead ──
@@ -391,6 +400,46 @@ namespace IAmAsIAm.Runtime.Story
             buttons.Add(("Not now", CloseAction));
             OpenAction(ch.title, body, buttons.ToArray());
         }
+
+        /// <summary>
+        /// The chapter list: begin the next chapter (in order), or replay one already finished (as anyone unlocked).
+        /// Chapters open in order: each one after the last finished.
+        /// </summary>
+        public void OpenChapterList(int replayPage = -1)
+        {
+            if (runner.IsPlaying) return;
+            var all = GameServices.Chapters?.chapters ?? new List<IAmAsIAm.Core.Story.ChapterDefinition>();
+            var runs = GameServices.ChapterRuns;
+            var finished = all.Where(c => runs != null && runs.HasFinished(c.id)).ToList();
+            var next = all.FirstOrDefault(c => runs == null || !runs.HasFinished(c.id));
+
+            if (replayPage >= 0)
+            {
+                const int perPage = 3;
+                var buttons = new List<(string, Action)>();
+                foreach (var c in finished.Skip(replayPage * perPage).Take(perPage))
+                {
+                    var ch = c;
+                    buttons.Add((ShortTitle(ch), () => { CloseAction(); OpenChapter(ch.id); }));
+                }
+                if ((replayPage + 1) * perPage < finished.Count) buttons.Add(("More", () => OpenChapterList(replayPage + 1)));
+                buttons.Add(("Back", () => OpenChapterList()));
+                OpenAction("Replay a chapter", "Finished chapters can be played again, starting as anyone who has come forward.", buttons.ToArray());
+                return;
+            }
+
+            string body = finished.Count == 0
+                ? "Your story starts here."
+                : "Finished:\n" + string.Join("\n", finished.Select(c => "• " + ShortTitle(c)));
+            var list = new List<(string, Action)>();
+            if (next != null) list.Add(($"Begin: {ShortTitle(next)}", () => { CloseAction(); OpenChapter(next.id); }));
+            if (finished.Count > 0) list.Add(("Replay a chapter", () => OpenChapterList(0)));
+            list.Add(("Not now", CloseAction));
+            OpenAction("Chapters", body, list.ToArray());
+        }
+
+        static string ShortTitle(IAmAsIAm.Core.Story.ChapterDefinition c) =>
+            string.IsNullOrEmpty(c.title) ? c.id : c.title.Replace(" (title to come)", "");
 
         void BeginChapter(IAmAsIAm.Core.Story.ChapterDefinition ch, string starterId)
         {
@@ -509,8 +558,8 @@ namespace IAmAsIAm.Runtime.Story
             _root = canvasGo.GetComponent<RectTransform>();
 
             // Fog overlay (presence), under everything else.
-            _fog = Panel(_root, "Fog", new Color(0.55f, 0.56f, 0.6f, 0f), Vector2.zero, Vector2.one).GetComponent<Image>();
-            _fog.raycastTarget = false;
+            // Fog whenever the character dissociates (owner), under everything else.
+            _fog = IAmAsIAm.Runtime.Mind.FogOverlay.Create(_root);
 
             // Tap anywhere to continue.
             if (ShowTouchControls()) BuildTouchControls();
@@ -562,8 +611,16 @@ namespace IAmAsIAm.Runtime.Story
 
             _frontLabel = Label(_root, "Fronting", 52, FontStyle.Bold, new Vector2(0.02f, 0.92f), new Vector2(0.4f, 0.99f));
 
+            // The Chapters button: top, left of Phone (Phone 0.60-0.72, Saves 0.73-0.85, Anchor 0.86-0.98).
+            _chaptersButton = Panel(_root, "Chapters Button", ButtonColor, new Vector2(0.47f, 0.9f), new Vector2(0.59f, 0.98f));
+            _chaptersButton.AddComponent<Button>().onClick.AddListener(() => OpenChapterList());
+            var chaptersLabel = Label(_chaptersButton.transform, "Label", 44, FontStyle.Bold, Vector2.zero, Vector2.one);
+            chaptersLabel.alignment = TextAnchor.MiddleCenter;
+            chaptersLabel.text = "Chapters";
+            _chaptersButton.SetActive(false);
+
             // The goal line (# objective:), under who's fronting: the main way the game points the way.
-            _objective = Label(_root, "Objective", 44, FontStyle.Italic, new Vector2(0.02f, 0.86f), new Vector2(0.6f, 0.92f));
+            _objective = Label(_root, "Objective", 44, FontStyle.Italic, new Vector2(0.02f, 0.86f), new Vector2(0.46f, 0.92f));
 
             // The Anchor button and panel: top right, on their own canvas above every other screen.
             var anchorLayer = new GameObject("Anchor Layer", typeof(RectTransform), typeof(Canvas), typeof(GraphicRaycaster));

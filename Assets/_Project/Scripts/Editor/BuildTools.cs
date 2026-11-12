@@ -114,9 +114,40 @@ namespace IAmAsIAm.EditorTools
             const string iconPath = "Assets/_Project/Art/UI/app_icon.png";
             if (!File.Exists(iconPath)) { Debug.LogWarning("[IAmAsIAm] No app icon at " + iconPath); return; }
             AssetDatabase.ImportAsset(iconPath, ImportAssetOptions.ForceUpdate);
+            if (AssetImporter.GetAtPath(iconPath) is TextureImporter importer &&
+                (importer.textureCompression != TextureImporterCompression.Uncompressed || importer.mipmapEnabled))
+            {
+                importer.textureCompression = TextureImporterCompression.Uncompressed;
+                importer.mipmapEnabled = false;
+                importer.npotScale = TextureImporterNPOTScale.None;
+                importer.SaveAndReimport();
+            }
             var icon = AssetDatabase.LoadAssetAtPath<Texture2D>(iconPath);
             if (icon == null) { Debug.LogWarning("[IAmAsIAm] Couldn't load the app icon."); return; }
             PlayerSettings.SetIcons(NamedBuildTarget.Unknown, new[] { icon }, IconKind.Any);
+
+            // Android: set every icon kind (legacy, round, adaptive), so every launcher shows it instead of Unity's default.
+            // Adaptive icons get the same picture on both layers: its important part is in the middle, inside the safe zone.
+            // Never fails a build over the icon (as in Seven Witches' AppIconSetter).
+            try
+            {
+#pragma warning disable CS0618
+                foreach (var kind in PlayerSettings.GetSupportedIconKindsForPlatform(BuildTargetGroup.Android))
+                {
+                    var icons = PlayerSettings.GetPlatformIcons(BuildTargetGroup.Android, kind);
+                    foreach (var platformIcon in icons)
+                    {
+                        if (platformIcon.maxLayerCount >= 2) platformIcon.SetTextures(icon, icon);
+                        else platformIcon.SetTexture(icon);
+                    }
+                    PlayerSettings.SetPlatformIcons(BuildTargetGroup.Android, kind, icons);
+                }
+#pragma warning restore CS0618
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarning("[IAmAsIAm] Android icons not set (the default icon is used): " + e.Message);
+            }
         }
 
         // ── Scene ────────────────────────────────────────────────────────────────

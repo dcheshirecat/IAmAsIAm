@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** Maya "performs okay" (neat clothes, a smile, good answers), and Mira believes it. Mira moves away. Small choices only. This Sunday also holds Maya's first real time loss. Explore-first: the performing is something the player DOES (the dress, the bulletins, the right words at the door), not narration. Hidden memory (owner): only while Nina is fronting at that moment does the blue dress glow, and looking at it shows what Nina did in the lost nine hours. Nothing ever tells the player this: for anyone else the dress simply isn't one of the glowing things.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prologue "This Little Light", Sunday 3. Maya "performs okay" (neat clothes, a smile, good answers), and Mira believes it. Mira moves away. Small choices only. This Sunday also holds Maya's first real time loss. Explore-first: the performing is something the player DOES (the dress, the bulletins, the right words at the door), not narration. Hidden memory (owner): only while Nina is fronting at that moment does the blue dress glow, and looking at it shows what Nina did in the lost nine hours. Nothing ever tells the player this: for anyone else the dress simply isn't one of the glowing things.
 
 **My guesses, for you to check:**
 

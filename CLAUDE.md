@@ -107,7 +107,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   adult. Adult Reneé is an **out bisexual**, has **left the church but still identifies as Quaker**; in **chapter 4 or 5** she and
   Maya meet up to talk about being **queer and ex-religious**, and she tells Maya what she heard.
   **The owner voices everyone who speaks, including the alters' voices** (every spoken line goes on the Drive script lists).
-  Prologue drafts: `Story/Drafts/draft_prologue_sunday1..4.ink` (+ `_readable.md`), not canon until approved.
+  Prologue: `Story/Chapters/prologue_sunday1..4.ink` (+ `_readable.md`), in the game (owner's Doc edits come first).
 - 2026-11-12: **The owner edits drafts in Google Drive**: "Game Art - I Am As I Am" → **Story Drafts** (id 17BRsPRw6Ql9tObnHT4Cr0Nnb1i9LT-6q)
   → `00 Prologue - This Little Light` (id 1RPF_IaN8Yvj-yEwbJ15OuAYeh05nzL_a): explore-first Docs "Sunday 1 - Maya, 5 (2003)"
   (1GRTItageeHxbWhCaz083ZYb6Q-XDI3eAE0R81aEsbSE), "Sunday 2 - Maya, 8 (2006)" (1GgcPAhX8pfzqdyFYT-Z6BZeIrEboLxMNijcsgWZcYeo),
@@ -169,7 +169,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   sabbat circles (only open practice shown). The elder: the owner will describe them (name, age, pronouns, personality).
 
 - 2026-11-12: **Prelude names (owner):** the coven elder is **Tanya** (42, **they/them**, kind but strict); the college town is in
-  **Illinois**; the classmate is **Selene** (both in `people.json`). Drafts `Story/Drafts/draft_prelude_part1..3.ink` (+ `_readable.md`;
+  **Illinois**; the classmate is **Selene** (both in `people.json`). In the game: `Story/Chapters/prelude_part1..3.ink` (+ `_readable.md`;
   test one alone with `/tmp/claude-0/inkprelude.sh N`): Part 1 Selene (2016, 18, Samhain in her dorm), Part 2 Things moved (2018, 20,
   Izzy's signs; the tarot deck glows only while Izzy fronts), Part 3 Tanya (2019, 21, the shop + public Yule circle, ends in a switch to
   Izzy). Guesses for the owner are in each file's header (Champaign-Urbana, Selene she/her, the shop "Hearth & Moon", Izzy as the
@@ -229,7 +229,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Episcopal church **only in 1.5**. **COVID: alone in her dorm; a Zoom graduation where no one speaks to her**, quiet and lonely.
   **The end:** a prayer service at **Gracie's ministry**; they sing **a hymn Maya loved as a child**, she **can't leave without a major
   disruption**, is too scared to, starts dissociating; **the screen fades to black and Jacob's lines are spoken as a light appears**.
-  Drafts `Story/Drafts/draft_ch1_part1..4.ink`. Claude's guess: the hymn is "This Little Light of Mine" (the prologue's title).
+  In the game: `Story/Chapters/ch1_part1..4.ink`. Claude's guess: the hymn is "This Little Light of Mine" (the prologue's title).
   Parts: 1 Thursdays (spring 2018, 19: class, first reading, Ostara, growing lost time, black screen), 2 Coming back (May 2019, 20),
   3 Senior year (fall 2019, 21: Mark's email, abandoned, the coat drive and Gracie, Samhain with Tanya and Selene, quiet Sundays),
   4 Alone (2020: lockdown, Zoom graduation, the prayer service, Jacob). Drive: Story Drafts → `02 Chapter 1 - Christianity (title to
@@ -246,7 +246,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   church and the **queer-affirming** one. **Axel knows a little about Maya** from context clues; **Selene just thinks he transitioned**.
   Other alters' signs show up for Axel too, **but less than for Maya**. **The end:** Mark **accidentally tears Mira's napkin** (Sunday 2);
   **Axel is gone the next morning**. **Guide: the priest at Mark's church**, kind, invites him for holidays, not in touch consistently.
-  **Unlocks are silent until the end of the chapter** (the recap). Drafts `Story/Drafts/draft_ch1_5_part1..4.ink`.
+  **Unlocks are silent until the end of the chapter** (the recap). In the game: `Story/Chapters/ch1_5_part1..4.ink`.
   Parts: 1 Axel (Aug 2018: haircut, thrift store, Selene, professors, meeting Mark), 2 Mark (fall 2018: studying, Pride with the
   church, Christmas Eve at the Methodist church), 3 Holidays (spring 2019: Ash Wednesday and the priest, the vigil where Izzy is
   triggered, Easter at a queer-affirming church), 4 The napkin (May 2019). Placeholders: "The priest" (`mark_priest`), "Mark's mom"
@@ -254,6 +254,28 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Part 1 (1ZGtbXs-7G1g-CyCH8IEG_QQ-fVeWOc43PP8riNHm8so), Part 2 (18TkSIf2OAV4hR6R-bTbHledWvd2X52UBYudsnc7p41c), Part 3
   (1tK13LY_DCZxNTpnuO-_zyQ1UVw5aypcdZdqiNdMQP4w), Part 4 (1H7Ls89KivW6oT-av-x1lgLZhG0fFGCaoXcamNETZmYI). Script Sheet
   "03 Chapter 1.5 - script list (draft)" (10Z4IJd5w0S4JaALNeFGbXNS2eTYKMpIho2aDCWFE9Hg, 46 lines).
+- 2026-11-12: **The story is IN THE GAME (owner).** `Story/Chapters/` holds the Prologue, Prelude, Chapter 1 and Chapter 1.5 (one
+  `.ink` + `_readable.md` per part, moved from Drafts/). `Chapters/chapters.ink` has each chapter's root knot (chapters.json
+  `inkKnot`), which diverts to the first part; each part diverts to the next; only the last part has `# chapter-end`. `main.ink`
+  INCLUDEs them all; `chapters_placeholder.ink` keeps Chapters 2-13. InkCheck now plays **every chapter** from its root knot with the
+  strict checks (contacts, members, skills...). Owner Doc edits still come first: carry them into `Story/Chapters/`.
+- 2026-11-12: **Main menu (owner):** the title screen is a menu: **Continue** (the last save), **New game** and **Load a save**
+  (both open the save slots, which have a Back button), **Quit** on computers (`SaveSlotsScreen.ShowMain`). In the game, a
+  **Chapters** button (top, left of Phone) opens the chapter list (`StoryScreen.OpenChapterList`): **Begin** the next chapter in order,
+  or **Replay** a finished one. The list opens by itself on a new game and after each chapter's recap.
+- 2026-11-12: **App icon:** `BuildTools.SetAppIcon` sets every Android icon kind (legacy, round, adaptive: the same picture on both
+  adaptive layers) from `Art/UI/app_icon.png` (still the TEST icon until the owner's art).
+- 2026-11-12: **Fog when dissociating, in any way (owner):** `Runtime/Mind/FogOverlay.cs` (made by StoryScreen, under all UI): a light
+  wash plus two slowly drifting mist layers (a generated tileable noise texture), and 3D scene fog (`RenderSettings`, exponential
+  squared), all following the strongest dissociation (1 - Presence; co-consciousness alone doesn't fog). Capped by
+  `ComfortSettings.CapDistortion`, never faster than 2.5 s from none to full, no drifting with Reduce motion.
+- 2026-11-12: **Chapter 1.5 names (owner):** the priest is **Pastor Key** (`mark_priest`; age and pronouns to come, "they" in the draft
+  until then) at **St. Luke's** Episcopal; Mark's mother is **Cassie** (`mark_mom`); Mark is from **Indianapolis**.
+- 2026-11-12: **Chapter 2, Judaism (owner):** Maya **moves to Chicago for a job** (COVID is skipped). She meets **Adeena at work**; they're
+  together **two and a half years**. Adeena is **Conservative** and becomes **Hasidic**. She meets and marries **Michael only after they
+  break up**: a **present-day fact mentioned in Chapter 6**, which Maya hears **from an old friend from work**, and it's **triggering**:
+  they shared a **special moment over the Shabbat candles every week** while dating. **Show every stream** (none left out).
+  **Guide: Rabbi Abe** (78, he/him), **vital and refreshing**. Alters: **Izzy and Nina**, and **Heather only once**.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

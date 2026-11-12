@@ -1,4 +1,4 @@
-// DRAFT: not canon until the owner approves it. Prelude (Wicca), Part 2.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prelude (Wicca), Part 2.
 // vo-speakers: Maya=maya
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 2. Things moved. The same town, March 2017 (freshman spring). Maya is 18.
@@ -113,4 +113,4 @@ Selene: I have to run, Jess is waiting. We should get coffee! For real this time
 -
 ~ set_experience("Derealization", 0.0)
 ~ set_experience("TimeLoss", 0.0)
--> END
+-> prelude_part3  // the next part of the same chapter (one run)

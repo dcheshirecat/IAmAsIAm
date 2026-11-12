@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Turns an Ink draft into a readable document for the owner (Markdown that Google Docs imports well).
 
-    python3 tools/StoryDocs/ink_to_doc.py Assets/_Project/Story/Drafts/draft_prologue_sunday2.ink > out.md
+    python3 tools/StoryDocs/ink_to_doc.py Assets/_Project/Story/Chapters/prologue_sunday2.ink > out.md
 
 - The header comment's "My guesses" list becomes a "To check" section.
 - Each stitch (= name) becomes a heading.

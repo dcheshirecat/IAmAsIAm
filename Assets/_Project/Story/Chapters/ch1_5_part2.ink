@@ -1,13 +1,13 @@
-// DRAFT: not canon until the owner approves it. Chapter 1.5 (Axel), Part 2.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1.5 (Axel), Part 2.
 // ─────────────────────────────────────────────────────────────────────────────
-//  Part 2. Mark. Champaign-Urbana and Mark's hometown, September to December 2018. The body is 20.
+//  Part 2. Mark. Champaign-Urbana and Indianapolis, September to December 2018. The body is 20.
 //  Owner's beats: Mark is instantly kind and funny and matches Axel's values and humour; dates, studying, cuddling,
 //  parties. They go to Pride with Mark's church, which is queer-friendly and warm. Christmas with Mark's family, at their
 //  Methodist church. Other alters' signs show up for Axel too, but less than for Maya.
 //
 //  My guesses, for the owner to correct:
 //   - Pride is the town's Pride festival in September; Mark's church walks with a banner. Axel goes as Mark's date.
-//   - Mark's hometown is a small town in Illinois; his parents' Methodist church has a candlelight service on Christmas Eve.
+//   - (Owner) Mark's hometown is Indianapolis; his parents' Methodist church has a candlelight service on Christmas Eve.
 //   - The signs: a note on the fridge in round letters (Izzy), the bed made with hospital corners (Nina).
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -46,7 +46,7 @@ Mark: Okay. Page forty. "Durkheim argues"... no. I can't. Your couch is too comf
 Mark: There! The banner with the dove. That's us. Well, them. Well, us. You're with me, so you're us. # vo: ch1-5-axel_mark_0019
 - (march)
 + {march < 3} [Look: The banner]
-    "St. ___'s Episcopal Church: All Are Welcome. We Mean It." A rainbow dove. # look: church-banner
+    "St. Luke's Episcopal Church: All Are Welcome. We Mean It." A rainbow dove. # look: church-banner
     -> march
 + {march < 3} [Look: The crowd]
     Glitter. Strollers. A drag queen with a parasol. A grandmother with a sign: "I love my trans grandson." # look: pride-crowd
@@ -63,7 +63,7 @@ Mark: The old you sounds like a lot. I like this one. # vo: ch1-5-axel_mark_0021
 # place: methodist_church
 # shot: wide
 # objective: Survive Christmas with Mark's family
-Mark's mom: You must be Axel! We've heard so much. Come in, come in, you're freezing. # vo: ch1-5-axel_mark-s-mom_0022
+Cassie: You must be Axel! We've heard so much. Come in, come in, you're freezing. # vo: ch1-5-axel_cassie_0022
 ~ set_experience("Depersonalization", 0.2)
 - (pews)
 + {pews < 3} [Look: The candles]
@@ -91,4 +91,4 @@ Mark: You okay? You've gone quiet. You never go quiet. # vo: ch1-5-axel_mark_002
 * [Look: The bed]
     The bed, made with tight corners, the pillow squared. You don't remember making it. # look: bed-corners
 -
--> END
+-> ch1_5_part3  // the next part of the same chapter (one run)

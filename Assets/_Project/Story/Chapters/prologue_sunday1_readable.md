@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** Maya goes "floaty" in the long service (a first, gentle depersonalization), then is forgotten at church after it. Mira finds her. Small choices only. Explore-first (owner): little narration. Each place is things to look at, use or talk to (they glow in the game); the objective line points the way; looking at a thing shows only its label.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prologue "This Little Light", Sunday 1. Maya goes "floaty" in the long service (a first, gentle depersonalization), then is forgotten at church after it. Mira finds her. Small choices only. Explore-first (owner): little narration. Each place is things to look at, use or talk to (they glow in the game); the objective line points the way; looking at a thing shows only its label.
 
 **My guesses, for you to check:**
 

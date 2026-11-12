@@ -1,13 +1,13 @@
-# Part 2. Mark. Champaign-Urbana and Mark's hometown, September to December 2018. The body is 20.
+# Part 2. Mark. Champaign-Urbana and Indianapolis, September to December 2018. The body is 20.
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** Mark is instantly kind and funny and matches Axel's values and humour; dates, studying, cuddling, parties. They go to Pride with Mark's church, which is queer-friendly and warm. Christmas with Mark's family, at their Methodist church. Other alters' signs show up for Axel too, but less than for Maya.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1.5 (Axel), Part 2. Mark is instantly kind and funny and matches Axel's values and humour; dates, studying, cuddling, parties. They go to Pride with Mark's church, which is queer-friendly and warm. Christmas with Mark's family, at their Methodist church. Other alters' signs show up for Axel too, but less than for Maya.
 
 **My guesses, for you to check:**
 
 - Pride is the town's Pride festival in September; Mark's church walks with a banner. Axel goes as Mark's date.
-- Mark's hometown is a small town in Illinois; his parents' Methodist church has a candlelight service on Christmas Eve.
+- (Owner) Mark's hometown is Indianapolis; his parents' Methodist church has a candlelight service on Christmas Eve.
 - The signs: a note on the fridge in round letters (Izzy), the bed made with hospital corners (Nina).
 
 ## Study
@@ -36,7 +36,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **Explore** (glowing things; the player picks):
 
 - **Look: The banner**
-    - "St. ___'s Episcopal Church: All Are Welcome. We Mean It." A rainbow dove.
+    - "St. Luke's Episcopal Church: All Are Welcome. We Mean It." A rainbow dove.
 - **Look: The crowd**
     - Glitter. Strollers. A drag queen with a parasol. A grandmother with a sign: "I love my trans grandson."
 - **Use: Mark's hand**
@@ -50,7 +50,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Survive Christmas with Mark's family
 
-**Mark's mom:** You must be Axel! We've heard so much. Come in, come in, you're freezing.
+**Cassie:** You must be Axel! We've heard so much. Come in, come in, you're freezing.
 
 **Explore** (glowing things; the player picks):
 

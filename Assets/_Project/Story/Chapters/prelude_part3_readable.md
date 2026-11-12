@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** (Owner: Yule 2017, so Maya and Tanya have time to build a solid relationship before Axel fronts in junior year.) at 19 (the owner moved it to Yule 2017) Maya gets serious, through a shop and a coven: an open, eclectic teaching coven with public sabbat circles (only open practice shown). The guide is the coven elder, Tanya (42, they/them, kind but strict). Lost time keeps growing, and Maya still doesn't understand it. Explore-first: the shop and the circle carry it. Tanya teaches grounding first, always.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prelude (Wicca), Part 3. (Owner: Yule 2017, so Maya and Tanya have time to build a solid relationship before Axel fronts in junior year.) at 19 (the owner moved it to Yule 2017) Maya gets serious, through a shop and a coven: an open, eclectic teaching coven with public sabbat circles (only open practice shown). The guide is the coven elder, Tanya (42, they/them, kind but strict). Lost time keeps growing, and Maya still doesn't understand it. Explore-first: the shop and the circle carry it. Tanya teaches grounding first, always.
 
 **My guesses, for you to check:**
 

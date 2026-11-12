@@ -1,4 +1,4 @@
-// DRAFT: not canon until the owner approves it. Prologue "This Little Light", Sunday 3.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prologue "This Little Light", Sunday 3.
 // vo-speakers: Maya=maya-11
 // ─────────────────────────────────────────────────────────────────────────────
 //  Sunday 3. Iowa City, 2009. Maya is 11.
@@ -196,4 +196,4 @@ The blue dress on its hanger. The sash tied in a bow. # look: dress-bow
     The stone, in your pocket. Every Sunday. # look: stone-pocket
 -
 # objective:
--> END
+-> prologue_sunday4  // the next part of the same chapter (one run)

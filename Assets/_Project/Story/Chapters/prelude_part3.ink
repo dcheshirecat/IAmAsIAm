@@ -1,4 +1,4 @@
-// DRAFT: not canon until the owner approves it. Prelude (Wicca), Part 3.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prelude (Wicca), Part 3.
 // vo-speakers: Maya=maya
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 3. Tanya. The same town, December 2017 (Yule, sophomore year). Maya is 19.

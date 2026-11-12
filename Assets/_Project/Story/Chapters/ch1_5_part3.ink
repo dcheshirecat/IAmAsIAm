@@ -1,6 +1,6 @@
-// DRAFT: not canon until the owner approves it. Chapter 1.5 (Axel), Part 3.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1.5 (Axel), Part 3.
 // ─────────────────────────────────────────────────────────────────────────────
-//  Part 3. Holidays. Champaign-Urbana and Mark's hometown, February to April 2019. The body is 20.
+//  Part 3. Holidays. Champaign-Urbana and Indianapolis, February to April 2019. The body is 20.
 //  Owner's beats: Mark's Episcopal church is queer-friendly and warm; Axel goes on holidays, once they've dated a few months.
 //  The priest is kind to him and invites him for holidays (they aren't in touch consistently). They go to protests as a
 //  church; Izzy is triggered at one, because Maya went to protests with Sarah as a child. Easter with Mark's family, and the
@@ -36,16 +36,16 @@
     -> nave
 * [Use: A seat beside Mark]
 -
-The priest: Axel, isn't it? Mark's told us about you. Welcome. Truly. # vo: ch1-5-axel_the-priest_0028
-The priest: Easter's in April. We do a big breakfast after. You'd be very welcome. Both of you. # vo: ch1-5-axel_the-priest_0029
-* [Talk: The priest (say thank you)]
-    ~ record_choice("ch1_5.p3.priest", "thanks", "When Mark's priest welcomed you, you said thank you, and meant it.")
+Pastor Key: Axel, isn't it? Mark's told us about you. Welcome. Truly. # vo: ch1-5-axel_key_0028
+Pastor Key: Easter's in April. We do a big breakfast after. You'd be very welcome. Both of you. # vo: ch1-5-axel_key_0029
+* [Talk: Pastor Key (say thank you)]
+    ~ record_choice("ch1_5.p3.priest", "thanks", "When Pastor Key welcomed you, you said thank you, and meant it.")
     Axel: Thanks. I'm... not really a church person. But thanks. # vo: ch1-5-axel_axel_0030
-    The priest: Neither are half the people here. That's never stopped anyone. # vo: ch1-5-axel_the-priest_0031
-* [Talk: The priest (dark joke)]
-    ~ record_choice("ch1_5.p3.priest", "joke", "When Mark's priest welcomed you, you asked if they were sure. They laughed.")
+    Pastor Key: Neither are half the people here. That's never stopped anyone. # vo: ch1-5-axel_key_0031
+* [Talk: Pastor Key (dark joke)]
+    ~ record_choice("ch1_5.p3.priest", "joke", "When Pastor Key welcomed you, you asked if they were sure. They laughed.")
     Axel: Are you sure? I'm told I'm a lot. # vo: ch1-5-axel_axel_0032
-    The priest: Good. We're a lot too. # vo: ch1-5-axel_the-priest_0033
+    Pastor Key: Good. We're a lot too. # vo: ch1-5-axel_key_0033
 -
 -> protest
 
@@ -106,4 +106,4 @@ Mark: I've wanted to come here since I was fifteen. I used to look it up at nigh
     ~ record_choice("ch1_5.p3.easter", "hand", "At Easter, you held Mark's hand while he cried a little in the church he'd wanted to visit for years.")
     His hand, shaking a little. Then not. # look: easter-hand
 -
--> END
+-> ch1_5_part4  // the next part of the same chapter (one run)

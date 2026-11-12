@@ -1,4 +1,4 @@
-// DRAFT: not canon until the owner approves it. Prologue "This Little Light", Sunday 1.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prologue "This Little Light", Sunday 1.
 // vo-speakers: Maya=maya-05
 // ─────────────────────────────────────────────────────────────────────────────
 //  Sunday 1. Iowa City, 2003. Maya is 5.
@@ -242,4 +242,4 @@ Mira: Thank you for keeping me company, Maya. # vo: prologue-quaker_mira_0041
     Hello, floor. # look: car-floor
 -
 ~ journal("Note", "Sunday. Mira. Hello, floor.")
--> END
+-> prologue_sunday2  // the next part of the same chapter (one run)

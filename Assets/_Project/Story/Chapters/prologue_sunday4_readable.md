@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** an ordinary Sunday. In the car home, among other church news, Sarah mentions in passing that Mira has died; she has no idea how hard it will hit. That night, home alone in her room, Maya hears a voice inside that isn't hers (Nina, inside: only a voice, no control), and then a blackout. This is the first switch (to Nina), and the end of the prologue. Explore-first: the room is the scene. The dress, the letters, the napkin and the stone carry it. On replays (an alter unlocked), the car is a moment where an unexpected switch may happen.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prologue "This Little Light", Sunday 4. an ordinary Sunday. In the car home, among other church news, Sarah mentions in passing that Mira has died; she has no idea how hard it will hit. That night, home alone in her room, Maya hears a voice inside that isn't hers (Nina, inside: only a voice, no control), and then a blackout. This is the first switch (to Nina), and the end of the prologue. Explore-first: the room is the scene. The dress, the letters, the napkin and the stone carry it. On replays (an alter unlocked), the car is a moment where an unexpected switch may happen.
 
 **My guesses, for you to check:**
 

@@ -1,4 +1,4 @@
-// DRAFT: not canon until the owner approves it. Chapter 1 (Christianity), Part 4.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1 (Christianity), Part 4.
 // vo-speakers: Maya=maya
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 4. Alone. Champaign-Urbana, March to June 2020. Maya is 21, then 22.

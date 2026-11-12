@@ -1,4 +1,4 @@
-// DRAFT: not canon until the owner approves it. Prologue "This Little Light", Sunday 4.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prologue "This Little Light", Sunday 4.
 // vo-speakers: Maya=maya-15
 // ─────────────────────────────────────────────────────────────────────────────
 //  Sunday 4. Iowa City, 2013. Maya is 15.

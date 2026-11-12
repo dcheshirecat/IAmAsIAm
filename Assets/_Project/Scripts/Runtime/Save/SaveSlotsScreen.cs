@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using IAmAsIAm.Core.Save;
 using IAmAsIAm.Runtime.Story;
 using UnityEngine;
@@ -100,7 +101,42 @@ namespace IAmAsIAm.Runtime.Save
             Open();
             _background.color = TitleBackground;
             _heading.text = "I Am As I Am";
-            ShowSlots(message);
+            ShowMain(message);
+        }
+
+        /// <summary>
+        /// The main menu (owner, 2026-11-12): Continue (the last save played), New game, Load a save, and Quit on computers.
+        /// New game and Load a save open the save slots.
+        /// </summary>
+        void ShowMain(string message = null)
+        {
+            Clear(_content);
+            Clear(_footer);
+            _heading.text = "I Am As I Am";
+            _message.text = message ?? "";
+
+            var column = Panel(_content, "Main Menu", Color.clear, Vector2.zero, Vector2.one);
+            column.GetComponent<Image>().raycastTarget = false;
+            var vlg = column.AddComponent<VerticalLayoutGroup>();
+            vlg.padding = new RectOffset(760, 760, 20, 20);
+            vlg.spacing = 36;
+            vlg.childAlignment = TextAnchor.UpperCenter;
+            vlg.childControlHeight = true; vlg.childControlWidth = true;
+            vlg.childForceExpandHeight = false; vlg.childForceExpandWidth = true;
+
+            GameObject first = null;
+            int last = GameServices.Preferences?.lastSlot ?? 0;
+            var slots = SaveService.Slots.List();
+            var lastSlot = slots.FirstOrDefault(x => x.Slot == last);
+            if (lastSlot != null && lastSlot.CanLoad)
+                first = Button(column.transform, $"Continue  <size=36><color=#d8c9a6>Save {last}</color></size>", () => StartFromTitle(last, newGame: false), 130, ButtonColor);
+            var newGame = Button(column.transform, "New game", () => ShowSlots("Choose an empty save for your new game. Each save is its own game."), 130, first == null ? ButtonColor : QuietButtonColor);
+            first ??= newGame;
+            if (slots.Any(x => x.CanLoad))
+                Button(column.transform, "Load a save", () => ShowSlots("Choose a save to continue."), 130, QuietButtonColor);
+            if (!Application.isMobilePlatform)
+                Button(column.transform, "Quit", Application.Quit, 130, QuietButtonColor);
+            Select(first);
         }
 
         void OpenMenu()
@@ -154,7 +190,11 @@ namespace IAmAsIAm.Runtime.Save
                 }), 110, QuietButtonColor);
                 Select(back);
             }
-            else Select(first);
+            else
+            {
+                Button(_footer, "Back", () => ShowMain(), 110, QuietButtonColor);
+                Select(first);
+            }
         }
 
         /// <summary>One slot's card. Returns its first button, for gamepad selection.</summary>

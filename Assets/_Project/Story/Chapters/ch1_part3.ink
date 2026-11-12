@@ -1,4 +1,4 @@
-// DRAFT: not canon until the owner approves it. Chapter 1 (Christianity), Part 3.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1 (Christianity), Part 3.
 // vo-speakers: Maya=maya
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 3. Senior year. Champaign-Urbana, fall 2019. Maya is 21.
@@ -123,4 +123,4 @@ Tanya: Names, if you want to. Anyone you miss. # vo: ch1-christianity_tanya_0026
     Quiet. The candle. Nobody wanting anything. # look: quiet-sitting
 -
 Gracie: Same time next week? You don't have to. But same time next week. # vo: ch1-christianity_gracie_0028
--> END
+-> ch1_part4  // the next part of the same chapter (one run)

@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** lost time grows: more blackouts, and signs of others (notes, things moved). Maya doesn't understand it yet. She isn't serious about Wicca yet. Explore-first: Maya's apartment is the scene. The signs are things to find, never explained. Hidden memory (owner's rule): the tarot deck glows only while Izzy is fronting, and shows Izzy buying it. Nothing ever tells the player; for anyone else it's simply not one of the glowing things.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prelude (Wicca), Part 2. lost time grows: more blackouts, and signs of others (notes, things moved). Maya doesn't understand it yet. She isn't serious about Wicca yet. Explore-first: Maya's apartment is the scene. The signs are things to find, never explained. Hidden memory (owner's rule): the tarot deck glows only while Izzy is fronting, and shows Izzy buying it. Nothing ever tells the player; for anyone else it's simply not one of the glowing things.
 
 **My guesses, for you to check:**
 

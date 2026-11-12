@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** COVID: Maya alone in her dorm; a Zoom graduation where no one speaks to her, quiet and lonely. Then a prayer service at Gracie's ministry: they sing a hymn Maya loved as a child; she can't leave without a major disruption, is too scared to, and starts dissociating. The screen fades to black, and Jacob's lines are spoken as a light appears. That's how Chapter 1 ends (Jacob is its unlock). Then Chapter 1.5 is played, as Axel the first time.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1 (Christianity), Part 4. COVID: Maya alone in her dorm; a Zoom graduation where no one speaks to her, quiet and lonely. Then a prayer service at Gracie's ministry: they sing a hymn Maya loved as a child; she can't leave without a major disruption, is too scared to, and starts dissociating. The screen fades to black, and Jacob's lines are spoken as a light appears. That's how Chapter 1 ends (Jacob is its unlock). Then Chapter 1.5 is played, as Axel the first time.
 
 **My guesses, for you to check:**
 

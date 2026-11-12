@@ -51,7 +51,7 @@
       "name": "Mark",
       "role": "Ex 1: the Christian ex",
       "tradition": "christianity",
-      "description": "Protestant. A college classmate in Maya's junior year at the University of Illinois. He dates Axel, who starts fronting that year and comes out as a trans man as the body. Mark never learns about the system; it ends when Maya comes back (owner).",
+      "description": "Protestant. A college classmate in Maya's junior year at the University of Illinois. He dates Axel, who starts fronting that year and comes out as a trans man as the body. Mark never learns about the system; it ends when Maya comes back (owner). From Indianapolis.",
       "chapterIds": [
         "ch1-christianity"
       ],
@@ -246,8 +246,8 @@
     },
     {
       "id": "mark_priest",
-      "name": "The priest",
-      "role": "Chapter 1.5's guide: the priest at Mark's queer-friendly Episcopal church. Kind to Axel, invites him for holidays, not in touch consistently. (Name, age and pronouns to come from the owner.)",
+      "name": "Pastor Key",
+      "role": "Chapter 1.5's guide: the priest at St. Luke's, Mark's queer-friendly Episcopal church. Kind to Axel, invites him for holidays, not in touch consistently.",
       "tradition": "christianity",
       "description": "",
       "chapterIds": [
@@ -257,8 +257,8 @@
     },
     {
       "id": "mark_mom",
-      "name": "Mark's mom",
-      "role": "Mark's mother: Christmas and Easter at the family's Methodist church. (Name to come.)",
+      "name": "Cassie",
+      "role": "Mark's mother, in Indianapolis: Christmas and Easter at the family's Methodist church.",
       "tradition": "christianity",
       "description": "",
       "chapterIds": [

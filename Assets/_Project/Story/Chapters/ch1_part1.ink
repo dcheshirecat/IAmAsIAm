@@ -1,4 +1,4 @@
-// DRAFT: not canon until the owner approves it. Chapter 1 (Christianity), Part 1.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1 (Christianity), Part 1.
 // vo-speakers: Maya=maya
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. Thursdays. Champaign-Urbana, spring 2018 (sophomore year). Maya is 19.
@@ -126,4 +126,4 @@ The stone. The white line, around and around. # look: stone-line-spring
 # place: black
 Junior year.
 May 2019.
--> END
+-> ch1_part2  // the next part of the same chapter (one run)

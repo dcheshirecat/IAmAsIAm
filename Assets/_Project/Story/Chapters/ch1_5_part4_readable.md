@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** Mark accidentally breaks something from Maya's childhood: he tears Mira's napkin (the phone number from the prologue's Sunday 2). Axel is gone the next morning. (Chapter 1 Part 2 is that morning, as Maya.) Finishing this chapter unlocks Axel.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1.5 (Axel), Part 4. Mark accidentally breaks something from Maya's childhood: he tears Mira's napkin (the phone number from the prologue's Sunday 2). Axel is gone the next morning. (Chapter 1 Part 2 is that morning, as Maya.) Finishing this chapter unlocks Axel.
 
 **My guesses, for you to check:**
 

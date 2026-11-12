@@ -1,4 +1,4 @@
-// DRAFT: not canon until the owner approves it. Prologue "This Little Light", Sunday 2.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prologue "This Little Light", Sunday 2.
 // vo-speakers: Maya=maya-08
 // ─────────────────────────────────────────────────────────────────────────────
 //  Sunday 2. Iowa City, 2006. Maya is 8.
@@ -186,4 +186,4 @@ Maya: I'll remember. # vo: prologue-quaker_maya-08_0079
 * [Use: Your pocket]
     The napkin with the number. Kept, not called. Kept for years. # look: napkin-kept
 -
--> END
+-> prologue_sunday3  // the next part of the same chapter (one run)

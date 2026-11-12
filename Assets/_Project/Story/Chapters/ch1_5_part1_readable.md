@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** a flashback, never explained, just played (always as Axel the first time). Axel's first act: a haircut and new clothes. He knows a little about Maya from context clues. He tells Selene and his professors first (Selene just thinks he transitioned), disappears on Tanya, and only then meets Mark. Axel: a dark sense of humour, loves fun, never at anyone's expense. Explore-first: the barber, the thrift store, Maya's room as Axel finds it.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1.5 (Axel), Part 1. a flashback, never explained, just played (always as Axel the first time). Axel's first act: a haircut and new clothes. He knows a little about Maya from context clues. He tells Selene and his professors first (Selene just thinks he transitioned), disappears on Tanya, and only then meets Mark. Axel: a dark sense of humour, loves fun, never at anyone's expense. Explore-first: the barber, the thrift store, Maya's room as Axel finds it.
 
 **My guesses, for you to check:**
 

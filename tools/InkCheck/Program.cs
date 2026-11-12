@@ -40,6 +40,14 @@ static class InkCheck
         {
             File.WriteAllText(Path.Combine(storyDir, "main.json"), main.ToJson());
             Play(main.ToJson(), "main.ink");
+            // Every chapter in chapters.json, from its root knot (the game starts them there).
+            using (var chapters = JsonDocument.Parse(File.ReadAllText(Path.Combine(dataDir, "chapters.json"))))
+                foreach (var c in chapters.RootElement.GetProperty("chapters").EnumerateArray())
+                {
+                    string knot = c.GetProperty("inkKnot").GetString();
+                    if (main.KnotContainerWithName(knot) == null) { Problems.Add($"chapters.json: no knot '{knot}' in the story"); continue; }
+                    Play(main.ToJson(), "main.ink:" + knot, 200, knot);
+                }
         }
 
         // Drafts: compiled against the same game API, played, never written out.
@@ -76,7 +84,7 @@ static class InkCheck
         return story;
     }
 
-    static void Play(string json, string label, int runs = 300)
+    static void Play(string json, string label, int runs = 300, string startKnot = null)
     {
         var rng = new Random(1234);
         for (int run = 0; run < runs; run++)
@@ -84,6 +92,7 @@ static class InkCheck
             var story = new Ink.Runtime.Story(json);
             story.onError += (msg, type) => Problems.Add($"{label}: runtime {type}: {msg}");
             Bind(story, label);
+            if (startKnot != null) story.ChoosePathString(startKnot);
 
             int steps = 0;
             while (steps++ < 5000)

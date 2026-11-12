@@ -1,8 +1,8 @@
-# Part 3. Holidays. Champaign-Urbana and Mark's hometown, February to April 2019. The body is 20.
+# Part 3. Holidays. Champaign-Urbana and Indianapolis, February to April 2019. The body is 20.
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** Mark's Episcopal church is queer-friendly and warm; Axel goes on holidays, once they've dated a few months. The priest is kind to him and invites him for holidays (they aren't in touch consistently). They go to protests as a church; Izzy is triggered at one, because Maya went to protests with Sarah as a child. Easter with Mark's family, and the queer-affirming church.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1.5 (Axel), Part 3. Mark's Episcopal church is queer-friendly and warm; Axel goes on holidays, once they've dated a few months. The priest is kind to him and invites him for holidays (they aren't in touch consistently). They go to protests as a church; Izzy is triggered at one, because Maya went to protests with Sarah as a child. Easter with Mark's family, and the queer-affirming church.
 
 **My guesses, for you to check:**
 
@@ -22,18 +22,18 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
     - "Pride committee meets Tuesdays." "Trans Day of Visibility potluck." "Bring a dish, bring a friend."
 - **Use: A seat beside Mark**
 
-**The priest:** Axel, isn't it? Mark's told us about you. Welcome. Truly.
+**Pastor Key:** Axel, isn't it? Mark's told us about you. Welcome. Truly.
 
-**The priest:** Easter's in April. We do a big breakfast after. You'd be very welcome. Both of you.
+**Pastor Key:** Easter's in April. We do a big breakfast after. You'd be very welcome. Both of you.
 
 **Explore** (glowing things; the player picks):
 
-- **Talk: The priest (say thank you)**
+- **Talk: Pastor Key (say thank you)**
     - **Axel:** Thanks. I'm... not really a church person. But thanks.
-    - **The priest:** Neither are half the people here. That's never stopped anyone.
-- **Talk: The priest (dark joke)**
+    - **Pastor Key:** Neither are half the people here. That's never stopped anyone.
+- **Talk: Pastor Key (dark joke)**
     - **Axel:** Are you sure? I'm told I'm a lot.
-    - **The priest:** Good. We're a lot too.
+    - **Pastor Key:** Good. We're a lot too.
 
 ## Protest
 

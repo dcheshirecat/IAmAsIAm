@@ -1,4 +1,4 @@
-// DRAFT: not canon until the owner approves it. Chapter 1.5 (Axel), Part 1.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1.5 (Axel), Part 1.
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. Axel. Champaign-Urbana, August 2018 (the start of junior year). The body is 20.
 //  Owner's beats: a flashback, never explained, just played (always as Axel the first time). Axel's first act: a haircut
@@ -124,4 +124,4 @@ Mark: Is the "Sociology of Religion" in here, or did I walk into a cult? Honestl
 Axel: Axel. # vo: ch1-5-axel_axel_0016
 Mark: Axel. Cool name. Okay, Axel, I'm going to need you to explain the reading to me, because I read it twice and I think it was in Latin. # vo: ch1-5-axel_mark_0017
 ~ text_from("ex_christian", "hey it's mark from soc of religion. want to do the reading together? i'll bring better coffee")
--> END
+-> ch1_5_part2  // the next part of the same chapter (one run)

@@ -1,4 +1,4 @@
-// DRAFT: not canon until the owner approves it. Chapter 1 (Christianity), Part 2.
+// IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1 (Christianity), Part 2.
 // vo-speakers: Maya=maya
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 2. Coming back. Champaign-Urbana, May 2019 (the end of junior year). Maya is 20.
@@ -89,4 +89,4 @@ Your phone. # device: phone
 ~ open_gap("ch1-junior-year", "mirror,mail,closet")
 ~ find_clue("ch1-junior-year", "mirror")
 Maya: A whole year. # vo: ch1-christianity_maya_0013
--> END
+-> ch1_part3  // the next part of the same chapter (one run)
