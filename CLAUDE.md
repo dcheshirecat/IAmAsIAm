@@ -176,6 +176,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Part 1 (1ywET_kBp6Y6LQKOmHucUQARrsmPpDFkK8_dpnG82uqw), Part 2 (1V01Tsv3ndHN9TCDn48A1530817qU8gwc5Hd-BYAwRdY), Part 3
   (1vio64LgjvHSZRTi6wN6IBE9sHEbmewyeaMxG7FJRYcI). Voice script Sheet "01 Prelude - script list (draft)"
   (1Kc5rTVwGt09SHL7efDKoqK3f0GWwgwznNmKC5oMoLNE: 45 lines; Maya's adult voice is `maya`). Voice-Over Scripts folder id 15B1SB8Y855lNM5Q3sJp2lIDesOkeLD9w.
+- 2026-11-12: **Tanya stays (owner):** Maya is in touch with Tanya **through the whole game**, mostly by **SMS and email**, meeting up
+  **less and less** as time goes by, with a **final meeting at the end of the game**. The game needs **phone, computer and laptop
+  features**, which Maya **gains as she ages** (not built yet; when she gets each device: ask the owner).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

@@ -8,7 +8,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 - Maya finds the shop's flyer in her own bag ("Open Yule circle. All welcome.") and goes.
 - Tanya runs the shop and the teaching coven; they're the person behind the counter Izzy met in Part 2. Tanya's strictness: phones off, ground first, no skipping steps, "you can't cast a circle if you're not in the room."
-- Tanya notices Maya drifting and asks where she went, gently; Maya says she's fine. Tanya doesn't push yet. (Tanya is the guide who stays, unlike Mira: to check.)
+- Tanya notices Maya drifting and asks where she went, gently; Maya says she's fine. Tanya doesn't push yet. Tanya is the guide who stays (owner): in touch all game, mostly by text and email.
 - The public Yule circle is in the park: the longest night, every candle out, then lit one by one.
 - The chapter ends with a switch to Izzy at the circle: Maya loses the rest of the night, and wakes with a Book of Shadows whose first page is in round handwriting, signed "I".
 
