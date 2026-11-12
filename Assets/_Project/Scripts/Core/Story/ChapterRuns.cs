@@ -16,11 +16,15 @@ namespace IAmAsIAm.Core.Story
     /// The owner's replay rule (2026-11-11): a chapter starts with its default alter (the prologue: young Maya).
     /// Anyone who fronts during a run of the chapter becomes a possible starting alter for that chapter,
     /// but only once the chapter is finished in full. Abandoning a run unlocks nothing.
+    /// Paced (owner): at most <see cref="MaxNewUnlocksPerRun"/> new alter per finished run, the first new one to front.
     /// </summary>
     public sealed class ChapterRuns
     {
         readonly Dictionary<string, HashSet<string>> _unlocked = new Dictionary<string, HashSet<string>>();
-        readonly HashSet<string> _frontedThisRun = new HashSet<string>();
+        readonly List<string> _frontedThisRun = new List<string>();
+
+        /// <summary>How many new starting alters one finished run can unlock (the owner wants this paced).</summary>
+        public int MaxNewUnlocksPerRun { get; set; } = 1;
 
         public string CurrentChapterId { get; private set; }
         public string StartedAsId { get; private set; }
@@ -37,12 +41,13 @@ namespace IAmAsIAm.Core.Story
             StartedAsId = startingMemberId;
             _frontedThisRun.Clear();
             if (!string.IsNullOrEmpty(startingMemberId)) _frontedThisRun.Add(startingMemberId);
+
         }
 
         /// <summary>Call whenever someone comes to the front (by choice or not) during a chapter.</summary>
         public void RecordFront(string memberId)
         {
-            if (InChapter && !string.IsNullOrEmpty(memberId)) _frontedThisRun.Add(memberId);
+            if (InChapter && !string.IsNullOrEmpty(memberId) && !_frontedThisRun.Contains(memberId)) _frontedThisRun.Add(memberId);
         }
 
         /// <summary>The chapter was finished in full: everyone who fronted can now start it. Returns the newly unlocked.</summary>
@@ -50,7 +55,8 @@ namespace IAmAsIAm.Core.Story
         {
             if (!InChapter) return Array.Empty<string>();
             if (!_unlocked.TryGetValue(CurrentChapterId, out var set)) _unlocked[CurrentChapterId] = set = new HashSet<string>();
-            var fresh = _frontedThisRun.Where(id => id != StartedAsId && set.Add(id)).ToList();
+            var fresh = _frontedThisRun.Where(id => id != StartedAsId && !set.Contains(id)).Take(Math.Max(0, MaxNewUnlocksPerRun)).ToList();
+            foreach (var id in fresh) set.Add(id);
             string chapter = CurrentChapterId;
             CurrentChapterId = null;
             _frontedThisRun.Clear();

@@ -8,16 +8,29 @@ namespace IAmAsIAm.Tests
     public class ChapterRunTests
     {
         [Test]
-        public void FinishingAChapter_UnlocksEveryoneWhoFronted()
+        public void FinishingAChapter_UnlocksTheFirstNewAlterWhoFronted()
+        {
+            var runs = new ChapterRuns();
+            runs.Begin("prologue-quaker", "maya");
+            runs.RecordFront("nina");
+            Assert.That(runs.Complete(), Is.EqualTo(new[] { "nina" }));
+            Assert.That(runs.StartersFor("prologue-quaker", "maya"), Is.EqualTo(new[] { "maya", "nina" }));
+            Assert.That(runs.StartersFor("prelude-wicca", "maya"), Is.EqualTo(new[] { "maya" }), "Unlocks are per chapter.");
+        }
+
+        [Test]
+        public void Unlocks_ArePaced_OneNewAlterPerFinishedRun()
         {
             var runs = new ChapterRuns();
             runs.Begin("prologue-quaker", "maya");
             runs.RecordFront("lily");
             runs.RecordFront("nina");
-            var fresh = runs.Complete();
-            Assert.That(fresh.OrderBy(x => x).ToArray(), Is.EqualTo(new[] { "lily", "nina" }));
+            Assert.That(runs.Complete(), Is.EqualTo(new[] { "lily" }), "Only the first new one.");
+
+            runs.Begin("prologue-quaker", "lily");
+            runs.RecordFront("nina");
+            Assert.That(runs.Complete(), Is.EqualTo(new[] { "nina" }), "The next run can unlock the next.");
             Assert.That(runs.StartersFor("prologue-quaker", "maya"), Is.EqualTo(new[] { "maya", "lily", "nina" }));
-            Assert.That(runs.StartersFor("prelude-wicca", "maya"), Is.EqualTo(new[] { "maya" }), "Unlocks are per chapter.");
         }
 
         [Test]

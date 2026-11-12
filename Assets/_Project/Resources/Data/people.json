@@ -31,18 +31,20 @@
           "memberId": "jacob",
           "link": "sees Sarah as their mother"
         }
-      ]
+      ],
+      "church": "Church of Friends"
     },
     {
       "id": "guide_quaker",
-      "name": "",
+      "name": "Mira",
       "role": "The prologue's guide: a kind older Friend in Sarah's church",
       "tradition": "quakers",
       "description": "Tries to be there for Maya as a child, but fails.",
       "chapterIds": [
         "prologue-quaker"
       ],
-      "memberLinks": []
+      "memberLinks": [],
+      "age": "68"
     },
     {
       "id": "ex_christian",

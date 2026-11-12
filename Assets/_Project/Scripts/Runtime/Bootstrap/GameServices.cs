@@ -2,6 +2,7 @@ using System;
 using IAmAsIAm.Core.Mind;
 using IAmAsIAm.Core.PluralSystem;
 using IAmAsIAm.Core.Practices;
+using IAmAsIAm.Core.Save;
 using IAmAsIAm.Core.Safety;
 using IAmAsIAm.Core.Skills;
 using IAmAsIAm.Core.Story;
@@ -28,6 +29,9 @@ namespace IAmAsIAm.Runtime
         public static ChoiceLog Choices { get; private set; }
         public static TraditionJournal Traditions { get; private set; }
         public static TarotSpreadData Spreads { get; private set; }
+        public static ChapterData Chapters { get; private set; }
+        public static ChapterRuns ChapterRuns { get; private set; }
+        public static PreferencesData Preferences { get; private set; }
 
         public static int InGameDay { get; set; } = 1;
         public static bool IsReady { get; private set; }
@@ -58,6 +62,24 @@ namespace IAmAsIAm.Runtime
             Spreads = spreads;
         }
 
+        internal static void InitializeChapters(ChapterData chapters, ChapterRuns runs, PreferencesData prefs)
+        {
+            Chapters = chapters ?? new ChapterData();
+            ChapterRuns = runs;
+            Preferences = prefs ?? new PreferencesData();
+        }
+
+        public static ChapterDefinition Chapter(string id) => Chapters?.chapters?.Find(c => c.id == id);
+
+        /// <summary>Saves preferences, including which alters can start each chapter.</summary>
+        public static void SavePreferences()
+        {
+            if (Preferences == null) return;
+            Preferences.comfort = Comfort;
+            if (ChapterRuns != null) Preferences.chapterUnlocks = ChapterRuns.Export();
+            IAmAsIAm.Runtime.Save.SaveService.SavePreferences(Preferences);
+        }
+
         public static void NotifyComfortChanged() => ComfortChanged?.Invoke();
 
         // Supports "Enter Play Mode Options" with domain reload disabled.
@@ -67,6 +89,7 @@ namespace IAmAsIAm.Runtime
             Mind = null; Roster = null; Journal = null; Skills = null; Practices = null; Crisis = null;
             Comfort = new ComfortSettings();
             Triggers = null; Choices = null; Traditions = null; Spreads = null;
+            Chapters = null; ChapterRuns = null; Preferences = null;
             InGameDay = 1;
             IsReady = false;
             ComfortChanged = null;

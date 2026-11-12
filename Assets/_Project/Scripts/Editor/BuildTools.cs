@@ -160,6 +160,12 @@ namespace IAmAsIAm.EditorTools
             var cueZone = zone.AddComponent<IAmAsIAm.Runtime.Triggers.CueZone>();
             SetString(cueZone, "cue", "raised-voices");
 
+            // A door that opens the Prologue's start screen (content warnings, who to start as, or a summary).
+            var door = Block("Chapter Door: Prologue (test)", new Vector3(3.6f, 1.05f, 3.2f), new Vector3(1.0f, 2.1f, 0.12f), "mat_door", new Color(0.36f, 0.42f, 0.55f), flat);
+            var chapterStart = door.AddComponent<ChapterStart>();
+            SetString(chapterStart, "chapterId", "prologue-quaker");
+            SetString(chapterStart, "prompt", "Begin the Prologue");
+
             // A placeholder guide, to test talking.
             var guide = StandIn("Guide (placeholder)", new Vector3(2.2f, 0, -1.2f), new Color(0.35f, 0.5f, 0.6f));
             Story(guide, "Talk", "test_guide", true);

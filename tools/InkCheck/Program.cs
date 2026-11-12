@@ -151,6 +151,7 @@ static class InkCheck
                 else if (parts[0] == "craft" && (parts.Length < 2 || !_charms.Contains(parts[1]))) Fail("unknown charm");
                 else if (parts[0] != "tarot" && parts[0] != "craft" && parts[0] != "rune" && parts[0] != "sachet") Fail("unknown ritual");
                 break;
+            case "switch": if (!_members.Contains(value)) Fail("unknown member to switch to"); break;
             case "shot": case "place": case "chapter-end": case "front": break;
             default: Fail("unknown tag (see game_api.ink)"); break;
         }

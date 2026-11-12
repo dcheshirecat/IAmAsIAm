@@ -65,6 +65,12 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
 - 2026-11-12: **Replay rule:** anyone who fronts during a chapter can START that chapter once it's finished in full
   (`Core/Story/ChapterRuns.cs`, saved in preferences). **Content warnings before every chapter** (validator requires contentTags).
 
+- 2026-11-12: Prologue: guide **Mira (68)**; Sarah's church is the **Church of Friends**; the first switch at the end is **Nina**
+  (the first unlock). Replays are per chapter: same events, different abilities/choices per alter; unlocks are **paced: at most one
+  new alter per finished run** (`ChapterRuns.MaxNewUnlocksPerRun`). After the warnings, the player may **skip and read a summary**.
+  Story-scripted switches use the tag `# switch: <member>`. Still open: Maya's (the body's) age in the prologue.
+- 2026-11-12: Owner wants **save slots** and an **animated loading screen with a random tarot card** each time.
+
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

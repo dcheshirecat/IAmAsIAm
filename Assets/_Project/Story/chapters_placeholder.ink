@@ -2,7 +2,15 @@
 // Each is replaced by its own file once the owner has decided how the chapter goes.
 
 === prologue ===
+// PLACEHOLDER to test the chapter flow (start screen, warnings, a switch, the end-of-chapter unlock). Not story.
 (Prologue: Quaker. Not written yet.)
+* [(Test) Let the first switch happen.]
+    (Test) Something goes far away. # switch: nina
+    (Test) {fronting} is fronting now.
+* [(Test) Stay as you are.]
+    (Test) Nothing changes.
+-
+(Test) End of the prologue placeholder. # chapter-end
 -> END
 
 === prelude ===

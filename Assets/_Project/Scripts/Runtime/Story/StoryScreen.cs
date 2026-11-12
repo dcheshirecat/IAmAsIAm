@@ -4,6 +4,7 @@ using System.Linq;
 using IAmAsIAm.Core.Grounding;
 using IAmAsIAm.Core.Mind;
 using IAmAsIAm.Core.PluralSystem;
+using IAmAsIAm.Core.Safety;
 using IAmAsIAm.Core.Practices;
 using IAmAsIAm.Core.Triggers;
 using IAmAsIAm.Runtime.CameraRig;
@@ -326,10 +327,60 @@ namespace IAmAsIAm.Runtime.Story
 
         void RunRecap()
         {
-            var choices = GameServices.Choices?.Records ?? new List<IAmAsIAm.Core.Story.ChoiceRecord>();
+            var runs = GameServices.ChapterRuns;
+            string chapterId = runs != null && runs.InChapter ? runs.CurrentChapterId : null;
+            var choices = (GameServices.Choices?.Records ?? new List<IAmAsIAm.Core.Story.ChoiceRecord>())
+                .Where(c => chapterId == null || c.chapterId == chapterId).ToList();
             string body = choices.Count == 0 ? "No choices recorded yet." : string.Join("\n", choices.Select(c => "• " + c.summary));
+
+            // Finishing the chapter in full: whoever fronted for the first time can start it next time (paced).
+            if (chapterId != null)
+            {
+                foreach (var id in runs.Complete())
+                    body += $"\n\n<b>{MemberName(id)}</b> came forward this time. You can now start this chapter as {MemberName(id)}.";
+                GameServices.SavePreferences();
+            }
             OpenAction("Your choices", body, ("Continue", Finish));
         }
+
+        // ── Starting a chapter: content warnings, who to start as, or a summary instead ──
+
+        /// <summary>Opens a chapter's start screen. Content warnings are always shown first (owner's rule).</summary>
+        public void OpenChapter(string chapterId)
+        {
+            var ch = GameServices.Chapter(chapterId);
+            if (ch == null || runner.IsPlaying || _action.activeSelf) return;
+
+            string warnings = ch.contentTags == null || ch.contentTags.Count == 0
+                ? "None listed."
+                : string.Join("\n", ch.contentTags.Select(t => "• " + ContentTags.Label(t)));
+            string setting = string.IsNullOrEmpty(ch.setting) ? "" : $"<i>{ch.setting}</i>\n\n";
+            string body = $"{setting}<b>Content warnings</b>\n{warnings}\n\nYou can open the Anchor at any time.";
+
+            var buttons = new List<(string, Action)>();
+            var starters = GameServices.ChapterRuns?.StartersFor(ch.id, ch.startingMemberId) ?? new List<string>();
+            if (starters.Count == 0) buttons.Add(("Begin", () => BeginChapter(ch, null)));
+            foreach (var id in starters)
+            {
+                string starter = id;
+                buttons.Add(($"Begin as {MemberName(starter)}", () => BeginChapter(ch, starter)));
+            }
+            buttons.Add(("Skip and read a summary", () => OpenAction(ch.title, "<b>Summary</b>\n" + ch.summary, ("Close", CloseAction))));
+            buttons.Add(("Not now", CloseAction));
+            OpenAction(ch.title, body, buttons.ToArray());
+        }
+
+        void BeginChapter(IAmAsIAm.Core.Story.ChapterDefinition ch, string starterId)
+        {
+            CloseAction();
+            var roster = GameServices.Roster;
+            string starter = starterId ?? roster?.FrontingId;
+            GameServices.ChapterRuns?.Begin(ch.id, starter);
+            if (roster != null && !string.IsNullOrEmpty(starterId) && roster.FrontingId != starterId) roster.ForceSwitch(starterId);
+            runner.Play(ch.inkKnot, null, ch.id);
+        }
+
+        static string MemberName(string id) => GameServices.Roster?.GetDefinition(id)?.displayName ?? id;
 
         void Finish() { CloseAction(); runner.CompleteAction(); }
 

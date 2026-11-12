@@ -150,6 +150,7 @@ namespace IAmAsIAm.Runtime.Story
                 if (key == "cw") ContentNote?.Invoke(value);
                 else if (key == "cue") EncounterCue(value, trapped: false);
                 else if (key == "cue-held") EncounterCue(value, trapped: true);
+                else if (key == "switch") ScriptedSwitch(value);
                 else if (ActionTags.Contains(key)) _pending = new StoryAction { Kind = key, Value = value };
                 // "shot", "place" and "front" are read by the view and camera from line.Tags.
             }
@@ -160,6 +161,16 @@ namespace IAmAsIAm.Runtime.Story
         {
             var a = trapped ? TriggerRunner.Trapped(cue, fronting) : TriggerRunner.Encounter(cue, fronting);
             if (a != null) SyncFronting();
+        }
+
+        /// <summary>A switch the story itself calls for (e.g. Nina at the end of the prologue). Never the player's choice.</summary>
+        void ScriptedSwitch(string memberId)
+        {
+            var roster = GameServices.Roster;
+            if (roster == null || string.IsNullOrEmpty(memberId)) return;
+            try { roster.ForceSwitch(memberId); }
+            catch (ArgumentException) { Debug.LogWarning($"[IAmAsIAm] # switch: unknown member '{memberId}'."); return; }
+            SyncFronting();
         }
 
         void SyncFronting()

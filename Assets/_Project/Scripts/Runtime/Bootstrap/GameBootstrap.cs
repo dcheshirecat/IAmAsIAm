@@ -54,6 +54,12 @@ namespace IAmAsIAm.Runtime
                 library,
                 DataLoader.Load<CrisisResourceData>("crisis_resources"),
                 prefs.comfort);
+
+            // Chapters, and who can start each one (owner's replay rule).
+            var runs = new ChapterRuns();
+            runs.Restore(prefs.chapterUnlocks);
+            GameServices.InitializeChapters(DataLoader.Load<ChapterData>("chapters"), runs, prefs);
+            GameServices.Roster.FrontChanged += change => runs.RecordFront(change.NewId);
         }
     }
 
