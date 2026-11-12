@@ -6,7 +6,7 @@
       "name": "Sarah",
       "role": "The character's parent: a single mother, minister (pastor) of a programmed Friends church in the USA",
       "tradition": "quakers",
-      "description": "Neglects raising her child in favour of the congregation.",
+      "description": "Well-meaning but absent, and neglectful to the point of harm: she puts the congregation before raising her child. The game never shows her side.",
       "chapterIds": [
         "prologue-quaker"
       ],
@@ -32,6 +32,17 @@
           "link": "sees Sarah as their mother"
         }
       ]
+    },
+    {
+      "id": "guide_quaker",
+      "name": "",
+      "role": "The prologue's guide: a kind older Friend in Sarah's church",
+      "tradition": "quakers",
+      "description": "Tries to be there for Maya as a child, but fails.",
+      "chapterIds": [
+        "prologue-quaker"
+      ],
+      "memberLinks": []
     },
     {
       "id": "ex_christian",

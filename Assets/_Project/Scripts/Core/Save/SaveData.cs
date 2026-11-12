@@ -54,6 +54,8 @@ namespace IAmAsIAm.Core.Save
     {
         public ComfortSettings comfort = new ComfortSettings();
         public bool acknowledgedNotTherapyNotice;
+        /// <summary>Alters unlocked as chapter starters (kept across save slots, like a New Game+).</summary>
+        public List<IAmAsIAm.Core.Story.ChapterUnlock> chapterUnlocks = new List<IAmAsIAm.Core.Story.ChapterUnlock>();
         public string crisisRegion;
     }
 

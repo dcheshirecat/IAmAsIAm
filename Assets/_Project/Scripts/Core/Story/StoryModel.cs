@@ -5,7 +5,7 @@ using System.Linq;
 namespace IAmAsIAm.Core.Story
 {
     /// <summary>
-    /// One chapter of the Wheel of the Year. Authored in Resources/Data/chapters.json.
+    /// One chapter (one religion per chapter, fixed order). Authored in Resources/Data/chapters.json.
     /// The story itself is written in Ink (Assets/_Project/Story); this is the metadata the
     /// game needs around it: content notes, featured part, which Ink knot to start at.
     /// </summary>
@@ -19,8 +19,12 @@ namespace IAmAsIAm.Core.Story
         /// <summary>The Ink knot this chapter starts at.</summary>
         public string inkKnot;
         public string featuredMemberId;
+        /// <summary>Who the chapter starts as (the prologue: young Maya). Others unlock by fronting during a full run (ChapterRuns).</summary>
+        public string startingMemberId;
+        /// <summary>Where and when, e.g. "Iowa City, Iowa; Maya's childhood (the body was born in 1998)".</summary>
+        public string setting;
         public string skillFamily;
-        /// <summary>Content tags (see Safety.ContentTags), shown as content notes before the chapter.</summary>
+        /// <summary>Content tags (see Safety.ContentTags). Shown as content warnings before EVERY chapter (owner's rule); required.</summary>
         public List<string> contentTags = new List<string>();
         /// <summary>Short summary shown in place of skipped content, and on the chapter select.</summary>
         public string summary;

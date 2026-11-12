@@ -3,24 +3,34 @@
     {
       "id": "prologue-quaker",
       "number": 0,
-      "sabbat": "",
       "title": "Prologue (title to come)",
+      "sabbat": "",
       "inkKnot": "prologue",
+      "startingMemberId": "maya",
       "featuredMemberId": "",
+      "setting": "Iowa City, Iowa, in Maya's childhood (the body was born in 1998)",
       "skillFamily": "",
       "contentTags": [
         "childhood-reference",
-        "religious-content"
+        "religious-content",
+        "neglect",
+        "child-alone",
+        "depersonalization",
+        "derealization",
+        "time-loss",
+        "involuntary-switch"
       ],
-      "summary": "Quaker: the backstory, in the USA. The character is raised by Sarah, a single mother and the minister of a programmed Friends church, who puts the congregation before raising her child. Unprogrammed meetings exist in this world too."
+      "summary": "Quaker: the backstory, in Iowa City. Young Maya is raised by Sarah, a single mother and the minister of a programmed Friends church, who is well-meaning but absent, and neglectful to the point of harm. The game eases the player into dissociation and the first time losing time. An older Friend in the church tries to be there for Maya and fails. It ends with the very first switch, home alone in Maya's room after services, then a blackout."
     },
     {
       "id": "prelude-wicca",
       "number": 1,
-      "sabbat": "",
       "title": "Prelude (title to come)",
+      "sabbat": "",
       "inkKnot": "prelude",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
@@ -30,10 +40,12 @@
     {
       "id": "ch1-christianity",
       "number": 2,
-      "sabbat": "",
       "title": "Chapter 1: Christianity (title to come)",
+      "sabbat": "",
       "inkKnot": "ch1_christianity",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
@@ -43,10 +55,12 @@
     {
       "id": "ch2-judaism",
       "number": 3,
-      "sabbat": "",
       "title": "Chapter 2: Judaism (title to come)",
+      "sabbat": "",
       "inkKnot": "ch2_judaism",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
@@ -56,10 +70,12 @@
     {
       "id": "ch3-buddhism",
       "number": 4,
-      "sabbat": "",
       "title": "Chapter 3: Buddhism (title to come)",
+      "sabbat": "",
       "inkKnot": "ch3_buddhism",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
@@ -69,10 +85,12 @@
     {
       "id": "ch4-islam",
       "number": 5,
-      "sabbat": "",
       "title": "Chapter 4: Islam (title to come)",
+      "sabbat": "",
       "inkKnot": "ch4_islam",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
@@ -82,10 +100,12 @@
     {
       "id": "ch5-hinduism",
       "number": 6,
-      "sabbat": "",
       "title": "Chapter 5: Hinduism (title to come)",
+      "sabbat": "",
       "inkKnot": "ch5_hinduism",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
@@ -95,10 +115,12 @@
     {
       "id": "ch6-sikhism",
       "number": 7,
-      "sabbat": "",
       "title": "Chapter 6: Sikhism (title to come)",
+      "sabbat": "",
       "inkKnot": "ch6_sikhism",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
@@ -108,10 +130,12 @@
     {
       "id": "ch7-daoism",
       "number": 8,
-      "sabbat": "",
       "title": "Chapter 7: Daoism (title to come)",
+      "sabbat": "",
       "inkKnot": "ch7_daoism",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
@@ -121,10 +145,12 @@
     {
       "id": "ch8-druidry",
       "number": 9,
-      "sabbat": "",
       "title": "Chapter 8: Druidry (title to come)",
+      "sabbat": "",
       "inkKnot": "ch8_druidry",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
@@ -134,10 +160,12 @@
     {
       "id": "ch9-humanism",
       "number": 10,
-      "sabbat": "",
       "title": "Chapter 9: Humanism (title to come)",
+      "sabbat": "",
       "inkKnot": "ch9_humanism",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
@@ -147,10 +175,12 @@
     {
       "id": "ch10-unitarian-universalism",
       "number": 11,
-      "sabbat": "",
       "title": "Chapter 10: Unitarian Universalism (title to come)",
+      "sabbat": "",
       "inkKnot": "ch10_unitarian_universalism",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
@@ -160,10 +190,12 @@
     {
       "id": "ch11-jainism",
       "number": 12,
-      "sabbat": "",
       "title": "Chapter 11: Jainism (title to come)",
+      "sabbat": "",
       "inkKnot": "ch11_jainism",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
@@ -173,10 +205,12 @@
     {
       "id": "ch12-hellenic-polytheism",
       "number": 13,
-      "sabbat": "",
       "title": "Chapter 12: Hellenic polytheism (title to come)",
+      "sabbat": "",
       "inkKnot": "ch12_hellenic_polytheism",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
@@ -186,10 +220,12 @@
     {
       "id": "ch13-eastern-orthodox",
       "number": 14,
-      "sabbat": "",
       "title": "Chapter 13: Eastern Orthodox Christianity (title to come)",
+      "sabbat": "",
       "inkKnot": "ch13_eastern_orthodox",
+      "startingMemberId": "",
       "featuredMemberId": "",
+      "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"

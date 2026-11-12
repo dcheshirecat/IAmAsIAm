@@ -79,7 +79,7 @@ namespace IAmAsIAm.Tests
             var sw = sys.Expose("raised-voices", roster, 2f);
             Assert.That(sw.Response, Is.EqualTo(TriggerResponse.Switch));
             Assert.That(sw.Escalated, Is.True);
-            Assert.That(sw.SwitchToId, Is.AnyOf("a", "b"));
+            Assert.That(new[] { "a", "b" }, Does.Contain(sw.SwitchToId));
             Assert.That(sys.Expose("raised-voices", roster, 30f), Is.Null, "Only one switch per exposure.");
         }
 

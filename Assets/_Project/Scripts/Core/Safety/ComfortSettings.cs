@@ -21,12 +21,35 @@ namespace IAmAsIAm.Core.Safety
         public const string Panic = "panic";
         /// <summary>Scenes exploring religion with the teacher. Skippable for anyone with religious trauma.</summary>
         public const string ReligiousContent = "religious-content";
+        public const string Neglect = "neglect";
+        public const string ChildAlone = "child-alone";
 
         public static readonly IReadOnlyList<string> All = new[]
         {
             TimeLoss, Depersonalization, Derealization, InvoluntarySwitch, TraumaReference,
             ChildhoodReference, MedicalSetting, RaisedVoices, SelfHarmReference, Panic, ReligiousContent,
+            Neglect, ChildAlone,
         };
+
+        static readonly Dictionary<string, string> Labels = new Dictionary<string, string>
+        {
+            [TimeLoss] = "Losing time",
+            [Depersonalization] = "Depersonalization",
+            [Derealization] = "Derealization",
+            [InvoluntarySwitch] = "Involuntary switching",
+            [TraumaReference] = "References to trauma",
+            [ChildhoodReference] = "Childhood memories",
+            [MedicalSetting] = "Medical settings",
+            [RaisedVoices] = "Raised voices",
+            [SelfHarmReference] = "References to self-harm",
+            [Panic] = "Panic",
+            [ReligiousContent] = "Religious content",
+            [Neglect] = "Childhood emotional neglect by a parent",
+            [ChildAlone] = "A young child left alone",
+        };
+
+        /// <summary>The words shown to the player for a tag.</summary>
+        public static string Label(string tag) => tag != null && Labels.TryGetValue(tag, out var l) ? l : tag;
     }
 
     /// <summary>

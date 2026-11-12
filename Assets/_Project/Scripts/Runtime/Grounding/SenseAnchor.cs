@@ -50,7 +50,7 @@ namespace IAmAsIAm.Runtime.Grounding
         {
             var session = FiveSensesSession.Active;
             if (session == null) return;
-            if (!session.TryNotice(session.CurrentSense, string.IsNullOrEmpty(anchorId) ? GetInstanceID().ToString() : anchorId)) return;
+            if (!session.TryNotice(session.CurrentSense, string.IsNullOrEmpty(anchorId) ? System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(this).ToString() : anchorId)) return;
 
             ISensoryAnchor item = string.IsNullOrEmpty(practiceItemId) ? null : GameServices.Practices?.GetAnchor(practiceItemId);
             onDescribed?.Invoke(item != null ? item.SensoryDescription : fallbackDescription);

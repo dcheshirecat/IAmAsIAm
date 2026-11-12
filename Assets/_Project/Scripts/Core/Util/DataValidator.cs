@@ -137,6 +137,14 @@ namespace IAmAsIAm.Core
             foreach (var c in chapters)
             {
                 if (string.IsNullOrWhiteSpace(c.inkKnot)) issues.Add($"chapter '{c.id}': needs an inkKnot.");
+                // Owner's rule: content warnings before every chapter.
+                if (c.contentTags == null || c.contentTags.Count == 0) issues.Add($"chapter '{c.id}': needs content warnings (contentTags).");
+                if (!string.IsNullOrEmpty(c.startingMemberId) && members.Count > 0)
+                {
+                    var starter = members.FirstOrDefault(m => m.id == c.startingMemberId);
+                    if (starter == null) issues.Add($"chapter '{c.id}': starting member '{c.startingMemberId}' doesn't exist.");
+                    else if (!starter.canFront) issues.Add($"chapter '{c.id}': starting member '{c.startingMemberId}' can't front.");
+                }
                 if (!string.IsNullOrEmpty(c.featuredMemberId) && members.Count > 0 && !memberIds.Contains(c.featuredMemberId))
                     issues.Add($"chapter '{c.id}': featured member '{c.featuredMemberId}' doesn't exist.");
                 foreach (var tag in c.contentTags ?? new List<string>())
