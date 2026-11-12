@@ -251,9 +251,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   church, Christmas Eve at the Methodist church), 3 Holidays (spring 2019: Ash Wednesday and the priest, the vigil where Izzy is
   triggered, Easter at a queer-affirming church), 4 The napkin (May 2019). Placeholders: "The priest" (`mark_priest`), "Mark's mom"
   (`mark_mom`), the church "St. ___'s". Drive: Story Drafts → `03 Chapter 1.5 - Axel (title to come)` (1pOOBlf0DtgjVVELZapx_fKVE_7hTOMgJ):
-  Part 1 (1d4vE0SRrxrQ3tzszp2rW-DUpiqWRyUViL1JzX-uBpIQ), Part 2 (1Dz9K7UjP6UkeRcxsJscW-uxoKoTRzjAl7uwA-WubyfU), Part 3
-  (1IYMBbtmGFUq5peIAWJeYkVfouQhsds5RYOAGdgAQp-A), Part 4 (1H7Ls89KivW6oT-av-x1lgLZhG0fFGCaoXcamNETZmYI). Script Sheet
-  "03 Chapter 1.5 - script list (draft)" (1YGR6-Rt3Mt8VFR9vvrCxkhe6VqPXoUiFPmq3SmmNGvk, 46 lines).
+  Part 1 (1Q11gaVGZgJwDITbfb0SF5pmZtJ08hKNk90tzfj8n6wQ), Part 2 (1CSVBShaquKtrNU20XlpfMsMCVBLG--Y_VA7oTue2uss), Part 3
+  (1X-gr0Bikt1rMoW7Pn5uFL2ZnqFLt4MbhT1A7VBEubSQ), Part 4 (18jIzBVqJQFJkG43A35IOGj2RDtrmacd6aMYSzNlP1Ko). Script Sheet
+  "03 Chapter 1.5 - script list (draft)" (1OKExbZQ8iwMIYlvehrrnL62DRQ6eG7X3__y4-7c7LYQ, 55 lines).
 - 2026-11-12: **The story is IN THE GAME (owner).** `Story/Chapters/` holds the Prologue, Prelude, Chapter 1 and Chapter 1.5 (one
   `.ink` + `_readable.md` per part, moved from Drafts/). `Chapters/chapters.ink` has each chapter's root knot (chapters.json
   `inkKnot`), which diverts to the first part; each part diverts to the next; only the last part has `# chapter-end`. `main.ink`
@@ -531,7 +531,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   for two; Sunday 4 Mom's early note + a ride with Mr. Carter), Prelude (Part 1 lunch alone + the library job, Part 2 a library
   shift with a Wicca book on hold under her name + night, Part 3 finals week + Mom's Christmas text). Maya's campus job = the
   library (Claude's guess). Chapter 1 (a whole Thursday; the night she came back; senior-year shifts swapped + dinner alone;
-  lockdown grab-and-go). NEXT: Chapter 1.5, then 2, 3, 4, 5, 6.
+  lockdown grab-and-go), Chapter 1.5 (his first party; breakfast for two + Maya's library voicemail; Halloween with Mark; a
+  morning run; the last day of classes). NEXT: Chapter 2, then 3, 4, 5, 6.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
