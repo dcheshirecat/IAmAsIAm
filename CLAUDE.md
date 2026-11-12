@@ -78,6 +78,19 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   at least 2.6 s; Reduce motion = no movement; reversals follow the comfort setting. Card art from `Art/Tarot/`
   (`tarot_back.png`, `tarot_<card-id>.png`), wired by Rebuild Boot Scene. **The Anchor is drawn above every screen** (sort 200).
 
+- 2026-11-12: **Prologue = "This Little Light"** (owner). **A few Sundays across several ages** of Maya, ending at the first switch.
+  **Mira fails in three steps:** first she defers to Sarah (raises it, backs down), then she doesn't see enough (Maya hides how
+  bad it is), then she leaves.
+- 2026-11-12: Prologue Sundays at Maya's ages **5, 8, 11 and 15** (2003, 2006, 2009, 2013). Mira **moves away, then gets
+  ill, then dies**. At the end Nina is **only a voice** (Nina, inside) before the blackout: no control yet. **Choices:** the first
+  playthrough has small choices only (feel, journal, trust; big events fixed); **real branches open up the more times the chapter
+  is replayed**.
+- 2026-11-12: **Mira's arc:** 5 Maya meets Mira; 8 Mira raises it with Sarah and backs down; 11 Maya hides how bad it is, and Mira
+  moves away; between 11 and 15 she falls ill; 15 she has died: **she never comes back**, and Maya hears it **in passing from Sarah**,
+  who has no idea how hard it will hit. That night: Nina's voice, the blackout. **Branches belong to who fronts** (replaying as
+  another alter opens that alter's choices). Prologue cast also has **other children** (First Day School), **a family Maya envies**
+  (a present parent) and **the elders/board** who keep Sarah busy. Places: **home, the church building, the car, school**.
+
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
