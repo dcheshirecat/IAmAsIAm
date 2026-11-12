@@ -1,13 +1,13 @@
 // IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 4 (Islam), Part 4.
-// vo-speakers: Maya=maya, Chaplain Noor=noor
+// vo-speakers: Maya=maya, Chaplain Amal=amal
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 4. Iftar. Chicago, February to March 2027 (Ramadan). The body is 28.
 //  Owner's beats: Angie suggests SystemLog, and the chapter's end puts it on Maya's phone (the system leaves each other notes).
 //
 //  My guesses, for the owner to correct:
-//   - Noor invites them to a mosque's open community iftar in Ramadan: everyone waits for sunset, breaks the fast with dates and
+//   - Amal invites them to a mosque's open community iftar in Ramadan: everyone waits for sunset, breaks the fast with dates and
 //     water at the call to prayer, the community prays (guests wait at the back), and then dinner, long and loud.
-//   - Their last day at the day program: Zahra, Noor, a goodbye.
+//   - Their last day at the day program: Zahra, Amal, a goodbye.
 //   - Angie, in her office: "a notebook for all of you, on your phone". The first notes, from Heather and Izzy, and Maya reading them.
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -15,7 +15,7 @@
 ~ set_age(28)
 # cw: religious-content
 ~ co_conscious("heather", true)
-~ text_from("zahra", "Ramadan Mubarak!! Noor says you're coming to the iftar. Sit with me. My mom made too much food. She always makes too much food.")
+~ text_from("zahra", "Ramadan Mubarak!! Amal says you're coming to the iftar. Sit with me. My mom made too much food. She always makes too much food.")
 -> iftar
 
 = iftar
@@ -41,7 +41,7 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
     ~ record_choice("ch4.p4.iftar", "date", "At the iftar, you ate the date at the call to prayer, with everyone.")
     Sweet, sticky, very sweet. Someone passes you water before you ask. # look: date-eaten
 -
-Chaplain Noor: Now they pray, and then they eat everything. Guests can wait here, or watch from the back. Either is good. # vo: ch4-islam_noor_0050
+Chaplain Amal: Now they pray, and then they eat everything. Guests can wait here, or watch from the back. Either is good. # vo: ch4-islam_amal_0050
 * [Wait (watch from the back)]
     ~ record_choice("ch4.p4.prayer", "watched", "At the iftar, you watched the prayer from the back of the hall, in rows, shoulder to shoulder.")
     Rows, shoulder to shoulder, everyone moving together: standing, bowing, kneeling, foreheads to the floor. Then stillness. # look: rows-praying
@@ -64,14 +64,14 @@ Heather (inside): Everyone eating together. Nobody alone. That's the part I need
 + {goodbyes < 3} [Look: The card]
     A card signed by the group. Zahra has drawn a tiny turbah. Someone has drawn an ice cube with a face. # look: goodbye-card
     -> goodbyes
-* {goodbyes >= 1} [Talk: Chaplain Noor]
+* {goodbyes >= 1} [Talk: Chaplain Amal]
 -
-Chaplain Noor: You did the work here. All of you. I'll pray for you, if that's okay. For all of you. # vo: ch4-islam_noor_0052
-* [Talk: Chaplain Noor (say yes)]
-    ~ record_choice("ch4.p4.noor", "yes", "On the last day, Chaplain Noor asked if she could pray for all of you. You said yes.")
+Chaplain Amal: You did the work here. All of you. I'll pray for you, if that's okay. For all of you. # vo: ch4-islam_amal_0052
+* [Talk: Chaplain Amal (say yes)]
+    ~ record_choice("ch4.p4.amal", "yes", "On the last day, Chaplain Amal asked if she could pray for all of you. You said yes.")
     Izzy: Yes. All of us. Even the grumpy ones. # vo: ch4-islam_izzy_0053
-* [Talk: Chaplain Noor (thank her)]
-    ~ record_choice("ch4.p4.noor", "thanks", "On the last day, you thanked Chaplain Noor for never needing you to explain.")
+* [Talk: Chaplain Amal (thank her)]
+    ~ record_choice("ch4.p4.amal", "thanks", "On the last day, you thanked Chaplain Amal for never needing you to explain.")
     Izzy: Thank you for never making us explain. # vo: ch4-islam_izzy_0054
 -
 -> angie

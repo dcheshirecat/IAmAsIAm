@@ -1,5 +1,5 @@
 // IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 4 (Islam), Part 1.
-// vo-speakers: Maya=maya, Chaplain Noor=noor
+// vo-speakers: Maya=maya, Chaplain Amal=amal
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. The day program. Chicago, September 2026. The body is 28.
 //  Owner's beats: after Maya gets back from Nepal. The chapter starts as Izzy; Izzy takes over along with Heather; Maya only
@@ -8,9 +8,9 @@
 //
 //  My guesses, for the owner to correct:
 //   - Angie refers them to a day program at a hospital after Nepal: five days a week, groups, a quiet room.
-//   - The chaplain: "Chaplain Noor" (placeholder name; about 40, she/her), a Sunni Muslim chaplain who gives spiritual care to
+//   - The chaplain: "Chaplain Amal" (owner: Chaplain Amal, Maya's age (28), she/her), a Sunni Muslim chaplain who gives spiritual care to
 //     anyone who wants it, of any faith or none. She never preaches.
-//   - Izzy introduces herself as Izzy. Noor simply calls her that.
+//   - Izzy introduces herself as Izzy. Amal simply calls her that.
 //   - The interfaith quiet room has a small arrow on the ceiling pointing to Mecca (the qibla), folded prayer rugs, tissues.
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -74,19 +74,19 @@ Feet on the floor. The cold of the water bottle in your hands. # exercise: paced
 + {quiet < 4} [Look: The window]
     The hospital car park, and one tree going orange. Someone has put a bird feeder out. # look: car-park-tree
     -> quiet
-* {quiet >= 1} [Talk: Chaplain Noor]
+* {quiet >= 1} [Talk: Chaplain Amal]
 -
-Chaplain Noor: Hi. I'm Noor, the chaplain. I'm Muslim, but this hour is for anyone, any faith or none. I mostly listen. Sometimes I bring dates. # vo: ch4-islam_noor_0005
+Chaplain Amal: Hi. I'm Amal, the chaplain. I'm Muslim, but this hour is for anyone, any faith or none. I mostly listen. Sometimes I bring dates. # vo: ch4-islam_amal_0005
 Izzy: Izzy. Hi. Do chaplains have to be serious? You don't look very serious. # vo: ch4-islam_izzy_0006
-Chaplain Noor: Only on Tuesdays. It's Thursday. # vo: ch4-islam_noor_0007
-* [Talk: Chaplain Noor (ask why she does this)]
-    ~ record_choice("ch4.p1.noor", "why", "On the first day, Izzy asked Chaplain Noor why she does this work.")
+Chaplain Amal: Only on Tuesdays. It's Thursday. # vo: ch4-islam_amal_0007
+* [Talk: Chaplain Amal (ask why she does this)]
+    ~ record_choice("ch4.p1.amal", "why", "On the first day, Izzy asked Chaplain Amal why she does this work.")
     Izzy: Why do you do this? Sit with sad people all day? # vo: ch4-islam_izzy_0008
-    Chaplain Noor: The Prophet, peace be upon him, visited the sick. It's one of the things we're asked to do. And honestly? People are most themselves in rooms like this. # vo: ch4-islam_noor_0009
-* [Talk: Chaplain Noor (tell her about the others)]
-    ~ record_choice("ch4.p1.noor", "others", "On the first day, Izzy told Chaplain Noor there were others: Maya, Heather. Noor didn't flinch.")
+    Chaplain Amal: The Prophet, peace be upon him, visited the sick. It's one of the things we're asked to do. And honestly? People are most themselves in rooms like this. # vo: ch4-islam_amal_0009
+* [Talk: Chaplain Amal (tell her about the others)]
+    ~ record_choice("ch4.p1.amal", "others", "On the first day, Izzy told Chaplain Amal there were others: Maya, Heather. Amal didn't flinch.")
     Izzy: There's more of us. Maya, mostly. Heather's here too, today. Is that weird? # vo: ch4-islam_izzy_0010
-    Chaplain Noor: Not in this room. Welcome, all of you. You don't have to explain anything to me. # vo: ch4-islam_noor_0011
+    Chaplain Amal: Not in this room. Welcome, all of you. You don't have to explain anything to me. # vo: ch4-islam_amal_0011
 -
 -> surface
 
@@ -101,9 +101,9 @@ Chaplain Noor: Only on Tuesdays. It's Thursday. # vo: ch4-islam_noor_0007
     "IZZY (Maya)". In your writing. Round letters. Not yours. # look: name-tag-maya
 -
 Maya: Sorry. I'm... I'm Maya. I think I was just here. Was I just here? # vo: ch4-islam_maya_0012
-Chaplain Noor: You were. Someone very funny was here a minute ago. And someone very kind. Take your time. There's tea. # vo: ch4-islam_noor_0013
+Chaplain Amal: You were. Someone very funny was here a minute ago. And someone very kind. Take your time. There's tea. # vo: ch4-islam_amal_0013
 # switch: izzy
 ~ set_experience("TimeLoss", 0.0)
 Izzy: Tea! Yes. Tea. # vo: ch4-islam_izzy_0014
-~ journal("Note", "Day program. Chaplain Noor, Thursdays at 3:30. She said: you don't have to explain anything to me.")
+~ journal("Note", "Day program. Chaplain Amal, Thursdays at 3:30. She said: you don't have to explain anything to me.")
 -> ch4_part2  // the next part of the same chapter (one run)

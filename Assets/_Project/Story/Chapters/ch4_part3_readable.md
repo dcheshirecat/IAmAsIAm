@@ -7,7 +7,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **My guesses, for you to check:**
 
 - Zahra (placeholder name; 30s, she/her), another patient at the day program: Shia (Twelver), Iraqi American. She prays in the quiet room on a small clay tablet from Karbala (a turbah), and tells Izzy about Imam Hussain.
-- Noor invites them to a Thursday-night dhikr (remembrance) gathering led by her friend Idris (placeholder name; 60s, he/him), a Sufi teacher: guests are welcome to sit and listen. Heather finds the repetition steadying; Izzy keeps count, eyes open. (Rhythm and repetition can pull a dissociative person away: they keep their eyes open, as Angie taught.)
+- Amal invites them to a Thursday-night dhikr (remembrance) gathering led by her friend Idris (placeholder name; 60s, he/him), a Sufi teacher: guests are welcome to sit and listen. Heather finds the repetition steadying; Izzy keeps count, eyes open. (Rhythm and repetition can pull a dissociative person away: they keep their eyes open, as Angie taught.)
 
 ## Quiet room
 
@@ -36,14 +36,14 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 ## Invitation
 
-**Chaplain Noor:** My friend Idris holds a dhikr on Thursday nights. Remembrance. People sit together and repeat the names of God, very simply, over and over. Guests come and just listen. Would you like to come?
+**Chaplain Amal:** My friend Idris holds a dhikr on Thursday nights. Remembrance. People sit together and repeat the names of God, very simply, over and over. Guests come and just listen. Would you like to come?
 
 **Explore** (glowing things; the player picks):
 
-- **Talk: Chaplain Noor (ask if it's okay to just sit)**
+- **Talk: Chaplain Amal (ask if it's okay to just sit)**
     - **Izzy:** Can we just... sit? Not join in?
-    - **Chaplain Noor:** That's exactly what guests do. Sit at the edge. If you go far away, come out into the hall. I'll be there.
-- **Talk: Chaplain Noor (say yes)**
+    - **Chaplain Amal:** That's exactly what guests do. Sit at the edge. If you go far away, come out into the hall. I'll be there.
+- **Talk: Chaplain Amal (say yes)**
     - **Izzy:** Yes. Obviously yes. Heather wants to go. Heather never wants to go anywhere.
 
 ## Dhikr

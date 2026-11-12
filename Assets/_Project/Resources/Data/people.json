@@ -413,9 +413,9 @@
       "memberLinks": []
     },
     {
-      "id": "chaplain_noor",
-      "name": "Chaplain Noor",
-      "role": "Chapter 4's guide: a Muslim (Sunni) chaplain at the psychiatric day program (placeholder name; about 40, she/her). Gives spiritual care to anyone, of any faith or none; mostly listens; brings dates.",
+      "id": "chaplain_amal",
+      "name": "Chaplain Amal",
+      "role": "Chapter 4's guide: a Muslim (Sunni) chaplain at the psychiatric day program (owner: Chaplain Amal, Maya's age, she/her). Gives spiritual care to anyone, of any faith or none; mostly listens; brings dates.",
       "tradition": "islam",
       "description": "",
       "chapterIds": [
@@ -423,7 +423,7 @@
       ],
       "memberLinks": [],
       "pronouns": "she/her",
-      "age": "40"
+      "age": "28"
     },
     {
       "id": "zahra",

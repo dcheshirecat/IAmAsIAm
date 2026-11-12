@@ -6,11 +6,11 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **My guesses, for you to check:**
 
-- Noor invites them to a mosque's open community iftar in Ramadan: everyone waits for sunset, breaks the fast with dates and water at the call to prayer, the community prays (guests wait at the back), and then dinner, long and loud.
-- Their last day at the day program: Zahra, Noor, a goodbye.
+- Amal invites them to a mosque's open community iftar in Ramadan: everyone waits for sunset, breaks the fast with dates and water at the call to prayer, the community prays (guests wait at the back), and then dinner, long and loud.
+- Their last day at the day program: Zahra, Amal, a goodbye.
 - Angie, in her office: "a notebook for all of you, on your phone". The first notes, from Heather and Izzy, and Maya reading them.
 
-📱 **Text from Zahra:** Ramadan Mubarak!! Noor says you're coming to the iftar. Sit with me. My mom made too much food. She always makes too much food.
+📱 **Text from Zahra:** Ramadan Mubarak!! Amal says you're coming to the iftar. Sit with me. My mom made too much food. She always makes too much food.
 
 ## Iftar
 
@@ -35,7 +35,7 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
 - **Use: The date**
     - Sweet, sticky, very sweet. Someone passes you water before you ask.
 
-**Chaplain Noor:** Now they pray, and then they eat everything. Guests can wait here, or watch from the back. Either is good.
+**Chaplain Amal:** Now they pray, and then they eat everything. Guests can wait here, or watch from the back. Either is good.
 
 **Explore** (glowing things; the player picks):
 
@@ -56,15 +56,15 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
     - The same twelve chairs. You know everyone's names now, and which one is the knitting woman's.
 - **Look: The card**
     - A card signed by the group. Zahra has drawn a tiny turbah. Someone has drawn an ice cube with a face.
-- **Talk: Chaplain Noor**
+- **Talk: Chaplain Amal**
 
-**Chaplain Noor:** You did the work here. All of you. I'll pray for you, if that's okay. For all of you.
+**Chaplain Amal:** You did the work here. All of you. I'll pray for you, if that's okay. For all of you.
 
 **Explore** (glowing things; the player picks):
 
-- **Talk: Chaplain Noor (say yes)**
+- **Talk: Chaplain Amal (say yes)**
     - **Izzy:** Yes. All of us. Even the grumpy ones.
-- **Talk: Chaplain Noor (thank her)**
+- **Talk: Chaplain Amal (thank her)**
     - **Izzy:** Thank you for never making us explain.
 
 ## Angie

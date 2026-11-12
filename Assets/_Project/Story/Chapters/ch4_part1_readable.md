@@ -7,8 +7,8 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **My guesses, for you to check:**
 
 - Angie refers them to a day program at a hospital after Nepal: five days a week, groups, a quiet room.
-- The chaplain: "Chaplain Noor" (placeholder name; about 40, she/her), a Sunni Muslim chaplain who gives spiritual care to anyone who wants it, of any faith or none. She never preaches.
-- Izzy introduces herself as Izzy. Noor simply calls her that.
+- The chaplain: "Chaplain Amal" (owner: Chaplain Amal, Maya's age (28), she/her), a Sunni Muslim chaplain who gives spiritual care to anyone who wants it, of any faith or none. She never preaches.
+- Izzy introduces herself as Izzy. Amal simply calls her that.
 - The interfaith quiet room has a small arrow on the ceiling pointing to Mecca (the qibla), folded prayer rugs, tissues.
 
 📱 **Text from Angie:** First day at the program today. You don't have to be anyone in particular there. Just come.
@@ -58,22 +58,22 @@ Feet on the floor. The cold of the water bottle in your hands. _(the player does
     - Prayer rugs, folded. A Quran on a stand, a Bible, a Tanakh, a little brass Buddha, a box of tissues. Room for everyone.
 - **Look: The window**
     - The hospital car park, and one tree going orange. Someone has put a bird feeder out.
-- **Talk: Chaplain Noor**
+- **Talk: Chaplain Amal**
 
-**Chaplain Noor:** Hi. I'm Noor, the chaplain. I'm Muslim, but this hour is for anyone, any faith or none. I mostly listen. Sometimes I bring dates.
+**Chaplain Amal:** Hi. I'm Amal, the chaplain. I'm Muslim, but this hour is for anyone, any faith or none. I mostly listen. Sometimes I bring dates.
 
 **Izzy:** Izzy. Hi. Do chaplains have to be serious? You don't look very serious.
 
-**Chaplain Noor:** Only on Tuesdays. It's Thursday.
+**Chaplain Amal:** Only on Tuesdays. It's Thursday.
 
 **Explore** (glowing things; the player picks):
 
-- **Talk: Chaplain Noor (ask why she does this)**
+- **Talk: Chaplain Amal (ask why she does this)**
     - **Izzy:** Why do you do this? Sit with sad people all day?
-    - **Chaplain Noor:** The Prophet, peace be upon him, visited the sick. It's one of the things we're asked to do. And honestly? People are most themselves in rooms like this.
-- **Talk: Chaplain Noor (tell her about the others)**
+    - **Chaplain Amal:** The Prophet, peace be upon him, visited the sick. It's one of the things we're asked to do. And honestly? People are most themselves in rooms like this.
+- **Talk: Chaplain Amal (tell her about the others)**
     - **Izzy:** There's more of us. Maya, mostly. Heather's here too, today. Is that weird?
-    - **Chaplain Noor:** Not in this room. Welcome, all of you. You don't have to explain anything to me.
+    - **Chaplain Amal:** Not in this room. Welcome, all of you. You don't have to explain anything to me.
 
 ## Surface
 
@@ -86,7 +86,7 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 
 **Maya:** Sorry. I'm... I'm Maya. I think I was just here. Was I just here?
 
-**Chaplain Noor:** You were. Someone very funny was here a minute ago. And someone very kind. Take your time. There's tea.
+**Chaplain Amal:** You were. Someone very funny was here a minute ago. And someone very kind. Take your time. There's tea.
 
 _(A switch: Izzy comes forward. The player has no control over it.)_
 

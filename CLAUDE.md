@@ -396,14 +396,14 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   to Nina at home** (Claude's reading: after Reneé tells them; to confirm). **Angie suggests SystemLog** at the end (`unlocksAppId:
   systemlog`). Heather's look: not yet (the owner adds her model later). Still to ask: where/when, the guide, the streams.
 - 2026-11-12: **Chapter 4, Islam, IN THE GAME (owner's answers):** after Nepal, **Chicago, Sept 2026 to Mar 2027** (28). Guide: **a Muslim
-  chaplain at a psychiatric day ward** ("Chaplain Noor", `chaplain_noor`, placeholder name, ~40, she/her, Sunni). **Sufi practice
+  chaplain at a psychiatric day ward** (**Chaplain Amal**, `chaplain_amal`, owner: **Maya's age (28), she/her**, Sunni). **Sufi practice
   and only what Muslims consider Islam** (Sunni, Shia, Sufi; no Ahmadiyya or Nation of Islam). **Reneé finds out Maya moved to
   Chicago and comes to catch up**; she tells them what she overheard (Sunday 2) and **then they switch to Nina at home** (confirmed).
   `Story/Chapters/ch4_part1..4.ink`: 1 The day program (Sept: name tags, TIPP, the quiet room's qibla arrow, Noor; Maya surfaces),
   2 Reneé (Oct: an Andersonville café, queer and ex-religious, the overheard scene as a `# memory:`, Nina's blanket fort and "MIRA
   TRIED. -N"), 3 Remembrance (Dec: Zahra (placeholder, Shia) and her turbah; Idris's (placeholder, Sufi) Thursday dhikr, eyes open;
   Maya surfaces), 4 Iftar (Ramadan 2027: an open community iftar; the last day; Angie suggests SystemLog: `gain_app` + first notes
-  from Heather and Izzy; Maya reads them; `# chapter-end`). 61 voiced lines. Unlock for Chapter 4: not set yet (ask).
+  from Heather and Izzy; Maya reads them; `# chapter-end`). 61 voiced lines. **Chapter 4 unlocks nobody** (owner).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

@@ -58,11 +58,11 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 48 | `dharma_shringa_hall` | Dharma Shringa: the meditation hall | kathmandu | Chapter 3: Buddhism (ch3_part3) | Teacher, Maya (the body, 27), Pasang Lhamo |
 | 49 | `boudha_monastery` | The monastery behind the guest house | kathmandu | Chapter 3: Buddhism (ch3_part3) | Pasang Lhamo, Heather (the body, 27) |
 | 50 | `lumbini_sacred_garden` | Lumbini: the Sacred Garden | lumbini | Chapter 3: Buddhism (ch3_part4) | Maya (the body, 27) |
-| 51 | `day_ward_group_room` | The day program: the group room | chicago | Chapter 4: Islam (ch4_part1) | Izzy (the body, 28), Chaplain Noor |
-| 52 | `day_ward_quiet_room` | The day program: the quiet room | chicago | Chapter 4: Islam (ch4_part1) | Chaplain Noor, Izzy (the body, 28), Maya (the body, 28), Zahra |
+| 51 | `day_ward_group_room` | The day program: the group room | chicago | Chapter 4: Islam (ch4_part1) | Izzy (the body, 28), Chaplain Amal |
+| 52 | `day_ward_quiet_room` | The day program: the quiet room | chicago | Chapter 4: Islam (ch4_part1) | Chaplain Amal, Izzy (the body, 28), Maya (the body, 28), Zahra |
 | 53 | `andersonville_cafe` | A café in Andersonville | chicago | Chapter 4: Islam (ch4_part2) | Reneé, Izzy (the body, 28) |
 | 54 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Idris, Maya (the body, 28) |
-| 55 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Zahra, Chaplain Noor |
+| 55 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Zahra, Chaplain Amal |
 
 ## 2. People, in the order they first appear
 
@@ -99,7 +99,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 27 | Pasang Lhamo | `pasang` | person | Chapter 3: Buddhism | - | boudha_guest_house, boudha_stupa, dharma_shringa_hall, boudha_monastery |
 | 28 | Teacher | `course_teacher` | person | Chapter 3: Buddhism | - | dharma_shringa_hall |
 | 29 | Heather | `heather` | system member | Chapter 3: Buddhism | 27 | boudha_monastery |
-| 30 | Chaplain Noor | `chaplain_noor` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall, day_ward_group_room |
+| 30 | Chaplain Amal | `chaplain_amal` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall, day_ward_group_room |
 | 31 | Reneé | `renee_carter` | person | Chapter 4: Islam | - | andersonville_cafe |
 | 32 | Nina | `nina` | system member | Chapter 4: Islam | 28 | chicago_apartment |
 | 33 | Zahra | `zahra` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall |
