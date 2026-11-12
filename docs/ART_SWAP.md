@@ -14,6 +14,7 @@ until you replace it. For what to make, see [ART_LIST.md](ART_LIST.md); for size
    - `3D Models`: one folder per id (`3D Models/wren/`), holding the Grab3D `model_<id>.glb`, and for props `model_<prop>.obj` + `tex_` PNGs.
    - `World and Places`: room textures, backgrounds, story pictures.
    - `Tarot and Runes`: card faces, the card back, rune staves.
+   - `Voice-Over`: your recorded voice lines (MP3), one folder per chapter. Its own read-me and [VOICE.md](VOICE.md) explain names and settings.
    - `Guidelines`: notes and style references for Claude (read before swapping art in).
    - `Masters`: `.procreate` and `.nomad` files you want kept (Claude copies them to `SourceArt/`).
 4. **Tell Claude** "new art is in the Drive folder". Claude copies each file over the placeholder of the same

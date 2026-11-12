@@ -97,6 +97,14 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   depersonalization) and is then forgotten at church after it; Mira finds her. **The writing grows with Maya** from 5 to 15.
   Names: the owner fills in `docs/PrologueNames.md`.
 
+- 2026-11-12: **The owner voices parts of the game.** Drive "Game Art - I Am As I Am" → **Voice-Over** (id 1pluvFHsiS_BqpKREdIr1B2tOQnxYMnho):
+  one folder per chapter (`00 Prologue (prologue-quaker)` … `14 …`), `Daily Life and Inner Voices`, `Scripts (what to record)`
+  (Claude puts line lists here), `Retakes`, `Masters (WAV originals, optional)`, and "Read me first - Voice-Over". MP3 mono,
+  44.1/48 kHz, ≥192 kbps, one line per file, no music/effects. Names `vo_<chapter-id>_<speaker>_<number>.mp3` (prologue Maya:
+  `maya-05/08/11/15`; inner voices `<id>-inside`; outside chapters `daily`). Voicing is optional per line (unvoiced = text only).
+  In the game: `Assets/_Project/Audio/Voice/<chapter-id>/`. `docs/VOICE.md`. Not built yet: playback, `# vo:` tags, script export.
+  Note: `*.mp3` is in LFS and LFS uploads are blocked from cloud sessions: decide how to commit voice files when the first arrive.
+
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
