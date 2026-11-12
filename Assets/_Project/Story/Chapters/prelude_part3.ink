@@ -79,6 +79,7 @@ Tanya: Before anything else, we ground. You can't cast a circle if you're not in
 Tanya: Feet flat. Feel the floor push back. Now imagine roots, going down, as far as they need to. # vo: prelude-wicca_tanya_0037
 Roots, down through the floor. # exercise: feet-on-floor
 ~ learn_skill("feet-on-floor")
+~ learn_practice("grounding-centering", "tanya")
 ~ nudge(-0.15)
 Tanya: Good. Where did you go, just then? Before your feet found the floor. # vo: prelude-wicca_tanya_0038
 * [Talk: Tanya (say you're fine)]
@@ -125,6 +126,13 @@ Tanya: And now the light comes back. One flame, passed on. # vo: prelude-wicca_t
 * [Look: The flame coming around the ring]
     Hand to hand. Closer. Somebody's face, lit gold. # look: flame-coming
 -
+// Owner: Tanya gives Maya her Book of Shadows, at Yule, after the circle (just before Izzy comes forward).
+Tanya: Here. Everyone gets one after their first circle. A Book of Shadows. Write in it every week. I'll know if you don't. # vo: prelude-wicca_tanya_0046
+* [Use: The book (take it)]
+    ~ gain_book_of_shadows("tanya")
+    ~ record_choice("prelude.p3.book", "taken", "After the Yule circle, Tanya gave you a Book of Shadows.")
+    Black cloth, a moon on the cover. First page, in Tanya's square letters: "Ground first." # look: bos-gift
+-
 ~ set_experience("TimeLoss", 1.0)
 -> gone
 
@@ -136,6 +144,8 @@ Tanya: And now the light comes back. One flame, passed on. # vo: prelude-wicca_t
 // During the lost night (owner: subtle): Tanya's text arrives, and a reply Maya never wrote is already under it.
 ~ text_from("tanya", "Thank you for staying to help stack the chairs. Thursday, 7. Phone off.")
 ~ sent_while_away("izzy", "text", "tanya", "I'll be there. Thank you. Really.")
+// The first entry in the Book is Izzy's (owner: lost time leaves practice behind; never pointed out).
+~ bos_entry("izzy", "Wheel", "Yule", "Longest night. Everyone in a ring in the snow, then the light came back, hand to hand. Stacked the chairs after. Kept a candle stub. Blessed be. -I")
 ...
 # switch: maya
 # place: college_apartment_maya
@@ -150,8 +160,8 @@ Tanya: And now the light comes back. One flame, passed on. # vo: prelude-wicca_t
 
 = book
 ~ find_clue("prelude-yule", "book")
-~ record_choice("prelude.p3.after", "book", "After Yule, you found a new notebook in your bag. The first page wasn't in your handwriting.")
-A new notebook, black, with a moon on the cover. First page: "Book of Shadows. Blessed be. -I" # look: book-of-shadows
+~ record_choice("prelude.p3.after", "book", "After Yule, someone had written in the Book of Shadows Tanya gave you. It wasn't your handwriting.")
+Tanya's book, in your bag. Under "Ground first.", in round, loopy letters that aren't yours: "Book of Shadows. Blessed be. -I" # look: book-of-shadows
 -> gone.after
 
 = wax

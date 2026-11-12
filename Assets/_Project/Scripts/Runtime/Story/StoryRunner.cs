@@ -327,6 +327,21 @@ namespace IAmAsIAm.Runtime.Story
                 devices?.SentWhileAway(S(a[0]), channel, S(a[2]), S(a[3]), GameServices.InGameDay);
                 return null;
             });
+            // The Book of Shadows (owner: Tanya gives it at Yule; only Maya and Izzy practise Wicca).
+            _story.BindExternalFunctionGeneral("gain_book_of_shadows", a => { GameServices.Book?.Give(S(a[0]), GameServices.InGameDay); return null; });
+            _story.BindExternalFunctionGeneral("learn_practice", a =>
+            {
+                if (GameServices.Book?.Practice(S(a[0])) == null) Debug.LogError($"[IAmAsIAm] learn_practice: unknown practice '{a[0]}' (craft.json)");
+                else GameServices.Book.Learn(S(a[0]), S(a[1]), GameServices.InGameDay, _chapterId);
+                return null;
+            });
+            _story.BindExternalFunctionGeneral("bos_entry", a =>
+            {
+                if (!Enum.TryParse<IAmAsIAm.Core.Practices.BookTab>(S(a[1]), true, out var tab)) tab = IAmAsIAm.Core.Practices.BookTab.Notes;
+                GameServices.Book?.Write(tab, S(a[0]), S(a[2]), S(a[3]), GameServices.InGameDay, _chapterId);
+                return null;
+            });
+            _story.BindExternalFunctionGeneral("practised", a => GameServices.Book != null && GameServices.Book.HasLearned(S(a[0])));
             // Hidden memories (owner): only while that alter is fronting at this moment.
             _story.BindExternalFunctionGeneral("fronts", a => S(a[0]) == GameServices.Roster?.FrontingId);
             _story.BindExternalFunctionGeneral("card_prompt", a => GameServices.Practices?.GetCard(S(a[0]))?.reflectionPrompt ?? "");

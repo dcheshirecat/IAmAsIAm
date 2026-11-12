@@ -31,6 +31,10 @@
 //  APPS (owner): gain_app("systemlog") puts SystemLog on her phone (the end of Chapter 4). system_log(<member>, <text>)
 //  leaves a SIGNED note there from that member (the system talking to itself; the player can write notes too).
 //  SHARING TIME (owner): co_conscious(<member>, true/false): an alter is present alongside whoever fronts (co-consciousness).
+//  THE CRAFT (owner): gain_book_of_shadows("tanya") at Yule 2017 puts the Book of Shadows beside the phone.
+//  learn_practice(<craft.json id>, <teacher people id or "">) writes a practice's steps in it; practised(<id>) asks.
+//  bos_entry(<member>, <Practices|Readings|Wheel|Dreams|Notes>, <title>, <text>) writes in it, in that member's hand
+//  (lost time: never pointed out). Only Maya and Izzy practise Wicca (craft.json); for anyone else the Book stays shut.
 //
 //  EXPLORING (owner: little narration). A place is a hub of sticky choices the 3D scene turns into
 //  glowing things to look at, use or talk to:  + [Look: The stone]  + [Use: The phone]  + [Talk: Mira]
@@ -69,6 +73,10 @@ EXTERNAL sent_while_away(member, channel, contact, text)
 EXTERNAL gain_app(app)
 EXTERNAL system_log(member, text)
 EXTERNAL co_conscious(member, present)
+EXTERNAL gain_book_of_shadows(giver)
+EXTERNAL learn_practice(practice, teacher)
+EXTERNAL bos_entry(member, tab, title, text)
+EXTERNAL practised(practice)
 
 === function set_experience(kind, amount) ===
 ~ return
@@ -140,3 +148,19 @@ EXTERNAL co_conscious(member, present)
 // True only while this alter is fronting right now. Use it for hidden memories.
 === function fronts(member) ===
 ~ return member == fronting
+
+// The Book of Shadows (owner: Tanya gives it at Yule, December 2017; only Maya and Izzy practise Wicca).
+=== function gain_book_of_shadows(giver) ===
+~ return
+
+// She learns a practice (an id from craft.json); its steps go in the Book, with who taught her (a people.json id, or "").
+=== function learn_practice(practice, teacher) ===
+~ return
+
+// The story writes in the Book, in someone's hand. tab: Practices, Readings, Wheel, Dreams or Notes.
+=== function bos_entry(member, tab, title, text) ===
+~ return
+
+// Has she ever learned this practice?
+=== function practised(practice) ===
+~ return false

@@ -36,6 +36,7 @@
 * [Use: The chair beside Selene]
 -
 Tanya: Phones off. Thank you. Feet on the floor. We ground first. # vo: ch1-christianity_tanya_0001
+~ learn_practice("circle-casting", "tanya")
 Feet on the floor. Roots. # exercise: feet-on-floor
 ~ nudge(-0.1)
 Tanya: Good. Tonight, three cards each. What was, what is, what could help. And nobody reads their own card out loud until I say so. # vo: ch1-christianity_tanya_0002
@@ -51,6 +52,8 @@ Tanya: Maya. What could help? # vo: ch1-christianity_tanya_0003
     Tanya: Good. Then you'll look, instead of guessing. Look at it again. # vo: ch1-christianity_tanya_0007
 -
 ~ journal("TarotReflection", "My first reading, at Tanya's. What could help: {card_name(tarot_help)}.")
+~ learn_practice("tarot", "tanya")
+~ bos_entry("maya", "Readings", "My first reading", "Three cards at Tanya's. What was: {card_name(tarot_was)}. What is: {card_name(tarot_is)}. What could help: {card_name(tarot_help)}.")
 -> ostara
 
 = ostara
@@ -79,6 +82,7 @@ Selene: Your first sabbat! Okay. Ostara. Spring, balance, eggs, all of it. You p
 -
 Tanya: Water it. Every day. I'll ask. # vo: ch1-christianity_tanya_0011
 ~ journal("Note", "Ostara. A seed in a paper cup. Water it every day.")
+~ bos_entry("maya", "Wheel", "Ostara", "My first sabbat with the coven. Eggs dyed with onion skins. A seed in a paper cup. Water it every day.")
 -> spring_signs
 
 = spring_signs

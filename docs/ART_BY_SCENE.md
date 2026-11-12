@@ -260,7 +260,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `missed-exam`: "PSYCH 216 MIDTERM, 9 AM." Tuesday. Today is Thursday.
 - `yule-flyer`: A flyer, folded in four, at the bottom of your bag. "The Circle. Open Yule circle, December 21st. All welcome."
 - `flyer-go`: "GO." Round letters. Underlined three times.
-- `book-of-shadows`: A new notebook, black, with a moon on the cover. First page: "Book of Shadows. Blessed be. -I"
+- `book-of-shadows`: Tanya's book, in your bag. Under "Ground first.", in round, loopy letters that aren't yours: "Book of Shadows. Blessed be. -I"
 - `wax-fingers`: Candle wax on your fingers, peeled into a little moon.
 - `class-receipt`: A receipt from The Circle. "Intro to the Craft, 8 weeks. PAID."
 - `seedling-dead`: The paper cup from Ostara. A seedling, folded over, dry.
@@ -303,6 +303,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `yule-roots`: Snow under your boots. Roots, going down.
 - `yule-stone`: The stone, cold through your glove.
 - `flame-coming`: Hand to hand. Closer. Somebody's face, lit gold.
+- `bos-gift`: Black cloth, a moon on the cover. First page, in Tanya's square letters: "Ground first."
 
 ### The park: Ostara (`park_ostara`)
 

@@ -23,19 +23,23 @@ The owner's answers (2026-11-12) are marked **(owner)**. Everything else is Clau
   Closed practices are left out: no white sage smudging and no hoodoo. Cleansing uses rosemary, bay, incense, salt or a bell.
 - **How hands-on (owner):** small hands-on steps that **feel like rituals, not games**: slow, quiet, never timed, no score, no
   fail state, no "correct" answer.
-- **Who practises (owner):** only **Maya**, **Izzy** (Wiccan; loves tarot) and **Heather** (lights candles). Everyone else
-  keeps their own religion and **ignores the Wiccan tools or actively despises them**. For example, **Jacob** is a devout
-  Catholic who prays to saints.
-- **The Book of Shadows (owner):** **Tanya gives it to her.**
+- **Who practises (owner):** only **Maya** and **Izzy** (Wiccan; loves tarot). **Heather's candles belong to her own,
+  hidden faith (owner)**: she leaves the Wiccan tools alone. Everyone else keeps their own religion and **ignores the Wiccan
+  tools or actively despises them**. For example, **Jacob** is a devout Catholic who prays to saints. **Each alter with a faith
+  gets a small practice of their own at home (owner)**, done the same calm way.
+- **The Book of Shadows (owner):** **Tanya gives it to her, at Yule, December 2017.**
 - **Can it be hard? (owner):** yes, sometimes. It's mostly comforting, but now and then a practice stirs something up, and lost
   time can leave a practice behind. Content warnings as usual.
 
 ## Proposal
 
 ### 1. The Book of Shadows
-- **When:** Tanya gives it after the Yule circle (December 2017, the end of the Prelude), just before Izzy comes forward. It's a
-  plain cloth-bound book, with one line in Tanya's handwriting on the first page. Before that, Maya has only Selene's tarot deck
-  and a windowsill.
+- **When (owner):** Tanya gives it after the Yule circle (December 2017, the end of the Prelude), just before Izzy comes forward. It's a
+  plain cloth-bound book, with one line in Tanya's handwriting on the first page ("Ground first."). Before that, Maya has only the
+  tarot deck (Izzy's, bought during lost time in Prelude Part 2) and a windowsill. **BUILT (step 1)**: `Core/Practices/BookOfShadows.cs`
+  (data `Resources/Data/craft.json`, save v4 `book`), `Runtime/Practices/BookScreen.cs`, the Ink functions in section 8. In the
+  story: Selene's Samhain teaches the ancestor altar; Tanya's grounding at Yule; the gift after the circle; Izzy writes the first
+  entry (Yule) during the lost night; Chapter 1's first Thursday (circle casting, tarot, the first reading) and Ostara.
 - **Where it lives:** a side icon under the phone, always there once she has it, during exploring and dialogue. It's never shown
   over the Anchor or an interactive moment. It stays hidden in chapters set before she has it (the Prologue and the start of the
   Prelude).
@@ -47,8 +51,8 @@ The owner's answers (2026-11-12) are marked **(owner)**. Everything else is Clau
   - **Dreams:** the dream journal.
   - **Correspondences:** herbs, crystals, colours and runes from `herbs.json`, `crystals.json`, `runes.json` and
     `charms.json`, filled in as she learns them.
-- **Lost time:** after a blackout there can be an entry in someone else's handwriting: Izzy's loopy letters, Heather's round
-  ones. Like the lost-time texts, it's **never pointed out**, but the handwriting is different. Later, once SystemLog exists, the
+- **Lost time:** after a blackout there can be an entry in someone else's handwriting: Izzy's loopy letters (Heather never writes in
+  it). Like the lost-time texts, it's **never pointed out**, but the handwriting is different. Later, once SystemLog exists, the
   alters can sign their entries.
 - **The others:** Jacob and Axel never open it. If the player opens it while one of them fronts, it stays shut with a line in
   their voice. Jacob: "Not touching that." Axel: "Maya's thing. Pass."
@@ -103,16 +107,16 @@ today" (no penalty, no guilt).
 |---|---|---|
 | **Maya** | Wiccan, ex-Quaker | Practises: everything, growing more confident through the game. |
 | **Izzy** | Wiccan | Practises: loves tarot above all, chatty readings, and her own way of shuffling. Leaves readings laid out after lost time. |
-| **Heather** | hidden until later | Lights candles (the tall candle, the lamp room, the diyas). To confirm: is Heather Wiccan, or do her candles belong to her own faith? |
-| **Jacob** | Catholic | Despises it. Won't touch the deck; may put it in a drawer, face down. Prays to saints instead: a holy card, a rosary, St. Michael. |
-| **Nina** | Quaker | Ignores the tools; sits in silence instead. |
-| **Lily** | Quaker | Ignores them (maybe likes the pretty candle, from far away; to confirm). |
+| **Heather** | hidden until later (owner) | Her candles belong to her own faith; she leaves the Wiccan tools alone. Her own practice at home: a single candle, lit in silence (its meaning stays hidden until the owner reveals her faith). |
+| **Jacob** | Catholic | Despises it. Won't touch the deck; may put it in a drawer, face down. His own practice: the rosary, a saint's holy card (St. Michael), a short prayer. |
+| **Nina** | Quaker | Ignores the tools. Her own practice: sitting in silence, as in meeting for worship (waiting in the Light). |
+| **Lily** | Quaker | Ignores them. Her own practice: a short, small silence, and a song ("This Little Light of Mine"?), to confirm. |
 | **Axel** | ex-Quaker, angry at religion | Ignores them ("Maya's thing. Pass."). |
 | **Serena** | no religion | Ignores them. |
 
-The altar's wheel only offers practices to whoever fronts if they practise. For Jacob, Nina, Lily, Axel and Serena, using the
-altar gives a short line or action in character instead of the wheel (Jacob turns the deck face down). **Proposal:** each of them
-gets their own small practice where they are: Jacob's rosary, Nina's silent waiting, and so on. To confirm.
+The altar's wheel only offers Wiccan practices to Maya and Izzy. **Owner: the others with a faith get their own small practice at
+home** (Jacob's rosary, Nina's and Lily's silence, Heather's candle), offered in place of the wheel; Axel and Serena (no religion)
+just get a line in character (Jacob also turns the deck face down).
 
 ### 7. When a practice is hard (owner: sometimes)
 - **A reading too close:** some cards (the Tower, Death, the Five of Cups...) can start a gentle depersonalization the first

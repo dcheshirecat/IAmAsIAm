@@ -58,6 +58,9 @@ namespace IAmAsIAm.Runtime
                 new TraditionJournal(DataLoader.Load<TraditionData>("traditions").traditions),
                 DataLoader.Load<TarotSpreadData>("tarot_spreads"));
 
+            // The Book of Shadows (owner: Tanya gives it at Yule; only Maya and Izzy practise Wicca).
+            GameServices.InitializeBook(new BookOfShadows(DataLoader.Load<CraftData>("craft")));
+
             GameServices.Initialize(
                 new MindModel(initialWindowHalfWidth),
                 new SystemRoster(members.members, members.initialFrontId),

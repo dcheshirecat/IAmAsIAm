@@ -434,10 +434,17 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   tarot, runes, candle magick, amulets/charm bags, sabbats + moons, **more divination** (pendulum, scrying, tea leaves, oracle),
   **circle work** (grounding/centering, casting, quarters, cleansing, meditation), **ancestors + devotion** (ancestor altar,
   offerings, sigils, dream journal); **open practices only** (no white sage, no hoodoo). **Small hands-on steps that feel like
-  rituals, not games** (no timer, score or failure). **Only Maya, Izzy (tarot) and Heather (candles) practise Wicca**; everyone
-  else keeps their own religion and ignores or despises the tools (**Jacob**: devout Catholic, prays to saints). **Tanya gives the
-  Book of Shadows.** Practice **can sometimes be hard** (a reading too close, lost time leaving a reading behind). Not built yet:
-  waiting for the owner's OK on the proposal.
+  rituals, not games** (no timer, score or failure). **Only Maya and Izzy (tarot) practise Wicca**; **Heather's candles are her own hidden
+  faith**; everyone else keeps their own religion and ignores or despises the tools (**Jacob**: devout Catholic, prays to saints), and
+  **each alter with a faith gets a small practice of their own at home** (Jacob's rosary, Nina's/Lily's silence, Heather's candle).
+  **Tanya gives the Book of Shadows at Yule, Dec 2017.** Practice **can sometimes be hard** (a reading too close, lost time leaving a
+  reading behind). **Owner: build it**, in the order in the doc, pushing each step.
+  **Step 1 BUILT:** the Book of Shadows: `Core/Practices/BookOfShadows.cs` (`craft.json`: practices with Maya's steps, `wiccanMemberIds`
+  maya+izzy, a refusal line per other alter; save v4 `book`; tests `BookOfShadowsTests`), `Runtime/Practices/BookScreen.cs` (right-edge
+  icon under the laptop at y 0.30; tabs Practices/Readings/Wheel/Dreams/Notes; Write; entries in the writer's hand, never named; shut
+  with a line for non-Wiccan fronters; hidden while replaying the Prologue/Prelude). Ink: `gain_book_of_shadows(giver)`,
+  `learn_practice(id, teacher)`, `bos_entry(member, tab, title, text)`, `practised(id)`. The gift: Prelude Part 3 after the Yule circle
+  (`prelude-wicca_tanya_0046`); Izzy writes the first (Yule) entry in the lost night.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

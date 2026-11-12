@@ -105,6 +105,13 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 - **Look: The flame coming around the ring**
     - Hand to hand. Closer. Somebody's face, lit gold.
 
+**Tanya:** Here. Everyone gets one after their first circle. A Book of Shadows. Write in it every week. I'll know if you don't.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The book (take it)**
+    - Black cloth, a moon on the cover. First page, in Tanya's square letters: "Ground first."
+
 ## Gone
 
 ...
@@ -131,7 +138,7 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 
 ## Book
 
-A new notebook, black, with a moon on the cover. First page: "Book of Shadows. Blessed be. -I"
+Tanya's book, in your bag. Under "Ground first.", in round, loopy letters that aren't yours: "Book of Shadows. Blessed be. -I"
 
 ## Wax
 

@@ -126,6 +126,7 @@ namespace IAmAsIAm.Runtime.Save
                 chapterUnlocks = runs?.Export() ?? new List<ChapterUnlock>(),
                 chapterRun = run,
                 devices = GameServices.Devices?.Export() ?? new IAmAsIAm.Core.Devices.DevicesState(),
+                book = GameServices.Book?.Export() ?? new IAmAsIAm.Core.Practices.BookOfShadowsState(),
                 header = new SaveSlotHeader
                 {
                     chapterId = run.chapterId,
@@ -171,6 +172,7 @@ namespace IAmAsIAm.Runtime.Save
             GameServices.ChapterRuns?.Restore(data.chapterUnlocks);
             GameServices.ChapterRuns?.RestoreRun(data.chapterRun);
             GameServices.Devices?.Restore(data.devices);
+            GameServices.Book?.Restore(data.book);
 
             runner ??= UnityEngine.Object.FindAnyObjectByType<StoryRunner>();
             if (runner != null && !string.IsNullOrEmpty(data.inkStateJson))

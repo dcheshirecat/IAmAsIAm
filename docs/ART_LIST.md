@@ -158,6 +158,7 @@ Every close-up in the chapters is listed scene by scene in [ART_BY_SCENE.md](ART
 | [ ] | `phone`, `laptop` | Maya's phone and laptop (age 18 on) | Prelude |
 | [ ] | `tarot_deck`, `tarot_card` | The tarot deck (box soft at the corners) and one card mesh (faces are 2D: Part 7) | Prelude |
 | [ ] | `altar_cloth`, `candle`, `chalice`, `bowl`, `wand` | A Wiccan altar | Prelude |
+| [ ] | `book_of_shadows` | Maya's Book of Shadows: black cloth, a crescent moon on the cover, a ribbon (Tanya's gift at Yule) | Prelude |
 | [ ] | `seedling_cup` | The Ostara seedling in a paper cup | Ch 1 |
 | [ ] | `flannel_shirt` | The green and black flannel shirt | Ch 1 |
 | [ ] | `rosary`, `votive_candles` | Catholic chapel things | Ch 1 |
@@ -196,6 +197,7 @@ Face paintings go on the 3D models in the world; portraits sit beside the dialog
 | [ ] | `ui_icon_phone.png`, `ui_icon_laptop.png` | The phone and laptop icons on the right edge | 256 × 256 | Claude |
 | [ ] | `ui_device_phone.png`, `ui_device_laptop.png` (9-slice) | The phone and laptop screens (messages and email) | 1024 × 1536 / 1536 × 1024 | Claude |
 | [ ] | `ui_bubble_mine.png`, `ui_bubble_theirs.png` (9-slice) | Text-message bubbles | 512 × 256 | Claude |
+| [ ] | `ui_icon_book.png`, `ui_book_page.png` (9-slice), `ui_book_cover.png` | The Book of Shadows: its icon on the right edge (under the laptop), a page, and the open cover around it | 256 × 256 / 1024 × 1536 / 1536 × 2048 | Claude |
 | [ ] | `ui_icon_systemlog.png`, `ui_systemlog_note.png` (9-slice) | SystemLog (from the end of Ch 4): its icon and a note card | 256 × 256 / 1024 × 256 | Claude |
 | [ ] | `ui_tree_trunk.png`, `ui_tree_node.png`, `ui_tree_node_next.png`, `ui_tree_leaf.png`, `bg_chapter_tree.png` | The chapter tree (the hub): trunk, chapter node, the next chapter, an alter's leaf (tinted in their colour), background | 64 × 512 / 256 / 256 / 192 / 4440 × 2048 | Claude |
 | [ ] | `ui_banner.png` (9-slice) | The "new message" banner | 1024 × 160 | Claude |

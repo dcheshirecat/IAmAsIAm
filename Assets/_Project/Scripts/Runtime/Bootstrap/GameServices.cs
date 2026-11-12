@@ -34,6 +34,10 @@ namespace IAmAsIAm.Runtime
         public static PreferencesData Preferences { get; private set; }
         /// <summary>Maya's family computer, phone and laptop, with her texts and emails (saved per slot).</summary>
         public static IAmAsIAm.Core.Devices.Devices Devices { get; private set; } = new IAmAsIAm.Core.Devices.Devices();
+        /// <summary>Maya's Book of Shadows (saved per slot). Made from craft.json by <see cref="GameBootstrap"/>.</summary>
+        public static BookOfShadows Book { get; private set; } = new BookOfShadows(new CraftData());
+
+        internal static void InitializeBook(BookOfShadows book) => Book = book ?? new BookOfShadows(new CraftData());
 
         public static int InGameDay { get; set; } = 1;
         /// <summary>Time played in the active save slot (seconds, real time). Shown on the save screen.</summary>
@@ -95,6 +99,7 @@ namespace IAmAsIAm.Runtime
             Triggers = null; Choices = null; Traditions = null; Spreads = null;
             Chapters = null; ChapterRuns = null; Preferences = null;
             Devices = new IAmAsIAm.Core.Devices.Devices();
+            Book = new BookOfShadows(new CraftData());
             InGameDay = 1;
             PlaySeconds = 0f;
             IsReady = false;

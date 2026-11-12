@@ -16,8 +16,8 @@ namespace IAmAsIAm.Core.Save
     [Serializable]
     public sealed class SaveData
     {
-        /// <summary>2: save slots (header, chapter run in progress, play time). 3: devices and messages.</summary>
-        public const int CurrentVersion = 3;
+        /// <summary>2: save slots (header, chapter run in progress, play time). 3: devices and messages. 4: the Book of Shadows.</summary>
+        public const int CurrentVersion = 4;
 
         public int version = CurrentVersion;
         /// <summary>What the save screen shows. Also kept in its own small file (see <see cref="SaveSlots"/>).</summary>
@@ -54,6 +54,9 @@ namespace IAmAsIAm.Core.Save
 
         /// <summary>Maya's age in the scene, her devices, and her texts and emails (v3; empty in older saves).</summary>
         public DevicesState devices = new DevicesState();
+
+        /// <summary>Maya's Book of Shadows: practices learned, readings, sabbats, dreams, notes (v4; empty in older saves).</summary>
+        public IAmAsIAm.Core.Practices.BookOfShadowsState book = new IAmAsIAm.Core.Practices.BookOfShadowsState();
     }
 
     /// <summary>

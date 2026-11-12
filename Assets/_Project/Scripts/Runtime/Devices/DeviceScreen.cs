@@ -76,7 +76,7 @@ namespace IAmAsIAm.Runtime.Devices
             var d = D;
             // Owner: the phone and the laptop are always-usable icons on the side of the screen (once she has them),
             // not only something the story offers.
-            bool usable = d != null && !IsOpen && !Blocked()
+            bool usable = d != null && !IsOpen && !Blocked() && !IAmAsIAm.Runtime.Practices.BookScreen.IsOpen
                           && Save.SaveService.ActiveSlot != 0 && !Save.SaveSlotsScreen.IsOpen && !Loading.LoadingScreen.IsShowing;
             bool phone = usable && d.CanText, laptop = usable && d.Has(DeviceKind.Laptop);
             _phoneButton.SetActive(phone);

@@ -26,6 +26,7 @@ static class InkCheck
     static readonly JsonSerializerOptions Json = new JsonSerializerOptions { IncludeFields = true };
 
     static HashSet<string> _places = new HashSet<string>();
+    static HashSet<string> _craft = new HashSet<string>();
     static HashSet<string> _people, _members, _skills, _practiceSkills, _traditions, _spreads, _charms, _cues;
 
     static int Main(string[] args)
@@ -173,6 +174,22 @@ static class InkCheck
             return null;
         });
         story.BindExternalFunctionGeneral("co_conscious", a => { Check(_members.Contains(S(a[0])), $"co_conscious: unknown member '{a[0]}'"); return null; });
+        // The Book of Shadows: known practices (craft.json), members, tabs.
+        story.BindExternalFunctionGeneral("gain_book_of_shadows", a => { Contact(a[0], "gain_book_of_shadows"); return null; });
+        story.BindExternalFunctionGeneral("learn_practice", a =>
+        {
+            Check(_craft.Contains(S(a[0])), $"learn_practice: unknown practice '{a[0]}' (craft.json)");
+            if (S(a[1]).Length > 0) Contact(a[1], "learn_practice");
+            return null;
+        });
+        story.BindExternalFunctionGeneral("bos_entry", a =>
+        {
+            Check(_members.Contains(S(a[0])), $"bos_entry: unknown member '{a[0]}'");
+            Check(Enum.TryParse<BookTab>(S(a[1]), true, out _), $"bos_entry: unknown tab '{a[1]}' (Practices, Readings, Wheel, Dreams, Notes)");
+            Check(S(a[3]).Trim().Length > 0, "bos_entry: empty entry");
+            return null;
+        });
+        story.BindExternalFunctionGeneral("practised", a => { Check(_craft.Contains(S(a[0])), $"practised: unknown practice '{a[0]}'"); return Rng.Next(2) == 0; });
         story.BindExternalFunctionGeneral("explore_tradition", a => { Check(_traditions.Contains(S(a[0])), $"explore_tradition: unknown tradition '{a[0]}'"); return null; });
         story.BindExternalFunctionGeneral("card_name", a => "The Star");
         story.BindExternalFunctionGeneral("card_prompt", a => "A prompt.");
@@ -224,6 +241,7 @@ static class InkCheck
         _spreads = new HashSet<string>(Load<TarotSpreadData>("tarot_spreads.json").spreads.Select(s => s.id));
         _charms = new HashSet<string>(Load<CharmData>("charms.json").charms.Select(c => c.id));
         _cues = new HashSet<string>(Load<TriggerData>("triggers.json").triggers.SelectMany(t => t.cues));
+        _craft = new HashSet<string>(Load<CraftData>("craft.json").practices.Select(p => p.id));
         _places = new HashSet<string>(Load<IAmAsIAm.Core.Story.PlaceData>("places.json").places.Select(p => p.id));
         using (var people = JsonDocument.Parse(File.ReadAllText(Path.Combine(dataDir, "people.json"))))
             _people = new HashSet<string>(people.RootElement.GetProperty("people").EnumerateArray().Select(p => p.GetProperty("id").GetString()));

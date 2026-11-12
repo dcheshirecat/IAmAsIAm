@@ -113,6 +113,8 @@ Selene: Okay. Lights off. Everyone say a name, if you want to. # vo: prelude-wic
     ~ record_choice("prelude.p1.samhain", "stone", "At Selene's Samhain, you held Mira's stone instead of saying a name.")
     The stone, warm from your hand. # look: stone-warm
 -
+// Selene's Samhain: Maya's first ancestor altar (it goes in the Book of Shadows once Tanya gives it to her).
+~ learn_practice("ancestor-altar", "selene")
 -> call
 
 = call

@@ -91,5 +91,25 @@ namespace IAmAsIAm.Tests
                 Assert.That(p.x >= 0f && p.x <= 1f && p.y >= 0f && p.y <= 1f, Is.True, $"place '{p.id}': map position must be 0..1");
             }
         }
+        [Test]
+        public void Craft_PracticesHaveStepsAndOnlyRealMembersPractise()
+        {
+            var craft = Load<CraftData>("craft.json");
+            var members = new System.Collections.Generic.HashSet<string>(System.Linq.Enumerable.Select(Load<SystemMembersData>("system_members.json").members, m => m.id));
+            var ids = new System.Collections.Generic.HashSet<string>();
+            Assert.That(craft.practices.Count, Is.GreaterThan(0));
+            foreach (var p in craft.practices)
+            {
+                Assert.That(ids.Add(p.id), Is.True, $"practice '{p.id}' is listed twice");
+                Assert.That(string.IsNullOrEmpty(p.name), Is.False, $"practice '{p.id}' needs a name");
+                Assert.That(p.steps.Count, Is.GreaterThan(0), $"practice '{p.id}' needs its steps (they go in the Book of Shadows)");
+            }
+            // Owner: only Maya and Izzy practise Wicca.
+            Assert.That(craft.wiccanMemberIds, Is.EquivalentTo(new[] { "maya", "izzy" }));
+            foreach (var r in craft.refusals) Assert.That(members.Contains(r.memberId), Is.True, $"refusal for unknown member '{r.memberId}'");
+            foreach (var m in members)
+                if (!craft.wiccanMemberIds.Contains(m) && m != "theresa" && m != "holden")
+                    Assert.That(craft.refusals.Exists(r => r.memberId == m), Is.True, $"'{m}' doesn't practise Wicca: give them a line for the closed Book");
+        }
     }
 }

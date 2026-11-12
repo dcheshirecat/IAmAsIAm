@@ -64,6 +64,7 @@ namespace IAmAsIAm.Runtime.Story
         BreathingPacer _pacer;
         Action _onPacerTick;
         IAmAsIAm.Runtime.Devices.DeviceScreen _devices;
+        IAmAsIAm.Runtime.Practices.BookScreen _book;
         StoryWorld _world;
         MapScreen _map;
         ChapterTreeScreen _tree;
@@ -84,6 +85,12 @@ namespace IAmAsIAm.Runtime.Story
             _devices = gameObject.AddComponent<IAmAsIAm.Runtime.Devices.DeviceScreen>();
             // The phone and laptop are always usable (owner), except over the Anchor or an interactive moment.
             _devices.Blocked = () => _anchorOpen || (_action != null && _action.activeSelf);
+            // The Book of Shadows (owner: Tanya gives it at Yule, Dec 2017): an icon under the phone, usable any time.
+            _book = gameObject.AddComponent<IAmAsIAm.Runtime.Practices.BookScreen>();
+            _book.Blocked = () => _anchorOpen || (_action != null && _action.activeSelf);
+            // Not while replaying a chapter from before she had it (the Prologue and the Prelude).
+            _book.Available = () => !runner.IsPlaying
+                || (GameServices.Chapter(runner.ChapterId)?.number ?? int.MaxValue) > (GameServices.Chapter("prelude-wicca")?.number ?? -1);
             // The places the story happens in, to walk around and explore (owner).
             _world = gameObject.AddComponent<StoryWorld>();
             _world.Init(cameraRig != null ? cameraRig.Target : null, () => { if (cameraRig != null) cameraRig.SnapBehind(); });
@@ -103,7 +110,7 @@ namespace IAmAsIAm.Runtime.Story
             _advance.AddBinding("<Keyboard>/enter");
             _advance.AddBinding("<Gamepad>/buttonSouth");
             // Ignore the press that opened this line (Use and Advance share gamepad A).
-            _advance.performed += _ => { if (!_anchorOpen && !IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen && _dialogue.activeSelf && !_choices.activeSelf && Time.frameCount > _lineShownFrame) runner.Next(); };
+            _advance.performed += _ => { if (!_anchorOpen && !IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen && !IAmAsIAm.Runtime.Practices.BookScreen.IsOpen && _dialogue.activeSelf && !_choices.activeSelf && Time.frameCount > _lineShownFrame) runner.Next(); };
 
             // Esc is also the Android back button in the Input System.
             _anchorKey = new InputAction("Anchor", binding: "<Keyboard>/escape");
@@ -230,7 +237,7 @@ namespace IAmAsIAm.Runtime.Story
             if (_triggerPanel.activeSelf && Time.unscaledTime > _triggerHideAt) _triggerPanel.SetActive(false);
 
             bool busy = _anchorOpen || _dialogue.activeSelf || _choices.activeSelf || _action.activeSelf || (runner.IsPlaying && !_exploring)
-                        || IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen || MapScreen.IsOpen || ChapterTreeScreen.IsOpen;
+                        || IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen || IAmAsIAm.Runtime.Practices.BookScreen.IsOpen || MapScreen.IsOpen || ChapterTreeScreen.IsOpen;
             // Saves, the phone and the chapter list still wait for the story, even while exploring.
             IsBusy = busy || runner.IsPlaying;
             busy |= IAmAsIAm.Runtime.Save.SaveSlotsScreen.IsOpen || IAmAsIAm.Runtime.Loading.LoadingScreen.IsShowing;
