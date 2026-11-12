@@ -95,14 +95,23 @@ static class InkCheck
             if (startKnot != null) story.ChoosePathString(startKnot);
 
             int steps = 0;
+            string place = null;
             while (steps++ < 5000)
             {
                 while (story.canContinue)
                 {
                     story.Continue();
-                    foreach (var tag in story.currentTags) CheckTag(tag, label);
+                    foreach (var tag in story.currentTags)
+                    {
+                        CheckTag(tag, label);
+                        if (tag.Trim().StartsWith("place:")) place = tag.Substring(tag.IndexOf(':') + 1).Trim();
+                    }
                 }
                 if (story.currentChoices.Count == 0) break;
+                // Explore choices are walked to in a place (StoryScreen.TryExplore): a chapter must say where it is first.
+                if (startKnot != null && place == null && !label.StartsWith("Drafts/")
+                    && story.currentChoices.Any(c => System.Text.RegularExpressions.Regex.IsMatch(c.text ?? "", @"^(Look|Use|Talk|Go):")))
+                    Problems.Add($"{label}: explore choices (\"{story.currentChoices[0].text}\") before any # place: (nothing to walk around in)");
                 story.ChooseChoiceIndex(rng.Next(story.currentChoices.Count));
             }
             if (steps >= 5000) Problems.Add($"{label}: a playthrough never ended (possible infinite loop).");

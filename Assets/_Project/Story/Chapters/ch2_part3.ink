@@ -54,7 +54,7 @@
 # objective: Find your seat at the seder
 Ruth: You're Maya! Adeena told us nothing, which means she likes you very much. Sit, sit. You're next to Lev. I'm sorry in advance. # vo: ch2-judaism_ruth_0028
 - (family)
-+ {family < 5} [Talk: Lev, her uncle]
++ {family < 5} [Talk: Lev]
     Lev: I don't believe in God, and I'm here every year. Ask me why. It's the people. And the brisket. Mostly the people. # vo: ch2-judaism_lev_0029
     -> family
 + {family < 5} [Talk: Rivka]

@@ -58,6 +58,10 @@ namespace IAmAsIAm.Runtime.Story
         public event Action Ended;
         /// <summary>The goal line changed (# objective:). Empty clears it.</summary>
         public event Action<string> ObjectiveChanged;
+        /// <summary>A <c># place:</c> tag: the character is now somewhere else (the world builds it to explore).</summary>
+        public event Action<string> PlaceChanged;
+        /// <summary>Where the story is right now (the last <c># place:</c>), or null outside a story.</summary>
+        public string Place { get; private set; }
         public string Objective { get; private set; } = "";
 
         public bool IsWaitingForAction => _pending != null;
@@ -117,7 +121,7 @@ namespace IAmAsIAm.Runtime.Story
             }
 
             if (_story.currentChoices.Count > 0) ChoicesReady?.Invoke(_story.currentChoices);
-            else { IsPlaying = false; Ended?.Invoke(); }
+            else { IsPlaying = false; Place = null; Ended?.Invoke(); }
         }
 
         public void Choose(int index)
@@ -156,8 +160,9 @@ namespace IAmAsIAm.Runtime.Story
                 else if (key == "switch") ScriptedSwitch(value);
                 else if (key == "objective") { Objective = value; ObjectiveChanged?.Invoke(value); }
                 else if (key == "maybe-switch") MaybeSwitch(value);
+                else if (key == "place" && value.Length > 0 && value != Place) { Place = value; PlaceChanged?.Invoke(value); }
                 else if (ActionTags.Contains(key)) _pending = new StoryAction { Kind = key, Value = value };
-                // "shot", "place" and "front" are read by the view and camera from line.Tags.
+                // "shot" and "front" are read by the view and camera from line.Tags.
             }
         }
 

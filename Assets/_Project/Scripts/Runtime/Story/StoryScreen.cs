@@ -11,6 +11,7 @@ using IAmAsIAm.Runtime.CameraRig;
 using IAmAsIAm.Runtime.Interaction;
 using IAmAsIAm.Runtime.Player;
 using IAmAsIAm.Runtime.Triggers;
+using IAmAsIAm.Runtime.World;
 using Ink.Runtime;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -63,6 +64,10 @@ namespace IAmAsIAm.Runtime.Story
         BreathingPacer _pacer;
         Action _onPacerTick;
         IAmAsIAm.Runtime.Devices.DeviceScreen _devices;
+        StoryWorld _world;
+        GameObject _pocket;
+        /// <summary>True while the story's explore choices are out in the world: the character can walk to them.</summary>
+        bool _exploring;
 
         void Awake()
         {
@@ -71,6 +76,9 @@ namespace IAmAsIAm.Runtime.Story
             // Maya's phone / computer / laptop (texts and email). Its own canvas, under the Anchor.
             _devices = gameObject.AddComponent<IAmAsIAm.Runtime.Devices.DeviceScreen>();
             _devices.Blocked = () => IsBusy;
+            // The places the story happens in, to walk around and explore (owner).
+            _world = gameObject.AddComponent<StoryWorld>();
+            _world.Init(cameraRig != null ? cameraRig.Target : null, () => { if (cameraRig != null) cameraRig.SnapBehind(); });
 
             _advance = new InputAction("Advance", binding: "<Keyboard>/space");
             _advance.AddBinding("<Keyboard>/enter");
@@ -95,6 +103,7 @@ namespace IAmAsIAm.Runtime.Story
             runner.Started += OnStoryStarted;
             runner.Ended += OnStoryEnded;
             runner.ObjectiveChanged += ShowObjective;
+            runner.PlaceChanged += OnPlace;
             IAmAsIAm.Runtime.Save.SaveService.Loaded += UpdateFrontLabel;
         }
 
@@ -109,6 +118,7 @@ namespace IAmAsIAm.Runtime.Story
             runner.Started -= OnStoryStarted;
             runner.Ended -= OnStoryEnded;
             runner.ObjectiveChanged -= ShowObjective;
+            runner.PlaceChanged -= OnPlace;
             IAmAsIAm.Runtime.Save.SaveService.Loaded -= UpdateFrontLabel;
             PlayerMotor.Blocked = false;
         }
@@ -125,10 +135,14 @@ namespace IAmAsIAm.Runtime.Story
             }
         }
 
+        void OnPlace(string placeId) { if (_world != null) _world.Enter(placeId); }
+
         void OnStoryEnded()
         {
             _dialogue.SetActive(false);
             _choices.SetActive(false);
+            StopExploring();
+            if (_world != null) _world.Leave();
             if (cameraRig != null) cameraRig.SetTalkPartner(null);
         }
 
@@ -152,9 +166,10 @@ namespace IAmAsIAm.Runtime.Story
 
             if (_triggerPanel.activeSelf && Time.unscaledTime > _triggerHideAt) _triggerPanel.SetActive(false);
 
-            bool busy = _anchorOpen || _dialogue.activeSelf || _choices.activeSelf || _action.activeSelf || runner.IsPlaying
+            bool busy = _anchorOpen || _dialogue.activeSelf || _choices.activeSelf || _action.activeSelf || (runner.IsPlaying && !_exploring)
                         || IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen;
-            IsBusy = busy;
+            // Saves, the phone and the chapter list still wait for the story, even while exploring.
+            IsBusy = busy || runner.IsPlaying;
             busy |= IAmAsIAm.Runtime.Save.SaveSlotsScreen.IsOpen || IAmAsIAm.Runtime.Loading.LoadingScreen.IsShowing;
             PlayerMotor.Blocked = busy;
             _tap.SetActive(_dialogue.activeSelf && !_choices.activeSelf && !_anchorOpen);
@@ -163,7 +178,7 @@ namespace IAmAsIAm.Runtime.Story
             // Chapters (owner: the story is in the game). The list opens by itself when a new game starts and after a chapter
             // ends; the Chapters button opens it any time nothing else is going on.
             bool inGame = IAmAsIAm.Runtime.Save.SaveService.ActiveSlot != 0;
-            _chaptersButton.SetActive(inGame && !busy);
+            _chaptersButton.SetActive(inGame && !busy && !runner.IsPlaying);
             var runs = GameServices.ChapterRuns;
             if (inGame && !busy && runs != null && !runs.InChapter)
             {
@@ -187,15 +202,24 @@ namespace IAmAsIAm.Runtime.Story
         void ShowLine(StoryLine line)
         {
             _choices.SetActive(false);
+            StopExploring();
             _dialogue.SetActive(true);
             _lineShownFrame = Time.frameCount;
             _speaker.text = line.Speaker == null ? "" : line.Inner ? line.Speaker + " (inside)" : line.Speaker;
+            // Whoever speaks is standing here, and the camera turns to them (not the system's own voices: that's the body).
+            if (line.Speaker != null && !line.Inner && _world != null && !IsSystemMember(line.Speaker))
+            {
+                var person = _world.Person(line.Speaker);
+                if (person != null) OnStoryStarted(person);
+            }
             _line.fontStyle = line.Inner ? FontStyle.Italic : FontStyle.Normal;
             _line.text = line.Text;
         }
 
         void ShowChoices(List<Choice> choices)
         {
+            StopExploring();
+            if (TryExplore(choices)) return;
             Clear(_choices.transform);
             _choices.SetActive(true);
             for (int i = 0; i < choices.Count; i++)
@@ -203,6 +227,92 @@ namespace IAmAsIAm.Runtime.Story
                 int index = i;
                 Button(_choices.transform, choices[i].text, () => { _choices.SetActive(false); runner.Choose(index); }, 120);
             }
+        }
+
+        // ── Exploring (owner: explore the world, not just dialogue) ──────────────
+
+        static readonly System.Text.RegularExpressions.Regex WorldChoice =
+            new System.Text.RegularExpressions.Regex(@"^(Look|Use|Talk|Go):\s*(.+?)(?:\s*\(([^()]*)\))?\s*$");
+
+        /// <summary>Things the character carries (her phone, her keys, Mira's stone): a button, not a place in the world.</summary>
+        static bool Carried(string target)
+        {
+            string t = target.ToLowerInvariant();
+            return t.StartsWith("your ") || t.StartsWith("mira's stone") || t.StartsWith("mira's napkin");
+        }
+
+        /// <summary>
+        /// When the choices are things to explore (Look / Use / Talk / Go, each at a different thing), they go out into the
+        /// place: the character walks to them. Things she carries and "Wait" become small buttons at the bottom. Anything
+        /// else (what to say, how to answer) stays a list of choices on screen.
+        /// </summary>
+        bool TryExplore(List<Choice> choices)
+        {
+            if (_world == null || string.IsNullOrEmpty(_world.Place)) return false;
+            var offers = new List<StoryWorld.Offer>();
+            var pocket = new List<(int index, string text)>();
+            var seen = new HashSet<string>();
+            for (int i = 0; i < choices.Count; i++)
+            {
+                string text = (choices[i].text ?? "").Trim();
+                var m = WorldChoice.Match(text);
+                if (m.Success)
+                {
+                    string verb = m.Groups[1].Value, target = m.Groups[2].Value.Trim(), detail = m.Groups[3].Value.Trim();
+                    // Things she carries, and saying something ("Talk: Say Mira's name"), are buttons, not places to walk to.
+                    if (Carried(target) || (verb == "Talk" && target.StartsWith("Say "))) { pocket.Add((i, text)); continue; }
+                    string key = target.ToLowerInvariant();
+                    if (key == "mom" || key == "mommy") key = "sarah";
+                    if (!seen.Add(key)) return false; // Two ways to answer the same person: a dialogue choice.
+                    offers.Add(new StoryWorld.Offer { index = i, verb = verb, target = target, label = detail.Length > 0 ? $"{target} ({detail})" : target });
+                }
+                else if (text.StartsWith("Wait")) pocket.Add((i, text));
+                else return false;
+            }
+            if (offers.Count == 0) return false;
+
+            _dialogue.SetActive(false);
+            _choices.SetActive(false);
+            _exploring = true;
+            if (cameraRig != null) cameraRig.SetTalkPartner(null);
+            _world.ShowOffers(offers, ChooseFromWorld);
+
+            Clear(_pocket.transform);
+            foreach (var p in pocket)
+            {
+                int index = p.index;
+                Button(_pocket.transform, p.text, () => ChooseFromWorld(index, null, ""), 130);
+            }
+            _pocket.SetActive(pocket.Count > 0);
+            return true;
+        }
+
+        void ChooseFromWorld(int index, Transform spot, string verb)
+        {
+            if (!_exploring || _anchorOpen) return;
+            StopExploring();
+            if (verb == "Talk" && spot != null && cameraRig != null)
+            {
+                cameraRig.SetTalkPartner(spot);
+                OnStoryStarted(spot); // They turn to face the character.
+            }
+            runner.Choose(index);
+        }
+
+        static bool IsSystemMember(string name)
+        {
+            var roster = GameServices.Roster;
+            if (roster == null) return false;
+            foreach (var m in roster.Members)
+                if (string.Equals(m.displayName, name, StringComparison.OrdinalIgnoreCase) || string.Equals(m.id, name, StringComparison.OrdinalIgnoreCase)) return true;
+            return false;
+        }
+
+        void StopExploring()
+        {
+            _exploring = false;
+            if (_world != null) _world.Dim();
+            if (_pocket != null) _pocket.SetActive(false);
         }
 
         void UpdateFrontLabel()
@@ -567,6 +677,13 @@ namespace IAmAsIAm.Runtime.Story
             _tap = Panel(_root, "Tap", new Color(0, 0, 0, 0), Vector2.zero, Vector2.one);
             _tap.AddComponent<Button>().onClick.AddListener(() => { if (!_anchorOpen && !_choices.activeSelf && !_action.activeSelf) runner.Next(); });
             _tap.SetActive(false);
+
+            // Things she carries, and "Wait", while exploring: small buttons, bottom middle (above the look pad).
+            _pocket = Panel(_root, "Pocket", new Color(0, 0, 0, 0), new Vector2(0.3f, 0.03f), new Vector2(0.72f, 0.14f));
+            var plg = _pocket.AddComponent<HorizontalLayoutGroup>();
+            plg.spacing = 24; plg.childControlWidth = true; plg.childForceExpandWidth = true; plg.childControlHeight = false;
+            plg.childAlignment = TextAnchor.LowerCenter;
+            _pocket.SetActive(false);
 
             _prompt = Label(_root, "Prompt", 54, FontStyle.Bold, new Vector2(0.3f, 0.34f), new Vector2(0.7f, 0.42f));
             _prompt.alignment = TextAnchor.MiddleCenter;
