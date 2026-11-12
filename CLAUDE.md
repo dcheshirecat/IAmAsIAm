@@ -380,6 +380,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   "SystemLog" tab on the phone lists notes newest first, each SIGNED by its member in their colour (unlike lost-time messages,
   which are never pointed out); "Write" posts a note as whoever is fronting (an InputField, 500 characters). The story can leave
   notes with `system_log(member, text)`. Saved in `DevicesState.apps` / `systemLog`. Hidden while replaying chapters before Ch 4.
+- 2026-11-12: **App icon still not showing (owner).** `BuildTools.ApplyAppIcon` now runs at configure time AND right before the
+  player build (`AppIconBeforeBuild`, IPreprocessBuildWithReport, like Seven Witches' AppIconSetter), forces the import settings
+  (Default, uncompressed, readable, no mipmaps), and writes a report (`build/icon_report.txt`: default icon set?, each Android icon
+  kind and how many sizes got the texture) that the workflow puts on the run's Summary ("App icon"). Check it if the icon is
+  still wrong. Android launchers can also keep an old icon cached after an in-place update: uninstall once, or restart the phone.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

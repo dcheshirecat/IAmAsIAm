@@ -109,30 +109,50 @@ namespace IAmAsIAm.EditorTools
         /// Uses Art/UI/app_icon.png as the default icon for every platform. It's a temporary "TEST" icon; the artist
         /// replaces it by overwriting the file (same name, 1024 × 1024, keep the important part in the middle ~70%).
         /// </summary>
-        static void SetAppIcon()
+        static void SetAppIcon() => ApplyAppIcon();
+
+        /// <summary>Where the last icon report goes (the CI workflow puts it on the run's Summary page).</summary>
+        const string IconReportPath = "build/icon_report.txt";
+
+        /// <summary>
+        /// Sets the app icon everywhere and returns (and saves) a short report of what was set. Called when the project is
+        /// configured AND again right before the player is built (<see cref="AppIconBeforeBuild"/>), the way Seven Witches'
+        /// AppIconSetter does, so nothing in between can undo it.
+        /// </summary>
+        public static string ApplyAppIcon()
         {
             const string iconPath = "Assets/_Project/Art/UI/app_icon.png";
-            if (!File.Exists(iconPath)) { Debug.LogWarning("[IAmAsIAm] No app icon at " + iconPath); return; }
-            AssetDatabase.ImportAsset(iconPath, ImportAssetOptions.ForceUpdate);
-            if (AssetImporter.GetAtPath(iconPath) is TextureImporter importer &&
-                (importer.textureCompression != TextureImporterCompression.Uncompressed || importer.mipmapEnabled))
-            {
-                importer.textureCompression = TextureImporterCompression.Uncompressed;
-                importer.mipmapEnabled = false;
-                importer.npotScale = TextureImporterNPOTScale.None;
-                importer.SaveAndReimport();
-            }
-            var icon = AssetDatabase.LoadAssetAtPath<Texture2D>(iconPath);
-            if (icon == null) { Debug.LogWarning("[IAmAsIAm] Couldn't load the app icon."); return; }
-            PlayerSettings.SetIcons(NamedBuildTarget.Unknown, new[] { icon }, IconKind.Any);
-
-            // Android: set every icon kind (legacy, round, adaptive), so every launcher shows it instead of Unity's default.
-            // Adaptive icons get the same picture on both layers: its important part is in the middle, inside the safe zone.
-            // Never fails a build over the icon (as in Seven Witches' AppIconSetter).
+            var report = new System.Text.StringBuilder();
             try
             {
+                if (!File.Exists(iconPath)) { report.AppendLine("No app icon at " + iconPath); return Report(report); }
+                AssetDatabase.ImportAsset(iconPath, ImportAssetOptions.ForceUpdate);
+                if (AssetImporter.GetAtPath(iconPath) is TextureImporter importer &&
+                    (importer.textureType != TextureImporterType.Default || importer.textureCompression != TextureImporterCompression.Uncompressed
+                     || importer.mipmapEnabled || importer.npotScale != TextureImporterNPOTScale.None || !importer.isReadable))
+                {
+                    importer.textureType = TextureImporterType.Default;
+                    importer.textureCompression = TextureImporterCompression.Uncompressed;
+                    importer.mipmapEnabled = false;
+                    importer.npotScale = TextureImporterNPOTScale.None;
+                    importer.isReadable = true;
+                    importer.SaveAndReimport();
+                    report.AppendLine("Icon import settings fixed (uncompressed, readable, no mipmaps).");
+                }
+                var icon = AssetDatabase.LoadAssetAtPath<Texture2D>(iconPath);
+                if (icon == null) { report.AppendLine("Couldn't load the app icon texture."); return Report(report); }
+                report.AppendLine($"Icon: {iconPath} ({icon.width} x {icon.height})");
+
+                PlayerSettings.SetIcons(NamedBuildTarget.Unknown, new[] { icon }, IconKind.Any);
+                var defaults = PlayerSettings.GetIcons(NamedBuildTarget.Unknown, IconKind.Any);
+                report.AppendLine($"Default icon set: {(defaults != null && defaults.Length > 0 && defaults[0] == icon ? "yes" : "NO")}");
+
+                // Android: every icon kind (legacy, round, adaptive), so every launcher shows it instead of Unity's default.
+                // Adaptive icons get the same picture on both layers: its important part is in the middle, in the safe zone.
 #pragma warning disable CS0618
-                foreach (var kind in PlayerSettings.GetSupportedIconKindsForPlatform(BuildTargetGroup.Android))
+                var kinds = PlayerSettings.GetSupportedIconKindsForPlatform(BuildTargetGroup.Android);
+                report.AppendLine($"Android icon kinds: {kinds.Length}");
+                foreach (var kind in kinds)
                 {
                     var icons = PlayerSettings.GetPlatformIcons(BuildTargetGroup.Android, kind);
                     foreach (var platformIcon in icons)
@@ -141,13 +161,32 @@ namespace IAmAsIAm.EditorTools
                         else platformIcon.SetTexture(icon);
                     }
                     PlayerSettings.SetPlatformIcons(BuildTargetGroup.Android, kind, icons);
+                    var check = PlayerSettings.GetPlatformIcons(BuildTargetGroup.Android, kind);
+                    int set = check.Count(i => i.GetTexture() != null);
+                    report.AppendLine($"  {kind}: {set} of {check.Length} sizes set");
                 }
 #pragma warning restore CS0618
+                AssetDatabase.SaveAssets();
             }
             catch (Exception e)
             {
-                Debug.LogWarning("[IAmAsIAm] Android icons not set (the default icon is used): " + e.Message);
+                // Never fail a build over the icon.
+                report.AppendLine("Android icons not set (the default icon is used): " + e.Message);
             }
+            return Report(report);
+        }
+
+        static string Report(System.Text.StringBuilder report)
+        {
+            string text = report.ToString();
+            Debug.Log("[IAmAsIAm] App icon:\n" + text);
+            try
+            {
+                Directory.CreateDirectory(Path.GetDirectoryName(IconReportPath));
+                File.WriteAllText(IconReportPath, text);
+            }
+            catch (Exception) { }
+            return text;
         }
 
         // ── Scene ────────────────────────────────────────────────────────────────
@@ -485,5 +524,12 @@ namespace IAmAsIAm.EditorTools
             int i = Array.IndexOf(args, name);
             return i >= 0 && i + 1 < args.Length ? args[i + 1] : null;
         }
+    }
+
+    /// <summary>Sets the app icon again right before every player build (also builds started from Unity's own menu).</summary>
+    public sealed class AppIconBeforeBuild : IPreprocessBuildWithReport
+    {
+        public int callbackOrder => 0;
+        public void OnPreprocessBuild(BuildReport report) => BuildTools.ApplyAppIcon();
     }
 }

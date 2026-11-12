@@ -215,6 +215,16 @@ jobs:
         run: |
           echo "### Every build try failed" >> "$GITHUB_STEP_SUMMARY"
           exit 1
+      # What the build set as the app icon (BuildTools.ApplyAppIcon writes it), on the Summary page.
+      - name: App icon report
+        if: always()
+        run: |
+          {
+            echo "## App icon"
+            echo '```'
+            cat build/icon_report.txt 2>/dev/null || echo "No icon report (the build didn't get that far)."
+            echo '```'
+          } | tee -a "$GITHUB_STEP_SUMMARY"
       # Puts the findings on the run's Summary page (easy to read on a phone), pass or fail.
       - name: Memory log
         if: always()
