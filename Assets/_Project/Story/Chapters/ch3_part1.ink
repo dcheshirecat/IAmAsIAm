@@ -128,6 +128,9 @@ Angie: Tanya said you've been losing time. Can you tell me what that's like? Sta
 Angie: It makes sense. Thank you for telling me. Before we go further: can you feel your feet on the floor? Let's start there. # vo: ch3-buddhism_angie_0019
 Feet on the floor. The chair holding you. # exercise: five-senses
 ~ learn_skill("five-senses")
+// Owner: herbs and stones from different people (Claude's list, owner: "yes"). No new voiced lines.
+On your way out, Angie holds out the bowl by the door. Worry stones. You take a hematite one: heavy, cool, smooth. For the train home. # look: angie-hematite
+~ gain_stone("hematite", "angie")
 -> weeks
 
 = weeks

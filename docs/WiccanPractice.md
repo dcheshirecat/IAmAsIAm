@@ -173,6 +173,30 @@ These are proposals for the writing tools. Claude adds them when building.
    Tanya texts how to cleanse; "Use: The window" = `# ritual: cleansing hard` (the windowsill where the Friday candles stood).
    Chapter 5 Part 1, Seattle: Tanya texts "cleanse it before the boxes"; "Use: The doorway" = `# ritual: cleansing`. Chicago's
    move-in isn't played (Chapter 2 starts three years in), so there's no Chicago cleansing.
+   **Herbs and stones (owner):** Maya gains them **from different people through the game**, and they go in her charm bags;
+   she can also **find** some; **Mira's stone can go in a bag** (as "from Mira": a wishing stone). Each has a researched
+   meaning: herbs.json `charmMeaning` (the folk association: rosemary for remembrance, bay for victory and storms, rowan for
+   protection, calendula "Mary's gold"...), crystals.json `history` (documented history: hematite from Greek haima, amethyst
+   "not drunk", jet and Victorian mourning, amber and Jūratė, labradorite's Inuit story...) and `charmMeaning` (modern crystal
+   lore, shown as "crystal lore, not proven"). New: bay, jet, amber, Mira's stone. `BookOfShadows.Ingredients` (saved, with the
+   giver); the charm bag offers ONLY what she has, each labelled with its meaning and who gave it; no herb or no stone = no
+   charm bag on the altar. The Book's new **"Herbs & stones"** page lists them with their folklore/history and giver. Ink
+   `gain_herb(id, giver)`, `gain_stone(id, giver)` ("" = found); `gift_charm_bag` now takes ids and adds both.
+   **Who gives what (Claude's list, owner: "yes"; narration only, no new voiced lines):**
+
+   | When | From | What |
+   |---|---|---|
+   | Prologue, Sunday 3 (2009) | Mira | Mira's stone |
+   | Prelude Part 1, Samhain 2016 | Selene | rosemary, jet |
+   | Prelude Part 3, Yule 2017 | Tanya | bay, amber (in the Book's cover) |
+   | Ch 1 Part 3, the coat drive | Gracie | calendula, from the ministry garden |
+   | Ch 1 Part 3, Samhain 2019 | Selene | lavender, smoky quartz (her charm bag) |
+   | Ch 2 Part 4, after the breakup | Christie | chamomile tea bags, "For the bad nights" |
+   | Ch 2 Part 4, the lake path | found | yarrow |
+   | Ch 3 Part 1, Angie's office | Angie | a hematite worry stone |
+   | Ch 4 Part 2, the café | Reneé | rose quartz |
+   | Ch 5 Part 1, moving in | Tanya (by post) | moonstone |
+   | Ch 5 Part 1, moving in | found | rowan |
 4. The other divination practices, the ancestor altar, offerings, sigils, the dream journal.
 5. The Wheel of the Year and the moons in the calendar; Tanya's sabbat texts.
 6. Alter responses and lost-time traces; hard moments.

@@ -92,6 +92,8 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Use: Mira's stone**
     - The stone, warm from your hand.
 
+Selene tucks a sprig of rosemary and a little black stone into your hand. Rosemary for remembering. Jet, for the people you've lost.
+
 ## Call
 
 **Explore** (glowing things; the player picks):

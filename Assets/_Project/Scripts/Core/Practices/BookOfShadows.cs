@@ -51,6 +51,22 @@ namespace IAmAsIAm.Core.Practices
         public List<string> charmAdderIds = new List<string>();
     }
 
+    /// <summary>
+    /// A herb or a stone Maya has (owner: she gains them from different people through the game, and they can go in a
+    /// charm bag). Who gave it is kept and shown ("from Selene").
+    /// </summary>
+    [Serializable]
+    public sealed class CharmIngredient
+    {
+        /// <summary>"herb" (herbs.json) or "stone" (crystals.json).</summary>
+        public string kind;
+        public string id;
+        /// <summary>A people.json id, or "" if she found or bought it herself.</summary>
+        public string giverId;
+        public int day;
+        public string chapterId;
+    }
+
     /// <summary>One thing that turned up in the charm bag. Who put it there is saved, never shown.</summary>
     [Serializable]
     public sealed class CharmBagAddition
@@ -87,8 +103,8 @@ namespace IAmAsIAm.Core.Practices
         public string meaning;
     }
 
-    /// <summary>The Book of Shadows' tabs.</summary>
-    public enum BookTab { Practices, Readings, Wheel, Dreams, Notes }
+    /// <summary>The Book of Shadows' tabs. Shelf = the herbs and stones she has (what they mean, who gave them); nothing is written there.</summary>
+    public enum BookTab { Practices, Readings, Wheel, Dreams, Notes, Shelf }
 
     [Serializable]
     public sealed class LearnedPractice
@@ -126,6 +142,7 @@ namespace IAmAsIAm.Core.Practices
         public List<BookEntry> entries = new List<BookEntry>();
         public int nextId = 1;
         public CharmBagState charmBag = new CharmBagState();
+        public List<CharmIngredient> ingredients = new List<CharmIngredient>();
     }
 
     /// <summary>
@@ -231,6 +248,27 @@ namespace IAmAsIAm.Core.Practices
 
         public CharmBagState CharmBag { get; private set; } = new CharmBagState();
 
+        readonly List<CharmIngredient> _ingredients = new List<CharmIngredient>();
+
+        /// <summary>The herbs and stones she has, in the order she got them.</summary>
+        public IReadOnlyList<CharmIngredient> Ingredients => _ingredients;
+
+        public bool HasIngredient(string kind, string id) => _ingredients.Any(i => i.kind == kind && i.id == id);
+
+        public List<CharmIngredient> IngredientsOf(string kind) => _ingredients.Where(i => i.kind == kind).ToList();
+
+        /// <summary>Someone gives her a herb or a stone (or she finds one). Returns true if it's new to her.</summary>
+        public bool GainIngredient(string kind, string id, string giverId, int day, string chapterId = "")
+        {
+            if ((kind != "herb" && kind != "stone") || string.IsNullOrEmpty(id) || HasIngredient(kind, id)) return false;
+            _ingredients.Add(new CharmIngredient { kind = kind, id = id, giverId = giverId ?? "", day = day, chapterId = chapterId ?? "" });
+            Changed?.Invoke();
+            return true;
+        }
+
+        /// <summary>A charm bag needs at least one herb and one stone she has been given.</summary>
+        public bool CanMakeCharmBag => _ingredients.Any(i => i.kind == "herb") && _ingredients.Any(i => i.kind == "stone");
+
         /// <summary>She made a new charm bag (it replaces the old one) and put it in her pocket.</summary>
         public void MakeCharmBag(string herb, string stone, string own, string intent, int day)
         {
@@ -299,6 +337,7 @@ namespace IAmAsIAm.Core.Practices
         public BookOfShadowsState Export() => new BookOfShadowsState
         {
             charmBag = CharmBag,
+            ingredients = _ingredients.ToList(),
             has = Has,
             givenById = GivenById,
             learned = _learned.ToList(),
@@ -315,6 +354,8 @@ namespace IAmAsIAm.Core.Practices
             _nextId = 1;
             CharmBag = state?.charmBag ?? new CharmBagState();
             CharmBag.added ??= new List<CharmBagAddition>();
+            _ingredients.Clear();
+            if (state?.ingredients != null) _ingredients.AddRange(state.ingredients.Where(i => i != null && !string.IsNullOrEmpty(i.id)));
             if (state != null)
             {
                 _learned.AddRange((state.learned ?? new List<LearnedPractice>()).Where(l => l != null && !string.IsNullOrEmpty(l.practiceId)));

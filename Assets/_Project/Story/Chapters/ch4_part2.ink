@@ -93,6 +93,9 @@ Reneé: She saw. I'm so sorry I never said. I was sixteen, and then I was gone, 
     Reneé's hand on yours, on the table, until the coffee is cold. # look: renee-hand
 -
 ~ journal("Note", "Reneé heard Mira tell Mom. Mom said I was \"very independent\". Mira saw.")
+// Owner: herbs and stones from different people (Claude's list, owner: "yes"). No new voiced lines.
+Reneé leaves something pink on the table by your cup: a rose quartz, the size of a thumb. She gives one to every friend who's had a bad year. # look: renee-rose-quartz
+~ gain_stone("rose-quartz", "renee_carter")
 ~ text_from("renee_carter", "I'm at my hotel. Text me if you need anything tonight. Anything. I mean it.")
 -> home
 

@@ -119,6 +119,13 @@ namespace IAmAsIAm.Tests
             foreach (var id in craft.charmStoneIds) Assert.That(stones, Has.Member(id), $"charm stone '{id}'");
             foreach (var id in System.Linq.Enumerable.Concat(craft.charmRemoverIds, craft.charmAdderIds)) Assert.That(members.Contains(id), Is.True, id);
             Assert.That(craft.charmOwnThings.Count, Is.GreaterThan(0));
+            // Owner: every herb and stone has a researched meaning; stones also have their history.
+            foreach (var h in Load<HerbData>("herbs.json").herbs) Assert.That(string.IsNullOrWhiteSpace(h.charmMeaning), Is.False, $"herb '{h.id}' has no charmMeaning");
+            foreach (var c in Load<CrystalData>("crystals.json").crystals)
+            {
+                Assert.That(string.IsNullOrWhiteSpace(c.charmMeaning), Is.False, $"stone '{c.id}' has no charmMeaning");
+                Assert.That(string.IsNullOrWhiteSpace(c.history), Is.False, $"stone '{c.id}' has no history");
+            }
             Assert.That(craft.charmAdditions.Count, Is.GreaterThan(0));
             foreach (var id in RitualSession.Supported) Assert.That(craft.practices.Exists(p => p.id == id), Is.True, $"ritual '{id}' has no practice in craft.json");
         }

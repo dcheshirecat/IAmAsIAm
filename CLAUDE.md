@@ -461,6 +461,12 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   breakup = Ch 2 Part 4, `# ritual: cleansing hard`), **casting a circle** (its own ritual AND "Cast a circle first?" before any
   altar ritual once learned). Selene gives a charm bag at Ch 1 Part 3's Samhain (`gift_charm_bag`); Tanya texts runes and
   cleansing (no new voiced lines). Details: docs/WiccanPractice.md §9.
+  **Herbs and stones (owner):** gained **from different people** (and sometimes **found**); only what she has goes in a charm bag,
+  labelled with its researched meaning and giver; **Mira's stone can go in a bag** (a wishing stone, "from Mira"). Data:
+  herbs.json `charmMeaning`, crystals.json `history` + `charmMeaning` (+ bay, jet, amber, miras-stone). Book page "Herbs & stones".
+  Ink `gain_herb(id, giver)` / `gain_stone(id, giver)` (giver "" = found). The gifts (Claude's list, owner: "yes"): Mira (her stone,
+  Sunday 3), Selene (rosemary + jet, Samhain 2016; lavender + smoky quartz, 2019), Tanya (bay + amber at Yule; moonstone by post,
+  Seattle), Gracie (calendula), Christie (chamomile), Angie (hematite), Reneé (rose quartz); found: yarrow (Chicago lake path), rowan (Seattle).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

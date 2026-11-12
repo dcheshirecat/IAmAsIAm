@@ -132,6 +132,9 @@ Tanya: Here. Everyone gets one after their first circle. A Book of Shadows. Writ
     ~ gain_book_of_shadows("tanya")
     ~ record_choice("prelude.p3.book", "taken", "After the Yule circle, Tanya gave you a Book of Shadows.")
     Black cloth, a moon on the cover. First page, in Tanya's square letters: "Ground first." # look: bos-gift
+    Tucked inside the cover: three dry bay leaves and a bead of amber, warm as a hand. For the sun coming back. # look: bos-bay-amber
+    ~ gain_herb("bay", "tanya")
+    ~ gain_stone("amber", "tanya")
 -
 ~ set_experience("TimeLoss", 1.0)
 -> gone

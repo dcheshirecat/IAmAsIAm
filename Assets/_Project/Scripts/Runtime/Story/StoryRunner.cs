@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using IAmAsIAm.Core.Mind;
 using IAmAsIAm.Core.PluralSystem;
 using IAmAsIAm.Core.Story;
@@ -331,9 +332,18 @@ namespace IAmAsIAm.Runtime.Story
             _story.BindExternalFunctionGeneral("gain_book_of_shadows", a => { GameServices.Book?.Give(S(a[0]), GameServices.InGameDay); return null; });
             _story.BindExternalFunctionGeneral("gift_charm_bag", a =>
             {
-                GameServices.Book?.MakeCharmBag(S(a[1]), S(a[2]), "made for you", S(a[3]), GameServices.InGameDay);
+                var lib = GameServices.Practices;
+                var book = GameServices.Book;
+                if (book == null) return null;
+                string herb = lib?.Herbs.FirstOrDefault(h => h.id == S(a[1]))?.commonName ?? S(a[1]);
+                string stone = lib?.Crystals.FirstOrDefault(c => c.id == S(a[2]))?.name ?? S(a[2]);
+                book.GainIngredient("herb", S(a[1]), S(a[0]), GameServices.InGameDay, _chapterId);
+                book.GainIngredient("stone", S(a[2]), S(a[0]), GameServices.InGameDay, _chapterId);
+                book.MakeCharmBag(herb, stone, "made for you", S(a[3]), GameServices.InGameDay);
                 return null;
             });
+            _story.BindExternalFunctionGeneral("gain_herb", a => { GameServices.Book?.GainIngredient("herb", S(a[0]), S(a[1]), GameServices.InGameDay, _chapterId); return null; });
+            _story.BindExternalFunctionGeneral("gain_stone", a => { GameServices.Book?.GainIngredient("stone", S(a[0]), S(a[1]), GameServices.InGameDay, _chapterId); return null; });
             _story.BindExternalFunctionGeneral("learn_practice", a =>
             {
                 if (GameServices.Book?.Practice(S(a[0])) == null) Debug.LogError($"[IAmAsIAm] learn_practice: unknown practice '{a[0]}' (craft.json)");

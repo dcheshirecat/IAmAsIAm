@@ -112,6 +112,8 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 Feet on the floor. The chair holding you. _(the player does the "five-senses" exercise here)_
 
+On your way out, Angie holds out the bowl by the door. Worry stones. You take a hematite one: heavy, cool, smooth. For the train home.
+
 ## Weeks
 
 **Explore** (glowing things; the player picks):

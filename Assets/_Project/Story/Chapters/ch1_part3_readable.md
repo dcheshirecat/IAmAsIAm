@@ -51,6 +51,8 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
     - **Maya:** I have to go, sorry.
     - **Gracie:** Take one for the road! Hold on. Two marshmallows. Okay, three.
 
+Gracie drops a paper twist into your coat pocket: dried calendula, from the ministry garden. Mary's gold, she calls it.
+
 **Explore** (glowing things; the player picks):
 
 - **Look: The chapel door**

@@ -27,6 +27,7 @@ static class InkCheck
 
     static HashSet<string> _places = new HashSet<string>();
     static HashSet<string> _craft = new HashSet<string>();
+    static HashSet<string> _herbs = new HashSet<string>(), _stones = new HashSet<string>();
     static HashSet<string> _people, _members, _skills, _practiceSkills, _traditions, _spreads, _charms, _cues;
 
     static int Main(string[] args)
@@ -179,9 +180,12 @@ static class InkCheck
         story.BindExternalFunctionGeneral("gift_charm_bag", a =>
         {
             Contact(a[0], "gift_charm_bag");
-            Check(S(a[1]).Trim().Length > 0 && S(a[2]).Trim().Length > 0, "gift_charm_bag: herb and stone");
+            Check(_herbs.Contains(S(a[1])), $"gift_charm_bag: unknown herb '{a[1]}' (herbs.json)");
+            Check(_stones.Contains(S(a[2])), $"gift_charm_bag: unknown stone '{a[2]}' (crystals.json)");
             return null;
         });
+        story.BindExternalFunctionGeneral("gain_herb", a => { Check(_herbs.Contains(S(a[0])), $"gain_herb: unknown herb '{a[0]}' (herbs.json)"); if (S(a[1]).Length > 0) Contact(a[1], "gain_herb"); return null; });
+        story.BindExternalFunctionGeneral("gain_stone", a => { Check(_stones.Contains(S(a[0])), $"gain_stone: unknown stone '{a[0]}' (crystals.json)"); if (S(a[1]).Length > 0) Contact(a[1], "gain_stone"); return null; });
         story.BindExternalFunctionGeneral("learn_practice", a =>
         {
             Check(_craft.Contains(S(a[0])), $"learn_practice: unknown practice '{a[0]}' (craft.json)");
@@ -251,6 +255,8 @@ static class InkCheck
         _charms = new HashSet<string>(Load<CharmData>("charms.json").charms.Select(c => c.id));
         _cues = new HashSet<string>(Load<TriggerData>("triggers.json").triggers.SelectMany(t => t.cues));
         _craft = new HashSet<string>(Load<CraftData>("craft.json").practices.Select(p => p.id));
+        _herbs = new HashSet<string>(Load<HerbData>("herbs.json").herbs.Select(h => h.id));
+        _stones = new HashSet<string>(Load<CrystalData>("crystals.json").crystals.Select(c => c.id));
         _places = new HashSet<string>(Load<IAmAsIAm.Core.Story.PlaceData>("places.json").places.Select(p => p.id));
         using (var people = JsonDocument.Parse(File.ReadAllText(Path.Combine(dataDir, "people.json"))))
             _people = new HashSet<string>(people.RootElement.GetProperty("people").EnumerateArray().Select(p => p.GetProperty("id").GetString()));

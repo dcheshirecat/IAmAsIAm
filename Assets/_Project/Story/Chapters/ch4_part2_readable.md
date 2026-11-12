@@ -82,6 +82,8 @@ _(A memory scene: "sunday2-overheard")_
 - **Wait (say nothing)**
     - Reneé's hand on yours, on the table, until the coffee is cold.
 
+Reneé leaves something pink on the table by your cup: a rose quartz, the size of a thumb. She gives one to every friend who's had a bad year.
+
 📱 **Text from Reneé:** I'm at my hotel. Text me if you need anything tonight. Anything. I mean it.
 
 ## Home

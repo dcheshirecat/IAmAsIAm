@@ -111,6 +111,7 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 
 - **Use: The book (take it)**
     - Black cloth, a moon on the cover. First page, in Tanya's square letters: "Ground first."
+    - **Tucked inside the cover:** three dry bay leaves and a bead of amber, warm as a hand. For the sun coming back.
 
 ## Gone
 

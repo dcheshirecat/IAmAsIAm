@@ -56,6 +56,8 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 
 📱 **Text from Christie:** Heard about you and Adeena. I'm so sorry. Snack drawer is yours all week. No questions. -C
 
+In your bag, from work: chamomile tea bags, a whole row of them, taped together. "For the bad nights. -C"
+
 📱 **Text from Tanya:** When you're ready, and only then: open a window, rosemary or salt or the bell, room by room. Say what you want the place to hold now. It's still yours.
 
 **Explore** (glowing things; the player picks):
@@ -162,6 +164,8 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 - **Look: The lake**
     - Grey to the edge of the world. Waves folding over and over on the rocks.
+- **Look: The path's edge**
+    - Dried yarrow, flat white heads gone brown along the path. You snap off one stalk.
 - **Look: Rabbi Abe**
     - Sneakers. A windbreaker. A tie with little fish on it, even here.
 - **Talk: Rabbi Abe (tell him about the lost time)**

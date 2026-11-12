@@ -72,7 +72,8 @@ namespace IAmAsIAm.Runtime.Practices
             _phase.text = "";
             Clear(_actions);
             _breath.SetActive(false);
-            var known = RitualSession.AtTheAltar.Where(id => book != null && book.HasLearned(id)).ToList();
+            // A charm bag needs a herb and a stone someone has given her (owner).
+            var known = RitualSession.AtTheAltar.Where(id => book != null && book.HasLearned(id) && (id != "charm-bag" || book.CanMakeCharmBag)).ToList();
             // Grounding is always there: it's the first thing Tanya teaches, and it's never wrong to start with it.
             if (!known.Contains("grounding-centering")) known.Insert(0, "grounding-centering");
             // Owner: casting a circle is its own ritual AND an optional opening around any other one.
@@ -114,7 +115,7 @@ namespace IAmAsIAm.Runtime.Practices
         {
             if (!RitualSession.IsSupported(practiceId)) { done?.Invoke(null); return; }
             _session = new RitualSession(practiceId, memberId, _craft, GameServices.Practices, Environment.TickCount,
-                GameServices.Comfort?.allowTarotReversals ?? false, offerCircle, variant);
+                GameServices.Comfort?.allowTarotReversals ?? false, offerCircle, variant, Shelf());
             _done = done;
             Show();
             _title.text = _session.Title;
@@ -252,6 +253,21 @@ namespace IAmAsIAm.Runtime.Practices
             var done = _done;
             _done = null;
             done?.Invoke(result);
+        }
+
+        Dictionary<string, string> _names;
+
+        /// <summary>The herbs and stones she's been given, with who gave them (owner), for the charm bag.</summary>
+        CharmShelf Shelf()
+        {
+            var book = GameServices.Book;
+            if (book == null) return null;
+            _names ??= BookScreen.LoadNames();
+            string From(string id) => string.IsNullOrEmpty(id) ? "" : _names.TryGetValue(id, out var n) ? n : id;
+            var shelf = new CharmShelf();
+            foreach (var i in book.IngredientsOf("herb")) shelf.Herbs.Add(new ShelfItem(i.id, From(i.giverId)));
+            foreach (var i in book.IngredientsOf("stone")) shelf.Stones.Add(new ShelfItem(i.id, From(i.giverId)));
+            return shelf;
         }
 
         /// <summary>What a finished ritual leaves behind: the Book entry, a little grounding, the practice remembered.</summary>

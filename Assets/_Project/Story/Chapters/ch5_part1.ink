@@ -43,6 +43,14 @@
 + {boxes < 4} [Look: The windowsill]
     You put Mira's stone there first. Then the little brass prayer wheel. Then the khata, folded. # look: sill-unpacked
     -> boxes
+* [Look: The parcel]
+    A parcel from Champaign on the step. A moonstone in tissue paper, and Tanya's square letters: "For the new moon, and the new home." # look: tanya-moonstone
+    ~ gain_stone("moonstone", "tanya")
+    -> boxes
+* [Look: The tree outside]
+    A rowan by the steps, last autumn's berries still hanging on. You take one small sprig. # look: seattle-rowan
+    ~ gain_herb("rowan", "")
+    -> boxes
 * [Use: The doorway (cleanse the new place)]
     Wet air and cedar through the window. Nothing in here has been yours yet. # ritual: cleansing
     -> boxes

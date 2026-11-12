@@ -111,5 +111,22 @@ namespace IAmAsIAm.Tests
             Assert.That(copy.CharmBag.herb, Is.EqualTo("Rosemary"));
             Assert.That(copy.CanHoldCharmBag("izzy"), Is.True);
         }
+
+        [Test]
+        public void Ingredients_AreGainedOnce_WithTheGiver_AndSaved()
+        {
+            var book = new BookOfShadows(new CraftData());
+            Assert.That(book.CanMakeCharmBag, Is.False);
+            Assert.That(book.GainIngredient("herb", "rosemary", "selene", 1), Is.True);
+            Assert.That(book.GainIngredient("herb", "rosemary", "tanya", 2), Is.False, "once");
+            Assert.That(book.GainIngredient("leaf", "x", "", 2), Is.False, "herb or stone only");
+            Assert.That(book.CanMakeCharmBag, Is.False, "needs a stone too");
+            book.GainIngredient("stone", "jet", "selene", 1);
+            Assert.That(book.CanMakeCharmBag, Is.True);
+            var copy = new BookOfShadows(new CraftData());
+            copy.Restore(book.Export());
+            Assert.That(copy.IngredientsOf("herb")[0].giverId, Is.EqualTo("selene"));
+            Assert.That(copy.HasIngredient("stone", "jet"), Is.True);
+        }
     }
 }

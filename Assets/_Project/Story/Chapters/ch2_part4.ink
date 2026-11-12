@@ -67,6 +67,9 @@ Adeena: Get help, Maya. Real help. Promise me that one thing. # vo: ch2-judaism_
 # objective: Find somewhere to be on Friday night
 ~ text_from("tanya", "Maya. I'm so sorry. Call me, or don't, but I'm here. Every Thursday, every day.")
 ~ text_from("christie", "Heard about you and Adeena. I'm so sorry. Snack drawer is yours all week. No questions. -C")
+// Owner: herbs and stones from different people (Claude's list, owner: "yes").
+In your bag, from work: chamomile tea bags, a whole row of them, taped together. "For the bad nights. -C" # look: christie-chamomile
+~ gain_herb("chamomile", "christie")
 // Owner: cleansing after the breakup (it can be hard). Claude's addition: no new voiced lines.
 ~ text_from("tanya", "When you're ready, and only then: open a window, rosemary or salt or the bell, room by room. Say what you want the place to hold now. It's still yours.")
 ~ learn_practice("cleansing", "tanya")
@@ -200,6 +203,10 @@ Rabbi Abe: I walk every morning. Doctor says it's good for the heart. I say I'm 
 - (walk)
 + {walk < 3} [Look: The lake]
     Grey to the edge of the world. Waves folding over and over on the rocks. # look: lake-grey
+    -> walk
+* [Look: The path's edge]
+    Dried yarrow, flat white heads gone brown along the path. You snap off one stalk. # look: lake-yarrow
+    ~ gain_herb("yarrow", "")
     -> walk
 + {walk < 3} [Look: Rabbi Abe]
     Sneakers. A windbreaker. A tie with little fish on it, even here. # look: abe-windbreaker

@@ -202,5 +202,35 @@ namespace IAmAsIAm.Tests
             Assert.That(RitualSession.AtTheAltar, Has.No.Member("cleansing"));
             foreach (var id in RitualSession.AtTheAltar) Assert.That(RitualSession.IsSupported(id), Is.True, id);
         }
+
+        [Test]
+        public void CharmBag_OffersOnlyWhatSheWasGiven_WithMeaningAndGiver()
+        {
+            var lib = new PracticeLibrary(Runes(), new TarotData(),
+                new HerbData { herbs = new List<HerbEntry>
+                {
+                    new HerbEntry { id = "rosemary", commonName = "Rosemary", charmMeaning = "for remembrance" },
+                    new HerbEntry { id = "lavender", commonName = "Lavender", charmMeaning = "for calm" },
+                } },
+                new CrystalData { crystals = new List<CrystalEntry>
+                {
+                    new CrystalEntry { id = "jet", name = "Jet", charmMeaning = "for mourning" },
+                    new CrystalEntry { id = "amber", name = "Amber", charmMeaning = "for warmth" },
+                } },
+                new CharmData());
+            var shelf = new CharmShelf();
+            shelf.Herbs.Add(new ShelfItem("rosemary", "Selene"));
+            shelf.Stones.Add(new ShelfItem("jet", "Selene"));
+            var s = new RitualSession("charm-bag", "maya", Craft(), lib, 1, false, shelf: shelf);
+            s.Answer(); // arrive
+            Assert.That(s.Current.Options.ConvertAll(o => o.Id), Is.EqualTo(new[] { "rosemary" }), "only what she was given");
+            Assert.That(s.Current.Options[0].Label, Does.Contain("for remembrance").And.Contain("Selene"));
+            s.Answer("rosemary");
+            Assert.That(s.Current.Options.ConvertAll(o => o.Id), Is.EqualTo(new[] { "jet" }));
+            Walk(s);
+            Assert.That(s.Result.Vars["charm_herb"], Is.EqualTo("rosemary"));
+            Assert.That(s.Result.Vars["charm_stone"], Is.EqualTo("jet"));
+            Assert.That(s.Result.Text, Does.Contain("for mourning"));
+        }
     }
 }

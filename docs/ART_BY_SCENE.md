@@ -246,6 +246,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `apple-star`: An apple, cut across. The seeds make a star.
 - `mira-silent`: Mira.
 - `stone-warm`: The stone, warm from your hand.
+- `selene-rosemary-jet`: Selene tucks a sprig of rosemary and a little black stone into your hand. Rosemary for remembering. Jet, for the people you've lost.
 - `phone-mom`: "Mom." The screen lights up the whole dark room.
 - `phone-stops`: It rings, and stops. No message.
 
@@ -305,6 +306,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `yule-stone`: The stone, cold through your glove.
 - `flame-coming`: Hand to hand. Closer. Somebody's face, lit gold.
 - `bos-gift`: Black cloth, a moon on the cover. First page, in Tanya's square letters: "Ground first."
+- `bos-bay-amber`: Tucked inside the cover: three dry bay leaves and a bead of amber, warm as a hand. For the sun coming back.
 
 ### The park: Ostara (`park_ostara`)
 
@@ -335,6 +337,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 ### The campus ministry (`campus_ministry`)
 
+- `gracie-calendula`: Gracie drops a paper twist into your coat pocket: dried calendula, from the ministry garden. Mary's gold, she calls it.
 - `chapel-door`: A small chapel, through the door. Empty. Quiet. One candle burning.
 - `quiet-prayer-sheet`: "Quiet prayer, Sundays, 4 pm. All welcome, no need to say anything."
 
@@ -414,6 +417,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `candle-left`: You leave it. It seems important to leave it.
 - `candle-out`: A thin line of smoke. Then you feel sorry, and you don't know why.
 - `apartment-quiet-2`: Sunday. Adeena at a class. The fridge, thinking.
+- `christie-chamomile`: In your bag, from work: chamomile tea bags, a whole row of them, taped together. "For the bad nights. -C"
 - `friday-hole`: Friday. Friday is a hole in the week now.
 - `renewal-flyer`: "Kabbalat Shabbat with drums! Everyone welcome. Bring your voice." A flyer someone shared.
 - `stone-alone`: On the dresser. The white line.
@@ -529,6 +533,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 ### The lakefront path (`lakefront_path`)
 
 - `lake-grey`: Grey to the edge of the world. Waves folding over and over on the rocks.
+- `lake-yarrow`: Dried yarrow, flat white heads gone brown along the path. You snap off one stalk.
 - `abe-windbreaker`: Sneakers. A windbreaker. A tie with little fish on it, even here.
 
 ### Angie's office (`therapist_office`)
@@ -536,6 +541,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `gerald-plant`: A big, slightly overwatered plant. Someone has named it: a little card says "Gerald."
 - `fidget-basket`: Smooth stones, a stress ball, a tangle toy, a little bag of lavender. "Take one if you like."
 - `leaflets`: "Grounding when you feel far away." "What is dissociation?" You don't take one. You read the title twice.
+- `angie-hematite`: On your way out, Angie holds out the bowl by the door. Worry stones. You take a hematite one: heavy, cool, smooth. For the train home.
 - `angie-calendar`: March. Six Thursdays.
 - `angie-waits`: Angie waits. She doesn't hurry you. The clock. Gerald, outside, being overwatered.
 - `gerald-prayer-wheel`: Gerald the plant has a little brass prayer wheel next to him now. He seems pleased about it.
@@ -628,6 +634,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `cardamom-buns`: Cardamom buns. Izzy wants all of them.
 - `stone-before-news`: The stone. The white line. Heather's hand and yours, on it.
 - `renee-hand`: Reneé's hand on yours, on the table, until the coffee is cold.
+- `renee-rose-quartz`: Reneé leaves something pink on the table by your cup: a rose quartz, the size of a thumb. She gives one to every friend who's had a bad year.
 - hidden memory `sunday2-overheard` (a scene played only by an alter)
 
 ### Idris's Thursday dhikr (`sufi_dhikr_room`)
@@ -656,6 +663,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `labelled-boxes`: "MAYA - BOOKS." "IZZY - DO NOT OPEN (tarot)." "H - kitchen, the good knife." Different handwriting on every box. All of you packed. Nothing in them from Chicago that you could leave behind.
 - `seattle-rain`: Rain on the glass, soft and endless. Somewhere behind it, a mountain you've been promised but haven't seen.
 - `sill-unpacked`: You put Mira's stone there first. Then the little brass prayer wheel. Then the khata, folded.
+- `tanya-moonstone`: A parcel from Champaign on the step. A moonstone in tissue paper, and Tanya's square letters: "For the new moon, and the new home."
+- `seattle-rowan`: A rowan by the steps, last autumn's berries still hanging on. You take one small sprig.
 - `boxes-unpacked`: Every box, open. Books on shelves. It takes a week. In Chicago it took never.
 
 ### The Burke Museum (`burke_museum_hall`)

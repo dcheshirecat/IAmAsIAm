@@ -108,11 +108,12 @@ namespace IAmAsIAm.Runtime.Practices
 
             int count;
             if (tab == BookTab.Practices) count = ShowPractices(page);
+            else if (tab == BookTab.Shelf) count = ShowShelf(page);
             else count = ShowEntries(tab, page);
 
             if (page > 0) Button(_footer, "Back a page", () => Show(tab, page - 1), Tab, 100);
             if ((page + 1) * PerPage < count) Button(_footer, "Next page", () => Show(tab, page + 1), Tab, 100);
-            if (tab != BookTab.Practices) Button(_footer, "Write", () => ShowWrite(tab), TabOn, 100);
+            if (tab != BookTab.Practices && tab != BookTab.Shelf) Button(_footer, "Write", () => ShowWrite(tab), TabOn, 100);
             Button(_footer, "Close the book", Close, TabOn, 100);
         }
 
@@ -127,6 +128,36 @@ namespace IAmAsIAm.Runtime.Practices
                 Label(_list, $"<b>{p.name}</b>{who}\n{steps}", 34, FontStyle.Normal, Ink, 60 + 46 * (p.steps.Count + 1), TextAnchor.UpperLeft);
             }
             return learned.Count;
+        }
+
+        /// <summary>
+        /// The herbs and stones she has (owner: gained from different people through the game): what each is for in a
+        /// charm bag, its folklore or history, and who gave it. Stones' meanings are modern crystal lore, and say so.
+        /// </summary>
+        int ShowShelf(int page)
+        {
+            var items = B.Ingredients;
+            var lib = GameServices.Practices;
+            if (items.Count == 0 || lib == null) { Label(_list, "Nothing yet. People give you things along the way: a sprig, a stone. Keep them here.", 40, FontStyle.Italic, Faded, 140); return 0; }
+            foreach (var it in items.Skip(page * PerPage).Take(PerPage))
+            {
+                string from = string.IsNullOrEmpty(it.giverId) ? "" : $"   <i>from {Name(it.giverId)}</i>";
+                string text;
+                if (it.kind == "herb")
+                {
+                    var h = lib.Herbs.FirstOrDefault(x => x.id == it.id);
+                    if (h == null) continue;
+                    text = $"<b>{h.commonName}</b>{from}\n<i>{h.charmMeaning}</i>\n{h.folklore}";
+                }
+                else
+                {
+                    var c = lib.Crystals.FirstOrDefault(x => x.id == it.id);
+                    if (c == null) continue;
+                    text = $"<b>{c.name}</b>{from}\n<i>{c.charmMeaning}</i> <color=#7a6a58>(crystal lore, not proven)</color>\n{c.history}";
+                }
+                Label(_list, text, 32, FontStyle.Normal, Ink, 250, TextAnchor.UpperLeft);
+            }
+            return items.Count;
         }
 
         int ShowEntries(BookTab tab, int page)
@@ -168,6 +199,7 @@ namespace IAmAsIAm.Runtime.Practices
             BookTab.Readings => "Readings",
             BookTab.Wheel => "The Wheel",
             BookTab.Dreams => "Dreams",
+            BookTab.Shelf => "Herbs & stones",
             _ => "Notes",
         };
 
@@ -177,6 +209,7 @@ namespace IAmAsIAm.Runtime.Practices
             BookTab.Readings => "Book of Shadows: readings",
             BookTab.Wheel => "Book of Shadows: the Wheel of the Year",
             BookTab.Dreams => "Book of Shadows: dreams",
+            BookTab.Shelf => "Book of Shadows: herbs and stones",
             _ => "Book of Shadows: notes",
         };
 
@@ -381,10 +414,11 @@ namespace IAmAsIAm.Runtime.Practices
 
         string Name(string id) => _names.TryGetValue(id ?? "", out var n) ? n : id;
 
-        [Serializable] sealed class PeopleFile { public List<PersonName> people = new List<PersonName>(); }
-        [Serializable] sealed class PersonName { public string id; public string name; }
+        [Serializable] internal sealed class PeopleFile { public List<PersonName> people = new List<PersonName>(); }
+        [Serializable] internal sealed class PersonName { public string id; public string name; }
 
-        static Dictionary<string, string> LoadNames()
+        /// <summary>People's display names by id (people.json). Also used by the ritual screen ("from Selene").</summary>
+        internal static Dictionary<string, string> LoadNames()
         {
             var d = new Dictionary<string, string>();
             foreach (var p in DataLoader.Load<PeopleFile>("people").people ?? new List<PersonName>())

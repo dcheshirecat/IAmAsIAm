@@ -58,6 +58,24 @@ namespace IAmAsIAm.Core.Practices
         public string Caption;
     }
 
+    /// <summary>One herb or stone she can put in a charm bag, with who gave it to her (a display name, or "").</summary>
+    public sealed class ShelfItem
+    {
+        public string Id;
+        public string From;
+        public ShelfItem(string id, string from = "") { Id = id; From = from ?? ""; }
+    }
+
+    /// <summary>
+    /// What she has to make a charm bag with (owner: gained from different people through the game). Null in the session
+    /// means everything in the codex (tests, or before the shelf is known).
+    /// </summary>
+    public sealed class CharmShelf
+    {
+        public List<ShelfItem> Herbs = new List<ShelfItem>();
+        public List<ShelfItem> Stones = new List<ShelfItem>();
+    }
+
     /// <summary>What a finished ritual leaves behind: a Book of Shadows entry, a little grounding, and story variables.</summary>
     public sealed class RitualResult
     {
@@ -99,6 +117,7 @@ namespace IAmAsIAm.Core.Practices
         readonly IEnumerator<RitualStep> _steps;
         string _answer = "";
         readonly string _variant;
+        CharmShelf _shelf;
 
         public string PracticeId { get; }
         public string MemberId { get; }
@@ -111,8 +130,9 @@ namespace IAmAsIAm.Core.Practices
         /// <param name="offerCircle">Ask "Cast a circle first?" after arriving (owner: an optional opening around any ritual).</param>
         /// <param name="variant">"hard": the moment stirs something up (the story's cleansing after the breakup).</param>
         public RitualSession(string practiceId, string memberId, CraftData craft, PracticeLibrary library, int seed, bool allowReversals,
-            bool offerCircle = false, string variant = "")
+            bool offerCircle = false, string variant = "", CharmShelf shelf = null)
         {
+            _shelf = shelf;
             if (!IsSupported(practiceId)) throw new ArgumentException($"No ritual for '{practiceId}' yet.");
             PracticeId = practiceId;
             MemberId = memberId ?? "maya";
@@ -406,21 +426,33 @@ namespace IAmAsIAm.Core.Practices
         {
             yield return Arrive("Lay it all out on the altar. One breath in. One breath out.");
 
+            // Owner: only what she's been given (or found), each with what it's for and who it came from.
+            var herbs = (_library?.Herbs ?? new List<HerbEntry>()).ToDictionary(h => h.id);
+            var stones = (_library?.Crystals ?? new List<CrystalEntry>()).ToDictionary(c => c.id);
             var herbIds = _craft.charmHerbIds ?? new List<string>();
-            var herbs = (_library?.Herbs ?? new List<HerbEntry>()).Where(h => herbIds.Count == 0 || herbIds.Contains(h.id)).ToList();
+            var stoneIds = _craft.charmStoneIds ?? new List<string>();
+            var herbShelf = _shelf?.Herbs ?? herbs.Keys.Where(id => herbIds.Count == 0 || herbIds.Contains(id)).Select(id => new ShelfItem(id)).ToList();
+            var stoneShelf = _shelf?.Stones ?? stones.Keys.Where(id => stoneIds.Count == 0 || stoneIds.Contains(id)).Select(id => new ShelfItem(id)).ToList();
+
+            static string Label(string name, string meaning, string from) =>
+                name + (string.IsNullOrEmpty(meaning) ? "" : $": {meaning}") + (string.IsNullOrEmpty(from) ? "" : $"  <i>(from {from})</i>");
+
             var pickHerb = Step(RitualPhase.Prepare, RitualStepKind.Choose, "A pinch of something dried.");
-            foreach (var h in herbs) pickHerb.Options.Add(new RitualOption(h.id, h.commonName));
+            foreach (var it in herbShelf)
+                if (herbs.TryGetValue(it.Id, out var h)) pickHerb.Options.Add(new RitualOption(h.id, Label(h.commonName, h.charmMeaning, it.From)));
             if (pickHerb.Options.Count == 0) pickHerb.Options.Add(new RitualOption("rosemary", "Rosemary"));
             yield return pickHerb;
-            string herb = pickHerb.Options.FirstOrDefault(o => o.Id == _answer)?.Label ?? pickHerb.Options[0].Label;
+            string herbId = pickHerb.Options.Any(o => o.Id == _answer) ? _answer : pickHerb.Options[0].Id;
+            string herb = herbs.TryGetValue(herbId, out var hh) ? hh.commonName : "Rosemary";
 
-            var stoneIds = _craft.charmStoneIds ?? new List<string>();
-            var stones = (_library?.Crystals ?? new List<CrystalEntry>()).Where(c => stoneIds.Count == 0 || stoneIds.Contains(c.id)).ToList();
             var pickStone = Step(RitualPhase.Prepare, RitualStepKind.Choose, "A small stone.");
-            foreach (var c in stones) pickStone.Options.Add(new RitualOption(c.id, c.name));
+            foreach (var it in stoneShelf)
+                if (stones.TryGetValue(it.Id, out var c)) pickStone.Options.Add(new RitualOption(c.id, Label(c.name, c.charmMeaning, it.From)));
             if (pickStone.Options.Count == 0) pickStone.Options.Add(new RitualOption("clear-quartz", "Clear quartz"));
             yield return pickStone;
-            string stone = pickStone.Options.FirstOrDefault(o => o.Id == _answer)?.Label ?? pickStone.Options[0].Label;
+            string stoneId = pickStone.Options.Any(o => o.Id == _answer) ? _answer : pickStone.Options[0].Id;
+            string stone = stones.TryGetValue(stoneId, out var cc) ? cc.name : "Clear quartz";
+            string herbMeaning = hh?.charmMeaning ?? "", stoneMeaning = cc?.charmMeaning ?? "";
 
             var pickOwn = Step(RitualPhase.Prepare, RitualStepKind.Choose, "Something of yours.");
             var own = _craft.charmOwnThings ?? new List<string>();
@@ -442,9 +474,12 @@ namespace IAmAsIAm.Core.Practices
 
             Result.Tab = BookTab.Notes;
             Result.Title = "A charm bag" + (what.Length > 0 ? $": \"{what}\"" : "");
-            Result.Text = $"{herb}, {stone}, {mine}. Three knots." + (Written.Length > 0 ? "\n\n" + Written : "");
+            Result.Text = $"{herb}" + (herbMeaning.Length > 0 ? $" ({herbMeaning})" : "") + $", {stone}" + (stoneMeaning.Length > 0 ? $" ({stoneMeaning})" : "")
+                + $", {mine}. Three knots." + (Written.Length > 0 ? "\n\n" + Written : "");
             Result.Grounding = 0.1f;
             Result.CharmBag = new CharmBagState { has = true, carried = true, herb = herb, stone = stone, own = mine, intent = what };
+            Result.Vars["charm_herb"] = herbId;
+            Result.Vars["charm_stone"] = stoneId;
             Result.Vars["charm_intent"] = what;
         }
 

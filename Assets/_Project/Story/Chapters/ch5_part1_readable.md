@@ -29,6 +29,10 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
     - Rain on the glass, soft and endless. Somewhere behind it, a mountain you've been promised but haven't seen.
 - **Look: The windowsill**
     - You put Mira's stone there first. Then the little brass prayer wheel. Then the khata, folded.
+- **Look: The parcel**
+    - A parcel from Champaign on the step. A moonstone in tissue paper, and Tanya's square letters: "For the new moon, and the new home."
+- **Look: The tree outside**
+    - A rowan by the steps, last autumn's berries still hanging on. You take one small sprig.
 - **Use: The doorway (cleanse the new place)**
     - Wet air and cedar through the window. Nothing in here has been yours yet.
 - **Use: The boxes (unpack, this time)**

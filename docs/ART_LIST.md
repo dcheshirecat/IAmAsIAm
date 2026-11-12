@@ -172,8 +172,8 @@ Every close-up in the chapters is listed scene by scene in [ART_BY_SCENE.md](ART
 | [ ] | `suitcase`, `backpack` | Her dusty suitcase and the backpack packed in ten minutes | Ch 3 |
 | [ ] | `orit`, `kes_umbrella` | The Orit wrapped in cloth; a bright ceremonial umbrella | Ch 2 |
 | [ ] | `rune_pouch`, `rune_stave` | Runes | (practice) |
-| [ ] | `herb_<id>` × 14, `herb_bundle_dried` | Herbs (ids in herbs.json) | (practice) |
-| [ ] | `crystal_<id>` × 13 | Stones (ids in crystals.json) | (practice) |
+| [ ] | `herb_<id>` × 15, `herb_bundle_dried` | Herbs (ids in herbs.json; bay added) | (practice) |
+| [ ] | `crystal_<id>` × 16 | Stones (ids in crystals.json; jet, amber and Mira's stone added: Mira's stone is the same model as `mira_stone` if there is one) | (practice) |
 | [ ] | `charm_<id>` × 9 | Charms (ids in charms.json) | (practice) |
 | [ ] | `charm_bag` | Maya's charm bag: a small plum cloth pouch tied with three knots (Selene's gift at Samhain 2019; she makes others) | Ch 1 |
 | [ ] | `rune_cloth` | The cloth she casts runes on (dark, plain) | Ch 1 |

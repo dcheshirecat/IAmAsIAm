@@ -115,6 +115,10 @@ Selene: Okay. Lights off. Everyone say a name, if you want to. # vo: prelude-wic
 -
 // Selene's Samhain: Maya's first ancestor altar (it goes in the Book of Shadows once Tanya gives it to her).
 ~ learn_practice("ancestor-altar", "selene")
+// Owner: Maya gains herbs and stones from different people (Claude's list, owner: "yes"). No new voiced lines.
+Selene tucks a sprig of rosemary and a little black stone into your hand. Rosemary for remembering. Jet, for the people you've lost. # look: selene-rosemary-jet
+~ gain_herb("rosemary", "selene")
+~ gain_stone("jet", "selene")
 -> call
 
 = call

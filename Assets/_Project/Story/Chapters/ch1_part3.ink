@@ -68,6 +68,9 @@ Gracie: I'm Gracie. Sister Gracie, technically, almost. In training. Do you want
     Maya: I have to go, sorry. # vo: ch1-christianity_maya_0018
     Gracie: Take one for the road! Hold on. Two marshmallows. Okay, three. # vo: ch1-christianity_gracie_0019
 -
+// Owner: herbs and stones from different people (Claude's list, owner: "yes"). No new voiced lines.
+Gracie drops a paper twist into your coat pocket: dried calendula, from the ministry garden. Mary's gold, she calls it. # look: gracie-calendula
+~ gain_herb("calendula", "gracie")
 - (ministry)
 + {ministry < 3} [Look: The chapel door]
     A small chapel, through the door. Empty. Quiet. One candle burning. # look: chapel-door
@@ -106,7 +109,7 @@ Tanya: Names, if you want to. Anyone you miss. # vo: ch1-christianity_tanya_0026
 -
 // The charm bag and runes (owner: the craft is an active part of the game). Claude's addition: no new voiced lines.
 Selene presses a little cloth bag into your hand. Lavender, a smooth grey stone, three tight knots. She made it in August, just in case. # look: selene-charm-bag
-~ gift_charm_bag("selene", "Lavender", "Smoky quartz", "Come back")
+~ gift_charm_bag("selene", "lavender", "smoky-quartz", "Come back")
 ~ learn_practice("charm-bag", "selene")
 ~ text_from("tanya", "Thursdays again, if you want them. This month: runes. I have a spare bag. Bring nothing but yourself.")
 ~ learn_practice("runes", "tanya")

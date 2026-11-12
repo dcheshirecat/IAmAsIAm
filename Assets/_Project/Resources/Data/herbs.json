@@ -1,117 +1,275 @@
 {
-  "sourceNote": "Folklore reflects documented European folk associations. Safety notes draw on NCCIH herb fact sheets and standard references, and must be reviewed by a qualified herbalist or pharmacist before ship. The game never gives dosages and never instructs ingestion. Every herb carries the general note: do not ingest, burn or apply any herb or essential oil without guidance from a qualified professional, especially if pregnant, breastfeeding, or taking medication.",
+  "sourceNote": "Folklore reflects documented European folk associations. Safety notes draw on NCCIH herb fact sheets and standard references, and must be reviewed by a qualified herbalist or pharmacist before ship. The game never gives dosages and never instructs ingestion. Every herb carries the general note: do not ingest, burn or apply any herb or essential oil without guidance from a qualified professional, especially if pregnant, breastfeeding, or taking medication. 'charmMeaning' is the short folk association shown when she puts it in a charm bag (from the folklore above; bay: Pliny, Natural History; Culpeper's Complete Herbal; rowan: the Scottish rhyme 'Rowan tree and red thread', recorded across Scotland and the Borders; calendula as 'Mary's gold' is the English folk name marigold).",
   "herbs": [
     {
-      "id": "lavender", "commonName": "Lavender", "latinName": "Lavandula angustifolia",
+      "id": "lavender",
+      "commonName": "Lavender",
+      "latinName": "Lavandula angustifolia",
       "folklore": "Long used in European households to scent linen and keep moths away. It's associated with calm, sleep and cleanliness, and its name is often linked to the Latin 'lavare', to wash.",
       "sensory": "Sweet, clean and slightly camphorous. The dried buds feel like tiny grains of rice and release more scent when rolled between your fingers.",
-      "anchorSenses": ["Smell", "Touch", "See"],
-      "safetyNotes": ["Undiluted essential oil can irritate skin.", "Lavender essential oil should never be swallowed.", "Essential oils, including lavender, can be toxic to cats and dogs."],
-      "reflectionPrompt": "What helps you feel clean and fresh, inside and out?"
+      "anchorSenses": [
+        "Smell",
+        "Touch",
+        "See"
+      ],
+      "safetyNotes": [
+        "Undiluted essential oil can irritate skin.",
+        "Lavender essential oil should never be swallowed.",
+        "Essential oils, including lavender, can be toxic to cats and dogs."
+      ],
+      "reflectionPrompt": "What helps you feel clean and fresh, inside and out?",
+      "charmMeaning": "for calm, and a quiet night"
     },
     {
-      "id": "chamomile", "commonName": "Chamomile", "latinName": "Matricaria chamomilla",
+      "id": "chamomile",
+      "commonName": "Chamomile",
+      "latinName": "Matricaria chamomilla",
       "folklore": "A gentle, daisy-like herb long associated with rest and soothing children in European folk practice. Peter Rabbit's mother gives him chamomile tea.",
       "sensory": "Apple-like and honeyed. The dried flower heads are soft and slightly papery.",
-      "anchorSenses": ["Smell", "Touch", "See"],
-      "safetyNotes": ["People allergic to ragweed, daisies or other plants in the aster family may react to chamomile.", "May interact with blood-thinning medication."],
-      "reflectionPrompt": "What does rest look like for the most tired part of you?"
+      "anchorSenses": [
+        "Smell",
+        "Touch",
+        "See"
+      ],
+      "safetyNotes": [
+        "People allergic to ragweed, daisies or other plants in the aster family may react to chamomile.",
+        "May interact with blood-thinning medication."
+      ],
+      "reflectionPrompt": "What does rest look like for the most tired part of you?",
+      "charmMeaning": "for rest, and soothing"
     },
     {
-      "id": "rosemary", "commonName": "Rosemary", "latinName": "Salvia rosmarinus",
+      "id": "rosemary",
+      "commonName": "Rosemary",
+      "latinName": "Salvia rosmarinus",
       "folklore": "'There's rosemary, that's for remembrance' (Ophelia, Hamlet). It's associated with memory, fidelity and remembering the dead. Sprigs were carried at both weddings and funerals in England.",
       "sensory": "Sharp, piney and resinous. The needles are firm and slightly sticky, and the scent clings to your fingers.",
-      "anchorSenses": ["Smell", "Touch", "See"],
-      "safetyNotes": ["Rosemary essential oil should never be swallowed.", "People with epilepsy or who are pregnant should seek advice before using rosemary in concentrated forms."],
-      "reflectionPrompt": "Memory can be gentle. What's one thing you'd like to remember from this week?"
+      "anchorSenses": [
+        "Smell",
+        "Touch",
+        "See"
+      ],
+      "safetyNotes": [
+        "Rosemary essential oil should never be swallowed.",
+        "People with epilepsy or who are pregnant should seek advice before using rosemary in concentrated forms."
+      ],
+      "reflectionPrompt": "Memory can be gentle. What's one thing you'd like to remember from this week?",
+      "charmMeaning": "for remembrance, and remembering the dead"
     },
     {
-      "id": "peppermint", "commonName": "Peppermint", "latinName": "Mentha × piperita",
+      "id": "peppermint",
+      "commonName": "Peppermint",
+      "latinName": "Mentha × piperita",
       "folklore": "A hybrid mint, long grown in kitchen gardens. Mints were strewn on floors to freshen rooms in medieval Europe.",
       "sensory": "Cold, bright and sharp. A strong scent like this is often used to snap back from numbness or fog.",
-      "anchorSenses": ["Smell", "Taste", "Touch"],
-      "safetyNotes": ["Peppermint oil should not be applied on or near the face of babies or young children, because menthol can affect their breathing.", "Can worsen heartburn or reflux.", "Essential oils can be toxic to cats and dogs."],
-      "reflectionPrompt": "What wakes you up gently when you've drifted far away?"
+      "anchorSenses": [
+        "Smell",
+        "Taste",
+        "Touch"
+      ],
+      "safetyNotes": [
+        "Peppermint oil should not be applied on or near the face of babies or young children, because menthol can affect their breathing.",
+        "Can worsen heartburn or reflux.",
+        "Essential oils can be toxic to cats and dogs."
+      ],
+      "reflectionPrompt": "What wakes you up gently when you've drifted far away?",
+      "charmMeaning": "for freshness, a clear head"
     },
     {
-      "id": "lemon-balm", "commonName": "Lemon balm", "latinName": "Melissa officinalis",
+      "id": "lemon-balm",
+      "commonName": "Lemon balm",
+      "latinName": "Melissa officinalis",
       "folklore": "Its name 'Melissa' is Greek for honeybee. It was planted near hives to keep bees content, and in medieval gardens it was associated with lifting the spirits.",
       "sensory": "Bright lemon scent, released by brushing the leaves. The leaves are soft, crinkled and slightly fuzzy.",
-      "anchorSenses": ["Smell", "Touch"],
-      "safetyNotes": ["May add to the effect of sedative medications.", "May interact with thyroid medication."],
-      "reflectionPrompt": "What keeps the 'hive' of your system content?"
+      "anchorSenses": [
+        "Smell",
+        "Touch"
+      ],
+      "safetyNotes": [
+        "May add to the effect of sedative medications.",
+        "May interact with thyroid medication."
+      ],
+      "reflectionPrompt": "What keeps the 'hive' of your system content?",
+      "charmMeaning": "for lifting the spirits"
     },
     {
-      "id": "mugwort", "commonName": "Mugwort", "latinName": "Artemisia vulgaris",
+      "id": "mugwort",
+      "commonName": "Mugwort",
+      "latinName": "Artemisia vulgaris",
       "folklore": "One of the nine herbs in the Old English 'Nine Herbs Charm'. It was traditionally tucked in shoes by travellers against weariness, and is associated with dreams and Midsummer in European folklore.",
       "sensory": "Grey-green leaves with silvery undersides and a sage-like, bitter scent.",
-      "anchorSenses": ["Smell", "See", "Touch"],
-      "safetyNotes": ["Must be avoided in pregnancy.", "A common pollen allergen. It can cross-react with other allergies (e.g. celery, birch)."],
-      "reflectionPrompt": "If your dreams could carry a message from another part, what might it be?"
+      "anchorSenses": [
+        "Smell",
+        "See",
+        "Touch"
+      ],
+      "safetyNotes": [
+        "Must be avoided in pregnancy.",
+        "A common pollen allergen. It can cross-react with other allergies (e.g. celery, birch)."
+      ],
+      "reflectionPrompt": "If your dreams could carry a message from another part, what might it be?",
+      "charmMeaning": "for dreams, and travellers' weariness"
     },
     {
-      "id": "yarrow", "commonName": "Yarrow", "latinName": "Achillea millefolium",
+      "id": "yarrow",
+      "commonName": "Yarrow",
+      "latinName": "Achillea millefolium",
       "folklore": "Named for Achilles, who in legend used it on soldiers' wounds. It appears in British and Irish love-divination folklore, and its dried stalks are traditionally used to cast the I Ching.",
       "sensory": "Feathery, finely divided leaves. The flower heads are flat clusters, and the scent is sharp and herby.",
-      "anchorSenses": ["Touch", "See", "Smell"],
-      "safetyNotes": ["Avoid in pregnancy.", "People allergic to the aster family may react.", "Can cause skin sensitivity in sunlight for some people."],
-      "reflectionPrompt": "Which old wounds are healing, even slowly?"
+      "anchorSenses": [
+        "Touch",
+        "See",
+        "Smell"
+      ],
+      "safetyNotes": [
+        "Avoid in pregnancy.",
+        "People allergic to the aster family may react.",
+        "Can cause skin sensitivity in sunlight for some people."
+      ],
+      "reflectionPrompt": "Which old wounds are healing, even slowly?",
+      "charmMeaning": "for healing old wounds, and love"
     },
     {
-      "id": "calendula", "commonName": "Calendula (pot marigold)", "latinName": "Calendula officinalis",
+      "id": "calendula",
+      "commonName": "Calendula (pot marigold)",
+      "latinName": "Calendula officinalis",
       "folklore": "Its name comes from Latin 'calendae', because it was said to bloom at the start of every month. It has been grown in cottage gardens for centuries and used to colour cheese and butter.",
       "sensory": "Sticky, resinous petals in bright orange and gold. A warm, slightly musky scent.",
-      "anchorSenses": ["See", "Touch", "Smell"],
-      "safetyNotes": ["People allergic to the aster family may react.", "This is not the same plant as the ornamental Tagetes marigold."],
-      "reflectionPrompt": "What colour would you paint your mood today? What colour would you like it to be?"
+      "anchorSenses": [
+        "See",
+        "Touch",
+        "Smell"
+      ],
+      "safetyNotes": [
+        "People allergic to the aster family may react.",
+        "This is not the same plant as the ornamental Tagetes marigold."
+      ],
+      "reflectionPrompt": "What colour would you paint your mood today? What colour would you like it to be?",
+      "charmMeaning": "for warmth and comfort (\"Mary's gold\")"
     },
     {
-      "id": "garden-sage", "commonName": "Garden sage", "latinName": "Salvia officinalis",
+      "id": "garden-sage",
+      "commonName": "Garden sage",
+      "latinName": "Salvia officinalis",
       "folklore": "Its name comes from Latin 'salvere', to be well or to save. In medieval Europe it was associated with wisdom and long life: 'Why should a man die whilst sage grows in his garden?'",
       "sensory": "Velvety, pebbled grey-green leaves, soft like felt. A warm, savoury and slightly camphor scent.",
-      "anchorSenses": ["Touch", "Smell", "See"],
-      "safetyNotes": ["Concentrated forms and essential oil contain thujone, which can cause seizures. Never ingest the oil.", "Avoid concentrated forms in pregnancy.", "Burning any plant indoors produces smoke that irritates the lungs and is a fire risk.", "This game uses garden sage. White sage (Salvia apiana) is overharvested and central to closed Indigenous ceremonial practice, so it's deliberately excluded."],
-      "reflectionPrompt": "What's a piece of wisdom an older part of you would share?"
+      "anchorSenses": [
+        "Touch",
+        "Smell",
+        "See"
+      ],
+      "safetyNotes": [
+        "Concentrated forms and essential oil contain thujone, which can cause seizures. Never ingest the oil.",
+        "Avoid concentrated forms in pregnancy.",
+        "Burning any plant indoors produces smoke that irritates the lungs and is a fire risk.",
+        "This game uses garden sage. White sage (Salvia apiana) is overharvested and central to closed Indigenous ceremonial practice, so it's deliberately excluded."
+      ],
+      "reflectionPrompt": "What's a piece of wisdom an older part of you would share?",
+      "charmMeaning": "for wisdom, and being well"
     },
     {
-      "id": "thyme", "commonName": "Thyme", "latinName": "Thymus vulgaris",
+      "id": "thyme",
+      "commonName": "Thyme",
+      "latinName": "Thymus vulgaris",
       "folklore": "Associated with courage in medieval Europe, when ladies are said to have embroidered sprigs onto knights' scarves. It was used in English folk practice to 'see the fair folk'.",
       "sensory": "Tiny, firm leaves on woody stems. A warm, herbal and slightly medicinal scent.",
-      "anchorSenses": ["Smell", "Touch", "Taste"],
-      "safetyNotes": ["Thyme oil can irritate skin and mucous membranes.", "People allergic to other mint-family herbs may react."],
-      "reflectionPrompt": "What does a small, quiet courage look like for you today?"
+      "anchorSenses": [
+        "Smell",
+        "Touch",
+        "Taste"
+      ],
+      "safetyNotes": [
+        "Thyme oil can irritate skin and mucous membranes.",
+        "People allergic to other mint-family herbs may react."
+      ],
+      "reflectionPrompt": "What does a small, quiet courage look like for you today?",
+      "charmMeaning": "for courage"
     },
     {
-      "id": "st-johns-wort", "commonName": "St John's wort", "latinName": "Hypericum perforatum",
+      "id": "st-johns-wort",
+      "commonName": "St John's wort",
+      "latinName": "Hypericum perforatum",
       "folklore": "It blooms around Midsummer (St John's Day, 24 June), and was hung over doors at Midsummer in European folk practice. Hold a leaf to the light to see the tiny translucent 'perforations'.",
       "sensory": "Bright yellow, star-shaped flowers. Rubbing a petal stains your fingers reddish-purple.",
-      "anchorSenses": ["See", "Touch"],
-      "safetyNotes": ["⚠ IMPORTANT: St John's wort interacts with MANY medications, including antidepressants (risk of serotonin syndrome), hormonal contraceptives (making them less effective), blood thinners, and HIV and transplant medications. Never take it without talking to a doctor or pharmacist.", "Can increase sensitivity to sunlight."],
-      "reflectionPrompt": "What does the longest, brightest day of the year mean to you?"
+      "anchorSenses": [
+        "See",
+        "Touch"
+      ],
+      "safetyNotes": [
+        "⚠ IMPORTANT: St John's wort interacts with MANY medications, including antidepressants (risk of serotonin syndrome), hormonal contraceptives (making them less effective), blood thinners, and HIV and transplant medications. Never take it without talking to a doctor or pharmacist.",
+        "Can increase sensitivity to sunlight."
+      ],
+      "reflectionPrompt": "What does the longest, brightest day of the year mean to you?",
+      "charmMeaning": "for Midsummer light, and the door"
     },
     {
-      "id": "valerian", "commonName": "Valerian", "latinName": "Valeriana officinalis",
+      "id": "valerian",
+      "commonName": "Valerian",
+      "latinName": "Valeriana officinalis",
       "folklore": "Associated with sleep since Roman times. Cats are drawn to its earthy root, as they are to catnip, and it appears in some versions of the Pied Piper story.",
       "sensory": "The flowers are sweet and pale pink, but the dried root smells strongly earthy and musky. Many people dislike it!",
-      "anchorSenses": ["Smell", "See"],
-      "safetyNotes": ["Can cause drowsiness. Don't drive or operate machinery after use.", "Don't combine with alcohol, sleep medication or other sedatives."],
-      "reflectionPrompt": "What helps your whole system settle toward sleep?"
+      "anchorSenses": [
+        "Smell",
+        "See"
+      ],
+      "safetyNotes": [
+        "Can cause drowsiness. Don't drive or operate machinery after use.",
+        "Don't combine with alcohol, sleep medication or other sedatives."
+      ],
+      "reflectionPrompt": "What helps your whole system settle toward sleep?",
+      "charmMeaning": "for sleep"
     },
     {
-      "id": "elder", "commonName": "Elder", "latinName": "Sambucus nigra",
+      "id": "elder",
+      "commonName": "Elder",
+      "latinName": "Sambucus nigra",
       "folklore": "In English and Scandinavian folklore, the 'Elder Mother' (Hyldemoer) lives in the tree, and you must ask her permission before cutting its wood.",
       "sensory": "Creamy, flat sprays of flowers with a sweet, heady scent in early summer. Dark purple berry clusters in autumn.",
-      "anchorSenses": ["Smell", "See"],
-      "safetyNotes": ["Raw berries, leaves, bark, stems and unripe berries can make you seriously ill. They must never be eaten raw.", "Never forage without an expert. Elder can be confused with toxic plants such as water hemlock."],
-      "reflectionPrompt": "The Elder Mother asks to be asked. Where in your life would asking first help?"
+      "anchorSenses": [
+        "Smell",
+        "See"
+      ],
+      "safetyNotes": [
+        "Raw berries, leaves, bark, stems and unripe berries can make you seriously ill. They must never be eaten raw.",
+        "Never forage without an expert. Elder can be confused with toxic plants such as water hemlock."
+      ],
+      "reflectionPrompt": "The Elder Mother asks to be asked. Where in your life would asking first help?",
+      "charmMeaning": "for asking permission, and protection"
     },
     {
-      "id": "rowan", "commonName": "Rowan (mountain ash)", "latinName": "Sorbus aucuparia",
+      "id": "rowan",
+      "commonName": "Rowan (mountain ash)",
+      "latinName": "Sorbus aucuparia",
       "folklore": "One of the strongest protective trees in Scottish, Irish and Scandinavian folklore. Rowan crosses tied with red thread were hung over doors and byres.",
       "sensory": "Clusters of glossy, scarlet berries. The leaves are feathery and divided, and the bark is smooth and silvery.",
-      "anchorSenses": ["See", "Touch"],
-      "safetyNotes": ["Raw berries contain parasorbic acid and can upset the stomach. Traditionally they're only eaten cooked, under expert guidance.", "Never forage without an expert."],
-      "reflectionPrompt": "What do you hang over your own door to say 'you're safe here'?"
+      "anchorSenses": [
+        "See",
+        "Touch"
+      ],
+      "safetyNotes": [
+        "Raw berries contain parasorbic acid and can upset the stomach. Traditionally they're only eaten cooked, under expert guidance.",
+        "Never forage without an expert."
+      ],
+      "reflectionPrompt": "What do you hang over your own door to say 'you're safe here'?",
+      "charmMeaning": "for protection (\"rowan tree and red thread\")"
+    },
+    {
+      "id": "bay",
+      "commonName": "Bay laurel",
+      "latinName": "Laurus nobilis",
+      "folklore": "Apollo's tree in Greek myth (Daphne became a laurel to escape him), so victors at Delphi and Roman generals in triumph wore laurel wreaths. Pliny the Elder records bay as a guard against lightning, and English herbals (Culpeper, 1650s) repeat that neither thunder nor lightning will hurt you where a bay tree stands.",
+      "sensory": "Leathery, glossy leaves that crack when they're dry. Warm and a little like eucalyptus when you crush one.",
+      "anchorSenses": [
+        "Smell",
+        "Touch",
+        "Hear"
+      ],
+      "safetyNotes": [
+        "Cherry laurel and mountain laurel look similar and are poisonous: only true bay (Laurus nobilis) is the kitchen herb.",
+        "Smoke of any kind can irritate lungs: open a window."
+      ],
+      "reflectionPrompt": "What's something you came through, that deserves a small crown?",
+      "charmMeaning": "for victory, and protection from storms"
     }
   ]
 }

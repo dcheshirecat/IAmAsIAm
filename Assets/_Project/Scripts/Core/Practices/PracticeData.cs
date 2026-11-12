@@ -72,6 +72,8 @@ namespace IAmAsIAm.Core.Practices
         /// <summary>Mandatory. Never empty. Validated by the editor data validator.</summary>
         public List<string> safetyNotes = new List<string>();
         public string reflectionPrompt;
+        /// <summary>The short folk association shown in a charm bag, e.g. "for remembrance".</summary>
+        public string charmMeaning;
 
         public string Id => id;
         public string DisplayName => commonName;
@@ -93,6 +95,10 @@ namespace IAmAsIAm.Core.Practices
         public List<string> careNotes = new List<string>();
         public List<string> safetyNotes = new List<string>();
         public List<string> anchorSenses = new List<string>();
+        /// <summary>The documented history of the stone or its name (legends marked as legends).</summary>
+        public string history;
+        /// <summary>The short modern-practice meaning shown in a charm bag (a belief, not an effect).</summary>
+        public string charmMeaning;
 
         public string Id => id;
         public string DisplayName => name;

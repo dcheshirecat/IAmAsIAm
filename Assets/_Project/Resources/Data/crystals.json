@@ -1,109 +1,365 @@
 {
-  "sourceNote": "Mineral identity and Mohs hardness are facts. 'modernAssociations' are modern crystal-practice beliefs with no demonstrated physical effects, and they are labelled as such in the UI. In this game, stones are used as tactile grounding anchors: weight, temperature and texture. Ethical sourcing varies widely; second-hand or known-origin stones are better.",
+  "sourceNote": "Mineral identity and Mohs hardness are facts. 'modernAssociations' are modern crystal-practice beliefs with no demonstrated physical effects, and they are labelled as such in the UI. In this game, stones are used as tactile grounding anchors: weight, temperature and texture. Ethical sourcing varies widely; second-hand or known-origin stones are better. 'history' is the documented history of the stone or its name (Pliny the Elder's Natural History; Theophrastus; GIA and American Gem Society history pages; Whitby Museum and the V&A on jet; the Met and published reviews on Egyptian malachite eye paint; Inuktitut Magazine 125 for the labradorite story), with legends marked as legends. 'charmMeaning' is the short modern-practice meaning shown in a charm bag: a belief, not an effect.",
   "crystals": [
     {
-      "id": "hematite", "name": "Hematite", "mineral": "Iron oxide (Fe₂O₃)", "mohsHardness": "5.5–6.5",
-      "modernAssociations": ["grounding", "steadiness", "focus"],
+      "id": "hematite",
+      "name": "Hematite",
+      "mineral": "Iron oxide (Fe₂O₃)",
+      "mohsHardness": "5.5–6.5",
+      "modernAssociations": [
+        "grounding",
+        "steadiness",
+        "focus"
+      ],
       "tactile": "Surprisingly heavy for its size, cool to the touch, and glassy smooth. A very good stone for 'feel the weight in your palm'.",
-      "careNotes": ["Can rust if left wet."],
-      "safetyNotes": ["Strongly magnetic 'hematite' jewellery is usually a synthetic called hematine. Keep it away from pacemakers and bank cards."],
-      "anchorSenses": ["Touch", "See"]
+      "careNotes": [
+        "Can rust if left wet."
+      ],
+      "safetyNotes": [
+        "Strongly magnetic 'hematite' jewellery is usually a synthetic called hematine. Keep it away from pacemakers and bank cards."
+      ],
+      "anchorSenses": [
+        "Touch",
+        "See"
+      ],
+      "charmMeaning": "for steadiness and weight",
+      "history": "Named from the Greek haima, blood, for the red streak it leaves when scratched (Theophrastus; Pliny's haematites). Red ochre, coloured by hematite, is one of the oldest pigments people used."
     },
     {
-      "id": "smoky-quartz", "name": "Smoky quartz", "mineral": "Quartz (SiO₂), coloured by natural irradiation", "mohsHardness": "7",
-      "modernAssociations": ["grounding", "releasing worry"],
+      "id": "smoky-quartz",
+      "name": "Smoky quartz",
+      "mineral": "Quartz (SiO₂), coloured by natural irradiation",
+      "mohsHardness": "7",
+      "modernAssociations": [
+        "grounding",
+        "releasing worry"
+      ],
       "tactile": "Cool, hard and glassy. Translucent browns and greys, like looking through woodsmoke.",
-      "careNotes": ["Much commercial smoky quartz is artificially irradiated clear quartz."],
+      "careNotes": [
+        "Much commercial smoky quartz is artificially irradiated clear quartz."
+      ],
       "safetyNotes": [],
-      "anchorSenses": ["Touch", "See"]
+      "anchorSenses": [
+        "Touch",
+        "See"
+      ],
+      "charmMeaning": "for grounding, and getting through",
+      "history": "In Scotland it's 'cairngorm', after the mountains where it was found: from the 1700s it was set in Highland plaid brooches and the pommel of the sgian-dubh."
     },
     {
-      "id": "clear-quartz", "name": "Clear quartz", "mineral": "Quartz (SiO₂)", "mohsHardness": "7",
-      "modernAssociations": ["clarity", "amplifying intention"],
+      "id": "clear-quartz",
+      "name": "Clear quartz",
+      "mineral": "Quartz (SiO₂)",
+      "mohsHardness": "7",
+      "modernAssociations": [
+        "clarity",
+        "amplifying intention"
+      ],
       "tactile": "Hard, cold at first, and slowly warming in your hand. Rainbows appear where it's fractured inside.",
-      "careNotes": ["Can focus sunlight like a lens. Don't leave it in a sunny window near fabric."],
+      "careNotes": [
+        "Can focus sunlight like a lens. Don't leave it in a sunny window near fabric."
+      ],
       "safetyNotes": [],
-      "anchorSenses": ["Touch", "See"]
+      "anchorSenses": [
+        "Touch",
+        "See"
+      ],
+      "charmMeaning": "for clarity, and a clean start",
+      "history": "Greek krystallos, ice. Pliny the Elder believed rock crystal was ice frozen so hard it could never melt, since it was found near Alpine snows."
     },
     {
-      "id": "amethyst", "name": "Amethyst", "mineral": "Quartz (SiO₂), purple from iron and natural irradiation", "mohsHardness": "7",
-      "modernAssociations": ["calm", "sobriety", "intuition"],
+      "id": "amethyst",
+      "name": "Amethyst",
+      "mineral": "Quartz (SiO₂), purple from iron and natural irradiation",
+      "mohsHardness": "7",
+      "modernAssociations": [
+        "calm",
+        "sobriety",
+        "intuition"
+      ],
       "tactile": "Faceted points with sharp-ish edges, or smooth when tumbled. Purple deepens toward the tips.",
-      "careNotes": ["Fades in prolonged sunlight."],
+      "careNotes": [
+        "Fades in prolonged sunlight."
+      ],
       "safetyNotes": [],
-      "anchorSenses": ["Touch", "See"]
+      "anchorSenses": [
+        "Touch",
+        "See"
+      ],
+      "charmMeaning": "for a clear head, and sobriety",
+      "history": "Greek amethystos, 'not drunk': Pliny records the old belief that it kept the wearer sober. The Dionysus myth about it was written much later, by the French poet Remy Belleau in the 1500s."
     },
     {
-      "id": "rose-quartz", "name": "Rose quartz", "mineral": "Quartz (SiO₂)", "mohsHardness": "7",
-      "modernAssociations": ["self-compassion", "gentleness", "love"],
+      "id": "rose-quartz",
+      "name": "Rose quartz",
+      "mineral": "Quartz (SiO₂)",
+      "mohsHardness": "7",
+      "modernAssociations": [
+        "self-compassion",
+        "gentleness",
+        "love"
+      ],
       "tactile": "Milky, soft pink, and usually tumbled very smooth. Pleasant to rub with your thumb.",
-      "careNotes": ["Can fade in strong sunlight."],
+      "careNotes": [
+        "Can fade in strong sunlight."
+      ],
       "safetyNotes": [],
-      "anchorSenses": ["Touch", "See"]
+      "anchorSenses": [
+        "Touch",
+        "See"
+      ],
+      "charmMeaning": "for love, and being kind to yourself",
+      "history": "Carved into beads and seals in the ancient Near East and the Roman world; its link to love and to Venus is modern crystal lore built on that."
     },
     {
-      "id": "black-tourmaline", "name": "Black tourmaline (schorl)", "mineral": "Borosilicate (tourmaline group)", "mohsHardness": "7–7.5",
-      "modernAssociations": ["protection", "boundaries"],
+      "id": "black-tourmaline",
+      "name": "Black tourmaline (schorl)",
+      "mineral": "Borosilicate (tourmaline group)",
+      "mohsHardness": "7–7.5",
+      "modernAssociations": [
+        "protection",
+        "boundaries"
+      ],
       "tactile": "Long, striated ridges run along its length, so you can feel the grooves under your fingernail.",
-      "careNotes": ["Brittle across its length. Raw pieces can splinter."],
+      "careNotes": [
+        "Brittle across its length. Raw pieces can splinter."
+      ],
       "safetyNotes": [],
-      "anchorSenses": ["Touch", "See"]
+      "anchorSenses": [
+        "Touch",
+        "See"
+      ],
+      "charmMeaning": "for protection, and keeping things out",
+      "history": "It builds an electric charge when warmed or rubbed, so it picks up dust and ash; that property was studied by 18th-century scientists. (The often-told Dutch name 'aschentrekker', ash-puller, couldn't be confirmed.)"
     },
     {
-      "id": "moonstone", "name": "Moonstone", "mineral": "Feldspar (orthoclase / albite)", "mohsHardness": "6–6.5",
-      "modernAssociations": ["cycles", "intuition", "new beginnings"],
+      "id": "moonstone",
+      "name": "Moonstone",
+      "mineral": "Feldspar (orthoclase / albite)",
+      "mohsHardness": "6–6.5",
+      "modernAssociations": [
+        "cycles",
+        "intuition",
+        "new beginnings"
+      ],
       "tactile": "Smooth and pearly, with a bluish glow (adularescence) that floats across the surface as you tilt it.",
-      "careNotes": ["Has cleavage planes, so it can crack if knocked."],
+      "careNotes": [
+        "Has cleavage planes, so it can crack if knocked."
+      ],
       "safetyNotes": [],
-      "anchorSenses": ["Touch", "See"]
+      "anchorSenses": [
+        "Touch",
+        "See"
+      ],
+      "charmMeaning": "for the moon, dreams and new beginnings",
+      "history": "Romans thought it was made of moonlight and tied it to the moon goddess; in India it's 'moon's light' and a traditional wedding gift. Art Nouveau jewellers (Lalique, Tiffany) loved it."
     },
     {
-      "id": "labradorite", "name": "Labradorite", "mineral": "Plagioclase feldspar", "mohsHardness": "6–6.5",
-      "modernAssociations": ["transformation", "protection"],
+      "id": "labradorite",
+      "name": "Labradorite",
+      "mineral": "Plagioclase feldspar",
+      "mohsHardness": "6–6.5",
+      "modernAssociations": [
+        "transformation",
+        "protection"
+      ],
       "tactile": "Dull grey until it catches the light just right, then flashes of blue, green and gold appear. Good for an 'I'll notice when it changes' focus exercise.",
-      "careNotes": ["Can chip along cleavage planes."],
+      "careNotes": [
+        "Can chip along cleavage planes."
+      ],
       "safetyNotes": [],
-      "anchorSenses": ["See", "Touch"]
+      "anchorSenses": [
+        "See",
+        "Touch"
+      ],
+      "charmMeaning": "for wonder, and what's hidden",
+      "history": "Named for the Labrador coast, where Moravian missionaries saw it among Inuit people around 1770. An Inuit story recorded in Inuktitut Magazine tells of northern lights trapped in the rock, and a hunter's harpoon that freed most of them."
     },
     {
-      "id": "carnelian", "name": "Carnelian", "mineral": "Chalcedony (microcrystalline quartz)", "mohsHardness": "6.5–7",
-      "modernAssociations": ["vitality", "courage", "creativity"],
+      "id": "carnelian",
+      "name": "Carnelian",
+      "mineral": "Chalcedony (microcrystalline quartz)",
+      "mohsHardness": "6.5–7",
+      "modernAssociations": [
+        "vitality",
+        "courage",
+        "creativity"
+      ],
       "tactile": "Waxy and warm-looking, in translucent orange-red. It glows like an ember against light.",
-      "careNotes": ["Much commercial carnelian is heat-treated or dyed agate."],
+      "careNotes": [
+        "Much commercial carnelian is heat-treated or dyed agate."
+      ],
       "safetyNotes": [],
-      "anchorSenses": ["See", "Touch"]
+      "anchorSenses": [
+        "See",
+        "Touch"
+      ],
+      "charmMeaning": "for courage and life",
+      "history": "The most common gemstone of ancient Egypt, tied to the sun and to blood and life: heart amulets and Eye of Horus amulets were carved from it."
     },
     {
-      "id": "obsidian", "name": "Obsidian", "mineral": "Volcanic glass (not a crystal)", "mohsHardness": "5–5.5",
-      "modernAssociations": ["truth", "protection", "shadow work"],
+      "id": "obsidian",
+      "name": "Obsidian",
+      "mineral": "Volcanic glass (not a crystal)",
+      "mohsHardness": "5–5.5",
+      "modernAssociations": [
+        "truth",
+        "protection",
+        "shadow work"
+      ],
       "tactile": "Glass-smooth and black, with a mirror-like shine when polished.",
-      "careNotes": ["Scratches fairly easily."],
-      "safetyNotes": ["Broken or raw obsidian has edges sharper than a scalpel. Only handle tumbled pieces."],
-      "anchorSenses": ["Touch", "See"]
+      "careNotes": [
+        "Scratches fairly easily."
+      ],
+      "safetyNotes": [
+        "Broken or raw obsidian has edges sharper than a scalpel. Only handle tumbled pieces."
+      ],
+      "anchorSenses": [
+        "Touch",
+        "See"
+      ],
+      "charmMeaning": "for honesty, and seeing yourself",
+      "history": "Volcanic glass, knapped into blades for thousands of years and polished into mirrors in Mesoamerica."
     },
     {
-      "id": "selenite", "name": "Selenite", "mineral": "Gypsum (CaSO₄·2H₂O)", "mohsHardness": "2",
-      "modernAssociations": ["cleansing", "calm"],
+      "id": "selenite",
+      "name": "Selenite",
+      "mineral": "Gypsum (CaSO₄·2H₂O)",
+      "mohsHardness": "2",
+      "modernAssociations": [
+        "cleansing",
+        "calm"
+      ],
       "tactile": "Silky, fibrous and soft enough to scratch with a fingernail. Feels faintly warm compared with quartz.",
-      "careNotes": ["Water damages it: it dissolves and pits. Never wash or soak it.", "Most stones sold as 'selenite' are the fibrous variety, satin spar."],
+      "careNotes": [
+        "Water damages it: it dissolves and pits. Never wash or soak it.",
+        "Most stones sold as 'selenite' are the fibrous variety, satin spar."
+      ],
       "safetyNotes": [],
-      "anchorSenses": ["Touch", "See"]
+      "anchorSenses": [
+        "Touch",
+        "See"
+      ],
+      "charmMeaning": "for the moon, and quiet",
+      "history": "Named for Selene, the Greek moon. Soft enough to scratch with a fingernail, and it dissolves in water."
     },
     {
-      "id": "malachite", "name": "Malachite", "mineral": "Copper carbonate hydroxide", "mohsHardness": "3.5–4",
-      "modernAssociations": ["transformation", "heart-healing"],
+      "id": "malachite",
+      "name": "Malachite",
+      "mineral": "Copper carbonate hydroxide",
+      "mohsHardness": "3.5–4",
+      "modernAssociations": [
+        "transformation",
+        "heart-healing"
+      ],
       "tactile": "Banded swirls of deep and light green, like rings in a cut tree. Polished pieces are cool and silky.",
-      "careNotes": ["Soft, so it scratches easily. Keep away from acids and household cleaners."],
-      "safetyNotes": ["Dust from cutting or sanding is toxic. Never make 'gem elixirs' or put it in drinks. Wash your hands after handling raw pieces."],
-      "anchorSenses": ["See", "Touch"]
+      "careNotes": [
+        "Soft, so it scratches easily. Keep away from acids and household cleaners."
+      ],
+      "safetyNotes": [
+        "Dust from cutting or sanding is toxic. Never make 'gem elixirs' or put it in drinks. Wash your hands after handling raw pieces."
+      ],
+      "anchorSenses": [
+        "See",
+        "Touch"
+      ],
+      "charmMeaning": "for growth, and change",
+      "history": "Ground into green eye paint (udju) in ancient Egypt from about 4000 BCE; its Sinai mines were linked to the goddess Hathor."
     },
     {
-      "id": "tigers-eye", "name": "Tiger's eye", "mineral": "Quartz replacing crocidolite fibres", "mohsHardness": "7",
-      "modernAssociations": ["confidence", "focus"],
+      "id": "tigers-eye",
+      "name": "Tiger's eye",
+      "mineral": "Quartz replacing crocidolite fibres",
+      "mohsHardness": "7",
+      "modernAssociations": [
+        "confidence",
+        "focus"
+      ],
       "tactile": "Golden-brown bands shimmer and roll as you turn it (chatoyancy), like light on water.",
       "careNotes": [],
-      "safetyNotes": ["Polished stones are safe to handle, but they should never be cut or ground at home, because the original fibres were a form of asbestos."],
-      "anchorSenses": ["See", "Touch"]
+      "safetyNotes": [
+        "Polished stones are safe to handle, but they should never be cut or ground at home, because the original fibres were a form of asbestos."
+      ],
+      "anchorSenses": [
+        "See",
+        "Touch"
+      ],
+      "charmMeaning": "for courage, and keeping watch",
+      "history": "Its moving band of light (chatoyancy) comes from fibres inside the quartz; that 'eye' made it a watchful stone in modern lore."
+    },
+    {
+      "id": "jet",
+      "name": "Jet",
+      "mineral": "Lignite: fossilised wood (not a mineral crystal)",
+      "mohsHardness": "2.5–4",
+      "modernAssociations": [
+        "protection",
+        "grief",
+        "remembering"
+      ],
+      "tactile": "Very light for a black stone, and warm almost at once in your hand. Velvety where it's polished.",
+      "careNotes": [
+        "Soft: keep it away from harder stones, which scratch it."
+      ],
+      "safetyNotes": [
+        "Black glass is often sold as jet: real jet feels warm and light."
+      ],
+      "anchorSenses": [
+        "Touch",
+        "See"
+      ],
+      "charmMeaning": "for mourning, and remembering",
+      "history": "Fossilised wood. After Prince Albert died in 1861, Queen Victoria wore Whitby jet for the rest of her life, and jet became the stone of mourning across Britain."
+    },
+    {
+      "id": "amber",
+      "name": "Amber",
+      "mineral": "Fossilised tree resin (not a mineral)",
+      "mohsHardness": "2–2.5",
+      "modernAssociations": [
+        "warmth",
+        "comfort",
+        "the sun"
+      ],
+      "tactile": "Light, and warm in the hand straight away. Rub it on wool and it smells faintly of pine.",
+      "careNotes": [
+        "Soft and easily scratched; keep it from heat and perfume."
+      ],
+      "safetyNotes": [
+        "Plastic and copal are often sold as amber.",
+        "Amber teething necklaces are a choking and strangulation risk: never for babies."
+      ],
+      "anchorSenses": [
+        "Touch",
+        "Smell",
+        "See"
+      ],
+      "charmMeaning": "for warmth, and the sun",
+      "history": "Fossil tree resin, washed up on Baltic shores after storms. In Lithuanian legend it's the pieces of the sea goddess Jūratė's amber palace, or her tears. The Greeks said it was the tears of the sun's daughters."
+    },
+    {
+      "id": "miras-stone",
+      "name": "Mira's stone",
+      "mineral": "A garden pebble with a ring of white quartz (or calcite) all the way around: a vein that filled a crack in the rock",
+      "mohsHardness": "about 6–7",
+      "modernAssociations": [
+        "wishes",
+        "holding on",
+        "someone who saw you"
+      ],
+      "tactile": "Grey, flat and smooth as soap. Your thumb finds the white line without looking.",
+      "careNotes": [
+        "Nothing. It's been in your pocket for years."
+      ],
+      "safetyNotes": [
+        "None."
+      ],
+      "anchorSenses": [
+        "Touch",
+        "See"
+      ],
+      "history": "From Mira's garden. In British and wider European coastal folklore, a stone with one unbroken white ring all the way around is a wishing stone: trace the line with a finger, make a wish, and give it back to the sea, or give it to someone else. Mira gave it to you.",
+      "charmMeaning": "for being held, and a wish (a wishing stone)"
     }
   ]
 }

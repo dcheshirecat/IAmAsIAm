@@ -120,6 +120,7 @@ Mira: From my garden. I used to hold it in meeting, when my mind wandered off. Y
 -
 Something to hold. # exercise: grounding-object
 ~ learn_skill("grounding-object")
+~ gain_stone("miras-stone", "guide_quaker")
 ~ nudge(-0.1)
 Mira: Write to me. Tell me about school, and books, and everything. # vo: prologue-quaker_mira_0103
 Maya: I will. I promise. # vo: prologue-quaker_maya-11_0104
