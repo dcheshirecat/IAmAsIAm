@@ -190,7 +190,8 @@ namespace IAmAsIAm.Runtime.Story
             var runs = GameServices.ChapterRuns;
             if (roster == null || runs == null) return;
             var pool = new List<string>();
-            foreach (var id in runs.AllUnlocked()) if (id != roster.FrontingId && roster.GetDefinition(id) != null) pool.Add(id);
+            // Owner: only the host or an alter already unlocked.
+            foreach (var m in roster.Members) if (m.id != roster.FrontingId && m.canFront && runs.CanSwitchTo(m.id)) pool.Add(m.id);
             if (pool.Count == 0) return;
             int percent = int.TryParse(value, out int p) ? Mathf.Clamp(p, 1, 100) : 15;
             if (Chance.Next(100) >= percent) return;

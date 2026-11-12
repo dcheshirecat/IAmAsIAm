@@ -140,7 +140,7 @@ namespace IAmAsIAm.Tests
             loaded.RestoreRun(saved);
             Assert.That(loaded.CurrentChapterId, Is.EqualTo("prologue-quaker"));
             Assert.That(loaded.StartedAsId, Is.EqualTo("maya"));
-            Assert.That(loaded.Complete(), Is.EqualTo(new[] { "nina" }));
+            Assert.That(loaded.Complete("nina"), Is.EqualTo(new[] { "nina" }));
 
             var none = new ChapterRuns().ExportRun();
             loaded.RestoreRun(none);

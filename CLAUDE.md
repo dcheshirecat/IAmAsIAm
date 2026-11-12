@@ -62,12 +62,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   player into dissociation and the first time losing time; the **first switch** comes at the very end, home alone in Maya's room
   after services, then a blackout. Guide: a kind older Friend in Sarah's church who tries to be there for Maya and fails.
   Sarah is well-meaning but absent, neglectful to the point of harm; **never show her side**. Nothing is off-limits to show.
-- 2026-11-12: **Replay rule:** anyone who fronts during a chapter can START that chapter once it's finished in full
+- 2026-11-12: **Replay rule (REPLACED, see "Chapter rules" below):** was "anyone who fronts can start it"
   (`Core/Story/ChapterRuns.cs`, saved **per save slot**: unlocks do NOT carry across saves, owner 2026-11-12). **Content warnings before every chapter** (validator requires contentTags).
 
 - 2026-11-12: Prologue: guide **Mira (68)**; Sarah's church is the **Church of Friends**; the first switch at the end is **Nina**
-  (the first unlock). Replays are per chapter: same events, different abilities/choices per alter; unlocks are **paced: at most one
-  new alter per finished run** (`ChapterRuns.MaxNewUnlocksPerRun`). After the warnings, the player may **skip and read a summary**.
+  (the first unlock). Replays are per chapter: same events, different abilities/choices per alter; unlocks: see "Chapter rules" below. After the warnings, the player may **skip and read a summary**.
   Story-scripted switches use the tag `# switch: <member>`. Still open: Maya's (the body's) age in the prologue.
 - 2026-11-12: Owner wants **save slots** and an **animated loading screen with a random tarot card** each time.
   Built: **3 slots** (`Core/Save/SaveSlots.cs`; each slot = full save + small header), a title screen at start-up and a
@@ -210,9 +209,14 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   **Mark is Episcopal**, a **kind queer man**, left very confused and upset when Maya detransitions.
   **Gracie** is a **Catholic** nun in training who **volunteers at the campus ministry**: fundraisers, donation drives, social
   meetings and prayers. **Orthodox Christianity is saved for Chapter 13** (Maya exploring Europe), not shown in Chapter 1.
-  Data: `chapters.json` has `ch1-5-axel` (knot `ch1_5_axel`) with **`firstRunMemberId: axel`**: the first run can only be started as
-  Axel (`ChapterRuns.StartersFor(id, default, firstRun)`), and finishing it unlocks him (`Begin(..., starterUnlocks: true)`; a normal run
-  never unlocks its own starter). New content tags: pandemic, isolation, breakup, detransition.
+  Data: `chapters.json` has `ch1-5-axel` (knot `ch1_5_axel`). New content tags: pandemic, isolation, breakup, detransition.
+- 2026-11-12: **Chapter rules (owner, replaces the old replay rule):** the **first playthrough of a chapter always starts as its
+  `startingMemberId`** (Maya for everything up to Chapter 1; **Axel for Chapter 1.5**). **Each chapter unlocks ONE set alter**
+  (`unlocksMemberId`, never random): Prologue **Nina**, Prelude **Izzy**, Chapter 1 **Jacob**, Chapter 1.5 **Axel**. Once finished,
+  a chapter can be **replayed as any alter unlocked so far** (e.g. the Prelude as Nina). Dissociation and switches can be triggered in
+  any chapter, but **only to the host or an unlocked alter** (`ChapterRuns.CanSwitchTo`, used by `TriggerSystem.CanSwitchTo` and
+  `# maybe-switch`; e.g. Heather can't come forward in the Prelude). Story-scripted `# switch:` happens as written.
+  `ChapterRuns.Complete(unlocksMemberId)`, `StartersFor(id, startingMemberId)`. Later chapters' starters/unlocks: ask the owner.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

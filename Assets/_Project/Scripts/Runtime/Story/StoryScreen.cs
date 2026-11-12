@@ -356,11 +356,11 @@ namespace IAmAsIAm.Runtime.Story
                 .Where(c => chapterId == null || c.chapterId == chapterId).ToList();
             string body = choices.Count == 0 ? "No choices recorded yet." : string.Join("\n", choices.Select(c => "• " + c.summary));
 
-            // Finishing the chapter in full: whoever fronted for the first time can start it next time (paced).
+            // Finishing the chapter in full unlocks its one set alter (owner: never random). Replays can start as anyone unlocked.
             if (chapterId != null)
             {
-                foreach (var id in runs.Complete())
-                    body += $"\n\n<b>{MemberName(id)}</b> came forward this time. You can now start this chapter as {MemberName(id)}.";
+                foreach (var id in runs.Complete(GameServices.Chapter(chapterId)?.unlocksMemberId))
+                    body += $"\n\n<b>{MemberName(id)}</b> came forward. You can now replay the chapters you've finished as {MemberName(id)}.";
             }
             OpenAction("Your choices", body, ("Continue", Finish));
         }
@@ -380,7 +380,7 @@ namespace IAmAsIAm.Runtime.Story
             string body = $"{setting}<b>Content warnings</b>\n{warnings}\n\nYou can open the Anchor at any time.";
 
             var buttons = new List<(string, Action)>();
-            var starters = GameServices.ChapterRuns?.StartersFor(ch.id, ch.startingMemberId, ch.firstRunMemberId) ?? new List<string>();
+            var starters = GameServices.ChapterRuns?.StartersFor(ch.id, ch.startingMemberId) ?? new List<string>();
             if (starters.Count == 0) buttons.Add(("Begin", () => BeginChapter(ch, null)));
             foreach (var id in starters)
             {
@@ -397,10 +397,7 @@ namespace IAmAsIAm.Runtime.Story
             CloseAction();
             var roster = GameServices.Roster;
             string starter = starterId ?? roster?.FrontingId;
-            // A forced first run (Chapter 1.5 is Axel's) is how that alter is unlocked.
-            bool forcedFirst = !string.IsNullOrEmpty(ch.firstRunMemberId) && starter == ch.firstRunMemberId
-                               && !(GameServices.ChapterRuns?.HasFinished(ch.id) ?? true);
-            GameServices.ChapterRuns?.Begin(ch.id, starter, forcedFirst);
+            GameServices.ChapterRuns?.Begin(ch.id, starter);
             if (roster != null && !string.IsNullOrEmpty(starterId) && roster.FrontingId != starterId) roster.ForceSwitch(starterId);
             runner.Play(ch.inkKnot, null, ch.id);
         }

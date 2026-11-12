@@ -279,11 +279,18 @@ namespace IAmAsIAm.Core.Triggers
             return outcomes[outcomes.Count - 1];
         }
 
+        /// <summary>
+        /// Who a trigger may switch to (owner: only the host or an alter already unlocked). Null = anyone who can front.
+        /// The game sets it to ChapterRuns.CanSwitchTo.
+        /// </summary>
+        public Func<string, bool> CanSwitchTo { get; set; }
+
         string ResolveSwitchTarget(string switchTo, SystemRoster roster)
         {
             if (roster == null) return null;
             bool Eligible(SystemMemberDefinition m) =>
-                m.id != roster.FrontingId && m.canFront && roster.GetState(m.id)?.presentation == MemberPresentation.Embodied;
+                m.id != roster.FrontingId && m.canFront && roster.GetState(m.id)?.presentation == MemberPresentation.Embodied
+                && (CanSwitchTo == null || CanSwitchTo(m.id));
 
             if (!string.IsNullOrEmpty(switchTo) && switchTo != "any")
             {

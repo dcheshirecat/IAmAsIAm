@@ -19,13 +19,13 @@ namespace IAmAsIAm.Core.Story
         /// <summary>The Ink knot this chapter starts at.</summary>
         public string inkKnot;
         public string featuredMemberId;
-        /// <summary>Who the chapter starts as (the prologue: young Maya). Others unlock by fronting during a full run (ChapterRuns).</summary>
-        public string startingMemberId;
         /// <summary>
-        /// If set, the FIRST run of this chapter must be played as this member, whoever is chosen elsewhere (owner: Chapter 1.5
-        /// is always Axel the first time). After one full run, the usual starters apply.
+        /// Who the FIRST playthrough always starts as (owner: Maya up to Chapter 1; Axel for Chapter 1.5). Once the chapter is
+        /// finished it can be replayed as any alter unlocked so far (ChapterRuns).
         /// </summary>
-        public string firstRunMemberId;
+        public string startingMemberId;
+        /// <summary>The one alter finishing this chapter unlocks (owner: set per chapter, never random). Empty = none.</summary>
+        public string unlocksMemberId;
         /// <summary>Where and when, e.g. "Iowa City, Iowa; Maya's childhood (the body was born in 1998)".</summary>
         public string setting;
         public string skillFamily;

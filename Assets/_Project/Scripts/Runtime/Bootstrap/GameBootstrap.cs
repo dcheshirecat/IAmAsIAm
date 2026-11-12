@@ -71,6 +71,8 @@ namespace IAmAsIAm.Runtime
             var runs = new ChapterRuns(); // Unlocks come from the loaded save (SaveService), never from preferences.
             GameServices.InitializeChapters(DataLoader.Load<ChapterData>("chapters"), runs, prefs);
             GameServices.Roster.FrontChanged += change => runs.RecordFront(change.NewId);
+            // Owner: triggers can only switch to the host or an alter already unlocked.
+            if (GameServices.Triggers != null) GameServices.Triggers.CanSwitchTo = runs.CanSwitchTo;
         }
     }
 

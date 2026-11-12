@@ -4,33 +4,76 @@ using NUnit.Framework;
 
 namespace IAmAsIAm.Tests
 {
-    /// <summary>The owner's replay rule: alters who front during a FULL chapter run become starting alters for it.</summary>
+    /// <summary>
+    /// The owner's chapter rules: the first playthrough starts as the chapter's set alter; finishing a chapter unlocks its one set
+    /// alter (never random); finished chapters can be replayed as anyone unlocked; triggers only switch to the host or unlocked alters.
+    /// </summary>
     public class ChapterRunTests
     {
         [Test]
-        public void FinishingAChapter_UnlocksTheFirstNewAlterWhoFronted()
+        public void FirstPlaythrough_OnlyTheStartingAlter()
         {
             var runs = new ChapterRuns();
-            runs.Begin("prologue-quaker", "maya");
-            runs.RecordFront("nina");
-            Assert.That(runs.Complete(), Is.EqualTo(new[] { "nina" }));
-            Assert.That(runs.StartersFor("prologue-quaker", "maya"), Is.EqualTo(new[] { "maya", "nina" }));
-            Assert.That(runs.StartersFor("prelude-wicca", "maya"), Is.EqualTo(new[] { "maya" }), "Unlocks are per chapter.");
+            Assert.That(runs.StartersFor("prelude-wicca", "maya"), Is.EqualTo(new[] { "maya" }));
+            Assert.That(runs.StartersFor("ch1-5-axel", "axel"), Is.EqualTo(new[] { "axel" }));
         }
 
         [Test]
-        public void Unlocks_ArePaced_OneNewAlterPerFinishedRun()
+        public void Finishing_UnlocksTheChaptersSetAlter_NotWhoeverFronted()
         {
             var runs = new ChapterRuns();
             runs.Begin("prologue-quaker", "maya");
-            runs.RecordFront("lily");
-            runs.RecordFront("nina");
-            Assert.That(runs.Complete(), Is.EqualTo(new[] { "lily" }), "Only the first new one.");
+            runs.RecordFront("lily"); // A triggered switch partway: doesn't decide the unlock.
+            Assert.That(runs.Complete("nina"), Is.EqualTo(new[] { "nina" }));
+            Assert.That(runs.IsUnlockedAnywhere("lily"), Is.False);
+            Assert.That(runs.IsUnlockedAnywhere("nina"), Is.True);
+        }
 
-            runs.Begin("prologue-quaker", "lily");
-            runs.RecordFront("nina");
-            Assert.That(runs.Complete(), Is.EqualTo(new[] { "nina" }), "The next run can unlock the next.");
-            Assert.That(runs.StartersFor("prologue-quaker", "maya"), Is.EqualTo(new[] { "maya", "lily", "nina" }));
+        [Test]
+        public void FinishedChapters_ReplayAsAnyoneUnlocked_EvenFromOtherChapters()
+        {
+            var runs = new ChapterRuns();
+            runs.Begin("prologue-quaker", "maya");
+            runs.Complete("nina");
+            runs.Begin("prelude-wicca", "maya");
+            Assert.That(runs.StartersFor("prelude-wicca", "maya"), Is.EqualTo(new[] { "maya" }), "Not finished yet: Maya only.");
+            runs.Complete("izzy");
+
+            Assert.That(runs.StartersFor("prelude-wicca", "maya"), Is.EqualTo(new[] { "maya", "izzy", "nina" }));
+            Assert.That(runs.StartersFor("prologue-quaker", "maya"), Is.EqualTo(new[] { "maya", "izzy", "nina" }));
+            Assert.That(runs.StartersFor("ch1-christianity", "maya"), Is.EqualTo(new[] { "maya" }), "Not played yet.");
+        }
+
+        [Test]
+        public void ChapterOnePointFive_IsAxelsFirst_AndUnlocksHim()
+        {
+            var runs = new ChapterRuns();
+            runs.Begin("ch1-5-axel", "axel");
+            runs.RecordFront("maya"); // Maya comes back at the end.
+            Assert.That(runs.Complete("axel"), Is.EqualTo(new[] { "axel" }));
+            Assert.That(runs.StartersFor("ch1-5-axel", "axel"), Is.EqualTo(new[] { "axel", "maya" }));
+        }
+
+        [Test]
+        public void Replaying_DoesntUnlockAgain()
+        {
+            var runs = new ChapterRuns();
+            runs.Begin("prologue-quaker", "maya");
+            runs.Complete("nina");
+            runs.Begin("prologue-quaker", "nina");
+            Assert.That(runs.Complete("nina"), Is.Empty);
+        }
+
+        [Test]
+        public void Triggers_OnlySwitchToTheHostOrUnlockedAlters()
+        {
+            var runs = new ChapterRuns();
+            Assert.That(runs.CanSwitchTo("maya"), Is.True);
+            Assert.That(runs.CanSwitchTo("heather"), Is.False, "Heather can't come forward in the Prelude (owner's example).");
+            runs.Begin("prologue-quaker", "maya");
+            runs.Complete("nina");
+            Assert.That(runs.CanSwitchTo("nina"), Is.True);
+            Assert.That(runs.CanSwitchTo("heather"), Is.False);
         }
 
         [Test]
@@ -38,11 +81,10 @@ namespace IAmAsIAm.Tests
         {
             var runs = new ChapterRuns();
             runs.Begin("prologue-quaker", "maya");
-            runs.RecordFront("jacob");
             runs.Abandon();
-            Assert.That(runs.StartersFor("prologue-quaker", "maya"), Is.EqualTo(new[] { "maya" }));
-            runs.RecordFront("axel"); // Not in a chapter: ignored.
-            Assert.That(runs.Complete(), Is.Empty);
+            Assert.That(runs.HasFinished("prologue-quaker"), Is.False);
+            Assert.That(runs.Complete("nina"), Is.Empty, "Not in a chapter: nothing happens.");
+            Assert.That(runs.IsUnlockedAnywhere("nina"), Is.False);
         }
 
         [Test]
@@ -50,76 +92,20 @@ namespace IAmAsIAm.Tests
         {
             var runs = new ChapterRuns();
             runs.Begin("prologue-quaker", "maya");
-            runs.RecordFront("lily");
-            runs.Complete();
+            runs.Complete("nina");
             var again = new ChapterRuns();
             again.Restore(runs.Export());
-            Assert.That(again.StartersFor("prologue-quaker", "maya"), Is.EqualTo(new[] { "maya", "lily" }));
+            Assert.That(again.HasFinished("prologue-quaker"), Is.True);
+            Assert.That(again.StartersFor("prologue-quaker", "maya"), Is.EqualTo(new[] { "maya", "nina" }));
         }
 
         [Test]
-        public void ReplayingAsAnUnlockedAlter_CanUnlockMaya_OnlyIfSheFronts()
+        public void AChapterWithNoSetAlter_StillCountsAsFinished()
         {
             var runs = new ChapterRuns();
-            runs.Begin("prologue-quaker", "lily");
-            Assert.That(runs.Complete(), Is.Empty, "The starter isn't 'new'.");
-        }
-    
-        [Test]
-        public void UnlockedAnywhereFollowsFinishedRuns()
-        {
-            var runs = new ChapterRuns();
-            Assert.That(runs.IsUnlockedAnywhere("nina"), Is.False);
-            runs.Begin("prologue-quaker", "maya");
-            runs.RecordFront("nina");
-            Assert.That(runs.IsUnlockedAnywhere("nina"), Is.False, "Not until the chapter is finished.");
-            runs.Complete();
-            Assert.That(runs.IsUnlockedAnywhere("nina"));
-            Assert.That(runs.IsUnlockedAnywhere("maya"), Is.False, "The default starter isn't an unlock.");
-            Assert.That(runs.AllUnlocked(), Is.EqualTo(new[] { "nina" }));
-        }
-
-        [Test]
-        public void ForcedFirstRun_OnlyThatAlter_UntilTheChapterIsFinished()
-        {
-            var runs = new ChapterRuns();
-            Assert.That(runs.StartersFor("ch1-5-axel", "axel", "axel"), Is.EqualTo(new[] { "axel" }));
-
-            runs.Begin("ch1-5-axel", "axel", starterUnlocks: true);
-            runs.RecordFront("maya"); // Maya comes back at the end.
-            var fresh = runs.Complete();
-
-            Assert.That(fresh, Is.EqualTo(new[] { "axel" }), "the forced first run is how Axel is unlocked (one per run: Axel first)");
-            Assert.That(runs.HasFinished("ch1-5-axel"), Is.True);
-            Assert.That(runs.IsUnlockedAnywhere("axel"), Is.True);
-            Assert.That(runs.StartersFor("ch1-5-axel", "axel", "axel"), Is.EqualTo(new[] { "axel" }));
-
-            // A second run as Axel unlocks the next alter to front (Maya).
-            runs.Begin("ch1-5-axel", "axel");
-            runs.RecordFront("maya");
-            runs.Complete();
-            Assert.That(runs.StartersFor("ch1-5-axel", "axel", "axel"), Is.EqualTo(new[] { "axel", "maya" }));
-        }
-
-        [Test]
-        public void NormalRuns_StillDontUnlockTheirOwnStarter()
-        {
-            var runs = new ChapterRuns();
-            runs.Begin("prologue-quaker", "maya");
+            runs.Begin("ch2-judaism", "maya");
             Assert.That(runs.Complete(), Is.Empty);
-            Assert.That(runs.IsUnlockedAnywhere("maya"), Is.False);
+            Assert.That(runs.HasFinished("ch2-judaism"), Is.True);
         }
-
-        [Test]
-        public void ForcedFirstRun_SurvivesASaveMidChapter()
-        {
-            var runs = new ChapterRuns();
-            runs.Begin("ch1-5-axel", "axel", starterUnlocks: true);
-            var state = runs.ExportRun();
-            var again = new ChapterRuns();
-            again.RestoreRun(state);
-            Assert.That(again.StarterUnlocks, Is.True);
-            Assert.That(again.Complete(), Is.EqualTo(new[] { "axel" }));
-        }
-}
+    }
 }

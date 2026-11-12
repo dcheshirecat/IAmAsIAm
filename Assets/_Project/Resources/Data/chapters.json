@@ -20,7 +20,8 @@
         "time-loss",
         "involuntary-switch"
       ],
-      "summary": "Quaker: the backstory, in Iowa City, over four Sundays at ages 5, 8, 11 and 15. Young Maya is raised by Sarah, a single mother and the minister of a programmed Friends church, who is well-meaning but absent, and neglectful to the point of harm. Mira, a kind older Friend, meets Maya at 5, raises her worries with Sarah at 8 and backs down, and moves away when Maya is 11, never knowing how bad things were. At 15, Sarah mentions in passing that Mira has died. That night, home alone in her room, Maya hears a voice inside that is not hers, and then loses time."
+      "summary": "Quaker: the backstory, in Iowa City, over four Sundays at ages 5, 8, 11 and 15. Young Maya is raised by Sarah, a single mother and the minister of a programmed Friends church, who is well-meaning but absent, and neglectful to the point of harm. Mira, a kind older Friend, meets Maya at 5, raises her worries with Sarah at 8 and backs down, and moves away when Maya is 11, never knowing how bad things were. At 15, Sarah mentions in passing that Mira has died. That night, home alone in her room, Maya hears a voice inside that is not hers, and then loses time.",
+      "unlocksMemberId": "nina"
     },
     {
       "id": "prelude-wicca",
@@ -28,14 +29,15 @@
       "title": "Prelude (title to come)",
       "sabbat": "",
       "inkKnot": "prelude",
-      "startingMemberId": "",
+      "startingMemberId": "maya",
       "featuredMemberId": "",
       "setting": "",
       "skillFamily": "",
       "contentTags": [
         "religious-content"
       ],
-      "summary": "Wicca: more backstory. The character has left organised religion and found Wicca."
+      "summary": "Wicca: more backstory. The character has left organised religion and found Wicca.",
+      "unlocksMemberId": "izzy"
     },
     {
       "id": "ch1-christianity",
@@ -56,7 +58,8 @@
         "detransition",
         "pandemic"
       ],
-      "summary": "Christianity, in college. Maya loses her junior year: it passes on a black screen, never explained. She comes back at the end of it to a life she doesn't recognise: a boyfriend, Mark, a kind, queer Episcopalian, and a body that has been living as a trans man. She detransitions and breaks up with Mark, who is left confused and hurt, and spends her senior year abandoned by everyone around her. She graduates alone, in the pandemic. Gracie, a young Catholic nun in training who volunteers at the campus ministry, is the guide. At a prayer service after graduation, Jacob comes forward."
+      "summary": "Christianity, in college. Maya loses her junior year: it passes on a black screen, never explained. She comes back at the end of it to a life she doesn't recognise: a boyfriend, Mark, a kind, queer Episcopalian, and a body that has been living as a trans man. She detransitions and breaks up with Mark, who is left confused and hurt, and spends her senior year abandoned by everyone around her. She graduates alone, in the pandemic. Gracie, a young Catholic nun in training who volunteers at the campus ministry, is the guide. At a prayer service after graduation, Jacob comes forward.",
+      "unlocksMemberId": "jacob"
     },
     {
       "id": "ch1-5-axel",
@@ -65,7 +68,6 @@
       "sabbat": "",
       "inkKnot": "ch1_5_axel",
       "startingMemberId": "axel",
-      "firstRunMemberId": "axel",
       "featuredMemberId": "axel",
       "setting": "Champaign-Urbana, Illinois: Maya's junior year (2018 to 2019), as Axel",
       "skillFamily": "",
@@ -76,7 +78,8 @@
         "breakup",
         "detransition"
       ],
-      "summary": "A flashback, never explained, just played: the junior year Maya lost. Axel fronts, comes out as a trans man as the body, and dates Mark, a kind, queer Episcopalian classmate, who never learns about the system. Tanya keeps inviting and checking in, and Axel ignores all of it. It ends when Maya comes back. The first time, this chapter is always played as Axel."
+      "summary": "A flashback, never explained, just played: the junior year Maya lost. Axel fronts, comes out as a trans man as the body, and dates Mark, a kind, queer Episcopalian classmate, who never learns about the system. Tanya keeps inviting and checking in, and Axel ignores all of it. It ends when Maya comes back. The first time, this chapter is always played as Axel.",
+      "unlocksMemberId": "axel"
     },
     {
       "id": "ch2-judaism",
