@@ -6,10 +6,10 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **My guesses, for you to check:**
 
-- The signs are Izzy's (22 in the present; Wiccan; runs daily life on the lost-time days): a note signed "I", candles on the windowsill, a tarot deck Maya didn't buy, groceries she didn't buy.
+- (Owner: yes) The signs are Izzy's (22 in the present; Wiccan; runs daily life on the lost-time days): a note signed "I", candles on the windowsill, a tarot deck Maya didn't buy, groceries she didn't buy.
 - Maya missed a midterm she has no memory of missing.
 - Selene is drifting: she has a girlfriend now and less time. She saw "Maya" at a full moon meet-up at the shop that Maya doesn't remember.
-- The shop is "Hearth & Moon", a small witchcraft shop in town (the name is a placeholder).
+- The shop is "The Circle" (owner), a small witchcraft shop in town.
 
 _(Quietly, in Maya's sent texts, written by Izzy during lost time; never pointed out: to Selene: "omg yes. tues!! im bringing the oat milk")_
 

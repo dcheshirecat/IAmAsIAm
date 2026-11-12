@@ -10,14 +10,14 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - Tanya runs the shop and the teaching coven; they're the person behind the counter Izzy met in Part 2. Tanya's strictness: phones off, ground first, no skipping steps, "you can't cast a circle if you're not in the room."
 - Tanya notices Maya drifting and asks where she went, gently; Maya says she's fine. Tanya doesn't push yet. Tanya is the guide who stays (owner): in touch all game, mostly by text and email.
 - The public Yule circle is in the park: the longest night, every candle out, then lit one by one.
-- The chapter ends with a switch to Izzy at the circle: Maya loses the rest of the night, and wakes with a Book of Shadows whose first page is in round handwriting, signed "I".
+- (Owner: yes, Izzy) The chapter ends with a switch to Izzy at the circle: Maya loses the rest of the night, and wakes with a Book of Shadows whose first page is in round handwriting, signed "I".
 
 ## Flyer
 
 **Explore** (glowing things; the player picks):
 
 - **Look: Your bag**
-    - A flyer, folded in four, at the bottom of your bag. "Hearth & Moon. Open Yule circle, December 21st. All welcome."
+    - A flyer, folded in four, at the bottom of your bag. "The Circle. Open Yule circle, December 21st. All welcome."
 
 **Explore** (glowing things; the player picks):
 
@@ -139,7 +139,7 @@ Candle wax on your fingers, peeled into a little moon.
 
 ## Ticket
 
-A receipt from Hearth & Moon. "Intro to the Craft, 8 weeks. PAID."
+A receipt from The Circle. "Intro to the Craft, 8 weeks. PAID."
 
 ## Phone
 

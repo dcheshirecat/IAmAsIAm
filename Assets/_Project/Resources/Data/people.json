@@ -51,7 +51,7 @@
       "name": "Mark",
       "role": "Ex 1: the Christian ex",
       "tradition": "christianity",
-      "description": "",
+      "description": "Protestant. A college classmate in Maya's junior year at the University of Illinois. He dates Axel, who starts fronting that year and comes out as a trans man as the body. Mark never learns about the system; it ends when Maya comes back (owner).",
       "chapterIds": [
         "ch1-christianity"
       ],
@@ -231,6 +231,18 @@
         "prelude-wicca"
       ],
       "memberLinks": []
+    },
+    {
+      "id": "gracie",
+      "name": "Gracie",
+      "role": "Chapter 1's guide: a young nun, still in training (25, she/her). Very bright, peppy and excited about her faith, never in a harmful way",
+      "tradition": "christianity",
+      "description": "",
+      "chapterIds": [
+        "ch1-christianity"
+      ],
+      "memberLinks": [],
+      "age": "25"
     }
   ]
 }

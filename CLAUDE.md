@@ -190,6 +190,17 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   **Lost time on devices (owner):** after a blackout, an extra sent message may be there that Maya didn't write:
   `sent_while_away(member, "text"|"email", contact, text)`. It looks exactly like her own (no marker, no banner) and is **never
   pointed out; very subtle at first**, just one here and there. Who wrote it is saved but never shown.
+- 2026-11-12: **Prelude confirmed (owner):** Champaign-Urbana (University of Illinois); Selene she/her; Izzy leaves the signs and comes
+  forward at Yule. **The shop is "The Circle"** (was the placeholder "Hearth & Moon"; place id `shop_the_circle`).
+- 2026-11-12: **Chapter 1, Christianity (owner):** Maya is **still in college** (Champaign-Urbana). **Mark** (id `ex_christian`) is a
+  **Protestant** classmate in her **junior year**. He dates **Axel**, who starts fronting that year and **"comes out" as a trans man as
+  the body**. Mark **never learns about the system**; it ends **when Maya comes back**. This is **the most lost time so far**, and Maya
+  starts **taking it seriously**. **Chapter 1 ends with graduation, as Maya.** Then **Chapter 1.5** is a **flashback, never explained,
+  just played**: the first time, it **must be played as Axel**, whoever was chosen; it can be how Axel is unlocked.
+  **Guide: Gracie** (25, she/her), a **young nun still in training**, very bright, peppy and excited about her faith, never harmful.
+  **Christian streams shown:** Catholic (Jacob), mainline (Episcopal / Methodist), Orthodox, queer-affirming. **Not** an evangelical
+  megachurch (owner: definite no); **no Black church** unless the research is thorough enough (Claude: not without sourced, consented
+  testimony). **Tanya** texts and emails all chapter: check-ins, events, holidays, readings, coven meetings, meals. **Axel ignores all of it.**
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

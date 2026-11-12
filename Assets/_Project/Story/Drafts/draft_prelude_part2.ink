@@ -9,12 +9,12 @@
 //  it. Nothing ever tells the player; for anyone else it's simply not one of the glowing things.
 //
 //  My guesses, for the owner to correct:
-//   - The signs are Izzy's (22 in the present; Wiccan; runs daily life on the lost-time days): a note
+//   - (Owner: yes) The signs are Izzy's (22 in the present; Wiccan; runs daily life on the lost-time days): a note
 //     signed "I", candles on the windowsill, a tarot deck Maya didn't buy, groceries she didn't buy.
 //   - Maya missed a midterm she has no memory of missing.
 //   - Selene is drifting: she has a girlfriend now and less time. She saw "Maya" at a full moon meet-up
 //     at the shop that Maya doesn't remember.
-//   - The shop is "Hearth & Moon", a small witchcraft shop in town (the name is a placeholder).
+//   - The shop is "The Circle" (owner), a small witchcraft shop in town.
 // ─────────────────────────────────────────────────────────────────────────────
 
 === prelude_part2 ===

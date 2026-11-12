@@ -8,9 +8,9 @@
 //  Explore-first: the dorm room and Selene's little altar carry it; very little narration.
 //
 //  My guesses, for the owner to correct:
-//   - The town is Champaign-Urbana (the University of Illinois), and Maya's first class with Selene is
+//   - (Owner: yes) The town is Champaign-Urbana (the University of Illinois), and Maya's first class with Selene is
 //     Intro to World Religions.
-//   - Selene is 18 too, she/her, a solitary eclectic witch since high school; warm, a bit chaotic.
+//   - Selene is 18 too, she/her (owner: yes), a solitary eclectic witch since high school; warm, a bit chaotic.
 //   - Selene invites Maya to a small Samhain with her friends in a dorm room (an altar, photos of the dead,
 //     an apple cut across to show the star). Maya goes, and only watches.
 //   - Sarah phones during it, busy with the church's harvest supper; she doesn't ask about Maya.
