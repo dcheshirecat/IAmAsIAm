@@ -314,7 +314,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   chapter (3-13) to set its `startingMemberId` / `unlocksMemberId` (Serena, Lily and Heather are left to unlock).
 - 2026-11-12: **Chapter 3, Buddhism (owner):** this is where Maya **first gets real help: a therapist and a diagnosis**. The guide and
   the traditions: Claude researches open/shared Buddhist practices and proposes (a monk at a local temple, or Maya travelling to a
-  Buddhist country after the diagnosis).
+  Buddhist country after the diagnosis). Research + options: `docs/Chapter3_BuddhismResearch.md`.
 - 2026-11-12: **Phone and laptop are always-usable icons on the side of the screen** (owner), not only story choices:
   `DeviceScreen.SideIcon` (right edge above Use; drawn icons made in code; unread counts), shown once she has each device, usable
   during exploring and dialogue (not over the Anchor or an interactive moment). The story's `# device:` beats stay too.
