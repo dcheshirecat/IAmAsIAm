@@ -25,6 +25,7 @@ static class InkCheck
     static readonly List<string> Problems = new List<string>();
     static readonly JsonSerializerOptions Json = new JsonSerializerOptions { IncludeFields = true };
 
+    static HashSet<string> _places = new HashSet<string>();
     static HashSet<string> _people, _members, _skills, _practiceSkills, _traditions, _spreads, _charms, _cues;
 
     static int Main(string[] args)
@@ -197,7 +198,8 @@ static class InkCheck
             case "objective": break; // Empty clears the goal line.
             case "look": case "memory": if (!System.Text.RegularExpressions.Regex.IsMatch(value, @"^[a-z0-9-]+$")) Fail("needs a lowercase id"); break;
             case "maybe-switch": if (value.Length > 0 && (!int.TryParse(value, out int pct) || pct < 1 || pct > 100)) Fail("percent must be 1-100"); break;
-            case "shot": case "place": case "chapter-end": case "front": break;
+            case "place": if (_places.Count > 0 && !label.StartsWith("Drafts/") && !_places.Contains(value)) Fail("unknown place (add it to places.json: name, city, map position)"); break;
+            case "shot": case "chapter-end": case "front": break;
             case "device": if (value != "computer" && value != "phone" && value != "laptop") Fail("device must be computer, phone or laptop"); break;
             default: Fail("unknown tag (see game_api.ink)"); break;
         }
@@ -214,6 +216,7 @@ static class InkCheck
         _spreads = new HashSet<string>(Load<TarotSpreadData>("tarot_spreads.json").spreads.Select(s => s.id));
         _charms = new HashSet<string>(Load<CharmData>("charms.json").charms.Select(c => c.id));
         _cues = new HashSet<string>(Load<TriggerData>("triggers.json").triggers.SelectMany(t => t.cues));
+        _places = new HashSet<string>(Load<IAmAsIAm.Core.Story.PlaceData>("places.json").places.Select(p => p.id));
         using (var people = JsonDocument.Parse(File.ReadAllText(Path.Combine(dataDir, "people.json"))))
             _people = new HashSet<string>(people.RootElement.GetProperty("people").EnumerateArray().Select(p => p.GetProperty("id").GetString()));
     }

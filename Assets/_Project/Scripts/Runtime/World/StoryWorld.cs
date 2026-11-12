@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using IAmAsIAm.Runtime.Interaction;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace IAmAsIAm.Runtime.World
 {
@@ -24,7 +23,6 @@ namespace IAmAsIAm.Runtime.World
 
         Transform _player;
         Action _snapCamera;
-        Font _font;
         Material _template;
         readonly Dictionary<Color, Material> _materials = new Dictionary<Color, Material>();
 
@@ -47,7 +45,6 @@ namespace IAmAsIAm.Runtime.World
         {
             _player = player;
             _snapCamera = snapCamera;
-            _font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             _testFlat = GameObject.Find("Flat (placeholder)");
             // A material that's certainly in the build (the flat's own), copied per colour.
             var r = _testFlat != null ? _testFlat.GetComponentInChildren<MeshRenderer>() : FindAnyObjectByType<MeshRenderer>();
@@ -262,6 +259,21 @@ namespace IAmAsIAm.Runtime.World
             return spot.transform;
         }
 
+        /// <summary>
+        /// The way on to the next scene (the story is heading somewhere else): a glowing doorway at the far end of the place.
+        /// </summary>
+        public void ShowExit(string destinationName, Action use)
+        {
+            if (_root == null) { use?.Invoke(); return; }
+            string key = "exit:" + destinationName.ToLowerInvariant();
+            if (!_spots.TryGetValue(key, out var spot) || spot == null)
+            {
+                spot = MakeSpot("Go", destinationName);
+                _spots[key] = spot;
+            }
+            spot.SetLive("Go: " + destinationName, -1, use);
+        }
+
         /// <summary>Nothing is on offer (a line is showing, or a choice was just made).</summary>
         public void Dim()
         {
@@ -341,7 +353,8 @@ namespace IAmAsIAm.Runtime.World
             reach.size = new Vector3(1.6f, 2f, 1.6f);
 
             var spot = go.AddComponent<ChoiceSpot>();
-            spot.Build(_font, target, labelHeight, kind == SpotKind.Person ? new Color(0.85f, 0.9f, 1f) : new Color(1f, 0.85f, 0.6f));
+            spot.Build(kind == SpotKind.Person ? new Color(0.9f, 0.94f, 1f) : new Color(1f, 0.9f, 0.68f));
+            spot.LabelHeight = labelHeight;
             return spot;
         }
 
@@ -443,54 +456,40 @@ namespace IAmAsIAm.Runtime.World
     }
 
     /// <summary>
-    /// One thing in a place that the story offers: it glows (a soft light that breathes slowly) and shows its name while
-    /// it's on offer, and is just scenery otherwise.
+    /// One thing in a place that the story offers. While it's on offer the thing ITSELF glows (owner: on the objects, subtle
+    /// but noticeable): its colour breathes slowly toward a warm light. Otherwise it's just scenery. No floating labels; the
+    /// prompt at the bottom of the screen names it when the character is close.
     /// </summary>
     public sealed class ChoiceSpot : MonoBehaviour, IInteractable
     {
         string _prompt;
         Action _use;
-        Light _glow;
-        GameObject _label;
+        Color _glow;
         float _phase;
+        Renderer[] _renderers;
+        Color[] _base;
+        MaterialPropertyBlock _block;
+        bool _lit;
+
+        /// <summary>Roughly the top of the thing (for the camera and future markers).</summary>
+        public float LabelHeight { get; set; }
 
         public string Prompt => _prompt ?? "";
         public bool CanInteract => _use != null;
         public void Interact() => _use?.Invoke();
 
-        public void Build(Font font, string name, float labelHeight, Color glowColour)
+        public void Build(Color glowColour)
         {
+            _glow = glowColour;
             _phase = UnityEngine.Random.value * 6f;
-
-            var light = new GameObject("Glow", typeof(Light));
-            light.transform.SetParent(transform, false);
-            light.transform.localPosition = new Vector3(0, labelHeight * 0.55f, 0.4f);
-            _glow = light.GetComponent<Light>();
-            _glow.type = LightType.Point;
-            _glow.range = 2.2f;
-            _glow.color = glowColour;
-            _glow.shadows = LightShadows.None;
-
-            _label = new GameObject("Label", typeof(RectTransform), typeof(Canvas));
-            _label.transform.SetParent(transform, false);
-            _label.transform.localPosition = new Vector3(0, labelHeight, 0);
-            var canvas = _label.GetComponent<Canvas>();
-            canvas.renderMode = RenderMode.WorldSpace;
-            var rt = _label.GetComponent<RectTransform>();
-            rt.sizeDelta = new Vector2(900, 160);
-            rt.localScale = Vector3.one * 0.0035f;
-            var textGo = new GameObject("Text", typeof(RectTransform), typeof(Text), typeof(Outline));
-            textGo.transform.SetParent(_label.transform, false);
-            var trt = textGo.GetComponent<RectTransform>();
-            trt.anchorMin = Vector2.zero; trt.anchorMax = Vector2.one; trt.offsetMin = Vector2.zero; trt.offsetMax = Vector2.zero;
-            var text = textGo.GetComponent<Text>();
-            text.font = font; text.fontSize = 64; text.alignment = TextAnchor.MiddleCenter;
-            text.color = new Color(1f, 0.97f, 0.9f);
-            text.horizontalOverflow = HorizontalWrapMode.Wrap; text.verticalOverflow = VerticalWrapMode.Overflow;
-            text.raycastTarget = false;
-            text.text = name;
-            textGo.GetComponent<Outline>().effectColor = new Color(0, 0, 0, 0.8f);
-
+            _block = new MaterialPropertyBlock();
+            _renderers = GetComponentsInChildren<Renderer>();
+            _base = new Color[_renderers.Length];
+            for (int i = 0; i < _renderers.Length; i++)
+            {
+                var m = _renderers[i].sharedMaterial;
+                _base[i] = m == null ? Color.grey : m.HasProperty("_BaseColor") ? m.GetColor("_BaseColor") : m.HasProperty("_Color") ? m.GetColor("_Color") : Color.grey;
+            }
             SetLive(null, -1, null);
         }
 
@@ -498,17 +497,30 @@ namespace IAmAsIAm.Runtime.World
         {
             _prompt = prompt;
             _use = use;
-            if (_glow != null) _glow.enabled = use != null;
-            if (_label != null) _label.SetActive(use != null);
+            if (use == null && _lit) Paint(0f);
         }
 
         void LateUpdate()
         {
             if (_use == null) return;
-            // Breathes slowly (well under any flashing rate).
-            if (_glow != null) _glow.intensity = 1.1f + 0.5f * Mathf.Sin(Time.unscaledTime * 1.6f + _phase);
-            var cam = Camera.main;
-            if (cam != null && _label != null) _label.transform.rotation = Quaternion.LookRotation(_label.transform.position - cam.transform.position);
+            // Breathes slowly (about every four seconds: far from any flashing rate), never fully white.
+            float t = 0.5f + 0.5f * Mathf.Sin(Time.unscaledTime * 1.5f + _phase);
+            Paint(0.16f + 0.2f * t);
+        }
+
+        void Paint(float amount)
+        {
+            if (_renderers == null) return;
+            _lit = amount > 0f;
+            for (int i = 0; i < _renderers.Length; i++)
+            {
+                if (_renderers[i] == null) continue;
+                var c = Color.Lerp(_base[i], _glow, amount);
+                _renderers[i].GetPropertyBlock(_block);
+                _block.SetColor("_BaseColor", c);
+                _block.SetColor("_Color", c);
+                _renderers[i].SetPropertyBlock(_block);
+            }
         }
     }
 }

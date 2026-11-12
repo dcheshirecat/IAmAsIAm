@@ -74,5 +74,22 @@ namespace IAmAsIAm.Tests
             Assert.That(traditions.Get("humanism"), Is.Not.Null, "Choosing no religion must always be a path.");
             Assert.That(traditions.TryPractice("indigenous-closed", "anything"), Is.False);
         }
+
+        [Test]
+        public void Places_HaveNamesCitiesAndMapPositions()
+        {
+            var data = Load<PlaceData>("places.json");
+            Assert.That(data.places.Count, Is.GreaterThan(0));
+            var ids = new System.Collections.Generic.HashSet<string>();
+            foreach (var p in data.places)
+            {
+                Assert.That(ids.Add(p.id), Is.True, $"place '{p.id}' is listed twice");
+                if (p.id == "black") continue;
+                Assert.That(string.IsNullOrEmpty(p.name), Is.False, $"place '{p.id}' needs a name");
+                if (string.IsNullOrEmpty(p.city)) continue;
+                Assert.That(data.City(p.city), Is.Not.Null, $"place '{p.id}': unknown city '{p.city}'");
+                Assert.That(p.x >= 0f && p.x <= 1f && p.y >= 0f && p.y <= 1f, Is.True, $"place '{p.id}': map position must be 0..1");
+            }
+        }
     }
 }

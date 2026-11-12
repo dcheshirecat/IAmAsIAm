@@ -95,6 +95,7 @@ namespace IAmAsIAm.Runtime.Story
             SyncFronting();
             if (!string.IsNullOrEmpty(knot)) _story.ChoosePathString(knot);
             IsPlaying = true;
+            _cutNext = true;
             Started?.Invoke(partner);
             Next();
         }
@@ -160,11 +161,33 @@ namespace IAmAsIAm.Runtime.Story
                 else if (key == "switch") ScriptedSwitch(value);
                 else if (key == "objective") { Objective = value; ObjectiveChanged?.Invoke(value); }
                 else if (key == "maybe-switch") MaybeSwitch(value);
-                else if (key == "place" && value.Length > 0 && value != Place) { Place = value; PlaceChanged?.Invoke(value); }
-                else if (ActionTags.Contains(key)) _pending = new StoryAction { Kind = key, Value = value };
+                else if (key == "place" && value.Length > 0 && value != Place) GoTo(value);
+                else if (ActionTags.Contains(key))
+                {
+                    // Two moments on one line: the walk there becomes a cut, so the other moment still happens.
+                    if (_pending != null && _pending.Kind == "travel") PlaceChanged?.Invoke(_pending.Value);
+                    _pending = new StoryAction { Kind = key, Value = value };
+                }
                 // "shot" and "front" are read by the view and camera from line.Tags.
             }
         }
+
+        /// <summary>
+        /// The story moves somewhere else (owner: "Maya should be able to wander, guided by the story, to get from scene to
+        /// scene within a part"). Within a part she walks there: the story waits for a "travel" moment (a way out of the
+        /// place, then the map from college on). The first place of a run, the first place of each part (set_age marks a
+        /// part's start: a jump in time) and the black screen are cuts: she's simply there.
+        /// </summary>
+        void GoTo(string place)
+        {
+            bool cut = _cutNext || Place == null || Place == "black" || place == "black" || _pending != null;
+            Place = place;
+            _cutNext = false;
+            if (cut) PlaceChanged?.Invoke(place);
+            else _pending = new StoryAction { Kind = "travel", Value = place };
+        }
+
+        bool _cutNext = true;
 
         /// <summary>The character meets a trigger cue. What happens isn't the player's choice.</summary>
         void EncounterCue(string cue, bool trapped)
@@ -267,7 +290,7 @@ namespace IAmAsIAm.Runtime.Story
             });
             // Devices (owner): the family computer at 12, a phone and a laptop at 18; texts and emails.
             var devices = GameServices.Devices;
-            _story.BindExternalFunctionGeneral("set_age", a => { devices?.SetAge(Convert.ToInt32(a[0])); return null; });
+            _story.BindExternalFunctionGeneral("set_age", a => { devices?.SetAge(Convert.ToInt32(a[0])); _cutNext = true; return null; });
             _story.BindExternalFunctionGeneral("gain_device", a =>
             {
                 if (Enum.TryParse<IAmAsIAm.Core.Devices.DeviceKind>(S(a[0]), true, out var kind)) devices?.Gain(kind);

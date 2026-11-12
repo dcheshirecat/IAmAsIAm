@@ -1,0 +1,374 @@
+{
+  "cities": [
+    {
+      "id": "iowa_city",
+      "name": "Iowa City"
+    },
+    {
+      "id": "champaign_urbana",
+      "name": "Champaign-Urbana"
+    },
+    {
+      "id": "indianapolis",
+      "name": "Indianapolis"
+    },
+    {
+      "id": "chicago",
+      "name": "Chicago"
+    }
+  ],
+  "places": [
+    {
+      "id": "home_kitchen",
+      "name": "Home: the kitchen",
+      "city": "iowa_city",
+      "x": 0.28,
+      "y": 0.62,
+      "chapterId": "prologue-quaker"
+    },
+    {
+      "id": "home_maya_room",
+      "name": "Home: Maya's room",
+      "city": "iowa_city",
+      "x": 0.28,
+      "y": 0.62,
+      "chapterId": "prologue-quaker"
+    },
+    {
+      "id": "car",
+      "name": "Mom's car",
+      "city": "",
+      "x": 0,
+      "y": 0,
+      "chapterId": "prologue-quaker"
+    },
+    {
+      "id": "church_first_day_school",
+      "name": "Church of Friends: First Day School",
+      "city": "iowa_city",
+      "x": 0.66,
+      "y": 0.4,
+      "chapterId": "prologue-quaker"
+    },
+    {
+      "id": "church_sanctuary",
+      "name": "Church of Friends: the sanctuary",
+      "city": "iowa_city",
+      "x": 0.66,
+      "y": 0.4,
+      "chapterId": "prologue-quaker"
+    },
+    {
+      "id": "church_fellowship_hall",
+      "name": "Church of Friends: the fellowship hall",
+      "city": "iowa_city",
+      "x": 0.66,
+      "y": 0.4,
+      "chapterId": "prologue-quaker"
+    },
+    {
+      "id": "college_lecture_hall",
+      "name": "The lecture hall",
+      "city": "champaign_urbana",
+      "x": 0.5,
+      "y": 0.55,
+      "chapterId": "prelude-wicca"
+    },
+    {
+      "id": "college_dorm_maya",
+      "name": "Maya's dorm room",
+      "city": "champaign_urbana",
+      "x": 0.38,
+      "y": 0.68,
+      "chapterId": "prelude-wicca"
+    },
+    {
+      "id": "college_dorm_selene",
+      "name": "Selene's dorm room",
+      "city": "champaign_urbana",
+      "x": 0.42,
+      "y": 0.72,
+      "chapterId": "prelude-wicca"
+    },
+    {
+      "id": "college_apartment_maya",
+      "name": "Maya's apartment",
+      "city": "champaign_urbana",
+      "x": 0.22,
+      "y": 0.4,
+      "chapterId": "prelude-wicca"
+    },
+    {
+      "id": "college_quad",
+      "name": "The Quad",
+      "city": "champaign_urbana",
+      "x": 0.5,
+      "y": 0.62,
+      "chapterId": "prelude-wicca"
+    },
+    {
+      "id": "shop_the_circle",
+      "name": "The Circle",
+      "city": "champaign_urbana",
+      "x": 0.3,
+      "y": 0.22,
+      "chapterId": "prelude-wicca"
+    },
+    {
+      "id": "park_yule_circle",
+      "name": "The park: the Yule circle",
+      "city": "champaign_urbana",
+      "x": 0.75,
+      "y": 0.3,
+      "chapterId": "prelude-wicca"
+    },
+    {
+      "id": "park_ostara",
+      "name": "The park: Ostara",
+      "city": "champaign_urbana",
+      "x": 0.75,
+      "y": 0.3,
+      "chapterId": "ch1-christianity"
+    },
+    {
+      "id": "college_apartment_axel",
+      "name": "The apartment (Axel's year)",
+      "city": "champaign_urbana",
+      "x": 0.22,
+      "y": 0.4,
+      "chapterId": "ch1-christianity"
+    },
+    {
+      "id": "campus_ministry",
+      "name": "The campus ministry",
+      "city": "champaign_urbana",
+      "x": 0.62,
+      "y": 0.48,
+      "chapterId": "ch1-christianity"
+    },
+    {
+      "id": "campus_ministry_chapel",
+      "name": "The campus ministry chapel",
+      "city": "champaign_urbana",
+      "x": 0.62,
+      "y": 0.48,
+      "chapterId": "ch1-christianity"
+    },
+    {
+      "id": "campus_ministry_lawn",
+      "name": "The campus ministry lawn",
+      "city": "champaign_urbana",
+      "x": 0.62,
+      "y": 0.48,
+      "chapterId": "ch1-christianity"
+    },
+    {
+      "id": "campus_barber",
+      "name": "The barber",
+      "city": "champaign_urbana",
+      "x": 0.44,
+      "y": 0.3,
+      "chapterId": "ch1-5-axel"
+    },
+    {
+      "id": "thrift_store",
+      "name": "The thrift store",
+      "city": "champaign_urbana",
+      "x": 0.36,
+      "y": 0.16,
+      "chapterId": "ch1-5-axel"
+    },
+    {
+      "id": "campus_cafe",
+      "name": "The campus café",
+      "city": "champaign_urbana",
+      "x": 0.56,
+      "y": 0.4,
+      "chapterId": "ch1-5-axel"
+    },
+    {
+      "id": "town_pride",
+      "name": "Pride downtown",
+      "city": "champaign_urbana",
+      "x": 0.3,
+      "y": 0.1,
+      "chapterId": "ch1-5-axel"
+    },
+    {
+      "id": "episcopal_church",
+      "name": "St. Luke's Episcopal",
+      "city": "champaign_urbana",
+      "x": 0.82,
+      "y": 0.62,
+      "chapterId": "ch1-5-axel"
+    },
+    {
+      "id": "protest_march",
+      "name": "The vigil march",
+      "city": "champaign_urbana",
+      "x": 0.4,
+      "y": 0.08,
+      "chapterId": "ch1-5-axel"
+    },
+    {
+      "id": "methodist_church",
+      "name": "The Methodist church",
+      "city": "indianapolis",
+      "x": 0.55,
+      "y": 0.45,
+      "chapterId": "ch1-5-axel"
+    },
+    {
+      "id": "mark_family_guest_room",
+      "name": "Cassie's house: the guest room",
+      "city": "indianapolis",
+      "x": 0.35,
+      "y": 0.6,
+      "chapterId": "ch1-5-axel"
+    },
+    {
+      "id": "queer_affirming_church",
+      "name": "The queer-affirming church",
+      "city": "indianapolis",
+      "x": 0.7,
+      "y": 0.3,
+      "chapterId": "ch1-5-axel"
+    },
+    {
+      "id": "chicago_apartment",
+      "name": "Maya's apartment",
+      "city": "chicago",
+      "x": 0.4,
+      "y": 0.2,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "field_museum_hall",
+      "name": "The Field Museum: Stanley Field Hall",
+      "city": "chicago",
+      "x": 0.68,
+      "y": 0.7,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "field_museum_office",
+      "name": "The Field Museum: the registrar's office",
+      "city": "chicago",
+      "x": 0.68,
+      "y": 0.7,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "field_museum_gallery",
+      "name": "The Field Museum: the new gallery",
+      "city": "chicago",
+      "x": 0.68,
+      "y": 0.7,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "adeena_apartment",
+      "name": "Adeena's apartment",
+      "city": "chicago",
+      "x": 0.3,
+      "y": 0.1,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "synagogue_conservative",
+      "name": "Congregation Etz Chaim",
+      "city": "chicago",
+      "x": 0.35,
+      "y": 0.32,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "synagogue_social_hall",
+      "name": "Congregation Etz Chaim: the social hall",
+      "city": "chicago",
+      "x": 0.35,
+      "y": 0.32,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "adeena_parents_house",
+      "name": "Ruth's house",
+      "city": "chicago",
+      "x": 0.2,
+      "y": 0.05,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "havurah_living_room",
+      "name": "Hannah's living room",
+      "city": "chicago",
+      "x": 0.52,
+      "y": 0.28,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "lgbtq_synagogue",
+      "name": "The LGBTQ synagogue",
+      "city": "chicago",
+      "x": 0.5,
+      "y": 0.18,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "chabad_house",
+      "name": "The Chabad house",
+      "city": "chicago",
+      "x": 0.24,
+      "y": 0.14,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "renewal_shabbat",
+      "name": "The Renewal Shabbat",
+      "city": "chicago",
+      "x": 0.45,
+      "y": 0.4,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "reform_temple",
+      "name": "The Reform temple",
+      "city": "chicago",
+      "x": 0.55,
+      "y": 0.5,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "sigd_community_hall",
+      "name": "The Sigd celebration",
+      "city": "chicago",
+      "x": 0.3,
+      "y": 0.55,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "effie_house",
+      "name": "Effie's house",
+      "city": "chicago",
+      "x": 0.22,
+      "y": 0.1,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "lakefront_path",
+      "name": "The lakefront path",
+      "city": "chicago",
+      "x": 0.82,
+      "y": 0.35,
+      "chapterId": "ch2-judaism"
+    },
+    {
+      "id": "black",
+      "name": "",
+      "city": "",
+      "x": 0,
+      "y": 0,
+      "chapterId": ""
+    }
+  ]
+}

@@ -65,6 +65,11 @@ namespace IAmAsIAm.Runtime.Story
         Action _onPacerTick;
         IAmAsIAm.Runtime.Devices.DeviceScreen _devices;
         StoryWorld _world;
+        MapScreen _map;
+        IAmAsIAm.Core.Story.PlaceData _places;
+        readonly HashSet<string> _visited = new HashSet<string>();
+        /// <summary>The last thing used in the world ("Go" means she just walked out: no second walk to get there).</summary>
+        string _lastWorldVerb = "";
         GameObject _pocket;
         /// <summary>True while the story's explore choices are out in the world: the character can walk to them.</summary>
         bool _exploring;
@@ -80,6 +85,8 @@ namespace IAmAsIAm.Runtime.Story
             // The places the story happens in, to walk around and explore (owner).
             _world = gameObject.AddComponent<StoryWorld>();
             _world.Init(cameraRig != null ? cameraRig.Target : null, () => { if (cameraRig != null) cameraRig.SnapBehind(); });
+            _map = gameObject.AddComponent<MapScreen>();
+            _places = DataLoader.Load<IAmAsIAm.Core.Story.PlaceData>("places");
 
             _advance = new InputAction("Advance", binding: "<Keyboard>/space");
             _advance.AddBinding("<Keyboard>/enter");
@@ -136,7 +143,38 @@ namespace IAmAsIAm.Runtime.Story
             }
         }
 
-        void OnPlace(string placeId) { if (_world != null) _world.Enter(placeId); }
+        void OnPlace(string placeId)
+        {
+            _visited.Add(placeId);
+            if (_world != null) _world.Enter(placeId);
+        }
+
+        // ── Getting from scene to scene (owner: walk there, guided; the map from college on) ──
+
+        void RunTravel(string destination)
+        {
+            string name = _places.NameOf(destination);
+            ShowObjective("Head to " + name);
+            if (_lastWorldVerb == "Go") { _lastWorldVerb = ""; Depart(destination); return; } // She's already on her way.
+            _exploring = true;
+            _world.ShowExit(name, () => { StopExploring(); Depart(destination); });
+        }
+
+        void Depart(string destination)
+        {
+            var place = _places.Find(destination);
+            int age = GameServices.Devices?.Age ?? 0;
+            if (place != null && !string.IsNullOrEmpty(place.city) && age >= IAmAsIAm.Core.Story.PlaceData.MapAge)
+                _map.Show(_places, place.city, destination, _visited, () => Arrive(destination), () => RunTravel(destination));
+            else Arrive(destination);
+        }
+
+        void Arrive(string destination)
+        {
+            OnPlace(destination);
+            ShowObjective(runner.Objective);
+            runner.CompleteAction();
+        }
 
         void OnStoryEnded()
         {
@@ -168,7 +206,7 @@ namespace IAmAsIAm.Runtime.Story
             if (_triggerPanel.activeSelf && Time.unscaledTime > _triggerHideAt) _triggerPanel.SetActive(false);
 
             bool busy = _anchorOpen || _dialogue.activeSelf || _choices.activeSelf || _action.activeSelf || (runner.IsPlaying && !_exploring)
-                        || IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen;
+                        || IAmAsIAm.Runtime.Devices.DeviceScreen.IsOpen || MapScreen.IsOpen;
             // Saves, the phone and the chapter list still wait for the story, even while exploring.
             IsBusy = busy || runner.IsPlaying;
             busy |= IAmAsIAm.Runtime.Save.SaveSlotsScreen.IsOpen || IAmAsIAm.Runtime.Loading.LoadingScreen.IsShowing;
@@ -220,6 +258,7 @@ namespace IAmAsIAm.Runtime.Story
         void ShowChoices(List<Choice> choices)
         {
             StopExploring();
+            _lastWorldVerb = "";
             if (TryExplore(choices)) return;
             Clear(_choices.transform);
             _choices.SetActive(true);
@@ -292,6 +331,7 @@ namespace IAmAsIAm.Runtime.Story
         {
             if (!_exploring || _anchorOpen) return;
             StopExploring();
+            _lastWorldVerb = verb ?? "";
             if (verb == "Talk" && spot != null && cameraRig != null)
             {
                 cameraRig.SetTalkPartner(spot);
@@ -354,6 +394,7 @@ namespace IAmAsIAm.Runtime.Story
                 case "ritual": RunRitual(action.Value); break;
                 case "explore": RunExplore(action.Value); break;
                 case "chapter-end": RunRecap(); break;
+                case "travel": RunTravel(action.Value); break;
                 case "device":
                     if (Enum.TryParse<IAmAsIAm.Core.Devices.DeviceKind>(action.Value, true, out var kind)) _devices.Open(kind, Finish);
                     else Finish();
