@@ -386,6 +386,7 @@ namespace IAmAsIAm.EditorTools
                 CompileStory();
                 ConfigureProject();
                 RebuildBootScene();
+                if (target == BuildTarget.Android) ConfigureVersionAndSigning();
 
                 if (target == BuildTarget.Android && !path.EndsWith(".apk")) path = Path.Combine(path, "IAmAsIAm.apk");
                 Directory.CreateDirectory(Path.GetDirectoryName(Path.GetFullPath(path)));
@@ -405,6 +406,46 @@ namespace IAmAsIAm.EditorTools
                 code = 1;
             }
             if (exitOnFinish) EditorApplication.Exit(code);
+        }
+
+        /// <summary>
+        /// So a new APK installs over the old one, with no uninstall (and the saves kept):
+        ///  * every build gets a higher version code (CI passes its run number as -androidVersionCode), and
+        ///  * every build is signed with the SAME key. CI gets it from the repo secrets ANDROID_KEYSTORE_BASE64 and
+        ///    ANDROID_KEYSTORE_PASS (one key, made once and kept); game-ci writes the keystore
+        ///    into the project folder and passes its name and passwords as arguments.
+        /// Without a key it still builds, but with a throwaway debug key (then each update needs a reinstall).
+        /// </summary>
+        static void ConfigureVersionAndSigning()
+        {
+            string versionArg = Arg("-androidVersionCode") ?? Environment.GetEnvironmentVariable("ANDROID_VERSION_CODE");
+            if (int.TryParse(versionArg, out int versionCode) && versionCode > 0)
+            {
+                PlayerSettings.Android.bundleVersionCode = versionCode;
+                PlayerSettings.bundleVersion = "0.1." + versionCode;
+            }
+            Debug.Log($"[IAmAsIAm] Version {PlayerSettings.bundleVersion} (version code {PlayerSettings.Android.bundleVersionCode}).");
+
+            string name = Arg("-androidKeystoreName");
+            string pass = Arg("-androidKeystorePass");
+            string alias = Arg("-androidKeyaliasName");
+            string aliasPass = Arg("-androidKeyaliasPass");
+            string path = string.IsNullOrEmpty(name) ? null : Path.GetFullPath(name);
+            if (path != null && File.Exists(path) && !string.IsNullOrEmpty(pass) && !string.IsNullOrEmpty(alias))
+            {
+                PlayerSettings.Android.useCustomKeystore = true;
+                PlayerSettings.Android.keystoreName = path;
+                PlayerSettings.Android.keystorePass = pass;
+                PlayerSettings.Android.keyaliasName = alias;
+                PlayerSettings.Android.keyaliasPass = string.IsNullOrEmpty(aliasPass) ? pass : aliasPass;
+                Debug.Log("[IAmAsIAm] Signing with the project's own key (updates install over the old app).");
+            }
+            else
+            {
+                PlayerSettings.Android.useCustomKeystore = false;
+                Debug.LogWarning("[IAmAsIAm] No signing key given: using a throwaway debug key. Installing this build over an " +
+                                 "older one will fail. Add the repo secrets ANDROID_KEYSTORE_BASE64 and ANDROID_KEYSTORE_PASS.");
+            }
         }
 
         static string Arg(string name)

@@ -47,3 +47,7 @@ crashlytics-build.properties
 # The compiled story is generated (IAmAsIAm → Compile Story, and every build)
 /Assets/_Project/Story/main.json
 /Assets/_Project/Story/main.json.meta
+
+# Signing keys (CI writes one into the project folder during a build; never commit it)
+*.keystore
+*.jks

@@ -116,6 +116,12 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   In the game: `Assets/_Project/Audio/Voice/<chapter-id>/`. `docs/VOICE.md`. Not built yet: playback, `# vo:` tags, script export.
   Note: `*.mp3` is in LFS and LFS uploads are blocked from cloud sessions: decide how to commit voice files when the first arrive.
 
+- 2026-11-12: **Push everything to `main`** (owner): the Android build runs automatically on every push to `main`
+  (and still by hand). Each build's version code is the run number (`v0.1.<run>`, shown bottom right in the game), and it is
+  signed with ONE fixed key from the repo secrets `ANDROID_KEYSTORE_BASE64` + `ANDROID_KEYSTORE_PASS` (alias `iamasiam`), so
+  updates install over the old app with no uninstall. Without the secrets it falls back to a throwaway key (warning in the
+  run's Summary). Never print or commit the key. Test builds show errors on screen (`Runtime/Diagnostics/ErrorOverlay.cs`).
+
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

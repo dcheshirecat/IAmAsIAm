@@ -4,10 +4,19 @@
 # https://game.ci/docs/github/activation). Download the APK from the run's Artifacts.
 # The build runs IAmAsIAm.EditorTools.BuildTools.BuildAndroid: validate data, compile the Ink
 # story, configure URP/Android, generate the Boot scene, build.
+#
+# Updates install over the old app (no uninstall, saves kept) because every build has a higher version code
+# (the run number) and is signed with the same key, from the repo secrets ANDROID_KEYSTORE_BASE64 and
+# ANDROID_KEYSTORE_PASS. Without them it still builds, but with a throwaway key, and the summary says so.
 name: Build Android
-# Pushes to main don't build yet: add the secrets first, then put back:  push: / branches: [main]
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
+# A newer push to main replaces a build still running for an older one.
+concurrency:
+  group: build-android-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,6 +39,18 @@ jobs:
             exit 1
           fi
           echo "All three Unity secrets are set."
+      - name: Check signing key
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASS: ${{ secrets.ANDROID_KEYSTORE_PASS }}
+        run: |
+          if [ -n "$ANDROID_KEYSTORE_BASE64" ] && [ -n "$ANDROID_KEYSTORE_PASS" ]; then
+            echo "Signing key found: this APK installs over the previous one." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### No signing key yet" >> "$GITHUB_STEP_SUMMARY"
+            echo "This APK uses a throwaway key, so it won't install over an older one (uninstall first)." >> "$GITHUB_STEP_SUMMARY"
+            echo "::warning::No signing key secrets: updates will need an uninstall."
+          fi
       # The Unity Android image is larger than the runner's free disk; remove unused preinstalled tools.
       - name: Free disk space
         run: |
@@ -91,6 +112,14 @@ jobs:
           targetPlatform: Android
           androidExportType: androidPackage   # .apk
           buildMethod: IAmAsIAm.EditorTools.BuildTools.BuildAndroid
+          # Higher every build, so Android treats it as an update.
+          androidVersionCode: ${{ github.run_number }}
+          # The same key every build. Empty secrets = a debug key.
+          androidKeystoreName: iamasiam.keystore
+          androidKeystoreBase64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          androidKeystorePass: ${{ secrets.ANDROID_KEYSTORE_PASS }}
+          androidKeyaliasName: iamasiam
+          androidKeyaliasPass: ${{ secrets.ANDROID_KEYSTORE_PASS }}
           # Unity runs in a Docker container capped by default at 95% of the runner's RAM, so it could
           # never reach the swap above and got killed (exit code 137). Allow RAM + most of the swap.
           dockerMemoryLimit: 18g
@@ -114,5 +143,5 @@ jobs:
           } | tee -a "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:
-          name: IAmAsIAm-apk
+          name: IAmAsIAm-apk-${{ github.run_number }}
           path: build/Android
