@@ -390,6 +390,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   little closed-in and quieter, and every voice is muffled while she's far away, unless "no audio distortion" is on. Voice files
   now live in `Assets/_Project/Resources/Voice/<chapter-id>/` (was Audio/Voice; no files yet). LFS uploads are still blocked from
   cloud sessions: when the first recordings arrive, decide how to commit them.
+- 2026-11-12: **Chapter 4, Islam (owner, first answers):** **starts as Izzy** (`startingMemberId: izzy`). **Izzy takes over along with
+  Heather** (they front most of the chapter; Heather co-conscious); **Maya only appears sometimes**. **Reneé is in it** (the
+  queer, ex-religious talk; she tells them what she overheard between Mira and Sarah in Sunday 2). **After they find out, they switch
+  to Nina at home** (Claude's reading: after Reneé tells them; to confirm). **Angie suggests SystemLog** at the end (`unlocksAppId:
+  systemlog`). Heather's look: not yet (the owner adds her model later). Still to ask: where/when, the guide, the streams.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
