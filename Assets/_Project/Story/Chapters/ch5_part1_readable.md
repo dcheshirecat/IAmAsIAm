@@ -44,6 +44,33 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Maya:** No Field Museum. No Friday candles. No lake. Nothing here knows me yet. A fresh start.
 
+## First night
+
+> **Objective:** Eat something
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The rain**
+    - Still raining. It's been raining since the airport. You're starting to like it.
+- **Use: The pizza box**
+    - Pizza on a box marked "IZZY - DO NOT OPEN". Heather insists on a plate.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The mattress**
+    - The mattress on the floor, sheets not quite on. The house noises are new. You fall asleep before you can be scared of them.
+
+## Bus
+
+> **Objective:** Take the bus to the Burke
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The window**
+    - Hills, water, more hills. Everyone has a raincoat. Nobody has an umbrella.
+- **Use: The bell (your stop)**
+    - "University Way." Your stop. Your new stop.
+
 ## Work
 
 > **Objective:** Find your new desk
@@ -98,3 +125,14 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **Heather (inside):** A flame, held up for everyone. I like her.
 
 **Mangala Tai:** Prasad. Right hand, please. The sweet one is the best one. Don't tell the others.
+
+## Evening
+
+> **Objective:** Go home
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Your hands**
+    - The warm of the aarti still on your palms, or you imagine it is.
+- **Use: The prasad (in your pocket)**
+    - The sweet, wrapped in a napkin. You eat it at the window. The best one. Don't tell the others.

@@ -46,6 +46,19 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Talk: Chaplain Amal (say yes)**
     - **Izzy:** Yes. Obviously yes. Heather wants to go. Heather never wants to go anywhere.
 
+## Lunch
+
+> **Objective:** Eat lunch
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The trays**
+    - Turkey sandwich, apple, a cookie in plastic. Someone trades you their cookie for your apple.
+- **Look: Sawsan**
+    - Sawsan, by the window, her grandmother's tasbih in her lap, eating crackers one at a time.
+- **Talk: Sawsan (sit with her)**
+    - You sit. Neither of you talks. It's the best lunch all week.
+
 ## Dhikr
 
 > **Objective:** Sit at the edge of the circle
@@ -91,3 +104,14 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 **Maya:** I'm here. I think I missed most of it. It feels... quiet. In a good way.
 
 _(A switch: Izzy comes forward. The player has no control over it.)_
+
+## Night
+
+> **Objective:** Ride home
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The window**
+    - December dark at six. Christmas lights on the porches going by. The words of the dhikr still going round in your chest.
+- **Use: The seat**
+    - You fall asleep against the window and wake up exactly at your stop. Heather, probably.

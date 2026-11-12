@@ -64,6 +64,36 @@
 Heather (inside): Water first. # vo: ch5-hinduism_heather-inside_0001
 Maya: I know. I know. I'm getting it. # vo: ch5-hinduism_maya_0002
 Maya: No Field Museum. No Friday candles. No lake. Nothing here knows me yet. A fresh start. # vo: ch5-hinduism_maya_0031
+-> first_night
+
+= first_night
+// Owner: a full day in every part. Claude's scenes.
+# place: seattle_apartment
+# shot: close
+# objective: Eat something
+- (boxes)
++ {boxes < 2} [Look: The rain]
+    Still raining. It's been raining since the airport. You're starting to like it. # look: rain-first-night
+    -> boxes
+* [Use: The pizza box]
+    Pizza on a box marked "IZZY - DO NOT OPEN". Heather insists on a plate. # look: pizza-on-box
+-
+* [Use: The mattress]
+    The mattress on the floor, sheets not quite on. The house noises are new. You fall asleep before you can be scared of them. # look: mattress-floor
+-
+-> bus
+
+= bus
+# place: seattle_bus
+# shot: over-shoulder
+# objective: Take the bus to the Burke
+- (ride)
++ {ride < 2} [Look: The window]
+    Hills, water, more hills. Everyone has a raincoat. Nobody has an umbrella. # look: bus-raincoats
+    -> ride
+* [Use: The bell (your stop)]
+    "University Way." Your stop. Your new stop. # look: bus-bell
+-
 -> work
 
 = work
@@ -126,4 +156,17 @@ Mangala Tai: Come. Come, closer. You can take the light: hands over the flame, t
 Heather (inside): A flame, held up for everyone. I like her. # vo: ch5-hinduism_heather-inside_0010
 Mangala Tai: Prasad. Right hand, please. The sweet one is the best one. Don't tell the others. # vo: ch5-hinduism_mangala_0011
 ~ journal("Note", "Rama Navami at the temple. Shoes off. Ring the bell. Take the light. Right hand for prasad.")
+-> evening
+
+= evening
+# place: seattle_apartment
+# shot: close
+# objective: Go home
+- (k)
++ {k < 2} [Look: Your hands]
+    The warm of the aarti still on your palms, or you imagine it is. # look: aarti-palms
+    -> k
+* [Use: The prasad (in your pocket)]
+    The sweet, wrapped in a napkin. You eat it at the window. The best one. Don't tell the others. # look: prasad-window
+-
 -> ch5_part2  // the next part of the same chapter (one run)

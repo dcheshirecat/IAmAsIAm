@@ -23,6 +23,22 @@
 ~ co_conscious("heather", true)
 ~ text_from("renee_carter", "This is going to sound strange. It's Reneé Carter, from the Church of Friends in Iowa City. My dad was Mr. Carter? I think you're in Chicago now. I'm coming up next weekend. Coffee?")
 ~ text_to("renee_carter", "omg. YES. hi. coffee. yes.")
+-> wake
+
+= wake
+// Owner: a full day in every part. Claude's scenes: the Saturday Reneé comes.
+# place: chicago_apartment
+# shot: close
+# objective: Get ready to meet Reneé
+- (room)
++ {room < 3} [Look: Your phone]
+    Reneé: "Andersonville, 11am, the café with the green door. I'll be the one in the wheelchair with the terrible tote bag." # look: renee-text
+    -> room
++ {room < 3} [Look: The closet]
+    Four outfits on the bed. Heather: "She knew you at eight. She won't care what you wear." # look: four-outfits
+    -> room
+* [Use: Your keys]
+-
 -> cafe
 
 = cafe
@@ -98,6 +114,23 @@ Reneé: She saw. I'm so sorry I never said. I was sixteen, and then I was gone, 
 Reneé leaves something pink on the table by your cup: a rose quartz, the size of a thumb. She gives one to every friend who's had a bad year. # look: renee-rose-quartz
 ~ gain_stone("rose-quartz", "renee_carter")
 ~ text_from("renee_carter", "I'm at my hotel. Text me if you need anything tonight. Anything. I mean it.")
+-> walk
+
+= walk
+# place: andersonville_street
+# shot: wide
+# objective: Walk home
+- (street)
++ {street < 3} [Look: The shop windows]
+    A bookshop with a cat asleep on the poetry, a Swedish bakery, rainbow flags in every second window. # look: andersonville-windows
+    -> street
++ {street < 3} [Look: Your hands]
+    Shaking a little. Mira saw. Mira told. You keep walking. # look: hands-mira-saw
+    ~ set_experience("Depersonalization", 0.3)
+    -> street
+* [Use: Mira's stone]
+    Your thumb through the hole, all the way down Clark Street. # look: stone-clark
+-
 -> home
 
 = home

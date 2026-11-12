@@ -20,6 +20,22 @@
 ~ set_date(2027, 6, 19)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 ~ co_conscious("heather", false)
+-> wake
+
+= wake
+// Owner: a full day in every part. Claude's scenes: a Saturday.
+# place: seattle_apartment
+# shot: close
+# objective: Get to the temple by nine
+- (room)
++ {room < 3} [Look: The window]
+    June, and the sun out at five in the morning. Seattle in summer is a different city. # look: june-sun
+    -> room
++ {room < 3} [Look: The altar]
+    Your altar, and next to it, a small framed Ganesha Priya's mother gave you. They get along. # look: altar-ganesha
+    -> room
+* [Use: Your keys]
+-
 -> garlands
 
 = garlands
@@ -48,6 +64,22 @@ Heather (inside): Let me. Just for a bit. I like this. # vo: ch5-hinduism_heathe
 -
 ~ system_log("heather", "Garlands are good for us. Every Saturday, please. -H")
 ~ co_conscious("heather", false)
+-> afternoon
+
+= afternoon
+# place: seattle_apartment
+# shot: close
+# objective: Have a slow evening
+- (room)
++ {room < 2} [Look: Your fingers]
+    Orange from the marigolds. Heather's work, mostly. # look: orange-fingers
+    -> room
+* [Use: The stove (dal)]
+    Lakshmi's dal recipe, written on the back of a temple flyer. It's nearly right. # look: lakshmi-dal
+-
+* [Use: The bed]
+    Light still in the sky at ten. You fall asleep before it's dark. # look: light-at-ten
+-
 -> lammas
 
 = lammas

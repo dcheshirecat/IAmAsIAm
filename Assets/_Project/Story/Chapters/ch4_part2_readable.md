@@ -14,6 +14,18 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Maya texts Reneé:** omg. YES. hi. coffee. yes.
 
+## Wake
+
+> **Objective:** Get ready to meet Reneé
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Your phone**
+    - **Reneé:** "Andersonville, 11am, the café with the green door. I'll be the one in the wheelchair with the terrible tote bag."
+- **Look: The closet**
+    - Four outfits on the bed. Heather: "She knew you at eight. She won't care what you wear."
+- **Use: Your keys**
+
 ## Cafe
 
 > **Objective:** Find Reneé
@@ -85,6 +97,19 @@ _(A memory scene: "sunday2-overheard")_
 Reneé leaves something pink on the table by your cup: a rose quartz, the size of a thumb. She gives one to every friend who's had a bad year.
 
 📱 **Text from Reneé:** I'm at my hotel. Text me if you need anything tonight. Anything. I mean it.
+
+## Walk
+
+> **Objective:** Walk home
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The shop windows**
+    - A bookshop with a cat asleep on the poetry, a Swedish bakery, rainbow flags in every second window.
+- **Look: Your hands**
+    - Shaking a little. Mira saw. Mira told. You keep walking.
+- **Use: Mira's stone**
+    - Your thumb through the hole, all the way down Clark Street.
 
 ## Home
 

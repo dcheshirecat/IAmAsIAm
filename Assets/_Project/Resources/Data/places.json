@@ -506,6 +506,14 @@
       "chapterId": "ch4-islam"
     },
     {
+      "id": "andersonville_street",
+      "name": "Clark Street, Andersonville",
+      "city": "chicago",
+      "x": 0.46,
+      "y": 0.08,
+      "chapterId": "ch4-islam"
+    },
+    {
       "id": "sufi_dhikr_room",
       "name": "Idris's Thursday dhikr",
       "city": "chicago",
@@ -536,6 +544,14 @@
       "city": "seattle",
       "x": 0.55,
       "y": 0.75,
+      "chapterId": "ch5-hinduism"
+    },
+    {
+      "id": "seattle_bus",
+      "name": "The bus",
+      "city": "seattle",
+      "x": 0.55,
+      "y": 0.71,
       "chapterId": "ch5-hinduism"
     },
     {

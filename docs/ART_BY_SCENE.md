@@ -38,7 +38,7 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 28 | `episcopal_church` | St. Luke's Episcopal | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Pastor Key, Axel (the body, 20) |
 | 29 | `protest_march` | The vigil march | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Mark, Izzy (the body, 20), Axel (the body, 20) |
 | 30 | `queer_affirming_church` | The queer-affirming church | indianapolis | Chapter 1.5: Axel (ch1_5_part3) | Mark, Axel (the body, 20) |
-| 31 | `chicago_apartment` | Maya's apartment | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 25), Tanya, Maya (the body, 27), Nina (the body, 28) |
+| 31 | `chicago_apartment` | Maya's apartment | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 25), Tanya, Maya (the body, 27), Reneé, Nina (the body, 28) |
 | 32 | `cta_train` | The L | chicago | Chapter 2: Judaism (ch2_part1) | - |
 | 33 | `field_museum_hall` | The Field Museum: Stanley Field Hall | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 24), Christie, Maya (the body, 27) |
 | 34 | `field_museum_office` | The Field Museum: the registrar's office | chicago | Chapter 2: Judaism (ch2_part1) | Christie |
@@ -64,23 +64,25 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 54 | `dharma_shringa_dorm` | The course dormitory | kathmandu | Chapter 3: Buddhism (ch3_part3) | - |
 | 55 | `boudha_monastery` | The monastery behind the guest house | kathmandu | Chapter 3: Buddhism (ch3_part3) | Pasang Lhamo, Heather (the body, 27) |
 | 56 | `lumbini_sacred_garden` | Lumbini: the Sacred Garden | lumbini | Chapter 3: Buddhism (ch3_part4) | Maya (the body, 27) |
-| 57 | `day_ward_group_room` | The day program: the group room | chicago | Chapter 4: Islam (ch4_part1) | Izzy (the body, 28), Chaplain Amal |
+| 57 | `day_ward_group_room` | The day program: the group room | chicago | Chapter 4: Islam (ch4_part1) | Izzy (the body, 28), Sawsan, Chaplain Amal |
 | 58 | `day_ward_quiet_room` | The day program: the quiet room | chicago | Chapter 4: Islam (ch4_part1) | Chaplain Amal, Izzy (the body, 28), Maya (the body, 28), Sawsan |
 | 59 | `andersonville_cafe` | A café in Andersonville | chicago | Chapter 4: Islam (ch4_part2) | Reneé, Izzy (the body, 28) |
-| 60 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Fadi, Maya (the body, 28) |
-| 61 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Sawsan, Chaplain Amal |
-| 62 | `seattle_apartment` | Maya's apartment, Seattle | seattle | Chapter 5: Hinduism (ch5_part1) | Maya (the body, 28) |
-| 63 | `burke_museum_hall` | The Burke Museum | seattle | Chapter 5: Hinduism (ch5_part1) | Priya, Maya (the body, 28), Gurleen, Maya (the body, 29) |
-| 64 | `eastside_mandir_hall` | The temple on the Eastside | seattle | Chapter 5: Hinduism (ch5_part1) | Mangala Tai, Maya (the body, 28), Maya (the body, 29) |
-| 65 | `eastside_mandir_kitchen` | The temple on the Eastside: the kitchen | seattle | Chapter 5: Hinduism (ch5_part2) | Lakshmi |
-| 66 | `garba_community_hall` | The Navaratri garba | seattle | Chapter 5: Hinduism (ch5_part3) | Maya (the body, 29), Priya |
-| 67 | `priya_family_house` | Priya's family's house | seattle | Chapter 5: Hinduism (ch5_part3) | Lakshmi, Heather (the body, 29) |
-| 68 | `gurleen_car` | Gurleen's car | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
-| 69 | `gurdwara_darbar_hall` | The gurdwara in Kent: the darbar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
-| 70 | `gurdwara_langar_hall` | The gurdwara in Kent: the langar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29) |
-| 71 | `gurdwara_kitchen` | The gurdwara in Kent: the kitchen | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29), Maya (the body, 30) |
-| 72 | `seattle_cafe` | A café by the market | seattle | Chapter 6: Sikhism (ch6_part2) | Christie, Maya (the body, 29) |
-| 73 | `nagar_kirtan_street` | The Vaisakhi procession, Kent | seattle | Chapter 6: Sikhism (ch6_part2) | - |
+| 60 | `andersonville_street` | Clark Street, Andersonville | chicago | Chapter 4: Islam (ch4_part2) | - |
+| 61 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Fadi, Maya (the body, 28) |
+| 62 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Sawsan, Chaplain Amal |
+| 63 | `seattle_apartment` | Maya's apartment, Seattle | seattle | Chapter 5: Hinduism (ch5_part1) | Maya (the body, 28) |
+| 64 | `seattle_bus` | The bus | seattle | Chapter 5: Hinduism (ch5_part1) | - |
+| 65 | `burke_museum_hall` | The Burke Museum | seattle | Chapter 5: Hinduism (ch5_part1) | Priya, Maya (the body, 28), Gurleen, Maya (the body, 29) |
+| 66 | `eastside_mandir_hall` | The temple on the Eastside | seattle | Chapter 5: Hinduism (ch5_part1) | Mangala Tai, Maya (the body, 28), Maya (the body, 29) |
+| 67 | `eastside_mandir_kitchen` | The temple on the Eastside: the kitchen | seattle | Chapter 5: Hinduism (ch5_part2) | Lakshmi |
+| 68 | `garba_community_hall` | The Navaratri garba | seattle | Chapter 5: Hinduism (ch5_part3) | Maya (the body, 29), Priya |
+| 69 | `priya_family_house` | Priya's family's house | seattle | Chapter 5: Hinduism (ch5_part3) | Lakshmi, Heather (the body, 29) |
+| 70 | `gurleen_car` | Gurleen's car | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
+| 71 | `gurdwara_darbar_hall` | The gurdwara in Kent: the darbar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Gurleen |
+| 72 | `gurdwara_langar_hall` | The gurdwara in Kent: the langar hall | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29) |
+| 73 | `gurdwara_kitchen` | The gurdwara in Kent: the kitchen | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29), Maya (the body, 30) |
+| 74 | `seattle_cafe` | A café by the market | seattle | Chapter 6: Sikhism (ch6_part2) | Christie, Maya (the body, 29) |
+| 75 | `nagar_kirtan_street` | The Vaisakhi procession, Kent | seattle | Chapter 6: Sikhism (ch6_part2) | - |
 
 ## 2. People, in the order they first appear
 
@@ -119,9 +121,9 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 29 | Teacher | `course_teacher` | person | Chapter 3: Buddhism | - | dharma_shringa_hall |
 | 30 | Heather | `heather` | system member | Chapter 3: Buddhism | 27, 29 | boudha_monastery, priya_family_house |
 | 31 | Chaplain Amal | `chaplain_amal` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall, day_ward_group_room |
-| 32 | Reneé | `renee_carter` | person | Chapter 4: Islam | - | andersonville_cafe |
+| 32 | Reneé | `renee_carter` | person | Chapter 4: Islam | - | chicago_apartment, andersonville_cafe |
 | 33 | Nina | `nina` | system member | Chapter 4: Islam | 28 | chicago_apartment |
-| 34 | Sawsan | `sawsan` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall |
+| 34 | Sawsan | `sawsan` | person | Chapter 4: Islam | - | day_ward_quiet_room, day_ward_group_room, mosque_iftar_hall |
 | 35 | Fadi | `fadi` | person | Chapter 4: Islam | - | sufi_dhikr_room |
 | 36 | Priya | `priya` | person | Chapter 5: Hinduism | - | burke_museum_hall, garba_community_hall |
 | 37 | Mangala Tai | `mangala_joshi` | person | Chapter 5: Hinduism | - | eastside_mandir_hall |
@@ -568,15 +570,25 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `himalaya-postcard`: The Himalayas, bought years ago at the museum gift shop. You've never been anywhere.
 - `dusty-suitcase`: Under the bed. Dusty. It has never been on a plane.
 - `ticket-bought`: Click. A confirmation number. Your heart, very loud.
+- `fridge-izzy`: Oat milk, three cartons. Hot sauce. A note in Heather's square letters: "EAT BREAKFAST. -H"
+- `eyeliner-wonky`: Eyeliner, a little wonky. Good enough. It's a psych ward, not a gala.
+- `toast-heather-wins`: Toast. Heather wins.
+- `name-tag-home`: "IZZY", in Sharpie, still stuck to your shirt. You don't take it off.
+- `garlic-pasta`: Pasta with far too much garlic. Heather does the dishes.
+- `day-one-survived`: Mira's stone and the hematite on the nightstand. Day one of the program. Survived it.
 - `mabon-apples`: A bag of apples from the corner store. Three different kinds, because why not.
 - `mabon-leaves`: Red and yellow leaves, pressed flat under the tarot deck.
 - `mabon-crunch`: Crunch. That counts.
+- `renee-text`: Reneé: "Andersonville, 11am, the café with the green door. I'll be the one in the wheelchair with the terrible tote bag."
+- `four-outfits`: Four outfits on the bed. Heather: "She knew you at eight. She won't care what you wear."
 - `blanket-fort`: The tiger blanket from Nepal, the couch cushions, two chairs. A fort. Nobody can see in.
 - `napkin-taped`: The napkin with Mira's number, taped together very carefully. The tape is old now.
 - `crackers-floor`: A grown-up fridge. Grown-up food. You eat a whole sleeve of crackers, sitting on the floor.
 - `nina-meeting-floor`: Back against the couch, hands in your lap. Waiting, like in meeting. Waiting is something you know how to do.
 - `notebook-nina`: Heather's round letters. Izzy's loopy ones. You find a pen.
 - `mira-tried`: Big letters, pressing hard: "MIRA TRIED. -N"
+- `february-window`: February. Grey slush, grey sky, the sun setting at 5:41. You check the time twice.
+- `note-still-eat`: Heather's note: "Not fasting = still eat lunch. -H" Izzy, inside, sulking about it.
 
 ### The L (`cta_train`)
 
@@ -587,6 +599,12 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `l-matches`: You keep thinking about the candle. Your hands smell of matches.
 - `l-january`: January. The lake steaming in the cold. Tanya's text already: "Proud of you for opening the door."
 - `l-pole-january`: Your hand on the pole. Somebody else's hand. Your hand again.
+- `l-september`: September light on the rooftops. Your stop is the one with the hospital sign.
+- `earbuds-izzy`: Something loud with a drum machine. Heather, inside, very politely asking for something quieter.
+- `l-december`: December dark at six. Christmas lights on the porches going by. The words of the dhikr still going round in your chest.
+- `l-asleep`: You fall asleep against the window and wake up exactly at your stop. Heather, probably.
+- `iftar-leftovers`: Foil trays of rice and lamb from Sawsan's aunt. Enough for a week. Dates in your coat pocket.
+- `l-full-warm`: The city lit up and cold. Full, and warm, and nobody asked you to be anyone.
 
 ### The Field Museum: Stanley Field Hall (`field_museum_hall`)
 
@@ -808,6 +826,9 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `day-schedule`: "9:00 Check-in. 10:00 DBT skills. 11:30 Art. 1:00 Lunch. 2:00 Process group. 3:30 Chaplain's hour (optional)."
 - `group-circle`: Twelve chairs, a box of tissues on every third one, a woman knitting very fast, a young man asleep in his hoodie.
 - `tipp-board`: "TIPP: Temperature. Intense exercise. Paced breathing. Paired muscle relaxation." Someone has drawn a little ice cube with a face.
+- `ward-trays`: Turkey sandwich, apple, a cookie in plastic. Someone trades you their cookie for your apple.
+- `sawsan-window`: Sawsan, by the window, her grandmother's tasbih in her lap, eating crackers one at a time.
+- `sit-with-sawsan`: You sit. Neither of you talks. It's the best lunch all week.
 - `last-circle`: The same twelve chairs. You know everyone's names now, and which one is the knitting woman's.
 - `goodbye-card`: A card signed by the group. Sawsan has drawn a tiny string of prayer beads. Someone has drawn an ice cube with a face.
 
@@ -829,6 +850,12 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `renee-hand`: Reneé's hand on yours, on the table, until the coffee is cold.
 - `renee-rose-quartz`: Reneé leaves something pink on the table by your cup: a rose quartz, the size of a thumb. She gives one to every friend who's had a bad year.
 - hidden memory `sunday2-overheard` (a scene played only by an alter)
+
+### Clark Street, Andersonville (`andersonville_street`)
+
+- `andersonville-windows`: A bookshop with a cat asleep on the poetry, a Swedish bakery, rainbow flags in every second window.
+- `hands-mira-saw`: Shaking a little. Mira saw. Mira told. You keep walking.
+- `stone-clark`: Your thumb through the hole, all the way down Clark Street.
 
 ### Idris's Thursday dhikr (`sufi_dhikr_room`)
 
@@ -859,6 +886,16 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `tanya-moonstone`: A parcel from Champaign on the step. A moonstone in tissue paper, and Tanya's square letters: "For the new moon, and the new home."
 - `seattle-rowan`: A rowan by the steps, last autumn's berries still hanging on. You take one small sprig.
 - `boxes-unpacked`: Every box, open. Books on shelves. It takes a week. In Chicago it took never.
+- `rain-first-night`: Still raining. It's been raining since the airport. You're starting to like it.
+- `pizza-on-box`: Pizza on a box marked "IZZY - DO NOT OPEN". Heather insists on a plate.
+- `mattress-floor`: The mattress on the floor, sheets not quite on. The house noises are new. You fall asleep before you can be scared of them.
+- `aarti-palms`: The warm of the aarti still on your palms, or you imagine it is.
+- `prasad-window`: The sweet, wrapped in a napkin. You eat it at the window. The best one. Don't tell the others.
+- `june-sun`: June, and the sun out at five in the morning. Seattle in summer is a different city.
+- `altar-ganesha`: Your altar, and next to it, a small framed Ganesha Priya's mother gave you. They get along.
+- `orange-fingers`: Orange from the marigolds. Heather's work, mostly.
+- `lakshmi-dal`: Lakshmi's dal recipe, written on the back of a temple flyer. It's nearly right.
+- `light-at-ten`: Light still in the sky at ten. You fall asleep before it's dark.
 - `lammas-dough`: It rose overnight under a tea towel. Somebody already knocked it back: neat, careful knuckle marks.
 - `lammas-rain`: Rain, in August. The plant on the sill drinking it in.
 - `lammas-floor`: You sit on the kitchen floor in the warm, and wait.
@@ -875,10 +912,20 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `lamp-sill-gurpurab`: One small clay lamp from the gurdwara shop, on the sill by Mira's stone. Your hands, and Heather's, steady.
 - `flame-ceiling`: The little flame on the ceiling. The good of everyone. You fall asleep in the middle of the list.
 
+### The bus (`seattle_bus`)
+
+- `bus-raincoats`: Hills, water, more hills. Everyone has a raincoat. Nobody has an umbrella.
+- `bus-bell`: "University Way." Your stop. Your new stop.
+- `sore-feet`: Sore from dancing. The dandiya sticks in your bag, knocking together.
+- `driver-humming`: The bus driver humming the garba song. You hum it too.
+
 ### The Burke Museum (`burke_museum_hall`)
 
 - `burke-whale`: A whale skeleton, hanging over everything, every bone numbered. You laugh. Of course there's a whale.
 - `educator-badge`: "MAYA - EDUCATOR." Just Maya. You can be just Maya here, at work. The others can have the evenings.
+- `kids-under-whale`: Thirty fourth-graders lying on the floor under the whale, looking up. Your idea. The best idea.
+- `priya-garba`: Priya at the collections door, mouthing "GARBA. TONIGHT. COMFORTABLE SHOES."
+- `dal-desk`: Leftover dal, at your desk, while a kid's drawing of the whale dries on the radiator.
 - `craft-tables`: Glue sticks, paper whales, one small shoe. Two hundred children came through today and you were here for every one of them.
 
 ### The temple on the Eastside (`eastside_mandir_hall`)

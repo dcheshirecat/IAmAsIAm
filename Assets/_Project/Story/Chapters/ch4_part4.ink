@@ -17,6 +17,23 @@
 # cw: religious-content
 ~ co_conscious("heather", true)
 ~ text_from("sawsan", "Ramadan Mubarak!! Amal says you're coming to the iftar. Sit with me. My mom made too much food. She always makes too much food.")
+-> wake
+
+= wake
+// Owner: a full day in every part. Claude's scenes: the day of the open iftar.
+# place: chicago_apartment
+# shot: close
+# objective: Get through the day
+~ text_from("sawsan", "iftar is 5:41!! come at 5:15. bring nothing, my aunt will be insulted")
+- (room)
++ {room < 3} [Look: The window]
+    February. Grey slush, grey sky, the sun setting at 5:41. You check the time twice. # look: february-window
+    -> room
++ {room < 3} [Look: The fridge]
+    Heather's note: "Not fasting = still eat lunch. -H" Izzy, inside, sulking about it. # look: note-still-eat
+    -> room
+* [Use: Your coat]
+-
 -> iftar
 
 = iftar
@@ -52,6 +69,19 @@ Chaplain Amal: Now they pray, and then they eat everything. Guests can wait here
 -
 Heather (inside): Everyone eating together. Nobody alone. That's the part I needed. # vo: ch4-islam_heather-inside_0051
 ~ nudge(-0.25)
+-> late
+
+= late
+# place: cta_train
+# shot: over-shoulder
+# objective: Ride home
+- (car)
++ {car < 2} [Look: The bag]
+    Foil trays of rice and lamb from Sawsan's aunt. Enough for a week. Dates in your coat pocket. # look: iftar-leftovers
+    -> car
+* [Use: The window]
+    The city lit up and cold. Full, and warm, and nobody asked you to be anyone. # look: l-full-warm
+-
 -> last_day
 
 = last_day

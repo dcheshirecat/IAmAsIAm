@@ -24,6 +24,36 @@
 // Owner: Izzy takes over along with Heather.
 ~ co_conscious("heather", true)
 ~ text_from("angie", "First day at the program today. You don't have to be anyone in particular there. Just come.")
+-> wake
+
+= wake
+// Owner: a full day in every part. Claude's scenes, as Izzy (Heather sharing time).
+# place: chicago_apartment
+# shot: close
+# objective: Get to the day program by nine
+- (room)
++ {room < 3} [Look: The fridge]
+    Oat milk, three cartons. Hot sauce. A note in Heather's square letters: "EAT BREAKFAST. -H" # look: fridge-izzy
+    -> room
++ {room < 3} [Look: The mirror]
+    Eyeliner, a little wonky. Good enough. It's a psych ward, not a gala. # look: eyeliner-wonky
+    -> room
+* [Use: The toaster]
+    Toast. Heather wins. # look: toast-heather-wins
+-
+-> commute
+
+= commute
+# place: cta_train
+# shot: over-shoulder
+# objective: Ride to the hospital
+- (car)
++ {car < 2} [Look: The window]
+    September light on the rooftops. Your stop is the one with the hospital sign. # look: l-september
+    -> car
+* [Use: Your earbuds (music up)]
+    Something loud with a drum machine. Heather, inside, very politely asking for something quieter. # look: earbuds-izzy
+-
 -> lobby
 
 = lobby
@@ -107,6 +137,22 @@ Chaplain Amal: You were. Someone very funny was here a minute ago. And someone v
 ~ set_experience("TimeLoss", 0.0)
 Izzy: Tea! Yes. Tea. # vo: ch4-islam_izzy_0014
 ~ journal("Note", "Day program. Chaplain Amal, Thursdays at 3:30. She said: you don't have to explain anything to me.")
+-> evening
+
+= evening
+# place: chicago_apartment
+# shot: close
+# objective: Make dinner
+- (k)
++ {k < 2} [Look: The name tag]
+    "IZZY", in Sharpie, still stuck to your shirt. You don't take it off. # look: name-tag-home
+    -> k
+* [Use: The stove (pasta)]
+    Pasta with far too much garlic. Heather does the dishes. # look: garlic-pasta
+-
+* [Use: The bed]
+    Mira's stone and the hematite on the nightstand. Day one of the program. Survived it. # look: day-one-survived
+-
 -> mabon
 
 = mabon

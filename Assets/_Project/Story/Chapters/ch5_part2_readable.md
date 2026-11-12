@@ -11,6 +11,18 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - Mangala Tai's story (owner: a woman priest): her father was a priest and taught her brothers; she learned the chants by listening at the door. After raising her children she trained as a purohita in Pune. Some families still won't have a woman do their rites; many now ask for her because she explains every word. Her grandchildren call from Pune on Sundays.
 - Shiva on Mondays: milk poured over the lingam, the dark stone.
 
+## Wake
+
+> **Objective:** Get to the temple by nine
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The window**
+    - June, and the sun out at five in the morning. Seattle in summer is a different city.
+- **Look: The altar**
+    - Your altar, and next to it, a small framed Ganesha Priya's mother gave you. They get along.
+- **Use: Your keys**
+
 ## Garlands
 
 > **Objective:** Help with the garlands
@@ -32,6 +44,22 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 - **Wait (let Heather's hands work)**
     - Your hands, and Heather's, threading. Straight now. Steady. You're both here. Nobody goes far away.
+
+## Afternoon
+
+> **Objective:** Have a slow evening
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Your fingers**
+    - Orange from the marigolds. Heather's work, mostly.
+- **Use: The stove (dal)**
+    - Lakshmi's dal recipe, written on the back of a temple flyer. It's nearly right.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The bed**
+    - Light still in the sky at ten. You fall asleep before it's dark.
 
 ## Lammas
 

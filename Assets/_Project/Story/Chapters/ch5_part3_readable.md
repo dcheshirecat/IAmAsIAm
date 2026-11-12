@@ -10,6 +10,19 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - Diwali: lamps (diyas) along Priya's family's front steps; then the temple. Heather comes forward to light the lamps (her candles again), and Maya, grounded now, stays aware and isn't frightened: the first visit she remembers.
 - The chapter unlocks nobody yet (to confirm with the owner).
 
+## Workday
+
+> **Objective:** Give the school tour
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The whale**
+    - Thirty fourth-graders lying on the floor under the whale, looking up. Your idea. The best idea.
+- **Look: Priya**
+    - Priya at the collections door, mouthing "GARBA. TONIGHT. COMFORTABLE SHOES."
+- **Use: Your lunch**
+    - Leftover dal, at your desk, while a kid's drawing of the whale dries on the radiator.
+
 ## Garba
 
 > **Objective:** Join the circle
@@ -28,6 +41,17 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **Maya:** I'm here. All of me. I'm actually here.
 
 **Priya:** You're smiling! You never smile like that at work.
+
+## Late
+
+> **Objective:** Ride home
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Your feet**
+    - Sore from dancing. The dandiya sticks in your bag, knocking together.
+- **Use: The window**
+    - The bus driver humming the garba song. You hum it too.
 
 ## Diwali
 

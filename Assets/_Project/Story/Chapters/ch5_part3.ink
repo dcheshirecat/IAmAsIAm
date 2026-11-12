@@ -16,6 +16,23 @@
 ~ set_date(2027, 10, 5)  // Claude's guess at the exact day (owner: change it freely)
 # cw: religious-content
 # cw: involuntary-switch
+-> workday
+
+= workday
+// Owner: a full day in every part. Claude's scenes: the workday before the garba, and the bus home after.
+# place: burke_museum_hall
+# shot: wide
+# objective: Give the school tour
+- (hall)
++ {hall < 3} [Look: The whale]
+    Thirty fourth-graders lying on the floor under the whale, looking up. Your idea. The best idea. # look: kids-under-whale
+    -> hall
++ {hall < 3} [Look: Priya]
+    Priya at the collections door, mouthing "GARBA. TONIGHT. COMFORTABLE SHOES." # look: priya-garba
+    -> hall
+* [Use: Your lunch]
+    Leftover dal, at your desk, while a kid's drawing of the whale dries on the radiator. # look: dal-desk
+-
 -> garba
 
 = garba
@@ -41,6 +58,19 @@
 Maya: I'm here. All of me. I'm actually here. # vo: ch5-hinduism_maya_0021
 Priya: You're smiling! You never smile like that at work. # vo: ch5-hinduism_priya_0022
 ~ nudge(-0.25)
+-> late
+
+= late
+# place: seattle_bus
+# shot: over-shoulder
+# objective: Ride home
+- (bus)
++ {bus < 2} [Look: Your feet]
+    Sore from dancing. The dandiya sticks in your bag, knocking together. # look: sore-feet
+    -> bus
+* [Use: The window]
+    The bus driver humming the garba song. You hum it too. # look: driver-humming
+-
 -> diwali
 
 = diwali

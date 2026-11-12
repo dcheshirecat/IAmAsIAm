@@ -12,6 +12,20 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Sawsan:** Ramadan Mubarak!! Amal says you're coming to the iftar. Sit with me. My mom made too much food. She always makes too much food.
 
+## Wake
+
+> **Objective:** Get through the day
+
+📱 **Text from Sawsan:** iftar is 5:41!! come at 5:15. bring nothing, my aunt will be insulted
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The window**
+    - February. Grey slush, grey sky, the sun setting at 5:41. You check the time twice.
+- **Look: The fridge**
+    - **Heather's note:** "Not fasting = still eat lunch. -H" Izzy, inside, sulking about it.
+- **Use: Your coat**
+
 ## Iftar
 
 > **Objective:** Wait for sunset
@@ -45,6 +59,17 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
     - Sawsan's mom hands you a serving spoon and a look that means: guard the maqluba. You guard it with your life.
 
 **Heather (inside):** Everyone eating together. Nobody alone. That's the part I needed.
+
+## Late
+
+> **Objective:** Ride home
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The bag**
+    - Foil trays of rice and lamb from Sawsan's aunt. Enough for a week. Dates in your coat pocket.
+- **Use: The window**
+    - The city lit up and cold. Full, and warm, and nobody asked you to be anyone.
 
 ## Last day
 

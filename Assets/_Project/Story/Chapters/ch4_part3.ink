@@ -60,6 +60,23 @@ Chaplain Amal: My friend Fadi holds a dhikr on Thursday nights. Remembrance. Peo
     ~ record_choice("ch4.p3.invite", "yes", "When Amal invited you to a dhikr, Izzy said yes straight away.")
     Izzy: Yes. Obviously yes. Heather wants to go. Heather never wants to go anywhere. # vo: ch4-islam_izzy_0044
 -
+-> lunch
+
+= lunch
+// Owner: a full day in every part. Claude's scenes: lunch at the program, the evening before the Thursday dhikr.
+# place: day_ward_group_room
+# shot: wide
+# objective: Eat lunch
+- (table)
++ {table < 3} [Look: The trays]
+    Turkey sandwich, apple, a cookie in plastic. Someone trades you their cookie for your apple. # look: ward-trays
+    -> table
++ {table < 3} [Look: Sawsan]
+    Sawsan, by the window, her grandmother's tasbih in her lap, eating crackers one at a time. # look: sawsan-window
+    -> table
+* [Talk: Sawsan (sit with her)]
+    You sit. Neither of you talks. It's the best lunch all week. # look: sit-with-sawsan
+-
 -> dhikr
 
 = dhikr
@@ -113,4 +130,17 @@ Fadi: Remembering God, for us, is remembering where we are. That we are held. Co
 -
 Maya: I'm here. I think I missed most of it. It feels... quiet. In a good way. # vo: ch4-islam_maya_0048
 # switch: izzy
+-> night
+
+= night
+# place: cta_train
+# shot: over-shoulder
+# objective: Ride home
+- (car)
++ {car < 2} [Look: The window]
+    December dark at six. Christmas lights on the porches going by. The words of the dhikr still going round in your chest. # look: l-december
+    -> car
+* [Use: The seat]
+    You fall asleep against the window and wake up exactly at your stop. Heather, probably. # look: l-asleep
+-
 -> ch4_part4  // the next part of the same chapter (one run)

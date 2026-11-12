@@ -13,6 +13,30 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Angie:** First day at the program today. You don't have to be anyone in particular there. Just come.
 
+## Wake
+
+> **Objective:** Get to the day program by nine
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The fridge**
+    - Oat milk, three cartons. Hot sauce. A note in Heather's square letters: "EAT BREAKFAST. -H"
+- **Look: The mirror**
+    - Eyeliner, a little wonky. Good enough. It's a psych ward, not a gala.
+- **Use: The toaster**
+    - Toast. Heather wins.
+
+## Commute
+
+> **Objective:** Ride to the hospital
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The window**
+    - September light on the rooftops. Your stop is the one with the hospital sign.
+- **Use: Your earbuds (music up)**
+    - Something loud with a drum machine. Heather, inside, very politely asking for something quieter.
+
 ## Lobby
 
 > **Objective:** Find a seat before group starts
@@ -91,6 +115,22 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 _(A switch: Izzy comes forward. The player has no control over it.)_
 
 **Izzy:** Tea! Yes. Tea.
+
+## Evening
+
+> **Objective:** Make dinner
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The name tag**
+    - "IZZY", in Sharpie, still stuck to your shirt. You don't take it off.
+- **Use: The stove (pasta)**
+    - Pasta with far too much garlic. Heather does the dishes.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The bed**
+    - Mira's stone and the hematite on the nightstand. Day one of the program. Survived it.
 
 ## Mabon
 
