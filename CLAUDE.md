@@ -252,8 +252,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   triggered, Easter at a queer-affirming church), 4 The napkin (May 2019). Placeholders: "The priest" (`mark_priest`), "Mark's mom"
   (`mark_mom`), the church "St. ___'s". Drive: Story Drafts → `03 Chapter 1.5 - Axel (title to come)` (1pOOBlf0DtgjVVELZapx_fKVE_7hTOMgJ):
   Part 1 (1Q11gaVGZgJwDITbfb0SF5pmZtJ08hKNk90tzfj8n6wQ), Part 2 (1hYsoakQlY5xZpPninSisFTJy9uBQ7b3rNKue_mMDnS0), Part 3
-  (1_Yt9Pte02LQQA1wEuU5YJsKy6N-mWuQWuhLcnixVt1Y), Part 4 (18jIzBVqJQFJkG43A35IOGj2RDtrmacd6aMYSzNlP1Ko). Script Sheet
-  "03 Chapter 1.5 - script list (draft)" (1OKExbZQ8iwMIYlvehrrnL62DRQ6eG7X3__y4-7c7LYQ, 55 lines).
+  (1oytFsyI9ZXNKVlsuH66GF9cJkr5GXMdHQdy2cl4Dtm0), Part 4 (18jIzBVqJQFJkG43A35IOGj2RDtrmacd6aMYSzNlP1Ko). Script Sheet
+  "03 Chapter 1.5 - script list (draft)" (1bu0BRqregr3VuLNTkEbv500erONXiz9SgsJ0fZk8Pds, 55 lines).
 - 2026-11-12: **The story is IN THE GAME (owner).** `Story/Chapters/` holds the Prologue, Prelude, Chapter 1 and Chapter 1.5 (one
   `.ink` + `_readable.md` per part, moved from Drafts/). `Chapters/chapters.ink` has each chapter's root knot (chapters.json
   `inkKnot`), which diverts to the first part; each part diverts to the next; only the last part has `# chapter-end`. `main.ink`
