@@ -580,6 +580,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   when the teacher thanks her for coming); a **foggy coastal town in Northern California**; the teacher is **younger (thirties),
   raised religious and left, who built the club because nobody did it for them**; the child is **a "floaty" kid, about 10, who
   goes quiet and doesn't answer their name** (Maya recognises it and doesn't know what to do).
+  **How it ends (owner): both**: Maya keeps showing up every week AND speaks up to the teacher (what Mira couldn't do). **One school
+  year, 2031-32**: Part 1 the move + first club day (Sept), Part 2 the kid (winter), Part 3 the end of the year (June).
+  **Names: the owner gives them** (the town, the teacher's name/pronouns/age, the kid's name/pronouns): wait for them.
 - 2026-11-13: **GitHub Actions stopped starting jobs** (from build 75, commit 60aeba8): every workflow (Build Android AND Core
   tests) fails in 1-3 s with no steps and no logs. Not the code (InkCheck + 128 Core tests pass locally). Most likely the
   account's Actions minutes/spending limit or billing: the owner checks GitHub Settings → Billing, then re-runs.
