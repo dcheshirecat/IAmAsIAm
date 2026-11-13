@@ -568,13 +568,21 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   unlocks Lily). Full days. Placeholders: **Bríd Kenny** (`brid_kenny`, 66, sheep farmer, retired teacher, Irish speaker, Tanya's friend
   since 2004), **Fuinseog Grove**, neighbour **Josie** (Catholic; rounds at the well). Streams: OBOD (Welsh names), Gaelic polytheist,
   a Catholic neighbour. New places in `westmeath`/`meath` (outdoor keywords now include hill, holy_well, shore). 26 voiced lines
-  (maya, brid, lily, lily-inside, tanya). **Drive Docs NOT made yet** (the Drive connector was down): make the folder
-  `10 Chapter 8 - Druidry (title to come)`, 3 Docs, and Sheet "10 Chapter 8 - script list (draft)" when it's back.
+  (maya, brid, lily, lily-inside, tanya). Drive: Story Drafts → `10 Chapter 8 - Druidry (title to come)`
+  (1p-w7nIQzwT4F67s5hWeW2nJDk_OvXJr0): Part 1 (1TZq2snEzY8uBe37HxSCrFQY3ehNQWLFguc4cf7SHs50), Part 2
+  (1slpMTqBgjlL5rkpcaDpxyj4NCYDwa2Dg3xLpO-2ZTCc), Part 3 (1dswWfvMG807OHYlWtAFOgZrA46uMahbLz11b0tC7HKM); Sheet "10 Chapter 8 -
+  script list (draft)" (1B9geRSxdpfm-WxluKANrABXJbjqTEv4-0VGWY8x-Wso, 26 lines).
 - 2026-11-13: **Chapter 9, Humanism (owner, first answers):** Maya moves to **California**; the guide is **a teacher at a local
   school where Maya starts volunteering at the after-school youth club**. **Serena is NOT unlocked here** (saved for another
   chapter). More (owner): **the heart of it is the kids** at the club (Maya sees herself in one lonely child and becomes the adult
   she needed); **starts as Heather** (`startingMemberId: heather`); **unlocks nobody**; the move is **a fresh start in a small
-  California town** (after Ireland). Still to ask: the town, the year, the teacher, the child, why Heather starts it.
+  California town** (after Ireland). More (owner): **Heather is the one who signed up** to volunteer at the club (Maya finds out
+  when the teacher thanks her for coming); a **foggy coastal town in Northern California**; the teacher is **younger (thirties),
+  raised religious and left, who built the club because nobody did it for them**; the child is **a "floaty" kid, about 10, who
+  goes quiet and doesn't answer their name** (Maya recognises it and doesn't know what to do).
+- 2026-11-13: **GitHub Actions stopped starting jobs** (from build 75, commit 60aeba8): every workflow (Build Android AND Core
+  tests) fails in 1-3 s with no steps and no logs. Not the code (InkCheck + 128 Core tests pass locally). Most likely the
+  account's Actions minutes/spending limit or billing: the owner checks GitHub Settings → Billing, then re-runs.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
