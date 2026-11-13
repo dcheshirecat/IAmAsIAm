@@ -559,7 +559,17 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
 - 2026-11-13: **Owner: make sure ALL names in the game are accurate and respectful.** Audit done: "Master Lin" became **Lin Daozhang**;
   the dhikr place was still "Idris's" (now Fadi's). Episcopal priests are usually called Father/Mother + surname: the owner chose **Father Key** (was Pastor Key). Check every new name the same way.
 - 2026-11-13: **Chapter 8, Druidry (owner):** a **trip to Ireland**, **several weeks across seasons**, the guide is **a grove's
-  leader**, it **unlocks Lily** (4, Quaker, holds the waiting); starts as Maya (Claude's reading). Details still to ask.
+  leader**, it **unlocks Lily** (4, Quaker, holds the waiting); starts as Maya (Claude's reading). More (owner): parts built around
+  **Bealtaine at Uisneach, Lúnasa and Samhain at Tlachtga**; the leader is **an older Irish woman**; **Lily first comes forward
+  waiting at a holy well**; **Tanya knows the grove**. **IN THE GAME (draft):** `Story/Chapters/ch8_part1..3.ink`: 1 Bealtaine (Apr-May
+  2030, 31: Bríd's farm, an orphan lamb, the May bush, the fire on Uisneach), 2 Lúnasa (Aug: first bread, bilberries, the holy well:
+  scripted `# switch: lily`, "Is she coming back?", Bríd: "I'll wait with you. I'm good at waiting" (Mira's Sunday 1 line, on purpose);
+  then `co_conscious("lily")`), 3 Samhain (Oct, 32: a turnip lantern, the fire on Tlachtga, the dead said aloud; `# chapter-end`,
+  unlocks Lily). Full days. Placeholders: **Bríd Kenny** (`brid_kenny`, 66, sheep farmer, retired teacher, Irish speaker, Tanya's friend
+  since 2004), **Fuinseog Grove**, neighbour **Josie** (Catholic; rounds at the well). Streams: OBOD (Welsh names), Gaelic polytheist,
+  a Catholic neighbour. New places in `westmeath`/`meath` (outdoor keywords now include hill, holy_well, shore). 26 voiced lines
+  (maya, brid, lily, lily-inside, tanya). **Drive Docs NOT made yet** (the Drive connector was down): make the folder
+  `10 Chapter 8 - Druidry (title to come)`, 3 Docs, and Sheet "10 Chapter 8 - script list (draft)" when it's back.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

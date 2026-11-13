@@ -88,6 +88,12 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 78 | `hing_hay_park` | Hing Hay Park | seattle | Chapter 7: Daoism (ch7_part3) | Lin Daozhang, Maya (the body, 30) |
 | 79 | `cid_temple_yard` | Fu Shan Temple: the pavement | seattle | Chapter 7: Daoism (ch7_part4) | Lin Daozhang |
 | 80 | `lake_lantern_shore` | The lake shore | seattle | Chapter 7: Daoism (ch7_part4) | Maya (the body, 30), Lin Daozhang |
+| 81 | `brid_farmhouse` | Bríd's farmhouse | westmeath | Chapter 8: Druidry (ch8_part1) | Bríd |
+| 82 | `brid_kitchen` | Bríd's kitchen | westmeath | Chapter 8: Druidry (ch8_part1) | Bríd, Maya (the body, 31), Maya (the body, 32) |
+| 83 | `brid_field` | Bríd's field | westmeath | Chapter 8: Druidry (ch8_part1) | - |
+| 84 | `uisneach_hill` | The Hill of Uisneach | westmeath | Chapter 8: Druidry (ch8_part1) | Bríd, Maya (the body, 31) |
+| 85 | `holy_well` | The holy well | westmeath | Chapter 8: Druidry (ch8_part2) | Bríd, Lily (the body, 31) |
+| 86 | `tlachtga_hill` | Tlachtga, the Hill of Ward | meath | Chapter 8: Druidry (ch8_part3) | Bríd, Maya (the body, 32) |
 
 ## 2. People, in the order they first appear
 
@@ -96,7 +102,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | # | Who | Id | Kind | First in | Ages (the body) | Places |
 |---|---|---|---|---|---|---|
 | 1 | Sarah | `mother` | person | Prologue: This Little Light | - | home_kitchen, car, church_sanctuary, church_fellowship_hall, home_maya_room, college_dorm_selene |
-| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30 | home_kitchen, car, church_fellowship_hall, home_maya_room, church_first_day_school, church_sanctuary, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room, seattle_apartment, burke_museum_hall, eastside_mandir_hall, garba_community_hall, gurdwara_kitchen, seattle_cafe, gurdwara_langar_hall, cid_temple_hall, lake_view_cemetery, hing_hay_park, lake_lantern_shore |
+| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30, 31, 32 | home_kitchen, car, church_fellowship_hall, home_maya_room, church_first_day_school, church_sanctuary, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room, seattle_apartment, burke_museum_hall, eastside_mandir_hall, garba_community_hall, gurdwara_kitchen, seattle_cafe, gurdwara_langar_hall, cid_temple_hall, lake_view_cemetery, hing_hay_park, lake_lantern_shore, brid_kitchen, uisneach_hill, tlachtga_hill |
 | 3 | Miss Eloise | `eloise` | person | Prologue: This Little Light | - | church_first_day_school |
 | 4 | Rebecca | `rebecca` | person | Prologue: This Little Light | - | church_first_day_school, church_sanctuary |
 | 5 | Mrs. Hines | `hines` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
@@ -137,6 +143,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 40 | Bibi Harjit | `bibi_harjit` | person | Chapter 6: Sikhism | - | gurdwara_kitchen, gurdwara_langar_hall |
 | 41 | Auntie Mei | `auntie_mei` | person | Chapter 7: Daoism | - | cid_temple_hall, lake_view_cemetery |
 | 42 | Lin Daozhang | `master_lin` | person | Chapter 7: Daoism | - | cid_temple_hall, lake_view_cemetery, hing_hay_park, cid_temple_yard, lake_lantern_shore |
+| 43 | Bríd | `brid_kenny` | person | Chapter 8: Druidry | - | brid_kitchen, brid_farmhouse, uisneach_hill, holy_well, tlachtga_hill |
+| 44 | Lily | `lily` | system member | Chapter 8: Druidry | 31 | holy_well |
 
 ## 3. Close-ups and props, scene by scene
 
@@ -1124,4 +1132,62 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `mei-lighter`: Lighting each lantern's candle with her own lighter, shielding it with her hand like it's a baby bird.
 - `lantern-mira`: For Mira. It turns once, then goes.
 - `lantern-little`: For the little girl in the fellowship hall, who waited, and was very good. It goes out after the first one, a little behind, the way she always was.
+
+### Bríd's farmhouse (`brid_farmhouse`)
+
+- `westmeath-window`: Green. More green than you knew there was. Sheep on the hill, and fog sitting in the dip like milk in a saucer.
+- `jetlag-sheep`: 6:10 a.m. Jet lag, and a sheep under the window explaining something at length.
+- `hawthorn-blossom`: A small hawthorn by the gate, all white blossom. You don't cut hawthorn, Bríd says. You dress it, and you leave it be.
+- `ribbons-basket`: Ribbons, eggshells painted yellow, scraps of cloth: everyone in the grove brought something.
+- `blue-ribbon`: A blue ribbon, the colour of Mira's sky in the fellowship hall window. You tie it on a low branch.
+- `hot-water-bottle`: Two in the morning. Smoke in your hair, mud to your knees, a hot water bottle Bríd left without saying. You're asleep before you can be grateful.
+- `collie-bed`: Blackberry and bilberry crumble, a blanket, the collie at the foot of the bed. Somebody small inside, finally asleep.
+
+### Bríd's kitchen (`brid_kitchen`)
+
+- `range-collie`: An old cream stove, warm all day, a kettle that never quite stops. A collie asleep against it.
+- `dresser-photo`: Plates, a Brigid's cross of rushes over the door, a photo of a younger Bríd with Tanya, both laughing in the rain.
+- `lunasa-bread`: Flour everywhere. The first bread from the new wheat, Bríd says: Lúnasa bread. You knead until your arms ache.
+- `august-window`: August: the fields gone gold, swallows on the wire, rain coming and going like it's thinking about it.
+- `knead-remember`: Push, fold, turn. Like the rotis in Kent. Your hands remember.
+- `brid-asks`: Making tea as if nothing happened. Then, very quietly: "Who was the little one, at the well?"
+- `tell-brid`: You tell her. All of it, as much as you can. She listens with her tea going cold.
+- `turnip-lantern`: A turnip, not a pumpkin. Bríd carves the old way: a scowling face, a candle inside. Lily (inside) thinks it's the funniest thing she's ever seen.
+- `barmbrack`: The Halloween brack, fruit bread with a ring baked inside. Whoever gets the ring gets married, Bríd says. "Or doesn't. It's only bread."
+- `tea-like-a-brick`: Tea for the whole grove, in the big brown pot. You've learned how Bríd takes hers: like a brick.
+- `packed-rushes`: Packed. A bag of rushes Bríd says to weave into a cross on the first of February. A jar of bilberry jam for Tanya.
+
+### Bríd's field (`brid_field`)
+
+- `lambs-bouncing`: A dozen of them, all knees, bouncing straight up in the air for no reason at all.
+- `uisneach-hill`: Uisneach, low and green above the farm. Bríd: "The navel of Ireland. Everything starts there."
+- `lamb-bottle`: Warm milk, a small hard head shoving at your knees. Your hands are full and you are entirely here.
+
+### The Hill of Uisneach (`uisneach_hill`)
+
+- `uisneach-crowd`: Hundreds of people on the hill in the dusk: families, drummers, someone in antlers, teenagers on their phones.
+- `grove-ring`: Bríd's grove in a ring a little apart: twelve people in ordinary rain jackets, one in a white robe, all holding hands.
+- `catstone`: A great split boulder on the slope. Bríd says it's where the provinces meet. Everybody touches it on the way past.
+- `bealtaine-fire`: The fire goes up all at once, a roar, a tower of orange, and every face on the hill is lit.
+- `warm-front-cold-back`: The heat on your face, the cold on your back. You stand there and are warm.
+- `fraughans`: Small, dark, hiding under the leaves. Your fingers go purple. Bríd's grandchildren eat more than they keep.
+- `three-counties`: Twenty counties, Bríd says, on a clear day. Today you can see about three, and rain over the fourth.
+- `full-basket`: A whole basket. Bríd says that's a good harvest coming. You don't ask how she knows.
+
+### The holy well (`holy_well`)
+
+- `rag-tree`: A hawthorn bent over the water, hung with rags, ribbons, a rosary, a child's sock, a hospital bracelet. Every one of them someone hoping.
+- `well-water`: Clear, cold, a little stone basin. A tin cup on a chain.
+- `josie-rounds`: Josie, Bríd's neighbour, walking slowly round and round the well with her beads, lips moving. She nods at you each time she passes.
+- `very-small`: The water, settling. A woman far off calling a child's name. Small. You feel very small.
+- `lily-cup`: The cold water. Both hands round the cup. Bríd's hand, close, not touching.
+- `lily-ribbon`: A ribbon, tied in a bow, very carefully, very good.
+- `two-waiting`: Two of you, waiting. Nobody leaves.
+
+### Tlachtga, the Hill of Ward (`tlachtga_hill`)
+
+- `tlachtga-rings`: Grassy rings in the hilltop, old banks and ditches, older than anyone's god.
+- `torch-procession`: A line of torches coming up from Athboy in the dark, swaying, singing.
+- `grove-argue`: Bríd, Josie, the Dublin OBOD man and the Gaelic polytheist arguing happily about what to call the night. Samhain. They agree on that.
+- `samhain-fire`: The Samhain fire goes up. The dark half of the year begins.
 

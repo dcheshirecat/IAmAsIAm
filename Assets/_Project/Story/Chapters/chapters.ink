@@ -30,3 +30,6 @@
 
 === ch7_daoism ===
 -> ch7_part1
+
+=== ch8_druidry ===
+-> ch8_part1

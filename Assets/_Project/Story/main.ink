@@ -44,6 +44,9 @@ INCLUDE Chapters/ch7_part1.ink
 INCLUDE Chapters/ch7_part2.ink
 INCLUDE Chapters/ch7_part3.ink
 INCLUDE Chapters/ch7_part4.ink
+INCLUDE Chapters/ch8_part1.ink
+INCLUDE Chapters/ch8_part2.ink
+INCLUDE Chapters/ch8_part3.ink
 
 -> start
 

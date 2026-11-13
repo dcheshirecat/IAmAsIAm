@@ -567,6 +567,19 @@
       "memberLinks": [],
       "pronouns": "she/her",
       "age": "65"
+    },
+    {
+      "id": "brid_kenny",
+      "name": "Bríd",
+      "role": "Chapter 8's guide (owner: an older Irish woman who leads a grove; name and story Claude's placeholders): Bríd Kenny, 66, she/her, sheep farmer below the Hill of Uisneach, a retired national school teacher, an Irish speaker; leads Fuinseog Grove; Tanya's friend since 2004.",
+      "tradition": "druidry",
+      "description": "",
+      "chapterIds": [
+        "ch8-druidry"
+      ],
+      "memberLinks": [],
+      "pronouns": "she/her",
+      "age": "66"
     }
   ]
 }

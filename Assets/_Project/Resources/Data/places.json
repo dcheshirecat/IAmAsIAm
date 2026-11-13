@@ -27,6 +27,14 @@
     {
       "id": "seattle",
       "name": "Seattle"
+    },
+    {
+      "id": "westmeath",
+      "name": "County Westmeath"
+    },
+    {
+      "id": "meath",
+      "name": "County Meath"
     }
   ],
   "places": [
@@ -673,6 +681,54 @@
       "x": 0.7,
       "y": 0.5,
       "chapterId": "ch7-daoism"
+    },
+    {
+      "id": "brid_farmhouse",
+      "name": "Bríd's farmhouse",
+      "city": "westmeath",
+      "x": 0.5,
+      "y": 0.45,
+      "chapterId": "ch8-druidry"
+    },
+    {
+      "id": "brid_kitchen",
+      "name": "Bríd's kitchen",
+      "city": "westmeath",
+      "x": 0.5,
+      "y": 0.45,
+      "chapterId": "ch8-druidry"
+    },
+    {
+      "id": "brid_field",
+      "name": "Bríd's field",
+      "city": "westmeath",
+      "x": 0.55,
+      "y": 0.42,
+      "chapterId": "ch8-druidry"
+    },
+    {
+      "id": "uisneach_hill",
+      "name": "The Hill of Uisneach",
+      "city": "westmeath",
+      "x": 0.6,
+      "y": 0.6,
+      "chapterId": "ch8-druidry"
+    },
+    {
+      "id": "holy_well",
+      "name": "The holy well",
+      "city": "westmeath",
+      "x": 0.45,
+      "y": 0.4,
+      "chapterId": "ch8-druidry"
+    },
+    {
+      "id": "tlachtga_hill",
+      "name": "Tlachtga, the Hill of Ward",
+      "city": "meath",
+      "x": 0.5,
+      "y": 0.5,
+      "chapterId": "ch8-druidry"
     },
     {
       "id": "black",

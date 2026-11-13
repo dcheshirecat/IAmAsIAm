@@ -223,16 +223,20 @@
       "title": "Chapter 8: Druidry (title to come)",
       "sabbat": "",
       "inkKnot": "ch8_druidry",
-      "startingMemberId": "",
+      "startingMemberId": "maya",
       "featuredMemberId": "",
-      "setting": "",
+      "setting": "County Westmeath and County Meath, Ireland, May to October 2030",
       "skillFamily": "",
       "contentTags": [
-        "religious-content"
+        "religious-content",
+        "childhood-reference",
+        "depersonalization",
+        "involuntary-switch"
       ],
-      "summary": "Druidry.",
+      "summary": "Tanya sends Maya to an old friend: Bríd Kenny, who keeps sheep below the Hill of Uisneach and leads a small grove of Druids who can't agree what to call anything. At Bealtaine Maya feeds an orphan lamb, ties a blue ribbon on the May bush and stands by the great fire on Uisneach. At Lúnasa, waiting at a holy well, a small voice asks if Mommy is coming back: Lily, who has been waiting since she was four. Bríd waits with her. At Samhain on Tlachtga the grove says its dead aloud, and Maya says Mira's name, and Lily adds: the lady with the crackers.",
       "introQuote": "Grant, O God, thy protection; and in protection, strength; and in strength, understanding.",
-      "introQuoteBy": "The Gorsedd Prayer (Iolo Morganwg), said in many Druid groups"
+      "introQuoteBy": "The Gorsedd Prayer (Iolo Morganwg), said in many Druid groups",
+      "unlocksMemberId": "lily"
     },
     {
       "id": "ch9-humanism",
