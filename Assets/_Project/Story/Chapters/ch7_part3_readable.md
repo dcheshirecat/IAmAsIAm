@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 7 (Daoism), Part 3. Owner: dawn tai chi in a park. My guesses: Hing Hay Park (the real square in the International District), where older people practise every morning; Master Lin among them. Tai chi as not forcing: the answer to Chapter 3's silent course. Master Lin's story (placeholder): a family of Zhengyi priests in Tainan for six generations; his father taught him the rites at twelve; he came to Seattle in 1994 "for my wife's job and the rain"; he does taxes on weekdays. Tao Te Ching chapter 8 (Legge): "The highest excellence is like (that of) water" (the chapter's intro quote).
+**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 7 (Daoism), Part 3. Owner: dawn tai chi in a park. My guesses: Hing Hay Park (the real square in the International District), where older people practise every morning; Lin Daozhang among them. Tai chi as not forcing: the answer to Chapter 3's silent course. Lin Daozhang's story (placeholder): a family of Zhengyi priests in Tainan for six generations; his father taught him the rites at twelve; he came to Seattle in 1994 "for my wife's job and the rain"; he does taxes on weekdays. Tao Te Ching chapter 8 (Legge): "The highest excellence is like (that of) water" (the chapter's intro quote).
 
 ## Dawn
 
@@ -22,22 +22,22 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 - **Look: The pavilion**
     - The red pavilion in the corner, and under it, twenty people in loose clothes moving very slowly, all together.
-- **Look: Master Lin**
+- **Look: Lin Daozhang**
     - In the back row, in an old windbreaker, moving like water finding its way down a hill.
 - **Use: The back row (join in)**
 
-**Master Lin:** Don't copy the shapes. Copy the slowness. Feet first. Knees soft. Let the arms come along later.
+**Lin Daozhang:** Don't copy the shapes. Copy the slowness. Feet first. Knees soft. Let the arms come along later.
 
 **Explore** (glowing things; the player picks):
 
 - **Use: Your feet (soft knees)**
     - Weight into one foot. Then, slowly, the other. Your arms float up without being sent. You are in your body the whole time.
 - **Wait (watch, then try one move)**
-    - One move. Push the water away. Bring the water back. Master Lin nods: one is enough today.
+    - One move. Push the water away. Bring the water back. Lin Daozhang nods: one is enough today.
 
 **Maya:** In Nepal I sat still for ten days. I lost myself completely. This is the first time being still didn't scare me.
 
-**Master Lin:** Sitting still with force is still force. Water doesn't try. It goes around the rock, and in a thousand years the rock is gone.
+**Lin Daozhang:** Sitting still with force is still force. Water doesn't try. It goes around the rock, and in a thousand years the rock is gone.
 
 ## Work
 
@@ -59,21 +59,21 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Look: The quiet temple**
     - **Weekday evening:** no crowd, one stick of incense burning, the Jade Emperor and the City God keeping each other company.
 - **Look: The ledger on the desk**
-    - **Not the City God's:** Master Lin's. A calculator, a stack of tax forms, a red pen.
-- **Talk: Master Lin**
+    - **Not the City God's:** Lin Daozhang's. A calculator, a stack of tax forms, a red pen.
+- **Talk: Lin Daozhang**
 
-**Master Lin:** Six generations of priests in Tainan, my family. My father taught me the rites when I was twelve. I hated it. I wanted to play baseball.
+**Lin Daozhang:** Six generations of priests in Tainan, my family. My father taught me the rites when I was twelve. I hated it. I wanted to play baseball.
 
-**Master Lin:** Then I came here, for my wife's job, and the rain. Nobody here needed a priest. Then everybody did. So: taxes on Monday, the gods on Sunday.
+**Lin Daozhang:** Then I came here, for my wife's job, and the rain. Nobody here needed a priest. Then everybody did. So: taxes on Monday, the gods on Sunday.
 
 **Explore** (glowing things; the player picks):
 
-- **Talk: Master Lin (ask if he still wanted to be a priest)**
+- **Talk: Lin Daozhang (ask if he still wanted to be a priest)**
     - **Maya:** Did you want to be one? In the end?
-    - **Master Lin:** Want, don't want. Water doesn't want the sea. It goes where the hill goes. It arrives.
-- **Talk: Master Lin (ask about baseball)**
+    - **Lin Daozhang:** Want, don't want. Water doesn't want the sea. It goes where the hill goes. It arrives.
+- **Talk: Lin Daozhang (ask about baseball)**
     - **Maya:** Do you still like baseball?
-    - **Master Lin:** Every Mariners game. They lose, I practise acceptance. Very spiritual team.
+    - **Lin Daozhang:** Every Mariners game. They lose, I practise acceptance. Very spiritual team.
 
 ## Night
 

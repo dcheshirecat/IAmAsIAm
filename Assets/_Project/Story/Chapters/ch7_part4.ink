@@ -1,11 +1,11 @@
 // IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 7 (Daoism), Part 4.
-// vo-speakers: Maya=maya, Master Lin=lin, Auntie Mei=mei
+// vo-speakers: Maya=maya, Lin Daozhang=lin, Auntie Mei=mei
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 4. Lanterns. Seattle, August 2029. Maya is 30.
 //  Zhongyuan, the Ghost Festival (research): the 15th day of the 7th lunar month, in the Daoist Three Yuan; offerings and rites
 //  for wandering, uncared-for spirits (pudu: tables of food set out for them), often spread across the whole month.
 //  My guesses, for the owner to correct:
-//   - Master Lin leads the pudu rite at the temple; tables of offerings on the pavement out front.
+//   - Lin Daozhang leads the pudu rite at the temple; tables of offerings on the pavement out front.
 //   - That night, paper water lanterns set on the lake for the wandering dead (a Taiwanese custom; the place is fictional,
 //     a small shore on Lake Washington). Maya sets one for Mira, and one for the little girl who waited in the fellowship hall.
 //   - The chapter ends as Maya; it unlocks nobody (owner).
@@ -52,7 +52,7 @@
 + {tables < 4} [Look: The tables]
     Folding tables down the pavement, covered in red cloth: rice, fruit, biscuits, bottled water, a whole roast pig, instant noodles. # look: pudu-tables
     -> tables
-+ {tables < 4} [Look: Master Lin]
++ {tables < 4} [Look: Lin Daozhang]
     In embroidered robes and a black cap you've never seen him wear, holding a sword of coins and a bell. Not the tax man at all. # look: lin-robes
     -> tables
 + {tables < 4} [Look: The people passing]
@@ -61,7 +61,7 @@
 * {tables >= 2} [Use: A box of oranges (help)]
     You set oranges in neat rows. Auntie Mei moves every one of them. She's smiling. # look: oranges-moved
 -
-Master Lin: Tonight we feed the ones nobody feeds. Who died far from home, who nobody remembers, who waited and nobody came. # vo: ch7-daoism_lin_0025
+Lin Daozhang: Tonight we feed the ones nobody feeds. Who died far from home, who nobody remembers, who waited and nobody came. # vo: ch7-daoism_lin_0025
 ~ set_experience("Derealization", 0.3)
 Heather (inside): Who waited and nobody came. # vo: ch7-daoism_heather-inside_0026
 * [Use: Mira's stone]
@@ -94,7 +94,7 @@ Heather (inside): Who waited and nobody came. # vo: ch7-daoism_heather-inside_00
     ~ nudge(-0.3)
 -
 Maya: She waited, and nobody came. I'm here now. That counts, doesn't it? # vo: ch7-daoism_maya_0027
-Master Lin: That's the whole festival. Somebody comes. # vo: ch7-daoism_lin_0028
+Lin Daozhang: That's the whole festival. Somebody comes. # vo: ch7-daoism_lin_0028
 Heather (inside): Somebody came. # vo: ch7-daoism_heather-inside_0029
 ~ system_log("maya", "Ghost Festival. Two lanterns: Mira, and the little one in the fellowship hall. Somebody came. -M")
 -> night

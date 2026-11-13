@@ -6,8 +6,8 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **My guesses, for you to check:**
 
-- Master Lin's family invites Maya to help at Lake View Cemetery on Capitol Hill (a real cemetery, with many Chinese family graves). She can't go to Mira's grave (Oregon), so Master Lin offers the temple's furnace for a letter to her.
-- Burning a letter is Maya's own act, not a Daoist rite (joss paper is offered to the family's own dead); Master Lin only offers the fire.
+- Lin Daozhang's family invites Maya to help at Lake View Cemetery on Capitol Hill (a real cemetery, with many Chinese family graves). She can't go to Mira's grave (Oregon), so Lin Daozhang offers the temple's furnace for a letter to her.
+- Burning a letter is Maya's own act, not a Daoist rite (joss paper is offered to the family's own dead); Lin Daozhang only offers the fire.
 
 ## Wake
 
@@ -38,7 +38,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Use: The broom**
     - Leaves, moss, a crisp packet. You sweep someone else's grandmother's step until it's clean.
 
-**Master Lin:** We sweep, we tell them the news, we eat with them. They like to know who got married and who failed their exams.
+**Lin Daozhang:** We sweep, we tell them the news, we eat with them. They like to know who got married and who failed their exams.
 
 **Auntie Mei:** Your family is buried far away?
 
@@ -66,7 +66,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Write to Mira
 
-**Master Lin:** You can't go to Oregon today. So. The furnace is hot. Write to her. The smoke knows the way.
+**Lin Daozhang:** You can't go to Oregon today. So. The furnace is hot. Write to her. The smoke knows the way.
 
 **Explore** (glowing things; the player picks):
 

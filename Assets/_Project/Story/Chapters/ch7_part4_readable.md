@@ -6,7 +6,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **My guesses, for you to check:**
 
-- Master Lin leads the pudu rite at the temple; tables of offerings on the pavement out front.
+- Lin Daozhang leads the pudu rite at the temple; tables of offerings on the pavement out front.
 - That night, paper water lanterns set on the lake for the wandering dead (a Taiwanese custom; the place is fictional, a small shore on Lake Washington). Maya sets one for Mira, and one for the little girl who waited in the fellowship hall.
 - The chapter ends as Maya; it unlocks nobody (owner).
 
@@ -41,14 +41,14 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 - **Look: The tables**
     - Folding tables down the pavement, covered in red cloth: rice, fruit, biscuits, bottled water, a whole roast pig, instant noodles.
-- **Look: Master Lin**
+- **Look: Lin Daozhang**
     - In embroidered robes and a black cap you've never seen him wear, holding a sword of coins and a bell. Not the tax man at all.
 - **Look: The people passing**
     - Tourists photographing, a bus driver bowing at a red light, an old man adding a can of beer to the table for someone.
 - **Use: A box of oranges (help)**
     - You set oranges in neat rows. Auntie Mei moves every one of them. She's smiling.
 
-**Master Lin:** Tonight we feed the ones nobody feeds. Who died far from home, who nobody remembers, who waited and nobody came.
+**Lin Daozhang:** Tonight we feed the ones nobody feeds. Who died far from home, who nobody remembers, who waited and nobody came.
 
 **Heather (inside):** Who waited and nobody came.
 
@@ -79,7 +79,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Maya:** She waited, and nobody came. I'm here now. That counts, doesn't it?
 
-**Master Lin:** That's the whole festival. Somebody comes.
+**Lin Daozhang:** That's the whole festival. Somebody comes.
 
 **Heather (inside):** Somebody came.
 

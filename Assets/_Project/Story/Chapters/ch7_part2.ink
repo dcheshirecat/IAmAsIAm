@@ -1,12 +1,12 @@
 // IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 7 (Daoism), Part 2.
-// vo-speakers: Maya=maya, Master Lin=lin, Auntie Mei=mei
+// vo-speakers: Maya=maya, Lin Daozhang=lin, Auntie Mei=mei
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 2. Qingming. Seattle, April 2029. Maya is 30.
 //  Qingming (research): in spring, families tend their ancestors' graves (sweeping, weeding, offering food and flowers).
 //  My guesses, for the owner to correct:
-//   - Master Lin's family invites Maya to help at Lake View Cemetery on Capitol Hill (a real cemetery, with many Chinese
-//     family graves). She can't go to Mira's grave (Oregon), so Master Lin offers the temple's furnace for a letter to her.
-//   - Burning a letter is Maya's own act, not a Daoist rite (joss paper is offered to the family's own dead); Master Lin
+//   - Lin Daozhang's family invites Maya to help at Lake View Cemetery on Capitol Hill (a real cemetery, with many Chinese
+//     family graves). She can't go to Mira's grave (Oregon), so Lin Daozhang offers the temple's furnace for a letter to her.
+//   - Burning a letter is Maya's own act, not a Daoist rite (joss paper is offered to the family's own dead); Lin Daozhang
 //     only offers the fire.
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -51,7 +51,7 @@
     Leaves, moss, a crisp packet. You sweep someone else's grandmother's step until it's clean. # look: sweep-step
     ~ nudge(-0.15)
 -
-Master Lin: We sweep, we tell them the news, we eat with them. They like to know who got married and who failed their exams. # vo: ch7-daoism_lin_0008
+Lin Daozhang: We sweep, we tell them the news, we eat with them. They like to know who got married and who failed their exams. # vo: ch7-daoism_lin_0008
 Auntie Mei: Your family is buried far away? # vo: ch7-daoism_mei_0009
 * [Talk: Auntie Mei (tell her about Mira)]
     ~ record_choice("ch7.p2.mira", "told", "At Qingming, you told Auntie Mei about Mira, buried in Oregon, who tried.")
@@ -81,7 +81,7 @@ Auntie Mei: Your family is buried far away? # vo: ch7-daoism_mei_0009
 # place: cid_temple_hall
 # shot: close
 # objective: Write to Mira
-Master Lin: You can't go to Oregon today. So. The furnace is hot. Write to her. The smoke knows the way. # vo: ch7-daoism_lin_0014
+Lin Daozhang: You can't go to Oregon today. So. The furnace is hot. Write to her. The smoke knows the way. # vo: ch7-daoism_lin_0014
 * [Use: The paper (write "Dear Mira")]
     "Dear Mira." Then, for the first time, the rest of it: I'm okay. I have someone to talk to. We're all still here. # look: dear-mira-finished
     ~ honour_ancestor("guide_quaker")

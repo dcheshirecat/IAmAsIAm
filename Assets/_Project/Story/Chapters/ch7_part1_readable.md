@@ -6,7 +6,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **My guesses, for you to check:**
 
-- The priest: MASTER LIN (`master_lin`, Lin Daozhang, 68, he/him). From a family of Zhengyi priests in Tainan, Taiwan; came to Seattle in 1994; does people's taxes on weekdays and the temple's rites on weekends, the way many Zhengyi priests work part-time. Dry, patient, funny without smiling.
+- The priest: LIN DAOZHANG (`master_lin`; "Daozhang", Dao master, is the respectful title for a Zhengyi priest; 68, he/him). From a family of Zhengyi priests in Tainan, Taiwan; came to Seattle in 1994; does people's taxes on weekdays and the temple's rites on weekends, the way many Zhengyi priests work part-time. Dry, patient, funny without smiling.
 - His wife AUNTIE MEI (`auntie_mei`, 65, she/her) runs everything else: the incense, the oranges, the volunteers.
 - The temple: "Fu Shan Temple" (fictional), upstairs over a bakery: the Jade Emperor in the centre, with Guandi, Mazu and Guanyin, and the City God by the door.
 - Visitors (research): three sticks of incense, bow three times, place them in the burner; the moon blocks (two red crescent blocks thrown to ask a yes-or-no question: one up, one down means yes).
@@ -78,20 +78,22 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Ask a question
 
-**Master Lin:** You want to ask something? These are the moon blocks. You ask a question in your heart, yes or no. Then you throw. One up, one down: yes.
+An older man in a grey cardigan steps down from the altar. Auntie Mei: "My husband. Lin Daozhang. Daozhang means the Dao master. He likes it, don't tell him."
+
+**Lin Daozhang:** You want to ask something? These are the moon blocks. You ask a question in your heart, yes or no. Then you throw. One up, one down: yes.
 
 **Explore** (glowing things; the player picks):
 
 - **Use: The moon blocks (ask about Seattle)**
     - Is this home now? Two red crescents on the floor. One up, one down.
-    - **Master Lin:** Yes. Hm. Good question. Most people ask about money.
+    - **Lin Daozhang:** Yes. Hm. Good question. Most people ask about money.
 - **Use: The moon blocks (ask about all of you)**
     - Will we be all right? Both face down.
-    - **Master Lin:** Both down. That means: not now. Ask again later. The gods are busy today, it's New Year.
+    - **Lin Daozhang:** Both down. That means: not now. Ask again later. The gods are busy today, it's New Year.
 
 **Maya:** Thank you. I don't know what I'm doing.
 
-**Master Lin:** Nobody knows what they're doing. The Dao doesn't mind. Come back on the ninth day, for the Jade Emperor's birthday. Bring nothing. Eat something.
+**Lin Daozhang:** Nobody knows what they're doing. The Dao doesn't mind. Come back on the ninth day, for the Jade Emperor's birthday. Bring nothing. Eat something.
 
 ## Night
 

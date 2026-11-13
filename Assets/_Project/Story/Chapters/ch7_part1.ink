@@ -1,5 +1,5 @@
 // IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 7 (Daoism), Part 1.
-// vo-speakers: Maya=maya, Master Lin=lin, Auntie Mei=mei
+// vo-speakers: Maya=maya, Lin Daozhang=lin, Auntie Mei=mei
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. New Year. Seattle, February 2029. Maya is 30.
 //  Owner: still Seattle, 2029; the guide is a Zhengyi Daoist priest (married, lives at home), an older man, at a community
@@ -7,7 +7,7 @@
 //  Qingming, dawn tai chi in a park and the Ghost Festival; starts as Maya, unlocks nobody. A full day in every part.
 //
 //  My guesses (placeholders), for the owner to correct:
-//   - The priest: MASTER LIN (`master_lin`, Lin Daozhang, 68, he/him). From a family of Zhengyi priests in Tainan, Taiwan; came
+//   - The priest: LIN DAOZHANG (`master_lin`; "Daozhang", Dao master, is the respectful title for a Zhengyi priest; 68, he/him). From a family of Zhengyi priests in Tainan, Taiwan; came
 //     to Seattle in 1994; does people's taxes on weekdays and the temple's rites on weekends, the way many Zhengyi priests work
 //     part-time. Dry, patient, funny without smiling.
 //   - His wife AUNTIE MEI (`auntie_mei`, 65, she/her) runs everything else: the incense, the oranges, the volunteers.
@@ -103,18 +103,19 @@ Auntie Mei: First time? Here. Three sticks. Light them from the big candle, not 
 # place: cid_temple_hall
 # shot: close
 # objective: Ask a question
-Master Lin: You want to ask something? These are the moon blocks. You ask a question in your heart, yes or no. Then you throw. One up, one down: yes. # vo: ch7-daoism_lin_0003
+An older man in a grey cardigan steps down from the altar. Auntie Mei: "My husband. Lin Daozhang. Daozhang means the Dao master. He likes it, don't tell him." # look: lin-cardigan
+Lin Daozhang: You want to ask something? These are the moon blocks. You ask a question in your heart, yes or no. Then you throw. One up, one down: yes. # vo: ch7-daoism_lin_0003
 * [Use: The moon blocks (ask about Seattle)]
     ~ record_choice("ch7.p1.blocks", "home", "On Lunar New Year you asked the moon blocks if Seattle was home now. Yes.")
     Is this home now? Two red crescents on the floor. One up, one down. # look: blocks-yes
-    Master Lin: Yes. Hm. Good question. Most people ask about money. # vo: ch7-daoism_lin_0004
+    Lin Daozhang: Yes. Hm. Good question. Most people ask about money. # vo: ch7-daoism_lin_0004
 * [Use: The moon blocks (ask about all of you)]
-    ~ record_choice("ch7.p1.blocks", "us", "On Lunar New Year you asked the moon blocks if all of you would be all right. They landed both face down. Master Lin said that means ask again later.")
+    ~ record_choice("ch7.p1.blocks", "us", "On Lunar New Year you asked the moon blocks if all of you would be all right. They landed both face down. Lin Daozhang said that means ask again later.")
     Will we be all right? Both face down. # look: blocks-down
-    Master Lin: Both down. That means: not now. Ask again later. The gods are busy today, it's New Year. # vo: ch7-daoism_lin_0005
+    Lin Daozhang: Both down. That means: not now. Ask again later. The gods are busy today, it's New Year. # vo: ch7-daoism_lin_0005
 -
 Maya: Thank you. I don't know what I'm doing. # vo: ch7-daoism_maya_0006
-Master Lin: Nobody knows what they're doing. The Dao doesn't mind. Come back on the ninth day, for the Jade Emperor's birthday. Bring nothing. Eat something. # vo: ch7-daoism_lin_0007
+Lin Daozhang: Nobody knows what they're doing. The Dao doesn't mind. Come back on the ninth day, for the Jade Emperor's birthday. Bring nothing. Eat something. # vo: ch7-daoism_lin_0007
 -> night
 
 = night
@@ -131,5 +132,5 @@ Master Lin: Nobody knows what they're doing. The Dao doesn't mind. Come back on 
 * [Use: The bed]
     You dream of smoke going up without being told. # look: dream-smoke
 -
-~ journal("Note", "Fu Shan Temple. Three sticks, three bows. Moon blocks: one up, one down is yes. Master Lin: nobody knows what they're doing.")
+~ journal("Note", "Fu Shan Temple. Three sticks, three bows. Moon blocks: one up, one down is yes. Lin Daozhang: nobody knows what they're doing.")
 -> ch7_part2  // the next part of the same chapter (one run)

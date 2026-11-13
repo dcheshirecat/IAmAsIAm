@@ -68,7 +68,7 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 58 | `day_ward_quiet_room` | The day program: the quiet room | chicago | Chapter 4: Islam (ch4_part1) | Chaplain Amal, Izzy (the body, 28), Maya (the body, 28), Sawsan |
 | 59 | `andersonville_cafe` | A café in Andersonville | chicago | Chapter 4: Islam (ch4_part2) | Reneé, Izzy (the body, 28) |
 | 60 | `andersonville_street` | Clark Street, Andersonville | chicago | Chapter 4: Islam (ch4_part2) | - |
-| 61 | `sufi_dhikr_room` | Idris's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Fadi, Maya (the body, 28) |
+| 61 | `sufi_dhikr_room` | Fadi's Thursday dhikr | chicago | Chapter 4: Islam (ch4_part3) | Fadi, Maya (the body, 28) |
 | 62 | `mosque_iftar_hall` | The mosque: the iftar hall | chicago | Chapter 4: Islam (ch4_part4) | Sawsan, Chaplain Amal |
 | 63 | `seattle_apartment` | Maya's apartment, Seattle | seattle | Chapter 5: Hinduism (ch5_part1) | Maya (the body, 28) |
 | 64 | `seattle_bus` | The bus | seattle | Chapter 5: Hinduism (ch5_part1) | - |
@@ -83,11 +83,11 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 73 | `gurdwara_kitchen` | The gurdwara in Kent: the kitchen | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29), Maya (the body, 30) |
 | 74 | `seattle_cafe` | A café by the market | seattle | Chapter 6: Sikhism (ch6_part2) | Christie, Maya (the body, 29) |
 | 75 | `nagar_kirtan_street` | The Vaisakhi procession, Kent | seattle | Chapter 6: Sikhism (ch6_part2) | - |
-| 76 | `cid_temple_hall` | Fu Shan Temple | seattle | Chapter 7: Daoism (ch7_part1) | Auntie Mei, Master Lin, Maya (the body, 30) |
-| 77 | `lake_view_cemetery` | Lake View Cemetery | seattle | Chapter 7: Daoism (ch7_part2) | Master Lin, Auntie Mei, Maya (the body, 30) |
-| 78 | `hing_hay_park` | Hing Hay Park | seattle | Chapter 7: Daoism (ch7_part3) | Master Lin, Maya (the body, 30) |
-| 79 | `cid_temple_yard` | Fu Shan Temple: the pavement | seattle | Chapter 7: Daoism (ch7_part4) | Master Lin |
-| 80 | `lake_lantern_shore` | The lake shore | seattle | Chapter 7: Daoism (ch7_part4) | Maya (the body, 30), Master Lin |
+| 76 | `cid_temple_hall` | Fu Shan Temple | seattle | Chapter 7: Daoism (ch7_part1) | Auntie Mei, Lin Daozhang, Maya (the body, 30) |
+| 77 | `lake_view_cemetery` | Lake View Cemetery | seattle | Chapter 7: Daoism (ch7_part2) | Lin Daozhang, Auntie Mei, Maya (the body, 30) |
+| 78 | `hing_hay_park` | Hing Hay Park | seattle | Chapter 7: Daoism (ch7_part3) | Lin Daozhang, Maya (the body, 30) |
+| 79 | `cid_temple_yard` | Fu Shan Temple: the pavement | seattle | Chapter 7: Daoism (ch7_part4) | Lin Daozhang |
+| 80 | `lake_lantern_shore` | The lake shore | seattle | Chapter 7: Daoism (ch7_part4) | Maya (the body, 30), Lin Daozhang |
 
 ## 2. People, in the order they first appear
 
@@ -136,7 +136,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 39 | Gurleen | `gurleen` | person | Chapter 6: Sikhism | - | burke_museum_hall, gurleen_car, gurdwara_darbar_hall |
 | 40 | Bibi Harjit | `bibi_harjit` | person | Chapter 6: Sikhism | - | gurdwara_kitchen, gurdwara_langar_hall |
 | 41 | Auntie Mei | `auntie_mei` | person | Chapter 7: Daoism | - | cid_temple_hall, lake_view_cemetery |
-| 42 | Master Lin | `master_lin` | person | Chapter 7: Daoism | - | cid_temple_hall, lake_view_cemetery, hing_hay_park, cid_temple_yard, lake_lantern_shore |
+| 42 | Lin Daozhang | `master_lin` | person | Chapter 7: Daoism | - | cid_temple_hall, lake_view_cemetery, hing_hay_park, cid_temple_yard, lake_lantern_shore |
 
 ## 3. Close-ups and props, scene by scene
 
@@ -884,7 +884,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `hands-mira-saw`: Shaking a little. Mira saw. Mira told. You keep walking.
 - `stone-clark`: Your thumb through the hole, all the way down Clark Street.
 
-### Idris's Thursday dhikr (`sufi_dhikr_room`)
+### Fadi's Thursday dhikr (`sufi_dhikr_room`)
 
 - `dhikr-circle`: Twenty people on cushions, knees almost touching. Old men, young women, a teenager in headphones around her neck.
 - `fadi`: White beard, a knitted cap, a string of prayer beads moving through his fingers. He smiles at you like he's been expecting you.
@@ -1085,12 +1085,13 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `side-gods`: A red-faced general with a long beard. A woman in a crown, for sailors. Guanyin in white. An old man by the door with a ledger: the City God, keeping the books.
 - `new-year-crowd`: Grandparents, toddlers in red, a man in a suit on his lunch break, all with incense, all bowing. Nobody is in charge of anybody.
 - `three-bows`: Three sticks, warm in your hands. Bow. Bow. Bow. The smoke goes up without being told.
+- `lin-cardigan`: An older man in a grey cardigan steps down from the altar. Auntie Mei: "My husband. Lin Daozhang. Daozhang means the Dao master. He likes it, don't tell him."
 - `blocks-yes`: Is this home now? Two red crescents on the floor. One up, one down.
 - `blocks-down`: Will we be all right? Both face down.
 - `dear-mira-finished`: "Dear Mira." Then, for the first time, the rest of it: I'm okay. I have someone to talk to. We're all still here.
 - `letter-smoke`: The paper curls, glows, goes up. You've been writing that letter since you were eleven.
 - `quiet-temple`: Weekday evening: no crowd, one stick of incense burning, the Jade Emperor and the City God keeping each other company.
-- `tax-forms`: Not the City God's: Master Lin's. A calculator, a stack of tax forms, a red pen.
+- `tax-forms`: Not the City God's: Lin Daozhang's. A calculator, a stack of tax forms, a red pen.
 
 ### Lake View Cemetery (`lake_view_cemetery`)
 
@@ -1106,7 +1107,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `hing-hay-pavilion`: The red pavilion in the corner, and under it, twenty people in loose clothes moving very slowly, all together.
 - `lin-taichi`: In the back row, in an old windbreaker, moving like water finding its way down a hill.
 - `taichi-feet`: Weight into one foot. Then, slowly, the other. Your arms float up without being sent. You are in your body the whole time.
-- `taichi-one-move`: One move. Push the water away. Bring the water back. Master Lin nods: one is enough today.
+- `taichi-one-move`: One move. Push the water away. Bring the water back. Lin Daozhang nods: one is enough today.
 
 ### Fu Shan Temple: the pavement (`cid_temple_yard`)
 
