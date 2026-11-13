@@ -593,6 +593,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   training as a humanist celebrant, mentions World Humanist Day; Maisie's drawing; Heather says goodbye; `# chapter-end`).
   `startingMemberId: heather`, unlocks nobody. 53 voiced lines (maya, heather, ella, maisie, heather-inside, tanya). New places in
   city `arcata`; StoryWorld outdoor keywords now include plaza and marsh. Placeholders: Maisie's grandmother, the job, the picnic.
+  Drive: Story Drafts → `11 Chapter 9 - Humanism (title to come)` (1WqutgK1fveScQ7zF3pDqsBBXmZzaV28I): Part 1
+  (1AhDNdpLzzJgXDoLXHoNbGSSbz4cFhP6t6gHdBpJ4Vk8), Part 2 (1oFK8DXGcKLPyqgLuSvRbdgbs2mpu4xyyZpNUThzfgd4), Part 3
+  (1RCCqTZt_QkTmbdARsR3cM8mB6RUQX2DQWRgcev-0Mhk); Sheet "11 Chapter 9 - script list (draft)" (1nfpsq6OYBThBRvW3L5YNRKmmNcGTuykJn05cFKGRuPg, 53 lines).
 - 2026-11-13: **GitHub Actions stopped starting jobs** (from build 75, commit 60aeba8): every workflow (Build Android AND Core
   tests) fails in 1-3 s with no steps and no logs. Not the code (InkCheck + 128 Core tests pass locally). Most likely the
   account's free Actions minutes for the month (2,000 for private repos; Android builds take 15-30 min each).
