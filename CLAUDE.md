@@ -423,8 +423,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Maya surfaces), 4 Iftar (Ramadan 2027: an open community iftar; the last day; Angie suggests SystemLog: `gain_app` + first notes
   from Heather and Izzy; Maya reads them; `# chapter-end`). 61 voiced lines. **Chapter 4 unlocks nobody** (owner).
 - 2026-11-12: **Chapter 4 Drive:** Story Drafts → `06 Chapter 4 - Islam (title to come)` (1ENhOVuU74tWb4yjEgE0pkONOhh1k3EZ5): Part 1
-  (1w4zu7OfXW79GAlIAo-VPoQc7JsDwPXjY8XRWvqVftGw), Part 2 (1yiuHSqbtfxQA4DdEcpVZ6WWUfxWhX_kAEO716OTRze8), Part 3
-  (1UVk39Dy2hOcZiE2nFUPIW9EnMNLMjgtgnoD2Q3S8aqI), Part 4 (1Xkr74NwKIZOraKTQgLnCpJrd9QRfntiu4dFYpgzFJpU); Sheet "06 Chapter 4 - script
+  (1w82O6lwngDESVUmtjQuLbX3XQjKPd3atgi8DD4q-CVQ), Part 2 (12Hb1650PThlv3FyUYY218wH_0FDY1-5KInj6-iS-TBY), Part 3
+  (1dVp01Tz4B6NJ7SBbArgiY-rb5FVBtoNqK8A3ejtMeK8), Part 4 (1c4qFln06EiNZv78BykpAVqqbjxz-5lhsy5mtjgN1ic4); Sheet "06 Chapter 4 - script
   list (draft)" (1YPoDcqVlRPpgy1wq3K6xHlSk37cgbslJwCV6xHBaL3M, 62 lines). **Owner renamed them: Sawsan (`sawsan`, was Zahra) and Fadi (`fadi`, was Idris).**
 - 2026-11-12: **Chapter 5, Hinduism:** the owner asked for research and options for Hindu leaders: `docs/Chapter5_HinduismResearch.md`.
 - 2026-11-12: **Chapter 5, Hinduism (owner):** **Maya moves to Seattle** at this point in the game; the guide is **a temple priest**; it
@@ -435,8 +435,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   day (summer: Saturday garlands, Heather shares the hands; the deity's day; how Panditji became a priest), 3 Lamps (Oct-Nov, 29:
   Navaratri garba; Diwali diyas: Heather fronts to light them with Maya co-conscious and aware, the first visit she remembers;
   SystemLog note from Maya; `# chapter-end`). 30 voiced lines. **Chapter 5 unlocks nobody** (owner). Drive: Story Drafts → `07 Chapter 5 - Hinduism (title to come)`
-  (1H6O6T9nvN33G7UT1EtBwNfjHQHSF_B4D): Part 1 (1cybrsjn3y1Jm5272fmEYCoW4DfYX-Iuu3hJZNXbCD8E), Part 2 (1FMYNeNRIc59tFxxJdKyTmgsrMwqNQHdP_ASXEpA0T88),
-  Part 3 (1fHDv2Fjm15eWEo90XUteyT0Y09RVIpbw4TmDOFiCyKE); Sheet "07 Chapter 5 - script list (draft)" (1gaExPcF0t1y5yy2InQcWlUJjyofLryd-xLxLUf78wgs).
+  (1H6O6T9nvN33G7UT1EtBwNfjHQHSF_B4D): Part 1 (1TYF0QzxyyootFTam3VcZeqGeeAE9V9tpVhnb_FiFTgY), Part 2 (1eCDA9U6ztkkEiZdQXqhMDZx2iNTEYJqh13NPrOQHzzU),
+  Part 3 (1JoMaT2slHLkCHJuRuma5GNjYmMUK87uvhUczn9Ul-eQ); Sheet "07 Chapter 5 - script list (draft)" (1gaExPcF0t1y5yy2InQcWlUJjyofLryd-xLxLUf78wgs).
 - 2026-11-12: **Chapter 5 decided (owner):** the priest is a **woman, Mangala Joshi (62, she/her), "Mangala Tai"** (`mangala_joshi`,
   was the placeholder Pandit Raghavan; vo speaker `mangala`): Maharashtrian, learned the chants at the door while her father taught her
   brothers, trained as a purohita in Pune in her thirties. So the temple is a **North Indian-style community mandir** (Rama and Sita,
@@ -537,7 +537,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   first Shabbat + the walk home, January 18th at work, the day it ended), Chapter 6 FULL DAYS (Sunday from waking, Gurleen's
   car, nani's foil packets; Vaisakhi from Christie's coffee to cold dal in bed; Gurpurab from the dawn hymn walk to a lamp on the
   sill), Chapter 3 FULL DAYS (the L in January, the evening after Angie, Boudha lanes + rooftop, the course by the bell,
-  dal bhat with Pasang's family). NEXT: Chapter 4, 5 (full days).
+  dal bhat with Pasang's family), Chapters 4 + 5 FULL DAYS (Izzy's mornings + the L, Clark Street, lunch with Sawsan, the
+  iftar day; a first night in Seattle, the bus `seattle_bus`, Saturdays, the workday before the garba). ALL written chapters done.
 - 2026-11-12: **Chapter 6 answers (owner):** keep **Bibi Harjit** (langar) as the guide; **Christie VISITS** Seattle (a work trip)
   and tells Maya in person, over coffee (not a phone call); **Chapter 6 unlocks nobody**. **Chapters 2-6: a FULL DAY in every
   part** (owner): wake up, get there, work/school, lunch, home, dinner, bed, around the part's existing scenes.
