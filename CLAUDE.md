@@ -582,7 +582,17 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   goes quiet and doesn't answer their name** (Maya recognises it and doesn't know what to do).
   **How it ends (owner): both**: Maya keeps showing up every week AND speaks up to the teacher (what Mira couldn't do). **One school
   year, 2031-32**: Part 1 the move + first club day (Sept), Part 2 the kid (winter), Part 3 the end of the year (June).
-  **Names: the owner gives them** (the town, the teacher's name/pronouns/age, the kid's name/pronouns): wait for them.
+  **Names (owner):** a REAL town, researched: **Arcata** (Humboldt Bay; the Plaza, the Arcata Marsh, the Community Forest; Wiyot
+  land, Goudi'ni); the teacher **Miss Ella** (`miss_ella`, 30, she/her); the kid **Maisie** (`maisie`, **13**, she/her, so the club
+  is at a middle school, left unnamed). Research: `docs/Chapter9_HumanismResearch.md`. **IN THE GAME (draft):**
+  `Story/Chapters/ch9_part1..3.ink`: 1 Wednesdays (Sept 2031, 33: Heather fronts, takes the flyer, signs the form "because someone
+  should be there"; Maya comes to at the Natural History Museum of Cal Poly Humboldt (Claude's guess: her job) with a visitor
+  sticker and Heather's calendar alert; Miss Ella thanks her for coming; Maisie doesn't answer at roll call), 2 Darwin Day
+  (Feb 2032: the club's field trip; a fossil fern brings Maisie back; Maya tells Miss Ella, who takes it to the school counsellor
+  and Maisie's grandmother: what Mira couldn't do), 3 Here (June 2032: a marsh clean-up, Maisie answers "Here"; Miss Ella is
+  training as a humanist celebrant, mentions World Humanist Day; Maisie's drawing; Heather says goodbye; `# chapter-end`).
+  `startingMemberId: heather`, unlocks nobody. 53 voiced lines (maya, heather, ella, maisie, heather-inside, tanya). New places in
+  city `arcata`; StoryWorld outdoor keywords now include plaza and marsh. Placeholders: Maisie's grandmother, the job, the picnic.
 - 2026-11-13: **GitHub Actions stopped starting jobs** (from build 75, commit 60aeba8): every workflow (Build Android AND Core
   tests) fails in 1-3 s with no steps and no logs. Not the code (InkCheck + 128 Core tests pass locally). Most likely the
   account's free Actions minutes for the month (2,000 for private repos; Android builds take 15-30 min each).

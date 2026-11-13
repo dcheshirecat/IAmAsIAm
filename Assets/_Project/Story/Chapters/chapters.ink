@@ -33,3 +33,6 @@
 
 === ch8_druidry ===
 -> ch8_part1
+
+=== ch9_humanism ===
+-> ch9_part1

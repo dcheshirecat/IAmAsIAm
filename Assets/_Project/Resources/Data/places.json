@@ -35,6 +35,10 @@
     {
       "id": "meath",
       "name": "County Meath"
+    },
+    {
+      "id": "arcata",
+      "name": "Arcata"
     }
   ],
   "places": [
@@ -737,6 +741,55 @@
       "x": 0,
       "y": 0,
       "chapterId": ""
+    },
+    {
+      "id": "arcata_apartment",
+      "name": "Maya's apartment, Arcata",
+      "city": "arcata",
+      "x": 0.45,
+      "y": 0.5,
+      "chapterId": "ch9-humanism",
+      "altar": true
+    },
+    {
+      "id": "arcata_plaza",
+      "name": "The Arcata Plaza",
+      "city": "arcata",
+      "x": 0.5,
+      "y": 0.45,
+      "chapterId": "ch9-humanism"
+    },
+    {
+      "id": "arcata_middle_school",
+      "name": "The middle school",
+      "city": "arcata",
+      "x": 0.62,
+      "y": 0.38,
+      "chapterId": "ch9-humanism"
+    },
+    {
+      "id": "club_classroom",
+      "name": "Miss Ella's classroom (the club)",
+      "city": "arcata",
+      "x": 0.64,
+      "y": 0.36,
+      "chapterId": "ch9-humanism"
+    },
+    {
+      "id": "natural_history_museum",
+      "name": "The Natural History Museum (Cal Poly Humboldt)",
+      "city": "arcata",
+      "x": 0.55,
+      "y": 0.3,
+      "chapterId": "ch9-humanism"
+    },
+    {
+      "id": "arcata_marsh",
+      "name": "The Arcata Marsh",
+      "city": "arcata",
+      "x": 0.35,
+      "y": 0.72,
+      "chapterId": "ch9-humanism"
     }
   ]
 }

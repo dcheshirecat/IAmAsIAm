@@ -94,6 +94,12 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 84 | `uisneach_hill` | The Hill of Uisneach | westmeath | Chapter 8: Druidry (ch8_part1) | Bríd, Maya (the body, 31) |
 | 85 | `holy_well` | The holy well | westmeath | Chapter 8: Druidry (ch8_part2) | Bríd, Lily (the body, 31) |
 | 86 | `tlachtga_hill` | Tlachtga, the Hill of Ward | meath | Chapter 8: Druidry (ch8_part3) | Bríd, Maya (the body, 32) |
+| 87 | `arcata_apartment` | Maya's apartment, Arcata | arcata | Chapter 9: Humanism (ch9_part1) | Maya (the body, 33) |
+| 88 | `arcata_plaza` | The Arcata Plaza | arcata | Chapter 9: Humanism (ch9_part1) | - |
+| 89 | `arcata_middle_school` | The middle school | arcata | Chapter 9: Humanism (ch9_part1) | Heather (the body, 33) |
+| 90 | `natural_history_museum` | The Natural History Museum (Cal Poly Humboldt) | arcata | Chapter 9: Humanism (ch9_part1) | Miss Ella, Maya (the body, 33), Maisie |
+| 91 | `club_classroom` | Miss Ella's classroom (the club) | arcata | Chapter 9: Humanism (ch9_part1) | Miss Ella, Maya (the body, 33), Maisie |
+| 92 | `arcata_marsh` | The Arcata Marsh | arcata | Chapter 9: Humanism (ch9_part3) | Miss Ella, Maisie, Maya (the body, 33), Heather (the body, 33) |
 
 ## 2. People, in the order they first appear
 
@@ -102,7 +108,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | # | Who | Id | Kind | First in | Ages (the body) | Places |
 |---|---|---|---|---|---|---|
 | 1 | Sarah | `mother` | person | Prologue: This Little Light | - | home_kitchen, car, church_sanctuary, church_fellowship_hall, home_maya_room, college_dorm_selene |
-| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30, 31, 32 | home_kitchen, car, church_fellowship_hall, home_maya_room, church_first_day_school, church_sanctuary, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room, seattle_apartment, burke_museum_hall, eastside_mandir_hall, garba_community_hall, gurdwara_kitchen, seattle_cafe, gurdwara_langar_hall, cid_temple_hall, lake_view_cemetery, hing_hay_park, lake_lantern_shore, brid_kitchen, uisneach_hill, tlachtga_hill |
+| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30, 31, 32, 33 | home_kitchen, car, church_fellowship_hall, home_maya_room, church_first_day_school, church_sanctuary, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room, seattle_apartment, burke_museum_hall, eastside_mandir_hall, garba_community_hall, gurdwara_kitchen, seattle_cafe, gurdwara_langar_hall, cid_temple_hall, lake_view_cemetery, hing_hay_park, lake_lantern_shore, brid_kitchen, uisneach_hill, tlachtga_hill, club_classroom, natural_history_museum, arcata_marsh, arcata_apartment |
 | 3 | Miss Eloise | `eloise` | person | Prologue: This Little Light | - | church_first_day_school |
 | 4 | Rebecca | `rebecca` | person | Prologue: This Little Light | - | church_first_day_school, church_sanctuary |
 | 5 | Mrs. Hines | `hines` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
@@ -130,7 +136,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 27 | Angie | `angie` | person | Chapter 3: Buddhism | - | therapist_office, boudha_guest_house |
 | 28 | Pasang Lhamo | `pasang` | person | Chapter 3: Buddhism | - | boudha_guest_house, boudha_stupa, dharma_shringa_hall, boudha_monastery |
 | 29 | Teacher | `course_teacher` | person | Chapter 3: Buddhism | - | dharma_shringa_hall |
-| 30 | Heather | `heather` | system member | Chapter 3: Buddhism | 27, 29 | boudha_monastery, priya_family_house |
+| 30 | Heather | `heather` | system member | Chapter 3: Buddhism | 27, 29, 33 | boudha_monastery, priya_family_house, arcata_middle_school, arcata_marsh |
 | 31 | Chaplain Amal | `chaplain_amal` | person | Chapter 4: Islam | - | day_ward_quiet_room, mosque_iftar_hall, day_ward_group_room |
 | 32 | Reneé | `renee_carter` | person | Chapter 4: Islam | - | chicago_apartment, andersonville_cafe |
 | 33 | Nina | `nina` | system member | Chapter 4: Islam | 28 | chicago_apartment |
@@ -145,6 +151,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 42 | Lin Daozhang | `master_lin` | person | Chapter 7: Daoism | - | cid_temple_hall, lake_view_cemetery, hing_hay_park, cid_temple_yard, lake_lantern_shore |
 | 43 | Bríd | `brid_kenny` | person | Chapter 8: Druidry | - | brid_kitchen, brid_farmhouse, uisneach_hill, holy_well, tlachtga_hill |
 | 44 | Lily | `lily` | system member | Chapter 8: Druidry | 31 | holy_well |
+| 45 | Miss Ella | `miss_ella` | person | Chapter 9: Humanism | - | club_classroom, natural_history_museum, arcata_marsh |
+| 46 | Maisie | `maisie` | person | Chapter 9: Humanism | - | club_classroom, natural_history_museum, arcata_marsh |
 
 ## 3. Close-ups and props, scene by scene
 
@@ -1190,4 +1198,74 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `torch-procession`: A line of torches coming up from Athboy in the dark, swaying, singing.
 - `grove-argue`: Bríd, Josie, the Dublin OBOD man and the Gaelic polytheist arguing happily about what to call the night. Samhain. They agree on that.
 - `samhain-fire`: The Samhain fire goes up. The dark half of the year begins.
+
+### Maya's apartment, Arcata (`arcata_apartment`)
+
+- `arcata-fog-window`: Fog to the ground. You can hear the bay but you can't see it. A gull somewhere, complaining.
+- `arcata-boxes`: Six still taped. "KITCHEN (Maya)". "BOOKS (everyone)". One in square letters: "CANDLES - CAREFUL".
+- `arcata-sill`: Mira's stone, the prayer wheel, the khata, a jar of bilberry jam for later. Room for one more thing.
+- `heather-toast-note`: Tea, the way she likes it, though she'll never remember making it. Toast cut in triangles. You leave it on the table with a note: "EAT. -H"
+- `cold-toast-triangles`: The toast from this morning, cold, still in its triangles. You eat it anyway. It's a kind of hello.
+- `foghorn-bed`: The foghorn out on the bay, every thirty seconds, like someone keeping count.
+- `rush-cross-door`: Bríd's rush cross over it, a bit lopsided. Lily helped.
+- `calendar-squares`: Every Wednesday since September has a small square drawn round it in purple. Twenty-two squares. You haven't missed one.
+- `fossils-bag`: A shark's tooth, a trilobite cast, a fern in a slab of shale. Things you can hold. You put them in the bag in a row.
+- `miras-stone-trying`: Mira's stone. You hold it a while. "You tried," you tell it. "I'm trying the next bit."
+- `calendar-last-square`: Thirty-four purple squares. One left.
+- `arcata-clear-june`: June, and for once no fog: the bay flat and silver, the hills green, the redwoods sharp against the sky.
+- `trilobite-cookies`: You and Heather made four dozen cookies last night. Some of them are shaped like trilobites. On purpose.
+- `sill-drawing`: Mira's stone. The prayer wheel. The khata. The jar from Bríd. And now a girl and a woman on a bench by the water, holding a fern.
+
+### The Arcata Plaza (`arcata_plaza`)
+
+- `arcata-plaza`: A square of grass with a statue in the middle and old wooden shopfronts all round. People walking dogs in the fog. A bookshop. A café with steamed windows.
+- `redwoods-above-town`: Above the rooftops, where the town stops, the forest starts, dark and tall and very quiet.
+- `club-flyer`: Lost cat. Guitar lessons. Room for rent, no smokers. A yellow flyer: "AFTER-SCHOOL CLUB, Wednesdays 3:15. Grown-ups needed. No experience necessary. Just show up. - Miss Ella"
+- `flyer-folded`: Somebody should be there at 3:15. You know that better than anyone.
+
+### The middle school (`arcata_middle_school`)
+
+- `school-office`: A school office like every school office: a bell schedule, a lost-and-found box of hoodies, a plant somebody waters.
+- `school-hallway`: Lockers. Paper leaves taped up for September. Somewhere a class reading out loud, badly, together.
+- `volunteer-form`: The form. Name. Availability. "Why do you want to volunteer?"
+
+### The Natural History Museum (Cal Poly Humboldt) (`natural_history_museum`)
+
+- `visitor-sticker`: A visitor sticker on your coat: the middle school's name, today's date. You haven't been to a middle school in eighteen years.
+- `fossil-case`: A long case of them, labelled in a careful old hand: shells and teeth and a whale's ear bone. Two thousand of them, the director says. Your job is to make children care.
+- `goudini-sign`: "The Natural History Museum is on the ancestral land of the Wiyot people. This place is Goudi'ni."
+- `calendar-heather`: A calendar alert you didn't set: "3:15 CLUB. Wednesdays. You'll like them. -H"
+- `darwin-banner`: "HAPPY BIRTHDAY, CHARLES DARWIN! (1809)". You painted the cake on it yourself. It looks like a hat.
+- `tree-of-life`: A long paper tree down the wall: every branch a living thing, the kids' names on the leaves where they've added a creature.
+- `club-arrives`: The club pouring through the door in a wave, Miss Ella at the back counting heads. Maisie last, hood up.
+- `kids-fossils`: Jayden holding a trilobite like it might wake up. Priya explaining to Luis, wrongly and with total confidence, how whales used to have legs. (They did.)
+- `shark-tooth-hands`: A great white's tooth, bigger than a kid's palm. Fourteen hands go up at once to hold it.
+- `maisie-gone`: At the edge of the group, not holding anything. Her eyes on the case, or through it. She's gone again.
+- `maisie-thumb-stone`: A long time. Then her thumb moves on the stone.
+
+### Miss Ella's classroom (the club) (`club_classroom`)
+
+- `club-classroom`: Desks pushed into islands. A whiteboard: "THIS WEEK: WHAT MAKES A GOOD DAY?" A crate of board games held together with tape.
+- `club-kids`: Fourteen of them, eleven to fourteen years old, very loud and then suddenly not. Two boys arguing about a dragon.
+- `snack-grace`: Goldfish crackers. Apples. A box of granola bars. A kid saying grace over his crackers, eyes shut, and nobody laughing at him.
+- `maisie-window`: Thirteen, maybe. A big grey hoodie, the sleeves over her hands. Looking at the fog like it's a long way off. She doesn't move when her name comes.
+- `ella-tick`: She doesn't call it again. She just writes a small tick and moves on, and you see her glance at the window twice.
+- `maisie-floaty-mirror`: You know that look. You know it from the inside. A fellowship hall, a long service, the light in the windows.
+- `maisie-nod`: Nothing. Then, a long time after, a very small nod.
+- `maisie-fog-together`: You sit two desks away and look at the fog too. After a while she looks at you looking at it.
+- `grandma-car`: Six o'clock and nearly dark. Maisie's grandmother's car at the curb, engine running, still in her scrubs. Maisie gets in without looking back.
+- `ella-chairs`: Stacking chairs, alone, humming.
+- `mira-backed-down`: This is the part. A fellowship hall, a long time ago. A kind woman who said something, once, and then let it go.
+
+### The Arcata Marsh (`arcata_marsh`)
+
+- `arcata-marsh`: Ponds and reeds and boardwalks out to the bay. Egrets standing very still. Someone's dog trying, very hard, not to chase them.
+- `litter-pickers`: Fourteen kids with litter-pickers and gloves, treating every bottle cap like treasure. Luis has found a shoe and will not be parted from it.
+- `ella-clipboard`: Sunburned already, a clipboard, a whistle she never blows.
+- `ella-slow-tick`: Miss Ella doesn't say anything. She just looks over at you and makes a small tick, very slowly, and grins.
+- `pelicans-line`: Pelicans going by in a line, low over the water, like they're late for something.
+- `cookies-gone`: Gone. All of them. The trilobites first.
+- `kids-egret`: Fourteen kids on a boardwalk, shouting at an egret. That's the answer. She seems to know it is.
+- `grandma-waves`: In the little car park, out of her scrubs for once, waving at you like she knows who you are. Maybe she does.
+- `maisie-drawing`: A drawing of the marsh in coloured pencil. Two people on a bench by the water. One of them is holding a fern.
 

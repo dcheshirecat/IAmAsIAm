@@ -244,16 +244,20 @@
       "title": "Chapter 9: Humanism (title to come)",
       "sabbat": "",
       "inkKnot": "ch9_humanism",
-      "startingMemberId": "",
+      "startingMemberId": "heather",
       "featuredMemberId": "",
-      "setting": "",
+      "setting": "Arcata, California, September 2031 to June 2032",
       "skillFamily": "",
       "contentTags": [
-        "religious-content"
+        "religious-content",
+        "childhood-reference",
+        "depersonalization",
+        "involuntary-switch"
       ],
-      "summary": "Humanism.",
+      "summary": "A fresh start in Arcata, a foggy college town on Humboldt Bay. Heather signs them up to volunteer at an after-school club, and Maya finds out when Miss Ella thanks her for coming. Miss Ella was a church kid every day of the week; when she left there was nothing on a Wednesday, so now there's this: no prayers, no prizes, just somewhere to be. Maisie, thirteen, goes far away and doesn't answer her name. Maya keeps showing up. On Darwin Day she puts a fossil fern in Maisie's hands, and then she does what nobody did for her: she tells Miss Ella, and doesn't let it go. On the last Wednesday of the year, at roll call on the marsh, Maisie says: here.",
       "introQuote": "The time to be happy is now. The place to be happy is here. The way to be happy is to make others so.",
-      "introQuoteBy": "Robert G. Ingersoll"
+      "introQuoteBy": "Robert G. Ingersoll",
+      "unlocksMemberId": ""
     },
     {
       "id": "ch10-unitarian-universalism",

@@ -580,6 +580,32 @@
       "memberLinks": [],
       "pronouns": "she/her",
       "age": "66"
+    },
+    {
+      "id": "miss_ella",
+      "name": "Miss Ella",
+      "role": "Chapter 9's guide (owner: a teacher, 30, she/her, raised religious and left, who built an after-school club because nobody did it for her). Teaches at the middle school in Arcata; a humanist, training as a humanist celebrant (Claude's guess).",
+      "tradition": "humanism",
+      "description": "",
+      "chapterIds": [
+        "ch9-humanism"
+      ],
+      "memberLinks": [],
+      "pronouns": "she/her",
+      "age": "30"
+    },
+    {
+      "id": "maisie",
+      "name": "Maisie",
+      "role": "Chapter 9 (owner: 13, she/her): a girl at the after-school club who goes quiet and 'floaty' and doesn't answer her name. Lives with her grandmother (Claude's guess).",
+      "tradition": "",
+      "description": "",
+      "chapterIds": [
+        "ch9-humanism"
+      ],
+      "memberLinks": [],
+      "pronouns": "she/her",
+      "age": "13"
     }
   ]
 }
