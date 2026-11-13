@@ -174,8 +174,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Izzy's signs; the tarot deck glows only while Izzy fronts), Part 3 Tanya (2019, 21, the shop + public Yule circle, ends in a switch to
   Izzy). Guesses for the owner are in each file's header (Champaign-Urbana, Selene she/her, the shop "Hearth & Moon", Izzy as the
   Prelude's alter, the years). Drive: Story Drafts → `01 Prelude - Wicca (title to come)` (17eY31XFZ0v2E3liYuC-ORgtSgCA5ICTx): Docs
-  Part 1 (1GuxKO437a9k-hE71Aos57_-wv_yVRrWVdSe5M5E1LR4), Part 2 (1LkFoMEOnh-zQrxJE8we-KNAF_kW9cn9-X87jI-W8eLE), Part 3
-  (14OEKB0LC2Nwu_6bwxDN6PNHUGmNBBuGKhXB3wbY2qZc). Voice script Sheet "01 Prelude - script list (draft)"
+  Part 1 (17qTYQxci7vwkvf0QgX0Ki8pjMEUsnY44qQoaZcvK5ek), Part 2 (1xpKudIoOdSPTKmwxNpM_68NyxywhuGAXc965Sy-11Bc), Part 3
+  (1Qbn_WnrcPB7nJgOeWCnOASlfdngkgul89fK5gTD5PuU). Voice script Sheet "01 Prelude - script list (draft)"
   (13hCLEyK389yBOGnqVDwA63BBoFms9bjgSgCax_Ztnjc: 46 lines; Maya's adult voice is `maya`). Voice-Over Scripts folder id 15B1SB8Y855lNM5Q3sJp2lIDesOkeLD9w.
 - 2026-11-12: **Tanya stays (owner):** Maya is in touch with Tanya **through the whole game**, mostly by **SMS and email**, meeting up
   **less and less** as time goes by, with a **final meeting at the end of the game**. The game needs **phone, computer and laptop
@@ -233,9 +233,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Parts: 1 Thursdays (spring 2018, 19: class, first reading, Ostara, growing lost time, black screen), 2 Coming back (May 2019, 20),
   3 Senior year (fall 2019, 21: Mark's email, abandoned, the coat drive and Gracie, Samhain with Tanya and Selene, quiet Sundays),
   4 Alone (2020: lockdown, Zoom graduation, the prayer service, Jacob). Drive: Story Drafts → `02 Chapter 1 - Christianity (title to
-  come)` (1ZNBBCoAvZZQi2bK9kD3NFSC_ciUCQwWg): Part 1 (1JUfAW2Tt9BEOpbX8TAllGM2QxINiT-GEZcsULYBaYV0), Part 2
-  (1EQmSahaqBDFC1ccMLYQ3jrZL78-cVABTwgpl2bHAgE0), Part 3 (18mvBkU4G1rVieF2XCamwBjUdDvfHz9f2u67J1MppV58), Part 4
-  (1wZ2k6JIA1297Om18-5J4A6e58TpOMF32kA-HnuiDfK4). Script Sheet "02 Chapter 1 - script list (draft)" (1_fEDa_uaOlDYmY1UK0vj0ypcg4957A4ibSZYJhq01Dw, 34 lines).
+  come)` (1ZNBBCoAvZZQi2bK9kD3NFSC_ciUCQwWg): Part 1 (1rPgiLhfrRWaCNhEae9u3WCripg3rfZ2IG0SzWSmUHko), Part 2
+  (16h0dj79j-3dNwfFq_4fI2Ld4obWXfHaT7ZdY-kiSCMw), Part 3 (1KViuL6es9VHxqyYkK2hEjB_hrkZoD55F5WUalEztwMA), Part 4
+  (17p2Pp0PK8Ie5OkAfrrN3JMubWlYEscy7VrhEIyS4ink). Script Sheet "02 Chapter 1 - script list (draft)" (1_fEDa_uaOlDYmY1UK0vj0ypcg4957A4ibSZYJhq01Dw, 34 lines).
 - 2026-11-12: **Chapter 1.5, Axel (owner):** Axel's first act is **a haircut and new clothes**. **Axel:** a **dark sense of humour**, loves
   fun and **parties**, never at anyone's expense; loves quality time with Mark. **Angry at the Quaker church** but **cautiously open to
   mainstream Christianity through friends**; he goes to church with Mark **only on holidays**, once they've dated a few months.
@@ -251,8 +251,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   church, Christmas Eve at the Methodist church), 3 Holidays (spring 2019: Ash Wednesday and the priest, the vigil where Izzy is
   triggered, Easter at a queer-affirming church), 4 The napkin (May 2019). Placeholders: "The priest" (`mark_priest`), "Mark's mom"
   (`mark_mom`), the church "St. ___'s". Drive: Story Drafts → `03 Chapter 1.5 - Axel (title to come)` (1pOOBlf0DtgjVVELZapx_fKVE_7hTOMgJ):
-  Part 1 (1Q11gaVGZgJwDITbfb0SF5pmZtJ08hKNk90tzfj8n6wQ), Part 2 (1CSVBShaquKtrNU20XlpfMsMCVBLG--Y_VA7oTue2uss), Part 3
-  (1X-gr0Bikt1rMoW7Pn5uFL2ZnqFLt4MbhT1A7VBEubSQ), Part 4 (18jIzBVqJQFJkG43A35IOGj2RDtrmacd6aMYSzNlP1Ko). Script Sheet
+  Part 1 (1Q11gaVGZgJwDITbfb0SF5pmZtJ08hKNk90tzfj8n6wQ), Part 2 (1hYsoakQlY5xZpPninSisFTJy9uBQ7b3rNKue_mMDnS0), Part 3
+  (1_Yt9Pte02LQQA1wEuU5YJsKy6N-mWuQWuhLcnixVt1Y), Part 4 (18jIzBVqJQFJkG43A35IOGj2RDtrmacd6aMYSzNlP1Ko). Script Sheet
   "03 Chapter 1.5 - script list (draft)" (1OKExbZQ8iwMIYlvehrrnL62DRQ6eG7X3__y4-7c7LYQ, 55 lines).
 - 2026-11-12: **The story is IN THE GAME (owner).** `Story/Chapters/` holds the Prologue, Prelude, Chapter 1 and Chapter 1.5 (one
   `.ink` + `_readable.md` per part, moved from Drafts/). `Chapters/chapters.ink` has each chapter's root knot (chapters.json
