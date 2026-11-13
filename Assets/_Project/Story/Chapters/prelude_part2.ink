@@ -114,6 +114,21 @@ Selene: I have to run, Jess is waiting. We should get coffee! For real this time
 -
 ~ set_experience("Derealization", 0.0)
 ~ set_experience("TimeLoss", 0.0)
+-> lunch
+
+= lunch
+// Owner: a full day in every part. Claude's scene.
+# place: campus_cafe
+# shot: wide
+# objective: Get lunch before your shift
+- (cafe)
++ {cafe < 2} [Look: The receipt]
+    Your card was used here on Tuesday. Two oat lattes. You don't drink lattes. # look: receipt-oat-lattes
+    ~ set_experience("Derealization", 0.2)
+    -> cafe
+* [Use: A sandwich]
+    A sandwich at the window counter, your notes propped against the sugar jar. # look: cafe-sandwich-notes
+-
 -> shift
 
 = shift

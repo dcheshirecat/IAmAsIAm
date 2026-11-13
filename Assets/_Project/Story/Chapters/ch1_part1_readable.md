@@ -86,6 +86,17 @@ After class, Dot from the till reads your teacup. A bird near the rim: news, com
 
 📱 **Text from Tanya:** One more thing from tonight. You asked about scrying. Not you, not yet: soft eyes, and you'd float right off. Pendulum instead. Elbow on the table, ask it small things.
 
+## Walk home
+
+> **Objective:** Walk home with Selene
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The stars**
+    - Cold and clear. Selene points out Orion, wrong, with total confidence.
+- **Talk: Selene**
+    - "Same time next Thursday?" "Same time next Thursday." Your breath and hers, clouding together.
+
 ## Ostara
 
 > **Objective:** Plant a seed

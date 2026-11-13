@@ -15,6 +15,17 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 ✉️ **Email from Mark: "I don't understand"** I keep going over May. One day you were Axel, and you were so happy, finally, you said that, finally. And then you looked at me like you'd never seen me before, and you said your name was Maya, and you asked me to leave. I left. I don't know what I did. If it's something I did, I'm sorry. If it's not, I'm still sorry. I won't pretend I'm okay. I hope you are. Mark.
 
+## Wake
+
+> **Objective:** Get up
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Your phone**
+    - 7:02 a.m. A new email from Mark. The subject: "I don't understand."
+- **Use: The mirror**
+    - Your hair growing out, two inches now, awkward. Yours.
+
 ## Quad
 
 > **Objective:** Get to class

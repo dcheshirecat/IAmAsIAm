@@ -67,6 +67,20 @@
     ~ record_choice("prelude.p3.christmas", "later", "In finals week Mom asked you to come home on the 27th. You didn't answer, and studied instead.")
     Back to the notes. You'll answer later. You don't. # look: notes-later
 -
+-> last_final
+
+= last_final
+// Owner: a full day in every part. Claude's scene.
+# place: college_lecture_hall
+# shot: wide
+# objective: Take your last final
+- (exam)
++ {exam < 2} [Look: The blue book]
+    A blue exam book, your name on the front in your own handwriting. Good. # look: blue-book
+    -> exam
+* [Use: Your pen]
+    Two hours, gone the good way. Done. Sophomore fall, done. The flyer in your pocket, crinkling. # look: exam-done
+-
 -> shop
 
 = shop

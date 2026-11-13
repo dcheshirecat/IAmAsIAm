@@ -95,6 +95,22 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 - **Use: The cart (shelve the returns)**
     - One book. Next book. The quiet of the stacks, the radiator ticking. Two hours, gone the good way.
 
+## Thursday night
+
+> **Objective:** Do your reading
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The hall**
+    - Music through the wall, someone's birthday, shrieking. You put your headphones on with nothing playing.
+- **Use: Your laptop (the reading)**
+    - Forty pages on new religious movements. You read the Wicca chapter twice and pretend it's for the class.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: The bed**
+    - Instant noodles, the dorm kettle, lights out at one. Monday. Room 412.
+
 ## Dorm
 
 > **Objective:** Get ready for Selene's

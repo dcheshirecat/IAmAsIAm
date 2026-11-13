@@ -42,6 +42,17 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Use: The book (actually study)**
     - Page forty. Page forty-one. Mark asleep on your shoulder by page forty-three.
 
+## Dinner
+
+> **Objective:** Make dinner with Mark
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Mark**
+    - Mark chopping an onion very slowly and narrating it like a cooking show.
+- **Use: The stove (stir-fry)**
+    - Stir-fry, burnt slightly, eaten on the couch, his feet in your lap. He leaves at midnight. You wish he wouldn't.
+
 ## Pride
 
 > **Objective:** Find Mark's church at Pride

@@ -97,6 +97,17 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 - **Use: Feet on the floor**
     - Bricks under your shoes. Still here.
 
+## Lunch
+
+> **Objective:** Get lunch before your shift
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The receipt**
+    - Your card was used here on Tuesday. Two oat lattes. You don't drink lattes.
+- **Use: A sandwich**
+    - A sandwich at the window counter, your notes propped against the sugar jar.
+
 ## Shift
 
 > **Objective:** Start your shift

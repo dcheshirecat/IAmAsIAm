@@ -115,6 +115,23 @@ Selene: We're doing a little Samhain thing on Monday. In my room. Candles, apple
     One book. Next book. The quiet of the stacks, the radiator ticking. Two hours, gone the good way. # look: shelving
     ~ nudge(-0.1)
 -
+-> thursday_night
+
+= thursday_night
+// Owner: a full day in every part. Claude's scene.
+# place: college_dorm_maya
+# shot: close
+# objective: Do your reading
+- (room)
++ {room < 2} [Look: The hall]
+    Music through the wall, someone's birthday, shrieking. You put your headphones on with nothing playing. # look: dorm-hall-noise
+    -> room
+* [Use: Your laptop (the reading)]
+    Forty pages on new religious movements. You read the Wicca chapter twice and pretend it's for the class. # look: wicca-chapter-twice
+-
+* [Use: The bed]
+    Instant noodles, the dorm kettle, lights out at one. Monday. Room 412. # look: noodles-412
+-
 -> dorm
 
 = dorm

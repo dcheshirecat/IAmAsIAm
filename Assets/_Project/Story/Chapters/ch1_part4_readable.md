@@ -43,6 +43,22 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Use: The box (take it back to your room)**
     - A styrofoam box, warm through the bag. The walk back across the empty quad.
 
+## Box dinner
+
+> **Objective:** Eat dinner
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The window**
+    - One other window lit across the quad. You've never met them. You leave your light on so they're not the only one.
+- **Use: The box**
+    - Lukewarm pasta from the box, at the desk, the laptop open on a Zoom you're not in.
+
+**Explore** (glowing things; the player picks):
+
+- **Use: Your phone (a dot to Tanya)**
+    - "." Sent. Tanya, at once: "." and a heart.
+
 ## Phone
 
 _(Maya's phone opens: the player can read her messages, then closes it.)_

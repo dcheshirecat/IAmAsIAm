@@ -66,6 +66,23 @@
 * [Use: The box (take it back to your room)]
     A styrofoam box, warm through the bag. The walk back across the empty quad. # look: grab-and-go-box
 -
+-> box_dinner
+
+= box_dinner
+// Owner: a full day in every part. Claude's scene.
+# place: college_dorm_maya
+# shot: close
+# objective: Eat dinner
+- (room)
++ {room < 2} [Look: The window]
+    One other window lit across the quad. You've never met them. You leave your light on so they're not the only one. # look: one-other-window
+    -> room
+* [Use: The box]
+    Lukewarm pasta from the box, at the desk, the laptop open on a Zoom you're not in. # look: box-pasta
+-
+* [Use: Your phone (a dot to Tanya)]
+    "." Sent. Tanya, at once: "." and a heart. # look: dot-to-tanya
+-
 -> graduation
 
 = phone

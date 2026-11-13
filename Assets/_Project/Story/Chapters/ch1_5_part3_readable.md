@@ -46,6 +46,17 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
     - **Axel:** Are you sure? I'm told I'm a lot.
     - **Pastor Key:** Good. We're a lot too.
 
+## After ash
+
+> **Objective:** Get coffee before class
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Your reflection**
+    - A smudge of ash on your forehead in the café window. A guy at the counter asks if you fell.
+- **Talk: The guy at the counter**
+    - "Ash Wednesday. Remember you're dust. Also, a medium latte." He doesn't know what to say. You love that.
+
 ## Protest
 
 > **Objective:** March with the church

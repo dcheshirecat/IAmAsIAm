@@ -57,6 +57,20 @@ Mark: Okay. Page forty. "Durkheim argues"... no. I can't. Your couch is too comf
     ~ record_choice("ch1_5.p2.study", "study", "Studying with Mark, you actually studied. He was impressed. Then you both fell asleep anyway.")
     Page forty. Page forty-one. Mark asleep on your shoulder by page forty-three. # look: page-43
 -
+-> dinner
+
+= dinner
+// Owner: a full day in every part. Claude's scene.
+# place: college_apartment_axel
+# shot: close
+# objective: Make dinner with Mark
+- (k)
++ {k < 2} [Look: Mark]
+    Mark chopping an onion very slowly and narrating it like a cooking show. # look: mark-onion-show
+    -> k
+* [Use: The stove (stir-fry)]
+    Stir-fry, burnt slightly, eaten on the couch, his feet in your lap. He leaves at midnight. You wish he wouldn't. # look: stirfry-couch
+-
 -> pride
 
 = pride

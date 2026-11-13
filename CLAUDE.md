@@ -542,6 +542,8 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
 - 2026-11-12: **Chapter 6 answers (owner):** keep **Bibi Harjit** (langar) as the guide; **Christie VISITS** Seattle (a work trip)
   and tells Maya in person, over coffee (not a phone call); **Chapter 6 unlocks nobody**. **Chapters 2-6: a FULL DAY in every
   part** (owner): wake up, get there, work/school, lunch, home, dinner, bed, around the part's existing scenes.
+- 2026-11-13: **Owner: full days in the Prologue, Prelude, Chapter 1 and Chapter 1.5 too.** **Chapter 7, Daoism (owner):** still
+  **Seattle, 2029**; the guide is **a Daoist priest at a temple**; **starts as Maya, unlocks nobody**.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

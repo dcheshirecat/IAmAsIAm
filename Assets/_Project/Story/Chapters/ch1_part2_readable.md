@@ -89,6 +89,17 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 - **Use: Feet on the floor**
     - The brick path. Your shoes, someone's shoes, your feet in them. Still here.
 
+## Food
+
+> **Objective:** Eat something
+
+**Explore** (glowing things; the player picks):
+
+- **Look: Your ID card**
+    - The photo on your student ID: short hair, a jaw set like someone else's. The card reader beeps it through anyway.
+- **Use: A tray**
+    - Soup and bread, eaten with your head down. A girl at the next table waves, uncertain. You don't know her.
+
 ## Night
 
 > **Objective:** Try to sleep

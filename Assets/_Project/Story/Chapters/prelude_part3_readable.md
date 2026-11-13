@@ -48,6 +48,17 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Use: Your notes (don't answer yet)**
     - Back to the notes. You'll answer later. You don't.
 
+## Last final
+
+> **Objective:** Take your last final
+
+**Explore** (glowing things; the player picks):
+
+- **Look: The blue book**
+    - A blue exam book, your name on the front in your own handwriting. Good.
+- **Use: Your pen**
+    - Two hours, gone the good way. Done. Sophomore fall, done. The flyer in your pocket, crinkling.
+
 ## Shop
 
 > **Objective:** Find the circle

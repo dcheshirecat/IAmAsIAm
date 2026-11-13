@@ -63,6 +63,20 @@ Pastor Key: Easter's in April. We do a big breakfast after. You'd be very welcom
     Axel: Are you sure? I'm told I'm a lot. # vo: ch1-5-axel_axel_0032
     Pastor Key: Good. We're a lot too. # vo: ch1-5-axel_key_0033
 -
+-> after_ash
+
+= after_ash
+// Owner: a full day in every part. Claude's scene.
+# place: campus_cafe
+# shot: wide
+# objective: Get coffee before class
+- (cafe)
++ {cafe < 2} [Look: Your reflection]
+    A smudge of ash on your forehead in the café window. A guy at the counter asks if you fell. # look: ash-reflection
+    -> cafe
+* [Talk: The guy at the counter]
+    "Ash Wednesday. Remember you're dust. Also, a medium latte." He doesn't know what to say. You love that. # look: ash-latte
+-
 -> protest
 
 = protest

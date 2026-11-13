@@ -112,6 +112,20 @@ Maya: A whole year. # vo: ch1-christianity_maya_0013
     The brick path. Your shoes, someone's shoes, your feet in them. Still here. # look: feet-brick-may
     ~ nudge(-0.1)
 -
+-> food
+
+= food
+// Owner: a full day in every part. Claude's scene.
+# place: college_dining_hall
+# shot: wide
+# objective: Eat something
+- (hall)
++ {hall < 2} [Look: Your ID card]
+    The photo on your student ID: short hair, a jaw set like someone else's. The card reader beeps it through anyway. # look: id-photo
+    -> hall
+* [Use: A tray]
+    Soup and bread, eaten with your head down. A girl at the next table waves, uncertain. You don't know her. # look: soup-head-down
+-
 -> night
 
 = night

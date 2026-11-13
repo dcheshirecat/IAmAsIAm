@@ -21,16 +21,16 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 11 | `college_dorm_selene` | Selene's dorm room | champaign_urbana | Prelude (prelude_part1) | Selene, Maya (the body, 18), Sarah |
 | 12 | `college_apartment_maya` | Maya's apartment | champaign_urbana | Prelude (prelude_part2) | Axel (the body, 20) |
 | 13 | `college_quad` | The Quad | champaign_urbana | Prelude (prelude_part2) | Selene, Maya (the body, 18), Mark, Axel (the body, 20) |
-| 14 | `shop_the_circle` | The Circle | champaign_urbana | Prelude (prelude_part3) | Tanya, Maya (the body, 19), Selene, Maya (the body, 21) |
-| 15 | `park_yule_circle` | The park: the Yule circle | champaign_urbana | Prelude (prelude_part3) | Tanya |
-| 16 | `park_ostara` | The park: Ostara | champaign_urbana | Chapter 1: Christianity (ch1_part1) | Selene, Maya (the body, 19), Tanya |
-| 17 | `college_apartment_axel` | The apartment (Axel's year) | champaign_urbana | Chapter 1: Christianity (ch1_part2) | Maya (the body, 20), Mark, Axel (the body, 20) |
-| 18 | `campus_ministry` | The campus ministry | champaign_urbana | Chapter 1: Christianity (ch1_part3) | Gracie, Maya (the body, 21) |
-| 19 | `campus_ministry_chapel` | The campus ministry chapel | champaign_urbana | Chapter 1: Christianity (ch1_part3) | Gracie |
-| 20 | `campus_ministry_lawn` | The campus ministry lawn | champaign_urbana | Chapter 1: Christianity (ch1_part4) | Gracie |
-| 21 | `campus_barber` | The barber | champaign_urbana | Chapter 1.5: Axel (ch1_5_part1) | Axel (the body, 20) |
-| 22 | `thrift_store` | The thrift store | champaign_urbana | Chapter 1.5: Axel (ch1_5_part1) | Axel (the body, 20) |
-| 23 | `campus_cafe` | The campus café | champaign_urbana | Chapter 1.5: Axel (ch1_5_part1) | Selene, Axel (the body, 20) |
+| 14 | `campus_cafe` | The campus café | champaign_urbana | Prelude (prelude_part2) | Selene, Axel (the body, 20) |
+| 15 | `shop_the_circle` | The Circle | champaign_urbana | Prelude (prelude_part3) | Tanya, Maya (the body, 19), Selene, Maya (the body, 21) |
+| 16 | `park_yule_circle` | The park: the Yule circle | champaign_urbana | Prelude (prelude_part3) | Tanya |
+| 17 | `park_ostara` | The park: Ostara | champaign_urbana | Chapter 1: Christianity (ch1_part1) | Selene, Maya (the body, 19), Tanya |
+| 18 | `college_apartment_axel` | The apartment (Axel's year) | champaign_urbana | Chapter 1: Christianity (ch1_part2) | Maya (the body, 20), Mark, Axel (the body, 20) |
+| 19 | `campus_ministry` | The campus ministry | champaign_urbana | Chapter 1: Christianity (ch1_part3) | Gracie, Maya (the body, 21) |
+| 20 | `campus_ministry_chapel` | The campus ministry chapel | champaign_urbana | Chapter 1: Christianity (ch1_part3) | Gracie |
+| 21 | `campus_ministry_lawn` | The campus ministry lawn | champaign_urbana | Chapter 1: Christianity (ch1_part4) | Gracie |
+| 22 | `campus_barber` | The barber | champaign_urbana | Chapter 1.5: Axel (ch1_5_part1) | Axel (the body, 20) |
+| 23 | `thrift_store` | The thrift store | champaign_urbana | Chapter 1.5: Axel (ch1_5_part1) | Axel (the body, 20) |
 | 24 | `campus_house_party` | A house party | champaign_urbana | Chapter 1.5: Axel (ch1_5_part1) | Mark, Axel (the body, 20), Selene |
 | 25 | `town_pride` | Pride downtown | champaign_urbana | Chapter 1.5: Axel (ch1_5_part2) | Mark, Axel (the body, 20) |
 | 26 | `methodist_church` | The Methodist church | indianapolis | Chapter 1.5: Axel (ch1_5_part2) | Cassie, Mark, Axel (the body, 20) |
@@ -266,10 +266,15 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 ### Maya's dorm room (`college_dorm_maya`)
 
 - `dorm-side`: A bed, a desk, a poster you bought because the girl down the hall had one. Your roommate's side is louder.
+- `dorm-hall-noise`: Music through the wall, someone's birthday, shrieking. You put your headphones on with nothing playing.
+- `wicca-chapter-twice`: Forty pages on new religious movements. You read the Wicca chapter twice and pretend it's for the class.
+- `noodles-412`: Instant noodles, the dorm kettle, lights out at one. Monday. Room 412.
 - `planner`: A planner, every hour filled in. A mug of cold tea.
 - `muddy-shoes`: Your running shoes, caked in mud. You haven't been running.
 - `bare-wall`: Nothing on it. Everyone else on the floor has posters.
 - `stone-coat`: Mira's stone, in your coat pocket. Still.
+- `mark-email-arrives`: 7:02 a.m. A new email from Mark. The subject: "I don't understand."
+- `hair-growing-out`: Your hair growing out, two inches now, awkward. Yours.
 - `selene-really`: Selene: "how are u. really." The only one who still asks.
 - `closet-yours`: Your clothes. Only yours. The rest went to the donation bin in a bag you didn't open.
 - `mug-mac`: Macaroni in a mug. You eat it standing up, the way Mom ate. You sit down.
@@ -277,12 +282,24 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `dorm-desk`: A laptop. A cold mug. A mask on the lamp.
 - `zoom-class`: Six small squares. Tanya's ceiling fan. Everyone with their feet on their own floor.
 - `dorm-ceiling`: The ceiling. The light moving across it. Morning, afternoon.
+- `one-other-window`: One other window lit across the quad. You've never met them. You leave your light on so they're not the only one.
+- `box-pasta`: Lukewarm pasta from the box, at the desk, the laptop open on a Zoom you're not in.
+- `dot-to-tanya`: "." Sent. Tanya, at once: "." and a heart.
+- `zoom-grid`: A grid of faces. Muted. Names scrolling.
+- `name-on-screen`: "Maya ___." Two seconds on the screen. Gone.
+- `zoom-chat`: "congrats everyone!!" "CLASS OF 2020" Nobody says your name.
+- `cap-plastic`: A cap, still in its plastic, on the bed.
+- `tanya-reply`: The phone buzzes almost at once.
+- `laptop-closed`: The laptop, closed. Quiet.
+- `selene-oracle-deck`: A padded envelope from Selene: twelve cards, hand-painted, one word on each. Her own oracle deck.
 
 ### The lecture hall (`college_lecture_hall`)
 
 - `lecture-screen`: "Intro to World Religions. Week 8: New Religious Movements."
 - `notebook-candle`: Neat notes. A doodle of a candle in the margin, not yours.
 - `selene-bag`: A pentacle charm on the zip. A paperback with a cracked spine, full of sticky notes.
+- `blue-book`: A blue exam book, your name on the front in your own handwriting. Good.
+- `exam-done`: Two hours, gone the good way. Done. Sophomore fall, done. The flyer in your pocket, crinkling.
 - `abnormal-psych`: "Abnormal Psychology. Week 2: Dissociation." You write the word down and it means nothing yet.
 - `sleeping-guy`: Asleep on his laptop, the keyboard typing "jjjjjjjjjjjjjjj" into his notes.
 - `notes-gap`: Neat notes for forty minutes. Then a gap. Then neat notes again, and the clock says eleven.
@@ -292,16 +309,11 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `dining-groups`: Every table a group. Laughing, saving seats, passing fries. Freshmen who found each other in August.
 - `selene-text-again`: Selene's text, still open. You read it again.
 - `lunch-window`: Pasta, an apple, a seat by the window. You eat fast, so it doesn't look like you're waiting for anyone.
+- `id-photo`: The photo on your student ID: short hair, a jaw set like someone else's. The card reader beeps it through anyway.
+- `soup-head-down`: Soup and bread, eaten with your head down. A girl at the next table waves, uncertain. You don't know her.
 - `chairs-up`: Chairs up on every table. Tape on the floor: stand here, six feet.
 - `dining-worker`: Mask, gloves, kind eyes. "Same as yesterday, hon?" The only voice you'll hear today.
 - `grab-and-go-box`: A styrofoam box, warm through the bag. The walk back across the empty quad.
-- `zoom-grid`: A grid of faces. Muted. Names scrolling.
-- `name-on-screen`: "Maya ___." Two seconds on the screen. Gone.
-- `zoom-chat`: "congrats everyone!!" "CLASS OF 2020" Nobody says your name.
-- `cap-plastic`: A cap, still in its plastic, on the bed.
-- `tanya-reply`: The phone buzzes almost at once.
-- `laptop-closed`: The laptop, closed. Quiet.
-- `selene-oracle-deck`: A padded envelope from Selene: twelve cards, hand-painted, one word on each. Her own oracle deck.
 
 ### The library (`college_library`)
 
@@ -373,6 +385,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `selene-going`: Selene's scarf, getting smaller across the quad.
 - `stone-line-quad`: The stone's hole, worn smooth. Your thumb around it, around and around.
 - `feet-bricks`: Bricks under your shoes. Still here.
+- `selene-orion`: Cold and clear. Selene points out Orion, wrong, with total confidence.
+- `same-time-thursday`: "Same time next Thursday?" "Same time next Thursday." Your breath and hers, clouding together.
 - `hey-man`: He lifts a hand. "Hey, man! Good luck Thursday!" You don't know him. You lift a hand back.
 - `library-doors-reflection`: Short hair. Somebody's jacket. You keep walking so you don't have to look.
 - `finals-posters`: "Finals week: free coffee in the union!" Finals. Your finals. Which classes are yours?
@@ -384,6 +398,14 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `run-loud`: Loud. Louder. Your feet on the path, your breath in the cold, the bass in your chest. Nobody's body but yours.
 - `quad-may`: Frisbees, hammocks, someone with a guitar who only knows two songs. Summer, nearly.
 - `sky-may`: Blue and enormous. You lie back and it takes up everything.
+
+### The campus café (`campus_cafe`)
+
+- `receipt-oat-lattes`: Your card was used here on Tuesday. Two oat lattes. You don't drink lattes.
+- `cafe-sandwich-notes`: A sandwich at the window counter, your notes propped against the sugar jar.
+- `tanya-unread`: "Tanya." A shop with candles in the window. Someone who expects a girl named Maya.
+- `ash-reflection`: A smudge of ash on your forehead in the café window. A guy at the counter asks if you fell.
+- `ash-latte`: "Ash Wednesday. Remember you're dust. Also, a medium latte." He doesn't know what to say. You love that.
 
 ### The Circle (`shop_the_circle`)
 
@@ -437,6 +459,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `fridge-note-axel`: A note in round letters. "Full moon Tues!! -I". You don't know an I.
 - `couch-cuddle`: Mark's arm. The book on the floor. Durkheim can wait.
 - `page-43`: Page forty. Page forty-one. Mark asleep on your shoulder by page forty-three.
+- `mark-onion-show`: Mark chopping an onion very slowly and narrating it like a cooking show.
+- `stirfry-couch`: Stir-fry, burnt slightly, eaten on the couch, his feet in your lap. He leaves at midnight. You wish he wouldn't.
 - `year-photos`: Pride. Christmas Eve, both of you holding candles. Easter, Mark crying a little, laughing at himself.
 - `corkboard-napkin`: Ticket stubs. A party flyer. In the corner, under everything, the napkin with Mira's number.
 - `napkin-tear`: A sound like paper.
@@ -476,10 +500,6 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 - `thrift-flannels`: Green and black. Red and black. All of them, honestly.
 - `thrift-boots`: Brown boots, scuffed at the toes. Somebody else's walking, already in them.
-
-### The campus café (`campus_cafe`)
-
-- `tanya-unread`: "Tanya." A shop with candles in the window. Someone who expects a girl named Maya.
 
 ### A house party (`campus_house_party`)
 

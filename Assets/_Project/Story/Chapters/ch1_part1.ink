@@ -111,6 +111,20 @@ After class, Dot from the till reads your teacup. A bird near the rim: news, com
 ~ text_from("tanya", "One more thing from tonight. You asked about scrying. Not you, not yet: soft eyes, and you'd float right off. Pendulum instead. Elbow on the table, ask it small things.")
 ~ learn_practice("pendulum", "tanya")
 ~ bos_entry("maya", "Readings", "My first reading", "Three cards at Tanya's. What was: {card_name(tarot_was)}. What is: {card_name(tarot_is)}. What could help: {card_name(tarot_help)}.")
+-> walk_home
+
+= walk_home
+// Owner: a full day in every part. Claude's scene.
+# place: college_quad
+# shot: wide
+# objective: Walk home with Selene
+- (walk)
++ {walk < 2} [Look: The stars]
+    Cold and clear. Selene points out Orion, wrong, with total confidence. # look: selene-orion
+    -> walk
+* [Talk: Selene]
+    "Same time next Thursday?" "Same time next Thursday." Your breath and hers, clouding together. # look: same-time-thursday
+-
 -> ostara
 
 = ostara
