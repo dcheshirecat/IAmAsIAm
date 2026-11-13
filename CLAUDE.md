@@ -553,9 +553,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   the pudu tables, two water lanterns: Mira and the little girl who waited; `# chapter-end`). Full days. Placeholders: **Lin Daozhang** (was "Master Lin";
   owner: names accurate and respectful; Daozhang = Dao master, the respectful title for a Zhengyi priest) (`master_lin`, 68, Tainan, taxes on weekdays), **Auntie Mei** (`auntie_mei`), **Fu Shan Temple** over Golden Crown Bakery.
   29 voiced lines (maya, lin, mei, heather-inside). Drive: Story Drafts → `09 Chapter 7 - Daoism (title to come)`
-  (1mLTkTXJ9lsKe5_SKgjkEBi8jnxR6li7L): Part 1 (1HwFk1V8_1oJxgxGvZCle9GZfZe27r9S7uCm2pF5S6sg), Part 2 (1Mlo8-ssGxgUlvnnvJD6uiuQ0Hnn5Hb0kpc-6z3Lb6bI),
-  Part 3 (1UYHAQpDQ-xCAXANDka-X2pGXc4UKXNth5vc0fvu7WSE), Part 4 (1iAdjHl7ZP-D0jOgP2bSxrabw47EgtqONRnH7OeAN1AY); Sheet "09 Chapter 7 -
-  script list (draft)" (1RQwzm_q162Pvm-3B7fTdbs5QZHjgckteG_DQThR2qgw).
+  (1mLTkTXJ9lsKe5_SKgjkEBi8jnxR6li7L): Part 1 (138g9SrbXGoEkp9H9wRnewSznkrxDHvgs-YOOKL89LRM), Part 2 (1asu7_gy5S36YUwdLR_G0IzybvXQQx7gQJgAsnjo_9N4),
+  Part 3 (1vc6GE0JYbsXEbu-jValERRbMiDMkH84psim60ToodeM), Part 4 (1Az9DMVWxewoiCWYhIu3YeTH2xJr9bhxi8f9gdKRzTyo); Sheet "09 Chapter 7 -
+  script list (draft)" (1QgutoMvURMm6F-Qvg6OYTSV51C-MwjSaf1YaMS-_aXo).
 - 2026-11-13: **Owner: make sure ALL names in the game are accurate and respectful.** Audit done: "Master Lin" became **Lin Daozhang**;
   the dhikr place was still "Idris's" (now Fadi's). Flagged to the owner (their choice, not changed): Episcopal priests are usually
   called Father/Mother + surname, though some parishes use "Pastor" (Pastor Key). Check every new name the same way.
