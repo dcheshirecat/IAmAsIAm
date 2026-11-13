@@ -635,6 +635,46 @@
       "chapterId": "ch6-sikhism"
     },
     {
+      "id": "cid_temple_hall",
+      "name": "Fu Shan Temple",
+      "city": "seattle",
+      "x": 0.47,
+      "y": 0.45,
+      "chapterId": "ch7-daoism"
+    },
+    {
+      "id": "cid_temple_yard",
+      "name": "Fu Shan Temple: the pavement",
+      "city": "seattle",
+      "x": 0.47,
+      "y": 0.44,
+      "chapterId": "ch7-daoism"
+    },
+    {
+      "id": "hing_hay_park",
+      "name": "Hing Hay Park",
+      "city": "seattle",
+      "x": 0.48,
+      "y": 0.44,
+      "chapterId": "ch7-daoism"
+    },
+    {
+      "id": "lake_view_cemetery",
+      "name": "Lake View Cemetery",
+      "city": "seattle",
+      "x": 0.56,
+      "y": 0.58,
+      "chapterId": "ch7-daoism"
+    },
+    {
+      "id": "lake_lantern_shore",
+      "name": "The lake shore",
+      "city": "seattle",
+      "x": 0.7,
+      "y": 0.5,
+      "chapterId": "ch7-daoism"
+    },
+    {
       "id": "black",
       "name": "",
       "city": "",

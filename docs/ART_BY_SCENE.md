@@ -83,6 +83,11 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 73 | `gurdwara_kitchen` | The gurdwara in Kent: the kitchen | seattle | Chapter 6: Sikhism (ch6_part1) | Bibi Harjit, Maya (the body, 29), Maya (the body, 30) |
 | 74 | `seattle_cafe` | A café by the market | seattle | Chapter 6: Sikhism (ch6_part2) | Christie, Maya (the body, 29) |
 | 75 | `nagar_kirtan_street` | The Vaisakhi procession, Kent | seattle | Chapter 6: Sikhism (ch6_part2) | - |
+| 76 | `cid_temple_hall` | Fu Shan Temple | seattle | Chapter 7: Daoism (ch7_part1) | Auntie Mei, Master Lin, Maya (the body, 30) |
+| 77 | `lake_view_cemetery` | Lake View Cemetery | seattle | Chapter 7: Daoism (ch7_part2) | Master Lin, Auntie Mei, Maya (the body, 30) |
+| 78 | `hing_hay_park` | Hing Hay Park | seattle | Chapter 7: Daoism (ch7_part3) | Master Lin, Maya (the body, 30) |
+| 79 | `cid_temple_yard` | Fu Shan Temple: the pavement | seattle | Chapter 7: Daoism (ch7_part4) | Master Lin |
+| 80 | `lake_lantern_shore` | The lake shore | seattle | Chapter 7: Daoism (ch7_part4) | Maya (the body, 30), Master Lin |
 
 ## 2. People, in the order they first appear
 
@@ -91,7 +96,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | # | Who | Id | Kind | First in | Ages (the body) | Places |
 |---|---|---|---|---|---|---|
 | 1 | Sarah | `mother` | person | Prologue: This Little Light | - | home_kitchen, car, church_sanctuary, church_fellowship_hall, home_maya_room, college_dorm_selene |
-| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30 | home_kitchen, car, church_fellowship_hall, home_maya_room, church_first_day_school, church_sanctuary, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room, seattle_apartment, burke_museum_hall, eastside_mandir_hall, garba_community_hall, gurdwara_kitchen, seattle_cafe, gurdwara_langar_hall |
+| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30 | home_kitchen, car, church_fellowship_hall, home_maya_room, church_first_day_school, church_sanctuary, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room, seattle_apartment, burke_museum_hall, eastside_mandir_hall, garba_community_hall, gurdwara_kitchen, seattle_cafe, gurdwara_langar_hall, cid_temple_hall, lake_view_cemetery, hing_hay_park, lake_lantern_shore |
 | 3 | Miss Eloise | `eloise` | person | Prologue: This Little Light | - | church_first_day_school |
 | 4 | Rebecca | `rebecca` | person | Prologue: This Little Light | - | church_first_day_school, church_sanctuary |
 | 5 | Mrs. Hines | `hines` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
@@ -130,6 +135,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 38 | Lakshmi | `lakshmi` | person | Chapter 5: Hinduism | - | eastside_mandir_kitchen, priya_family_house |
 | 39 | Gurleen | `gurleen` | person | Chapter 6: Sikhism | - | burke_museum_hall, gurleen_car, gurdwara_darbar_hall |
 | 40 | Bibi Harjit | `bibi_harjit` | person | Chapter 6: Sikhism | - | gurdwara_kitchen, gurdwara_langar_hall |
+| 41 | Auntie Mei | `auntie_mei` | person | Chapter 7: Daoism | - | cid_temple_hall, lake_view_cemetery |
+| 42 | Master Lin | `master_lin` | person | Chapter 7: Daoism | - | cid_temple_hall, lake_view_cemetery, hing_hay_park, cid_temple_yard, lake_lantern_shore |
 
 ## 3. Close-ups and props, scene by scene
 
@@ -931,6 +938,19 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `porch-lights-gurpurab`: Two houses down, someone has strung lights along the porch rail for the Gurpurab.
 - `lamp-sill-gurpurab`: One small clay lamp from the gurdwara shop, on the sill by Mira's stone. Your hands, and Heather's, steady.
 - `flame-ceiling`: The little flame on the ceiling. The good of everyone. You fall asleep in the middle of the list.
+- `feb-rain`: Grey and soft, rain that can't decide. The mountain in hiding again.
+- `altar-map`: Mira's stone, the moonstone, a dry marigold, the little clay lamp from Kent. Your altar has become a map.
+- `coat-incense`: It smells of incense. You don't hang it up yet.
+- `pork-buns`: Two pork buns from downstairs, Auntie Mei's orders. Dinner, at the window.
+- `dream-smoke`: You dream of smoke going up without being told.
+- `stone-pocket-again`: Mira's stone. You pick it up and put it in your pocket. Then you take it out and put it back. Then in your pocket again.
+- `cherry-blossom`: Sun, for once, and cherry blossom along the whole street.
+- `moss-nails`: Moss under your nails, incense in your hair.
+- `drawer-not-empty`: For once, the empty drawer where the four unfinished letters were doesn't feel empty.
+- `alarm-458`: 4:58 a.m. Light already, pale, June in Seattle. You set the alarm yourself. Nobody else did.
+- `taichi-sleep`: Your legs ache in a good way. Weight into one foot. Then the other. Asleep before the other.
+- `orange-altar`: You put an orange on the altar, next to Mira's stone. It looks right there.
+- `two-lights-lake`: The orange on the altar, glowing a little in the streetlight. Two small lights going out across a lake, together.
 
 ### The bus (`seattle_bus`)
 
@@ -938,6 +958,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `bus-bell`: "University Way." Your stop. Your new stop.
 - `sore-feet`: Sore from dancing. The dandiya sticks in your bag, knocking together.
 - `driver-humming`: The bus driver humming the garba song. You hum it too.
+- `red-lanterns`: Red lanterns strung across the street in the International District, rocking in the rain.
+- `one-more-stop`: Your stop. You stay on one more, just to see the lanterns.
 
 ### The Burke Museum (`burke_museum_hall`)
 
@@ -947,6 +969,13 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `priya-garba`: Priya at the collections door, mouthing "GARBA. TONIGHT. COMFORTABLE SHOES."
 - `dal-desk`: Leftover dal, at your desk, while a kid's drawing of the whale dries on the radiator.
 - `craft-tables`: Glue sticks, paper whales, one small shoe. Two hundred children came through today and you were here for every one of them.
+- `paper-roosters`: Paper lanterns and paper roosters, glue everywhere. A grandmother teaching three children to cut a paper flower in one go.
+- `fu-shan-flyer`: Pinned to the staff board: "Fu Shan Temple, New Year incense, all welcome, upstairs from Golden Crown Bakery."
+- `dal-fast`: Leftover dal, eaten fast, the flyer folded in your pocket.
+- `whale-water`: A whale is mostly water too, you tell the third-graders. They are delighted and disgusted.
+- `bun-desk`: A pork bun from the bakery under the temple, at your desk. Auntie Mei made you take two.
+- `clock-not-the-same`: 3:15. You keep checking it, the way you used to check it for Friday sunset. It doesn't hurt the same way.
+- `priya-ghost-month`: Leftovers, at your desk. Priya stops by: "Ghost Month? My mom says don't swim, don't whistle at night."
 
 ### The temple on the Eastside (`eastside_mandir_hall`)
 
@@ -1048,4 +1077,50 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `prabhat-pheri`: Five in the morning, dark and cold. Twenty people walking slowly, singing, one harmonium carried on a strap. Porch lights coming on as they pass.
 - `pheri-tea`: A family on their steps in coats over pyjamas, handing out cups of hot tea and sweets to the singers.
 - `pheri-cup`: Sweet, hot, cardamom. Your hands around it. The sky going grey behind the warehouses.
+
+### Fu Shan Temple (`cid_temple_hall`)
+
+- `bakery-stairs`: Narrow stairs over the bakery, smelling of pork buns and then, at the top, of incense.
+- `jade-emperor`: A gold-faced figure in robes in the middle of the altar, calm as a mountain, oranges heaped in front of him.
+- `side-gods`: A red-faced general with a long beard. A woman in a crown, for sailors. Guanyin in white. An old man by the door with a ledger: the City God, keeping the books.
+- `new-year-crowd`: Grandparents, toddlers in red, a man in a suit on his lunch break, all with incense, all bowing. Nobody is in charge of anybody.
+- `three-bows`: Three sticks, warm in your hands. Bow. Bow. Bow. The smoke goes up without being told.
+- `blocks-yes`: Is this home now? Two red crescents on the floor. One up, one down.
+- `blocks-down`: Will we be all right? Both face down.
+- `dear-mira-finished`: "Dear Mira." Then, for the first time, the rest of it: I'm okay. I have someone to talk to. We're all still here.
+- `letter-smoke`: The paper curls, glows, goes up. You've been writing that letter since you were eleven.
+- `quiet-temple`: Weekday evening: no crowd, one stick of incense burning, the Jade Emperor and the City God keeping each other company.
+- `tax-forms`: Not the City God's: Master Lin's. A calculator, a stack of tax forms, a red pen.
+
+### Lake View Cemetery (`lake_view_cemetery`)
+
+- `cemetery-view`: The lake below, the mountain out, the city like a toy. The dead have the best view in Seattle.
+- `lin-stone`: Chinese characters, then English: Lin. A grandmother, a grandfather, an uncle who died young. Oranges and a teacup on the step.
+- `lin-teenagers`: Three teenagers, sweeping and complaining and, when they think nobody's looking, bowing properly.
+- `sweep-step`: Leaves, moss, a crisp packet. You sweep someone else's grandmother's step until it's clean.
+- `qingming-picnic`: Roast pork, buns, oranges, a thermos of tea, all laid out for the grandparents first, then for everyone.
+- `bun-graves`: You eat on a rug between graves, in the sun, while a teenager explains a video game to his dead grandfather.
+
+### Hing Hay Park (`hing_hay_park`)
+
+- `hing-hay-pavilion`: The red pavilion in the corner, and under it, twenty people in loose clothes moving very slowly, all together.
+- `lin-taichi`: In the back row, in an old windbreaker, moving like water finding its way down a hill.
+- `taichi-feet`: Weight into one foot. Then, slowly, the other. Your arms float up without being sent. You are in your body the whole time.
+- `taichi-one-move`: One move. Push the water away. Bring the water back. Master Lin nods: one is enough today.
+
+### Fu Shan Temple: the pavement (`cid_temple_yard`)
+
+- `pudu-tables`: Folding tables down the pavement, covered in red cloth: rice, fruit, biscuits, bottled water, a whole roast pig, instant noodles.
+- `lin-robes`: In embroidered robes and a black cap you've never seen him wear, holding a sword of coins and a bell. Not the tax man at all.
+- `pudu-passing`: Tourists photographing, a bus driver bowing at a red light, an old man adding a can of beer to the table for someone.
+- `oranges-moved`: You set oranges in neat rows. Auntie Mei moves every one of them. She's smiling.
+- `stone-pudu`: Your thumb through the hole. The bell, the chanting, the smell of the roast pig. You're here. You stay.
+- `feet-pudu`: Weight into one foot. Then the other. Water around the rock.
+
+### The lake shore (`lake_lantern_shore`)
+
+- `lake-lanterns`: Black water, a hundred small lights already going out across it, slow as breath.
+- `mei-lighter`: Lighting each lantern's candle with her own lighter, shielding it with her hand like it's a baby bird.
+- `lantern-mira`: For Mira. It turns once, then goes.
+- `lantern-little`: For the little girl in the fellowship hall, who waited, and was very good. It goes out after the first one, a little behind, the way she always was.
 

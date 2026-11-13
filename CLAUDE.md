@@ -544,6 +544,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   part** (owner): wake up, get there, work/school, lunch, home, dinner, bed, around the part's existing scenes.
 - 2026-11-13: **Owner: full days in the Prologue, Prelude, Chapter 1 and Chapter 1.5 too.** **Chapter 7, Daoism (owner):** still
   **Seattle, 2029**; the guide is **a Daoist priest at a temple**; **starts as Maya, unlocks nobody**.
+  More (owner): a **Zhengyi priest, married**, an **older man** (details Claude's placeholders); a **community temple** in the
+  Chinatown-International District (Daoist + folk gods); parts built around **Lunar New Year, Qingming, dawn tai chi in a park,
+  and the Ghost Festival**. Research: `docs/Chapter7_DaoismResearch.md`.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

@@ -27,3 +27,6 @@
 
 === ch6_sikhism ===
 -> ch6_part1
+
+=== ch7_daoism ===
+-> ch7_part1

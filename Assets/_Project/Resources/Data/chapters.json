@@ -203,16 +203,19 @@
       "title": "Chapter 7: Daoism (title to come)",
       "sabbat": "",
       "inkKnot": "ch7_daoism",
-      "startingMemberId": "",
+      "startingMemberId": "maya",
       "featuredMemberId": "",
-      "setting": "",
+      "setting": "Seattle, February to August 2029",
       "skillFamily": "",
       "contentTags": [
-        "religious-content"
+        "religious-content",
+        "childhood-reference",
+        "derealization"
       ],
-      "summary": "Daoism.",
+      "summary": "Upstairs over a bakery in the International District, Fu Shan Temple keeps the Jade Emperor, Guandi, Mazu and Guanyin. At Lunar New Year, Auntie Mei shows Maya three sticks and three bows, and Master Lin, a priest on Sundays and a tax man on Mondays, hands her the moon blocks. At Qingming she sweeps the Lin family's graves and finally finishes a letter to Mira, which goes up in the temple furnace. At dawn in Hing Hay Park she learns to copy the slowness, not the shapes: water goes around the rock. At the Ghost Festival they feed the ones nobody feeds, and Maya sets two lanterns on the lake: one for Mira, and one for the little girl who waited.",
       "introQuote": "The highest excellence is like that of water.",
-      "introQuoteBy": "Tao Te Ching, chapter 8 (trans. James Legge)"
+      "introQuoteBy": "Tao Te Ching, chapter 8 (trans. James Legge)",
+      "unlocksMemberId": ""
     },
     {
       "id": "ch8-druidry",

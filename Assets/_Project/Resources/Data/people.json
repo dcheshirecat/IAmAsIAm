@@ -541,6 +541,32 @@
       ],
       "memberLinks": [],
       "pronouns": "she/her"
+    },
+    {
+      "id": "master_lin",
+      "name": "Master Lin",
+      "role": "Chapter 7's guide (owner: a Zhengyi Daoist priest, married, an older man; name and story Claude's placeholders): Lin Daozhang, 68, he/him, from six generations of priests in Tainan; in Seattle since 1994; taxes on weekdays, the temple's rites on weekends at Fu Shan Temple.",
+      "tradition": "daoism",
+      "description": "",
+      "chapterIds": [
+        "ch7-daoism"
+      ],
+      "memberLinks": [],
+      "pronouns": "he/him",
+      "age": "68"
+    },
+    {
+      "id": "auntie_mei",
+      "name": "Auntie Mei",
+      "role": "Master Lin's wife (Claude's placeholder), 65, she/her; runs the temple's incense, oranges and volunteers.",
+      "tradition": "daoism",
+      "description": "",
+      "chapterIds": [
+        "ch7-daoism"
+      ],
+      "memberLinks": [],
+      "pronouns": "she/her",
+      "age": "65"
     }
   ]
 }
