@@ -585,7 +585,11 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   **Names: the owner gives them** (the town, the teacher's name/pronouns/age, the kid's name/pronouns): wait for them.
 - 2026-11-13: **GitHub Actions stopped starting jobs** (from build 75, commit 60aeba8): every workflow (Build Android AND Core
   tests) fails in 1-3 s with no steps and no logs. Not the code (InkCheck + 128 Core tests pass locally). Most likely the
-  account's Actions minutes/spending limit or billing: the owner checks GitHub Settings → Billing, then re-runs.
+  account's free Actions minutes for the month (2,000 for private repos; Android builds take 15-30 min each).
+  **Owner's fix: make the repo PUBLIC** (unlimited free Actions minutes). Checked first: no keystores, keys, licence files,
+  tokens or the owner's email anywhere in the history; every commit is authored by Claude's noreply address. Secrets (Unity
+  licence, keystore) stay hidden and masked in logs, and pull requests from forks never get them. Once public, never commit
+  anything private: the whole repo, the story drafts and the build logs are visible to anyone.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
