@@ -572,7 +572,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   `10 Chapter 8 - Druidry (title to come)`, 3 Docs, and Sheet "10 Chapter 8 - script list (draft)" when it's back.
 - 2026-11-13: **Chapter 9, Humanism (owner, first answers):** Maya moves to **California**; the guide is **a teacher at a local
   school where Maya starts volunteering at the after-school youth club**. **Serena is NOT unlocked here** (saved for another
-  chapter). Still to ask: why California and where, the year, who fronts at the start, whether it unlocks anyone, and the theme.
+  chapter). More (owner): **the heart of it is the kids** at the club (Maya sees herself in one lonely child and becomes the adult
+  she needed); **starts as Heather** (`startingMemberId: heather`); **unlocks nobody**; the move is **a fresh start in a small
+  California town** (after Ireland). Still to ask: the town, the year, the teacher, the child, why Heather starts it.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
