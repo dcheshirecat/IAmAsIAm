@@ -52,16 +52,16 @@
     -> nave
 * [Use: A seat beside Mark]
 -
-Pastor Key: Axel, isn't it? Mark's told us about you. Welcome. Truly. # vo: ch1-5-axel_key_0028
-Pastor Key: Easter's in April. We do a big breakfast after. You'd be very welcome. Both of you. # vo: ch1-5-axel_key_0029
-* [Talk: Pastor Key (say thank you)]
-    ~ record_choice("ch1_5.p3.priest", "thanks", "When Pastor Key welcomed you, you said thank you, and meant it.")
+Father Key: Axel, isn't it? Mark's told us about you. Welcome. Truly. # vo: ch1-5-axel_key_0028
+Father Key: Easter's in April. We do a big breakfast after. You'd be very welcome. Both of you. # vo: ch1-5-axel_key_0029
+* [Talk: Father Key (say thank you)]
+    ~ record_choice("ch1_5.p3.priest", "thanks", "When Father Key welcomed you, you said thank you, and meant it.")
     Axel: Thanks. I'm... not really a church person. But thanks. # vo: ch1-5-axel_axel_0030
-    Pastor Key: Neither are half the people here. That's never stopped anyone. # vo: ch1-5-axel_key_0031
-* [Talk: Pastor Key (dark joke)]
-    ~ record_choice("ch1_5.p3.priest", "joke", "When Pastor Key welcomed you, you asked if they were sure. They laughed.")
+    Father Key: Neither are half the people here. That's never stopped anyone. # vo: ch1-5-axel_key_0031
+* [Talk: Father Key (dark joke)]
+    ~ record_choice("ch1_5.p3.priest", "joke", "When Father Key welcomed you, you asked if they were sure. They laughed.")
     Axel: Are you sure? I'm told I'm a lot. # vo: ch1-5-axel_axel_0032
-    Pastor Key: Good. We're a lot too. # vo: ch1-5-axel_key_0033
+    Father Key: Good. We're a lot too. # vo: ch1-5-axel_key_0033
 -
 -> after_ash
 

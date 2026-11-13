@@ -35,7 +35,7 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 25 | `town_pride` | Pride downtown | champaign_urbana | Chapter 1.5: Axel (ch1_5_part2) | Mark, Axel (the body, 20) |
 | 26 | `methodist_church` | The Methodist church | indianapolis | Chapter 1.5: Axel (ch1_5_part2) | Cassie, Mark, Axel (the body, 20) |
 | 27 | `mark_family_guest_room` | Cassie's house: the guest room | indianapolis | Chapter 1.5: Axel (ch1_5_part2) | - |
-| 28 | `episcopal_church` | St. Luke's Episcopal | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Pastor Key, Axel (the body, 20) |
+| 28 | `episcopal_church` | St. Luke's Episcopal | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Father Key, Axel (the body, 20) |
 | 29 | `protest_march` | The vigil march | champaign_urbana | Chapter 1.5: Axel (ch1_5_part3) | Mark, Izzy (the body, 20), Axel (the body, 20) |
 | 30 | `queer_affirming_church` | The queer-affirming church | indianapolis | Chapter 1.5: Axel (ch1_5_part3) | Mark, Axel (the body, 20) |
 | 31 | `chicago_apartment` | Maya's apartment | chicago | Chapter 2: Judaism (ch2_part1) | Adeena, Maya (the body, 25), Tanya, Maya (the body, 27), Reneé, Nina (the body, 28) |
@@ -109,7 +109,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 12 | Axel | `axel` | system member | Chapter 1.5: Axel | 20 | college_apartment_maya, campus_barber, thrift_store, campus_cafe, college_lecture_hall, campus_house_party, town_pride, methodist_church, episcopal_church, protest_march, queer_affirming_church, college_quad, college_apartment_axel |
 | 13 | Mark | `ex_christian` | person | Chapter 1.5: Axel | - | college_lecture_hall, campus_house_party, college_apartment_axel, town_pride, methodist_church, protest_march, queer_affirming_church, college_quad |
 | 14 | Cassie | `mark_mom` | person | Chapter 1.5: Axel | - | methodist_church |
-| 15 | Pastor Key | `mark_priest` | person | Chapter 1.5: Axel | - | episcopal_church |
+| 15 | Father Key | `mark_priest` | person | Chapter 1.5: Axel | - | episcopal_church |
 | 16 | Izzy | `izzy` | system member | Chapter 1.5: Axel | 20, 28 | protest_march, day_ward_group_room, day_ward_quiet_room, andersonville_cafe, therapist_office |
 | 17 | Adeena | `ex_jewish` | person | Chapter 2: Judaism | - | field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_conservative, adeena_parents_house, lgbtq_synagogue, chabad_house, chicago_apartment |
 | 18 | Christie | `christie` | person | Chapter 2: Judaism | - | field_museum_office, field_museum_gallery, field_museum_hall, seattle_cafe |

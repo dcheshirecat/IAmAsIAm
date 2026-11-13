@@ -115,7 +115,7 @@ The body changes age through the game; each alter has their own hair, clothes an
 | [ ] | `gracie` | Gracie (25), Catholic nun in training | Ch 1 | |
 | [ ] | `ex_christian` | Mark, Episcopal, kind, queer | Ch 1, Ch 1.5 | |
 | [ ] | `mark_mom` | Cassie, Mark's mother | Ch 1.5 | Indianapolis |
-| [ ] | `mark_priest` | Pastor Key (31, he/him) | Ch 1.5 | St. Luke's |
+| [ ] | `mark_priest` | Father Key (31, he/him) | Ch 1.5 | St. Luke's |
 | [ ] | `ex_jewish` | Adeena (27), the registrar | Ch 2 | Look: your character design |
 | [ ] | `eudora` | Eudora Jones, curator | Ch 2 | |
 | [ ] | `rabbi_abe` | Rabbi Abe (78, he/him) | Ch 2 | Sneakers, a tie with little fish on it |

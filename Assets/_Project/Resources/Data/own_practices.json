@@ -872,7 +872,7 @@
         {
           "phase": "Arrive",
           "kind": "breathe",
-          "text": "The old prayer Pastor Key taught him. He'd never admit he still says it.",
+          "text": "The old prayer Father Key taught him. He'd never admit he still says it.",
           "action": "Breathe",
           "seconds": 0
         },

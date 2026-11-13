@@ -246,7 +246,7 @@ These are proposals for the writing tools. Claude adds them when building.
    **Nina** (Quaker): waiting in the quiet; holding someone in the Light; a query. **Lily** (Quaker, 4): still under a
    blanket; a drawing for Mira; the little light song. **Heather** (a mystery): her candle; tea for everyone; a name she
    doesn't say. **Serena** (no religion): a long walk; a note to the young ones; the long view (old photos). **Axel**: loud
-   music on purpose; running it off; "Keep watch, dear Lord" (Compline, which Pastor Key taught him). They're known better at
+   music on purpose; running it off; "Keep watch, dear Lord" (Compline, which Father Key taught him). They're known better at
    the start of each part where they front or share time (`set_age`), each time they do a practice, and by Ink
    `get_to_know(member, amount)`. `RitualSession(OwnPractice)` (same gentle frame; `Result.Private`: no Book entry).
    `RitualScreen.OpenOwn`: their line about Maya's tools, then their own practices. Saved: SaveData `alterKnown`.

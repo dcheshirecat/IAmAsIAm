@@ -270,7 +270,7 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   wash plus two slowly drifting mist layers (a generated tileable noise texture), and 3D scene fog (`RenderSettings`, exponential
   squared), all following the strongest dissociation (1 - Presence; co-consciousness alone doesn't fog). Capped by
   `ComfortSettings.CapDistortion`, never faster than 2.5 s from none to full, no drifting with Reduce motion.
-- 2026-11-12: **Chapter 1.5 names (owner):** the priest is **Pastor Key** (`mark_priest`, **31, he/him**) at **St. Luke's** Episcopal; Mark's mother is **Cassie** (`mark_mom`); Mark is from **Indianapolis**.
+- 2026-11-12: **Chapter 1.5 names (owner):** the priest is **Father Key** (owner 2026-11-13, was Pastor Key: the usual Episcopal form) (`mark_priest`, **31, he/him**) at **St. Luke's** Episcopal; Mark's mother is **Cassie** (`mark_mom`); Mark is from **Indianapolis**.
 - 2026-11-12: **Chapter 2, Judaism (owner):** Maya **moves to Chicago for a job** (COVID is skipped). She meets **Adeena at work**; they're
   together **two and a half years**. Adeena is **Conservative** and becomes **Hasidic**. She meets and marries **Michael only after they
   break up**: a **present-day fact mentioned in Chapter 6**, which Maya hears **from an old friend from work**, and it's **triggering**:
@@ -557,8 +557,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Part 3 (1vc6GE0JYbsXEbu-jValERRbMiDMkH84psim60ToodeM), Part 4 (1Az9DMVWxewoiCWYhIu3YeTH2xJr9bhxi8f9gdKRzTyo); Sheet "09 Chapter 7 -
   script list (draft)" (1QgutoMvURMm6F-Qvg6OYTSV51C-MwjSaf1YaMS-_aXo).
 - 2026-11-13: **Owner: make sure ALL names in the game are accurate and respectful.** Audit done: "Master Lin" became **Lin Daozhang**;
-  the dhikr place was still "Idris's" (now Fadi's). Flagged to the owner (their choice, not changed): Episcopal priests are usually
-  called Father/Mother + surname, though some parishes use "Pastor" (Pastor Key). Check every new name the same way.
+  the dhikr place was still "Idris's" (now Fadi's). Episcopal priests are usually called Father/Mother + surname: the owner chose **Father Key** (was Pastor Key). Check every new name the same way.
+- 2026-11-13: **Chapter 8, Druidry (owner):** a **trip to Ireland**, **several weeks across seasons**, the guide is **a grove's
+  leader**, it **unlocks Lily** (4, Quaker, holds the waiting); starts as Maya (Claude's reading). Details still to ask.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

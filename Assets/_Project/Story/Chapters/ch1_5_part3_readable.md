@@ -33,18 +33,18 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
     - "Pride committee meets Tuesdays." "Trans Day of Visibility potluck." "Bring a dish, bring a friend."
 - **Use: A seat beside Mark**
 
-**Pastor Key:** Axel, isn't it? Mark's told us about you. Welcome. Truly.
+**Father Key:** Axel, isn't it? Mark's told us about you. Welcome. Truly.
 
-**Pastor Key:** Easter's in April. We do a big breakfast after. You'd be very welcome. Both of you.
+**Father Key:** Easter's in April. We do a big breakfast after. You'd be very welcome. Both of you.
 
 **Explore** (glowing things; the player picks):
 
-- **Talk: Pastor Key (say thank you)**
+- **Talk: Father Key (say thank you)**
     - **Axel:** Thanks. I'm... not really a church person. But thanks.
-    - **Pastor Key:** Neither are half the people here. That's never stopped anyone.
-- **Talk: Pastor Key (dark joke)**
+    - **Father Key:** Neither are half the people here. That's never stopped anyone.
+- **Talk: Father Key (dark joke)**
     - **Axel:** Are you sure? I'm told I'm a lot.
-    - **Pastor Key:** Good. We're a lot too.
+    - **Father Key:** Good. We're a lot too.
 
 ## After ash
 
