@@ -570,6 +570,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   a Catholic neighbour. New places in `westmeath`/`meath` (outdoor keywords now include hill, holy_well, shore). 26 voiced lines
   (maya, brid, lily, lily-inside, tanya). **Drive Docs NOT made yet** (the Drive connector was down): make the folder
   `10 Chapter 8 - Druidry (title to come)`, 3 Docs, and Sheet "10 Chapter 8 - script list (draft)" when it's back.
+- 2026-11-13: **Chapter 9, Humanism (owner, first answers):** Maya moves to **California**; the guide is **a teacher at a local
+  school where Maya starts volunteering at the after-school youth club**. **Serena is NOT unlocked here** (saved for another
+  chapter). Still to ask: why California and where, the year, who fronts at the start, whether it unlocks anyone, and the theme.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
