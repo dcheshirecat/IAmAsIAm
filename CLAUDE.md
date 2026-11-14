@@ -652,6 +652,12 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   notes (`//` headers become the Docs' "What happens" section), from `ink_to_doc.py`'s labels, and from story text. Write new
   chapter notes and lines without semicolons. Also reworded 25 narration lines in older chapters that the game would have
   shown as a "speaker" (see the speaker-line rule above).
+- 2026-11-14: **Chapter 12, Hellenic polytheism (owner, first answers):** Maya meets it **online**. **NEW FEATURE (owner): an online
+  forum + chat for learning about DID/OSDD, "based on real forums online", formally UNLOCKED (with an explanation) in an EARLIER
+  chapter**, and in Ch 12 she meets a Hellenic polytheist there. Guide: **a household devotee** (home shrine, daily libations,
+  Hestia at the hearth). Theme: **"Know thyself"** (Delphi): Maya, all of them, knowing who they are as a system. Starter: owner
+  picked "someone else" without a name yet. Still to ask: who starts it, where/when the forum unlocks and who explains it, its
+  name, the guide's details.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,
