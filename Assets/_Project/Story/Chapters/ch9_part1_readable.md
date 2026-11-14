@@ -68,14 +68,14 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 **Explore** (glowing things; the player picks):
 
 - **Look: Your coat**
-    - A visitor sticker on your coat: the middle school's name, today's date. You haven't been to a middle school in eighteen years.
+    - A visitor sticker on your coat, with the middle school's name, today's date. You haven't been to a middle school in eighteen years.
 - **Look: The fossils**
     - A long case of them, labelled in a careful old hand: shells and teeth and a whale's ear bone. Two thousand of them, the director says. Your job is to make children care.
 - **Look: The sign by the door**
     - "The Natural History Museum is on the ancestral land of the Wiyot people. This place is Goudi'ni."
 - **Use: Your phone**
 
-A calendar alert you didn't set: "3:15 CLUB. Wednesdays. You'll like them. -H"
+A calendar alert you didn't set. "3:15 CLUB. Wednesdays. You'll like them. -H"
 
 **Explore** (glowing things; the player picks):
 

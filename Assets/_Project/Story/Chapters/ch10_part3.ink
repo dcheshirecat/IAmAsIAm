@@ -78,7 +78,7 @@ Anabelle: Maya. You just did the most Unitarian Universalist thing I've ever see
 # place: uu_fellowship
 # shot: over-shoulder
 # objective: Take a flower home
-The minister tells the story: a church in Prague, 1923, a minister who wanted a communion that belonged to everybody. Bring something. Take something different home. # look: capek-story
+The minister tells the story. A church in Prague, 1923, a minister who wanted a communion that belonged to everybody. Bring something. Take something different home. # look: capek-story
 - (choose)
 + {choose < 3} [Look: The washtub]
     Everyone's flowers, all mixed up now. You can't tell whose is whose. That's the point. # look: flowers-mixed

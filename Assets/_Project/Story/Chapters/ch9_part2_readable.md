@@ -34,7 +34,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Look: The banner**
     - "HAPPY BIRTHDAY, CHARLES DARWIN! (1809)". You painted the cake on it yourself. It looks like a hat.
 - **Look: The tree of life**
-    - A long paper tree down the wall: every branch a living thing, the kids' names on the leaves where they've added a creature.
+    - A long paper tree down the wall. Every branch a living thing, the kids' names on the leaves where they've added a creature.
 - **Look: The club**
     - The club pouring through the door in a wave, Miss Ella at the back counting heads. Maisie last, hood up.
 - **Talk: Miss Ella**

@@ -619,8 +619,21 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
 - 2026-11-14: **Chapter 11, Jainism (owner, first answers):** Maya meets it through **weekend trips from Arcata to a Jain centre in the
   Bay Area**; the guide is **a Jain teacher** (philosophy or yoga: ahimsa, anekantavada); the themes are **forgiveness** (Paryushana,
   "Micchami Dukkadam"; Sarah's unopened letter) AND **not harming herself** (ahimsa turned inward: gentleness with her own body and
-  the system); **starts as SERENA** (`startingMemberId: serena`); every alter is unlocked, so it unlocks nobody. Still to ask: the
-  teacher's name/age/pronouns, a real or made-up centre, what the letter says, the parts.
+  the system); **starts as SERENA** (`startingMemberId: serena`); every alter is unlocked, so it unlocks nobody. More (owner): the
+  teacher's details are **Claude's placeholders**; a **made-up centre**; **Maya OPENS Sarah's letter AND asks forgiveness of the people
+  she hurt in lost time**; the **Paryushana arc**. Research: `docs/Chapter11_JainismResearch.md`. **IN THE GAME (draft):**
+  `Story/Chapters/ch11_part1..3.ink`: 1 Ahimsa (Sat Apr 22 2034, 35: Serena drives 5 h down 101; the Jain Center of the Peninsula
+  (made up); **Nirmala-ben** (`nirmala_shah`, Nirmala Shah, 58, she/her, placeholder): "the first jiva you're responsible for is the
+  one you live in"; lunch before sunset; Maya surfaces on the drive home), 2 Micchami Dukkadam (Sun Sep 17 2034 = Samvatsari, 36:
+  pratikraman, the Khamemi verse; in the car park Maya opens the letter: Sarah's short note + Maya's crayon drawing at 5, "ME AND
+  MIRA", which Mira had kept (Claude's draft); `honour_ancestor("guide_quaker")`; emails asking forgiveness of Tanya, Mark, Adeena
+  (each optional); Sarah: write or "not yet"), 3 Lamps (Diwali, Nov 10 2034: Tanya and Mark reply, Adeena doesn't, Sarah sends two
+  lines only if Maya wrote (`ch11_part2.forgive.wrote_sarah`); lamps for Mahavira's nirvana; Nirmala-ben gives a soft broom: "sweep
+  a gentle space in front of yourself"; `# chapter-end`). 32 voiced lines (serena, maya, nirmala, inside voices). New places
+  `car_highway_101` (arcata), city `bay_area`: `jain_centre`, `jain_centre_parking`, `bay_area_motel`.
+- 2026-11-14: **Speaker lines:** the game reads any line whose first ": " comes within 32 characters, with no . ! ? or " before
+  it, as "Speaker: text". So narration must NOT start like "A long paper tree down the wall: ..." (reworded in Ch 9-11).
+  `voice_script.py` now accepts hyphenated speaker names (Nirmala-ben).
 - 2026-11-13: **GitHub Actions stopped starting jobs** (from build 75, commit 60aeba8): every workflow (Build Android AND Core
   tests) fails in 1-3 s with no steps and no logs. Not the code (InkCheck + 128 Core tests pass locally). Most likely the
   account's free Actions minutes for the month (2,000 for private repos; Android builds take 15-30 min each).

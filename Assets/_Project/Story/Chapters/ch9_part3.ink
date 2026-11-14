@@ -27,7 +27,7 @@
     Thirty-four purple squares. One left. # look: calendar-last-square
     -> room
 + {room < 3} [Look: The window]
-    June, and for once no fog: the bay flat and silver, the hills green, the redwoods sharp against the sky. # look: arcata-clear-june
+    June, and for once no fog. The bay flat and silver, the hills green, the redwoods sharp against the sky. # look: arcata-clear-june
     -> room
 * [Use: The kitchen (make the snacks)]
     You and Heather made four dozen cookies last night. Some of them are shaped like trilobites. On purpose. # look: trilobite-cookies

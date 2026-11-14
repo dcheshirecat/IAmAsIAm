@@ -619,6 +619,19 @@
       "memberLinks": [],
       "pronouns": "they/them",
       "age": "25"
+    },
+    {
+      "id": "nirmala_shah",
+      "name": "Nirmala-ben",
+      "role": "Chapter 11's guide (owner: a Jain teacher; name, age and details Claude's placeholders): Nirmala Shah, 58, she/her, teaches philosophy at a community college and leads the Jain centre's Sunday class for adults. 'Ben' means sister (a respectful Gujarati form).",
+      "tradition": "jainism",
+      "description": "",
+      "chapterIds": [
+        "ch11-jainism"
+      ],
+      "memberLinks": [],
+      "pronouns": "she/her",
+      "age": "58"
     }
   ]
 }

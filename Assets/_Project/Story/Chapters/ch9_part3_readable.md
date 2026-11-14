@@ -19,7 +19,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Look: The calendar**
     - Thirty-four purple squares. One left.
 - **Look: The window**
-    - June, and for once no fog: the bay flat and silver, the hills green, the redwoods sharp against the sky.
+    - June, and for once no fog. The bay flat and silver, the hills green, the redwoods sharp against the sky.
 - **Use: The kitchen (make the snacks)**
     - You and Heather made four dozen cookies last night. Some of them are shaped like trilobites. On purpose.
 

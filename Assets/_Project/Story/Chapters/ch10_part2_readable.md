@@ -127,7 +127,7 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 **Explore** (glowing things; the player picks):
 
 - **Look: Your phone**
-    - **Call log:** "Mom, 4 min 12 s." You don't remember most of it. You remember the word "letter".
+    - The call log says "Mom, 4 min 12 s." You don't remember most of it. You remember the word "letter".
 - **Use: The bed**
 
 📱 **Maya texts Tanya:** My mom called. Someone in here answered for me. Her name's Serena. She said no. Nicely. I'm shaking but I think I'm okay.

@@ -96,7 +96,7 @@ Heather: Because someone should be there. # vo: ch9-humanism_heather_0001
 ~ set_experience("TimeLoss", 0.4)
 - (gallery)
 + {gallery < 4} [Look: Your coat]
-    A visitor sticker on your coat: the middle school's name, today's date. You haven't been to a middle school in eighteen years. # look: visitor-sticker
+    A visitor sticker on your coat, with the middle school's name, today's date. You haven't been to a middle school in eighteen years. # look: visitor-sticker
     -> gallery
 + {gallery < 4} [Look: The fossils]
     A long case of them, labelled in a careful old hand: shells and teeth and a whale's ear bone. Two thousand of them, the director says. Your job is to make children care. # look: fossil-case
@@ -106,7 +106,7 @@ Heather: Because someone should be there. # vo: ch9-humanism_heather_0001
     -> gallery
 * {gallery >= 1} [Use: Your phone]
 -
-A calendar alert you didn't set: "3:15 CLUB. Wednesdays. You'll like them. -H" # look: calendar-heather
+A calendar alert you didn't set. "3:15 CLUB. Wednesdays. You'll like them. -H" # look: calendar-heather
 ~ system_log("heather", "I signed us up. After-school club, Wednesdays. They need grown-ups who show up. I'll come with you. -H")
 * [Use: Your phone (go)]
     ~ record_choice("ch9.p1.go", "went", "On your first Wednesday in Arcata, you went to the after-school club Heather signed you up for, without knowing what you'd find.")

@@ -65,7 +65,7 @@ Ten flowers, all at once. Somebody in the front row says "oh!" A child counts th
 
 > **Objective:** Take a flower home
 
-The minister tells the story: a church in Prague, 1923, a minister who wanted a communion that belonged to everybody. Bring something. Take something different home.
+The minister tells the story. A church in Prague, 1923, a minister who wanted a communion that belonged to everybody. Bring something. Take something different home.
 
 **Explore** (glowing things; the player picks):
 

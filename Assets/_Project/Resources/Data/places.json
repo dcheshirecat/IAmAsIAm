@@ -39,6 +39,10 @@
     {
       "id": "arcata",
       "name": "Arcata"
+    },
+    {
+      "id": "bay_area",
+      "name": "The Bay Area"
     }
   ],
   "places": [
@@ -806,6 +810,38 @@
       "x": 0.53,
       "y": 0.4,
       "chapterId": "ch10-unitarian-universalism"
+    },
+    {
+      "id": "car_highway_101",
+      "name": "The car, Highway 101 south",
+      "city": "arcata",
+      "x": 0.6,
+      "y": 0.92,
+      "chapterId": "ch11-jainism"
+    },
+    {
+      "id": "jain_centre",
+      "name": "The Jain Center of the Peninsula",
+      "city": "bay_area",
+      "x": 0.5,
+      "y": 0.5,
+      "chapterId": "ch11-jainism"
+    },
+    {
+      "id": "jain_centre_parking",
+      "name": "The Jain centre's car park",
+      "city": "bay_area",
+      "x": 0.52,
+      "y": 0.56,
+      "chapterId": "ch11-jainism"
+    },
+    {
+      "id": "bay_area_motel",
+      "name": "A motel in the Bay Area",
+      "city": "bay_area",
+      "x": 0.4,
+      "y": 0.6,
+      "chapterId": "ch11-jainism"
     }
   ]
 }

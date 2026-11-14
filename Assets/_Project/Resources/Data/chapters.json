@@ -287,16 +287,20 @@
       "title": "Chapter 11: Jainism (title to come)",
       "sabbat": "",
       "inkKnot": "ch11_jainism",
-      "startingMemberId": "",
+      "startingMemberId": "serena",
       "featuredMemberId": "",
-      "setting": "",
+      "setting": "Arcata and the Bay Area, California, April to November 2034",
       "skillFamily": "",
       "contentTags": [
-        "religious-content"
+        "religious-content",
+        "childhood-reference",
+        "depersonalization",
+        "involuntary-switch"
       ],
-      "summary": "Jainism.",
+      "summary": "Serena drives five hours south to a Jain centre, and Nirmala-ben teaches that ahimsa, doing no harm, starts with the living soul you live in: skipped meals and the cruel little voice count too. At Paryushana's last day everyone asks everyone's forgiveness: Micchami Dukkadam. In the car park Maya opens Sarah's letter at last. Inside is a crayon drawing she made at five, 'ME AND MIRA', that Mira kept. She writes to Tanya, Mark and Adeena to ask their forgiveness. At Diwali, Mahavira's night of liberation, Nirmala-ben gives her a soft broom: sweep a gentle space in front of yourself.",
       "introQuote": "Souls render service to one another.",
-      "introQuoteBy": "Tattvartha Sutra 5.21 (parasparopagraho jivanam)"
+      "introQuoteBy": "Tattvartha Sutra 5.21 (parasparopagraho jivanam)",
+      "unlocksMemberId": ""
     },
     {
       "id": "ch12-hellenic-polytheism",

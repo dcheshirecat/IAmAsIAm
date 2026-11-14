@@ -118,7 +118,7 @@ Anabelle: Oh, you're going to fit in so well here. Half this room is a lot of th
 # objective: Join the circle
 - (ring)
 + {ring < 3} [Look: The garden]
-    Behind the fellowship: raised beds gone to seed, a plum tree, fairy lights strung on the fence, eight people in a ring on the damp grass. # look: uu-garden
+    Behind the fellowship, raised beds gone to seed, a plum tree, fairy lights strung on the fence, eight people in a ring on the damp grass. # look: uu-garden
     -> ring
 + {ring < 3} [Look: The altar]
     A card table with a cloth. Apples. Photos. A jar of marigolds. A little plastic dinosaur someone's kid insisted on. # look: samhain-card-table

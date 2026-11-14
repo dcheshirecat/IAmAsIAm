@@ -39,3 +39,6 @@
 
 === ch10_unitarian_universalism ===
 -> ch10_part1
+
+=== ch11_jainism ===
+-> ch11_part1

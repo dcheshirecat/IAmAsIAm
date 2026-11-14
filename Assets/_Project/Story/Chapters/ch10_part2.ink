@@ -140,7 +140,7 @@ Heather (inside): She's here. The steady one. We needed her today. # vo: ch10-un
 # objective: Go home
 - (room)
 + {room < 2} [Look: Your phone]
-    Call log: "Mom, 4 min 12 s." You don't remember most of it. You remember the word "letter". # look: call-log-mom
+    The call log says "Mom, 4 min 12 s." You don't remember most of it. You remember the word "letter". # look: call-log-mom
     -> room
 * [Use: The bed]
 -

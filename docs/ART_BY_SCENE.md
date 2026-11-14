@@ -94,7 +94,7 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 84 | `uisneach_hill` | The Hill of Uisneach | westmeath | Chapter 8: Druidry (ch8_part1) | Bríd, Maya (the body, 31) |
 | 85 | `holy_well` | The holy well | westmeath | Chapter 8: Druidry (ch8_part2) | Bríd, Lily (the body, 31) |
 | 86 | `tlachtga_hill` | Tlachtga, the Hill of Ward | meath | Chapter 8: Druidry (ch8_part3) | Bríd, Maya (the body, 32) |
-| 87 | `arcata_apartment` | Maya's apartment, Arcata | arcata | Chapter 9: Humanism (ch9_part1) | Maya (the body, 33) |
+| 87 | `arcata_apartment` | Maya's apartment, Arcata | arcata | Chapter 9: Humanism (ch9_part1) | Maya (the body, 33), Serena (the body, 35), Maya (the body, 35) |
 | 88 | `arcata_plaza` | The Arcata Plaza | arcata | Chapter 9: Humanism (ch9_part1) | - |
 | 89 | `arcata_middle_school` | The middle school | arcata | Chapter 9: Humanism (ch9_part1) | Heather (the body, 33) |
 | 90 | `natural_history_museum` | The Natural History Museum (Cal Poly Humboldt) | arcata | Chapter 9: Humanism (ch9_part1) | Miss Ella, Maya (the body, 33), Maisie |
@@ -102,6 +102,10 @@ Everything the chapters show, **in story order** (owner: models in chronological
 | 92 | `arcata_marsh` | The Arcata Marsh | arcata | Chapter 9: Humanism (ch9_part3) | Miss Ella, Maisie, Maya (the body, 33), Heather (the body, 33) |
 | 93 | `uu_fellowship` | The Eleventh Street Fellowship (UU) | arcata | Chapter 10: Unitarian Universalism (ch10_part1) | Anabelle, Maya (the body, 34) |
 | 94 | `uu_fellowship_garden` | The fellowship's garden | arcata | Chapter 10: Unitarian Universalism (ch10_part1) | Anabelle, Maya (the body, 34), Serena (the body, 34) |
+| 95 | `car_highway_101` | The car, Highway 101 south | arcata | Chapter 11: Jainism (ch11_part1) | - |
+| 96 | `jain_centre` | The Jain Center of the Peninsula | bay_area | Chapter 11: Jainism (ch11_part1) | Nirmala-ben, Serena (the body, 35), Maya (the body, 36) |
+| 97 | `jain_centre_parking` | The Jain centre's car park | bay_area | Chapter 11: Jainism (ch11_part2) | - |
+| 98 | `bay_area_motel` | A motel in the Bay Area | bay_area | Chapter 11: Jainism (ch11_part2) | - |
 
 ## 2. People, in the order they first appear
 
@@ -110,7 +114,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | # | Who | Id | Kind | First in | Ages (the body) | Places |
 |---|---|---|---|---|---|---|
 | 1 | Sarah | `mother` | person | Prologue: This Little Light | - | home_kitchen, car, church_sanctuary, church_fellowship_hall, home_maya_room, college_dorm_selene |
-| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30, 31, 32, 33, 34 | home_kitchen, car, church_fellowship_hall, home_maya_room, church_first_day_school, church_sanctuary, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room, seattle_apartment, burke_museum_hall, eastside_mandir_hall, garba_community_hall, gurdwara_kitchen, seattle_cafe, gurdwara_langar_hall, cid_temple_hall, lake_view_cemetery, hing_hay_park, lake_lantern_shore, brid_kitchen, uisneach_hill, tlachtga_hill, club_classroom, natural_history_museum, arcata_marsh, arcata_apartment, uu_fellowship, uu_fellowship_garden |
+| 2 | Maya | `maya` | system member | Prologue: This Little Light | 5, 8, 11, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 | home_kitchen, car, church_fellowship_hall, home_maya_room, church_first_day_school, church_sanctuary, college_lecture_hall, college_dorm_selene, college_quad, shop_the_circle, park_ostara, college_apartment_axel, campus_ministry, field_museum_hall, field_museum_gallery, adeena_apartment, synagogue_social_hall, lgbtq_synagogue, chabad_house, chicago_apartment, sigd_community_hall, effie_house, lakefront_path, therapist_office, boudha_guest_house, boudha_stupa, dharma_shringa_hall, lumbini_sacred_garden, day_ward_quiet_room, sufi_dhikr_room, seattle_apartment, burke_museum_hall, eastside_mandir_hall, garba_community_hall, gurdwara_kitchen, seattle_cafe, gurdwara_langar_hall, cid_temple_hall, lake_view_cemetery, hing_hay_park, lake_lantern_shore, brid_kitchen, uisneach_hill, tlachtga_hill, club_classroom, natural_history_museum, arcata_marsh, arcata_apartment, uu_fellowship, uu_fellowship_garden, jain_centre |
 | 3 | Miss Eloise | `eloise` | person | Prologue: This Little Light | - | church_first_day_school |
 | 4 | Rebecca | `rebecca` | person | Prologue: This Little Light | - | church_first_day_school, church_sanctuary |
 | 5 | Mrs. Hines | `hines` | person | Prologue: This Little Light | - | church_fellowship_hall, church_sanctuary |
@@ -156,7 +160,8 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 | 45 | Miss Ella | `miss_ella` | person | Chapter 9: Humanism | - | club_classroom, natural_history_museum, arcata_marsh |
 | 46 | Maisie | `maisie` | person | Chapter 9: Humanism | - | club_classroom, natural_history_museum, arcata_marsh |
 | 47 | Anabelle | `anabelle` | person | Chapter 10: Unitarian Universalism | - | uu_fellowship, uu_fellowship_garden |
-| 48 | Serena | `serena` | system member | Chapter 10: Unitarian Universalism | 34 | uu_fellowship_garden |
+| 48 | Serena | `serena` | system member | Chapter 10: Unitarian Universalism | 34, 35 | uu_fellowship_garden, arcata_apartment, jain_centre |
+| 49 | Nirmala-ben | `nirmala_shah` | person | Chapter 11: Jainism | - | jain_centre |
 
 ## 3. Close-ups and props, scene by scene
 
@@ -1216,7 +1221,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `fossils-bag`: A shark's tooth, a trilobite cast, a fern in a slab of shale. Things you can hold. You put them in the bag in a row.
 - `miras-stone-trying`: Mira's stone. You hold it a while. "You tried," you tell it. "I'm trying the next bit."
 - `calendar-last-square`: Thirty-four purple squares. One left.
-- `arcata-clear-june`: June, and for once no fog: the bay flat and silver, the hills green, the redwoods sharp against the sky.
+- `arcata-clear-june`: June, and for once no fog. The bay flat and silver, the hills green, the redwoods sharp against the sky.
 - `trilobite-cookies`: You and Heather made four dozen cookies last night. Some of them are shaped like trilobites. On purpose.
 - `sill-drawing`: Mira's stone. The prayer wheel. The khata. The jar from Bríd. And now a girl and a woman on a bench by the water, holding a fern.
 - `sill-crowded`: Mira's stone. The prayer wheel. The khata. Bríd's jar, empty now, holding pens. Maisie's drawing of the marsh.
@@ -1226,12 +1231,24 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `december-dark`: Dark at eight in the morning, rain on the glass, the streetlight still on.
 - `yule-log-home`: A Yule log from the Community Forest, three candle holes drilled by Izzy, badly. A sprig of redwood.
 - `anabelle-text`: Tea, toast. A text from Anabelle: "Bring a candle tonight! Any candle! Birthday candles count!"
-- `call-log-mom`: Call log: "Mom, 4 min 12 s." You don't remember most of it. You remember the word "letter".
+- `call-log-mom`: The call log says "Mom, 4 min 12 s." You don't remember most of it. You remember the word "letter".
 - `letter-under-stone`: Sarah's letter, still sealed, under Mira's stone. It's been there since April. Serena says it can wait as long as it likes.
 - `nasturtium-fence`: June, and the fog burned off by nine. Nasturtiums all over the neighbour's fence, orange as a warning.
 - `overgrown-yard`: The landlord's overgrown yard, and the neighbour's, and a bit of the alley that nobody owns.
 - `armful-of-flowers`: A rose for Heather, because she'd never ask for one. A daisy for Lily. A sunflower for Izzy, loud. A bit of lavender for Nina, quiet. Rosemary for Jacob, for remembrance, even if he'd say it's a pagan thing. A bright red poppy for Axel. Yarrow for Serena, who's tough and plain and good for wounds. And one for you, Maya. You can't decide. You pick a nasturtium, orange as a warning.
 - `dandelion-altar`: In a jam jar, next to Mira's stone, next to Sarah's letter, next to Maisie's drawing. A bent dandelion holding court.
+- `letter-not-today`: Mira's stone. The dandelion, dried now, pressed flat. Sarah's letter still sealed underneath. Not today.
+- `heather-fridge-drive`: A note in Heather's square letters: "SHE FORGETS TO EAT ON LONG DRIVES. -H" Serena packs two sandwiches.
+- `notebook-underlined`: Two pages of Serena's neat, slanting writing. "Ahimsa starts with the one you live in." Underlined twice, in Heather's pen.
+- `letter-handwriting`: The letter, under Mira's stone, since April of last year. The stamp has an American flag on it. Her handwriting on the front, the same as on every permission slip.
+- `september-bay`: September sun for once, the bay bright, the fog waiting offshore like it's being polite.
+- `drawing-framed`: "ME AND MIRA", in a frame from the thrift store, on the wall above the altar now. Mira's handwriting on the back, facing the wall, safe.
+- `november-gutters`: November rain, steady, the gutters singing.
+- `reply-tanya`: Tanya writes back. "Forgiven, years ago, every day of it. Come for Yule if you can. Bring all of them."
+- `reply-mark`: Mark writes back. "Maya. I didn't expect this. Thank you. I'm married now, two kids, still at St. Luke's on holidays. I forgave you a long time ago. I hope you'll forgive me for being so confused. Be well."
+- `no-reply-adeena`: Nothing from Adeena. The silence sits there, and it's allowed to.
+- `reply-sarah`: Mom writes back. "Thank you for writing. I don't know that word but I looked it up. Take care of yourself. Mom." Two lines. You read them twice.
+- `sweep-space`: Three soft strokes on the floor in front of the altar. Nothing there to hurt. That's the point. The cruel little voice, for once, doesn't say a thing.
 
 ### The Arcata Plaza (`arcata_plaza`)
 
@@ -1248,12 +1265,12 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 ### The Natural History Museum (Cal Poly Humboldt) (`natural_history_museum`)
 
-- `visitor-sticker`: A visitor sticker on your coat: the middle school's name, today's date. You haven't been to a middle school in eighteen years.
+- `visitor-sticker`: A visitor sticker on your coat, with the middle school's name, today's date. You haven't been to a middle school in eighteen years.
 - `fossil-case`: A long case of them, labelled in a careful old hand: shells and teeth and a whale's ear bone. Two thousand of them, the director says. Your job is to make children care.
 - `goudini-sign`: "The Natural History Museum is on the ancestral land of the Wiyot people. This place is Goudi'ni."
-- `calendar-heather`: A calendar alert you didn't set: "3:15 CLUB. Wednesdays. You'll like them. -H"
+- `calendar-heather`: A calendar alert you didn't set. "3:15 CLUB. Wednesdays. You'll like them. -H"
 - `darwin-banner`: "HAPPY BIRTHDAY, CHARLES DARWIN! (1809)". You painted the cake on it yourself. It looks like a hat.
-- `tree-of-life`: A long paper tree down the wall: every branch a living thing, the kids' names on the leaves where they've added a creature.
+- `tree-of-life`: A long paper tree down the wall. Every branch a living thing, the kids' names on the leaves where they've added a creature.
 - `club-arrives`: The club pouring through the door in a wave, Miss Ella at the back counting heads. Maisie last, hood up.
 - `kids-fossils`: Jayden holding a trilobite like it might wake up. Priya explaining to Luis, wrongly and with total confidence, how whales used to have legs. (They did.)
 - `shark-tooth-hands`: A great white's tooth, bigger than a kid's palm. Fourteen hands go up at once to hold it.
@@ -1303,14 +1320,14 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `washtub-vase`: A steel washtub, really, on the communion table, already half full: supermarket tulips, roadside lupins, one plastic flower from a kid who was very clear about it.
 - `communion-people`: The old man in the bow tie with one perfect rose. The Buddhist with a lotus she must have driven to Eureka for. Maisie, in the back with her grandmother, holding a fistful of dandelions.
 - `ten-flowers-in`: Ten flowers, all at once. Somebody in the front row says "oh!" A child counts them out loud. Nobody asks why.
-- `capek-story`: The minister tells the story: a church in Prague, 1923, a minister who wanted a communion that belonged to everybody. Bring something. Take something different home.
+- `capek-story`: The minister tells the story. A church in Prague, 1923, a minister who wanted a communion that belonged to everybody. Bring something. Take something different home.
 - `flowers-mixed`: Everyone's flowers, all mixed up now. You can't tell whose is whose. That's the point.
 - `bent-dandelion`: A dandelion, slightly bent. Maisie, from the back row, gives you a thumbs up.
 - `membership-book-notice`: "NEW MEMBERS: the book is by the door. No test. No creed. Just your name."
 
 ### The fellowship's garden (`uu_fellowship_garden`)
 
-- `uu-garden`: Behind the fellowship: raised beds gone to seed, a plum tree, fairy lights strung on the fence, eight people in a ring on the damp grass.
+- `uu-garden`: Behind the fellowship, raised beds gone to seed, a plum tree, fairy lights strung on the fence, eight people in a ring on the damp grass.
 - `samhain-card-table`: A card table with a cloth. Apples. Photos. A jar of marigolds. A little plastic dinosaur someone's kid insisted on.
 - `name-said-back`: Eight strangers say her name back to you, softly, all together.
 - `pass-nod`: Anabelle nods like you've said something important. Maybe you have.
@@ -1322,4 +1339,48 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `lemon-bar-pocket`: Still shaking a little. In your pocket, a lemon bar wrapped in a napkin you don't remember being given.
 - `yule-light-passed`: The flame comes to your wick from Anabelle's, and you turn and give it to the person on your left, and they give it on.
 - `yule-dark-then-light`: You stay in the dark a little longer, on purpose. Then you take the light.
+
+### The car, Highway 101 south (`car_highway_101`)
+
+- `avenue-giants`: The Avenue of the Giants, trees so tall the road goes dark at nine in the morning.
+- `notebook-jainism`: The sandwiches. A notebook with "JAINISM?" written on the cover in Maya's round hand.
+- `rain-wipers-hum`: The wipers going, the redwoods black and dripping. Somebody in here hums the whole way.
+
+### The Jain Center of the Peninsula (`jain_centre`)
+
+- `jain-shoe-racks`: Hundreds of shoes, neatly paired, outside the door. A sign: "Please leave shoes and leather items here."
+- `derasar-glass`: Through a glass door, white marble, and seated figures with calm half-closed eyes. A woman sweeps the floor in front of her with a soft little broom, so she won't step on anything alive.
+- `jain-noticeboard`: Pathshala (Sunday school) timetable. A Navkar Mantra chanting group. "Svetambara and Digambara schedules: see website." A lost child's sandal pinned up like a notice.
+- `three-words-board`: Three words in Nirmala-ben's careful hand: AHIMSA (do no harm). APARIGRAHA (hold on lightly). ANEKANTAVADA (no one sees the whole elephant).
+- `class-others`: A retired engineer taking notes in pencil. Two university students. A young mother with a baby asleep in a sling. A man who asks too many questions and is answered kindly every time.
+- `notebook-first-jiva`: Serena writes it down for Maya. "The first jiva you are responsible for is the one you live in."
+- `jain-lunch`: Dal, rice, a dry cabbage curry, rotis, a sweet made of chickpea flour. No onions, no garlic, no potatoes. It's the best food you've had in months.
+- `sandwiches-uneaten`: Still in the bag, from this morning. Heather's note was right.
+- `second-sweet`: Slowly. All of it. Nirmala-ben puts a second sweet on the plate without asking.
+- `samvatsari-hall`: Packed. Hundreds of people in white and cream. Many haven't eaten since yesterday, some not for eight days. Everyone very gentle with each other.
+- `tray-for-maya`: A side door, and volunteers packing tomorrow's breakfast for the people breaking their fasts. A tray of food covered with a cloth, with a sticky note: "MAYA. EAT. - N."
+- `pratikraman-rows`: Rows of them on the carpet, some with a small white cloth held at their mouths so their breath won't harm the tiny lives in the air. A girl Maisie's age mouthing along without the book.
+- `nirmala-still`: Near the front, eyes closed, lips moving, perfectly still for an hour at a time.
+- `khamemi-verse`: A verse comes round, over and over, and someone has printed the English for visitors: "I forgive all living beings. May all beings forgive me. I am friends with all, and enemies with none."
+- `micchami-everyone`: Afterwards, everyone turns to everyone, hands together, and says it: Micchami Dukkadam. Strangers say it to you. A child says it to you, very seriously.
+- `jain-diwali-lamps`: Hundreds of little clay lamps on every step and sill, in rows, in spirals. The temple room doors open wide tonight.
+- `kids-lamps`: Pathshala kids in their best clothes, carefully not running, carefully carrying a lamp each with both hands.
+- `mahavira-garland`: Seated, still, eyes half closed, garlanded tonight. The night he was freed from everything that held him, Nirmala-ben says. Not by a god. By his own long, patient work.
+- `soft-broom-gift`: A little soft broom, wool on a wooden handle, like the ones for sweeping in front of you so you don't step on anything small.
+- `clay-lamp-lit`: The wick catches. A small steady flame, the kind you could carry with both hands.
+
+### The Jain centre's car park (`jain_centre_parking`)
+
+- `sarah-note`: A single sheet, folded twice. "Maya. Clearing out my office after the celebration. I found this in a folder Mira Smith gave me when she moved away. I don't know why I kept it so long. I thought it should be yours. The celebration was very nice. Mrs. Hines sends her love. Mom."
+- `me-and-mira-drawing`: And inside it, a drawing. Crayon, on church paper. A little girl and a tall old lady, side by side, holding something square. "ME AND MIRA." On the back, in Mira's careful hand: "Maya, age 5. She drew this while we waited. Keep it safe. M.S."
+- `laptop-steering-wheel`: Your laptop on the steering wheel. All the people the lost time took from you, or took you from. Micchami Dukkadam. If I hurt you, knowingly or not.
+- `email-tanya`: For Tanya, for the year you disappeared. Sent.
+- `email-mark`: For Mark, fifteen years late, and kind. Sent.
+- `email-adeena`: For Adeena, short, careful, no candles in it. Sent.
+- `email-sarah`: Short. True. Not more than that. Sent.
+- `not-yet-door`: Not yet. Forgiveness is a door, not a debt. You can stand in it as long as you like.
+
+### A motel in the Bay Area (`bay_area_motel`)
+
+- `drawing-motel-lamp`: Propped against the motel lamp. Two people and a packet of crackers. Thirty-one years in a folder, and now here.
 

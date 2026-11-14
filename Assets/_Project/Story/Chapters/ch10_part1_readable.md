@@ -91,7 +91,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **Explore** (glowing things; the player picks):
 
 - **Look: The garden**
-    - **Behind the fellowship:** raised beds gone to seed, a plum tree, fairy lights strung on the fence, eight people in a ring on the damp grass.
+    - Behind the fellowship, raised beds gone to seed, a plum tree, fairy lights strung on the fence, eight people in a ring on the damp grass.
 - **Look: The altar**
     - A card table with a cloth. Apples. Photos. A jar of marigolds. A little plastic dinosaur someone's kid insisted on.
 - **Talk: Anabelle**
