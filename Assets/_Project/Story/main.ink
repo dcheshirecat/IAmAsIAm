@@ -50,6 +50,9 @@ INCLUDE Chapters/ch8_part3.ink
 INCLUDE Chapters/ch9_part1.ink
 INCLUDE Chapters/ch9_part2.ink
 INCLUDE Chapters/ch9_part3.ink
+INCLUDE Chapters/ch10_part1.ink
+INCLUDE Chapters/ch10_part2.ink
+INCLUDE Chapters/ch10_part3.ink
 
 -> start
 

@@ -265,16 +265,21 @@
       "title": "Chapter 10: Unitarian Universalism (title to come)",
       "sabbat": "",
       "inkKnot": "ch10_unitarian_universalism",
-      "startingMemberId": "",
+      "startingMemberId": "maya",
       "featuredMemberId": "",
-      "setting": "",
+      "setting": "Arcata, California, October 2032 to June 2033",
       "skillFamily": "",
       "contentTags": [
-        "religious-content"
+        "religious-content",
+        "childhood-reference",
+        "depersonalization",
+        "derealization",
+        "involuntary-switch"
       ],
-      "summary": "Unitarian Universalism.",
+      "summary": "Maya stays in Arcata and walks into a Unitarian Universalist fellowship: a church with no creed, where people promise how they'll treat each other, not what they'll believe. Anabelle, who runs the pagan circle, tells her half the room is a lot of things. On the solstice Sunday, Sarah phones out of the blue to ask Maya to speak at her retirement. Maya can't. Someone steady takes the phone, calls her Sarah, and says: write, and Maya will read it when she's ready. Goodbye. Her name is Serena. In spring, at the Flower Communion, Maya brings one flower for each of them, and takes home a dandelion.",
       "introQuote": "The inherent worth and dignity of every person.",
-      "introQuoteBy": "The first of the Unitarian Universalist Principles (1985)"
+      "introQuoteBy": "The first of the Unitarian Universalist Principles (1985)",
+      "unlocksMemberId": "serena"
     },
     {
       "id": "ch11-jainism",

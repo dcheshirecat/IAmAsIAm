@@ -602,7 +602,16 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   SERENA** (48, she/they, no religion, the older wise adult). More (owner): a **made-up UU fellowship** in Arcata (not the real
   Humboldt UU Fellowship in Bayside); **three seasons, 2032-33**: Part 1 the first Sunday (autumn), Part 2 the pagan group's Yule +
   a winter Sunday, Part 3 a spring Flower Communion. The guide is **Anabelle** (owner: **25, they/them**; a member of the
-  fellowship's pagan group). **Waiting on the owner:** how Serena first comes forward (owner: "not sure yet, more options").
+  fellowship's pagan group). **Serena first comes forward when SARAH PHONES** (owner's pick): Maya can't speak; Serena takes the
+  call, calls her "Sarah", and sets a boundary. Research: `docs/Chapter10_UUResearch.md`. **IN THE GAME (draft):**
+  `Story/Chapters/ch10_part1..3.ink`: 1 Every and all (Sun Oct 31 2032, 34: the chalice, joys and concerns, coffee hour, Anabelle
+  "half this room is a lot of things", the Spiral Fern's Samhain: "pass is a whole sentence"), 2 The longest night (Sun Dec 19
+  2032: a solstice service; Sarah phones (retiring in May, wants Maya to speak); scripted `# switch: serena`: "write, and she'll
+  read it when she's ready. Goodbye, Sarah."; Anabelle gives Serena a lemon bar; the Yule circle; SystemLog notes), 3 Flower
+  Communion (Sun Jun 5 2033: one flower for each of them + green for Theresa and Holden; takes home a dandelion; Sarah's letter
+  unopened under Mira's stone; `# chapter-end`, unlocks Serena). 39 voiced lines (maya, anabelle, serena, serena-inside, sarah,
+  heather-inside, lily-inside). Placeholders: the Eleventh Street Fellowship, Spiral Fern (CUUPS), Anabelle's background, why
+  Sarah calls, the letter. New places `uu_fellowship`, `uu_fellowship_garden` (arcata).
 - 2026-11-13: **GitHub Actions stopped starting jobs** (from build 75, commit 60aeba8): every workflow (Build Android AND Core
   tests) fails in 1-3 s with no steps and no logs. Not the code (InkCheck + 128 Core tests pass locally). Most likely the
   account's free Actions minutes for the month (2,000 for private repos; Android builds take 15-30 min each).

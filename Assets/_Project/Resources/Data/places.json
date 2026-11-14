@@ -790,6 +790,22 @@
       "x": 0.35,
       "y": 0.72,
       "chapterId": "ch9-humanism"
+    },
+    {
+      "id": "uu_fellowship",
+      "name": "The Eleventh Street Fellowship (UU)",
+      "city": "arcata",
+      "x": 0.52,
+      "y": 0.42,
+      "chapterId": "ch10-unitarian-universalism"
+    },
+    {
+      "id": "uu_fellowship_garden",
+      "name": "The fellowship's garden",
+      "city": "arcata",
+      "x": 0.53,
+      "y": 0.4,
+      "chapterId": "ch10-unitarian-universalism"
     }
   ]
 }
