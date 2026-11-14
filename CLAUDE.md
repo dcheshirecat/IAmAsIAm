@@ -615,6 +615,12 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   Drive: Story Drafts → `12 Chapter 10 - Unitarian Universalism (title to come)` (1Vh5wXu9iCp13zyJgttut8ymLg0PeyBZL): Part 1
   (16KlPtIqryPA6kJeSMn7cQK8JNzPbsDGQeUwTtvmvM-M), Part 2 (1sxbDp1ITKZwUWdl5e8NLlK6rueYJ_YYxx2NWk1Yok_g), Part 3
   (1eoe9ChzrSU9XFeFnMwPShMtGYoSWNLteOzQ7K00c_bw); Sheet "12 Chapter 10 - script list (draft)" (1NJesYT-J4fCcV_EDWeGydFX0ELNj8yzWmG24hcicVnU, 39 lines).
+- 2026-11-14: **Chapter 10:** Anabelle **studies agriculture** (owner; was forestry) at Cal Poly Humboldt.
+- 2026-11-14: **Chapter 11, Jainism (owner, first answers):** Maya meets it through **weekend trips from Arcata to a Jain centre in the
+  Bay Area**; the guide is **a Jain teacher** (philosophy or yoga: ahimsa, anekantavada); the themes are **forgiveness** (Paryushana,
+  "Micchami Dukkadam"; Sarah's unopened letter) AND **not harming herself** (ahimsa turned inward: gentleness with her own body and
+  the system); **starts as SERENA** (`startingMemberId: serena`); every alter is unlocked, so it unlocks nobody. Still to ask: the
+  teacher's name/age/pronouns, a real or made-up centre, what the letter says, the parts.
 - 2026-11-13: **GitHub Actions stopped starting jobs** (from build 75, commit 60aeba8): every workflow (Build Android AND Core
   tests) fails in 1-3 s with no steps and no logs. Not the code (InkCheck + 128 Core tests pass locally). Most likely the
   account's free Actions minutes for the month (2,000 for private repos; Android builds take 15-30 min each).
