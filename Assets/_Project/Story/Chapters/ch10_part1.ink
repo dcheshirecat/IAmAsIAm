@@ -14,7 +14,7 @@
 //
 //  My guesses (placeholders), for the owner to correct:
 //   - The fellowship: "the Eleventh Street Fellowship" (Unitarian Universalist), in an old wooden house near the Plaza.
-//   - Its pagan circle: "Spiral Fern" (a CUUPS chapter). Anabelle leads it; they grew up UU in Oregon, and study forestry at Cal
+//   - Its pagan circle: "Spiral Fern" (a CUUPS chapter). Anabelle leads it; they grew up UU in Oregon, and study agriculture at Cal
 //     Poly Humboldt.
 //   - The day: Sunday October 31, 2032: the morning service, then the circle's small Samhain that evening.
 // ─────────────────────────────────────────────────────────────────────────────

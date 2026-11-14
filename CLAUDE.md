@@ -610,10 +610,10 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   read it when she's ready. Goodbye, Sarah."; Anabelle gives Serena a lemon bar; the Yule circle; SystemLog notes), 3 Flower
   Communion (Sun Jun 5 2033: one flower for each of them + green for Theresa and Holden; takes home a dandelion; Sarah's letter
   unopened under Mira's stone; `# chapter-end`, unlocks Serena). 39 voiced lines (maya, anabelle, serena, serena-inside, sarah,
-  heather-inside, lily-inside). Placeholders: the Eleventh Street Fellowship, Spiral Fern (CUUPS), Anabelle's background, why
+  heather-inside, lily-inside). Placeholders: the Eleventh Street Fellowship, Spiral Fern (CUUPS), Anabelle's background (owner: studies AGRICULTURE at Cal Poly Humboldt), why
   Sarah calls, the letter. New places `uu_fellowship`, `uu_fellowship_garden` (arcata).
   Drive: Story Drafts → `12 Chapter 10 - Unitarian Universalism (title to come)` (1Vh5wXu9iCp13zyJgttut8ymLg0PeyBZL): Part 1
-  (1ap9cvttoGm_3EKCxGiXHmqqSjmWZQ1XcM8lJQ3XW53c), Part 2 (1sxbDp1ITKZwUWdl5e8NLlK6rueYJ_YYxx2NWk1Yok_g), Part 3
+  (16KlPtIqryPA6kJeSMn7cQK8JNzPbsDGQeUwTtvmvM-M), Part 2 (1sxbDp1ITKZwUWdl5e8NLlK6rueYJ_YYxx2NWk1Yok_g), Part 3
   (1eoe9ChzrSU9XFeFnMwPShMtGYoSWNLteOzQ7K00c_bw); Sheet "12 Chapter 10 - script list (draft)" (1NJesYT-J4fCcV_EDWeGydFX0ELNj8yzWmG24hcicVnU, 39 lines).
 - 2026-11-13: **GitHub Actions stopped starting jobs** (from build 75, commit 60aeba8): every workflow (Build Android AND Core
   tests) fails in 1-3 s with no steps and no logs. Not the code (InkCheck + 128 Core tests pass locally). Most likely the

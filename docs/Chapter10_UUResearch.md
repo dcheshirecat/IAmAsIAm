@@ -30,7 +30,7 @@
 ## Placeholders (Claude's guesses)
 - **The Eleventh Street Fellowship** is in an old wooden house near the Plaza.
 - **Its pagan circle is "Spiral Fern"** (a CUUPS chapter).
-- **Anabelle's background:** grew up UU in Oregon and studies forestry at Cal Poly Humboldt.
+- **Anabelle's background:** grew up UU in Oregon and studies agriculture at Cal Poly Humboldt.
 - **Sarah's call:** she's retiring in May 2033 and asks Maya to speak at the celebration. Never her side, only how it lands.
 - **Sarah's letter** arrives in April and stays unopened on the altar. Its contents are for the owner to decide.
 - **Maya's flowers:** one for each member of the system.
