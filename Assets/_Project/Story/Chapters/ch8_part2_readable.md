@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 8 (Druidry), Part 2. Owner: Lily (4, she/her, Quaker; holds the waiting for a mother who was always with someone else) first comes forward waiting at a holy well. This is a scripted switch; she is unlocked at the end of the chapter (owner). Research: Lúnasa (1 August) is the start of the harvest; customs include hilltop gatherings and picking bilberries ("fraughans"). Holy wells: people walk "rounds" sunwise around the well, pray or leave a rag on the tree beside it, and wait.
+**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 8 (Druidry), Part 2. Owner: Lily (4, she/her, Quaker. Holds the waiting for a mother who was always with someone else) first comes forward waiting at a holy well. This is a scripted switch. She is unlocked at the end of the chapter (owner). Research: Lúnasa (1 August) is the start of the harvest. Customs include hilltop gatherings and picking bilberries ("fraughans"). Holy wells: people walk "rounds" sunwise around the well, pray or leave a rag on the tree beside it, and wait.
 
 **My guesses, for you to check:**
 
@@ -13,12 +13,12 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Help with the bread
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The table**
     - Flour everywhere. The first bread from the new wheat, Bríd says: Lúnasa bread. You knead until your arms ache.
 - **Look: The window**
-    - **August:** the fields gone gold, swallows on the wire, rain coming and going like it's thinking about it.
+    - August. The fields gone gold, swallows on the wire, rain coming and going like it's thinking about it.
 - **Use: The dough (knead it)**
     - Push, fold, turn. Like the rotis in Kent. Your hands remember.
 
@@ -26,7 +26,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Pick bilberries on the hill
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The bilberries**
     - Small, dark, hiding under the leaves. Your fingers go purple. Bríd's grandchildren eat more than they keep.
@@ -39,7 +39,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Walk to the well
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The tree**
     - A hawthorn bent over the water, hung with rags, ribbons, a rosary, a child's sock, a hospital bracelet. Every one of them someone hoping.
@@ -63,7 +63,7 @@ _(A switch: Lily comes forward. The player has no control over it.)_
 
 **Bríd:** You are. You're being very good. I'll wait with you, so. I'm good at waiting.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The tin cup**
     - The cold water. Both hands round the cup. Bríd's hand, close, not touching.
@@ -82,7 +82,7 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 
 > **Objective:** Have dinner
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Bríd**
     - Making tea as if nothing happened. Then, very quietly: "Who was the little one, at the well?"
@@ -99,7 +99,7 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 
 > **Objective:** Go to bed
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bed**
     - Blackberry and bilberry crumble, a blanket, the collie at the foot of the bed. Somebody small inside, finally asleep.

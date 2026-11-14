@@ -2,14 +2,14 @@
 // vo-speakers: Maya=maya
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 4. Alone. Champaign-Urbana, March to June 2020. Maya is 21, then 22.
-//  Owner's beats: COVID: Maya alone in her dorm; a Zoom graduation where no one speaks to her, quiet and lonely. Then a
-//  prayer service at Gracie's ministry: they sing a hymn Maya loved as a child; she can't leave without a major
+//  Owner's beats: COVID: Maya alone in her dorm. A Zoom graduation where no one speaks to her, quiet and lonely. Then a
+//  prayer service at Gracie's ministry: they sing a hymn Maya loved as a child. She can't leave without a major
 //  disruption, is too scared to, and starts dissociating. The screen fades to black, and Jacob's lines are spoken as a
 //  light appears. That's how Chapter 1 ends (Jacob is its unlock). Then Chapter 1.5 is played, as Axel the first time.
 //
 //  My guesses, for the owner to correct:
 //   - The hymn is "This Little Light of Mine" (the prologue's title), which Maya sang in First Day School.
-//   - The prayer service is in June 2020, outdoors, masked and distanced, on folding chairs in rows; Maya is in the
+//   - The prayer service is in June 2020, outdoors, masked and distanced, on folding chairs in rows. Maya is in the
 //     middle of a row, and leaving means walking in front of everyone while they sing.
 //   - Jacob (14, Catholic, watches the exits) speaks to Maya, inside, gently and practically.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -117,7 +117,7 @@ Your phone. # device: phone
 -
 // Owner, step 4 of the craft (Claude's draft from the owner's answers). No new voiced lines.
 ~ text_from("selene", "check your mailbox!! happy graduation. i made you something")
-A padded envelope from Selene: twelve cards, hand-painted, one word on each. Her own oracle deck. # look: selene-oracle-deck
+A padded envelope from Selene, with twelve cards, hand-painted, one word on each. Her own oracle deck. # look: selene-oracle-deck
 ~ learn_practice("oracle", "selene")
 -> service
 
@@ -161,7 +161,7 @@ Gracie: Let's sing. Something simple. You'll all know it. # vo: ch1-christianity
 # shot: inner
 # place: black
 ...
-// Owner: the screen fades to black; Jacob's lines are spoken as a light appears.
+// Owner: the screen fades to black. Jacob's lines are spoken as a light appears.
 # switch: jacob
 Jacob: I've got you. Don't run. Nobody's looking. # vo: ch1-christianity_jacob_0031
 Jacob: Breathe with the song. In on "little". Out on "light". # vo: ch1-christianity_jacob_0032

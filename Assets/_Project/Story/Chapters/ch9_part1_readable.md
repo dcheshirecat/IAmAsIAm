@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 9 (Humanism), Part 1. Owner: after Ireland, a fresh start in a foggy coastal town in Northern California (the owner: a real town, researched: Arcata, on Humboldt Bay). The guide is MISS ELLA (30, she/her), a teacher who runs an after-school club; she was raised religious, left, and built the club because nobody did it for her. The heart of the chapter is the kids, and one of them: MAISIE (13, she/her), who goes quiet and "floaty" and doesn't answer her name. The chapter STARTS AS HEATHER, and it was HEATHER who signed up to volunteer: Maya finds out when Miss Ella thanks her for coming. Unlocks nobody (Serena is saved for another chapter). One school year, 2031-32. Research (docs/Chapter9_HumanismResearch.md): Arcata is a small college town on Humboldt Bay, under the redwoods, often in fog; the Plaza is its centre; the Arcata Marsh and the Arcata Community Forest are on either side of town. It's Wiyot land: the Wiyot name for this place is Goudi'ni ("over in the woods").
+**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 9 (Humanism), Part 1. Owner: after Ireland, a fresh start in a foggy coastal town in Northern California (the owner: a real town, researched: Arcata, on Humboldt Bay). The guide is MISS ELLA (30, she/her), a teacher who runs an after-school club. She was raised religious, left, and built the club because nobody did it for her. The heart of the chapter is the kids, and one of them: MAISIE (13, she/her), who goes quiet and "floaty" and doesn't answer her name. The chapter STARTS AS HEATHER, and it was HEATHER who signed up to volunteer: Maya finds out when Miss Ella thanks her for coming. Unlocks nobody (Serena is saved for another chapter). One school year, 2031-32. Research (docs/Chapter9_HumanismResearch.md): Arcata is a small college town on Humboldt Bay, under the redwoods, often in fog. The Plaza is its centre. The Arcata Marsh and the Arcata Community Forest are on either side of town. It's Wiyot land: the Wiyot name for this place is Goudi'ni ("over in the woods").
 
 **My guesses, for you to check:**
 
@@ -16,7 +16,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Make the morning gentle
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - Fog to the ground. You can hear the bay but you can't see it. A gull somewhere, complaining.
@@ -31,7 +31,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Walk into town
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The Plaza**
     - A square of grass with a statue in the middle and old wooden shopfronts all round. People walking dogs in the fog. A bookshop. A café with steamed windows.
@@ -47,7 +47,7 @@ Somebody should be there at 3:15. You know that better than anyone.
 
 > **Objective:** Sign up
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The office**
     - A school office like every school office: a bell schedule, a lost-and-found box of hoodies, a plant somebody waters.
@@ -65,7 +65,7 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 
 > **Objective:** Get through your first week
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your coat**
     - A visitor sticker on your coat, with the middle school's name, today's date. You haven't been to a middle school in eighteen years.
@@ -77,7 +77,7 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 
 A calendar alert you didn't set. "3:15 CLUB. Wednesdays. You'll like them. -H"
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your phone (go)**
 - **Use: Your phone (go, but nervous)**
@@ -86,7 +86,7 @@ A calendar alert you didn't set. "3:15 CLUB. Wednesdays. You'll like them. -H"
 
 > **Objective:** Find Miss Ella
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The classroom**
     - Desks pushed into islands. A whiteboard: "THIS WEEK: WHAT MAKES A GOOD DAY?" A crate of board games held together with tape.
@@ -102,7 +102,7 @@ A calendar alert you didn't set. "3:15 CLUB. Wednesdays. You'll like them. -H"
 
 **Miss Ella:** "Because someone should be there." I put it on the fridge in the staff room. Don't be mad.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Miss Ella (ask about the club)**
     - **Maya:** Why do you run this? You must be so tired by three.
@@ -119,7 +119,7 @@ A calendar alert you didn't set. "3:15 CLUB. Wednesdays. You'll like them. -H"
 
 **Miss Ella:** Jayden. Priya. Luis. Maisie? Maisie.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The girl by the window**
     - Thirteen, maybe. A big grey hoodie, the sleeves over her hands. Looking at the fog like it's a long way off. She doesn't move when her name comes.
@@ -129,7 +129,7 @@ A calendar alert you didn't set. "3:15 CLUB. Wednesdays. You'll like them. -H"
 
 You know that look. You know it from the inside. A fellowship hall, a long service, the light in the windows.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Maisie (say her name, softly)**
     - **Maya:** Maisie? I'm Maya. I'm new. I'll just sit here, if that's okay.
@@ -143,13 +143,13 @@ You know that look. You know it from the inside. A fellowship hall, a long servi
 
 > **Objective:** Go to bed
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The table**
     - The toast from this morning, cold, still in its triangles. You eat it anyway. It's a kind of hello.
 - **Use: Your phone (write back)**
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bed**
     - The foghorn out on the bay, every thirty seconds, like someone keeping count.

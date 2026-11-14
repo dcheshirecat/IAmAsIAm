@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 9 (Humanism), Part 2. Owner: Maya keeps showing up every week AND speaks up to the teacher (what Mira couldn't do: Mira raised it with Sarah and backed down, Prologue Sunday 2).
+**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 9 (Humanism), Part 2. Owner: Maya keeps showing up every week AND speaks up to the teacher (what Mira couldn't do: Mira raised it with Sarah and backed down, Prologue Sunday 2).
 
 **My guesses, for you to check:**
 
@@ -16,7 +16,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get ready for Darwin Day
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The door**
     - Bríd's rush cross over it, a bit lopsided. Lily helped.
@@ -29,7 +29,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Welcome the club
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The banner**
     - "HAPPY BIRTHDAY, CHARLES DARWIN! (1809)". You painted the cake on it yourself. It looks like a hat.
@@ -43,7 +43,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Miss Ella:** My church used to say this stuff was a lie. All of it. Now I bring kids to look at it and they lose their minds. Look at them.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Miss Ella (ask what she believes now)**
     - **Maya:** What do you believe now? If you don't mind me asking.
@@ -55,7 +55,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Give the fossil talk
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The tooth**
     - A great white's tooth, bigger than a kid's palm. Fourteen hands go up at once to hold it.
@@ -67,7 +67,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Maya:** Maisie. It's Maya. I've got something for you to hold.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The fern fossil (hold it out)**
     - **Maya:** This was a fern. Three hundred million years ago. Feel the lines? It's cold, right? It's heavy.
@@ -82,7 +82,7 @@ A long time. Then her thumb moves on the stone.
 
 **Maisie:** Sometimes I go somewhere. In my head. I don't mean to.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Maisie (say you know)**
     - **Maya:** I know. I used to go somewhere too. Still do, sometimes. It's not your fault.
@@ -97,7 +97,7 @@ A long time. Then her thumb moves on the stone.
 
 > **Objective:** Talk to Miss Ella
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - Six o'clock and nearly dark. Maisie's grandmother's car at the curb, engine running, still in her scrubs. Maisie gets in without looking back.
@@ -107,7 +107,7 @@ A long time. Then her thumb moves on the stone.
 
 This is the part. A fellowship hall, a long time ago. A kind woman who said something, once, and then let it go.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Miss Ella (tell her what you've seen)**
     - **Maya:** Can I tell you something about Maisie? I'm not a professional. I just... I see her go away. Every week. She doesn't hear her name. Today she told me she goes somewhere in her head and doesn't mean to.
@@ -128,7 +128,7 @@ This is the part. A fellowship hall, a long time ago. A kind woman who said some
 
 > **Objective:** Go home
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The sill**
     - Mira's stone. You hold it a while. "You tried," you tell it. "I'm trying the next bit."

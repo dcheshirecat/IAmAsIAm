@@ -2,13 +2,13 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 8 (Druidry), Part 3. Research: Tlachtga, the Hill of Ward near Athboy, where tradition says the great Samhain fire was lit; a fire festival is held there again in modern times. Samhain: the dark half of the year begins; the dead are remembered.
+**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 8 (Druidry), Part 3. Research: Tlachtga, the Hill of Ward near Athboy, where tradition says the great Samhain fire was lit. A fire festival is held there again in modern times. Samhain: the dark half of the year begins. The dead are remembered.
 
 ## Wake
 
 > **Objective:** Help get ready for Samhain
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The turnip**
     - A turnip, not a pumpkin. Bríd carves the old way: a scowling face, a candle inside. Lily (inside) thinks it's the funniest thing she's ever seen.
@@ -21,7 +21,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Climb Tlachtga
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The rings**
     - Grassy rings in the hilltop, old banks and ditches, older than anyone's god.
@@ -35,7 +35,7 @@ The Samhain fire goes up. The dark half of the year begins.
 
 **Bríd:** Now we say the names of our dead, out loud, so the fire carries them. Anyone who wants.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: The fire (say Mira's name)**
     - **Maya:** Mira Smith. Who tried.
@@ -50,7 +50,7 @@ The Samhain fire goes up. The dark half of the year begins.
 
 > **Objective:** Say goodbye
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your bag**
     - Packed. A bag of rushes Bríd says to weave into a cross on the first of February. A jar of bilberry jam for Tanya.

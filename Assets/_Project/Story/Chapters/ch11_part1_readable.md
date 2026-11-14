@@ -2,11 +2,11 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-14; the owner's Doc edits come first). Chapter 11 (Jainism), Part 1. Owner: weekend trips from Arcata to a (made-up) Jain centre in the Bay Area; the guide is a Jain TEACHER; the chapter is about FORGIVENESS (Paryushana, Micchami Dukkadam) AND NOT HARMING HERSELF (ahimsa turned inward). It STARTS AS SERENA; it unlocks nobody (everyone is unlocked). Sarah's letter gets opened in Part 2, and Maya asks forgiveness of people she hurt in lost time. Research (docs/Chapter11_JainismResearch.md): ahimsa (non-harm to every living being, jiva), aparigraha (non-attachment), anekantavada (many-sidedness). A Jain temple (derasar) holds images of the Tirthankaras; visitors take off shoes and leave leather outside. Many Jains eat before sunset and avoid root vegetables (pulling them up kills the whole plant and the small lives in the soil). Svetambara, Digambara, Sthanakvasi and Terapanth Jains often share one centre in North America.
+**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-14. The owner's Doc edits come first). Chapter 11 (Jainism), Part 1. Owner: weekend trips from Arcata to a (made-up) Jain centre in the Bay Area. The guide is a Jain TEACHER. The chapter is about FORGIVENESS (Paryushana, Micchami Dukkadam) AND NOT HARMING HERSELF (ahimsa turned inward). It STARTS AS SERENA. It unlocks nobody (everyone is unlocked). Sarah's letter gets opened in Part 2, and Maya asks forgiveness of people she hurt in lost time. Research (docs/Chapter11_JainismResearch.md): ahimsa (non-harm to every living being, jiva), aparigraha (non-attachment), anekantavada (many-sidedness). A Jain temple (derasar) holds images of the Tirthankaras. Visitors take off shoes and leave leather outside. Many Jains eat before sunset and avoid root vegetables (pulling them up kills the whole plant and the small lives in the soil). Svetambara, Digambara, Sthanakvasi and Terapanth Jains often share one centre in North America.
 
 **My guesses, for you to check:**
 
-- The teacher: NIRMALA SHAH, "Nirmala-ben" (`nirmala_shah`, 58, she/her; "ben" means sister, a respectful Gujarati form): teaches philosophy at a community college and leads the centre's Sunday "Jainism for the curious" class for adults.
+- The teacher: NIRMALA SHAH, "Nirmala-ben" (`nirmala_shah`, 58, she/her. "ben" means sister, a respectful Gujarati form): teaches philosophy at a community college and leads the centre's Sunday "Jainism for the curious" class for adults.
 - The centre (made up): the Jain Center of the Peninsula, in a converted church in a quiet suburb south of San Francisco.
 - Serena drives (five hours each way) because Serena handles the grown-up things.
 
@@ -16,7 +16,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get on the road by six
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The altar**
     - Mira's stone. The dandelion, dried now, pressed flat. Sarah's letter still sealed underneath. Not today.
@@ -30,7 +30,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Drive south
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The redwoods**
     - The Avenue of the Giants, trees so tall the road goes dark at nine in the morning.
@@ -42,7 +42,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Find the class
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The shoe racks**
     - Hundreds of shoes, neatly paired, outside the door. A sign: "Please leave shoes and leather items here."
@@ -62,7 +62,7 @@ Nirmala-ben: Then I'll speak slowly for both of you.
 
 > **Objective:** Listen to the class
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The whiteboard**
     - Three words in Nirmala-ben's careful hand: AHIMSA (do no harm). APARIGRAHA (hold on lightly). ANEKANTAVADA (no one sees the whole elephant).
@@ -74,7 +74,7 @@ Nirmala-ben: Ahimsa. Do no harm. Not to people, not to animals, not to the ant, 
 
 Nirmala-ben: People hear this and think: how strict! But the first jiva, the first living soul you are responsible for, is the one you are living in. If you are cruel to yourself, you have broken ahimsa before breakfast.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Nirmala-ben (ask about that)**
     - **Serena:** What does cruel to yourself look like? To you.
@@ -88,7 +88,7 @@ Nirmala-ben: People hear this and think: how strict! But the first jiva, the fir
 
 > **Objective:** Eat lunch before you leave
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The food**
     - Dal, rice, a dry cabbage curry, rotis, a sweet made of chickpea flour. No onions, no garlic, no potatoes. It's the best food you've had in months.
@@ -107,7 +107,7 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 
 > **Objective:** Get to bed
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The notebook**
     - Two pages of Serena's neat, slanting writing. "Ahimsa starts with the one you live in." Underlined twice, in Heather's pen.

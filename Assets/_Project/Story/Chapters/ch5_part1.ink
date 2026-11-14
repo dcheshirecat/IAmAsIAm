@@ -12,7 +12,7 @@
 //   - The temple (owner: a woman priest, so a North Indian-style community mandir, fictional): Rama and Sita at the centre,
 //     with Krishna and Radha, Durga, a Shiva lingam, Ganesha and Hanuman. Community mandirs in the US often have many shrines.
 //   - The priest (owner): Mangala Joshi, 62, she/her, called "Mangala Tai" (Tai: older sister, in Marathi). From a
-//     Maharashtrian Brahmin family; her father was a priest; trained as a purohita (a woman priest) in Pune in her thirties,
+//     Maharashtrian Brahmin family. Her father was a priest. Trained as a purohita (a woman priest) in Pune in her thirties,
 //     the way women have been trained there since the 1970s.
 //   - Heather's visits: a voice inside, a note in SystemLog, sometimes sharing time.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -60,7 +60,7 @@
     Every box, open. Books on shelves. It takes a week. In Chicago it took never. # look: boxes-unpacked
 -
 ~ system_log("heather", "Kitchen's done. The good knife is in the second drawer. Proud of you. -H")
-// Owner: she couldn't stand the memories Chicago brought up; Seattle is meant to be a fresh start.
+// Owner: she couldn't stand the memories Chicago brought up. Seattle is meant to be a fresh start.
 Heather (inside): Water first. # vo: ch5-hinduism_heather-inside_0001
 Maya: I know. I know. I'm getting it. # vo: ch5-hinduism_maya_0002
 Maya: No Field Museum. No Friday candles. No lake. Nothing here knows me yet. A fresh start. # vo: ch5-hinduism_maya_0031
@@ -143,7 +143,7 @@ Priya: Also. My family's temple has a festival on Sunday, Rama Navami. Lots of f
 * {hall >= 2} [Wait (stand with Priya's family)]
 -
 ~ set_experience("Derealization", 0.2)
-The aarti: a woman in a cream sari, grey braid, reading glasses pushed up, circling a tray of flames before the shrine. Everyone singing, a bell, a drum, a conch. # look: aarti-flame
+The aarti. A woman in a cream sari, grey braid, reading glasses pushed up, circling a tray of flames before the shrine. Everyone singing, a bell, a drum, a conch. # look: aarti-flame
 Mangala Tai: Come. Come, closer. You can take the light: hands over the flame, then over your eyes. Like this. # vo: ch5-hinduism_mangala_0008
 * [Use: The aarti flame (take the light)]
     ~ record_choice("ch5.p1.aarti", "light", "At your first aarti, you held your hands over the flame and then over your eyes, the way Mangala Tai showed you.")

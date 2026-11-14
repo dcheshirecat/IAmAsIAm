@@ -6,10 +6,10 @@
 //  doesn't understand it yet. She isn't serious about Wicca yet.
 //  Explore-first: Maya's apartment is the scene. The signs are things to find, never explained.
 //  Hidden memory (owner's rule): the tarot deck glows only while Izzy is fronting, and shows Izzy buying
-//  it. Nothing ever tells the player; for anyone else it's simply not one of the glowing things.
+//  it. Nothing ever tells the player. For anyone else it's simply not one of the glowing things.
 //
 //  My guesses, for the owner to correct:
-//   - (Owner: yes) The signs are Izzy's (22 in the present; Wiccan; runs daily life on the lost-time days): a note
+//   - (Owner: yes) The signs are Izzy's (22 in the present. Wiccan. Runs daily life on the lost-time days): a note
 //     signed "I", candles on the windowsill, a tarot deck Maya didn't buy, groceries she didn't buy.
 //   - Maya missed a midterm she has no memory of missing.
 //   - Selene is drifting: she has a girlfriend now and less time. She saw "Maya" at a full moon meet-up

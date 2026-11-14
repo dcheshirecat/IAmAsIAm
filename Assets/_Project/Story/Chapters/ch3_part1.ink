@@ -10,7 +10,7 @@
 //   - Tanya drives up from Champaign-Urbana: one of their rare visits now. Tanya doesn't leave until Maya calls Angie.
 //   - A tour where Maya loses her place mid-sentence, and Christie takes over without a fuss.
 //   - Angie's office: the first session, and a few weeks later, the words "a dissociative disorder".
-//  Owner: Maya and Izzy share time (co-consciousness) through this chapter; Heather comes out at the Buddhist temple in Nepal,
+//  Owner: Maya and Izzy share time (co-consciousness) through this chapter. Heather comes out at the Buddhist temple in Nepal,
 //  appears more and more, and is unlocked at the end. The trip is impulsive: straight from the diagnosis to O'Hare. No temple in
 //  Chicago (owner: cut): Maya has romanticized ideas about finding herself in Nepal, and has to cope with the reality.
 // ─────────────────────────────────────────────────────────────────────────────

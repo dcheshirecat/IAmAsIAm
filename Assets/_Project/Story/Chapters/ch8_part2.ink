@@ -1,10 +1,10 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 8 (Druidry), Part 2.
+// IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 8 (Druidry), Part 2.
 // vo-speakers: Maya=maya, Bríd=brid, Lily=lily
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 2. Lúnasa. County Westmeath, August 2030. Maya is 31.
-//  Owner: Lily (4, she/her, Quaker; holds the waiting for a mother who was always with someone else) first comes forward
-//  waiting at a holy well. This is a scripted switch; she is unlocked at the end of the chapter (owner).
-//  Research: Lúnasa (1 August) is the start of the harvest; customs include hilltop gatherings and picking bilberries
+//  Owner: Lily (4, she/her, Quaker. Holds the waiting for a mother who was always with someone else) first comes forward
+//  waiting at a holy well. This is a scripted switch. She is unlocked at the end of the chapter (owner).
+//  Research: Lúnasa (1 August) is the start of the harvest. Customs include hilltop gatherings and picking bilberries
 //  ("fraughans"). Holy wells: people walk "rounds" sunwise around the well, pray or leave a rag on the tree beside it, and wait.
 //  My guesses, for the owner to correct:
 //   - The well is fictional ("Brigid's well at the bottom of the lane"), visited by Catholic neighbours and Druids alike.
@@ -28,7 +28,7 @@
     Flour everywhere. The first bread from the new wheat, Bríd says: Lúnasa bread. You knead until your arms ache. # look: lunasa-bread
     -> k
 + {k < 3} [Look: The window]
-    August: the fields gone gold, swallows on the wire, rain coming and going like it's thinking about it. # look: august-window
+    August. The fields gone gold, swallows on the wire, rain coming and going like it's thinking about it. # look: august-window
     -> k
 * [Use: The dough (knead it)]
     Push, fold, turn. Like the rotis in Kent. Your hands remember. # look: knead-remember

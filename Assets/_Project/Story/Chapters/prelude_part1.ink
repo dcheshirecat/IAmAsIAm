@@ -5,15 +5,15 @@
 //  Owner's beats: Maya meets Wicca at college, first through a person: a classmate, Selene. She isn't
 //  serious yet. College is out of state, away from Sarah's church. Lost time is growing, and Maya doesn't
 //  understand it yet (signs only, never explained).
-//  Explore-first: the dorm room and Selene's little altar carry it; very little narration.
+//  Explore-first: the dorm room and Selene's little altar carry it. Very little narration.
 //
 //  My guesses, for the owner to correct:
 //   - (Owner: yes) The town is Champaign-Urbana (the University of Illinois), and Maya's first class with Selene is
 //     Intro to World Religions.
-//   - Selene is 18 too, she/her (owner: yes), a solitary eclectic witch since high school; warm, a bit chaotic.
+//   - Selene is 18 too, she/her (owner: yes), a solitary eclectic witch since high school. Warm, a bit chaotic.
 //   - Selene invites Maya to a small Samhain with her friends in a dorm room (an altar, photos of the dead,
 //     an apple cut across to show the star). Maya goes, and only watches.
-//   - Sarah phones during it, busy with the church's harvest supper; she doesn't ask about Maya.
+//   - Sarah phones during it, busy with the church's harvest supper. She doesn't ask about Maya.
 //   - The first sign at college: Maya wakes up and her shoes are muddy, from a walk she doesn't remember.
 // ─────────────────────────────────────────────────────────────────────────────
 

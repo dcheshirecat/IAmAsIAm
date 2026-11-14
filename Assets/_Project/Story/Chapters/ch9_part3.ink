@@ -1,4 +1,4 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 9 (Humanism), Part 3.
+// IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 9 (Humanism), Part 3.
 // vo-speakers: Maya=maya, Miss Ella=ella, Maisie=maisie, Heather (inside)=heather-inside, Heather=heather
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 3. Here. Arcata, June 2032. Maya is 33.
@@ -6,7 +6,7 @@
 //
 //  My guesses, for the owner to correct:
 //   - The club's last Wednesday is a clean-up on the Arcata Marsh trails, then a goodbye picnic. Maisie is moving up to high
-//     school. She's getting help now (from the counsellor; the game doesn't say more), and this time, at roll call, she answers.
+//     school. She's getting help now (from the counsellor. The game doesn't say more), and this time, at roll call, she answers.
 //   - Miss Ella mentions World Humanist Day (June 21), and that she's training as a humanist celebrant (someone who leads
 //     non-religious weddings and funerals), as a little look at organised humanism.
 //   - Maisie gives Maya a drawing of the marsh. Heather comes forward for a moment at the end, to say goodbye to the kids.

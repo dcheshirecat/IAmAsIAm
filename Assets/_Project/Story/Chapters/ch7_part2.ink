@@ -1,4 +1,4 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 7 (Daoism), Part 2.
+// IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 7 (Daoism), Part 2.
 // vo-speakers: Maya=maya, Lin Daozhang=lin, Auntie Mei=mei
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 2. Qingming. Seattle, April 2029. Maya is 30.
@@ -6,7 +6,7 @@
 //  My guesses, for the owner to correct:
 //   - Lin Daozhang's family invites Maya to help at Lake View Cemetery on Capitol Hill (a real cemetery, with many Chinese
 //     family graves). She can't go to Mira's grave (Oregon), so Lin Daozhang offers the temple's furnace for a letter to her.
-//   - Burning a letter is Maya's own act, not a Daoist rite (joss paper is offered to the family's own dead); Lin Daozhang
+//   - Burning a letter is Maya's own act, not a Daoist rite (joss paper is offered to the family's own dead). Lin Daozhang
 //     only offers the fire.
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -42,7 +42,7 @@
     The lake below, the mountain out, the city like a toy. The dead have the best view in Seattle. # look: cemetery-view
     -> hill
 + {hill < 4} [Look: The Lin family stone]
-    Chinese characters, then English: Lin. A grandmother, a grandfather, an uncle who died young. Oranges and a teacup on the step. # look: lin-stone
+    Chinese characters, then English. Lin. A grandmother, a grandfather, an uncle who died young. Oranges and a teacup on the step. # look: lin-stone
     -> hill
 + {hill < 4} [Look: The grandchildren]
     Three teenagers, sweeping and complaining and, when they think nobody's looking, bowing properly. # look: lin-teenagers

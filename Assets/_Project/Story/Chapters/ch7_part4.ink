@@ -1,14 +1,14 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 7 (Daoism), Part 4.
+// IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 7 (Daoism), Part 4.
 // vo-speakers: Maya=maya, Lin Daozhang=lin, Auntie Mei=mei
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 4. Lanterns. Seattle, August 2029. Maya is 30.
-//  Zhongyuan, the Ghost Festival (research): the 15th day of the 7th lunar month, in the Daoist Three Yuan; offerings and rites
+//  Zhongyuan, the Ghost Festival (research): the 15th day of the 7th lunar month, in the Daoist Three Yuan. Offerings and rites
 //  for wandering, uncared-for spirits (pudu: tables of food set out for them), often spread across the whole month.
 //  My guesses, for the owner to correct:
-//   - Lin Daozhang leads the pudu rite at the temple; tables of offerings on the pavement out front.
-//   - That night, paper water lanterns set on the lake for the wandering dead (a Taiwanese custom; the place is fictional,
+//   - Lin Daozhang leads the pudu rite at the temple. Tables of offerings on the pavement out front.
+//   - That night, paper water lanterns set on the lake for the wandering dead (a Taiwanese custom. The place is fictional,
 //     a small shore on Lake Washington). Maya sets one for Mira, and one for the little girl who waited in the fellowship hall.
-//   - The chapter ends as Maya; it unlocks nobody (owner).
+//   - The chapter ends as Maya. It unlocks nobody (owner).
 // ─────────────────────────────────────────────────────────────────────────────
 
 === ch7_part4 ===

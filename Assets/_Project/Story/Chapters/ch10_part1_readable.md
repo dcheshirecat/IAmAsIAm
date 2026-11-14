@@ -2,12 +2,12 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-14; the owner's Doc edits come first). Chapter 10 (Unitarian Universalism), Part 1. Owner: Maya stays in Arcata. The guide is ANABELLE (25, they/them), a member of the fellowship's pagan group. The chapter is about BELONGING: Maya has collected a little of every faith, and this is the first place where that's the point, not a problem. A made-up UU fellowship (not the real one near Arcata). Three seasons. Starts as Maya; unlocks SERENA, who first comes forward when Sarah phones (Part 2). Research (docs/Chapter10_UUResearch.md): a UU service opens by lighting the flaming chalice; "joys and concerns" is when people light a candle and share news; coffee hour follows. UUs have no creed: one congregation can hold humanists, Christians, Buddhists, Jews and pagans. CUUPS (the Covenant of UU Pagans) chapters are small groups inside a congregation; many mark the eight sabbats.
+**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-14. The owner's Doc edits come first). Chapter 10 (Unitarian Universalism), Part 1. Owner: Maya stays in Arcata. The guide is ANABELLE (25, they/them), a member of the fellowship's pagan group. The chapter is about BELONGING: Maya has collected a little of every faith, and this is the first place where that's the point, not a problem. A made-up UU fellowship (not the real one near Arcata). Three seasons. Starts as Maya. Unlocks SERENA, who first comes forward when Sarah phones (Part 2). Research (docs/Chapter10_UUResearch.md): a UU service opens by lighting the flaming chalice. "joys and concerns" is when people light a candle and share news. Coffee hour follows. UUs have no creed: one congregation can hold humanists, Christians, Buddhists, Jews and pagans. CUUPS (the Covenant of UU Pagans) chapters are small groups inside a congregation. Many mark the eight sabbats.
 
 **My guesses, for you to check:**
 
 - The fellowship: "the Eleventh Street Fellowship" (Unitarian Universalist), in an old wooden house near the Plaza.
-- Its pagan circle: "Spiral Fern" (a CUUPS chapter). Anabelle leads it; they grew up UU in Oregon, and study agriculture at Cal Poly Humboldt.
+- Its pagan circle: "Spiral Fern" (a CUUPS chapter). Anabelle leads it. They grew up UU in Oregon, and study agriculture at Cal Poly Humboldt.
 - The day: Sunday October 31, 2032: the morning service, then the circle's small Samhain that evening.
 
 📱 **Text from Tanya:** Samhain blessings, love. Who are you lighting for tonight? I've got Mira's candle going here too.
@@ -16,7 +16,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Decide about Sunday
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The sill**
     - Mira's stone. The prayer wheel. The khata. Bríd's jar, empty now, holding pens. Maisie's drawing of the marsh.
@@ -32,7 +32,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Find a seat
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The chalice**
     - A small stone bowl on a stand, a flame in it. A teenager lights it while everyone reads the words on the screen together.
@@ -46,7 +46,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Watch the candles
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The candle table**
     - "Joys and concerns." People go up one by one, light a little candle, and say something out loud. A new grandchild. A biopsy, results Tuesday. A cat named Pancake, who died.
@@ -61,7 +61,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Survive coffee hour
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The coffee**
     - Fair trade, too strong, in mugs that don't match. A plate of somebody's lemon bars, already half gone.
@@ -75,7 +75,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Anabelle:** Oh, you're going to fit in so well here. Half this room is a lot of things.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Anabelle (ask how that works)**
     - **Maya:** But how does that work? A church with no creed?
@@ -88,7 +88,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Join the circle
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The garden**
     - Behind the fellowship, raised beds gone to seed, a plum tree, fairy lights strung on the fence, eight people in a ring on the damp grass.
@@ -98,7 +98,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Anabelle:** We go round. Say a name if you want to. Or say "pass". Pass is a whole sentence here.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: The circle (say Mira's name)**
     - **Maya:** Mira Smith.
@@ -111,7 +111,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Go to bed
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bed**
     - Your feet still cold from the grass. Lemon bar crumbs in your coat pocket. A pamphlet: "So you're new here."

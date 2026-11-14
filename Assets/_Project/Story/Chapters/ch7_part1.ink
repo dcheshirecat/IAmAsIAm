@@ -1,19 +1,19 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 7 (Daoism), Part 1.
+// IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 7 (Daoism), Part 1.
 // vo-speakers: Maya=maya, Lin Daozhang=lin, Auntie Mei=mei
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. New Year. Seattle, February 2029. Maya is 30.
-//  Owner: still Seattle, 2029; the guide is a Zhengyi Daoist priest (married, lives at home), an older man, at a community
-//  temple in the Chinatown-International District (Daoist and folk gods side by side); parts built around Lunar New Year,
-//  Qingming, dawn tai chi in a park and the Ghost Festival; starts as Maya, unlocks nobody. A full day in every part.
+//  Owner: still Seattle, 2029. The guide is a Zhengyi Daoist priest (married, lives at home), an older man, at a community
+//  temple in the Chinatown-International District (Daoist and folk gods side by side). Parts built around Lunar New Year,
+//  Qingming, dawn tai chi in a park and the Ghost Festival. Starts as Maya, unlocks nobody. A full day in every part.
 //
 //  My guesses (placeholders), for the owner to correct:
-//   - The priest: LIN DAOZHANG (`master_lin`; "Daozhang", Dao master, is the respectful title for a Zhengyi priest; 68, he/him). From a family of Zhengyi priests in Tainan, Taiwan; came
-//     to Seattle in 1994; does people's taxes on weekdays and the temple's rites on weekends, the way many Zhengyi priests work
+//   - The priest: LIN DAOZHANG (`master_lin`. "Daozhang", Dao master, is the respectful title for a Zhengyi priest. 68, he/him). From a family of Zhengyi priests in Tainan, Taiwan. Came
+//     to Seattle in 1994. Does people's taxes on weekdays and the temple's rites on weekends, the way many Zhengyi priests work
 //     part-time. Dry, patient, funny without smiling.
 //   - His wife AUNTIE MEI (`auntie_mei`, 65, she/her) runs everything else: the incense, the oranges, the volunteers.
 //   - The temple: "Fu Shan Temple" (fictional), upstairs over a bakery: the Jade Emperor in the centre, with Guandi, Mazu and
 //     Guanyin, and the City God by the door.
-//   - Visitors (research): three sticks of incense, bow three times, place them in the burner; the moon blocks (two red crescent
+//   - Visitors (research): three sticks of incense, bow three times, place them in the burner. The moon blocks (two red crescent
 //     blocks thrown to ask a yes-or-no question: one up, one down means yes).
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -62,7 +62,7 @@
     Paper lanterns and paper roosters, glue everywhere. A grandmother teaching three children to cut a paper flower in one go. # look: paper-roosters
     -> hall
 + {hall < 3} [Look: The flyer]
-    Pinned to the staff board: "Fu Shan Temple, New Year incense, all welcome, upstairs from Golden Crown Bakery." # look: fu-shan-flyer
+    Pinned to the staff board, a flyer. "Fu Shan Temple, New Year incense, all welcome, upstairs from Golden Crown Bakery." # look: fu-shan-flyer
     -> hall
 * [Use: Your lunch]
     Leftover dal, eaten fast, the flyer folded in your pocket. # look: dal-fast

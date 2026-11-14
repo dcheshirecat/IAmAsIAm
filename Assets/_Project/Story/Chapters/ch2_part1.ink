@@ -2,13 +2,13 @@
 // vo-speakers: Maya=maya
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. The museum. Chicago, spring 2023. Maya is 24.
-//  Owner's beats: Maya moved to Chicago for a job (COVID is skipped; the chapter starts in Chicago in 2023). She works at a
+//  Owner's beats: Maya moved to Chicago for a job (COVID is skipped. The chapter starts in Chicago in 2023). She works at a
 //  museum (The Field Museum, as a tour guide), where she meets Adeena (27, stern and serious with a heart of gold). Tanya is back in Champaign-Urbana: from
 //  now on, texting replaces meeting up. Izzy comes forward on stressful days at work, if triggered.
 //  This chapter starts as Maya and unlocks nobody.
 //
 //  My guesses, for the owner to correct:
-//  Owner: the museum is The Field Museum (the real place); Maya is a tour guide; the shouting curator is Eudora Jones.
+//  Owner: the museum is The Field Museum (the real place). Maya is a tour guide. The shouting curator is Eudora Jones.
 //  My guesses, for the owner to correct:
 //   - Adeena is the registrar: she knows where every object is and every fact about it.
 //   - The stressful day is a members' preview of a new exhibit, with three school groups double-booked and Eudora shouting.
@@ -72,7 +72,7 @@ Your phone. # device: phone
 # place: field_museum_hall
 # shot: wide
 # objective: Give the ten o'clock tour
-// The Field Museum (owner: the real place). Stanley Field Hall, with Máximo the titanosaur; SUE the T. rex upstairs.
+// The Field Museum (owner: the real place). Stanley Field Hall, with Máximo the titanosaur. SUE the T. rex upstairs.
 - (hall)
 + {hall < 3} [Look: Máximo]
     The titanosaur, neck up into the light, longer than the hall feels. The fourth-graders always gasp. You still do, a little. # look: maximo
@@ -131,7 +131,7 @@ Adeena: You just told forty children that SUE is sixty-seven thousand years old.
 # objective: Take your lunch break
 - (steps)
 + {steps < 3} [Look: The lake]
-    From the museum steps: the lake, the sailboats, the city standing behind you like it's waiting. # look: steps-lake
+    From the museum steps you can see the lake, the sailboats, the city standing behind you like it's waiting. # look: steps-lake
     -> steps
 + {steps < 3} [Look: Adeena, at the window]
     Adeena at her desk upstairs, eating a sandwich cut into exact squares, reading while she chews. # look: adeena-sandwich

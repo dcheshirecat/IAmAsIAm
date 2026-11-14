@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prologue "This Little Light", Sunday 1. Maya goes "floaty" in the long service (a first, gentle depersonalization), then is forgotten at church after it. Mira finds her. Small choices only. Explore-first (owner): little narration. Each place is things to look at, use or talk to (they glow in the game); the objective line points the way; looking at a thing shows only its label.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prologue "This Little Light", Sunday 1. Maya goes "floaty" in the long service (a first, gentle depersonalization), then is forgotten at church after it. Mira finds her. Small choices only. Explore-first (owner): little narration. Each place is things to look at, use or talk to (they glow in the game). The objective line points the way. Looking at a thing shows only its label.
 
 **My guesses, for you to check:**
 
@@ -11,14 +11,14 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - The service: "This Little Light of Mine" (a public-domain spiritual, the title echo), Sarah's sermon, then a few minutes of open worship (silence), as many pastoral Friends churches do.
 - The smell of the building (wood polish, old hymnbooks, coffee) is planted here: it is the adult trigger "meeting-house-smell". No trigger cue fires in the prologue.
 - Mira teaches "feet on the floor", the first skill.
-- Mira only says "She's been waiting a long while" to Sarah here; she speaks up properly on Sunday 2.
+- Mira only says "She's been waiting a long while" to Sarah here. She speaks up properly on Sunday 2.
 - Sarah is seen only from outside, through Maya. We never hear her reasons.
 
 ## Wake
 
 > **Objective:** Get dressed for church
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The night light**
     - The night light, still on. Grey morning in the window.
@@ -29,7 +29,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Use: Your Sunday dress (on the hook)**
     - The hook is too high. Standing on the bed, on tiptoes. Got it.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The buttons**
     - One button left over at the bottom. That's all right.
@@ -40,12 +40,12 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Sarah:** Yes. Yes, Mrs. Hines, I'll bring the budget sheets. No, I haven't forgotten.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The kitchen table**
     - The kitchen table. A coffee cup, Mommy's Bible, sermon papers. No bowl.
 - **Look: Mommy's papers**
-    - **Sermon notes:** "Let your light shine."
+    - The sermon notes say "Let your light shine."
 - **Talk: Mommy**
     - **Maya:** Mommy? I'm hungry.
     - **Sarah:** There'll be snacks at church, honey. Get your coat.
@@ -58,7 +58,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Put your shoes on
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your shoes**
     - Shoes with sticky straps. On the wrong feet.
@@ -69,10 +69,10 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Sarah:** "Let your light shine." No. "Each of us carries a light." Each of us...
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Red cars**
-    - **Red cars:** five.
+    - Red cars. Five.
 - **Talk: Mommy**
     - **Maya:** Mommy, where does light come from?
     - **Sarah:** Each of us carries... hm? In a minute, sweetheart.
@@ -87,7 +87,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Rebecca:** Maya! Sit with me!
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The poster**
     - "Let your light shine before others." A lamp under a basket.
@@ -100,7 +100,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Finish your lantern
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Go: Follow Rebecca**
     - **Rebecca:** You can watch, Maya.
@@ -115,7 +115,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Sit in the front pew
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The Carters**
     - Mr. Carter, Thomas and Reneé. Reneé's crutches lean on the end of the pew. His arm is along the pew behind them.
@@ -131,12 +131,12 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 The quiet part.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your hands**
     - Your hands. Like a doll's hands. Far away.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The wood of the pew**
     - Wood grain, like a river around a rock.
@@ -161,7 +161,7 @@ The quiet part.
 
 > **Objective:** Wait right here
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The coffee pot**
     - The big silver coffee pot. Washed and put away.
@@ -189,7 +189,7 @@ The quiet part.
 
 **Mira:** Would you like these? I always take too many.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Mira (say you're really hungry)**
     - **Maya:** I'm really, really hungry.
@@ -231,7 +231,7 @@ Your shoes. Mira has put them on the right feet.
 
 **Mira:** Thank you for keeping me company, Maya.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Mira, at the door**
     - Mira, holding the back of the chair, watching you go.
@@ -240,7 +240,7 @@ Your shoes. Mira has put them on the right feet.
 
 > **Objective:** Go home
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Feet on the floor**
     - Hello, floor.
@@ -251,7 +251,7 @@ Your shoes. Mira has put them on the right feet.
 
 **Sarah:** Toast tonight, honey. Mommy has to finish the newsletter. Sit nicely.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Mommy**
     - Mommy, eating her toast standing up, the phone on her shoulder, writing on the back of an envelope.
@@ -266,7 +266,7 @@ Your shoes. Mira has put them on the right feet.
 
 **Sarah:** Quick prayers. God bless Maya, God bless everyone at church. Night night, sweetheart.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Mommy (ask her to stay)**
     - **Maya:** Mommy? Can you stay till I'm asleep?
@@ -274,7 +274,7 @@ Your shoes. Mira has put them on the right feet.
 - **Use: Your bear**
     - Your bear, under your chin. The door, open a crack. A stripe of hall light.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Feet on the floor (the end of the bed)**
     - Your feet flat on the end of the bed. Push, just a little. Hello, bed. Hello, floor.

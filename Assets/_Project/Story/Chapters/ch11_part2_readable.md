@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-14; the owner's Doc edits come first). Chapter 11 (Jainism), Part 2. Owner: forgiveness. At Paryushana MAYA OPENS SARAH'S LETTER (what it says: Claude's draft, the owner decides), AND she asks forgiveness of the people she hurt in lost time (Mark, Adeena, Tanya), by email. Research: Samvatsari is the last day of the Svetambara Paryushana (2034: around September 17). Many fast. In the evening comes the long Samvatsari pratikraman (a ritual of reflection and repentance), and afterwards everyone asks forgiveness of everyone: "Micchami Dukkadam". One verse said in it: "Khamemi savve jiva, savve jiva khamantu me, mitti me savva bhuesu, veram majjha na kenai": I forgive all living beings, may all beings forgive me; I am friends with all, and enemies with none.
+**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-14. The owner's Doc edits come first). Chapter 11 (Jainism), Part 2. Owner: forgiveness. At Paryushana MAYA OPENS SARAH'S LETTER (what it says: Claude's draft, the owner decides), AND she asks forgiveness of the people she hurt in lost time (Mark, Adeena, Tanya), by email. Research: Samvatsari is the last day of the Svetambara Paryushana (2034: around September 17). Many fast. In the evening comes the long Samvatsari pratikraman (a ritual of reflection and repentance), and afterwards everyone asks forgiveness of everyone: "Micchami Dukkadam". One verse said in it: "Khamemi savve jiva, savve jiva khamantu me, mitti me savva bhuesu, veram majjha na kenai": I forgive all living beings, may all beings forgive me. I am friends with all, and enemies with none.
 
 **My guesses, for you to check:**
 
@@ -15,7 +15,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Decide about the letter
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The altar**
     - The letter, under Mira's stone, since April of last year. The stamp has an American flag on it. Her handwriting on the front, the same as on every permission slip.
@@ -29,7 +29,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Find Nirmala-ben
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The hall**
     - Packed. Hundreds of people in white and cream. Many haven't eaten since yesterday, some not for eight days. Everyone very gentle with each other.
@@ -39,7 +39,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 Nirmala-ben: You came! Did you eat? Eat first. Then sit at the back for pratikraman. It's three hours. You can leave whenever you want. The door is a door.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The tray (eat)**
 
@@ -47,7 +47,7 @@ Nirmala-ben: You came! Did you eat? Eat first. Then sit at the back for pratikra
 
 > **Objective:** Sit through pratikraman
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The people**
     - Rows of them on the carpet, some with a small white cloth held at their mouths so their breath won't harm the tiny lives in the air. A girl Maisie's age mouthing along without the book.
@@ -71,7 +71,7 @@ Nirmala-ben: Perfectly. Now. You have something in your bag that's been heavy al
 
 > **Objective:** Open the letter
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The letter (open it)**
 
@@ -89,7 +89,7 @@ And inside it, a drawing. Crayon, on church paper. A little girl and a tall old 
 
 Your laptop on the steering wheel. All the people the lost time took from you, or took you from. Micchami Dukkadam. If I hurt you, knowingly or not.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The laptop (write to Tanya)**
     - ✉️ **Maya emails Tanya: "Micchami Dukkadam"** It's a Jain thing: if I hurt you, in thought or word or deed, knowingly or not, please forgive me. I disappeared on you for a whole year once. Someone in here did, anyway. I'm sorry for the year. Thank you for every year since.
@@ -107,7 +107,7 @@ Your laptop on the steering wheel. All the people the lost time took from you, o
 
 And Sarah. The letter in your lap. The drawing on the dashboard, Mira's handwriting facing up.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The laptop (write to Sarah: Micchami Dukkadam)**
     - ✉️ **Maya emails Sarah: "Thank you for the drawing"** Mom, thank you for sending the drawing. Micchami Dukkadam: it's a Jain way of asking forgiveness for any harm, knowingly or not. I'm not ready to say more than that yet. Maya.
@@ -120,7 +120,7 @@ And Sarah. The letter in your lap. The drawing on the dashboard, Mira's handwrit
 
 > **Objective:** Sleep
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The drawing**
     - Propped against the motel lamp. Two people and a packet of crackers. Thirty-one years in a folder, and now here.

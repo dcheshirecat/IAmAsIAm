@@ -1,14 +1,14 @@
-// IN THE GAME as a DRAFT (Claude's guesses, marked; the owner's answers and Doc edits come first). Chapter 6 (Sikhism), Part 2.
+// IN THE GAME as a DRAFT (Claude's guesses, marked. The owner's answers and Doc edits come first). Chapter 6 (Sikhism), Part 2.
 // vo-speakers: Maya=maya, Gurleen=gurleen, Bibi Harjit=harjit, Christie=christie
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 2. Vaisakhi. Kent, April 2028. Maya is 29.
-//  Owner: Christie tells Maya that Adeena married Michael; it's triggering (the Shabbat candles they shared every Friday).
+//  Owner: Christie tells Maya that Adeena married Michael. It's triggering (the Shabbat candles they shared every Friday).
 //
 //  My guesses, for the owner to correct:
 //   - HOW (owner): Christie VISITS: in Seattle for a work conference, she meets Maya for coffee that morning. She's kind and
 //     has no idea how hard it will land, the way Sarah had no idea about Mira (an echo, never pointed out). Somebody from the
-//     Field Museum posted the wedding photos; there was a chuppah (the `weddings` trigger, cue "wedding").
-//   - What happens next is the trigger system's (dissociation, maybe a switch to someone unlocked; no player control). Bibi
+//     Field Museum posted the wedding photos. There was a chuppah (the `weddings` trigger, cue "wedding").
+//   - What happens next is the trigger system's (dissociation, maybe a switch to someone unlocked. No player control). Bibi
 //     Harjit finds her afterwards and does what she does: sits her down, feeds her, gives her hands something to do (seva as
 //     DBT's Contributing, from ACCEPTS: `# exercise: accepts`).
 //   - Vaisakhi (research): the harvest festival, and the day in 1699 when Guru Gobind Singh founded the Khalsa. The nagar
@@ -109,7 +109,7 @@ Bibi Harjit: Whoever comes. We don't check. # vo: ch6-sikhism_harjit_0015
     A ring of people. Inside it, men in blue with tall turbans spin sticks and swords so fast they blur. A little girl in blue does it too, better than some of them. # look: gatka
     -> street
 + {street < 5} [Look: The food stalls]
-    Every few houses, a table: samosas, oranges, bottled water, chai. Free. Uncles pressing them into your hands whether you want them or not. # look: kirtan-stalls
+    Every few houses, a table of samosas, oranges, bottled water, chai. Free. Uncles pressing them into your hands whether you want them or not. # look: kirtan-stalls
     -> street
 * {street >= 2} [Wait (walk with them)]
 -

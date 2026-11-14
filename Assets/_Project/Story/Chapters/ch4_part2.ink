@@ -5,7 +5,7 @@
 //  Owner's beats: Reneé finds out that Maya has moved to Chicago and comes to meet her and catch up. They talk about being queer
 //  and ex-religious, and Reneé tells them what she overheard between Mira and Sarah (Prologue, Sunday 2). After they find out,
 //  they switch to Nina at home.
-//  Reneé: Mr. Carter's daughter, much older than Maya (about 36 now); out bisexual; left the church but still Quaker; uses a manual
+//  Reneé: Mr. Carter's daughter, much older than Maya (about 36 now). Out bisexual. Left the church but still Quaker. Uses a manual
 //  wheelchair.
 //
 //  My guesses, for the owner to correct:
@@ -163,7 +163,7 @@ That evening.
     -> nina
 * {nina >= 2} [Use: The notebook (write)]
     ~ record_choice("ch4.p2.nina", "wrote", "That night, Nina wrote in the notebook in big letters: MIRA TRIED.")
-    Big letters, pressing hard: "MIRA TRIED. -N" # look: mira-tried
+    Big letters, pressing hard. "MIRA TRIED. -N" # look: mira-tried
 -
 Nina: Mira tried. She tried. Somebody tried. # vo: ch4-islam_nina_0033
 Heather (inside): She did. And we're trying too. Into the fort. I'll stay right here. # vo: ch4-islam_heather-inside_0034

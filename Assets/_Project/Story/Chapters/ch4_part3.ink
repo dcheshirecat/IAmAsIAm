@@ -2,14 +2,14 @@
 // vo-speakers: Maya=maya, Chaplain Amal=amal
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 3. Remembrance. Chicago, December 2026. The body is 28.
-//  Owner's beats: Sufi practice; only what Muslims consider Islam. Izzy and Heather; Maya sometimes.
+//  Owner's beats: Sufi practice. Only what Muslims consider Islam. Izzy and Heather. Maya sometimes.
 //
 //  My guesses, for the owner to correct:
-//   - Sawsan (owner: Sawsan, Palestinian American; 30s, she/her), another patient at the day program, Sunni (as most Palestinian
+//   - Sawsan (owner: Sawsan, Palestinian American. 30s, she/her), another patient at the day program, Sunni (as most Palestinian
 //     Muslims are). She prays in the quiet room, then counts her tasbih (prayer beads), her grandmother's, from Nablus.
-//   - Amal invites them to a Thursday-night dhikr (remembrance) gathering led by her friend Fadi (owner: Fadi; 60s, he/him;
-//     owner: Shia), a Sufi teacher, Lebanese American: guests are welcome to sit and listen. Sufism is found among both Sunni
-//     and Shia Muslims (the Nimatullahi order, for one, is Shia); his circle has both. Heather finds the repetition steadying; Izzy keeps count, eyes open.
+//   - Amal invites them to a Thursday-night dhikr (remembrance) gathering led by her friend Fadi (owner: Fadi, 60s, he/him,
+//     Shia), a Sufi teacher, Lebanese American: guests are welcome to sit and listen. Sufism is found among both Sunni
+//     and Shia Muslims (the Nimatullahi order, for one, is Shia). His circle has both. Heather finds the repetition steadying. Izzy keeps count, eyes open.
 //     (Rhythm and repetition can pull a dissociative person away: they keep their eyes open, as Angie taught.)
 // ─────────────────────────────────────────────────────────────────────────────
 

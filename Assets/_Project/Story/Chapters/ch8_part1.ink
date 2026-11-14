@@ -1,10 +1,10 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 8 (Druidry), Part 1.
+// IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 8 (Druidry), Part 1.
 // vo-speakers: Maya=maya, Bríd=brid, Tanya=tanya
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. Bealtaine. County Westmeath, Ireland, May 2030. Maya is 31.
-//  Owner: a trip to Ireland, several weeks across the seasons; the guide leads a grove (an older Irish woman); Tanya knows
-//  the grove; parts built around Bealtaine at Uisneach, Lúnasa and Samhain at Tlachtga; Lily first comes forward waiting at a
-//  holy well; the chapter unlocks Lily. A full day in every part.
+//  Owner: a trip to Ireland, several weeks across the seasons. The guide leads a grove (an older Irish woman). Tanya knows
+//  the grove. Parts built around Bealtaine at Uisneach, Lúnasa and Samhain at Tlachtga. Lily first comes forward waiting at a
+//  holy well. The chapter unlocks Lily. A full day in every part.
 //
 //  My guesses (placeholders), for the owner to correct:
 //   - Maya takes unpaid leave from the Burke and comes three times: a few weeks each at Bealtaine, Lúnasa and Samhain, staying in
@@ -14,7 +14,7 @@
 //   - Her grove (fictional): Fuinseog Grove (fuinseog: ash tree, in Irish). Members show different streams of modern Druidry: an
 //     OBOD member from Dublin who uses the Welsh festival names (Alban Eilir...), a Gaelic polytheist who uses only the Irish names
 //     and honours Lugh and Brigid, and Bríd's Catholic neighbour, who comes for the fire and goes to Mass after.
-//   - Uisneach (research): the old ceremonial centre of Ireland; a public Bealtaine fire festival is held there each year.
+//   - Uisneach (research): the old ceremonial centre of Ireland. A public Bealtaine fire festival is held there each year.
 // ─────────────────────────────────────────────────────────────────────────────
 
 === ch8_part1 ===

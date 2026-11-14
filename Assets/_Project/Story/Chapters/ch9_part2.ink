@@ -1,4 +1,4 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 9 (Humanism), Part 2.
+// IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 9 (Humanism), Part 2.
 // vo-speakers: Maya=maya, Miss Ella=ella, Maisie=maisie, Heather (inside)=heather-inside, Tanya=tanya
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 2. Darwin Day. Arcata, February 2032. Maya is 33.

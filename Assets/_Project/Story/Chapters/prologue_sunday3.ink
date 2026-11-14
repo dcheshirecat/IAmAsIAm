@@ -13,10 +13,10 @@
 //  My guesses, for the owner to correct:
 //   - Spring (May). Mira, now about 74, is moving to Oregon to live near her daughter, Ellen.
 //   - Mira gives Maya a smooth stone from her garden ("something to hold"): the grounding-object skill.
-//   - Mira gives Maya her new address; Maya means to write and doesn't.
+//   - Mira gives Maya her new address. Maya means to write and doesn't.
 //   - The first time loss: after the goodbye, Maya is suddenly at home in her room, with no memory of
-//     the drive. Nina (11, "the minister's perfect, quiet child") did the smiling and the hours;
-//     she isn't named until Sunday 4.
+//     the drive. Nina (11, "the minister's perfect, quiet child") did the smiling and the hours.
+//     She isn't named until Sunday 4.
 // ─────────────────────────────────────────────────────────────────────────────
 
 === prologue_sunday3 ===

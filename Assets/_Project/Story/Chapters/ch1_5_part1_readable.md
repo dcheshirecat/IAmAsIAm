@@ -7,7 +7,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **My guesses, for you to check:**
 
 - Axel comes forward at the end of summer 2018, just before junior year starts.
-- The haircut is at a barber's on campus; the clothes come from a thrift store.
+- The haircut is at a barber's on campus. The clothes come from a thrift store.
 - The context clues: Maya's planner (another handwriting), Mira's stone, the napkin with a phone number, the dresses.
 - He tells Selene over coffee, and emails his professors to ask them to use "Axel" and "he".
 
@@ -15,7 +15,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Figure out whose room this is
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The planner**
 - **Look: The stone on the desk**
@@ -49,14 +49,14 @@ Dresses. A blue one at the back, too small, kept anyway.
 
 **Axel:** Short. Shorter. Yeah. Like that.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The mirror**
     - Hair on the floor. A face in the mirror. Yours.
 
 > **Objective:** Find something that fits
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The flannel shirts**
     - Green and black. Red and black. All of them, honestly.
@@ -72,14 +72,14 @@ Dresses. A blue one at the back, too small, kept anyway.
 
 📱 **Text from Tanya:** Thursday, 7. We've missed you.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your phone**
     - "Tanya." A shop with candles in the window. Someone who expects a girl named Maya.
 
 **Selene:** Okay, you texted "big news, coffee, now", so I'm here, I have coffee, and I'm vibrating.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Selene (just say it)**
     - **Axel:** My name's Axel. He, him. That's... the news.
@@ -94,12 +94,12 @@ Dresses. A blue one at the back, too small, kept anyway.
 
 > **Objective:** Email your professors
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The laptop**
     - "Hi Professor, I wanted to let you know I go by Axel now, and he/him. Thanks!" Four times. Send.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The replies**
     - "Thanks for telling me, Axel. See you Tuesday." "Noted! Welcome back." "Thank you, Axel."
@@ -112,7 +112,7 @@ Dresses. A blue one at the back, too small, kept anyway.
 
 **Mark:** Is the "Sociology of Religion" in here, or did I walk into a cult? Honestly either is fine.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Mark (dark joke)**
     - **Axel:** Depends. Cults usually have better snacks. This is the regular kind of religion. Bad coffee, worse chairs.
@@ -131,7 +131,7 @@ Dresses. A blue one at the back, too small, kept anyway.
 
 > **Objective:** Have fun
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The kitchen**
     - Forty people in a kitchen built for four. Someone's playlist, too loud, perfect.

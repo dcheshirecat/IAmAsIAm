@@ -3,15 +3,15 @@
 // ─────────────────────────────────────────────────────────────────────────────
 //  Sunday 4. Iowa City, 2013. Maya is 15.
 //  Owner's beats: an ordinary Sunday. In the car home, among other church news, Sarah mentions in
-//  passing that Mira has died; she has no idea how hard it will hit. That night, home alone in her
+//  passing that Mira has died. She has no idea how hard it will hit. That night, home alone in her
 //  room, Maya hears a voice inside that isn't hers (Nina, inside: only a voice, no control), and then
 //  a blackout. This is the first switch (to Nina), and the end of the prologue.
 //  Explore-first: the room is the scene. The dress, the letters, the napkin and the stone carry it.
 //  On replays (an alter unlocked), the car is a moment where an unexpected switch may happen.
 //
 //  My guesses, for the owner to correct:
-//   - Winter (late January 2013). Owner: Mira died on January 18th; "last week" in Oregon; her daughter Ellen phoned the church office.
-//   - Thomas and Reneé are grown and gone; Mr. Carter still sits in the same pew.
+//   - Winter (late January 2013). Owner: Mira died on January 18th. "last week" in Oregon. Her daughter Ellen phoned the church office.
+//   - Thomas and Reneé are grown and gone. Mr. Carter still sits in the same pew.
 //   - Rebecca is going out with Will.
 //   - Maya still has Mira's napkin number (Sunday 2) and the unfinished "Dear Mira" letters (Sunday 3).
 //   - Nina's first words, in the voice of "the minister's perfect, quiet child".
@@ -31,7 +31,7 @@
 
 = wake
 // Owner: more of each part of Maya's day. Claude's scenes (guesses): Sarah left early for a meeting before worship, so
-// Mr. Carter (the present single dad she envies) gives Maya a ride. He's kind; it's ordinary; that's the ache.
+// Mr. Carter (the present single dad she envies) gives Maya a ride. He's kind. It's ordinary. That's the ache.
 # place: home_kitchen
 # shot: wide
 # objective: Get to church
@@ -43,7 +43,7 @@
     Snow on the cars. The street white and quiet, nobody out. # look: snow-street
     -> k
 + {k < 3} [Look: Your reflection]
-    In the dark oven door: taller than Mom now. You don't look like a minister's daughter. You look like nobody's. # look: oven-reflection
+    In the dark oven door, you're taller than Mom now. You don't look like a minister's daughter. You look like nobody's. # look: oven-reflection
     -> k
 * [Use: The phone (call Mr. Carter)]
 -
@@ -129,7 +129,7 @@ Sarah: There's soup in the cupboard. I've got the deacons' supper, don't wait up
 # objective: Find the soup
 - (k)
 + {k < 3} [Look: The fridge]
-    A sticky note: "Deacons' supper. Soup in cupboard. Don't wait up! Love, Mom." The same note as last Sunday. New tape. # look: fridge-note
+    A sticky note. "Deacons' supper. Soup in cupboard. Don't wait up! Love, Mom." The same note as last Sunday. New tape. # look: fridge-note
     -> k
 + {k < 3} [Look: The house]
     Every light off but this one. The heating ticks. # look: dark-house

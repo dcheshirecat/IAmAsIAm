@@ -118,7 +118,7 @@ Izzy (inside): Five minutes! New record! # vo: ch3-buddhism_izzy-inside_0081
     Pasang at the pressure cooker, her daughter doing homework at the end of the table, the TV on with no sound. # look: pasang-kitchen-evening
     -> table
 + {table < 3} [Look: Your plate]
-    Dal bhat: rice, lentils, greens, a sharp pickle. Pasang refills it before you can say no. Twice. # look: dal-bhat
+    Dal bhat. Rice, lentils, greens, a sharp pickle. Pasang refills it before you can say no. Twice. # look: dal-bhat
     -> table
 * [Use: The washing up]
     You wash, the daughter dries, neither of you saying much. She teaches you the Nepali for "spoon". You forget it at once and she laughs. # look: washing-up-boudha
@@ -153,7 +153,7 @@ Izzy (inside): Five minutes! New record! # vo: ch3-buddhism_izzy-inside_0081
 
 = lumbini
 // Lumbini: the Buddha's birthplace (a UNESCO World Heritage site). The Sacred Garden: the Maya Devi Temple over the marker
-// stone, the Ashoka pillar, the pond, prayer flags in the trees; the monastic zone, with monasteries built by many countries.
+// stone, the Ashoka pillar, the pond, prayer flags in the trees. The monastic zone, with monasteries built by many countries.
 # place: lumbini_sacred_garden
 # shot: wide
 # objective: See where it began
@@ -168,7 +168,7 @@ Izzy (inside): Five minutes! New record! # vo: ch3-buddhism_izzy-inside_0081
     Green water. A bodhi tree hung with so many prayer flags you can hardly see the leaves. # look: lumbini-pond
     -> garden
 + {garden < 5} [Look: The monasteries]
-    Down the long canal: a Thai temple, white and gold; a Burmese one with a golden spire; a Chinese gate; a German one; a Japanese peace pagoda. Everyone came. # look: monastic-zone
+    All down the long canal, temples. A Thai one, white and gold. A Burmese one with a golden spire. A Chinese gate. A German one. A Japanese peace pagoda. Everyone came. # look: monastic-zone
     -> garden
 * {garden >= 2} [Wait (stand under the tree)]
 -
@@ -203,7 +203,7 @@ Pasang Lhamo: You came to find yourself. You didn't. Good. Nobody finds themselv
 -
 ~ text_to("tanya", "Coming home. I didn't find myself. Pasang says that's good. I think she's right.")
 ~ text_from("tanya", "Come home. I'll bring soup.")
-// Owner: Tanya warned Maya off scrying in Chapter 1; it opens after Chapter 3. No new voiced lines.
+// Owner: Tanya warned Maya off scrying in Chapter 1. It opens after Chapter 3. No new voiced lines.
 ~ text_from("tanya", "And when you're home and steadier: scrying, if you still want it. Eyes open. Ground first. Five minutes, like Angie says. Stop if you drift.")
 ~ learn_practice("scrying", "tanya")
 ~ co_conscious("heather", true)

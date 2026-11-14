@@ -7,19 +7,19 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 **My guesses, for you to check:**
 
 - Maya finds the shop's flyer in her own bag ("Open Yule circle. All welcome.") and goes.
-- Tanya runs the shop and the teaching coven; they're the person behind the counter Izzy met in Part 2. Tanya's strictness: phones off, ground first, no skipping steps, "you can't cast a circle if you're not in the room."
-- Tanya notices Maya drifting and asks where she went, gently; Maya says she's fine. Tanya doesn't push yet. Tanya is the guide who stays (owner): in touch all game, mostly by text and email.
+- Tanya runs the shop and the teaching coven. They're the person behind the counter Izzy met in Part 2. Tanya's strictness: phones off, ground first, no skipping steps, "you can't cast a circle if you're not in the room."
+- Tanya notices Maya drifting and asks where she went, gently. Maya says she's fine. Tanya doesn't push yet. Tanya is the guide who stays (owner): in touch all game, mostly by text and email.
 - The public Yule circle is in the park: the longest night, every candle out, then lit one by one.
 - (Owner: yes, Izzy) The chapter ends with a switch to Izzy at the circle: Maya loses the rest of the night, and wakes with a Book of Shadows whose first page is in round handwriting, signed "I".
 
 ## Flyer
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your bag**
     - A flyer, folded in four, at the bottom of your bag. "The Circle. Open Yule circle, December 21st. All welcome."
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The back of the flyer**
     - "GO." Round letters. Underlined three times.
@@ -28,7 +28,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Study for your last final
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The tables**
     - Midnight, and every table full. Energy drinks, highlighters, someone asleep on a textbook.
@@ -39,7 +39,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
     - Your phone buzzes on the table.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your phone (answer Mom)**
     - 📱 **Maya texts Sarah:** It's ok. I'll stay here for break. Merry Christmas.
@@ -52,7 +52,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Take your last final
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The blue book**
     - A blue exam book, your name on the front in your own handwriting. Good.
@@ -63,7 +63,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Find the circle
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The shelves**
     - Herbs in jars, labelled by hand. Candles by colour. A wall of tarot decks.
@@ -75,7 +75,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Tanya:** You're here for Yule? Good. Phone off, please, not on silent, off. I'm Tanya, they/them.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Tanya (say it's your first time)**
     - **Maya:** It's my first time. At one of these. I'm Maya.
@@ -97,7 +97,7 @@ Roots, down through the floor. _(the player does the "feet-on-floor" exercise he
 
 **Tanya:** Good. Where did you go, just then? Before your feet found the floor.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Tanya (say you're fine)**
     - **Maya:** Nowhere. I'm fine. I'm always a bit spacey.
@@ -112,7 +112,7 @@ Roots, down through the floor. _(the player does the "feet-on-floor" exercise he
 
 > **Objective:** Join the circle
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The circle**
     - Twenty people in coats, in a ring in the snow. Children too. A dog.
@@ -124,7 +124,7 @@ Roots, down through the floor. _(the player does the "feet-on-floor" exercise he
 
 _(An unexpected switch may happen here, if another alter is unlocked.)_
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The dark**
     - Dark. Breath, in clouds. Somebody's hand, somewhere near yours.
@@ -135,18 +135,18 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 
 **Tanya:** And now the light comes back. One flame, passed on.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The flame coming around the ring**
     - Hand to hand. Closer. Somebody's face, lit gold.
 
 **Tanya:** Here. Everyone gets one after their first circle. A Book of Shadows. Write in it every week. I'll know if you don't.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The book (take it)**
     - Black cloth, a moon on the cover. First page, in Tanya's square letters: "Ground first."
-    - **Tucked inside the cover:** three dry bay leaves and a bead of amber, warm as a hand. For the sun coming back.
+    - Tucked inside the cover, three dry bay leaves and a bead of amber, warm as a hand. For the sun coming back.
 
 ## Gone
 
@@ -156,7 +156,7 @@ _(A switch: Izzy comes forward. The player has no control over it.)_
 
 📱 **Text from Tanya:** Thank you for staying to help stack the chairs. Thursday, 7. Phone off.
 
-_(Quietly, in Maya's sent texts, written by Izzy during lost time; never pointed out: to Tanya: "I'll be there. Thank you. Really.")_
+_(Quietly, in Maya's sent texts, written by Izzy during lost time, never pointed out: to Tanya: "I'll be there. Thank you. Really.")_
 
 ...
 
@@ -164,7 +164,7 @@ _(A switch: Maya comes forward. The player has no control over it.)_
 
 > **Objective:** What happened?
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your bag**
 - **Look: Your hands**

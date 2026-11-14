@@ -17,7 +17,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Adeena:** Sunset is 8:16. Come at 7:30. Bring nothing. I mean it. Nothing.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The fan**
     - The box fan in the window, pushing hot air around. July in Chicago.
@@ -29,7 +29,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Give the summer camp tour
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The campers**
     - Thirty eight-year-olds in matching orange shirts, every one of them asking if Máximo is real.
@@ -38,7 +38,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Talk: The campers (answer the questions)**
     - "Is he real?" Real bones, cast copies, real once. They decide that's the best answer anyone's ever given.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The snack drawer**
     - Christie's snack drawer. A granola bar, in place of lunch. "Big night?" she says. You don't say how big.
@@ -49,7 +49,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Adeena:** You're early. Good. Early is correct. Shoes off, if you want. Help me with the table.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The challah**
     - Two loaves under an embroidered cloth. She braided them herself. She doesn't say so. You can tell.
@@ -61,7 +61,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Adeena:** I light, then I cover my eyes, then the blessing. Then I look, and it's Shabbat. You don't have to do anything.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Wait (watch her)**
     - Two flames. Her hands, circling them, three times, drawing the light in.
@@ -72,7 +72,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Adeena:** Shabbat shalom.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Adeena (say it back)**
     - **Maya:** Shabbat shalom.
@@ -83,7 +83,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Walk home
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The fireflies**
     - Fireflies in the grass by the path. You didn't know Chicago had fireflies.
@@ -96,7 +96,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Find a seat with Adeena
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The sign by the door**
     - "Congregation Etz Chaim. Tree of Life. All are welcome." Under it, a man at the door who nods at Adeena by name.
@@ -118,7 +118,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Rabbi Abe:** We call this keruv. Bringing close. Some of you married in, some of you are dating in, some of you just like rugelach. All of you are welcome.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The circle of chairs**
     - Couples, mostly. A man in a kippah holding hands with a man who keeps checking his phone. Two women, one very pregnant.
@@ -128,7 +128,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Rabbi Abe:** And you are?
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Rabbi Abe (say you were raised Quaker)**
     - **Maya:** Maya. I was raised Quaker. Now I'm... Wiccan, mostly. It's complicated.
@@ -141,33 +141,33 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 ## Weeks
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your hands (cover your eyes)**
     - Warm dark. Her voice. Every Friday.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your hands (again)**
     - Warm dark. The summer going. Her voice.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Wait (look)**
     - Two flames, and Adeena, smiling, which she almost never does anywhere else.
 
 ## Quiet
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The quiet**
     - Sunday afternoon. Adeena at her parents'. The apartment so quiet you can hear the fridge thinking.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Mira's stone**
     - The stone. Your thumb around the hole, around and around.
 
 _(An unexpected switch may happen here, if another alter is unlocked.)_
 
-_(Quietly, in Maya's sent texts, written by Nina during lost time; never pointed out: to Adeena: "Thank you for this week. I'm sorry I was quiet. I'm really happy.")_
+_(Quietly, in Maya's sent texts, written by Nina during lost time, never pointed out: to Adeena: "Thank you for this week. I'm sorry I was quiet. I'm really happy.")_

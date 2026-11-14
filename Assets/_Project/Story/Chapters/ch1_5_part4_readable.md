@@ -13,7 +13,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Find Mark on the quad
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The quad**
     - Frisbees, hammocks, someone with a guitar who only knows two songs. Summer, nearly.
@@ -35,7 +35,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Mark:** Last box! Okay, not last. There are always more boxes. Boxes are the hydra of moving.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The photos**
     - Pride. Christmas Eve, both of you holding candles. Easter, Mark crying a little, laughing at himself.
@@ -49,7 +49,7 @@ A sound like paper.
 
 **Mark:** Oh no. Oh, no, I'm so sorry. It was stuck to the pin. Was that important? It looks old.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Mark (say it's fine)**
     - **Axel:** It's fine. It's just a napkin. It's not even mine. I don't... it's fine.
@@ -62,12 +62,12 @@ A sound like paper.
 
 ## Night
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Mark, asleep**
     - Mark, asleep, one arm over his face.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The ceiling**
     - The ceiling. A long time.

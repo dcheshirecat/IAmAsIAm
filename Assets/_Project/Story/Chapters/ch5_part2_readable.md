@@ -2,20 +2,20 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 5 (Hinduism), Part 2. The temple priest's life, and the deity's day. Maya grounded; Heather visits.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 5 (Hinduism), Part 2. The temple priest's life, and the deity's day. Maya grounded. Heather visits.
 
 **My guesses, for you to check:**
 
 - Maya volunteers on Saturdays: making flower garlands for the shrines with Lakshmi (Priya's mother, owner's name) and the other aunties.
 - The deity's day, which the priest keeps every day: waking at dawn with a song (kakad aarti), bathing (abhishek), dressing in silk and flowers, offering food (bhog), lamps, putting to rest at night (shayan aarti). Caring for someone, every single day.
-- Mangala Tai's story (owner: a woman priest): her father was a priest and taught her brothers; she learned the chants by listening at the door. After raising her children she trained as a purohita in Pune. Some families still won't have a woman do their rites; many now ask for her because she explains every word. Her grandchildren call from Pune on Sundays.
+- Mangala Tai's story (owner: a woman priest): her father was a priest and taught her brothers. She learned the chants by listening at the door. After raising her children she trained as a purohita in Pune. Some families still won't have a woman do their rites. Many now ask for her because she explains every word. Her grandchildren call from Pune on Sundays.
 - Shiva on Mondays: milk poured over the lingam, the dark stone.
 
 ## Wake
 
 > **Objective:** Get to the temple by nine
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - June, and the sun out at five in the morning. Seattle in summer is a different city.
@@ -29,7 +29,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Lakshmi:** Thread, needle, flower, flower, flower, knot. Tight, or Ganesha will lose his necklace in the middle of the aarti.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The flowers**
     - Marigolds, orange and yellow, a mountain of them. Jasmine in a wet cloth. Roses with their stems cut off.
@@ -40,7 +40,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Heather (inside):** Let me. Just for a bit. I like this.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Wait (let Heather's hands work)**
     - Your hands, and Heather's, threading. Straight now. Steady. You're both here. Nobody goes far away.
@@ -49,14 +49,14 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Have a slow evening
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your fingers**
     - Orange from the marigolds. Heather's work, mostly.
 - **Use: The stove (dal)**
     - Lakshmi's dal recipe, written on the back of a temple flyer. It's nearly right.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bed**
     - Light still in the sky at ten. You fall asleep before it's dark.
@@ -65,7 +65,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Bake bread for Lammas
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The dough**
     - It rose overnight under a tea towel. Somebody already knocked it back: neat, careful knuckle marks.
@@ -80,7 +80,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Watch the evening closing
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The main shrine**
     - Rama and Sita in fresh silk, a new garland: yours, the crooked one, near the bottom.
@@ -92,7 +92,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Mangala Tai:** You're here a lot now. Good. I always say: the temple is where God lives, but it's the people who keep the lights on.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Mangala Tai (ask how she became a priest)**
     - **Maya:** How did you become a priest?

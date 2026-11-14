@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prologue "This Little Light", Sunday 2. small signs add up over the morning (Maya is hungry and eats all the fellowship-hour snacks; she mentions being home alone in the evenings while Sarah is at meetings; she goes "floaty" and doesn't answer her name). Mira speaks to Sarah. Sarah thanks her warmly, calls Maya "very independent", and is called away by Mrs. Hines. MAYA NEVER KNOWS: the conversation itself is not shown here. Reneé (on crutches, resting in the hallway) overhears it; adult Reneé tells Maya in chapter 4 or 5. Explore-first: the signs are things the player finds (the note, the snack table), not narration.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prologue "This Little Light", Sunday 2. small signs add up over the morning (Maya is hungry and eats all the fellowship-hour snacks. She mentions being home alone in the evenings while Sarah is at meetings. She goes "floaty" and doesn't answer her name). Mira speaks to Sarah. Sarah thanks her warmly, calls Maya "very independent", and is called away by Mrs. Hines. MAYA NEVER KNOWS: the conversation itself is not shown here. Reneé (on crutches, resting in the hallway) overhears it. Adult Reneé tells Maya in chapter 4 or 5. Explore-first: the signs are things the player finds (the note, the snack table), not narration.
 
 **My guesses, for you to check:**
 
@@ -14,7 +14,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Make breakfast
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The fridge**
     - Milk that smells wrong. Mustard. Half a lemon. Mommy's sticky notes for the church.
@@ -31,12 +31,12 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Give Mommy Miss Susan's note
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The back seat**
     - Coffee cups. Bulletins. Church papers.
 - **Look: Your backpack**
-    - **A note from Miss Susan:** "Please sign and return. Parent-teacher conference." Nine days old.
+    - A note from Miss Susan. "Please sign and return. Parent-teacher conference." Nine days old.
 - **Talk: Mommy (show her the note)**
     - **Maya:** Mommy, Miss Susan says you have to sign this. It's for the conference.
     - **Sarah:** Put it on the dashboard, honey. I'll look at it later.
@@ -56,7 +56,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Rebecca:** You can sit with us if you want. There's a chair.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Rebecca's table**
     - Rebecca, Jamie, Justin and Will. One chair in the corner.
@@ -71,7 +71,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get a snack
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The snack table**
     - Cookies. Cheese on toothpicks. Grapes.
@@ -84,7 +84,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Sit with Mira
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Go: Mira's chair**
 - **Talk: Mira (say you're fine where you are)**
@@ -113,7 +113,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Mira:** Maya, dear?
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Mira (try to answer)**
     - Your mouth. Slow, like in a dream.
@@ -148,7 +148,7 @@ Five things you can see. _(the player does the "five-senses" exercise here)_
 
 **Mira:** No, dear. Not you. Never you.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The hallway**
     - Mira with her cane, going to Mommy's office.
@@ -165,12 +165,12 @@ Five things you can see. _(the player does the "five-senses" exercise here)_
 
 **Sarah:** Thank you, Mira. Really. You're so good to her. She's very independent, our Maya.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Mira**
     - Mira, walking slower than before. Picking a grape up off the floor.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Mira (ask what she said to Mommy)**
     - **Maya:** What did you say to Mommy?
@@ -184,7 +184,7 @@ Five things you can see. _(the player does the "five-senses" exercise here)_
 
 **Maya:** I'll remember.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The napkin**
     - A napkin. Mira's number, in shaky blue pen.
@@ -193,7 +193,7 @@ Five things you can see. _(the player does the "five-senses" exercise here)_
 
 > **Objective:** Go home
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your pocket**
     - The napkin with the number. Kept, not called. Kept for years.
@@ -204,7 +204,7 @@ Five things you can see. _(the player does the "five-senses" exercise here)_
 
 **Sarah:** Outreach committee. Lock the door behind me. I'll be back by nine. You're my big girl.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The house**
     - Quiet. The fridge hums. The clock in the hall.
@@ -213,12 +213,12 @@ Five things you can see. _(the player does the "five-senses" exercise here)_
 - **Use: The front door (lock it)**
     - Click. You check it twice.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The cupboard (dinner)**
     - Crackers, and the cheese from fellowship hour, a bit warm from your pocket.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The napkin (on the table)**
     - Mira's number. You could call. You don't. It's only nine o'clock. Then it's ten.

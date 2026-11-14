@@ -1,16 +1,16 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 9 (Humanism), Part 1.
+// IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 9 (Humanism), Part 1.
 // vo-speakers: Maya=maya, Heather=heather, Miss Ella=ella, Maisie=maisie, Heather (inside)=heather-inside
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. Wednesdays. Arcata, California, September 2031. Maya is 33.
 //  Owner: after Ireland, a fresh start in a foggy coastal town in Northern California (the owner: a real town, researched:
-//  Arcata, on Humboldt Bay). The guide is MISS ELLA (30, she/her), a teacher who runs an after-school club; she was raised
+//  Arcata, on Humboldt Bay). The guide is MISS ELLA (30, she/her), a teacher who runs an after-school club. She was raised
 //  religious, left, and built the club because nobody did it for her. The heart of the chapter is the kids, and one of them:
 //  MAISIE (13, she/her), who goes quiet and "floaty" and doesn't answer her name. The chapter STARTS AS HEATHER, and it was
 //  HEATHER who signed up to volunteer: Maya finds out when Miss Ella thanks her for coming. Unlocks nobody (Serena is saved for
 //  another chapter). One school year, 2031-32.
 //
 //  Research (docs/Chapter9_HumanismResearch.md): Arcata is a small college town on Humboldt Bay, under the redwoods, often in
-//  fog; the Plaza is its centre; the Arcata Marsh and the Arcata Community Forest are on either side of town. It's Wiyot land:
+//  fog. The Plaza is its centre. The Arcata Marsh and the Arcata Community Forest are on either side of town. It's Wiyot land:
 //  the Wiyot name for this place is Goudi'ni ("over in the woods").
 //
 //  My guesses (placeholders), for the owner to correct:
@@ -88,7 +88,7 @@ Heather: Because someone should be there. # vo: ch9-humanism_heather_0001
 -> museum
 
 = museum
-// Heather goes back inside; Maya comes to at work.
+// Heather goes back inside. Maya comes to at work.
 # switch: maya
 # place: natural_history_museum
 # shot: close

@@ -48,7 +48,7 @@ def device_line(l):
     m = re.match(r"^~\s*sent_while_away\(" + a + r",\s*" + a + r",\s*" + a + r",\s*" + a + r"\)", l)
     if m:
         kind = "text" if m.group(2) == "text" else "email"
-        return (f"_(Quietly, in Maya's sent {kind}s, written by {m.group(1).capitalize()} during lost time; never pointed out:"
+        return (f"_(Quietly, in Maya's sent {kind}s, written by {m.group(1).capitalize()} during lost time, never pointed out:"
                 f" to {who(m.group(3))}: \"{m.group(4)}\")_")
     m = re.match(r"^~\s*set_age\((\d+)\)", l)
     if m:
@@ -151,7 +151,7 @@ def convert(text):
             label = opt.group(3)
             if not in_choice:
                 explore = re.match(r"^(Look|Use|Talk|Go|Wait)\b", label)
-                out += ["", "**Explore** (glowing things; the player picks):" if explore else "**Choice:**", ""]
+                out += ["", "**Explore** (glowing things, the player picks):" if explore else "**Choice:**", ""]
                 in_choice = True
             out.append(f"- **{label}**")
             if fr_note:

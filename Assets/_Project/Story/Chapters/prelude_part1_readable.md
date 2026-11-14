@@ -2,14 +2,14 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prelude (Wicca), Part 1. Maya meets Wicca at college, first through a person: a classmate, Selene. She isn't serious yet. College is out of state, away from Sarah's church. Lost time is growing, and Maya doesn't understand it yet (signs only, never explained). Explore-first: the dorm room and Selene's little altar carry it; very little narration.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prelude (Wicca), Part 1. Maya meets Wicca at college, first through a person: a classmate, Selene. She isn't serious yet. College is out of state, away from Sarah's church. Lost time is growing, and Maya doesn't understand it yet (signs only, never explained). Explore-first: the dorm room and Selene's little altar carry it. Very little narration.
 
 **My guesses, for you to check:**
 
 - (Owner: yes) The town is Champaign-Urbana (the University of Illinois), and Maya's first class with Selene is Intro to World Religions.
-- Selene is 18 too, she/her (owner: yes), a solitary eclectic witch since high school; warm, a bit chaotic.
+- Selene is 18 too, she/her (owner: yes), a solitary eclectic witch since high school. Warm, a bit chaotic.
 - Selene invites Maya to a small Samhain with her friends in a dorm room (an altar, photos of the dead, an apple cut across to show the star). Maya goes, and only watches.
-- Sarah phones during it, busy with the church's harvest supper; she doesn't ask about Maya.
+- Sarah phones during it, busy with the church's harvest supper. She doesn't ask about Maya.
 - The first sign at college: Maya wakes up and her shoes are muddy, from a walk she doesn't remember.
 
 ## Morning
@@ -20,7 +20,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get ready for class
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your side of the room**
     - A bed, a desk, a poster you bought because the girl down the hall had one. Your roommate's side is louder.
@@ -36,7 +36,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Find a seat
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The screen**
     - "Intro to World Religions. Week 8: New Religious Movements."
@@ -48,7 +48,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 **Selene:** You're the one who knew all the Quaker stuff last week. The "that of God in everyone" thing.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Selene (say you grew up with it)**
     - **Maya:** I grew up with it. My mom's a minister.
@@ -60,7 +60,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 **Selene:** This week's us, by the way. Witches. Page two-forty. Don't believe anything about the Devil, I'll be very offended.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Selene's bag**
     - A pentacle charm on the zip. A paperback with a cracked spine, full of sticky notes.
@@ -73,7 +73,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Get lunch
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The tables**
     - Every table a group. Laughing, saving seats, passing fries. Freshmen who found each other in August.
@@ -86,7 +86,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Shelve the returns
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The cart**
     - A cart of returns. Call numbers, in order. Something is finally in the right order.
@@ -99,14 +99,14 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Do your reading
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The hall**
     - Music through the wall, someone's birthday, shrieking. You put your headphones on with nothing playing.
 - **Use: Your laptop (the reading)**
     - Forty pages on new religious movements. You read the Wicca chapter twice and pretend it's for the class.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bed**
     - Instant noodles, the dorm kettle, lights out at one. Monday. Room 412.
@@ -115,7 +115,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Get ready for Selene's
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your desk**
     - A planner, every hour filled in. A mug of cold tea.
@@ -130,7 +130,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 **Selene:** You came! Okay. Shoes anywhere. This is Priya, this is Dev. Sit on the bed, it's the only clean surface.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The altar**
     - A desk under a scarf. Candles in jam jars. A bowl of water, a bowl of salt.
@@ -144,7 +144,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 **Selene:** Okay. Lights off. Everyone say a name, if you want to.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Say Mira's name**
     - **Maya:** Mira. Mira Smith.
@@ -160,12 +160,12 @@ On a slip of paper for Selene's altar you write three names. Mira. Grandma June.
 
 ## Call
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your phone**
     - "Mom." The screen lights up the whole dark room.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The phone (answer in the hall)**
     - **Sarah:** Hi sweetheart, I can't stay long, the harvest supper's in an hour and the coffee urn's broken.
@@ -177,7 +177,7 @@ On a slip of paper for Selene's altar you write three names. Mira. Grandma June.
 
 **Selene:** Everything okay?
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Selene (say it's fine)**
     - **Maya:** It's fine. It was my mom. It's always fine.

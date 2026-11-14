@@ -2,11 +2,11 @@
 // vo-speakers: Maya=maya, Mangala Tai=mangala
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 3. Lamps. Seattle, October to November 2027. Maya is 29.
-//  Navaratri (the Goddess) and Diwali (lamps). Maya grounded; Heather visits, and this time Maya knows.
+//  Navaratri (the Goddess) and Diwali (lamps). Maya grounded. Heather visits, and this time Maya knows.
 //
 //  My guesses, for the owner to correct:
 //   - Navaratri: garba dancing in a community hall with Priya's friends (a Gujarati tradition), nine nights for the Goddess.
-//   - Diwali: lamps (diyas) along Priya's family's front steps; then the temple. Heather comes forward to light the lamps (her
+//   - Diwali: lamps (diyas) along Priya's family's front steps. Then the temple. Heather comes forward to light the lamps (her
 //     candles again), and Maya, grounded now, stays aware and isn't frightened: the first visit she remembers.
 //   - The chapter unlocks nobody yet (to confirm with the owner).
 // ─────────────────────────────────────────────────────────────────────────────

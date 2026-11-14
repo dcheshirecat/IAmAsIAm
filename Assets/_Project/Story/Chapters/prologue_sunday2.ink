@@ -3,11 +3,11 @@
 // ─────────────────────────────────────────────────────────────────────────────
 //  Sunday 2. Iowa City, 2006. Maya is 8.
 //  Owner's beats: small signs add up over the morning (Maya is hungry and eats all the
-//  fellowship-hour snacks; she mentions being home alone in the evenings while Sarah is at
-//  meetings; she goes "floaty" and doesn't answer her name). Mira speaks to Sarah. Sarah thanks
+//  fellowship-hour snacks. She mentions being home alone in the evenings while Sarah is at
+//  meetings. She goes "floaty" and doesn't answer her name). Mira speaks to Sarah. Sarah thanks
 //  her warmly, calls Maya "very independent", and is called away by Mrs. Hines.
 //  MAYA NEVER KNOWS: the conversation itself is not shown here. Reneé (on crutches, resting in
-//  the hallway) overhears it; adult Reneé tells Maya in chapter 4 or 5.
+//  the hallway) overhears it. Adult Reneé tells Maya in chapter 4 or 5.
 //  Explore-first: the signs are things the player finds (the note, the snack table), not narration.
 //
 //  My guesses, for the owner to correct:
@@ -56,7 +56,7 @@ Sarah: Five minutes, Maya! Teeth! Shoes! # vo: prologue-quaker_sarah_0122
     Coffee cups. Bulletins. Church papers. # look: back-seat
     -> backseat
 + [Look: Your backpack]
-    A note from Miss Susan: "Please sign and return. Parent-teacher conference." Nine days old. # look: susan-note
+    A note from Miss Susan. "Please sign and return. Parent-teacher conference." Nine days old. # look: susan-note
     -> backseat
 * [Talk: Mommy (show her the note)]
     ~ record_choice("prologue.s2.note", "showed", "You showed Mommy Miss Susan's note. She said she'd look at it later.")

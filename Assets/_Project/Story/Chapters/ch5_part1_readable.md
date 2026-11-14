@@ -8,7 +8,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 - Owner: she can't stand the memories Chicago brings up, and believes Seattle will be a fresh start. She starts working at the Burke Museum (a real natural history museum, at the University of Washington) almost immediately, as an educator (Claude's guess for the job).
 - The temple (owner: a woman priest, so a North Indian-style community mandir, fictional): Rama and Sita at the centre, with Krishna and Radha, Durga, a Shiva lingam, Ganesha and Hanuman. Community mandirs in the US often have many shrines.
-- The priest (owner): Mangala Joshi, 62, she/her, called "Mangala Tai" (Tai: older sister, in Marathi). From a Maharashtrian Brahmin family; her father was a priest; trained as a purohita (a woman priest) in Pune in her thirties, the way women have been trained there since the 1970s.
+- The priest (owner): Mangala Joshi, 62, she/her, called "Mangala Tai" (Tai: older sister, in Marathi). From a Maharashtrian Brahmin family. Her father was a priest. Trained as a purohita (a woman priest) in Pune in her thirties, the way women have been trained there since the 1970s.
 - Heather's visits: a voice inside, a note in SystemLog, sometimes sharing time.
 
 📱 **Text from Tanya:** Seattle!! Further away than ever. You'd better text me twice as much.
@@ -21,7 +21,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Unpack
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The boxes**
     - "MAYA - BOOKS." "IZZY - DO NOT OPEN (tarot)." "H - kitchen, the good knife." Different handwriting on every box. All of you packed. Nothing in them from Chicago that you could leave behind.
@@ -48,14 +48,14 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Eat something
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The rain**
     - Still raining. It's been raining since the airport. You're starting to like it.
 - **Use: The pizza box**
     - Pizza on a box marked "IZZY - DO NOT OPEN". Heather insists on a plate.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The mattress**
     - The mattress on the floor, sheets not quite on. The house noises are new. You fall asleep before you can be scared of them.
@@ -64,7 +64,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Take the bus to the Burke
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - Hills, water, more hills. Everyone has a raincoat. Nobody has an umbrella.
@@ -75,7 +75,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Find your new desk
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The whale**
     - A whale skeleton, hanging over everything, every bone numbered. You laugh. Of course there's a whale.
@@ -87,7 +87,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Priya:** Also. My family's temple has a festival on Sunday, Rama Navami. Lots of food. You should come. You don't have to do anything, just come.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Priya (say yes)**
     - **Maya:** Yes. I'd like that. Really.
@@ -99,7 +99,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Take your shoes off and go in
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The shoe racks**
     - A hundred pairs of shoes, and children's sandals, and yours, at the end. Bare feet on cool stone.
@@ -111,11 +111,11 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
     - Ganesha, round and smiling, by the door. Krishna with his flute, and Radha. Durga on her tiger, in red silk. Hanuman, kneeling. Shiva, a smooth dark stone, wet with milk. Everyone has somewhere to go.
 - **Wait (stand with Priya's family)**
 
-**The aarti:** a woman in a cream sari, grey braid, reading glasses pushed up, circling a tray of flames before the shrine. Everyone singing, a bell, a drum, a conch.
+The aarti. A woman in a cream sari, grey braid, reading glasses pushed up, circling a tray of flames before the shrine. Everyone singing, a bell, a drum, a conch.
 
 **Mangala Tai:** Come. Come, closer. You can take the light: hands over the flame, then over your eyes. Like this.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The aarti flame (take the light)**
     - Warm, over your palms. Warm, over your eyes.
@@ -130,7 +130,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Go home
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your hands**
     - The warm of the aarti still on your palms, or you imagine it is.

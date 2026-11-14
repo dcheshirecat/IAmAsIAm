@@ -1,8 +1,8 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-14; the owner's Doc edits come first). Chapter 10 (Unitarian Universalism), Part 2.
+// IN THE GAME as a DRAFT (Claude, 2026-11-14. The owner's Doc edits come first). Chapter 10 (Unitarian Universalism), Part 2.
 // vo-speakers: Maya=maya, Anabelle=anabelle, Serena=serena, Sarah=sarah, Heather (inside)=heather-inside
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 2. The longest night. Arcata, December 2032. Maya is 34.
-//  Owner: SERENA first comes forward when SARAH PHONES (out of the blue, the first time in years). Maya can't speak; Serena takes
+//  Owner: SERENA first comes forward when SARAH PHONES (out of the blue, the first time in years). Maya can't speak. Serena takes
 //  the call, polite and grown-up, and sets a boundary Maya never could. Serena is NOT unlocked until the end of the chapter.
 //
 //  My guesses, for the owner to correct:
@@ -10,7 +10,7 @@
 //     and someone asked if her daughter would say a few words. She got the number from Rebecca's mother. She's warm and
 //     cheerful and doesn't hear herself (never her side: no reasons, no explaining, just how it lands).
 //   - Serena calls her "Sarah", not "Mom": Serena has never seen Sarah as her mother (the system's links).
-//   - The day: the Sunday before the solstice. A winter solstice service in the morning; the Spiral Fern's Yule that night.
+//   - The day: the Sunday before the solstice. A winter solstice service in the morning. The Spiral Fern's Yule that night.
 // ─────────────────────────────────────────────────────────────────────────────
 
 === ch10_part2 ===
@@ -105,7 +105,7 @@ Serena: I'll take the lemon bar. # vo: ch10-unitarian-universalism_serena_0022
 -> yule
 
 = yule
-// Serena goes back; Maya, shaky, comes to the circle.
+// Serena goes back. Maya, shaky, comes to the circle.
 # switch: maya
 ~ co_conscious("serena", true)
 # place: uu_fellowship_garden

@@ -3,7 +3,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 2. Boudha. Kathmandu, Nepal, April 2026. Maya is 27.
 //  Owner's beats: three months, alone. The guide is a temple-stay host: Pasang Lhamo Sherpa (about 55, she/her), who runs
-//  her family's guest house behind a monastery in Boudha; her brother-in-law is a monk there. Practical and motherly, she
+//  her family's guest house behind a monastery in Boudha. Her brother-in-law is a monk there. Practical and motherly, she
 //  walks around the stupa with Maya at dawn. Maya has romanticized ideas about finding herself here, and has to cope with
 //  the reality. Maya and Izzy share time.
 //
@@ -11,7 +11,7 @@
 //   - The reality: jet lag, dust, dogs barking all night, a cold shower, monks on their phones, a stupa full of tourists.
 //     None of it is bad. It just isn't the poster.
 //   - The kora: always clockwise, prayer wheels, butter lamps, pigeons, grandmothers with prayer beads.
-//   - Maya signs up for a 10-day silent course to "really" find herself. Pasang lets her go; she doesn't see the danger.
+//   - Maya signs up for a 10-day silent course to "really" find herself. Pasang lets her go. She doesn't see the danger.
 // ─────────────────────────────────────────────────────────────────────────────
 
 === ch3_part2 ===
@@ -111,7 +111,7 @@ Izzy (inside): I like it out here. Everyone's walking the same way. Nobody's los
     A steamer of dumplings, folded by Pasang's daughter faster than you can watch. Chilli sauce that makes your eyes water. # look: momos
     -> momos
 + {momos < 3} [Look: The altar shelf]
-    A small shelf above the stove: a photo of a lama, seven little bowls of water in a row, a butter lamp. # look: kitchen-altar
+    A small shelf above the stove, with a photo of a lama, seven little bowls of water in a row, a butter lamp. # look: kitchen-altar
     -> momos
 * {momos >= 1} [Use: The flyer on the wall]
     "VIPASSANA. 10 days. Noble silence. Dharma Shringa, Budhanilkantha. Courses run on donation." # look: vipassana-flyer

@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 4 (Islam), Part 2. Reneé finds out that Maya has moved to Chicago and comes to meet her and catch up. They talk about being queer and ex-religious, and Reneé tells them what she overheard between Mira and Sarah (Prologue, Sunday 2). After they find out, they switch to Nina at home. Reneé: Mr. Carter's daughter, much older than Maya (about 36 now); out bisexual; left the church but still Quaker; uses a manual wheelchair.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 4 (Islam), Part 2. Reneé finds out that Maya has moved to Chicago and comes to meet her and catch up. They talk about being queer and ex-religious, and Reneé tells them what she overheard between Mira and Sarah (Prologue, Sunday 2). After they find out, they switch to Nina at home. Reneé: Mr. Carter's daughter, much older than Maya (about 36 now). Out bisexual. Left the church but still Quaker. Uses a manual wheelchair.
 
 **My guesses, for you to check:**
 
@@ -18,7 +18,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get ready to meet Reneé
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your phone**
     - **Reneé:** "Andersonville, 11am, the café with the green door. I'll be the one in the wheelchair with the terrible tote bag."
@@ -30,7 +30,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Find Reneé
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The door**
     - No step. A wide door. A little blue sign. Reneé picked this place on purpose.
@@ -42,7 +42,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Reneé:** Maya. Oh my god. Last time I saw you, you were up to here, eating every cookie at fellowship hour.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Reneé (tell her you're Izzy)**
     - **Izzy:** I'm... Izzy, right now. It's complicated. Maya's in here. Hi!
@@ -55,7 +55,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Reneé:** So. You left too?
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Reneé (ask about leaving)**
     - **Izzy:** How did you leave? Like, actually leave?
@@ -68,7 +68,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Heather (inside):** Hold the stone. Whatever it is. Hold the stone first.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Mira's stone (in your pocket)**
     - The stone. The hole through it. Heather's hand and yours, on it.
@@ -87,7 +87,7 @@ _(A memory scene: "sunday2-overheard")_
 
 **Reneé:** She saw. I'm so sorry I never said. I was sixteen, and then I was gone, and then it felt too late.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Reneé (thank her)**
     - **Izzy:** Thank you. For telling us. It isn't too late.
@@ -102,7 +102,7 @@ Reneé leaves something pink on the table by your cup: a rose quartz, the size o
 
 > **Objective:** Walk home
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The shop windows**
     - A bookshop with a cat asleep on the poetry, a Swedish bakery, rainbow flags in every second window.
@@ -119,7 +119,7 @@ _(A switch: Nina comes forward. The player has no control over it.)_
 
 > **Objective:** Make it safe
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The blankets (build a fort)**
     - The tiger blanket from Nepal, the couch cushions, two chairs. A fort. Nobody can see in.
@@ -132,7 +132,7 @@ _(A switch: Nina comes forward. The player has no control over it.)_
 - **Look: The notes inside**
     - Heather's round letters. Izzy's loopy ones. You find a pen.
 - **Use: The notebook (write)**
-    - Big letters, pressing hard: "MIRA TRIED. -N"
+    - Big letters, pressing hard. "MIRA TRIED. -N"
 
 **Nina:** Mira tried. She tried. Somebody tried.
 

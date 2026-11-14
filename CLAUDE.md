@@ -648,6 +648,10 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   screen heading, README and docs. **Kept on purpose:** the app id `com.cheshirecat.iamasiam` (changing it would make phones treat
   it as a different app, so updates wouldn't install over the old one), the repo name, the `IAmAsIAm.*` code namespaces, and the
   Drive folder "Game Art - I Am As I Am" (rename it in Drive if wanted; the ids stay the same). The APK artifact is now `AsIAm-apk-<run>`.
+- 2026-11-14: **No semicolons in the story Docs (owner: "fix all the semicolon issues in the docs").** Removed from every chapter's
+  notes (`//` headers become the Docs' "What happens" section), from `ink_to_doc.py`'s labels, and from story text. Write new
+  chapter notes and lines without semicolons. Also reworded 25 narration lines in older chapters that the game would have
+  shown as a "speaker" (see the speaker-line rule above).
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

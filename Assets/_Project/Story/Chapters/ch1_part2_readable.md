@@ -2,12 +2,12 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1 (Christianity), Part 2. Maya comes back after the most lost time so far, to her body "dressed up as a man". She's scared and confused. She starts taking the lost time seriously. (The breakup with Mark isn't played: it's explained in senior year.) Care: Axel is real and his transition is his own; Maya is a woman, and undoing it is about who is fronting, never a judgement on trans people. Nothing here says Axel was wrong. Explore-first: the room and the phone carry it. Very little narration.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1 (Christianity), Part 2. Maya comes back after the most lost time so far, to her body "dressed up as a man". She's scared and confused. She starts taking the lost time seriously. (The breakup with Mark isn't played: it's explained in senior year.) Care: Axel is real and his transition is his own. Maya is a woman, and undoing it is about who is fronting, never a judgement on trans people. Nothing here says Axel was wrong. Explore-first: the room and the phone carry it. Very little narration.
 
 **My guesses, for you to check:**
 
 - She comes back in her own room (an apartment Axel moved into), in front of the mirror on the closet door.
-- What she finds: short hair; a binder; men's clothes; letters addressed to "Axel"; a phone full of texts from Mark ("love you, A"), and dozens of unread invitations from Tanya that Axel ignored.
+- What she finds: short hair. A binder. Men's clothes. Letters addressed to "Axel". A phone full of texts from Mark ("love you, A"), and dozens of unread invitations from Tanya that Axel ignored.
 - She takes the binder off, and puts on the one dress left at the back of the closet.
 
 📱 **Text from Tanya:** Samhain at the shop on the 31st. Potluck. Bring nothing, or a photo of someone you miss.
@@ -28,7 +28,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Where am I?
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The mirror**
 - **Look: The desk**
@@ -56,7 +56,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 ## Steady
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The binder (take it off)**
     - The binder, off. Breath, all the way down.
@@ -67,7 +67,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Find out what happened
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The calendar on your phone**
     - May 2019. The last thing you remember is the spring of 2018.
@@ -78,7 +78,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Get some air
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The guy on the bench**
     - He lifts a hand. "Hey, man! Good luck Thursday!" You don't know him. You lift a hand back.
@@ -93,10 +93,10 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Eat something
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your ID card**
-    - The photo on your student ID: short hair, a jaw set like someone else's. The card reader beeps it through anyway.
+    - The photo on your student ID shows short hair, a jaw set like someone else's. The card reader beeps it through anyway.
 - **Use: A tray**
     - Soup and bread, eaten with your head down. A girl at the next table waves, uncertain. You don't know her.
 
@@ -104,7 +104,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Try to sleep
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The fridge**
     - Beer, hot sauce, leftover pad thai with "A" on the lid in marker.

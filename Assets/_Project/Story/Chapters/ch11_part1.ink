@@ -1,18 +1,18 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-14; the owner's Doc edits come first). Chapter 11 (Jainism), Part 1.
+// IN THE GAME as a DRAFT (Claude, 2026-11-14. The owner's Doc edits come first). Chapter 11 (Jainism), Part 1.
 // vo-speakers: Serena=serena, Maya=maya, Nirmala-ben=nirmala, Heather (inside)=heather-inside, Serena (inside)=serena-inside
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. Ahimsa. Arcata and the Bay Area, April 2034. Maya is 35.
-//  Owner: weekend trips from Arcata to a (made-up) Jain centre in the Bay Area; the guide is a Jain TEACHER; the chapter is about
-//  FORGIVENESS (Paryushana, Micchami Dukkadam) AND NOT HARMING HERSELF (ahimsa turned inward). It STARTS AS SERENA; it unlocks
+//  Owner: weekend trips from Arcata to a (made-up) Jain centre in the Bay Area. The guide is a Jain TEACHER. The chapter is about
+//  FORGIVENESS (Paryushana, Micchami Dukkadam) AND NOT HARMING HERSELF (ahimsa turned inward). It STARTS AS SERENA. It unlocks
 //  nobody (everyone is unlocked). Sarah's letter gets opened in Part 2, and Maya asks forgiveness of people she hurt in lost time.
 //
 //  Research (docs/Chapter11_JainismResearch.md): ahimsa (non-harm to every living being, jiva), aparigraha (non-attachment),
-//  anekantavada (many-sidedness). A Jain temple (derasar) holds images of the Tirthankaras; visitors take off shoes and leave
+//  anekantavada (many-sidedness). A Jain temple (derasar) holds images of the Tirthankaras. Visitors take off shoes and leave
 //  leather outside. Many Jains eat before sunset and avoid root vegetables (pulling them up kills the whole plant and the small
 //  lives in the soil). Svetambara, Digambara, Sthanakvasi and Terapanth Jains often share one centre in North America.
 //
 //  My guesses (placeholders), for the owner to correct:
-//   - The teacher: NIRMALA SHAH, "Nirmala-ben" (`nirmala_shah`, 58, she/her; "ben" means sister, a respectful Gujarati form):
+//   - The teacher: NIRMALA SHAH, "Nirmala-ben" (`nirmala_shah`, 58, she/her. "ben" means sister, a respectful Gujarati form):
 //     teaches philosophy at a community college and leads the centre's Sunday "Jainism for the curious" class for adults.
 //   - The centre (made up): the Jain Center of the Peninsula, in a converted church in a quiet suburb south of San Francisco.
 //   - Serena drives (five hours each way) because Serena handles the grown-up things.

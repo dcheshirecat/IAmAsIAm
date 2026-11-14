@@ -1,19 +1,19 @@
-// IN THE GAME as a DRAFT (Claude's guesses, marked; the owner's answers and Doc edits come first). Chapter 6 (Sikhism), Part 3.
+// IN THE GAME as a DRAFT (Claude's guesses, marked. The owner's answers and Doc edits come first). Chapter 6 (Sikhism), Part 3.
 // vo-speakers: Maya=maya, Gurleen=gurleen, Bibi Harjit=harjit
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 3. Sarbat da bhala. Kent, November 2028. Maya is 30.
 //
 //  My guesses, for the owner to correct:
-//   - Guru Nanak's Gurpurab (his birthday, by the lunar calendar; early November in 2028): an Akhand Path (the whole Guru Granth
-//     Sahib read aloud without a break, about 48 hours, by readers taking turns) ends that morning; kirtan all day; langar for
+//   - Guru Nanak's Gurpurab (his birthday, by the lunar calendar. Early November in 2028): an Akhand Path (the whole Guru Granth
+//     Sahib read aloud without a break, about 48 hours, by readers taking turns) ends that morning. Kirtan all day. Langar for
 //     everyone. Some families light lamps that night.
-//   - Bibi Harjit's story: she came from Ludhiana in 1986; when her husband died, she came to the kitchen every day, "because
+//   - Bibi Harjit's story: she came from Ludhiana in 1986. When her husband died, she came to the kitchen every day, "because
 //     my hands knew what to do when my head didn't". Chardi kala: rising spirits, even in the dark (a Sikh ideal).
 //   - Guru Nanak on women (Asa di Var, in the Guru Granth Sahib): "Why call her lesser, from whom kings are born?" Equality is
 //     the point of langar too. A young woman in a dastar (turban) reads her turn in the Akhand Path.
 //   - The Ardas (the prayer everyone stands for) ends "sarbat da bhala": may all be well, everyone. Maya can wish Adeena well,
 //     or not yet. Both are all right.
-//   - The chapter ends as Maya; it unlocks nobody (my guess; owner to decide).
+//   - The chapter ends as Maya. It unlocks nobody (my guess. Owner to decide).
 // ─────────────────────────────────────────────────────────────────────────────
 
 === ch6_part3 ===
@@ -51,7 +51,7 @@
     A young woman in a deep red dastar, reading her turn of the forty-eight hours. Her voice never hurries. Gurleen: "Simran. She's at uni with Arjan. She reads better than the uncles, don't tell them." # look: simran-reading
     -> hall
 + {hall < 4} [Look: The uncles]
-    Two old friends by the wall: one in a white turban and a long white beard, one clean-shaven in a cardigan, sharing a hymn book. Both here every Sunday for fifty years. # look: two-uncles
+    Two old friends by the wall, one in a white turban and a long white beard, one clean-shaven in a cardigan, sharing a hymn book. Both here every Sunday for fifty years. # look: two-uncles
     -> hall
 + {hall < 4} [Look: The flowers]
     The canopy is all marigolds and lights today. Somebody's grandmother has been up since three. # look: gurpurab-flowers
@@ -83,7 +83,7 @@ Gurleen: It means: the good of everyone. All of everyone. Even the ones you're m
     Yours are round now. Round-ish. The aunties have stopped re-rolling them when you're not looking. # look: maya-roti-round
     -> k
 + {k < 3} [Look: The photo by the door]
-    A faded photo taped to the wall: the old kitchen, 1990, a young woman with flour to her elbows, laughing. It takes you a second. # look: bibi-photo
+    A faded photo taped to the wall. The old kitchen, 1990, a young woman with flour to her elbows, laughing. It takes you a second. # look: bibi-photo
     -> k
 * {k >= 1} [Talk: Bibi Harjit]
 -

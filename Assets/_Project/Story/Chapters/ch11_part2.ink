@@ -1,4 +1,4 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-14; the owner's Doc edits come first). Chapter 11 (Jainism), Part 2.
+// IN THE GAME as a DRAFT (Claude, 2026-11-14. The owner's Doc edits come first). Chapter 11 (Jainism), Part 2.
 // vo-speakers: Maya=maya, Nirmala-ben=nirmala, Serena (inside)=serena-inside, Nina (inside)=nina-inside, Heather (inside)=heather-inside
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 2. Micchami Dukkadam. The Bay Area, September 2034. Maya is 36.
@@ -8,7 +8,7 @@
 //  Research: Samvatsari is the last day of the Svetambara Paryushana (2034: around September 17). Many fast. In the evening comes
 //  the long Samvatsari pratikraman (a ritual of reflection and repentance), and afterwards everyone asks forgiveness of everyone:
 //  "Micchami Dukkadam". One verse said in it: "Khamemi savve jiva, savve jiva khamantu me, mitti me savva bhuesu, veram majjha na
-//  kenai": I forgive all living beings, may all beings forgive me; I am friends with all, and enemies with none.
+//  kenai": I forgive all living beings, may all beings forgive me. I am friends with all, and enemies with none.
 //
 //  My guesses, for the owner to correct:
 //   - The letter (Claude's draft): a short note from Sarah, clearing out her office after retiring, and inside it a crayon drawing

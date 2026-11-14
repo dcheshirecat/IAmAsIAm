@@ -15,7 +15,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get ready for work
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The mirror**
     - You brush your teeth and watch someone brush her teeth.
@@ -27,14 +27,14 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Give the eleven o'clock tour
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Máximo**
     - The same tour. The same jokes. You hear yourself say them from the back of the group.
 - **Talk: Christie**
     - Christie takes the second half of your tour without being asked. "Go sit down. I've got the dinosaur."
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The snack drawer (lunch)**
     - Crackers. You eat four and can't taste them.
@@ -43,12 +43,12 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Be here
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your hands (cover your eyes)**
     - Warm dark. Her voice, very far away. Further every week.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Adeena**
     - She's looking at you. She's been looking at you for a while.
@@ -63,7 +63,7 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 
 **Adeena:** Two and a half years. I love you. And most nights, I'm at this table by myself. You're sitting there, and you're not here. I can't keep lighting candles for someone who isn't here.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Adeena (say you'll try harder)**
     - **Maya:** I'll try harder. I can... I'll be here.
@@ -80,7 +80,7 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 
 > **Objective:** Go home
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The lake**
     - Black water, a cold wind, the city lit up behind you like nothing happened.
@@ -95,11 +95,11 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 
 📱 **Text from Christie:** Heard about you and Adeena. I'm so sorry. Snack drawer is yours all week. No questions. -C
 
-In your bag, from work: chamomile tea bags, a whole row of them, taped together. "For the bad nights. -C"
+In your bag, from work, chamomile tea bags, a whole row of them, taped together. "For the bad nights. -C"
 
 📱 **Text from Tanya:** When you're ready, and only then: open a window, rosemary or salt or the bell, room by room. Say what you want the place to hold now. It's still yours.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The calendar**
     - Friday. Friday is a hole in the week now.
@@ -125,7 +125,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Stay for the singing
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The drums**
     - Hand drums, a guitar, a man with a tambourine and his eyes shut. Somebody's grandma, dancing.
@@ -134,7 +134,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 - **Look: The candles**
     - Two candles on a little table. A woman lighting them, and covering her eyes.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Mira's stone (hold on)**
     - The stone. Your finger through the hole. The drums, coming back.
@@ -145,7 +145,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Find a seat at the back
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The bimah**
     - A rabbi in a flowered tallit, a cantor with a guitar. Half the prayers in English.
@@ -159,7 +159,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 **Tigist:** Welcome, welcome. You found the flyer? Good. Today is Sigd. We fast, we pray, we remember Jerusalem, and tonight we eat. Sit anywhere.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The kes**
     - An old man in white, a white turban, a bright umbrella held over him like a little sky. He reads in a language you've never heard.
@@ -171,7 +171,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 **Tigist:** For a thousand years, far from everyone, we kept this. Nobody told us we were Jews. We knew. Sigd is the day we say it again.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Tigist (ask why the umbrellas)**
     - **Maya:** Why the umbrellas?
@@ -186,7 +186,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 **Effie:** Adeena's my cousin. You're still my friend. Those are both allowed. Sit.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The lights**
     - The lamps on timers. Nobody touches a switch from Friday night to Saturday night. Rest, Effie says, from making things happen.
@@ -204,7 +204,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 **Rabbi Abe:** I walk every morning. Doctor says it's good for the heart. I say I'm seventy-eight, my heart's done fine, it's my knees that want a word.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The lake**
     - Grey to the edge of the world. Waves folding over and over on the rocks.
@@ -227,12 +227,12 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 📱 **Text from Tanya:** Thank you for telling me. You're not alone in it. Let's find you someone to talk to. I'll help.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your phone**
 _(Maya's phone opens: the player can read her messages, then closes it.)_
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The windowsill**
     - The windowsill. Empty. A ring of old wax in the corner.

@@ -1,11 +1,11 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 8 (Druidry), Part 3.
+// IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 8 (Druidry), Part 3.
 // vo-speakers: Maya=maya, Bríd=brid, Lily=lily
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 3. Samhain. County Meath, October 2030. Maya is 32.
-//  Research: Tlachtga, the Hill of Ward near Athboy, where tradition says the great Samhain fire was lit; a fire festival is
-//  held there again in modern times. Samhain: the dark half of the year begins; the dead are remembered.
-//  My guesses, for the owner to correct: the grove remembers its dead by name at the fire; Maya names Mira, her grandparents,
-//  and (Lily, sharing time) "the lady at church"; the last night at Bríd's; she leaves for Seattle on All Souls'. `# chapter-end`
+//  Research: Tlachtga, the Hill of Ward near Athboy, where tradition says the great Samhain fire was lit. A fire festival is
+//  held there again in modern times. Samhain: the dark half of the year begins. The dead are remembered.
+//  My guesses, for the owner to correct: the grove remembers its dead by name at the fire. Maya names Mira, her grandparents,
+//  and (Lily, sharing time) "the lady at church". The last night at Bríd's. She leaves for Seattle on All Souls'. `# chapter-end`
 //  unlocks Lily (owner).
 // ─────────────────────────────────────────────────────────────────────────────
 

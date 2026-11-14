@@ -4,13 +4,13 @@
 //  Part 2. Coming back. Champaign-Urbana, May 2019 (the end of junior year). Maya is 20.
 //  Owner's beats: Maya comes back after the most lost time so far, to her body "dressed up as a man". She's scared and
 //  confused. She starts taking the lost time seriously. (The breakup with Mark isn't played: it's explained in senior year.)
-//  Care: Axel is real and his transition is his own; Maya is a woman, and undoing it is about who is fronting, never a
+//  Care: Axel is real and his transition is his own. Maya is a woman, and undoing it is about who is fronting, never a
 //  judgement on trans people. Nothing here says Axel was wrong.
 //  Explore-first: the room and the phone carry it. Very little narration.
 //
 //  My guesses, for the owner to correct:
 //   - She comes back in her own room (an apartment Axel moved into), in front of the mirror on the closet door.
-//   - What she finds: short hair; a binder; men's clothes; letters addressed to "Axel"; a phone full of texts from Mark
+//   - What she finds: short hair. A binder. Men's clothes. Letters addressed to "Axel". A phone full of texts from Mark
 //     ("love you, A"), and dozens of unread invitations from Tanya that Axel ignored.
 //   - She takes the binder off, and puts on the one dress left at the back of the closet.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -121,7 +121,7 @@ Maya: A whole year. # vo: ch1-christianity_maya_0013
 # objective: Eat something
 - (hall)
 + {hall < 2} [Look: Your ID card]
-    The photo on your student ID: short hair, a jaw set like someone else's. The card reader beeps it through anyway. # look: id-photo
+    The photo on your student ID shows short hair, a jaw set like someone else's. The card reader beeps it through anyway. # look: id-photo
     -> hall
 * [Use: A tray]
     Soup and bread, eaten with your head down. A girl at the next table waves, uncertain. You don't know her. # look: soup-head-down

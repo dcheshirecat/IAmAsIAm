@@ -165,7 +165,7 @@ Hannah: No rabbi tonight. It's us. We read, we argue, we eat. Somebody leads, it
 # place: lgbtq_synagogue
 # shot: wide
 # objective: Find Adeena in the crowd
-// Pride Shabbat at an LGBTQ synagogue (placeholder; fictional congregation).
+// Pride Shabbat at an LGBTQ synagogue (placeholder. Fictional congregation).
 - (crowd)
 + {crowd < 3} [Look: The flags]
     A rainbow flag beside the ark. A trans flag beside that. Nobody explaining why. # look: pride-shabbat-flags

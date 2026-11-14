@@ -2,12 +2,12 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1 (Christianity), Part 4. COVID: Maya alone in her dorm; a Zoom graduation where no one speaks to her, quiet and lonely. Then a prayer service at Gracie's ministry: they sing a hymn Maya loved as a child; she can't leave without a major disruption, is too scared to, and starts dissociating. The screen fades to black, and Jacob's lines are spoken as a light appears. That's how Chapter 1 ends (Jacob is its unlock). Then Chapter 1.5 is played, as Axel the first time.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1 (Christianity), Part 4. COVID: Maya alone in her dorm. A Zoom graduation where no one speaks to her, quiet and lonely. Then a prayer service at Gracie's ministry: they sing a hymn Maya loved as a child. She can't leave without a major disruption, is too scared to, and starts dissociating. The screen fades to black, and Jacob's lines are spoken as a light appears. That's how Chapter 1 ends (Jacob is its unlock). Then Chapter 1.5 is played, as Axel the first time.
 
 **My guesses, for you to check:**
 
 - The hymn is "This Little Light of Mine" (the prologue's title), which Maya sang in First Day School.
-- The prayer service is in June 2020, outdoors, masked and distanced, on folding chairs in rows; Maya is in the middle of a row, and leaving means walking in front of everyone while they sing.
+- The prayer service is in June 2020, outdoors, masked and distanced, on folding chairs in rows. Maya is in the middle of a row, and leaving means walking in front of everyone while they sing.
 - Jacob (14, Catholic, watches the exits) speaks to Maya, inside, gently and practically.
 
 ## Lockdown
@@ -16,7 +16,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Selene:** my mom is making me come home. im so sorry. call me every night ok
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - The quad, empty. A single person with a dog, very far away.
@@ -34,7 +34,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Pick up dinner
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The tables**
     - Chairs up on every table. Tape on the floor: stand here, six feet.
@@ -47,14 +47,14 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Eat dinner
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - One other window lit across the quad. You've never met them. You leave your light on so they're not the only one.
 - **Use: The box**
     - Lukewarm pasta from the box, at the desk, the laptop open on a Zoom you're not in.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your phone (a dot to Tanya)**
     - "." Sent. Tanya, at once: "." and a heart.
@@ -67,17 +67,17 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Graduate
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The laptop (the ceremony)**
     - A grid of faces. Muted. Names scrolling.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your name**
     - "Maya ___." Two seconds on the screen. Gone.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The chat**
     - "congrats everyone!!" "CLASS OF 2020" Nobody says your name.
@@ -94,7 +94,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 📱 **Text from Selene:** check your mailbox!! happy graduation. i made you something
 
-A padded envelope from Selene: twelve cards, hand-painted, one word on each. Her own oracle deck.
+A padded envelope from Selene, with twelve cards, hand-painted, one word on each. Her own oracle deck.
 
 ## Service
 
@@ -102,7 +102,7 @@ A padded envelope from Selene: twelve cards, hand-painted, one word on each. Her
 
 **Gracie:** You came! Six feet, I know, I'm hugging you from here. Imagine a hug. Okay, sit anywhere. Middle's nicest, there's shade.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The rows of chairs**
     - Folding chairs in rows, far apart. Masks. Everyone very still.
@@ -114,7 +114,7 @@ A padded envelope from Selene: twelve cards, hand-painted, one word on each. Her
 
 "This little light of mine."
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The way out**
     - The path, behind the last row. Every face would turn.
@@ -137,7 +137,7 @@ _(A switch: Jacob comes forward. The player has no control over it.)_
 
 **Jacob:** There's a gate behind the chapel. When they sit down, we'll go. I know the way.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Wait (let him)**
     - A light. Small. Steady.

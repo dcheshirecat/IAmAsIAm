@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 4 (Islam), Part 1. after Maya gets back from Nepal. The chapter starts as Izzy; Izzy takes over along with Heather; Maya only appears sometimes. The guide is a Muslim chaplain at a psychiatric day ward. Islam shown: Sufi practice and only what Muslims consider Islam.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 4 (Islam), Part 1. after Maya gets back from Nepal. The chapter starts as Izzy. Izzy takes over along with Heather. Maya only appears sometimes. The guide is a Muslim chaplain at a psychiatric day ward. Islam shown: Sufi practice and only what Muslims consider Islam.
 
 **My guesses, for you to check:**
 
@@ -17,7 +17,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get to the day program by nine
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The fridge**
     - Oat milk, three cartons. Hot sauce. A note in Heather's square letters: "EAT BREAKFAST. -H"
@@ -30,7 +30,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Ride to the hospital
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - September light on the rooftops. Your stop is the one with the hospital sign.
@@ -45,7 +45,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Heather (inside):** Write "Maya". It's her name on the forms.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The name tags**
     - A sheet of stickers and a fat marker. You write "IZZY", then, smaller, underneath, "(Maya)".
@@ -63,7 +63,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get through skills group
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The whiteboard**
     - "TIPP: Temperature. Intense exercise. Paced breathing. Paired muscle relaxation." Someone has drawn a little ice cube with a face.
@@ -74,7 +74,7 @@ Feet on the floor. The cold of the water bottle in your hands. _(the player does
 
 > **Objective:** Go to the chaplain's hour
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The arrow on the ceiling**
     - A small arrow, painted on a ceiling tile, and one word: "Qibla". The direction of Mecca, for anyone who prays.
@@ -90,7 +90,7 @@ Feet on the floor. The cold of the water bottle in your hands. _(the player does
 
 **Chaplain Amal:** Only on Tuesdays. It's Thursday.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Chaplain Amal (ask why she does this)**
     - **Izzy:** Why do you do this? Sit with sad people all day?
@@ -103,7 +103,7 @@ Feet on the floor. The cold of the water bottle in your hands. _(the player does
 
 _(A switch: Maya comes forward. The player has no control over it.)_
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The name tag**
     - "IZZY (Maya)". In your writing. Round letters. Not yours.
@@ -120,14 +120,14 @@ _(A switch: Izzy comes forward. The player has no control over it.)_
 
 > **Objective:** Make dinner
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The name tag**
     - "IZZY", in Sharpie, still stuck to your shirt. You don't take it off.
 - **Use: The stove (pasta)**
     - Pasta with far too much garlic. Heather does the dishes.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bed**
     - Mira's stone and the hematite on the nightstand. Day one of the program. Survived it.
@@ -136,7 +136,7 @@ _(A switch: Izzy comes forward. The player has no control over it.)_
 
 > **Objective:** Mabon! Apples. Thanks. Go.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The apples**
     - A bag of apples from the corner store. Three different kinds, because why not.

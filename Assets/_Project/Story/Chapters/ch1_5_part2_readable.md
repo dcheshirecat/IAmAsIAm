@@ -2,12 +2,12 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1.5 (Axel), Part 2. Mark is instantly kind and funny and matches Axel's values and humour; dates, studying, cuddling, parties. They go to Pride with Mark's church, which is queer-friendly and warm. Christmas with Mark's family, at their Methodist church. Other alters' signs show up for Axel too, but less than for Maya.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1.5 (Axel), Part 2. Mark is instantly kind and funny and matches Axel's values and humour. Dates, studying, cuddling, parties. They go to Pride with Mark's church, which is queer-friendly and warm. Christmas with Mark's family, at their Methodist church. Other alters' signs show up for Axel too, but less than for Maya.
 
 **My guesses, for you to check:**
 
-- Pride is the town's Pride festival in September; Mark's church walks with a banner. Axel goes as Mark's date.
-- (Owner) Mark's hometown is Indianapolis; his parents' Methodist church has a candlelight service on Christmas Eve.
+- Pride is the town's Pride festival in September. Mark's church walks with a banner. Axel goes as Mark's date.
+- (Owner) Mark's hometown is Indianapolis. His parents' Methodist church has a candlelight service on Christmas Eve.
 - The signs: a note on the fridge in round letters (Izzy), the bed made with hospital corners (Nina).
 
 ## Morning
@@ -16,7 +16,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Tanya:** Thursday class tonight. We miss you. No pressure, just a door that's open. T.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your phone**
     - A voicemail. "Hi, this is Linda from the circulation desk, we haven't seen you for three shifts..." You delete it. Whose shifts?
@@ -31,7 +31,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Mark:** Okay. Page forty. "Durkheim argues"... no. I can't. Your couch is too comfortable. This is your fault.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Mark**
     - Mark, upside down on the couch, the book on his face.
@@ -46,7 +46,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Make dinner with Mark
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Mark**
     - Mark chopping an onion very slowly and narrating it like a cooking show.
@@ -59,7 +59,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Mark:** There! The banner with the dove. That's us. Well, them. Well, us. You're with me, so you're us.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The banner**
     - "St. Luke's Episcopal Church: All Are Welcome. We Mean It." A rainbow dove.
@@ -76,7 +76,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Find Mark
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your costume**
     - Black robe, plastic scythe, a name tag: "HELLO, MY NAME IS DEATH."
@@ -94,7 +94,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Cassie:** You must be Axel! We've heard so much. Come in, come in, you're freezing.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The candles**
     - A small candle in every hand, a paper ring around each one to catch the wax.
@@ -104,7 +104,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Mark:** You okay? You've gone quiet. You never go quiet.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Mark (tell him churches make you angry)**
     - **Axel:** Churches make me angry. Not this one. Just... the idea. I grew up in one. Long story.
@@ -113,7 +113,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
     - **Axel:** I'm fine. Just calculating how many open flames are in this building. It's a lot.
     - **Mark:** Fair. Fire safety is a spiritual practice.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The bed**
     - The bed, made with tight corners, the pillow squared. You don't remember making it.

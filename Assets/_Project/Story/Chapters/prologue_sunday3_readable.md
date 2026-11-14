@@ -8,21 +8,21 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 - Spring (May). Mira, now about 74, is moving to Oregon to live near her daughter, Ellen.
 - Mira gives Maya a smooth stone from her garden ("something to hold"): the grounding-object skill.
-- Mira gives Maya her new address; Maya means to write and doesn't.
-- The first time loss: after the goodbye, Maya is suddenly at home in her room, with no memory of the drive. Nina (11, "the minister's perfect, quiet child") did the smiling and the hours; she isn't named until Sunday 4.
+- Mira gives Maya her new address. Maya means to write and doesn't.
+- The first time loss: after the goodbye, Maya is suddenly at home in her room, with no memory of the drive. Nina (11, "the minister's perfect, quiet child") did the smiling and the hours. She isn't named until Sunday 4.
 
 ## Morning
 
 > **Objective:** Look perfect for church
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The mirror**
     - A smile. Practiced until it looks right.
 - **Use: The blue dress**
     - The blue dress, ironed last night. The collar straight.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your hair**
     - One hundred brushes. The braid. The clip.
@@ -31,7 +31,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Bring the bulletins
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bulletins**
     - A stack of bulletins, still warm from the printer.
@@ -40,14 +40,14 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Make breakfast
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Mommy**
     - Mommy at the table, reading her sermon out loud to the salt shaker.
 - **Use: The toaster**
     - Two slices for Mommy, one for you. Hers buttered to the edges, the way she likes.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Mommy's travel mug**
     - Coffee, milk, no sugar, lid on tight.
@@ -72,7 +72,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Rebecca:** Thanks. Will, wait up!
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The Carters**
     - Mr. Carter holding the door. Reneé on her crutches. A nod, the kind big kids give little kids.
@@ -90,7 +90,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Mira:** I leave on Thursday.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Mira (say it's great news)**
     - **Maya:** That's great! Oregon is really pretty. We did it in social studies.
@@ -107,7 +107,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Tell Mira the truth
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Mira (say you're fine)**
     - **Maya:** I'm fine! Really. I'm good at looking after myself. Mom says I'm very independent.
@@ -125,7 +125,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Mira:** From my garden. I used to hold it in meeting, when my mind wandered off. You can have it now. For when you feel far away.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Mira's stone**
     - A stone, grey and flat and smooth as soap, with a hole worn right through it by water. Just big enough for your fingertip.
@@ -136,12 +136,12 @@ Something to hold. _(the player does the "grounding-object" exercise here)_
 
 **Maya:** I will. I promise.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The card**
     - Mira's new address, in Oregon. Shaky blue pen.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Mira, at the door**
     - Mira's hand, lifting, at the door.
@@ -152,7 +152,7 @@ Something to hold. _(the player does the "grounding-object" exercise here)_
 
 > **Objective:** What happened?
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The clock**
 - **Look: Your pillow**
@@ -177,17 +177,17 @@ The blue dress on its hanger. The sash tied in a bow.
 
 _(A memory scene: "nina-lost-hours")_
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The car, at the curb**
     - Waiting at the curb with the bulletins. Smiling for Mrs. Hines.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The kitchen**
     - Toast, cut into triangles. The plate rinsed. Nobody asked.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The closet**
     - The dress, hung up perfectly. The sash, a bow. Good girls are neat.
@@ -196,17 +196,17 @@ _(A memory scene: "nina-lost-hours")_
 
 > **Objective:** Write to Mira
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: A piece of paper**
     - "Dear Mira,"
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: A piece of paper**
     - "Dear Mira,"
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Mira's stone**
     - The stone, in your pocket. Every Sunday.

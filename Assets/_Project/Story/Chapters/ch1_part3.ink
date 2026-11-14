@@ -10,11 +10,11 @@
 //
 //  My guesses, for the owner to correct:
 //   - How it's explained: Mark's long email, which Maya finds in senior year and reads. Maya ended it in May, in a way
-//     Mark didn't understand. He isn't cruel; he's hurt.
+//     Mark didn't understand. He isn't cruel. He's hurt.
 //   - The abandonment: Axel's friends unfollow her, leave the group chat, look away on the quad (Jordan, Sam and Riley
 //     are placeholder names).
 //   - Tanya and Selene welcome her back at Samhain 2019 at The Circle, with no questions she has to answer.
-//   - The donation drive is a coat drive in October; Gracie runs it with a clipboard and a lot of enthusiasm.
+//   - The donation drive is a coat drive in October. Gracie runs it with a clipboard and a lot of enthusiasm.
 // ─────────────────────────────────────────────────────────────────────────────
 
 === ch1_part3 ===

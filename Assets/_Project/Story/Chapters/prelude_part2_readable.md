@@ -2,22 +2,22 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prelude (Wicca), Part 2. lost time grows: more blackouts, and signs of others (notes, things moved). Maya doesn't understand it yet. She isn't serious about Wicca yet. Explore-first: Maya's apartment is the scene. The signs are things to find, never explained. Hidden memory (owner's rule): the tarot deck glows only while Izzy is fronting, and shows Izzy buying it. Nothing ever tells the player; for anyone else it's simply not one of the glowing things.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Prelude (Wicca), Part 2. lost time grows: more blackouts, and signs of others (notes, things moved). Maya doesn't understand it yet. She isn't serious about Wicca yet. Explore-first: Maya's apartment is the scene. The signs are things to find, never explained. Hidden memory (owner's rule): the tarot deck glows only while Izzy is fronting, and shows Izzy buying it. Nothing ever tells the player. For anyone else it's simply not one of the glowing things.
 
 **My guesses, for you to check:**
 
-- (Owner: yes) The signs are Izzy's (22 in the present; Wiccan; runs daily life on the lost-time days): a note signed "I", candles on the windowsill, a tarot deck Maya didn't buy, groceries she didn't buy.
+- (Owner: yes) The signs are Izzy's (22 in the present. Wiccan. Runs daily life on the lost-time days): a note signed "I", candles on the windowsill, a tarot deck Maya didn't buy, groceries she didn't buy.
 - Maya missed a midterm she has no memory of missing.
 - Selene is drifting: she has a girlfriend now and less time. She saw "Maya" at a full moon meet-up at the shop that Maya doesn't remember.
 - The shop is "The Circle" (owner), a small witchcraft shop in town.
 
-_(Quietly, in Maya's sent texts, written by Izzy during lost time; never pointed out: to Selene: "omg yes. tues!! im bringing the oat milk")_
+_(Quietly, in Maya's sent texts, written by Izzy during lost time, never pointed out: to Selene: "omg yes. tues!! im bringing the oat milk")_
 
 ## Apartment
 
 > **Objective:** Get ready for class
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The fridge**
 - **Look: The windowsill**
@@ -43,17 +43,17 @@ A tarot deck, the box soft at the corners.
 
 _(A memory scene: "izzy-the-deck")_
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The shelf**
     - Decks, a whole wall of them. This one, with the moon on the box.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The person at the counter**
     - Short grey hair. Reading glasses on a chain. A look over the top of them, kind, and not fooled.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The deck**
     - Cash from the jar. A paper bag. A flyer tucked inside it: "Classes, Thursdays."
@@ -72,7 +72,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 **Selene:** Maya! Hey! Last night was so fun. You were so funny. I didn't know you could do voices.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Selene (pretend you remember)**
     - **Maya:** Ha. Yeah. It was fun.
@@ -85,12 +85,12 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 **Selene:** I have to run, Jess is waiting. We should get coffee! For real this time.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Selene, going**
     - Selene's scarf, getting smaller across the quad.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Mira's stone**
     - The stone's hole, worn smooth. Your thumb around it, around and around.
@@ -101,7 +101,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Get lunch before your shift
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The receipt**
     - Your card was used here on Tuesday. Two oat lattes. You don't drink lattes.
@@ -112,14 +112,14 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Start your shift
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The returns**
     - The returns, the date stamp, the beep of the scanner. Normal. Normal is good.
 - **Look: The holds shelf**
     - A book on hold, under your name. "Wicca: A Guide for the Solitary Practitioner." You don't remember asking for it.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The book (check it out)**
     - You check it out to yourself. The scanner beeps, like it's nothing.
@@ -130,14 +130,14 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Make dinner
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The windowsill**
     - The deck on the sill, square to the edge. Exactly where you didn't leave it.
 - **Use: The stove (ramen)**
     - Ramen, an egg cracked in, eaten from the pan.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bed**
     - You set two alarms. Then a third.

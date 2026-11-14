@@ -6,19 +6,19 @@
 //  Owner's beats so far: Christie, the old friend from work, tells Maya that Adeena married Michael, and it's triggering (they
 //  shared the Shabbat candles every Friday). Maya is in Seattle (since Chapter 5).
 //
-//  My guesses, for the owner to correct (I asked; these are placeholders until you answer):
-//   - Where/when: still Seattle, 2028. The gurdwara is in Kent, south of Seattle (fictional; the area has several real ones).
+//  My guesses, for the owner to correct (I asked. These are placeholders until you answer):
+//   - Where/when: still Seattle, 2028. The gurdwara is in Kent, south of Seattle (fictional. The area has several real ones).
 //   - The guide: BIBI HARJIT KAUR (`bibi_harjit`, placeholder name, ~70, she/her), who has run the Sunday langar kitchen for
 //     thirty-five years. "Bibi ji" is how people speak to an older woman. Langar (the free community kitchen) and seva
 //     (selfless service) are the most open parts of Sikhi: anyone may eat, anyone may help.
 //   - Maya gets there through GURLEEN (`gurleen`, placeholder name, she/her), a colleague at the Burke. Gurleen's family shows
-//     how many ways there are to be Sikh: she cuts her hair and comes for the food and her grandmother; her father wears a
-//     turban and keeps his hair, but isn't initiated; her brother Arjan (19) took amrit (joined the Khalsa) last year, his own
+//     how many ways there are to be Sikh: she cuts her hair and comes for the food and her grandmother. Her father wears a
+//     turban and keeps his hair, but isn't initiated. Her brother Arjan (19) took amrit (joined the Khalsa) last year, his own
 //     choice, and wears the five Ks.
-//   - Starts as Maya and unlocks nobody (owner: Serena and Lily are left; tell me if one of them belongs here).
-//  What a visitor does (research: Nesbitt 2016, and gurdwara visitor guides): cover the head, shoes off, wash hands; in the
-//  darbar hall, bow to the Guru Granth Sahib (the scripture, the living Guru) if you wish, sit on the floor; karah prasad in
-//  cupped hands; in langar sit in rows (pangat) on the floor as equals, take only what you'll eat.
+//   - Starts as Maya and unlocks nobody (owner: Serena and Lily are left. Tell me if one of them belongs here).
+//  What a visitor does (research: Nesbitt 2016, and gurdwara visitor guides): cover the head, shoes off, wash hands. In the
+//  darbar hall, bow to the Guru Granth Sahib (the scripture, the living Guru) if you wish, sit on the floor. Karah prasad in
+//  cupped hands. In langar sit in rows (pangat) on the floor as equals, take only what you'll eat.
 // ─────────────────────────────────────────────────────────────────────────────
 
 === ch6_part1 ===
@@ -89,7 +89,7 @@ Gurleen: You were amazing with the dinosaur kid. I'd have cried. I'm going to my
 -> darbar
 
 = darbar
-// The darbar hall: the Guru Granth Sahib on a raised platform under a canopy, wrapped in cloth (rumalas); the granthi sits behind
+// The darbar hall: the Guru Granth Sahib on a raised platform under a canopy, wrapped in cloth (rumalas). The granthi sits behind
 // it and waves the chaur (a whisk) over it. Kirtan: hymns from it, sung with harmonium and tabla. Ik Onkar: One God.
 # place: gurdwara_darbar_hall
 # shot: wide
@@ -105,7 +105,7 @@ Gurleen: You were amazing with the dinosaur kid. I'd have cried. I'm going to my
     One symbol stitched in gold on the canopy: Ik Onkar. Gurleen whispers: One. There is One. Everything. # look: ik-onkar
     -> hall
 + {hall < 5} [Look: The singers]
-    Three men on a low stage: a harmonium, a pair of tabla drums, voices that go up and up. You don't know the words. Your shoulders come down anyway. # look: kirtan
+    Three men on a low stage, with a harmonium, a pair of tabla drums, voices that go up and up. You don't know the words. Your shoulders come down anyway. # look: kirtan
     -> hall
 + {hall < 5} [Look: Gurleen's family]
     Her nani, small and fierce, in white. Her dad in a navy turban. Her little brother Arjan, in a turban too, with a steel bracelet and a short sword in a sheath at his side. "He took amrit last year," Gurleen whispers. "His choice. I cut my hair. We're all Sikh." # look: gurleen-family

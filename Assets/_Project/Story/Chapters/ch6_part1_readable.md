@@ -6,10 +6,10 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **My guesses, for you to check:**
 
-- Where/when: still Seattle, 2028. The gurdwara is in Kent, south of Seattle (fictional; the area has several real ones).
+- Where/when: still Seattle, 2028. The gurdwara is in Kent, south of Seattle (fictional. The area has several real ones).
 - The guide: BIBI HARJIT KAUR (`bibi_harjit`, placeholder name, ~70, she/her), who has run the Sunday langar kitchen for thirty-five years. "Bibi ji" is how people speak to an older woman. Langar (the free community kitchen) and seva (selfless service) are the most open parts of Sikhi: anyone may eat, anyone may help.
-- Maya gets there through GURLEEN (`gurleen`, placeholder name, she/her), a colleague at the Burke. Gurleen's family shows how many ways there are to be Sikh: she cuts her hair and comes for the food and her grandmother; her father wears a turban and keeps his hair, but isn't initiated; her brother Arjan (19) took amrit (joined the Khalsa) last year, his own choice, and wears the five Ks.
-- Starts as Maya and unlocks nobody (owner: Serena and Lily are left; tell me if one of them belongs here).
+- Maya gets there through GURLEEN (`gurleen`, placeholder name, she/her), a colleague at the Burke. Gurleen's family shows how many ways there are to be Sikh: she cuts her hair and comes for the food and her grandmother. Her father wears a turban and keeps his hair, but isn't initiated. Her brother Arjan (19) took amrit (joined the Khalsa) last year, his own choice, and wears the five Ks.
+- Starts as Maya and unlocks nobody (owner: Serena and Lily are left. Tell me if one of them belongs here).
 
 📱 **Text from Tanya:** How's the rain? How are all of you? I pulled the Star for you this morning. Take that however you like.
 
@@ -17,7 +17,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Close up after the family day
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The craft tables**
     - Glue sticks, paper whales, one small shoe. Two hundred children came through today and you were here for every one of them.
@@ -27,7 +27,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Gurleen:** You were amazing with the dinosaur kid. I'd have cried. I'm going to my nani's gurdwara tomorrow. Do you want to come? There's food. There is always food.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Gurleen (say yes)**
     - **Maya:** Yes. I'd love to. What do I need to know?
@@ -41,7 +41,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Gurleen:** outside in 10!! dont eat breakfast. i mean it. nani will be offended
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The scarf**
     - Gurleen's blue scarf, folded on the chair. You practise tying it in the mirror. It looks like a scarf someone else tied.
@@ -53,7 +53,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Ride to Kent
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The road**
     - I-5 in the rain, the warehouses, the mountain hiding. Forty minutes south.
@@ -66,7 +66,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Cover your head and go in
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The shoe room**
     - Racks of shoes, and a basket of orange scarves for anyone who forgot. You tie the blue one Gurleen lent you. Water for your hands, cold.
@@ -75,7 +75,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Look: The canopy**
     - One symbol stitched in gold on the canopy: Ik Onkar. Gurleen whispers: One. There is One. Everything.
 - **Look: The singers**
-    - **Three men on a low stage:** a harmonium, a pair of tabla drums, voices that go up and up. You don't know the words. Your shoulders come down anyway.
+    - Three men on a low stage, with a harmonium, a pair of tabla drums, voices that go up and up. You don't know the words. Your shoulders come down anyway.
 - **Look: Gurleen's family**
     - Her nani, small and fierce, in white. Her dad in a navy turban. Her little brother Arjan, in a turban too, with a steel bracelet and a short sword in a sheath at his side. "He took amrit last year," Gurleen whispers. "His choice. I cut my hair. We're all Sikh."
 - **Wait (sit on the floor with everyone)**
@@ -88,7 +88,7 @@ At the end everyone stands for a long prayer, hands together. A sweet, warm and 
 
 > **Objective:** Sit down for langar
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The rows**
     - Long mats on the floor, rows and rows. A doctor next to a truck driver next to a toddler next to you. Nobody sits higher.
@@ -98,7 +98,7 @@ At the end everyone stands for a long prayer, hands together. A sweet, warm and 
 
 Warm roti in your two hands. Dal. Something with potatoes. Rice pudding. Nobody asked who you are, or what you believe, or whether you deserve it.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The plate (eat slowly)**
     - Every bite. Your knees on the mat, the hum of a hundred people eating. You're here.
@@ -109,7 +109,7 @@ Warm roti in your two hands. Dal. Something with potatoes. Rice pudding. Nobody 
 
 > **Objective:** Take your plate back
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The pots**
     - Pots big enough to bathe in. A man stirring one with a paddle.
@@ -119,7 +119,7 @@ Warm roti in your two hands. Dal. Something with potatoes. Rice pudding. Nobody 
 
 **Bibi Harjit:** You. New girl with Gurleen. You ate? Good. You want to help? Wash your hands. Sit.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Bibi Harjit (sit down)**
     - **Maya:** Okay. Show me.
@@ -131,7 +131,7 @@ A ball of dough. A small board. A rolling pin. Yours comes out shaped like Ohio.
 
 **Bibi Harjit:** Turn it. Press, turn, press, turn. Don't think. Say Waheguru if you want, the hands like it.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The rolling pin (press and turn)**
     - Press. Turn. Press. Turn. The board, the flour, the warmth from the griddle. Nearly round.
@@ -150,14 +150,14 @@ A ball of dough. A small board. A rolling pin. Yours comes out shaped like Ohio.
 
 > **Objective:** Get home
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your hands**
     - Flour still in the creases of your knuckles. You don't wash it off yet.
 - **Use: The fridge (Gurleen's nani's leftovers)**
     - Three foil packets Gurleen's nani pressed on you at the door. Dal, sabzi, two rotis. Dinner, and lunch tomorrow.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bed**
     - Your feet ache from the kitchen floor in a good way. Press, turn, press, turn, until you're asleep.

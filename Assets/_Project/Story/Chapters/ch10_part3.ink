@@ -1,16 +1,16 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-14; the owner's Doc edits come first). Chapter 10 (Unitarian Universalism), Part 3.
+// IN THE GAME as a DRAFT (Claude, 2026-11-14. The owner's Doc edits come first). Chapter 10 (Unitarian Universalism), Part 3.
 // vo-speakers: Maya=maya, Anabelle=anabelle, Serena (inside)=serena-inside, Heather (inside)=heather-inside, Lily (inside)=lily-inside
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 3. Flower Communion. Arcata, June 2033. Maya is 34.
-//  Owner: a spring Flower Communion; the chapter is about belonging; it ends by unlocking Serena.
+//  Owner: a spring Flower Communion. The chapter is about belonging. It ends by unlocking Serena.
 //
 //  Research: the Flower Communion was created by Norbert Čapek, the founder of the Unitarian church in Prague, in 1923. Everyone
-//  brings a flower; they all go into one big vase; at the end everyone takes home a different flower than the one they brought.
+//  brings a flower. They all go into one big vase. At the end everyone takes home a different flower than the one they brought.
 //  Many UU congregations hold it in late spring.
 //
 //  My guesses, for the owner to correct:
 //   - Maya brings an armful: one different flower for each of them in the system. She doesn't explain. Nobody asks.
-//   - Sarah's letter arrives in April. Maya hasn't opened it yet; it waits on the altar, under Mira's stone, until she's ready.
+//   - Sarah's letter arrives in April. Maya hasn't opened it yet. It waits on the altar, under Mira's stone, until she's ready.
 //     (What it says, and whether she ever opens it, is the owner's to decide.)
 // ─────────────────────────────────────────────────────────────────────────────
 

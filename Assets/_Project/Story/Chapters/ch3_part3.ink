@@ -4,10 +4,10 @@
 //  Part 3. Noble silence. Dharma Shringa, Budhanilkantha, and Boudha, May 2026. Maya is 27.
 //  Owner's beats: a 10-day silent meditation course (no talking until day 10). It goes wrong: Maya dissociates badly, and her
 //  host doesn't notice until it's too late. Then Heather comes out, at the Buddhist temple (the monastery behind the guest
-//  house). Heather isn't unlocked yet (only at the end of the chapter); this is a scripted switch.
+//  house). Heather isn't unlocked yet (only at the end of the chapter). This is a scripted switch.
 //
 //  My guesses, for the owner to correct:
-//   - Maya never tells anyone how bad it is. Students may speak to the teacher when necessary; Maya says she's fine.
+//   - Maya never tells anyone how bad it is. Students may speak to the teacher when necessary. Maya says she's fine.
 //     The course isn't the villain: the silence, a fresh diagnosis and not saying anything are.
 //   - Izzy goes quiet inside too. The days blur.
 //   - Day 11: Pasang picks her up, chatting happily, and notices nothing. That night Maya is gone (lost time), and Pasang

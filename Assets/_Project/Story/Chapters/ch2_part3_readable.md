@@ -14,7 +14,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get ready for work
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The windowsill**
     - A candle. One, tall, in a glass. Lit. Burning low, like it's been burning all night.
@@ -33,7 +33,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get to work
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - Snow on the tracks, the lake frozen white at the edges.
@@ -44,7 +44,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Give the noon tour
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The tour group**
     - Six retirees and a man who keeps correcting your Latin. You let him.
@@ -57,14 +57,14 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Make dinner
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The windowsill**
     - The candle, burnt down to nothing. A ring of wax on the sill.
 - **Use: The stove (soup)**
     - Soup from a can. You eat it at the window, looking at the ring of wax.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bed**
     - You leave the hall light on. You don't know why.
@@ -73,7 +73,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Light the windows for Imbolc
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The windowsill**
     - The tall candle's stub is still there from last month. You leave it where it is.
@@ -90,7 +90,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Ruth:** You're Maya! Adeena told us nothing, which means she likes you very much. Sit, sit. You're next to Lee. I'm sorry in advance.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Lee**
     - **Lee:** I don't believe in God, and I'm here every year. Ask me why. It's the people. And the brisket. Mostly the people.
@@ -110,7 +110,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Hannah:** No rabbi tonight. It's us. We read, we argue, we eat. Somebody leads, it rotates. It's my turn, so it's chaos.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The books**
     - A stack of prayer books someone made themselves, photocopied, stapled, full of notes in the margins.
@@ -122,7 +122,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Find Adeena in the crowd
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The flags**
     - A rainbow flag beside the ark. A trans flag beside that. Nobody explaining why.
@@ -132,7 +132,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Adeena:** I wanted you to see this. That there's room. For us.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Adeena (take her hand)**
     - Her hand. She squeezes, once, hard.
@@ -143,7 +143,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Pick Adeena up after her class
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Through the door**
     - Adeena at a long table, leaning in, asking something, the rebbetzin laughing and answering. You haven't seen her lean in like that.
@@ -153,7 +153,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Adeena:** Sorry. Sorry. We got talking. There's so much I didn't know. I feel like I've been reading the book with half the pages missing.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Adeena (ask what she learned)**
     - **Maya:** What did you learn?
@@ -163,7 +163,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 ## Quiet
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The apartment**
     - Sunday. Adeena at a class. The fridge, thinking.
@@ -172,7 +172,7 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 
 **Adeena:** Where were you, Friday? You were sitting right there. You weren't there.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Adeena (say you were tired)**
     - **Maya:** Just tired. Work.

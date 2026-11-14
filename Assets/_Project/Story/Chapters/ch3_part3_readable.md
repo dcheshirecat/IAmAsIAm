@@ -2,11 +2,11 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 3 (Buddhism), Part 3. a 10-day silent meditation course (no talking until day 10). It goes wrong: Maya dissociates badly, and her host doesn't notice until it's too late. Then Heather comes out, at the Buddhist temple (the monastery behind the guest house). Heather isn't unlocked yet (only at the end of the chapter); this is a scripted switch.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 3 (Buddhism), Part 3. a 10-day silent meditation course (no talking until day 10). It goes wrong: Maya dissociates badly, and her host doesn't notice until it's too late. Then Heather comes out, at the Buddhist temple (the monastery behind the guest house). Heather isn't unlocked yet (only at the end of the chapter). This is a scripted switch.
 
 **My guesses, for you to check:**
 
-- Maya never tells anyone how bad it is. Students may speak to the teacher when necessary; Maya says she's fine. The course isn't the villain: the silence, a fresh diagnosis and not saying anything are.
+- Maya never tells anyone how bad it is. Students may speak to the teacher when necessary. Maya says she's fine. The course isn't the villain: the silence, a fresh diagnosis and not saying anything are.
 - Izzy goes quiet inside too. The days blur.
 - Day 11: Pasang picks her up, chatting happily, and notices nothing. That night Maya is gone (lost time), and Pasang finds her in the monastery's lamp room, lighting butter lamps: it's Heather (the candle in Chapter 2 was hers).
 
@@ -14,7 +14,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Settle in for ten days
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The rules board**
     - "Noble silence: no talking, no gestures, no eye contact, from the first evening to the morning of day ten. You may speak to the teacher when necessary."
@@ -33,7 +33,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get up for the bell
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The schedule on the wall**
     - "4:00 wake-up bell. 4:30-6:30 meditate. 6:30 breakfast. 8:00-11:00 meditate. 11:00 lunch. 1:00-5:00 meditate. 5:00 tea. 6:00 meditate. 7:00 discourse. 9:30 lights out."
@@ -42,7 +42,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 - **Use: The cold water**
     - A bucket of cold water and a cup. You pour it over your hands and your face, and gasp without a sound.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The silent lunch**
     - Rice, dal, greens, eaten in silence at a long table, eyes on your own plate. The spoon sounds enormous.
@@ -51,12 +51,12 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Sit
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Wait (day one: watch the breath)**
     - In. Out. Your knees. Your back. In. Out.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Wait (day three: keep your eyes closed)**
     - Dark. And further away than dark. Your hands aren't yours. They're very far down there, in somebody's lap.
@@ -65,7 +65,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 Izzy is quiet. Nobody inside is talking. The silence goes all the way down.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Teacher (say something)**
     - **Maya:** I'm... it's fine. I'm fine. Just tired.
@@ -85,7 +85,7 @@ Day nine.
 
 **Pasang Lhamo:** There she is! Ten days! You look very calm. Very, very calm. Come, the taxi is waiting, he's charging me by the minute, the thief.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Pasang Lhamo (try to tell her)**
     - **Maya:** Pasang, I don't...
@@ -95,7 +95,7 @@ Day nine.
 
 📱 **Text from Tanya:** Day 11! You're out! How was it? Tell me everything.
 
-_(Quietly, in Maya's sent texts, written by Heather during lost time; never pointed out: to Tanya: "She's very tired. She'll write tomorrow.")_
+_(Quietly, in Maya's sent texts, written by Heather during lost time, never pointed out: to Tanya: "She's very tired. She'll write tomorrow.")_
 
 That night.
 
@@ -105,7 +105,7 @@ _(A switch: Heather comes forward. The player has no control over it.)_
 
 > **Objective:** Light the lamps
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The lamp room**
     - A narrow room behind the shrine hall, warm with a thousand small flames. Nobody here, this late.
@@ -120,7 +120,7 @@ _(A switch: Heather comes forward. The player has no control over it.)_
 
 **Pasang Lhamo:** Who is looking after her?
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Pasang Lhamo (tell her)**
     - **Heather:** Me. My name is Heather. Please don't be frightened. She needs water, and sleep, and someone to sit with her.

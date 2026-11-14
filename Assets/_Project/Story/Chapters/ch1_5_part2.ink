@@ -1,13 +1,13 @@
 // IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1.5 (Axel), Part 2.
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 2. Mark. Champaign-Urbana and Indianapolis, September to December 2018. The body is 20.
-//  Owner's beats: Mark is instantly kind and funny and matches Axel's values and humour; dates, studying, cuddling,
+//  Owner's beats: Mark is instantly kind and funny and matches Axel's values and humour. Dates, studying, cuddling,
 //  parties. They go to Pride with Mark's church, which is queer-friendly and warm. Christmas with Mark's family, at their
 //  Methodist church. Other alters' signs show up for Axel too, but less than for Maya.
 //
 //  My guesses, for the owner to correct:
-//   - Pride is the town's Pride festival in September; Mark's church walks with a banner. Axel goes as Mark's date.
-//   - (Owner) Mark's hometown is Indianapolis; his parents' Methodist church has a candlelight service on Christmas Eve.
+//   - Pride is the town's Pride festival in September. Mark's church walks with a banner. Axel goes as Mark's date.
+//   - (Owner) Mark's hometown is Indianapolis. His parents' Methodist church has a candlelight service on Christmas Eve.
 //   - The signs: a note on the fridge in round letters (Izzy), the bed made with hospital corners (Nina).
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -19,7 +19,7 @@
 -> morning
 
 = morning
-// Owner: more of each part of the day. Claude's scene: Maya's life keeps calling (her library job; Tanya), and Axel ignores
+// Owner: more of each part of the day. Claude's scene: Maya's life keeps calling (her library job. Tanya), and Axel ignores
 // it (owner: Axel ignores all of Tanya's texts). Other alters' signs show up for Axel too, but less than for Maya.
 # place: college_apartment_axel
 # shot: close

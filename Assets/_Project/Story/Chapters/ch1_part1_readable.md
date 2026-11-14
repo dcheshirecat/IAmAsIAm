@@ -16,7 +16,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Selene:** TANYA TONIGHT. 7. dont be late she does the look
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The kitchen counter**
     - Coffee in the cheap machine. Your schedule on the fridge: classes in black, library shifts in blue, Thursdays in purple.
@@ -29,7 +29,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Take notes
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The screen**
     - "Abnormal Psychology. Week 2: Dissociation." You write the word down and it means nothing yet.
@@ -42,7 +42,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Your shift at the library
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The holds shelf**
     - Nothing under your name today. You check twice.
@@ -53,7 +53,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get to Tanya's class on time
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The circle of chairs**
     - Six folding chairs. A rug. A candle in the middle, unlit.
@@ -71,7 +71,7 @@ Three cards, face down on the rug.
 
 **Tanya:** Maya. What could help?
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Tanya (say what you see)**
     - **Maya:** {card_name(tarot_help)}. I don't know what it means yet. I think it means... someone stays.
@@ -90,7 +90,7 @@ After class, Dot from the till reads your teacup. A bird near the rim: news, com
 
 > **Objective:** Walk home with Selene
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The stars**
     - Cold and clear. Selene points out Orion, wrong, with total confidence.
@@ -103,7 +103,7 @@ After class, Dot from the till reads your teacup. A bird near the rim: news, com
 
 **Selene:** Your first sabbat! Okay. Ostara. Spring, balance, eggs, all of it. You plant a seed and say what you want to grow.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The coven**
     - A dozen people in the wet grass. Tanya with a basket of paper cups. Somebody's baby in a sling.
@@ -111,7 +111,7 @@ After class, Dot from the till reads your teacup. A bird near the rim: news, com
     - Eggs dyed with onion skins, orange-brown, set in a ring.
 - **Use: A paper cup of soil**
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Say what you want to grow (friends)**
     - **Maya:** Friends. People who stay.
@@ -128,7 +128,7 @@ After class, Dot from the till reads your teacup. A bird near the rim: news, com
 
 > **Objective:** Dance the maypole
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The maypole**
     - A birch pole, and ribbons in every colour, waiting. Selene already has flowers in her hair.
@@ -145,9 +145,9 @@ Then the ribbons are all wound and the sun is lower. Selene is laughing at somet
 
 📱 **Text from Tanya:** We missed you tonight. Everything all right?
 
-_(Quietly, in Maya's sent texts, written by Axel during lost time; never pointed out: to Selene: "cant make it thurs. tell T im sorry")_
+_(Quietly, in Maya's sent texts, written by Axel during lost time, never pointed out: to Selene: "cant make it thurs. tell T im sorry")_
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The windowsill**
 - **Look: The laundry basket**

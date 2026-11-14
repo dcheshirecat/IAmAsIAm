@@ -1,15 +1,15 @@
 // IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 1.5 (Axel), Part 3.
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 3. Holidays. Champaign-Urbana and Indianapolis, February to April 2019. The body is 20.
-//  Owner's beats: Mark's Episcopal church is queer-friendly and warm; Axel goes on holidays, once they've dated a few months.
+//  Owner's beats: Mark's Episcopal church is queer-friendly and warm. Axel goes on holidays, once they've dated a few months.
 //  The priest is kind to him and invites him for holidays (they aren't in touch consistently). They go to protests as a
-//  church; Izzy is triggered at one, because Maya went to protests with Sarah as a child. Easter with Mark's family, and the
+//  church. Izzy is triggered at one, because Maya went to protests with Sarah as a child. Easter with Mark's family, and the
 //  queer-affirming church.
 //
 //  My guesses, for the owner to correct:
 //   - The protest is a march in March 2019 that ends in a candlelit vigil, like the peace vigils Sarah took Maya to.
-//   - Izzy is triggered by the candles and the singing, and fronts for a little while; Axel comes back holding a candle.
-//   - At Easter, Mark's family's Methodist service is early; Mark and Axel also find an Easter evening service at a
+//   - Izzy is triggered by the candles and the singing, and fronts for a little while. Axel comes back holding a candle.
+//   - At Easter, Mark's family's Methodist service is early. Mark and Axel also find an Easter evening service at a
 //     queer-affirming church in the next town, which Mark has wanted to visit for years.
 // ─────────────────────────────────────────────────────────────────────────────
 

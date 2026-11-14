@@ -116,7 +116,7 @@ Adeena: Get help, Maya. Real help. Promise me that one thing. # vo: ch2-judaism_
 ~ text_from("tanya", "Maya. I'm so sorry. Call me, or don't, but I'm here. Every Thursday, every day.")
 ~ text_from("christie", "Heard about you and Adeena. I'm so sorry. Snack drawer is yours all week. No questions. -C")
 // Owner: herbs and stones from different people (Claude's list, owner: "yes").
-In your bag, from work: chamomile tea bags, a whole row of them, taped together. "For the bad nights. -C" # look: christie-chamomile
+In your bag, from work, chamomile tea bags, a whole row of them, taped together. "For the bad nights. -C" # look: christie-chamomile
 ~ gain_herb("chamomile", "christie")
 // Owner: cleansing after the breakup (it can be hard). Claude's addition: no new voiced lines.
 ~ text_from("tanya", "When you're ready, and only then: open a window, rosemary or salt or the bell, room by room. Say what you want the place to hold now. It's still yours.")
@@ -153,7 +153,7 @@ Your phone. # device: phone
 -> alone.week
 
 = renewal
-// Jewish Renewal: ecstatic, musical, mystical; drums, chant, dancing.
+// Jewish Renewal: ecstatic, musical, mystical. Drums, chant, dancing.
 # place: renewal_shabbat
 # shot: wide
 # objective: Stay for the singing

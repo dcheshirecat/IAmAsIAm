@@ -14,7 +14,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Talk to Angie
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The notebook**
     - Your notebook, open on the blanket. In round, careful handwriting that isn't quite yours: "Water first. Then food. Then Angie. -H"
@@ -27,7 +27,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 **Angie (on video):** Pasang emailed me. I'm glad she did. How are you, right now, this minute?
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Angie (tell her about the course)**
     - **Maya:** I went so far away. For days. I think I'm still a bit away.
@@ -46,7 +46,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 **Pasang Lhamo:** Today I watch you properly. If you go far away, I pinch you. Gently. Mostly gently.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The prayer wheels (eyes open)**
     - Brass under your palm, warm from the sun and from everyone before you. One, and the next, and the next. You're here for every one of them.
@@ -58,7 +58,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 **Pasang Lhamo:** I'm sorry. I should have seen. Ten days, and I was talking about shoes.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Pasang Lhamo (tell her it's okay)**
     - **Maya:** It's okay. I didn't show anyone. I'm good at not showing anyone.
@@ -71,7 +71,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Sit for five minutes
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The shrine**
     - A great golden Buddha, and smaller ones all around, and offerings: water bowls, oranges, a packet of biscuits someone left.
@@ -92,16 +92,16 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Come down for dinner
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The kitchen**
     - Pasang at the pressure cooker, her daughter doing homework at the end of the table, the TV on with no sound.
 - **Look: Your plate**
-    - **Dal bhat:** rice, lentils, greens, a sharp pickle. Pasang refills it before you can say no. Twice.
+    - Dal bhat. Rice, lentils, greens, a sharp pickle. Pasang refills it before you can say no. Twice.
 - **Use: The washing up**
     - You wash, the daughter dries, neither of you saying much. She teaches you the Nepali for "spoon". You forget it at once and she laughs.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bed**
     - The dogs, the prayer wheels creaking in the dark, the stone under your pillow. Five minutes. Tomorrow, five more.
@@ -110,7 +110,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Watch the sunrise from the roof
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The stupa**
     - The white dome, grey in the dark, then pink. The painted eyes on the tower, catching the light first.
@@ -127,7 +127,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 > **Objective:** See where it began
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The Maya Devi Temple**
     - A plain white building, and inside, under glass, a stone. The place where, they say, he was born. People kneel. You don't know what to do, so you stand very still.
@@ -136,7 +136,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 - **Look: The pond**
     - Green water. A bodhi tree hung with so many prayer flags you can hardly see the leaves.
 - **Look: The monasteries**
-    - **Down the long canal:** a Thai temple, white and gold; a Burmese one with a golden spire; a Chinese gate; a German one; a Japanese peace pagoda. Everyone came.
+    - All down the long canal, temples. A Thai one, white and gold. A Burmese one with a golden spire. A Chinese gate. A German one. A Japanese peace pagoda. Everyone came.
 - **Wait (stand under the tree)**
 
 **Maya:** She was called Maya. His mother. I didn't know that.
@@ -149,7 +149,7 @@ _(Maya's laptop opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Say goodbye to Pasang
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The suitcase**
     - Full now. Prayer flags for Tanya, a magnet for Christie, a little brass prayer wheel for Angie's office. Something for Gerald.
@@ -163,7 +163,7 @@ A white silk scarf, a khata, placed around your neck.
 
 **Pasang Lhamo:** You came to find yourself. You didn't. Good. Nobody finds themselves. You found some of them, I think. Bring them all back sometime.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Pasang Lhamo (promise to come back)**
     - **Maya:** I'll come back. All of us.

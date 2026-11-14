@@ -2,7 +2,7 @@
 // vo-speakers: Maya=maya, Chaplain Amal=amal
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. The day program. Chicago, September 2026. The body is 28.
-//  Owner's beats: after Maya gets back from Nepal. The chapter starts as Izzy; Izzy takes over along with Heather; Maya only
+//  Owner's beats: after Maya gets back from Nepal. The chapter starts as Izzy. Izzy takes over along with Heather. Maya only
 //  appears sometimes. The guide is a Muslim chaplain at a psychiatric day ward. Islam shown: Sufi practice and only what
 //  Muslims consider Islam.
 //

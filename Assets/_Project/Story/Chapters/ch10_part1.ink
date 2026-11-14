@@ -1,20 +1,20 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-14; the owner's Doc edits come first). Chapter 10 (Unitarian Universalism), Part 1.
+// IN THE GAME as a DRAFT (Claude, 2026-11-14. The owner's Doc edits come first). Chapter 10 (Unitarian Universalism), Part 1.
 // vo-speakers: Maya=maya, Anabelle=anabelle, Heather (inside)=heather-inside
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 1. Every and all. Arcata, October 2032. Maya is 34.
 //  Owner: Maya stays in Arcata. The guide is ANABELLE (25, they/them), a member of the fellowship's pagan group. The chapter is
 //  about BELONGING: Maya has collected a little of every faith, and this is the first place where that's the point, not a
-//  problem. A made-up UU fellowship (not the real one near Arcata). Three seasons. Starts as Maya; unlocks SERENA, who first
+//  problem. A made-up UU fellowship (not the real one near Arcata). Three seasons. Starts as Maya. Unlocks SERENA, who first
 //  comes forward when Sarah phones (Part 2).
 //
-//  Research (docs/Chapter10_UUResearch.md): a UU service opens by lighting the flaming chalice; "joys and concerns" is when
-//  people light a candle and share news; coffee hour follows. UUs have no creed: one congregation can hold humanists, Christians,
-//  Buddhists, Jews and pagans. CUUPS (the Covenant of UU Pagans) chapters are small groups inside a congregation; many mark the
+//  Research (docs/Chapter10_UUResearch.md): a UU service opens by lighting the flaming chalice. "joys and concerns" is when
+//  people light a candle and share news. Coffee hour follows. UUs have no creed: one congregation can hold humanists, Christians,
+//  Buddhists, Jews and pagans. CUUPS (the Covenant of UU Pagans) chapters are small groups inside a congregation. Many mark the
 //  eight sabbats.
 //
 //  My guesses (placeholders), for the owner to correct:
 //   - The fellowship: "the Eleventh Street Fellowship" (Unitarian Universalist), in an old wooden house near the Plaza.
-//   - Its pagan circle: "Spiral Fern" (a CUUPS chapter). Anabelle leads it; they grew up UU in Oregon, and study agriculture at Cal
+//   - Its pagan circle: "Spiral Fern" (a CUUPS chapter). Anabelle leads it. They grew up UU in Oregon, and study agriculture at Cal
 //     Poly Humboldt.
 //   - The day: Sunday October 31, 2032: the morning service, then the circle's small Samhain that evening.
 // ─────────────────────────────────────────────────────────────────────────────

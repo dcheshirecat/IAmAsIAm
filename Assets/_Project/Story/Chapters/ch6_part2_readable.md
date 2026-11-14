@@ -2,12 +2,12 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME as a DRAFT (Claude's guesses, marked; the owner's answers and Doc edits come first). Chapter 6 (Sikhism), Part 2. Owner: Christie tells Maya that Adeena married Michael; it's triggering (the Shabbat candles they shared every Friday).
+**What happens (your beats):** IN THE GAME as a DRAFT (Claude's guesses, marked. The owner's answers and Doc edits come first). Chapter 6 (Sikhism), Part 2. Owner: Christie tells Maya that Adeena married Michael. It's triggering (the Shabbat candles they shared every Friday).
 
 **My guesses, for you to check:**
 
-- HOW (owner): Christie VISITS: in Seattle for a work conference, she meets Maya for coffee that morning. She's kind and has no idea how hard it will land, the way Sarah had no idea about Mira (an echo, never pointed out). Somebody from the Field Museum posted the wedding photos; there was a chuppah (the `weddings` trigger, cue "wedding").
-- What happens next is the trigger system's (dissociation, maybe a switch to someone unlocked; no player control). Bibi Harjit finds her afterwards and does what she does: sits her down, feeds her, gives her hands something to do (seva as DBT's Contributing, from ACCEPTS: `# exercise: accepts`).
+- HOW (owner): Christie VISITS: in Seattle for a work conference, she meets Maya for coffee that morning. She's kind and has no idea how hard it will land, the way Sarah had no idea about Mira (an echo, never pointed out). Somebody from the Field Museum posted the wedding photos. There was a chuppah (the `weddings` trigger, cue "wedding").
+- What happens next is the trigger system's (dissociation, maybe a switch to someone unlocked. No player control). Bibi Harjit finds her afterwards and does what she does: sits her down, feeds her, gives her hands something to do (seva as DBT's Contributing, from ACCEPTS: `# exercise: accepts`).
 - Vaisakhi (research): the harvest festival, and the day in 1699 when Guru Gobind Singh founded the Khalsa. The nagar kirtan: the Guru Granth Sahib on a decorated float, the Panj Pyare (the five beloved) in saffron walking ahead barefoot with swords, sevadars sweeping the road in front of the float, free food stalls all along the route, a gatka (Sikh martial art) display by Nihang Sikhs (the traditional order in blue, with tall turbans).
 
 ## Wake
@@ -16,7 +16,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Christie:** I'M IN SEATTLE. Conference, flying out tonight. Coffee?? 9am, the place by the market. I'll be the one in the Field Museum hoodie
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - Rain, soft, and for once the mountain, out over everything, pink in the early light.
@@ -28,7 +28,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Find Christie
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The café**
     - Steamed windows, a line out the door, someone's dog asleep under a table.
@@ -46,7 +46,7 @@ Friday. Two flames. Her hands over her eyes, and yours over hers. Every week. So
 
 **Christie:** Maya? Are you okay?
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Christie (say you're glad for her)**
     - **Maya:** That's... I'm glad. I'm glad she's happy. I have to go, Christie.
@@ -63,7 +63,7 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 
 The onions are half peeled. You don't remember the drive to Kent.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The onions**
     - A sack of them, taller than a child. Four Sundays now. You've stopped crying into them. Mostly.
@@ -81,7 +81,7 @@ The onions are half peeled. You don't remember the drive to Kent.
 
 > **Objective:** Walk with the procession
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The float**
     - A flatbed truck in flowers and gold. The Guru Granth Sahib rides on it under its canopy, a granthi waving the whisk all the way.
@@ -92,7 +92,7 @@ The onions are half peeled. You don't remember the drive to Kent.
 - **Look: The gatka**
     - A ring of people. Inside it, men in blue with tall turbans spin sticks and swords so fast they blur. A little girl in blue does it too, better than some of them.
 - **Look: The food stalls**
-    - Every few houses, a table: samosas, oranges, bottled water, chai. Free. Uncles pressing them into your hands whether you want them or not.
+    - Every few houses, a table of samosas, oranges, bottled water, chai. Free. Uncles pressing them into your hands whether you want them or not.
 - **Wait (walk with them)**
 
 The drums. The singing. Your feet keep walking with everyone else's, and you aren't really in them.
@@ -107,7 +107,7 @@ You're on the floor of the langar hall. You don't remember walking back. There's
 
 **Bibi Harjit:** Drink. Then talk, or don't talk. Both are fine.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Bibi Harjit (tell her)**
     - **Maya:** Someone I loved got married. To someone else. I knew it would happen. I didn't know it would feel like this.
@@ -117,7 +117,7 @@ You're on the floor of the langar hall. You don't remember walking back. There's
 
 **Bibi Harjit:** Now. Two thousand people are coming hungry. My hands need your hands. Come.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The dish station (wash)**
     - Hot water. Steel plates, one after another, a thousand of them. Somewhere around the three hundredth, you're back.
@@ -136,7 +136,7 @@ You're on the floor of the langar hall. You don't remember walking back. There's
 
 📱 **Text from Christie:** I'm at the airport. I'm so sorry, I didn't think. Are you ok? I mean it. Call me whenever.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The windowsill**
     - Mira's stone, the prayer wheel, the khata. You put your hands flat on the sill.

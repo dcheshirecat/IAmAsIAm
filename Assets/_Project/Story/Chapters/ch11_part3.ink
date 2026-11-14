@@ -1,14 +1,14 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-14; the owner's Doc edits come first). Chapter 11 (Jainism), Part 3.
+// IN THE GAME as a DRAFT (Claude, 2026-11-14. The owner's Doc edits come first). Chapter 11 (Jainism), Part 3.
 // vo-speakers: Maya=maya, Nirmala-ben=nirmala, Serena (inside)=serena-inside, Heather (inside)=heather-inside, Jacob (inside)=jacob-inside
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 3. Lamps. The Bay Area and Arcata, November 2034. Maya is 36.
 //  Owner: the Paryushana arc ends at Diwali. Unlocks nobody.
 //
-//  Research: for Jains, Diwali marks Mahavira's nirvana (his final liberation) at Pavapuri; lamps stand in for the light of his
+//  Research: for Jains, Diwali marks Mahavira's nirvana (his final liberation) at Pavapuri. Lamps stand in for the light of his
 //  knowledge, and the next day is the Jain New Year. (2034: Diwali around November 10.)
 //
 //  My guesses, for the owner to correct:
-//   - Replies: Tanya and Mark write back; Adeena doesn't (and that's all right). Sarah: if Maya wrote, a two-line reply.
+//   - Replies: Tanya and Mark write back. Adeena doesn't (and that's all right). Sarah: if Maya wrote, a two-line reply.
 //   - Nirmala-ben gives Maya a small soft broom like the one used to sweep in front of you so as not to step on anything.
 // ─────────────────────────────────────────────────────────────────────────────
 

@@ -1,11 +1,11 @@
-// IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 7 (Daoism), Part 3.
+// IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 7 (Daoism), Part 3.
 // vo-speakers: Maya=maya, Lin Daozhang=lin, Auntie Mei=mei
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 3. Water. Seattle, June 2029. Maya is 30.
 //  Owner: dawn tai chi in a park. My guesses: Hing Hay Park (the real square in the International District), where older
-//  people practise every morning; Lin Daozhang among them. Tai chi as not forcing: the answer to Chapter 3's silent course.
-//  Lin Daozhang's story (placeholder): a family of Zhengyi priests in Tainan for six generations; his father taught him the rites
-//  at twelve; he came to Seattle in 1994 "for my wife's job and the rain"; he does taxes on weekdays.
+//  people practise every morning. Lin Daozhang among them. Tai chi as not forcing: the answer to Chapter 3's silent course.
+//  Lin Daozhang's story (placeholder): a family of Zhengyi priests in Tainan for six generations. His father taught him the rites
+//  at twelve. He came to Seattle in 1994 "for my wife's job and the rain". He does taxes on weekdays.
 //  Tao Te Ching chapter 8 (Legge): "The highest excellence is like (that of) water" (the chapter's intro quote).
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -73,10 +73,10 @@ Lin Daozhang: Sitting still with force is still force. Water doesn't try. It goe
 # objective: Bring Auntie Mei's container back
 - (hall)
 + {hall < 3} [Look: The quiet temple]
-    Weekday evening: no crowd, one stick of incense burning, the Jade Emperor and the City God keeping each other company. # look: quiet-temple
+    Weekday evening. No crowd, one stick of incense burning, the Jade Emperor and the City God keeping each other company. # look: quiet-temple
     -> hall
 + {hall < 3} [Look: The ledger on the desk]
-    Not the City God's: Lin Daozhang's. A calculator, a stack of tax forms, a red pen. # look: tax-forms
+    Not the City God's. Lin Daozhang's. A calculator, a stack of tax forms, a red pen. # look: tax-forms
     -> hall
 * [Talk: Lin Daozhang]
 -

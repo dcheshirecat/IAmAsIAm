@@ -2,18 +2,18 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-14; the owner's Doc edits come first). Chapter 11 (Jainism), Part 3. Owner: the Paryushana arc ends at Diwali. Unlocks nobody. Research: for Jains, Diwali marks Mahavira's nirvana (his final liberation) at Pavapuri; lamps stand in for the light of his knowledge, and the next day is the Jain New Year. (2034: Diwali around November 10.)
+**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-14. The owner's Doc edits come first). Chapter 11 (Jainism), Part 3. Owner: the Paryushana arc ends at Diwali. Unlocks nobody. Research: for Jains, Diwali marks Mahavira's nirvana (his final liberation) at Pavapuri. Lamps stand in for the light of his knowledge, and the next day is the Jain New Year. (2034: Diwali around November 10.)
 
 **My guesses, for you to check:**
 
-- Replies: Tanya and Mark write back; Adeena doesn't (and that's all right). Sarah: if Maya wrote, a two-line reply.
+- Replies: Tanya and Mark write back. Adeena doesn't (and that's all right). Sarah: if Maya wrote, a two-line reply.
 - Nirmala-ben gives Maya a small soft broom like the one used to sweep in front of you so as not to step on anything.
 
 ## Wake
 
 > **Objective:** Read your replies
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The drawing**
     - "ME AND MIRA", in a frame from the thrift store, on the wall above the altar now. Mira's handwriting on the back, facing the wall, safe.
@@ -39,7 +39,7 @@ Mom writes back. "Thank you for writing. I don't know that word but I looked it 
 
 > **Objective:** Drive south for Diwali
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The rain**
     - The wipers going, the redwoods black and dripping. Somebody in here hums the whole way.
@@ -49,7 +49,7 @@ Mom writes back. "Thank you for writing. I don't know that word but I looked it 
 
 > **Objective:** Light a lamp for Mahavira
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The lamps**
     - Hundreds of little clay lamps on every step and sill, in rows, in spirals. The temple room doors open wide tonight.
@@ -71,7 +71,7 @@ A little soft broom, wool on a wooden handle, like the ones for sweeping in fron
 
 Nirmala-ben: Not for ants. For you. Sweep a little space in front of yourself, when the cruel voice starts. Be gentle with the jiva you live in.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Nirmala-ben (thank her)**
     - **Maya:** Thank you. For all of it. For feeding us.
@@ -81,7 +81,7 @@ Nirmala-ben: Not for ants. For you. Sweep a little space in front of yourself, w
 
 > **Objective:** Light your lamp
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: A lamp (light it)**
 
@@ -97,7 +97,7 @@ The wick catches. A small steady flame, the kind you could carry with both hands
 
 > **Objective:** Sweep a little space
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The soft broom (sweep in front of the altar)**
     - Three soft strokes on the floor in front of the altar. Nothing there to hurt. That's the point. The cruel little voice, for once, doesn't say a thing.

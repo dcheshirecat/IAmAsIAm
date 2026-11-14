@@ -6,10 +6,10 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **My guesses, for you to check:**
 
-- How it's explained: Mark's long email, which Maya finds in senior year and reads. Maya ended it in May, in a way Mark didn't understand. He isn't cruel; he's hurt.
+- How it's explained: Mark's long email, which Maya finds in senior year and reads. Maya ended it in May, in a way Mark didn't understand. He isn't cruel. He's hurt.
 - The abandonment: Axel's friends unfollow her, leave the group chat, look away on the quad (Jordan, Sam and Riley are placeholder names).
 - Tanya and Selene welcome her back at Samhain 2019 at The Circle, with no questions she has to answer.
-- The donation drive is a coat drive in October; Gracie runs it with a clipboard and a lot of enthusiasm.
+- The donation drive is a coat drive in October. Gracie runs it with a clipboard and a lot of enthusiasm.
 
 📱 **Text from Mark:** I'm not going to keep texting. I just need you to know I'm not angry. I'm just lost. I sent you an email.
 
@@ -19,7 +19,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get up
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your phone**
     - 7:02 a.m. A new email from Mark. The subject: "I don't understand."
@@ -30,7 +30,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get to class
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The group by the fountain**
     - People you don't know, who know you. One of them sees you, and turns away.
@@ -45,7 +45,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Your shift at the library
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The schedule**
     - Your shifts, moved. Jess swapped every one she had with you. A sticky note: "sorry, school stuff!"
@@ -58,7 +58,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Make dinner
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Your phone**
     - **Selene:** "how are u. really." The only one who still asks.
@@ -79,7 +79,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 **Gracie:** I'm Gracie. Sister Gracie, technically, almost. In training. Do you want a hot chocolate? There's marshmallows. There's too many marshmallows, honestly.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Gracie (say yes)**
     - **Maya:** Okay. Yes. Thank you.
@@ -90,7 +90,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 Gracie drops a paper twist into your coat pocket: dried calendula, from the ministry garden. Mary's gold, she calls it.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The chapel door**
     - A small chapel, through the door. Empty. Quiet. One candle burning.
@@ -106,7 +106,7 @@ Gracie drops a paper twist into your coat pocket: dried calendula, from the mini
 
 **Tanya:** Your seat's still saved. It's been saved all year.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Tanya (try to explain)**
     - **Maya:** I don't know what happened. I don't remember last year. Any of it. I know that sounds...
@@ -119,7 +119,7 @@ Gracie drops a paper twist into your coat pocket: dried calendula, from the mini
 
 **Tanya:** Names, if you want to. Anyone you miss.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Say Mira's name**
     - **Maya:** Mira.
@@ -134,12 +134,12 @@ Selene presses a little cloth bag into your hand. Lavender, a smooth grey stone,
 
 ## Sundays
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: A seat at the back**
     - The back row. Four people, far apart. Nobody turns around.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Wait (pray, quietly)**
     - Quiet. Not talking to anyone in particular. Not having to.

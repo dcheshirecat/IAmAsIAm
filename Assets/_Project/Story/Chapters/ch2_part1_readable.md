@@ -2,7 +2,7 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 2 (Judaism), Part 1. Maya moved to Chicago for a job (COVID is skipped; the chapter starts in Chicago in 2023). She works at a museum (The Field Museum, as a tour guide), where she meets Adeena (27, stern and serious with a heart of gold). Tanya is back in Champaign-Urbana: from now on, texting replaces meeting up. Izzy comes forward on stressful days at work, if triggered. This chapter starts as Maya and unlocks nobody.
+**What happens (your beats):** IN THE GAME (owner, 2026-11-12: push the story into the game). Still a draft for the owner: their Doc edits come first. Chapter 2 (Judaism), Part 1. Maya moved to Chicago for a job (COVID is skipped. The chapter starts in Chicago in 2023). She works at a museum (The Field Museum, as a tour guide), where she meets Adeena (27, stern and serious with a heart of gold). Tanya is back in Champaign-Urbana: from now on, texting replaces meeting up. Izzy comes forward on stressful days at work, if triggered. This chapter starts as Maya and unlocks nobody.
 
 **My guesses, for you to check:**
 
@@ -15,7 +15,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get to work on time
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - The L going by, close enough to wave at. Grey lake light.
@@ -32,7 +32,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Ride the L to work
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - Rooftops, water towers, somebody's laundry. Then the lake, all at once, flat and silver.
@@ -49,7 +49,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Give the ten o'clock tour
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Máximo**
     - The titanosaur, neck up into the light, longer than the hall feels. The fourth-graders always gasp. You still do, a little.
@@ -65,7 +65,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 **Adeena:** You just told forty children that SUE is sixty-seven thousand years old.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Adeena (say sorry)**
     - **Maya:** Sorry. I'll fix it. I'm so sorry.
@@ -79,7 +79,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Find the fact sheets
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Adeena's desk**
     - Everything square. A mug that says "Registrars Do It By The Number." A small brass candlestick.
@@ -96,10 +96,10 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Take your lunch break
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The lake**
-    - **From the museum steps:** the lake, the sailboats, the city standing behind you like it's waiting.
+    - From the museum steps you can see the lake, the sailboats, the city standing behind you like it's waiting.
 - **Look: Adeena, at the window**
     - Adeena at her desk upstairs, eating a sandwich cut into exact squares, reading while she chews.
 - **Use: Your sandwich**
@@ -111,7 +111,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 **Eudora Jones:** Who booked three school groups into this hall at once? Somebody tell me why nothing about today is working!
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The new exhibit**
     - Half-lit cases. A ladder. Labels still in their plastic. Four o'clock, and it isn't ready.
@@ -125,7 +125,7 @@ _(An unexpected switch may happen here, if another alter is unlocked.)_
 
 ## After
 
-_(Quietly, in Maya's sent texts, written by Izzy during lost time; never pointed out: to Adeena: "thank u for today!! u saved my life. coffee tomorrow? my treat")_
+_(Quietly, in Maya's sent texts, written by Izzy during lost time, never pointed out: to Adeena: "thank u for today!! u saved my life. coffee tomorrow? my treat")_
 
 📱 **Text from Adeena:** Yes. 8:30. Not the place with the line.
 
@@ -133,7 +133,7 @@ The preview is over. Everyone's gone. The clock says ten to six, and the afterno
 
 **Adeena:** You did good work this afternoon. You were... different. Funnier.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Adeena (say thank you)**
     - **Maya:** Thank you.
@@ -145,12 +145,12 @@ The preview is over. Everyone's gone. The clock says ten to six, and the afterno
 
 ## Home
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your phone**
 _(Maya's phone opens: the player can read her messages, then closes it.)_
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Mira's stone**
     - By your keys. Where you'll see it.
@@ -163,14 +163,14 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 > **Objective:** Make dinner
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The fridge**
     - Takeout menus. A magnet from the Field: "SUE says hi." Not much else.
 - **Use: The stove (pasta)**
     - Pasta with butter, eaten on the couch with the TV on for company.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bed**
     - The L going by, every eleven minutes, the light sliding across the ceiling. You count three, and then you're asleep.

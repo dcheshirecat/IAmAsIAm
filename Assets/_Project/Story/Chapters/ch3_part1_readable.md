@@ -16,7 +16,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Let Tanya in
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The mail**
     - A drift of it by the door. Three envelopes from the same doctor's office, unopened.
@@ -32,7 +32,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Tanya:** Sit. Soup first. Then we talk. Then you call someone, and I don't leave until you do.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Tanya (say you're fine)**
     - **Maya:** I'm fine. Really. Just tired.
@@ -45,7 +45,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Tanya:** Angie. Tuesdays and Thursdays, evenings. Here's her number. I'm sitting right here.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your phone (call Angie)**
     - Your phone. Ringing. Tanya's hand on your back, steady.
@@ -54,7 +54,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Get to work
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - January. The lake steaming in the cold. Tanya's text already: "Proud of you for opening the door."
@@ -65,7 +65,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Give the eleven o'clock tour
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Máximo**
     - The titanosaur. You've told its story a hundred times. You start, and then...
@@ -75,7 +75,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Christie:** ...and SUE, upstairs, is sixty-seven million years old, which Maya taught me, didn't you, Maya? Let's go see her.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Christie**
 
@@ -83,7 +83,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Christie:** Hey. You stopped. In the middle of a word. I've got the rest of this one. Go sit in the office. Snack drawer.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Christie (thank her)**
     - **Maya:** Thank you. I'm sorry.
@@ -96,7 +96,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Wait for Angie
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The plant**
     - A big, slightly overwatered plant. Someone has named it: a little card says "Gerald."
@@ -110,7 +110,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 **Angie:** Tanya said you've been losing time. Can you tell me what that's like? Start anywhere. There's no wrong place to start.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Angie (the lost days)**
     - **Maya:** I lose days. Sometimes a whole afternoon, sometimes most of a year. I find things I bought. Texts I sent.
@@ -129,7 +129,7 @@ On your way out, Angie holds out the bowl by the door. Worry stones. You take a 
 
 > **Objective:** Make dinner
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The windowsill**
     - The hematite next to Mira's stone. Two stones from two people who noticed.
@@ -138,14 +138,14 @@ On your way out, Angie holds out the bowl by the door. Worry stones. You take a 
 - **Use: The stove (eggs)**
     - Eggs on toast. Izzy wants hot sauce on them. You let her.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bed**
     - You write "Thursday 4pm" on your hand, just in case. You sleep with the light on, but you sleep.
 
 ## Weeks
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The calendar on the wall**
     - March. Six Thursdays.
@@ -154,7 +154,7 @@ On your way out, Angie holds out the bowl by the door. Worry stones. You take a 
 
 **Angie:** What you're describing, the lost time, the far-away feeling, the parts of you that write the notes: it sounds like a dissociative disorder.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Angie (ask what that means)**
     - **Maya:** What does that mean? For me?
@@ -177,7 +177,7 @@ On your way out, Angie holds out the bowl by the door. Worry stones. You take a 
 
 **Izzy (inside):** Go. Just go. When have we ever just gone anywhere?
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The laptop**
     - **One tab. A photo:** prayer flags over white mountains, a monk smiling at the camera. "Kathmandu. One way. Tonight, 11:40 pm."
@@ -204,7 +204,7 @@ On your way out, Angie holds out the bowl by the door. Worry stones. You take a 
 
 📱 **Text from Tanya:** NEPAL?? Maya. Okay. Text me every single day. Every day. I mean it.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The departures board**
     - "DOHA, then KATHMANDU. ON TIME." Real letters. A real place.
@@ -217,7 +217,7 @@ _(Maya's phone opens: the player can read her messages, then closes it.)_
 
 ✉️ **Email from Angie: "Okay. Here's the plan."** Maya, I'm not mad. I'd have liked a plan. So here's one, from me, for you: short sits, eyes open is fine, walk when you need to. Your grounding stone in your pocket. Text Tanya every day. We'll do our Thursdays on video. You can come home early. That isn't failing. Go gently. A.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your laptop (read Angie's email)**
 _(Maya's laptop opens: the player can read her messages, then closes it.)_

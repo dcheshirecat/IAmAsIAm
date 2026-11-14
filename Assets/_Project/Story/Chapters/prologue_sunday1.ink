@@ -5,7 +5,7 @@
 //  Owner's beats: Maya goes "floaty" in the long service (a first, gentle depersonalization),
 //  then is forgotten at church after it. Mira finds her. Small choices only.
 //  Explore-first (owner): little narration. Each place is things to look at, use or talk to (they glow
-//  in the game); the objective line points the way; looking at a thing shows only its label.
+//  in the game). The objective line points the way. Looking at a thing shows only its label.
 //
 //  My guesses, for the owner to correct:
 //   - The season (a grey, cold March morning).
@@ -15,7 +15,7 @@
 //   - The smell of the building (wood polish, old hymnbooks, coffee) is planted here: it is the
 //     adult trigger "meeting-house-smell". No trigger cue fires in the prologue.
 //   - Mira teaches "feet on the floor", the first skill.
-//   - Mira only says "She's been waiting a long while" to Sarah here; she speaks up properly on Sunday 2.
+//   - Mira only says "She's been waiting a long while" to Sarah here. She speaks up properly on Sunday 2.
 //   - Sarah is seen only from outside, through Maya. We never hear her reasons.
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -60,7 +60,7 @@ Sarah: Yes. Yes, Mrs. Hines, I'll bring the budget sheets. No, I haven't forgott
     The kitchen table. A coffee cup, Mommy's Bible, sermon papers. No bowl. # look: kitchen-table
     -> kitchen
 + [Look: Mommy's papers]
-    Sermon notes: "Let your light shine." # look: sermon-notes
+    The sermon notes say "Let your light shine." # look: sermon-notes
     -> kitchen
 * [Talk: Mommy]
     ~ record_choice("prologue.s1.breakfast", "asked", "You asked for breakfast. Mommy said there would be snacks at church.")
@@ -88,7 +88,7 @@ Sarah: Shoes, Maya. We're late. # vo: prologue-quaker_sarah_0004
 Sarah: "Let your light shine." No. "Each of us carries a light." Each of us... # vo: prologue-quaker_sarah_0005
 * [Look: Red cars]
     ~ record_choice("prologue.s1.car", "counted", "In the car, you counted red cars.")
-    Red cars: five. # look: red-cars
+    Red cars. Five. # look: red-cars
 * [Talk: Mommy]
     ~ record_choice("prologue.s1.car", "asked", "In the car, you asked Mommy where light comes from. She didn't hear.")
     Maya: Mommy, where does light come from? # vo: prologue-quaker_maya-05_0006

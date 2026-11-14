@@ -198,7 +198,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 ### Home: the kitchen (`home_kitchen`)
 
 - `kitchen-table`: The kitchen table. A coffee cup, Mommy's Bible, sermon papers. No bowl.
-- `sermon-notes`: Sermon notes: "Let your light shine."
+- `sermon-notes`: The sermon notes say "Let your light shine."
 - `cracker-cupboard`: A chair, pushed to the cupboard. One soft cracker.
 - `front-door`: Waiting.
 - `shoes`: Shoes with sticky straps. On the wrong feet.
@@ -220,18 +220,18 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `travel-mug`: Coffee, milk, no sugar, lid on tight.
 - `note-gone-early`: "Gone early, deacons before worship. Ask Mr. Carter for a ride? Love, Mom."
 - `snow-street`: Snow on the cars. The street white and quiet, nobody out.
-- `oven-reflection`: In the dark oven door: taller than Mom now. You don't look like a minister's daughter. You look like nobody's.
-- `fridge-note`: A sticky note: "Deacons' supper. Soup in cupboard. Don't wait up! Love, Mom." The same note as last Sunday. New tape.
+- `oven-reflection`: In the dark oven door, you're taller than Mom now. You don't look like a minister's daughter. You look like nobody's.
+- `fridge-note`: A sticky note. "Deacons' supper. Soup in cupboard. Don't wait up! Love, Mom." The same note as last Sunday. New tape.
 - `dark-house`: Every light off but this one. The heating ticks.
 - `soup-mug`: Tomato soup, heated in the mug, eaten standing up.
 
 ### Mom's car (`car`)
 
-- `red-cars`: Red cars: five.
+- `red-cars`: Red cars. Five.
 - `foggy-window`: A house on the window. A sun with a smile on it.
 - `car-floor`: Hello, floor.
 - `back-seat`: Coffee cups. Bulletins. Church papers.
-- `susan-note`: A note from Miss Susan: "Please sign and return. Parent-teacher conference." Nine days old.
+- `susan-note`: A note from Miss Susan. "Please sign and return. Parent-teacher conference." Nine days old.
 - `note-falls`: The note, sliding off the dashboard, under the seat.
 - `note-kept`: The note. Soft at the corners.
 - `note-signed`: "Sarah", in an eight-year-old's neatest writing. Folded small.
@@ -323,7 +323,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `cap-plastic`: A cap, still in its plastic, on the bed.
 - `tanya-reply`: The phone buzzes almost at once.
 - `laptop-closed`: The laptop, closed. Quiet.
-- `selene-oracle-deck`: A padded envelope from Selene: twelve cards, hand-painted, one word on each. Her own oracle deck.
+- `selene-oracle-deck`: A padded envelope from Selene, with twelve cards, hand-painted, one word on each. Her own oracle deck.
 
 ### The lecture hall (`college_lecture_hall`)
 
@@ -341,7 +341,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `dining-groups`: Every table a group. Laughing, saving seats, passing fries. Freshmen who found each other in August.
 - `selene-text-again`: Selene's text, still open. You read it again.
 - `lunch-window`: Pasta, an apple, a seat by the window. You eat fast, so it doesn't look like you're waiting for anyone.
-- `id-photo`: The photo on your student ID: short hair, a jaw set like someone else's. The card reader beeps it through anyway.
+- `id-photo`: The photo on your student ID shows short hair, a jaw set like someone else's. The card reader beeps it through anyway.
 - `soup-head-down`: Soup and bread, eaten with your head down. A girl at the next table waves, uncertain. You don't know her.
 - `chairs-up`: Chairs up on every table. Tape on the floor: stand here, six feet.
 - `dining-worker`: Mask, gloves, kind eyes. "Same as yesterday, hon?" The only voice you'll hear today.
@@ -460,7 +460,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `yule-stone`: The stone, cold through your glove.
 - `flame-coming`: Hand to hand. Closer. Somebody's face, lit gold.
 - `bos-gift`: Black cloth, a moon on the cover. First page, in Tanya's square letters: "Ground first."
-- `bos-bay-amber`: Tucked inside the cover: three dry bay leaves and a bead of amber, warm as a hand. For the sun coming back.
+- `bos-bay-amber`: Tucked inside the cover, three dry bay leaves and a bead of amber, warm as a hand. For the sun coming back.
 
 ### The park: Ostara (`park_ostara`)
 
@@ -603,7 +603,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `apartment-quiet-2`: Sunday. Adeena at a class. The fridge, thinking.
 - `mirror-teeth`: You brush your teeth and watch someone brush her teeth.
 - `we-should-talk`: Adeena: "Shabbat at mine. We should talk after." Just that.
-- `christie-chamomile`: In your bag, from work: chamomile tea bags, a whole row of them, taped together. "For the bad nights. -C"
+- `christie-chamomile`: In your bag, from work, chamomile tea bags, a whole row of them, taped together. "For the bad nights. -C"
 - `friday-hole`: Friday. Friday is a hole in the week now.
 - `renewal-flyer`: "Kabbalat Shabbat with drums! Everyone welcome. Bring your voice." A flyer someone shared.
 - `rosary-on-altar`: A rosary on the altar, between your candles. Wooden beads. You've never owned a rosary.
@@ -638,9 +638,9 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `crackers-floor`: A grown-up fridge. Grown-up food. You eat a whole sleeve of crackers, sitting on the floor.
 - `nina-meeting-floor`: Back against the couch, hands in your lap. Waiting, like in meeting. Waiting is something you know how to do.
 - `notebook-nina`: Heather's round letters. Izzy's loopy ones. You find a pen.
-- `mira-tried`: Big letters, pressing hard: "MIRA TRIED. -N"
+- `mira-tried`: Big letters, pressing hard. "MIRA TRIED. -N"
 - `february-window`: February. Grey slush, grey sky, the sun setting at 5:41. You check the time twice.
-- `note-still-eat`: Heather's note: "Not fasting = still eat lunch. -H" Izzy, inside, sulking about it.
+- `note-still-eat`: Heather's note says "Not fasting = still eat lunch. -H" Izzy, inside, sulking about it.
 
 ### The L (`cta_train`)
 
@@ -664,7 +664,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `tour-group`: Forty fourth-graders in matching yellow shirts. Two teachers counting heads, again.
 - `tour-notes`: Index cards, soft at the corners. "SUE: biggest, most complete T. rex. Tell them about the broken ribs."
 - `adeena-almost-smile`: For a second, almost, something like a smile.
-- `steps-lake`: From the museum steps: the lake, the sailboats, the city standing behind you like it's waiting.
+- `steps-lake`: From the museum steps you can see the lake, the sailboats, the city standing behind you like it's waiting.
 - `adeena-sandwich`: Adeena at her desk upstairs, eating a sandwich cut into exact squares, reading while she chews.
 - `gull-sandwich`: Peanut butter, slightly crushed. A gull watches every bite.
 - `campers-orange`: Thirty eight-year-olds in matching orange shirts, every one of them asking if Máximo is real.
@@ -798,7 +798,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `tiger-blanket`: A thin mattress. A thick, heavy blanket with tigers on it. It's colder than you thought it would be.
 - `bucket-shower`: A bucket, a heater that takes twenty minutes, and a sign: "PLEASE SAVE WATER. THANK YOU. PASANG."
 - `momos`: A steamer of dumplings, folded by Pasang's daughter faster than you can watch. Chilli sauce that makes your eyes water.
-- `kitchen-altar`: A small shelf above the stove: a photo of a lama, seven little bowls of water in a row, a butter lamp.
+- `kitchen-altar`: A small shelf above the stove, with a photo of a lama, seven little bowls of water in a row, a butter lamp.
 - `vipassana-flyer`: "VIPASSANA. 10 days. Noble silence. Dharma Shringa, Budhanilkantha. Courses run on donation."
 - `angie-plan-thought`: Short sits. Eyes open. Walk when you need to. Ten days isn't short. You sign up anyway.
 - `stupa-night`: The great white dome lit gold at the edges, the eyes looking out over everything in the dark.
@@ -808,7 +808,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `window-watched`: The stupa, the eyes, the dogs. Pasang's daughter hanging out laundry, looking up at your window every few minutes.
 - `tea-flask`: A flask of sweet milky tea outside your door. A note: "DRINK. -PASANG"
 - `pasang-kitchen-evening`: Pasang at the pressure cooker, her daughter doing homework at the end of the table, the TV on with no sound.
-- `dal-bhat`: Dal bhat: rice, lentils, greens, a sharp pickle. Pasang refills it before you can say no. Twice.
+- `dal-bhat`: Dal bhat. Rice, lentils, greens, a sharp pickle. Pasang refills it before you can say no. Twice.
 - `washing-up-boudha`: You wash, the daughter dries, neither of you saying much. She teaches you the Nepali for "spoon". You forget it at once and she laughs.
 - `five-more`: The dogs, the prayer wheels creaking in the dark, the stone under your pillow. Five minutes. Tomorrow, five more.
 - `litha-stupa`: The white dome, grey in the dark, then pink. The painted eyes on the tower, catching the light first.
@@ -870,7 +870,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `maya-devi-temple`: A plain white building, and inside, under glass, a stone. The place where, they say, he was born. People kneel. You don't know what to do, so you stand very still.
 - `ashoka-pillar`: A stone pillar, older than almost anything, put here by an emperor to say: here. It happened here.
 - `lumbini-pond`: Green water. A bodhi tree hung with so many prayer flags you can hardly see the leaves.
-- `monastic-zone`: Down the long canal: a Thai temple, white and gold; a Burmese one with a golden spire; a Chinese gate; a German one; a Japanese peace pagoda. Everyone came.
+- `monastic-zone`: All down the long canal, temples. A Thai one, white and gold. A Burmese one with a golden spire. A Chinese gate. A German one. A Japanese peace pagoda. Everyone came.
 
 ### The day program: the group room (`day_ward_group_room`)
 
@@ -924,7 +924,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 
 - `iftar-tables`: Long tables, paper tablecloths, a date and a cup of water at every place. Nobody eats yet. Everyone is waiting together.
 - `iftar-children`: Kids running between the tables with plates of sambousek they're not allowed to touch yet. A grandmother catches one, laughing.
-- `iftar-clock`: Sunset: 5:41. It's 5:38. Three hundred people watching the same minute hand.
+- `iftar-clock`: Sunset is at 5:41. It's 5:38. Three hundred people watching the same minute hand.
 - `adhan-iftar`: The call to prayer, from the front of the hall, rising and falling. Three hundred people breaking their fast at once.
 - `date-eaten`: Sweet, sticky, very sweet. Someone passes you water before you ask.
 - `rows-praying`: Rows, shoulder to shoulder, everyone moving together: standing, bowing, kneeling, foreheads to the floor. Then stillness.
@@ -995,7 +995,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `dal-desk`: Leftover dal, at your desk, while a kid's drawing of the whale dries on the radiator.
 - `craft-tables`: Glue sticks, paper whales, one small shoe. Two hundred children came through today and you were here for every one of them.
 - `paper-roosters`: Paper lanterns and paper roosters, glue everywhere. A grandmother teaching three children to cut a paper flower in one go.
-- `fu-shan-flyer`: Pinned to the staff board: "Fu Shan Temple, New Year incense, all welcome, upstairs from Golden Crown Bakery."
+- `fu-shan-flyer`: Pinned to the staff board, a flyer. "Fu Shan Temple, New Year incense, all welcome, upstairs from Golden Crown Bakery."
 - `dal-fast`: Leftover dal, eaten fast, the flyer folded in your pocket.
 - `whale-water`: A whale is mostly water too, you tell the third-graders. They are delighted and disgusted.
 - `bun-desk`: A pork bun from the bakery under the temple, at your desk. Auntie Mei made you take two.
@@ -1008,7 +1008,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `temple-bell`: A brass bell over the door. Priya's niece shows you: ring it as you come in, to tell God you're here, and to tell yourself.
 - `rama-sita`: Rama and Sita in white marble, Rama with his bow, both almost hidden under marigolds. A little silver cradle in front of them today: it's his birthday.
 - `side-shrines`: Ganesha, round and smiling, by the door. Krishna with his flute, and Radha. Durga on her tiger, in red silk. Hanuman, kneeling. Shiva, a smooth dark stone, wet with milk. Everyone has somewhere to go.
-- `aarti-flame`: The aarti: a woman in a cream sari, grey braid, reading glasses pushed up, circling a tray of flames before the shrine. Everyone singing, a bell, a drum, a conch.
+- `aarti-flame`: The aarti. A woman in a cream sari, grey braid, reading glasses pushed up, circling a tray of flames before the shrine. Everyone singing, a bell, a drum, a conch.
 - `take-the-light`: Warm, over your palms. Warm, over your eyes.
 - `shrine-garland`: Rama and Sita in fresh silk, a new garland: yours, the crooked one, near the bottom.
 - `shiva-lingam`: The smooth dark stone, the lingam, still shining from the morning's milk. A brass pot hanging above it, dripping, slowly.
@@ -1048,11 +1048,11 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `gurdwara-shoes`: Racks of shoes, and a basket of orange scarves for anyone who forgot. You tie the blue one Gurleen lent you. Water for your hands, cold.
 - `guru-granth-sahib`: A book, under a canopy, on cushions, wrapped in embroidered cloth. A man sits behind it and slowly waves a white whisk over it, the way you'd keep someone cool. It isn't treated like a book. It's treated like someone.
 - `ik-onkar`: One symbol stitched in gold on the canopy: Ik Onkar. Gurleen whispers: One. There is One. Everything.
-- `kirtan`: Three men on a low stage: a harmonium, a pair of tabla drums, voices that go up and up. You don't know the words. Your shoulders come down anyway.
+- `kirtan`: Three men on a low stage, with a harmonium, a pair of tabla drums, voices that go up and up. You don't know the words. Your shoulders come down anyway.
 - `gurleen-family`: Her nani, small and fierce, in white. Her dad in a navy turban. Her little brother Arjan, in a turban too, with a steel bracelet and a short sword in a sheath at his side. "He took amrit last year," Gurleen whispers. "His choice. I cut my hair. We're all Sikh."
 - `karah-prasad`: At the end everyone stands for a long prayer, hands together. A sweet, warm and heavy with ghee, pressed into your cupped hands.
 - `simran-reading`: A young woman in a deep red dastar, reading her turn of the forty-eight hours. Her voice never hurries. Gurleen: "Simran. She's at uni with Arjan. She reads better than the uncles, don't tell them."
-- `two-uncles`: Two old friends by the wall: one in a white turban and a long white beard, one clean-shaven in a cardigan, sharing a hymn book. Both here every Sunday for fifty years.
+- `two-uncles`: Two old friends by the wall, one in a white turban and a long white beard, one clean-shaven in a cardigan, sharing a hymn book. Both here every Sunday for fifty years.
 - `gurpurab-flowers`: The canopy is all marigolds and lights today. Somebody's grandmother has been up since three.
 - `maya-scarf`: Your own scarf now, a blue one. You bought it in Kent, in a shop that sold scarves and pressure cookers and wedding jewellery.
 - `ardas`: Everybody stands. One man's voice, then everyone's, at the end: "sarbat da bhala."
@@ -1082,7 +1082,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `onion-sack`: A sack of them, taller than a child. Four Sundays now. You've stopped crying into them. Mostly.
 - `bibi-stirring`: Stirring, tasting, scolding a nephew, all at once. Her steel bracelet clicks on the pot every time.
 - `maya-roti-round`: Yours are round now. Round-ish. The aunties have stopped re-rolling them when you're not looking.
-- `bibi-photo`: A faded photo taped to the wall: the old kitchen, 1990, a young woman with flour to her elbows, laughing. It takes you a second.
+- `bibi-photo`: A faded photo taped to the wall. The old kitchen, 1990, a young woman with flour to her elbows, laughing. It takes you a second.
 - `roti-gurpurab`: Press, turn. Waheguru, under your breath, because the hands like it. Two thousand people, and every one gets a roti that's warm.
 
 ### A café by the market (`seattle_cafe`)
@@ -1097,7 +1097,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `panj-pyare`: Five Sikhs in saffron robes, barefoot, swords held upright, walking ahead of everything. Gurleen: "The Panj Pyare. The first five who said yes."
 - `road-sweepers`: People with brooms walk in front of the float, sweeping the road clean before the Guru reaches it. Arjan is one of them, very serious.
 - `gatka`: A ring of people. Inside it, men in blue with tall turbans spin sticks and swords so fast they blur. A little girl in blue does it too, better than some of them.
-- `kirtan-stalls`: Every few houses, a table: samosas, oranges, bottled water, chai. Free. Uncles pressing them into your hands whether you want them or not.
+- `kirtan-stalls`: Every few houses, a table of samosas, oranges, bottled water, chai. Free. Uncles pressing them into your hands whether you want them or not.
 - `walking-far`: The drums. The singing. Your feet keep walking with everyone else's, and you aren't really in them.
 - `prabhat-pheri`: Five in the morning, dark and cold. Twenty people walking slowly, singing, one harmonium carried on a strap. Porch lights coming on as they pass.
 - `pheri-tea`: A family on their steps in coats over pyjamas, handing out cups of hot tea and sweets to the singers.
@@ -1115,13 +1115,13 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `blocks-down`: Will we be all right? Both face down.
 - `dear-mira-finished`: "Dear Mira." Then, for the first time, the rest of it: I'm okay. I have someone to talk to. We're all still here.
 - `letter-smoke`: The paper curls, glows, goes up. You've been writing that letter since you were eleven.
-- `quiet-temple`: Weekday evening: no crowd, one stick of incense burning, the Jade Emperor and the City God keeping each other company.
-- `tax-forms`: Not the City God's: Lin Daozhang's. A calculator, a stack of tax forms, a red pen.
+- `quiet-temple`: Weekday evening. No crowd, one stick of incense burning, the Jade Emperor and the City God keeping each other company.
+- `tax-forms`: Not the City God's. Lin Daozhang's. A calculator, a stack of tax forms, a red pen.
 
 ### Lake View Cemetery (`lake_view_cemetery`)
 
 - `cemetery-view`: The lake below, the mountain out, the city like a toy. The dead have the best view in Seattle.
-- `lin-stone`: Chinese characters, then English: Lin. A grandmother, a grandfather, an uncle who died young. Oranges and a teacup on the step.
+- `lin-stone`: Chinese characters, then English. Lin. A grandmother, a grandfather, an uncle who died young. Oranges and a teacup on the step.
 - `lin-teenagers`: Three teenagers, sweeping and complaining and, when they think nobody's looking, bowing properly.
 - `sweep-step`: Leaves, moss, a crisp packet. You sweep someone else's grandmother's step until it's clean.
 - `qingming-picnic`: Roast pork, buns, oranges, a thermos of tea, all laid out for the grandparents first, then for everyone.
@@ -1165,7 +1165,7 @@ System members are one shared body: list each ALTER's look (hair, clothes, postu
 - `range-collie`: An old cream stove, warm all day, a kettle that never quite stops. A collie asleep against it.
 - `dresser-photo`: Plates, a Brigid's cross of rushes over the door, a photo of a younger Bríd with Tanya, both laughing in the rain.
 - `lunasa-bread`: Flour everywhere. The first bread from the new wheat, Bríd says: Lúnasa bread. You knead until your arms ache.
-- `august-window`: August: the fields gone gold, swallows on the wire, rain coming and going like it's thinking about it.
+- `august-window`: August. The fields gone gold, swallows on the wire, rain coming and going like it's thinking about it.
 - `knead-remember`: Push, fold, turn. Like the rotis in Kent. Your hands remember.
 - `brid-asks`: Making tea as if nothing happened. Then, very quietly: "Who was the little one, at the well?"
 - `tell-brid`: You tell her. All of it, as much as you can. She listens with her tea going cold.

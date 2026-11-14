@@ -2,16 +2,16 @@
 // vo-speakers: Maya=maya, Mangala Tai=mangala
 // ─────────────────────────────────────────────────────────────────────────────
 //  Part 2. Every day. Seattle, June to September 2027. Maya is 28-29.
-//  The temple priest's life, and the deity's day. Maya grounded; Heather visits.
+//  The temple priest's life, and the deity's day. Maya grounded. Heather visits.
 //
 //  My guesses, for the owner to correct:
 //   - Maya volunteers on Saturdays: making flower garlands for the shrines with Lakshmi (Priya's mother, owner's name) and the other aunties.
 //   - The deity's day, which the priest keeps every day: waking at dawn with a song (kakad aarti), bathing (abhishek),
 //     dressing in silk and flowers, offering food (bhog), lamps, putting to rest at night (shayan aarti). Caring for someone,
 //     every single day.
-//   - Mangala Tai's story (owner: a woman priest): her father was a priest and taught her brothers; she learned the chants by
+//   - Mangala Tai's story (owner: a woman priest): her father was a priest and taught her brothers. She learned the chants by
 //     listening at the door. After raising her children she trained as a purohita in Pune. Some families still won't have a
-//     woman do their rites; many now ask for her because she explains every word. Her grandchildren call from Pune on Sundays.
+//     woman do their rites. Many now ask for her because she explains every word. Her grandchildren call from Pune on Sundays.
 //   - Shiva on Mondays: milk poured over the lingam, the dark stone.
 // ─────────────────────────────────────────────────────────────────────────────
 

@@ -2,14 +2,14 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-13; the owner's Doc edits come first). Chapter 8 (Druidry), Part 1. Owner: a trip to Ireland, several weeks across the seasons; the guide leads a grove (an older Irish woman); Tanya knows the grove; parts built around Bealtaine at Uisneach, Lúnasa and Samhain at Tlachtga; Lily first comes forward waiting at a holy well; the chapter unlocks Lily. A full day in every part.
+**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-13. The owner's Doc edits come first). Chapter 8 (Druidry), Part 1. Owner: a trip to Ireland, several weeks across the seasons. The guide leads a grove (an older Irish woman). Tanya knows the grove. Parts built around Bealtaine at Uisneach, Lúnasa and Samhain at Tlachtga. Lily first comes forward waiting at a holy well. The chapter unlocks Lily. A full day in every part.
 
 **My guesses, for you to check:**
 
 - Maya takes unpaid leave from the Burke and comes three times: a few weeks each at Bealtaine, Lúnasa and Samhain, staying in the spare room of the grove's leader.
 - The leader: BRÍD KENNY (`brid_kenny`, 66, she/her): sheep farmer on the slopes below the Hill of Uisneach, a retired national school teacher, an Irish speaker. She and Tanya met at a gathering in Glastonbury in 2004 and write every Samhain.
 - Her grove (fictional): Fuinseog Grove (fuinseog: ash tree, in Irish). Members show different streams of modern Druidry: an OBOD member from Dublin who uses the Welsh festival names (Alban Eilir...), a Gaelic polytheist who uses only the Irish names and honours Lugh and Brigid, and Bríd's Catholic neighbour, who comes for the fire and goes to Mass after.
-- Uisneach (research): the old ceremonial centre of Ireland; a public Bealtaine fire festival is held there each year.
+- Uisneach (research): the old ceremonial centre of Ireland. A public Bealtaine fire festival is held there each year.
 
 📱 **Text from Tanya:** Bríd will meet you at Mullingar. She'll be in a green Land Rover with a dog in it. Do what she says. I mean that lovingly.
 
@@ -17,7 +17,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Find the kitchen
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - Green. More green than you knew there was. Sheep on the hill, and fog sitting in the dip like milk in a saucer.
@@ -29,7 +29,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Have breakfast
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The range**
     - An old cream stove, warm all day, a kettle that never quite stops. A collie asleep against it.
@@ -47,7 +47,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Help with the lambs
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The lambs**
     - A dozen of them, all knees, bouncing straight up in the air for no reason at all.
@@ -60,7 +60,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Dress the May bush
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The hawthorn**
     - A small hawthorn by the gate, all white blossom. You don't cut hawthorn, Bríd says. You dress it, and you leave it be.
@@ -75,7 +75,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Climb to the fire
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The crowd**
     - Hundreds of people on the hill in the dusk: families, drummers, someone in antlers, teenagers on their phones.
@@ -89,7 +89,7 @@ The fire goes up all at once, a roar, a tower of orange, and every face on the h
 
 **Bríd:** We call the quarters, and then we say what we're bringing into summer. You don't have to. You can just stand here and be warm.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: The grove (say what you're bringing)**
     - **Maya:** I'm bringing all of us. Everyone. Whoever turns up.
@@ -101,7 +101,7 @@ The fire goes up all at once, a roar, a tower of orange, and every face on the h
 
 > **Objective:** Go to bed
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The bed**
     - Two in the morning. Smoke in your hair, mud to your knees, a hot water bottle Bríd left without saying. You're asleep before you can be grateful.

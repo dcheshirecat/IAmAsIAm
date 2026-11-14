@@ -10,10 +10,10 @@
 //
 //  My guesses, for the owner to correct:
 //   - Maya finds the shop's flyer in her own bag ("Open Yule circle. All welcome.") and goes.
-//   - Tanya runs the shop and the teaching coven; they're the person behind the counter Izzy met in Part 2.
+//   - Tanya runs the shop and the teaching coven. They're the person behind the counter Izzy met in Part 2.
 //     Tanya's strictness: phones off, ground first, no skipping steps, "you can't cast a circle if you're
 //     not in the room."
-//   - Tanya notices Maya drifting and asks where she went, gently; Maya says she's fine. Tanya doesn't
+//   - Tanya notices Maya drifting and asks where she went, gently. Maya says she's fine. Tanya doesn't
 //     push yet. Tanya is the guide who stays (owner): in touch all game, mostly by text and email.
 //   - The public Yule circle is in the park: the longest night, every candle out, then lit one by one.
 //   - (Owner: yes, Izzy) The chapter ends with a switch to Izzy at the circle: Maya loses the rest of the night, and wakes
@@ -174,7 +174,7 @@ Tanya: Here. Everyone gets one after their first circle. A Book of Shadows. Writ
     ~ gain_book_of_shadows("tanya")
     ~ record_choice("prelude.p3.book", "taken", "After the Yule circle, Tanya gave you a Book of Shadows.")
     Black cloth, a moon on the cover. First page, in Tanya's square letters: "Ground first." # look: bos-gift
-    Tucked inside the cover: three dry bay leaves and a bead of amber, warm as a hand. For the sun coming back. # look: bos-bay-amber
+    Tucked inside the cover, three dry bay leaves and a bead of amber, warm as a hand. For the sun coming back. # look: bos-bay-amber
     ~ gain_herb("bay", "tanya")
     ~ gain_stone("amber", "tanya")
     ~ learn_practice("dream-journal", "tanya")
@@ -191,7 +191,7 @@ Tanya: Here. Everyone gets one after their first circle. A Book of Shadows. Writ
 // During the lost night (owner: subtle): Tanya's text arrives, and a reply Maya never wrote is already under it.
 ~ text_from("tanya", "Thank you for staying to help stack the chairs. Thursday, 7. Phone off.")
 ~ sent_while_away("izzy", "text", "tanya", "I'll be there. Thank you. Really.")
-// The first entry in the Book is Izzy's (owner: lost time leaves practice behind; never pointed out).
+// The first entry in the Book is Izzy's (owner: lost time leaves practice behind. Never pointed out).
 ~ bos_entry("izzy", "Wheel", "Yule", "Longest night. Everyone in a ring in the snow, then the light came back, hand to hand. Stacked the chairs after. Kept a candle stub. Blessed be. -I")
 ...
 # switch: maya

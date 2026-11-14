@@ -18,40 +18,40 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 📱 **Text from Sawsan:** iftar is 5:41!! come at 5:15. bring nothing, my aunt will be insulted
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The window**
     - February. Grey slush, grey sky, the sun setting at 5:41. You check the time twice.
 - **Look: The fridge**
-    - **Heather's note:** "Not fasting = still eat lunch. -H" Izzy, inside, sulking about it.
+    - Heather's note says "Not fasting = still eat lunch. -H" Izzy, inside, sulking about it.
 - **Use: Your coat**
 
 ## Iftar
 
 > **Objective:** Wait for sunset
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The tables**
     - Long tables, paper tablecloths, a date and a cup of water at every place. Nobody eats yet. Everyone is waiting together.
 - **Look: The children**
     - Kids running between the tables with plates of sambousek they're not allowed to touch yet. A grandmother catches one, laughing.
 - **Look: The clock**
-    - **Sunset:** 5:41. It's 5:38. Three hundred people watching the same minute hand.
+    - Sunset is at 5:41. It's 5:38. Three hundred people watching the same minute hand.
 - **Talk: Sawsan**
 
 **Sawsan:** When you hear the call, you eat the date. That's it. That's the whole secret.
 
 The call to prayer, from the front of the hall, rising and falling. Three hundred people breaking their fast at once.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The date**
     - Sweet, sticky, very sweet. Someone passes you water before you ask.
 
 **Chaplain Amal:** Now they pray, and then they eat everything. Guests can wait here, or watch from the back. Either is good.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Wait (watch from the back)**
     - Rows, shoulder to shoulder, everyone moving together: standing, bowing, kneeling, foreheads to the floor. Then stillness.
@@ -64,7 +64,7 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
 
 > **Objective:** Ride home
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The bag**
     - Foil trays of rice and lamb from Sawsan's aunt. Enough for a week. Dates in your coat pocket.
@@ -75,7 +75,7 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
 
 > **Objective:** Say goodbye at the program
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The circle of chairs**
     - The same twelve chairs. You know everyone's names now, and which one is the knitting woman's.
@@ -85,7 +85,7 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
 
 **Chaplain Amal:** You did the work here. All of you. I'll pray for you, if that's okay. For all of you.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Chaplain Amal (say yes)**
     - **Izzy:** Yes. All of us. Even the grumpy ones.
@@ -96,7 +96,7 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
 
 > **Objective:** Talk to Angie
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: Gerald**
     - Gerald the plant has a little brass prayer wheel next to him now. He seems pleased about it.
@@ -105,7 +105,7 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
 
 **Angie:** One shared place. Anyone who comes forward can leave a note. Anyone can read them. No secrets from each other, if you can manage it.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Angie (ask what to call it)**
     - **Izzy:** What do we call it? Ooh. SystemLog. Like a ship's log. Captain's log, stardate whatever.
@@ -117,7 +117,7 @@ The call to prayer, from the front of the hall, rising and falling. Three hundre
 
 _(A switch: Maya comes forward. The player has no control over it.)_
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: Your phone (open SystemLog)**
 _(Maya's phone opens: the player can read her messages, then closes it.)_

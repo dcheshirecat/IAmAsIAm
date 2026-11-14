@@ -9,7 +9,7 @@
 //
 //  My guesses, for the owner to correct:
 //   - Axel comes forward at the end of summer 2018, just before junior year starts.
-//   - The haircut is at a barber's on campus; the clothes come from a thrift store.
+//   - The haircut is at a barber's on campus. The clothes come from a thrift store.
 //   - The context clues: Maya's planner (another handwriting), Mira's stone, the napkin with a phone number, the dresses.
 //   - He tells Selene over coffee, and emails his professors to ask them to use "Axel" and "he".
 // ─────────────────────────────────────────────────────────────────────────────

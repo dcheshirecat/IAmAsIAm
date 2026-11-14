@@ -30,7 +30,7 @@
     February. Grey slush, grey sky, the sun setting at 5:41. You check the time twice. # look: february-window
     -> room
 + {room < 3} [Look: The fridge]
-    Heather's note: "Not fasting = still eat lunch. -H" Izzy, inside, sulking about it. # look: note-still-eat
+    Heather's note says "Not fasting = still eat lunch. -H" Izzy, inside, sulking about it. # look: note-still-eat
     -> room
 * [Use: Your coat]
 -
@@ -49,7 +49,7 @@
     Kids running between the tables with plates of sambousek they're not allowed to touch yet. A grandmother catches one, laughing. # look: iftar-children
     -> hall
 + {hall < 4} [Look: The clock]
-    Sunset: 5:41. It's 5:38. Three hundred people watching the same minute hand. # look: iftar-clock
+    Sunset is at 5:41. It's 5:38. Three hundred people watching the same minute hand. # look: iftar-clock
     -> hall
 * {hall >= 1} [Talk: Sawsan]
 -
@@ -124,7 +124,7 @@ Angie: One shared place. Anyone who comes forward can leave a note. Anyone can r
     Izzy: Will Maya read it? She's scared of us, a bit. # vo: ch4-islam_izzy_0058
     Angie: That's the point. So she doesn't have to be scared of what she can't see. # vo: ch4-islam_angie_0059
 -
-// Owner: Angie suggests SystemLog; the end of Chapter 4 puts it on the phone.
+// Owner: Angie suggests SystemLog. The end of Chapter 4 puts it on the phone.
 ~ gain_app("systemlog")
 ~ system_log("heather", "Water first. Then food. Then Angie on Thursday. We're doing well. -H")
 ~ system_log("izzy", "hi everyone!!! this is SystemLog. be nice. write stuff. -Izzy")

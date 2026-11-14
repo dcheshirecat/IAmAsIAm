@@ -2,12 +2,12 @@
 
 _Draft, not canon until you approve it. Edit anything here: Claude carries your changes back into the game._
 
-**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-14; the owner's Doc edits come first). Chapter 10 (Unitarian Universalism), Part 3. Owner: a spring Flower Communion; the chapter is about belonging; it ends by unlocking Serena. Research: the Flower Communion was created by Norbert Čapek, the founder of the Unitarian church in Prague, in 1923. Everyone brings a flower; they all go into one big vase; at the end everyone takes home a different flower than the one they brought. Many UU congregations hold it in late spring.
+**What happens (your beats):** IN THE GAME as a DRAFT (Claude, 2026-11-14. The owner's Doc edits come first). Chapter 10 (Unitarian Universalism), Part 3. Owner: a spring Flower Communion. The chapter is about belonging. It ends by unlocking Serena. Research: the Flower Communion was created by Norbert Čapek, the founder of the Unitarian church in Prague, in 1923. Everyone brings a flower. They all go into one big vase. At the end everyone takes home a different flower than the one they brought. Many UU congregations hold it in late spring.
 
 **My guesses, for you to check:**
 
 - Maya brings an armful: one different flower for each of them in the system. She doesn't explain. Nobody asks.
-- Sarah's letter arrives in April. Maya hasn't opened it yet; it waits on the altar, under Mira's stone, until she's ready. (What it says, and whether she ever opens it, is the owner's to decide.)
+- Sarah's letter arrives in April. Maya hasn't opened it yet. It waits on the altar, under Mira's stone, until she's ready. (What it says, and whether she ever opens it, is the owner's to decide.)
 
 📱 **Text from Tanya:** Flower Communion today? I did one at a UU church in Champaign once. I took home a carnation and cried at a red light. Enjoy.
 
@@ -15,7 +15,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** Pick the flowers
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The altar**
     - Sarah's letter, still sealed, under Mira's stone. It's been there since April. Serena says it can wait as long as it likes.
@@ -27,7 +27,7 @@ _Draft, not canon until you approve it. Edit anything here: Claude carries your 
 
 > **Objective:** One flower for each of you
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The yard**
     - The landlord's overgrown yard, and the neighbour's, and a bit of the alley that nobody owns.
@@ -41,7 +41,7 @@ A rose for Heather, because she'd never ask for one. A daisy for Lily. A sunflow
 
 > **Objective:** Put your flowers in the vase
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The big vase**
     - A steel washtub, really, on the communion table, already half full: supermarket tulips, roadside lupins, one plastic flower from a kid who was very clear about it.
@@ -51,7 +51,7 @@ A rose for Heather, because she'd never ask for one. A daisy for Lily. A sunflow
 
 Ten flowers, all at once. Somebody in the front row says "oh!" A child counts them out loud. Nobody asks why.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Anabelle**
 
@@ -67,7 +67,7 @@ Ten flowers, all at once. Somebody in the front row says "oh!" A child counts th
 
 The minister tells the story. A church in Prague, 1923, a minister who wanted a communion that belonged to everybody. Bring something. Take something different home.
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The washtub**
     - Everyone's flowers, all mixed up now. You can't tell whose is whose. That's the point.
@@ -82,7 +82,7 @@ The minister tells the story. A church in Prague, 1923, a minister who wanted a 
 
 > **Objective:** Stay for coffee hour
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Look: The noticeboard**
     - "NEW MEMBERS: the book is by the door. No test. No creed. Just your name."
@@ -90,7 +90,7 @@ The minister tells the story. A church in Prague, 1923, a minister who wanted a 
 
 **Anabelle:** So. You've been to a gurdwara and a Daoist temple and a well in Ireland, and now us. Are you staying?
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Talk: Anabelle (say you're staying)**
     - **Maya:** I think we are. All of us. It's the first place nobody's asked me to pick one.
@@ -103,7 +103,7 @@ The minister tells the story. A church in Prague, 1923, a minister who wanted a 
 
 > **Objective:** Put the dandelion somewhere
 
-**Explore** (glowing things; the player picks):
+**Explore** (glowing things, the player picks):
 
 - **Use: The altar (put the dandelion there)**
     - In a jam jar, next to Mira's stone, next to Sarah's letter, next to Maisie's drawing. A bent dandelion holding court.
