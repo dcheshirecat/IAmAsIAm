@@ -221,7 +221,7 @@ Face paintings go on the 3D models in the world; portraits sit beside the dialog
 | [ ] | `ui_btn_wide.png` (+ `_pressed`, 9-slice) | Menu buttons (title menu, Chapters, Saves) | 640 × 200 | Claude |
 | [ ] | `ui_icon_journal.png`, `ui_icon_codex.png`, `ui_icon_triggers.png`, `ui_icon_settings.png`, `ui_icon_practice.png` | Small icons | 128 × 128 | Claude |
 | [ ] | `ui_front_badge_<alter>.png` | Who's fronting (top left) | 256 × 256 | Claude |
-| [ ] | `ui_logo.png` | Title logo "I Am As I Am" | 2048 wide | Claude |
+| [ ] | `ui_logo.png` | Title logo "As I Am" | 2048 wide | Claude |
 | [ ] | `bg_title.png` | The title-menu background | 4440 × 2048 | Claude |
 
 ## Part 7: 2D cards and codex art

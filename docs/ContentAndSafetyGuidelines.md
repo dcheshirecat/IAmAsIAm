@@ -6,7 +6,7 @@ not suggestions. When in doubt, choose the gentler option and ask.
 ## 1. The game is not therapy
 
 - The game must show a short, non-dismissable notice on the first launch. It must also stay visible in the Codex and the Anchor menu:
-  > *I Am As I Am teaches real coping skills, but it is not a substitute for professional
+  > *As I Am teaches real coping skills, but it is not a substitute for professional
   > care. If you are in danger or crisis, please contact local emergency services or a
   > crisis line (Anchor menu → Support).*
 - The game never diagnoses, assesses or scores the player's mental health.

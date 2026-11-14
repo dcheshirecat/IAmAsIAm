@@ -104,7 +104,7 @@ namespace IAmAsIAm.Runtime.Save
             _mode = Mode.Title;
             Open();
             _background.color = TitleBackground;
-            _heading.text = "I Am As I Am";
+            _heading.text = "As I Am";
             ShowMain(message);
         }
 
@@ -116,7 +116,7 @@ namespace IAmAsIAm.Runtime.Save
         {
             Clear(_content);
             Clear(_footer);
-            _heading.text = "I Am As I Am";
+            _heading.text = "As I Am";
             _message.text = message ?? "";
 
             var column = Panel(_content, "Main Menu", Color.clear, Vector2.zero, Vector2.one);

@@ -1,4 +1,4 @@
-# I Am As I Am: project context for Claude Code
+# As I Am: project context for Claude Code
 
 Read this first. Write important decisions in here as they are made (context gets compressed).
 Sister projects (separate repos, same owner and setup): Seven Witches (`dcheshirecat/SevenWitches`), Thimble & Thread.
@@ -644,6 +644,10 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   tokens or the owner's email anywhere in the history; every commit is authored by Claude's noreply address. Secrets (Unity
   licence, keystore) stay hidden and masked in logs, and pull requests from forks never get them. Once public, never commit
   anything private: the whole repo, the story drafts and the build logs are visible to anyone.
+- 2026-11-14: **The game is renamed "As I Am"** (owner; was "I Am As I Am"): productName (the name under the app icon), the title
+  screen heading, README and docs. **Kept on purpose:** the app id `com.cheshirecat.iamasiam` (changing it would make phones treat
+  it as a different app, so updates wouldn't install over the old one), the repo name, the `IAmAsIAm.*` code namespaces, and the
+  Drive folder "Game Art - I Am As I Am" (rename it in Drive if wanted; the ids stay the same). The APK artifact is now `AsIAm-apk-<run>`.
 ## Open (ask the owner)
 Every chapter's content (ask, chapter by chapter); confirm the chapter order 5–13.
 - 2026-11-11: **Camera like Pokémon Legends: Z-A**: third person, close behind and over the shoulder of the character,

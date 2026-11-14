@@ -1,4 +1,4 @@
-// I Am As I Am: the story's root file. Compiled to main.json (IAmAsIAm → Compile Story).
+// As I Am: the story's root file. Compiled to main.json (IAmAsIAm → Compile Story).
 // The chapters are planned with the owner. Chapters/ holds the ones in the game (each part its own file, INCLUDEd
 // here); chapters_placeholder.ink holds the rest. Drafts/ holds sample scenes that are NOT in the game.
 // test_room.ink holds placeholder interactions for the playable base (not story).

@@ -1,4 +1,4 @@
-# I Am As I Am — Game Design Document
+# As I Am — Game Design Document
 
 > Working title, taken from the repository name. Draft 0.1, co-written. Everything marked
 > **[DECIDE]** is open for you to change.
@@ -40,7 +40,7 @@
 
 ## 1. Vision
 
-**I Am As I Am** is a story-driven 3D exploration game about living with OSDD
+**As I Am** is a story-driven 3D exploration game about living with OSDD
 (Other Specified Dissociative Disorder). It follows a plural system through one turning
 of the Wheel of the Year. The player moves between an **outer world** (an apartment,
 a bus, a workplace, a therapist's office) and an **inner world**, a cottage at the

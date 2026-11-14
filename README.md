@@ -1,4 +1,4 @@
-# I Am As I Am
+# As I Am
 
 A 3D story game (Android APK and PC) about living with **OSDD** (Other Specified Dissociative
 Disorder). The character was raised Quaker, left organised religion, believes in Wicca,
@@ -9,7 +9,7 @@ The game teaches **real grounding, mindfulness, DBT and CBT skills**, and weaves
 **open pagan folk practices** (runes, tarot, herbs, stones, charms) as sensory anchors
 and reflection prompts. These practices are never stat buffs.
 
-> ⚠️ *I Am As I Am* teaches real coping skills, but it is **not a substitute for
+> ⚠️ *As I Am* teaches real coping skills, but it is **not a substitute for
 > professional care**. If you are in crisis, please contact local emergency services or a
 > crisis line.
 

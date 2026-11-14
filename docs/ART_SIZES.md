@@ -9,7 +9,7 @@ How to hand it over: [ART_SWAP.md](ART_SWAP.md). This follows Seven Witches' `Do
 - Export **PNG**, never JPEG. Draw at the listed size or bigger, keeping the **same shape**.
 
 ## Screen shape: landscape everywhere
-Unlike Seven Witches (portrait on phones), **I Am As I Am is landscape on phones and PC**, because it's a
+Unlike Seven Witches (portrait on phones), **As I Am is landscape on phones and PC**, because it's a
 cinematic story game. The UI reference canvas is **2732 × 2048, scaled by height** (the same as Seven Witches' PC layout),
 so UI art is shared between phone and PC. Phones are wider than 4:3, so keep important things in the middle 2732 px.
 
