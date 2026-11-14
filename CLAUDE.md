@@ -631,6 +631,9 @@ Design: `docs/GameDesignDocument.md` (§0 has the owner's current direction and 
   lines only if Maya wrote (`ch11_part2.forgive.wrote_sarah`); lamps for Mahavira's nirvana; Nirmala-ben gives a soft broom: "sweep
   a gentle space in front of yourself"; `# chapter-end`). 32 voiced lines (serena, maya, nirmala, inside voices). New places
   `car_highway_101` (arcata), city `bay_area`: `jain_centre`, `jain_centre_parking`, `bay_area_motel`.
+  Drive: Story Drafts → `13 Chapter 11 - Jainism (title to come)` (1BPLx0oblxbSu9l1dtujnAAve1Ckv-L1N): Part 1
+  (1i_3Y94G6VgPW_HghFXbNhRRrVy2BFs99Ypby8HCbiVw), Part 2 (1YNisOCADiHGcbqjKcpkl-ZQkgt0dcvKcp6CTH0UCfK8), Part 3
+  (1iFlcV5-6-8oHOnDW0l-gMScnNec1rR54YeJvUTTV5wk); Sheet "13 Chapter 11 - script list (draft)" (1n98RwvmSqBxhfPiI3U8-xtARtBpN6PG-03oEMilpe0g, 32 lines).
 - 2026-11-14: **Speaker lines:** the game reads any line whose first ": " comes within 32 characters, with no . ! ? or " before
   it, as "Speaker: text". So narration must NOT start like "A long paper tree down the wall: ..." (reworded in Ch 9-11).
   `voice_script.py` now accepts hyphenated speaker names (Nirmala-ben).
